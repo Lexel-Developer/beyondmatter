@@ -127,7 +127,13 @@
   .custom_multicolumn .title-wrapper {
     align-items: center;
     flex-direction: column;
-    margin-bottom: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+.custom_multicolumn .title-wrapper .title {
+  letter-spacing: 0;
+  line-height: normal;
 }
 .custom_multicolumn .title-wrapper h4 {
   margin: 0;
