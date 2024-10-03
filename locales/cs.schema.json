@@ -4077,37 +4077,6 @@
         "name": "Vícesloupcové"
       }
     },
-    "custom-multicolumn": {
-      "name": "Custom Multicolumn",
-      "settings": {
-        "image_width": {
-          "label": "Šířka obrázku",
-          "options__1": {
-            "label": "Třetinová šířka sloupce"
-          },
-          "options__2": {
-            "label": "Poloviční šířka sloupce"
-          },
-          "options__3": {
-            "label": "Plná šířka sloupce"
-          }
-        },
-        "columns_desktop": {
-          "label": "Počet sloupců na počítači"
-        },
-        "open_in_new_tab": {
-          "label": "Otevřít odkaz v novém panelu"
-        }
-      },
-      "blocks": {
-        "column": {
-          "name": "Sloupec"
-        }
-      },
-      "presets": {
-        "name": "Vícesloupcové"
-      }
-    },
     "newsletter": {
       "name": "E-mailová registrace",
       "settings": {

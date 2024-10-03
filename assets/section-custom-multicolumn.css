@@ -117,3 +117,25 @@
       text-align: end;
     }
   }
+
+
+
+
+
+  /* New css start */
+
+  .custom_multicolumn .title-wrapper {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.custom_multicolumn .title-wrapper h4 {
+  margin: 0;
+}
+.custom_multicolumn .multicolumn-card__image-wrapper--third-width {
+  width: 22%;
+  margin-bottom: 15px;
+}
+.custom_multicolumn .title_description p {
+  margin: 0;
+}

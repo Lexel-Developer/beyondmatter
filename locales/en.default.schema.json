@@ -4077,6 +4077,37 @@
         "name": "Multicolumn"
       }
     },
+    "custom-multicolumn": {
+      "name": "Custom Multicolumn",
+      "settings": {
+        "image_width": {
+          "label": "Image width",
+          "options__1": {
+            "label": "One-third width of column"
+          },
+          "options__2": {
+            "label": "Half width of column"
+          },
+          "options__3": {
+            "label": "Full width of column"
+          }
+        },
+        "columns_desktop": {
+          "label": "Number of columns on desktop"
+        },
+        "open_in_new_tab": {
+          "label": "Open links in a new tab"
+        }
+      },
+      "blocks": {
+        "column": {
+          "name": "Column"
+        }
+      },
+      "presets": {
+        "name": "Custom Multicolumn"
+      }
+    },
     "newsletter": {
       "name": "Email signup",
       "settings": {

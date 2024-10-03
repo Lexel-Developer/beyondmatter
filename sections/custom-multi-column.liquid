@@ -4,6 +4,86 @@
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
     --image-position: {{ section.settings.image_position }};
   }
+
+
+
+
+
+
+  #shopify-section-{{ section.id }} .subheading {
+    background-image: {{ section.settings.subheading_color }};
+    color: transparent;
+    background-clip: text;
+    display: inline;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  #shopify-section-{{ section.id }} .subheading:after {
+    content: "";
+    background: {{ section.settings.subheading_bg }};
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 5px;
+  }
+  #shopify-section-{{ section.id }} .subheading:before {
+    content: "";
+    background: {{ section.settings.subheading_border}};
+  
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    top: -1px;
+    z-index: -2;
+    border-radius: 5px;
+  }
+  {%- for block in section.blocks -%}
+    {%- if block.settings.image_border != 'rgba(0,0,0,0)' -%}
+      .block__{{ block.id }} .multi-column__image-wrapper {
+        border: 1px solid {{ block.settings.image_border }};
+      }
+    {%- endif -%}
+    .block__{{ block.id }} .enable_box_border  {
+      background: {{ block.settings.column_border_color }};
+      padding: 2px;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 100%;
+    }
+    .block__{{ block.id }} .enable_box_border .multi-column__item_wrapper {
+      background: {{ block.settings.column_bg }};
+      border-radius: 10px;
+      height: 100%;
+    }
+    .block__{{ block.id }} .enable_box_border .multi-column__item_wrapper {
+      padding: 30px 30px;
+      border-radius: 10px;
+    }
+
+
+    .block__{{ block.id }}:nth-child(odd) .enable_box_border {
+      transform: rotate(-1deg);
+    }
+    .block__{{ block.id }}:nth-child(even) .enable_box_border  {
+      transform: rotate(1deg);
+    }
+
+  .block__{{ block.id }} .media-wrapper {
+      border-radius: {{ block.settings.image_border_radius }}px;
+  }
+  {%- endfor -%}
+
+
+
+
 {%- endstyle -%}
 
 {{ 'section-custom-multicolumn.css' | asset_url | stylesheet_tag }}
@@ -14,7 +94,15 @@
 <div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="multicolumn page-width">
     <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }} {{ section.settings.heading_alignment }}">
-      <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
+      {% if section.settings.subheading != blank %}
+        <div class="subheading_main">
+          <h4 class="subheading">{{ section.settings.subheading }}</h4>
+        </div>
+      {% endif %}
+      <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading }}</{{ section.settings.heading_tag }}>
+      {% if section.settings.title_description != blank %}
+        <div class="title_description">{{ section.settings.title_description }}</div>
+      {% endif %}
     </div>
     
     <slider-component class="slider-mobile-gutter {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
@@ -35,10 +123,11 @@
 
         {%- for block in section.blocks -%}
           <li id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %} {{ section.settings.text_alignment }}"
+            class="block__{{ block.id }} multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %} {{ section.settings.text_alignment }}"
             {{ block.shopify_attributes }}
           >
-            <div class="multicolumn-card">
+            <div class="multicolumn-card {% if block.settings.enable_box_border %}enable_box_border{% endif %}">
+              <div class="multi-column__item_wrapper">
               {%- if block.settings.image != blank -%}
                 <use-animate data-animate="zoom-fade" class="media-wrapper multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' %} multicolumn-card-spacing{% endif %}">
                   <div class="image-animate media media--{{ section.settings.image_ratio }}"
@@ -99,6 +188,7 @@
                 </div>
               {%- endif -%}
             </div>
+            </div>
           </li>
         {%- endfor -%}
       </ul>
@@ -110,7 +200,7 @@
 {
   "name": "t:sections.custom-multicolumn.name",
   "tag": "section",
-  "class": "section",
+  "class": "section custom_multicolumn",
   "settings": [
     {
       "type": "select",
@@ -217,19 +307,19 @@
       "options": [
         {
           "value": "third",
-          "label": "t:sections.custom-multicolumn.settings.image_width.options__1.label"
+          "label": "t:sections.multicolumn.settings.image_width.options__1.label"
         },
         {
           "value": "half",
-          "label": "t:sections.custom-multicolumn.settings.image_width.options__2.label"
+          "label": "t:sections.multicolumn.settings.image_width.options__2.label"
         },
         {
           "value": "full",
-          "label": "t:sections.custom-multicolumn.settings.image_width.options__3.label"
+          "label": "t:sections.multicolumn.settings.image_width.options__3.label"
         }
       ],
       "default": "full",
-      "label": "t:sections.custom-multicolumn.settings.image_width.label"
+      "label": "t:sections.multicolumn.settings.image_width.label"
     },
     {
       "type": "range",
@@ -238,13 +328,13 @@
       "max": 6,
       "step": 1,
       "default": 3,
-      "label": "t:sections.custom-multicolumn.settings.columns_desktop.label"
+      "label": "t:sections.multicolumn.settings.columns_desktop.label"
     },
     {
       "type": "checkbox",
       "id": "open_in_new_tab",
       "default": false,
-      "label": "t:sections.custom-multicolumn.settings.open_in_new_tab.label"
+      "label": "t:sections.multicolumn.settings.open_in_new_tab.label"
     },
     {
       "type": "header",
@@ -252,9 +342,36 @@
     },
     {
       "type": "text",
+      "id": "subheading",
+      "default": "FEATURES",
+      "label": "Sub heading"
+    },
+    {
+      "type": "textarea",
       "id": "heading",
-      "default": "Multicolumn",
+      "default": "Unvergessliche Momente. Atemberaubende Features.",
       "label": "t:sections.all.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "title_description",
+      "default": "<p>rleben Sie magische Augenblicke mit unserem Fotoautomaten. Modernste Technik und kreative Features machen jede Aufnahme zu einem unvergesslichen Erlebni</p>",
+      "label": "Title description"
+    },
+    {
+      "type": "color_background",
+      "id": "subheading_color",
+      "label": "Subheading color"
+    },
+    {
+      "type": "color",
+      "id": "subheading_bg",
+      "label": "Subheading background"
+    },
+    {
+      "type": "color_background",
+      "id": "subheading_border",
+      "label": "Subheading border"
     },
     {
       "type": "select",
@@ -415,12 +532,21 @@
   "blocks": [
     {
       "type": "column",
-      "name": "t:sections.custom-multicolumn.blocks.column.name",
+      "name": "t:sections.multicolumn.blocks.column.name",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.all.image.label"
+        },
+        {
+          "type": "range",
+          "id": "image_border_radius",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "label": "Image Border Radius",
+          "default": 10
         },
         {
           "type": "text",
@@ -471,6 +597,22 @@
           "id": "button_style_secondary",
           "default": false,
           "label": "t:sections.all.button_style_secondary.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_box_border",
+          "label": "Enable column Border",
+          "default": false
+        },
+        {
+          "type": "color_background",
+          "id": "column_border_color",
+          "label": "Column border color"
+        },
+        {
+          "type": "color_background",
+          "id": "column_bg",
+          "label": "Column background color"
         }
       ]
     }
