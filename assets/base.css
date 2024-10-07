@@ -265,6 +265,15 @@ h5,
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
 }
 
+.x-large {
+  font-size: calc(var(--font-heading-scale) * 4rem);
+}
+
+@media only screen and (min-width: 990px) {
+  .x-large {
+    font-size: calc(var(--font-heading-scale) * 6.4rem);
+  }
+}
 .h0 {
   font-size: calc(var(--font-heading-scale) * 3.6rem);
 }

@@ -329,6 +329,7 @@
         "horizontal_content": false,
         "full_width": false,
         "show_divider": false,
+        "columns_desktop": 4,
         "heading": "Guarantees",
         "heading_size": "h1",
         "heading_tag": "h2",
@@ -348,6 +349,7 @@
       "settings": {
         "collection": "",
         "products_to_show": 8,
+        "horizontal_scroll": false,
         "show_view_all": true,
         "show_divider": false,
         "heading": "",
@@ -1000,6 +1002,7 @@
         "layout": "media_first",
         "full_width": false,
         "show_divider": false,
+        "show_featured_media": false,
         "hide_variants": false,
         "enable_image_zoom": true,
         "enable_video_looping": false,
@@ -1458,6 +1461,78 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "image_banner_new_UFaEY7": {
+      "type": "image-banner-new",
+      "blocks": {
+        "subheading_LKxrHA": {
+          "type": "subheading",
+          "settings": {
+            "subheading_image": "shopify:\/\/shop_images\/Group_10.svg",
+            "subheading": "Add a tagline",
+            "subheading_size": "h5",
+            "secondary_color": false
+          }
+        },
+        "heading_JQw8WD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Effektiver Strahlenschutz für unterwegs: Ava.",
+            "heading_size": "x-large",
+            "heading_tag": "h2"
+          }
+        },
+        "text_CRpQQU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Schutz vor Elektrosmog von mobilen Endgeräten.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_xGYPDA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Ava entdecken",
+            "button_link": "#",
+            "button_size": "small",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_LKxrHA",
+        "heading_JQw8WD",
+        "text_CRpQQU",
+        "button_xGYPDA"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-image.png",
+        "image_position": "center center",
+        "text_box_position": "middle-left",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "show_text_box": false,
+        "full_width": true,
+        "section_container": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -1482,6 +1557,7 @@
     "rich-text-1",
     "gallery",
     "scrolling-promotion",
-    "map"
+    "map",
+    "image_banner_new_UFaEY7"
   ]
 }

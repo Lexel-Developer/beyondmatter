@@ -1,0 +1,49 @@
+.section-image-banner-new .banner__box img {
+    width: 100%;
+    height: auto;
+    max-width: 253px;
+    display: block;
+}
+
+.section-image-banner-new .banner__heading {
+    line-height: 1;
+    margin-top: 1.5rem;
+}
+.section-image-banner-new .banner__text {
+    margin-top: 8px;
+}
+.section-image-banner-new .banner__box :last-child:is(.button) {
+    margin-top: 2.4rem;
+}
+.section-image-banner-new .banner__box .button {
+    line-height: 24px;
+    text-transform: inherit;
+    letter-spacing: 0;
+}
+.section-image-banner-new .banner__box .button.button--small {
+    font-size: max(calc(var(--font-button-size) - 2px), 1.6rem);
+    min-width: 4.8rem;
+    padding: 12px 24px;
+}
+.section--padding {
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+}
+.section-image-banner-new .container {
+    max-width: 1070px;
+    padding: 0;
+}
+
+@media only screen and (max-width:749px){
+    .section-image-banner-new .banner__box img {
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 750px) {
+    .section--padding {
+        padding-top: var(--section-padding-top);
+        padding-bottom: var(--section-padding-bottom);
+    }
+}
