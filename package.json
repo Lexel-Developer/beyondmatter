@@ -1,0 +1,12 @@
+{
+    "name": "beyondmatter",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:yay-digital/beyondmatter.git",
+    "author": "Marcel Reperich <reperich@yay-digital.de>",
+    "license": "MIT",
+    "scripts": {
+      "dev": "shopify theme dev --store=beyond-matter-essencex.myshopify.com"
+    }
+  }
+  
