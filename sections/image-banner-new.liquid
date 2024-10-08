@@ -3,6 +3,11 @@
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
 
+    --section-padding-left: {{ section.settings.padding_left }}px;
+    --section-padding-right: {{ section.settings.padding_right }}px;
+    --section-margin-top: {{ section.settings.margin_top }}px;
+    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
     {%- if section.settings.image != blank or section.settings.image_2 != blank %}
       {%- assign section_image = section.settings.image | default: section.settings.image_2 -%}
       --image-ratio-percent: {{ 1 | divided_by: section_image.aspect_ratio | times: 100 }}%;
@@ -20,18 +25,7 @@
     --color-shadow: var(--color-foreground);
     --shadow-opacity: 0.3;
   }
-:root {
-    --section-padding-left: {{ section.settings.padding_left }}px;
-    --section-padding-right: {{ section.settings.padding_right }}px;
-    --section-margin-top: {{ section.settings.margin_top }}px;
-    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
-}
-.section-{{ section.id }}-padding {
-  padding-left:var(--section-padding-left);
-  padding-right:var(--section-padding-right);
-  margin-top:var(--section-margin-top);
-  margin-bottom:var(--section-margin-bottom);
-}
+
 @media only screen and (min-width:750px){
   #section-{{ section.id }} .banner__box {
     width:{{ section.settings.boxed_width }}%;
