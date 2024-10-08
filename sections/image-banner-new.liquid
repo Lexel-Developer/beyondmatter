@@ -26,11 +26,16 @@
     --section-margin-top: {{ section.settings.margin_top }}px;
     --section-margin-bottom: {{ section.settings.margin_bottom }}px;
 }
-.section--padding {
-    padding-left:var(--section-padding-left);
-    padding-right:var(--section-padding-right);
-    margin-top:var(--section-margin-top);
-    margin-bottom:var(--section-margin-bottom);
+.section-{{ section.id }}-padding {
+  padding-left:var(--section-padding-left);
+  padding-right:var(--section-padding-right);
+  margin-top:var(--section-margin-top);
+  margin-bottom:var(--section-margin-bottom);
+}
+@media only screen and (min-width:750px){
+  #section-{{ section.id }} .banner__box {
+    width:{{ section.settings.boxed_width }}%;
+  }
 }
   
 {%- endstyle -%}
@@ -52,8 +57,9 @@
   endif
 -%}
 
-<div class="section-image-banner-new section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
+<div id="section-{{ section.id }}" class="section-image-banner-new section-{{ section.id }}-padding section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
+    <div class="{% if section.settings.section_container == true %} container {% endif %}">
     <div id="Banner-{{ section.id }}" class="banner{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.show_text_box %} banner--container{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}">
       {%- if section.settings.image != blank -%}
         <div class="banner__media{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
@@ -134,8 +140,8 @@
         </div>
       {%- endif -%}
       {%- if section.blocks.size > 0 -%}
-        <div class="banner__content banner__content--{{ section.settings.text_box_position }} {% if section.settings.section_container == true %} container {% else %} page-width{% endif %}">
-          <div class="banner__box {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
+        <div class="banner__content banner__content--{{ section.settings.text_box_position }} page-width">
+          <div class="banner__box {% if section.settings.enable_boxed_height == true %}boxed-full-height{% endif %} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
             {%- for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when 'heading' -%}
@@ -144,18 +150,19 @@
                     {% if block.settings.subheading_image != blank %}
                         {{ block.settings.subheading_image | image_url: width:200 | image_tag }}
                     {% else %}
+                    {% if block.settings.subheading != blank %}
                         <p class="banner__subheading{% if block.settings.secondary_color %} banner__subheading--colored{% endif %} {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</p>
                     {% endif %}
+                  {% endif %}
                 {%- when 'text' -%}
                   <div class="banner__text{% if block.settings.secondary_color %} banner__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
                 {%- when 'custom_liquid' -%}
                   <div class="banner__text rte" {{ block.shopify_attributes }}>{{ block.settings.custom_liquid }}</div>
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
-                    {%- if block.settings.button_style_secondary -%}
+                    {%- if block.settings.button_style == "secondary" -%}
                       <a class="button button--cta button--{{ block.settings.button_size }}"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
                         <span class="label">{{ block.settings.button_label | escape }}</span>
-                        {% render 'icon', icon: 'arrow' %}
                       </a>
                     {%- else -%}
                       <a class="button button--{{ block.settings.button_size }}"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
@@ -175,6 +182,7 @@
     </div>
   </div>
 </div>
+</div>
 
 {% schema %}
 {
@@ -186,11 +194,6 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-banner.settings.image.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_2",
-      "label": "t:sections.image-banner.settings.image_2.label"
     },
     {
       "type": "select",
@@ -310,6 +313,10 @@
           "value": "adapt"
         },
         {
+          "label": "350px",
+          "value": "350px"
+        },
+        {
           "label": "t:sections.all.image_ratio.options__2.label",
           "value": "400px"
         },
@@ -348,6 +355,13 @@
       ],
       "default": "650px",
       "label": "t:sections.all.image_ratio.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_boxed_height",
+      "default": false,
+      "label": "Enable boxed height (100%)",
+      "info": "If you enable boxed height, then the settings named (desktop height) top and bottom seams will not work."
     },
     {
       "type": "checkbox",
@@ -401,11 +415,6 @@
       "type": "image_picker",
       "id": "mobile_image",
       "label": "t:sections.image-banner.settings.image.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "mobile_image_2",
-      "label": "t:sections.image-banner.settings.image_2.label"
     },
     {
       "type": "select",
@@ -519,6 +528,16 @@
       "min": 0,
       "max": 100,
       "step": 4,
+      "unit": "t:sections.all.colors.overlay_opacity.unit"
+    },
+    {
+      "type": "range",
+      "id": "boxed_width",
+      "label": "Desktop box width",
+      "default": 50,
+      "min": 30,
+      "max": 100,
+      "step": 2,
       "unit": "t:sections.all.colors.overlay_opacity.unit"
     },
     {
@@ -803,10 +822,20 @@
           "label": "t:sections.all.button_size.label"
         },
         {
-          "type": "checkbox",
-          "id": "button_style_secondary",
-          "default": false,
-          "label": "t:sections.all.button_style_secondary.label"
+          "type": "select",
+          "id": "button_style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            },
+          ],
+          "default": "secondary",
+          "label": "Button style"
         }
       ]
     }
