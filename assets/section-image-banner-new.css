@@ -7,6 +7,8 @@
 
 .section-image-banner-new .banner__heading {
     line-height: 1;
+}
+.section-image-banner-new  .banner__subheading + .banner__heading {
     margin-top: 1.5rem;
 }
 .section-image-banner-new .banner__text {
@@ -20,10 +22,19 @@
     text-transform: inherit;
     letter-spacing: 0;
 }
+.section-image-banner-new .banner__box .button span { text-transform: inherit; letter-spacing: 0; text-align: center; padding-right: 0; }
 .section-image-banner-new .banner__box .button.button--small {
     font-size: max(calc(var(--font-button-size) - 2px), 1.6rem);
     min-width: 4.8rem;
     padding: 12px 24px;
+    font-family: Helvetica;
+    font-weight: 400;
+}
+.section-image-banner-new .banner__box .button.button--small span {
+    font-size: max(calc(var(--font-button-size) - 2px), 1.6rem);
+    min-width: 4.8rem;
+    font-family: Helvetica;
+    font-weight: 400;
 }
 .section--padding {
     padding-top: var(--section-padding-top);
@@ -31,13 +42,66 @@
 }
 .section-image-banner-new .container {
     max-width: 1070px;
+    margin: 0 auto;
     padding: 0;
+}
+.section-image-banner-new .center img {
+    margin: 0 auto;
+}
+.section-image-banner-new .right img {
+    margin-right: 0;
+    margin-left: auto;
+}
+.section-image-banner-new .left img {
+    margin-left: 0;
+    margin-right: auto;
+}
+.section-image-banner-new .banner__text.rte>p:last-child {
+    margin-top: 0;
+}
+
+.section-image-banner-new .banner__text.rte>p:first-child {
+    margin-bottom: 0;
+}
+.section-image-banner-new .banner--container .banner__content {
+    padding: 0;
+}
+.section-image-banner-new .banner--container .banner__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boxed-full-height { height: 100%; }
+
+@media only screen and (min-width:750px){
+    .section-image-banner-new .banner--container .banner__box.right {
+        align-items: flex-end;
+    }
+
+    .section-image-banner-new .banner--container .banner__box.center {
+        align-items: center;
+    }
+
+    .section-image-banner-new .banner--container .banner__box.left {
+        align-items: flex-start;
+    }
 }
 
 @media only screen and (max-width:749px){
-    .section-image-banner-new .banner__box img {
+    .section-image-banner-new .mobile-center img {
         margin: 0 auto;
     }
+    .section-image-banner-new .mobile-right img {
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .section-image-banner-new .mobile-left img {
+        margin-left: 0;
+        margin-right: auto;
+    }
+    .section-image-banner-new .banner__box img {
+        max-width: 200px;
+    }       
 }
 
 
