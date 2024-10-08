@@ -264,12 +264,146 @@
         "margin_top": 0,
         "margin_bottom": 50
       }
+    },
+    "category_grid_NcjRfr": {
+      "type": "category-grid",
+      "blocks": {
+        "category_j3ApxM": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_1.svg",
+            "text": "An deinem <br> \u2028Körper",
+            "link": "",
+            "background_color": "#f3f1f1"
+          }
+        },
+        "category_De69eG": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_2.svg",
+            "text": "An deinem<br>  \u2028Körper",
+            "link": "",
+            "background_color": "#edeaea"
+          }
+        },
+        "category_3CKxAR": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_3.svg",
+            "text": "Im <br>\u2028Smart-Home",
+            "link": "",
+            "background_color": "#f3f1f1"
+          }
+        },
+        "category_tdYJqR": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_4.svg",
+            "text": "Im Büro und<br> Zuhause",
+            "link": "",
+            "background_color": "#edeaea"
+          }
+        },
+        "category_YainVp": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_5.svg",
+            "text": "Im E-Auto und <br>\u2028am E-bike",
+            "link": "",
+            "background_color": "#f3f1f1"
+          }
+        },
+        "category_9zgLUg": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_6.svg",
+            "text": "Für deine<br> Lebensmittel",
+            "link": "",
+            "background_color": "#edeaea"
+          }
+        }
+      },
+      "block_order": [
+        "category_j3ApxM",
+        "category_De69eG",
+        "category_3CKxAR",
+        "category_tdYJqR",
+        "category_YainVp",
+        "category_9zgLUg"
+      ],
+      "settings": {
+        "subtitle": "<em>Unsere Kategrorien<\/em>",
+        "title": "So kannst Du Beyond Matter verwenden:",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "enable_full_width": false,
+        "primary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
+        "category_column_desktop": 3,
+        "category_column_mobile": "1",
+        "padding_top": 150,
+        "padding_bottom": 160,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "quote_with_image_mTgYVk": {
+      "type": "quote-with-image",
+      "blocks": {
+        "heading_cMXAYd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wir verbinden Technik mit \u2028der heil;enden Kraft der Natur. Wissenschaft-lich bewiesen und ein Leben lang.",
+            "heading_primary_color": "#3c3c3c",
+            "heading_secondary_color": "#f4f2f2",
+            "heading_size": "x-large",
+            "heading_tag": "h2"
+          }
+        },
+        "subheading_UUV8x9": {
+          "type": "subheading",
+          "settings": {
+            "subheading_image": "shopify:\/\/shop_images\/Group_10.svg",
+            "subheading": "Add a tagline",
+            "subheading_size": "h5",
+            "secondary_color": false
+          }
+        },
+        "block_image_ALTzza": {
+          "type": "block_image",
+          "settings": {
+            "cvr_image": "shopify:\/\/shop_images\/image-4.png"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cMXAYd",
+        "subheading_UUV8x9",
+        "block_image_ALTzza"
+      ],
+      "settings": {
+        "section_backgroud": "#d4cfcc",
+        "image": "shopify:\/\/shop_images\/image-3.png",
+        "full_width": true,
+        "section_container": true,
+        "padding_top": 120,
+        "padding_bottom": 120,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
     "slideshow",
     "image_banner_new_UFaEY7",
     "image_banner_new_FzymdG",
-    "image_banner_new_hQtiGn"
+    "image_banner_new_hQtiGn",
+    "category_grid_NcjRfr",
+    "quote_with_image_mTgYVk"
   ]
 }

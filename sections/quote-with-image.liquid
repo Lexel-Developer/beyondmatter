@@ -1,0 +1,323 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    --section-padding-left: {{ section.settings.padding_left }}px;
+    --section-padding-right: {{ section.settings.padding_right }}px;
+    --section-margin-top: {{ section.settings.margin_top }}px;
+    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+    --section-background: {{ section.settings.section_backgroud }};
+  }
+
+{%- for block in section.blocks -%}
+    {%- case block.type -%}
+        {%- when 'heading' -%}
+            .quote-{{ section.id }} .quote_main__heading {
+                color:{{ block.settings.heading_primary_color }};
+            }
+            .quote-{{ section.id }} .highlighted_split {
+                color:{{ block.settings.heading_secondary_color }};
+            }
+    {% endcase %}
+{% endfor %}
+  
+{%- endstyle -%}
+
+
+{{ 'section-quote-with-image.css' | asset_url | stylesheet_tag }}
+
+<div class="section--padding quote-with-image-wrapper">
+    <div class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
+        <div class="{% if section.settings.section_container == true %} container {% endif %}">
+            <div class="quote-with-image-cvr quote-{{ section.id }}">
+                <div class="quote-text-cvr">
+                    {%- for block in section.blocks -%}
+                        {%- case block.type -%}
+                            {%- when 'heading' -%}
+                                {% capture splittedheading %}{{ block.settings.heading | split: ';' | first }}<span class="highlighted_split">{{ block.settings.heading | split: ';' | last }}</span>{% endcapture %}
+                                <{{ block.settings.heading_tag }} class="quote_main__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ splittedheading }}</{{ block.settings.heading_tag }}>
+                            {%- when 'subheading' -%}
+                            <div class="subheading_cvr">
+                                {% if block.settings.subheading_image != blank %}
+                                    {{ block.settings.subheading_image | image_url: width:200 | image_tag }}
+                                {% else %}
+                                    {% if block.settings.subheading != blank %}
+                                        <p class="quote__subheading{% if block.settings.secondary_color %} banner__subheading--colored{% endif %} {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</p>
+                                    {% endif %}
+                                {% endif %}
+                            </div>
+                            {%- when 'block_image' -%}
+                                {% if block.settings.cvr_image != blank %}
+                                    <div class="block_cvr_image">
+                                        {{ block.settings.cvr_image | image_url: width: 500 | image_tag }}
+                                    </div>
+                                {% endif %}
+                        {% endcase %}           
+                    {% endfor %}
+                </div>
+                {% if section.settings.image != blank %}
+                    <div class="quote-image-cvr">
+                        {{ section.settings.image | image_url: width: 500 | image_tag }}
+                    </div>
+                {% else %}
+                    <div class="quote-image-cvr">
+                        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder image-animate' }}  
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Quote With Image",
+  "tag": "section",
+  "class": "section quote-with-image-section",
+  "settings": [
+    {
+        "type": "color",
+        "id": "section_backgroud",
+        "label": "Section background color"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+    },
+    {
+        "type": "checkbox",
+        "id": "full_width",
+        "default": true,
+        "label": "t:sections.all.full_width.label"
+    },
+    {
+        "type": "checkbox",
+        "id": "section_container",
+        "default": false,
+        "label": "Make content container"
+    },
+    {
+        "type": "header",
+        "content": "t:sections.all.padding.header.content"
+    },
+    {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 200,
+        "step": 10,
+        "unit": "t:sections.all.padding.padding_top.unit",
+        "label": "t:sections.all.padding.padding_top.label",
+        "default": 40
+    },
+    {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 200,
+        "step": 10,
+        "unit": "t:sections.all.padding.padding_bottom.unit",
+        "label": "t:sections.all.padding.padding_bottom.label",
+        "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "label": "Left padding",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_right",
+      "label": "Right padding",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px"
+    },
+    {   
+      "type": "range",
+      "id": "margin_top",
+      "label": "Top margin",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Bottom margin",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-banner.blocks.heading.name",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "t:sections.all.heading.label"
+        },
+        {
+          "type": "color",
+          "id": "heading_primary_color",
+          "default": "#000000",
+          "label": "Primary color"
+        },
+        {
+          "type": "color",
+          "id": "heading_secondary_color",
+          "default": "#000000",
+          "label": "Secondary color"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            },
+            {
+              "value": "x-large",
+              "label": "X large"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "options": [
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_tag.options__1.label"
+            },
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_tag.options__2.label"
+            },
+            {
+              "value": "h3",
+              "label": "t:sections.all.heading_tag.options__3.label"
+            },
+            {
+              "value": "h4",
+              "label": "t:sections.all.heading_tag.options__4.label"
+            },
+            {
+              "value": "h5",
+              "label": "t:sections.all.heading_tag.options__5.label"
+            },
+            {
+              "value": "h6",
+              "label": "t:sections.all.heading_tag.options__6.label"
+            },
+            {
+              "value": "div",
+              "label": "t:sections.all.heading_tag.options__7.label"
+            },
+            {
+              "value": "span",
+              "label": "t:sections.all.heading_tag.options__8.label"
+            },
+            {
+              "value": "p",
+              "label": "t:sections.all.heading_tag.options__9.label"
+            }
+          ],
+          "default": "h2",
+          "label": "t:sections.all.heading_tag.label",
+          "info": "t:sections.all.heading_tag.info"
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "name": "t:sections.image-banner.blocks.subheading.name",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "subheading_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "default": "Add a tagline",
+          "label": "t:sections.all.subheading.label"
+        },
+        {
+          "type": "select",
+          "id": "subheading_size",
+          "options": [
+            {
+              "value": "h5",
+              "label": "t:sections.all.subheading_size.options__1.label"
+            },
+            {
+              "value": "h4",
+              "label": "t:sections.all.subheading_size.options__2.label"
+            },
+            {
+              "value": "h3",
+              "label": "t:sections.all.subheading_size.options__3.label"
+            }
+          ],
+          "default": "h5",
+          "label": "t:sections.all.subheading_size.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "secondary_color",
+          "default": false,
+          "label": "t:sections.all.secondary_color.label"
+        }
+      ]
+    },
+    {
+      "type": "block_image",
+      "name": "Block image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "cvr_image",
+          "label": "Image"
+        }
+      ]
+    },
+],
+  "presets": [
+    {
+      "name": "Quote With Image"
+    }
+  ],
+}
+{% endschema %}
