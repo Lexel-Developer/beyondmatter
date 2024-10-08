@@ -3063,7 +3063,6 @@ details[open].menu-opening > .header__icon--menu span {
   .section--padding {
     padding-top: var(--section-padding-top);
     padding-bottom: var(--section-padding-bottom);
-    padding-left:var(--section-padding-left);
     margin-top:var(--section-margin-top);
     margin-bottom: var(--section-margin-bottom);
   }
