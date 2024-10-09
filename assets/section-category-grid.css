@@ -1,7 +1,7 @@
 .category-grid {
     position: relative;
 }
-.category-grid .container {
+.category-grid .page-width .container {
     max-width: 1070px;
     margin: 0 auto;
 }

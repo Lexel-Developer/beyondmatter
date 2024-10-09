@@ -9,21 +9,25 @@
     --section-margin-bottom: {{ section.settings.margin_bottom }}px;
 
     --primary-background: {{ section.settings.primary_background }};
-    --secondary-background: {{ section.settings.secondary_background }}
+    --secondary-background: {{ section.settings.secondary_background }};
+    --box-background: {{ section.settings.box_background }};
+    
+    --color-heading: {{ section.settings.title_color.red }}, {{ section.settings.title_color.green }}, {{ section.settings.title_color.blue }};
+    
   }
 {%- endstyle -%}
 
-{{ 'section-category-grid.css' | asset_url | stylesheet_tag }}
+{{ 'section-column-grid.css' | asset_url | stylesheet_tag }}
 
   <div class="section--padding">
-    <div class="{% if section.settings.enable_full_width == false %}page-width{% endif %}">
-      <div class="container">
+    <div class="{% if section.settings.full_width == false %}page-width--{{ section.settings.page_width }}{% endif %}">
+      <div class="{% if section.settings.show_inside_box == true %} enable_big_box{% endif %}">
 
         {% if section.settings.subtitle != blank or section.settings.subtitle != blank %}
           <div class="title-wrapper {{ section.settings.heading_alignment }}">
             <div class="">
               {% if section.settings.subtitle != blank %}
-                <h3 class="h1 sub_title">{{ section.settings.subtitle }}</h3>
+                <h3 class="h1 sub_title" style="color: {{ section.settings.sub_text_color }};">{{ section.settings.subtitle }}</h3>
               {% endif %}
               {% if section.settings.title != blank %}
                 <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</{{ section.settings.heading_tag }}>
@@ -32,18 +36,36 @@
           </div>
         {% endif %}
 
-        <div class="category-grid-row grid grid--2-col{% if section.settings.category_column_mobile == '1' %} grid--1-col-mobile{% endif %} grid--rigid grid--{{ section.settings.category_column_desktop }}-col-desktop">
+        <div class="column-grid-row grid grid--2-col{% if section.settings.category_column_mobile == '1' %} grid--1-col-mobile{% endif %} grid--rigid grid--{{ section.settings.category_column_desktop }}-col-desktop">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
-              {%- when 'category' -%}
-                <a {% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="grid__item" style="--box-background: {{ block.settings.background_color }};" {{ block.shopify_attributes }}>
-                  {% if block.settings.icon != blank %}
-                    {{ block.settings.icon | image_url: width: 100 | image_tag: widths: '100, 200' }}
-                  {% endif %}
-                  {% if block.settings.text != blank %}
-                    <span>{{ block.settings.text }}</span>
-                  {% endif %}
-                </a>
+              {%- when 'column' -%}
+                <style>
+                    #block--{{ block.id }} {
+                        --color-heading: {{ block.settings.title_color.red }},{{ block.settings.title_color.green }},{{ block.settings.title_color.blue }};
+                        --color-foreground: {{ block.settings.text_color.red }},{{ block.settings.text_color.green }},{{ block.settings.text_color.blue }};
+                        --box-background: {{ block.settings.background_color.red }},{{ block.settings.background_color.green }},{{ block.settings.background_color.blue }};
+                        --background-alpha: {% if block.settings.background_opacity < 100 %} 0.{{ block.settings.background_opacity }}; {% else %} 1{% endif %}
+
+                        color: rgb(var(--color-foreground));
+                    }
+                </style>
+                <div id="block--{{ block.id }}" class="grid__item" {{ block.shopify_attributes }}>
+                    <div class="column_grid_top">
+                        {% if block.settings.title != blank %}
+                            <h4 class="{{ block.settings.heading_size }}">{{ block.settings.title }}</h4>
+                        {% endif %}
+                        {% if block.settings.text != blank %}
+                            {{ block.settings.text }}
+                        {% endif %}
+                    </div>
+                    {% if block.settings.link_text != blank and block.settings.link != blank %}
+                        <a {% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="column-grid-link">
+                            <span class="label">{{ block.settings.link_text }}</span>
+                            {% render 'icon', icon: 'arrow' %}
+                        </a>
+                    {% endif %}
+                </div>
             {%- endcase -%}
           {%- endfor -%}
         </div>
@@ -54,10 +76,44 @@
 
 {% schema %}
 {
-  "name": "Category Grid",
+  "name": "Column grid",
   "tag": "section",
-  "class": "section category-grid",
+  "class": "section column-grid",
   "settings": [
+    {
+      "type": "checkbox",
+      "label": "t:sections.all.full_width.label",
+      "id": "full_width",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
     {
       "type": "inline_richtext",
       "label": "Subtitle",
@@ -157,8 +213,8 @@
     },
     {
       "type": "checkbox",
-      "label": "t:sections.all.full_width.label",
-      "id": "enable_full_width",
+      "label": "Show inside box?",
+      "id": "show_inside_box",
       "default": false
     },
     {
@@ -176,6 +232,23 @@
       "label": "Secondary Background",
       "id": "secondary_background",
       "default": "#d4cfcc"
+    },
+    {
+      "type": "color",
+      "label": "Box background",
+      "id": "box_background",
+      "default": "#ffffff",
+      "info": "Box background color apply only when 'Show inside box?' setting is true"
+    },
+    {
+      "type": "color",
+      "label": "Title color",
+      "id": "title_color"
+    },
+    {
+      "type": "color",
+      "label": "Sub title color",
+      "id": "sub_text_color"
     },
     {
       "type": "header",
@@ -274,19 +347,46 @@
   ],
   "blocks": [
     {
-      "type": "category",
-      "name": "Category",
+      "type": "column",
+      "name": "Column",
       "settings": [
         {
-          "type": "image_picker",
-          "label": "Icon",
-          "id": "icon"
+          "type": "text",
+          "label": "Title",
+          "id": "title",
+          "default": "Column title"
+        },
+        {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+                {
+                "value": "h4",
+                "label": "t:sections.all.heading_size.options__1.label"
+                },
+                {
+                "value": "h3",
+                "label": "t:sections.all.heading_size.options__2.label"
+                },
+                {
+                "value": "h2",
+                "label": "t:sections.all.heading_size.options__3.label"
+                }
+            ],
+            "default": "h3",
+            "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "richtext",
+          "label": "Text",
+          "id": "text",
+          "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>"
         },
         {
           "type": "text",
-          "label": "Text",
-          "id": "text",
-          "default": "Category"
+          "label": "Link text",
+          "id": "link_text",
+          "default": "Zu unseren Studien"
         },
         {
           "type": "url",
@@ -294,26 +394,51 @@
           "id": "link"
         },
         {
+            "type": "header",
+            "content": "Block color settings"
+        },
+        {
+          "type": "color",
+          "label": "Title Color",
+          "id": "title_color",
+          "default": "#BAAB9E"
+        },
+        {
+          "type": "color",
+          "label": "Text Color",
+          "id": "text_color",
+          "default": "#F4F2F2"
+        },
+        {
           "type": "color",
           "label": "Background Color",
           "id": "background_color",
-          "default": "#ffffff"
+          "default": "#D9D9D9"
+        },
+        {
+            "type": "range",
+            "label": "Background opacity",
+            "id": "background_opacity",
+            "default": 100,
+            "min": 0,
+            "max": 100,
+            "step": 1
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Category Grid",
+      "name": "Column grid",
       "blocks": [
         {
-          "type": "category"
+          "type": "column"
         },
         {
-          "type": "category"
+          "type": "column"
         },
         {
-          "type": "category"
+          "type": "column"
         }
       ]
     }

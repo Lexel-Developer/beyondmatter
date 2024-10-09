@@ -1,0 +1,108 @@
+.column-grid {
+    position: relative;
+}
+.column-grid .page-width .container {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+.column-grid .title-wrapper .sub_title {
+    margin: 0 0 4px;
+}
+.column-grid:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 58%;
+    pointer-events: none;
+    background-color: var(--primary-background);
+}
+.column-grid:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 42%;
+    pointer-events: none;
+    background-color: var(--secondary-background);
+}
+.column-grid>* {
+    position: relative;
+    z-index: 1;
+}
+.column-grid-row {
+    --grid-horizontal-spacing: 0px;
+    margin: 0;
+}
+.column-grid-row .grid__item {
+    padding: 56px 32px 63px;
+    background-color: rgba(var(--box-background),var(--background-alpha));
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    letter-spacing: 0;
+    justify-content: space-between;
+}
+.column-grid-row img {
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
+}
+.column-grid-row h4 {
+    margin: 0 0 4px;
+}
+.column-grid-row .grid__item p {
+    margin-top: 0;
+}
+.column-grid-row .grid__item p:last-child {
+    margin: 0;
+}
+.column-grid .title-wrapper {
+    padding: 0 32px;
+}
+.column-grid .column-grid-link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    align-self: flex-start;
+}
+.column-grid .column-grid-link svg.icon {
+    width: 15px;
+    height: auto;
+}
+.column_grid_top:has(+.column-grid-link) {
+    margin-bottom: 157px;
+}
+.enable_big_box .title-wrapper {
+    padding: 0;
+    margin-bottom: 34px;
+}
+.enable_big_box .column-grid-row .grid__item {
+    padding: 0;
+}
+.enable_big_box .column-grid-row {
+    --grid-horizontal-spacing: 32px;
+    row-gap: var(--grid-horizontal-spacing);
+}
+.enable_big_box {
+    padding: 80px;
+    background-color: var(--box-background);
+}
+.enable_big_box .column_grid_top h4 {
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 989px) {
+    .enable_big_box {
+        padding: 30px;
+    }
+}
+
+
+
