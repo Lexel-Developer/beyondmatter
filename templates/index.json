@@ -439,6 +439,135 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "text_with_icon_box_Px6UnJ": {
+      "type": "text-with-icon-box",
+      "blocks": {
+        "icon_with_text_block_FEYxzR": {
+          "type": "icon_with_text_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/weather-sun_1.png",
+            "text": "Bessere Erholung\u2028",
+            "block_description": "<p>Du regenerierst auch in Pausen besser, wenn dein Körper keinem Elektrosmog ausgesetzt ist.<\/p>",
+            "block_background": "#baab9e",
+            "background_opacity": 60
+          }
+        },
+        "icon_with_text_block_AyBEGM": {
+          "type": "icon_with_text_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-cr.png",
+            "text": "Mehr Energie\u2028",
+            "block_description": "<p>Du fühlst dich fitter und hast mehr Leistung bereit, da kein Elektro-smog dein Energie-Level senk<\/p>",
+            "block_background": "#baab9e",
+            "background_opacity": 80
+          }
+        },
+        "icon_with_text_block_zeWDcH": {
+          "type": "icon_with_text_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/emoji-flower-thankful_1.png",
+            "text": "Mehr Flow",
+            "block_description": "<p>Du kommst einfacher in den Flow-Zustand und bist weniger gestresst und produktiver.<\/p>",
+            "block_background": "#baab9e",
+            "background_opacity": 100
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_block_FEYxzR",
+        "icon_with_text_block_AyBEGM",
+        "icon_with_text_block_zeWDcH"
+      ],
+      "settings": {
+        "primary_background": "#ede9e9",
+        "primary_background_opacity": 100,
+        "secondary_background": "#ede9e9",
+        "secondary_background_opacity": 100,
+        "icon_with_box_layout": "style-1",
+        "section_container_background": "",
+        "subtitle": "<em>Unsere Werte<\/em>",
+        "title": "Wir verbinden die Vorteile technischer Geräte mit der heilenden Kraft der Natur.",
+        "heading_size": "h1",
+        "description": "<p><strong>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/strong><\/p>",
+        "text_size": "typeset",
+        "desktop_image_width": 300,
+        "mobile_image_width": 300,
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "enable_full_width": false,
+        "padding_top": 120,
+        "padding_bottom": 160,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "text_with_icon_box_KeRfTa": {
+      "type": "text-with-icon-box",
+      "blocks": {
+        "icon_with_text_block_YJKtYa": {
+          "type": "icon_with_text_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon.svg",
+            "text": "Kopfschmerzen",
+            "block_description": "",
+            "block_background": "#f4f2f2",
+            "background_opacity": 90
+          }
+        },
+        "icon_with_text_block_d4nFGm": {
+          "type": "icon_with_text_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_1_e27e748c-9305-4941-adbb-b8351febf2aa.svg",
+            "text": "Schlafstörungen",
+            "block_description": "",
+            "block_background": "#f4f2f2",
+            "background_opacity": 80
+          }
+        },
+        "icon_with_text_block_MabfpF": {
+          "type": "icon_with_text_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_2_66cf1ac4-7f24-4763-a1f8-d6da1a550d98.svg",
+            "text": "Antriebslosigkeit",
+            "block_description": "",
+            "block_background": "#f4f2f2",
+            "background_opacity": 70
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_block_YJKtYa",
+        "icon_with_text_block_d4nFGm",
+        "icon_with_text_block_MabfpF"
+      ],
+      "settings": {
+        "primary_background": "#d4cfcc",
+        "primary_background_opacity": 80,
+        "secondary_background": "#d4cfcc",
+        "secondary_background_opacity": 100,
+        "icon_with_box_layout": "style-2",
+        "section_container_background": "#baab9e",
+        "subtitle": "<em>Jetzt passende Lösung finden<\/em>",
+        "title": "Was führt dich zu uns?",
+        "heading_size": "h1",
+        "description": "<p><strong>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/strong><\/p>",
+        "text_size": "typeset",
+        "main_image": "shopify:\/\/shop_images\/mask-group-image.svg",
+        "desktop_image_width": 300,
+        "mobile_image_width": 300,
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "enable_full_width": false,
+        "padding_top": 120,
+        "padding_bottom": 160,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -448,6 +577,8 @@
     "image_banner_new_hQtiGn",
     "category_grid_NcjRfr",
     "quote_with_image_mTgYVk",
-    "featured_collection_tWYVBg"
+    "featured_collection_tWYVBg",
+    "text_with_icon_box_Px6UnJ",
+    "text_with_icon_box_KeRfTa"
   ]
 }
