@@ -396,6 +396,49 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "featured_collection_tWYVBg": {
+      "type": "featured-collection",
+      "settings": {
+        "primary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
+        "poroduct_grid_background": "#f6f6f6",
+        "subtitle": "<em>Unsere Kategrorien<\/em>",
+        "title": "So kannst Du Beyond Matter verwenden:",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "collection": "bestseller",
+        "products_to_show": 3,
+        "products_to_row": 3,
+        "horizontal_scroll": false,
+        "show_view_all": false,
+        "show_divider": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_position": "top center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "secondary_image_max": 1,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_quick_buy": true,
+        "show_datails_button": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "cart_buttons_outline": true,
+        "details_buttons_outline": false,
+        "button_text_color": "#3c3c3c",
+        "button_background_color": "#d4cfcc",
+        "padding_top": 150,
+        "padding_bottom": 135,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -404,6 +447,7 @@
     "image_banner_new_FzymdG",
     "image_banner_new_hQtiGn",
     "category_grid_NcjRfr",
-    "quote_with_image_mTgYVk"
+    "quote_with_image_mTgYVk",
+    "featured_collection_tWYVBg"
   ]
 }

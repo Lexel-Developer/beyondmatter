@@ -332,6 +332,7 @@
         </div>
       {% endif %}
       <a href="{{ card_url }}"{% if disable_image_click %} onclick="if (!theme.config.mqlSmall) { return false; }"{% endif %} class="card__media media-wrapper" tabindex="-1">
+        <span class="product-media-tag">Reduziert</span>
         <div {% if card_product_media.media_type == 'video' or card_product_media.media_type == 'external_video' %} style="display: none"{% endif %} class="card--image-animate image-animate media media--{{ media_size }} media--hover-effect{% unless enable_image_fill %} media--image-contain{% endunless %}"
           {%- if media_size == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif -%}
           >
@@ -390,6 +391,10 @@
         {{ card_product.title | escape }}
       </a>
 
+      <div class="product-description">
+        <p>Transformiert elektrosmog-induzierten Stress und fördert erholsamen Schlaf.</p>
+      </div>
+
       {% comment %} TODO: metafield {% endcomment %}
       <span class="caption-large light">{{ block.settings.text | escape }}</span>
 
@@ -432,7 +437,7 @@
   
         {%- if show_quick_buy -%}
           {%- if card_product.variants.size == 1 -%}
-            <add-to-cart class="{{ button_class }}" data-variant-id="{{ card_product.selected_or_first_available_variant.id }}">
+            <add-to-cart class="{{ button_class }} {% if section.settings.cart_buttons_outline %}button--outline{% endif %}" data-variant-id="{{ card_product.selected_or_first_available_variant.id }}">
               {%- liquid
                 if card_product.template_suffix != 'pre-order'
                   echo 'products.product.add_to_cart' | t
@@ -440,9 +445,14 @@
                   echo 'products.product.pre_order' | t
                 endif
               -%}
-              <svg class="icon icon-cart" aria-hidden="true" focusable="false">
-                <use href="#icon-cart"></use>
-              </svg>
+              <svg class="icon icon-cart" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.29628 7.94089C4.32622 7.68939 4.5395 7.5 4.79278 7.5H19.2072C19.4605 7.5 19.6738 7.68939 19.7037 7.94089L21.2373 20.8227C21.3435 21.7151 20.6465 22.5 19.7478 22.5H4.25222C3.3535 22.5 2.6565 21.7151 2.76274 20.8227L4.29628 7.94089Z" stroke="#3C3C3C"/>
+                <mask id="path-2-inside-1_8071_5263" fill="white">
+                <path d="M7 6C7 3.23858 9.23858 1 12 1C14.7614 1 17 3.23858 17 6V8H7V6Z"/>
+                </mask>
+                <path d="M17 8V9H18V8H17ZM7 8H6V9H7V8ZM16 6V8H18V6H16ZM17 7H7V9H17V7ZM8 8V6H6V8H8ZM12 2C14.2091 2 16 3.79086 16 6H18C18 2.68629 15.3137 0 12 0V2ZM12 0C8.68629 0 6 2.68629 6 6H8C8 3.79086 9.79086 2 12 2V0Z" fill="#3C3C3C" mask="url(#path-2-inside-1_8071_5263)"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9999 11.5C12.276 11.5 12.4999 11.7239 12.4999 12L12.4999 16.7929L14.8283 14.4645C15.0235 14.2692 15.3401 14.2692 15.5354 14.4645C15.7306 14.6597 15.7306 14.9763 15.5354 15.1716L12.3534 18.3536C12.1581 18.5488 11.8416 18.5488 11.6463 18.3536L8.46432 15.1716C8.26906 14.9763 8.26906 14.6597 8.46432 14.4645C8.65958 14.2692 8.97616 14.2692 9.17142 14.4645L11.4999 16.7929L11.4999 12C11.4999 11.7239 11.7237 11.5 11.9999 11.5Z" fill="#3C3C3C"/>
+              </svg>                
             </add-to-cart>
           {%- else -%}
             {%- if settings.quick_view_enabled and enable_quick_view -%}
@@ -462,9 +472,14 @@
             {%- endif -%}
           {%- endif -%}
         {%- endif -%}
-      {%- else -%}
+        {%- else -%}
         <button class="button button--small button--soldout" type="button" disabled="disabled">{{ 'products.product.sold_out' | t }}</button>
       {%- endif -%}
+      {% if section.settings.show_datails_button == true %}
+        <div class="products-details-btn">
+          <a class="button {% if section.settings.details_buttons_outline %}button--outline{% endif %} button--small" href="{{ card_url_with_default }}">Details</a>
+        </div>
+      {% endif %}
     </div>
   </div>
 
