@@ -41,6 +41,7 @@
     margin: 0;
     line-height: 1;
     margin-bottom: 24px;
+    letter-spacing: 0;
 }
 .subheading_cvr {
     max-width: 253px;
@@ -49,6 +50,7 @@
 .subheading_cvr img {
     width: 100%;
     height: auto;
+    opacity: 0.5;
 }
 
 .quote-with-image-section .quote-with-image-wrapper {
@@ -57,7 +59,7 @@
 
 @media only screen and (min-width:1025px){
     .quote-with-image-cvr {
-        padding-left: 108px;
+        padding-left: 58px;
         padding-right: 32px;
     }
 }

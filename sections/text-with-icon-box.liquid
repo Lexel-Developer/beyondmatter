@@ -32,8 +32,8 @@
 {{ 'section-text-with-icon-box.css' | asset_url | stylesheet_tag }}
 
 <div class="section--{{ section.id }} section--padding {% if section.settings.icon_with_box_layout == "style-2" %}icon-with-text-style-2{% endif %}">
-  <div class="{% if section.settings.enable_full_width == false %}page-width{% endif %}">
-    <div class="{% if section.settings.section_container_background != blank %}container-bg-cvr{% endif %} container">
+  <div class="page-width--{{ section.settings.page_width }}">
+    <div class="{% if section.settings.section_container_background != blank %}container-bg-cvr{% endif %}">
       <div class="text-with-icon-grid-row grid grid--1-col grid--2-col-desktop">
         <div class="grid__item">
           {% if section.settings.subtitle != blank or section.settings.subtitle != blank %}
@@ -101,6 +101,34 @@
   "tag": "section",
   "class": "section text-with-icon-box",
   "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
     {
     "type": "color",
     "label": "Primary Background",
@@ -356,8 +384,8 @@
       "id": "margin_top",
       "default": 0,
       "min": 0,
-      "max": 100,
-      "step": 1,
+      "max": 200,
+      "step": 2,
       "unit": "px"
     },
     {
@@ -366,8 +394,8 @@
       "id": "margin_bottom",
       "default": 0,
       "min": 0,
-      "max": 100,
-      "step": 1,
+      "max": 200,
+      "step": 2,
       "unit": "px"
     }
   ],

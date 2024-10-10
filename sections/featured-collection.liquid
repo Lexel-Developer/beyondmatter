@@ -31,8 +31,7 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 
 <div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
-  <div class="page-width">
-    <div class="container">
+  <div class="page-width--{{ section.settings.page_width }}">
       {% if section.settings.subtitle != blank or section.settings.subtitle != blank %}
         <div class="title-wrapper {{ section.settings.heading_alignment }}">
           <div class="">
@@ -134,7 +133,6 @@
           </a>
         </div>
       {%- endif -%}
-    </div>
   </div>  
 </div>
 
@@ -144,6 +142,34 @@
   "tag": "section",
   "class": "section featured-collection-section",
   "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
     {
     "type": "color",
     "label": "Primary Background",
@@ -159,7 +185,8 @@
     {
       "type": "color",
       "id": "poroduct_grid_background",
-      "label": "Product background color"
+      "label": "Product background color",
+      "default": "#ffffff"
     },  
     {
       "type": "header",
@@ -486,12 +513,14 @@
     {
       "type": "color",
       "id": "button_text_color",
-      "label": "Button text color"
+      "label": "Button text color",
+      "default":"#3C3C3C"
     },
     {
       "type": "color",
       "id": "button_background_color",
-      "label": "Button background color"
+      "label": "Button background color",
+      "default":"#D4CFCC"
     },
     {
       "type": "header",
@@ -502,7 +531,7 @@
       "id": "padding_top",
       "min": 0,
       "max": 200,
-      "step": 5,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
       "label": "t:sections.all.padding.padding_top.label",
       "default": 40
@@ -512,7 +541,7 @@
       "id": "padding_bottom",
       "min": 0,
       "max": 200,
-      "step":5,
+      "step":2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
       "label": "t:sections.all.padding.padding_bottom.label",
       "default": 40
@@ -523,8 +552,8 @@
     "label": "Left padding",
     "default": 0,
     "min": 0,
-    "max": 200,
-    "step": 10,
+    "max": 100,
+    "step": 1,
     "unit": "px"
     },
     {
@@ -533,8 +562,8 @@
     "label": "Right padding",
     "default": 0,
     "min": 0,
-    "max": 200,
-    "step": 10,
+    "max": 100,
+    "step": 1,
     "unit": "px"
     },
     {   
@@ -544,7 +573,7 @@
     "default": 0,
     "min": 0,
     "max": 200,
-    "step": 10,
+    "step": 2,
     "unit": "px"
     },
     {
@@ -554,7 +583,7 @@
     "default": 0,
     "min": 0,
     "max": 200,
-    "step": 10,
+    "step": 2,
     "unit": "px"
     }
   ],

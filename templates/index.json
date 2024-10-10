@@ -1,12 +1,3 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
     "image_banner_new_UFaEY7": {
@@ -15,7 +6,7 @@
         "subheading_LKxrHA": {
           "type": "subheading",
           "settings": {
-            "subheading_image": "shopify://shop_images/Group_10.svg",
+            "subheading_image": "shopify:\/\/shop_images\/Group_10.svg",
             "subheading": "Add a tagline",
             "subheading_size": "h5",
             "secondary_color": false
@@ -32,7 +23,7 @@
         "text_CRpQQU": {
           "type": "text",
           "settings": {
-            "text": "<p>Schutz vor Elektrosmog von mobilen Endgeräten.</p>",
+            "text": "<p>Schutz vor Elektrosmog von mobilen Endgeräten.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -42,7 +33,7 @@
           "settings": {
             "button_label": "Ava entdecken",
             "button_link": "#",
-            "button_size": "small",
+            "button_size": "medium",
             "button_style": "primary"
           }
         }
@@ -54,15 +45,14 @@
         "button_xGYPDA"
       ],
       "settings": {
-        "image": "shopify://shop_images/banner-image.png",
+        "page_width": "full-width",
+        "image": "shopify:\/\/shop_images\/banner-image.png",
         "image_position": "center center",
         "text_box_position": "middle-left",
         "text_alignment": "left",
         "image_ratio": "adapt",
         "enable_boxed_height": false,
         "show_text_box": false,
-        "full_width": true,
-        "section_container": false,
         "show_divider": false,
         "image_behavior": "none",
         "mobile_text_alignment": "center",
@@ -86,15 +76,14 @@
     "image_banner_new_FzymdG": {
       "type": "image-banner-new",
       "settings": {
-        "image": "shopify://shop_images/image-2.png",
+        "page_width": "full-width",
+        "image": "shopify:\/\/shop_images\/image-2.png",
         "image_position": "center center",
         "text_box_position": "middle-left",
         "text_alignment": "left",
         "image_ratio": "adapt",
         "enable_boxed_height": false,
         "show_text_box": true,
-        "full_width": true,
-        "section_container": false,
         "show_divider": false,
         "image_behavior": "none",
         "mobile_text_alignment": "center",
@@ -137,7 +126,7 @@
         "text_BCHff9": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Anhänger für den Körper</strong></p><p>Aus EssenceX Schungit.</p>",
+            "text": "<p><strong>Anhänger für den Körper<\/strong><\/p><p>Aus EssenceX Schungit.<\/p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -159,15 +148,14 @@
         "button_9racnq"
       ],
       "settings": {
-        "image": "shopify://shop_images/Mask_group.png",
+        "page_width": "standard",
+        "image": "shopify:\/\/shop_images\/Mask_group.png",
         "image_position": "center center",
         "text_box_position": "middle-left",
         "text_alignment": "left",
         "image_ratio": "adapt",
         "enable_boxed_height": true,
         "show_text_box": true,
-        "full_width": true,
-        "section_container": true,
         "show_divider": false,
         "image_behavior": "none",
         "mobile_text_alignment": "center",
@@ -182,8 +170,8 @@
         "boxed_width": 44,
         "padding_top": 0,
         "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0,
+        "padding_left": 15,
+        "padding_right": 15,
         "margin_top": 0,
         "margin_bottom": 50
       }
@@ -194,8 +182,8 @@
         "category_j3ApxM": {
           "type": "category",
           "settings": {
-            "icon": "shopify://shop_images/icon_1.svg",
-            "text": "An deinem <br>  Körper",
+            "icon": "shopify:\/\/shop_images\/icon_1.svg",
+            "text": "An deinem <br> \u2028Körper",
             "link": "",
             "background_color": "#f3f1f1"
           }
@@ -203,8 +191,8 @@
         "category_De69eG": {
           "type": "category",
           "settings": {
-            "icon": "shopify://shop_images/icon_2.svg",
-            "text": "An deinem<br>   Körper",
+            "icon": "shopify:\/\/shop_images\/icon_2.svg",
+            "text": "An deinem<br>  \u2028Körper",
             "link": "",
             "background_color": "#edeaea"
           }
@@ -212,8 +200,8 @@
         "category_3CKxAR": {
           "type": "category",
           "settings": {
-            "icon": "shopify://shop_images/icon_3.svg",
-            "text": "Im <br> Smart-Home",
+            "icon": "shopify:\/\/shop_images\/icon_3.svg",
+            "text": "Im <br>\u2028Smart-Home",
             "link": "",
             "background_color": "#f3f1f1"
           }
@@ -221,7 +209,7 @@
         "category_tdYJqR": {
           "type": "category",
           "settings": {
-            "icon": "shopify://shop_images/icon_4.svg",
+            "icon": "shopify:\/\/shop_images\/icon_4.svg",
             "text": "Im Büro und<br> Zuhause",
             "link": "",
             "background_color": "#edeaea"
@@ -230,8 +218,8 @@
         "category_YainVp": {
           "type": "category",
           "settings": {
-            "icon": "shopify://shop_images/icon_5.svg",
-            "text": "Im E-Auto und <br> am E-bike",
+            "icon": "shopify:\/\/shop_images\/icon_5.svg",
+            "text": "Im E-Auto und <br>\u2028am E-bike",
             "link": "",
             "background_color": "#f3f1f1"
           }
@@ -239,7 +227,7 @@
         "category_9zgLUg": {
           "type": "category",
           "settings": {
-            "icon": "shopify://shop_images/icon_6.svg",
+            "icon": "shopify:\/\/shop_images\/icon_6.svg",
             "text": "Für deine<br> Lebensmittel",
             "link": "",
             "background_color": "#edeaea"
@@ -255,7 +243,7 @@
         "category_9zgLUg"
       ],
       "settings": {
-        "subtitle": "<em>Unsere Kategrorien</em>",
+        "subtitle": "<em>Unsere Kategrorien<\/em>",
         "title": "So kannst Du Beyond Matter verwenden:",
         "heading_size": "h1",
         "heading_alignment": "left",
@@ -279,7 +267,7 @@
         "heading_cMXAYd": {
           "type": "heading",
           "settings": {
-            "heading": "Wir verbinden Technik mit  der heil;enden Kraft der Natur. Wissenschaft-lich bewiesen und ein Leben lang.",
+            "heading": "Wir verbinden Technik mit \u2028der heil;enden Kraft der Natur. Wissenschaft-lich bewiesen und ein Leben lang.",
             "heading_primary_color": "#3c3c3c",
             "heading_secondary_color": "#f4f2f2",
             "heading_size": "x-large",
@@ -289,7 +277,7 @@
         "subheading_UUV8x9": {
           "type": "subheading",
           "settings": {
-            "subheading_image": "shopify://shop_images/Group_10.svg",
+            "subheading_image": "shopify:\/\/shop_images\/Group_10.svg",
             "subheading": "Add a tagline",
             "subheading_size": "h5",
             "secondary_color": false
@@ -298,7 +286,7 @@
         "block_image_ALTzza": {
           "type": "block_image",
           "settings": {
-            "cvr_image": "shopify://shop_images/image-4.png"
+            "cvr_image": "shopify:\/\/shop_images\/image-4.png"
           }
         }
       },
@@ -308,14 +296,57 @@
         "block_image_ALTzza"
       ],
       "settings": {
+        "page_width": "narrow",
         "section_backgroud": "#d4cfcc",
-        "image": "shopify://shop_images/image-3.png",
-        "full_width": true,
-        "section_container": true,
+        "image": "shopify:\/\/shop_images\/image-3.png",
         "padding_top": 120,
         "padding_bottom": 120,
-        "padding_left": 0,
-        "padding_right": 0,
+        "padding_left": 15,
+        "padding_right": 15,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "featured_collection_b8Yiq6": {
+      "type": "featured-collection",
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
+        "poroduct_grid_background": "#ffffff",
+        "subtitle": "<em>Unsere Kategrorien<\/em>",
+        "title": "So kannst Du Beyond Matter verwenden:",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "collection": "bestseller",
+        "products_to_show": 3,
+        "products_to_row": 3,
+        "horizontal_scroll": false,
+        "show_view_all": false,
+        "show_divider": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "image_position": "top center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "secondary_image_max": 1,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_quick_buy": true,
+        "show_datails_button": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "cart_buttons_outline": true,
+        "details_buttons_outline": false,
+        "button_text_color": "#3c3c3c",
+        "button_background_color": "#d4cfcc",
+        "padding_top": 160,
+        "padding_bottom": 140,
+        "padding_left": 20,
+        "padding_right": 20,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -326,8 +357,8 @@
         "full_width": false,
         "page_width": "standard",
         "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify://shop_images/video_image.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/video_image.jpg",
         "description": "",
         "show_divider": false,
         "heading": "",
@@ -384,6 +415,7 @@
         "icon_with_text_block_zeWDcH"
       ],
       "settings": {
+        "page_width": "narrow",
         "primary_background": "#ede9e9",
         "primary_background_opacity": 100,
         "secondary_background": "#ede9e9",
@@ -393,7 +425,7 @@
         "subtitle": "<em>Unsere Werte<\/em>",
         "title": "Wir verbinden die Vorteile technischer Geräte mit der heilenden Kraft der Natur.",
         "heading_size": "h1",
-        "description": "<p><strong>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/strong><\/p>",
+        "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
         "text_size": "typeset",
         "desktop_image_width": 300,
         "mobile_image_width": 300,
@@ -402,8 +434,8 @@
         "enable_full_width": false,
         "padding_top": 120,
         "padding_bottom": 160,
-        "padding_left": 0,
-        "padding_right": 0,
+        "padding_left": 15,
+        "padding_right": 15,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -448,6 +480,7 @@
         "icon_with_text_block_MabfpF"
       ],
       "settings": {
+        "page_width": "standard",
         "primary_background": "#d4cfcc",
         "primary_background_opacity": 80,
         "secondary_background": "#d4cfcc",
@@ -457,7 +490,7 @@
         "subtitle": "<em>Jetzt passende Lösung finden<\/em>",
         "title": "Was führt dich zu uns?",
         "heading_size": "h1",
-        "description": "<p><strong>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/strong><\/p>",
+        "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
         "text_size": "typeset",
         "main_image": "shopify:\/\/shop_images\/mask-group-image.svg",
         "desktop_image_width": 300,
@@ -467,8 +500,8 @@
         "enable_full_width": false,
         "padding_top": 120,
         "padding_bottom": 160,
-        "padding_left": 0,
-        "padding_right": 0,
+        "padding_left": 15,
+        "padding_right": 15,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -481,7 +514,7 @@
           "settings": {
             "title": "Wissenschaftliche Studien",
             "heading_size": "h3",
-            "text": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.</p>",
+            "text": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
             "link_text": "Zu unseren Studien",
             "link": "#",
             "title_color": "#baab9e",
@@ -495,7 +528,7 @@
           "settings": {
             "title": "Essence X Technologie",
             "heading_size": "h3",
-            "text": "<p>Rohstoff unserer Produkte ist Schungit. Eine natürliche Ressource, die elektromagnetische Strahlungen neutralisieren kann. Unsere Essence X Technologie potenziert die Wirkung von Schungit und transformiert Elektrosmog zu einer Quelle förderlicher Energie.</p>",
+            "text": "<p>Rohstoff unserer Produkte ist Schungit. Eine natürliche Ressource, die elektromagnetische Strahlungen neutralisieren kann. Unsere Essence X Technologie potenziert die Wirkung von Schungit und transformiert Elektrosmog zu einer Quelle förderlicher Energie.<\/p>",
             "link_text": "Zu unseren Studien",
             "link": "#",
             "title_color": "#baab9e",
@@ -509,7 +542,7 @@
           "settings": {
             "title": "Premium Materialen",
             "heading_size": "h3",
-            "text": "<p>Wir verwenden nur die hochwertigsten Rohstoffe, welche ständiger Kontrolle unterliegen. So stellen wir sicher, dass unsere Produkte über keinerlei Verunreinigungen oder Einschlüsse verfügen und dich ein Leben lang beschützend begleiten.</p>",
+            "text": "<p>Wir verwenden nur die hochwertigsten Rohstoffe, welche ständiger Kontrolle unterliegen. So stellen wir sicher, dass unsere Produkte über keinerlei Verunreinigungen oder Einschlüsse verfügen und dich ein Leben lang beschützend begleiten.<\/p>",
             "link_text": "Zu unseren Studien",
             "link": "#",
             "title_color": "#baab9e",
@@ -527,7 +560,7 @@
       "settings": {
         "full_width": false,
         "page_width": "standard",
-        "subtitle": "<em>Unsere Kategrorien</em>",
+        "subtitle": "<em>Unsere Kategrorien<\/em>",
         "title": "So kannst Du Beyond Matter verwenden:",
         "heading_size": "h1",
         "heading_alignment": "left",
@@ -556,7 +589,7 @@
           "settings": {
             "title": "Einfache Registrierung",
             "heading_size": "h4",
-            "text": "<p>Unsere Studien erfüllen höchste Standards und werden von Fachjournalen veröffentlicht. Wir greifen auf renommierte Institute zurück, die seit vielen Jahren hochspezifische und bewährte Methoden anwenden.</p>",
+            "text": "<p>Unsere Studien erfüllen höchste Standards und werden von Fachjournalen veröffentlicht. Wir greifen auf renommierte Institute zurück, die seit vielen Jahren hochspezifische und bewährte Methoden anwenden.<\/p>",
             "link_text": "",
             "link": "#",
             "title_color": "#3c3c3c",
@@ -570,7 +603,7 @@
           "settings": {
             "title": "Faire Konditionen",
             "heading_size": "h4",
-            "text": "<p>Studienteilnehmende werden zufällig, also randomisiert, in zwei Gruppen aufgeteilt: Der Verum- und der Placebo Gruppe. Der absolute Goldstandar im Studiendesign.</p>",
+            "text": "<p>Studienteilnehmende werden zufällig, also randomisiert, in zwei Gruppen aufgeteilt: Der Verum- und der Placebo Gruppe. Der absolute Goldstandar im Studiendesign.<\/p>",
             "link_text": "",
             "link": "#",
             "title_color": "#3c3c3c",
@@ -584,7 +617,7 @@
           "settings": {
             "title": "Einfache Bestellung",
             "heading_size": "h4",
-            "text": "<p>Weder Studienteilnehmende, noch Sudiendurchführende wissen, wer randomisiert welcher Gruppe zugewiesen wurde. Doppelblinde Studien beugen Verzerrungseffekten vor.</p>",
+            "text": "<p>Weder Studienteilnehmende, noch Sudiendurchführende wissen, wer randomisiert welcher Gruppe zugewiesen wurde. Doppelblinde Studien beugen Verzerrungseffekten vor.<\/p>",
             "link_text": "",
             "link": "",
             "title_color": "#3c3c3c",
@@ -602,7 +635,7 @@
       "settings": {
         "full_width": false,
         "page_width": "standard",
-        "subtitle": "<em>Unsere Kategrorien</em>",
+        "subtitle": "<em>Unsere Kategrorien<\/em>",
         "title": "So kannst Du Beyond Matter verwenden:",
         "heading_size": "h1",
         "heading_alignment": "left",
@@ -630,6 +663,7 @@
     "image_banner_new_hQtiGn",
     "category_grid_NcjRfr",
     "quote_with_image_mTgYVk",
+    "featured_collection_b8Yiq6",
     "video_gTbc38",
     "text_with_icon_box_Px6UnJ",
     "text_with_icon_box_KeRfTa",

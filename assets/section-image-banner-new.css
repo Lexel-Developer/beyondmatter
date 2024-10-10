@@ -7,12 +7,14 @@
 
 .section-image-banner-new .banner__heading {
     line-height: 1;
+    letter-spacing: 0;
 }
 .section-image-banner-new  .banner__subheading + .banner__heading {
     margin-top: 1.5rem;
 }
 .section-image-banner-new .banner__text {
     margin-top: 8px;
+    letter-spacing: 0;
 }
 .section-image-banner-new .banner__box :last-child:is(.button) {
     margin-top: 2.4rem;
@@ -22,20 +24,7 @@
     text-transform: inherit;
     letter-spacing: 0;
 }
-.section-image-banner-new .banner__box .button span { text-transform: inherit; letter-spacing: 0; text-align: center; padding-right: 0; }
-.section-image-banner-new .banner__box .button.button--small {
-    font-size: max(calc(var(--font-button-size) - 2px), 1.6rem);
-    min-width: 4.8rem;
-    padding: 12px 24px;
-    font-family: Helvetica;
-    font-weight: 400;
-}
-.section-image-banner-new .banner__box .button.button--small span {
-    font-size: max(calc(var(--font-button-size) - 2px), 1.6rem);
-    min-width: 4.8rem;
-    font-family: Helvetica;
-    font-weight: 400;
-}
+
 .section-image-banner-new .container {
     max-width: 1070px;
     margin: 0 auto;
