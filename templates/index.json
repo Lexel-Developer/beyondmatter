@@ -699,6 +699,8 @@
         "page_width": "standard",
         "primary_background": "#eae6e2",
         "secondary_background": "#f6f6f6",
+        "main_description": "",
+        "enable_main_image": true,
         "image": "shopify:\/\/shop_images\/images-1.png",
         "image_position": "top center",
         "layout": "image_first",
@@ -765,6 +767,8 @@
         "page_width": "standard",
         "primary_background": "#ede9e9",
         "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
         "image": "shopify:\/\/shop_images\/images-2.png",
         "image_position": "top center",
         "layout": "image_first",
@@ -841,6 +845,8 @@
         "page_width": "standard",
         "primary_background": "#ede9e9",
         "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
         "image": "shopify:\/\/shop_images\/images-3.png",
         "image_position": "top center",
         "layout": "text_first",
@@ -917,6 +923,8 @@
         "page_width": "standard",
         "primary_background": "#ede9e9",
         "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
         "image": "shopify:\/\/shop_images\/images-4.png",
         "image_position": "top center",
         "layout": "image_first",
@@ -993,6 +1001,8 @@
         "page_width": "standard",
         "primary_background": "#ede9e9",
         "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
         "image": "shopify:\/\/shop_images\/images-5.png",
         "image_position": "top center",
         "layout": "text_first",
@@ -1022,6 +1032,65 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "image_with_text_d3gfjn": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_6rByY6": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Optionale Dachzeile<\/em><\/p>",
+            "sub_text_color": "#baab9e"
+          }
+        },
+        "heading_aNfMPW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Guter Schlaf ist nicht selbstverständlich. \u2028Mit SAMSON schon.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6rByY6",
+        "heading_aNfMPW"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#baab9e",
+        "main_description": "<p>Der Alltag hat für jeden von uns immer mehr Herausforderungen und Eindrücke parat. Egal, ob beruflicher oder privater Natur, sind wir Stress ausgesetzt und es werden eher mehr als weniger Stressquellen. Neben diesen gibt es noch Quellen von Stress, deren wir uns meist nicht bewusst sind: elektromagnetische Felder. Elektrosmog. Und genau diese Stressquelle kannst du mit SAMSON ausschalten. Die ästhetisch hochwertige Kugel blockt Elektrosmog nicht nur, sondern macht diesen zu einer Energiequelle für dich.<\/p>",
+        "enable_main_image": false,
+        "image": "shopify:\/\/shop_images\/images-5.png",
+        "image_position": "top center",
+        "layout": "text_first",
+        "desktop_box_spacing": 50,
+        "mobile_box_spacing": 20,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "480px",
+        "enlarge_content": "medium",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 48,
+        "padding_bottom": 96,
+        "padding_left": 15,
+        "padding_right": 15,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -1040,6 +1109,7 @@
     "image_with_text_hXgngA",
     "image_with_text_y9jJGF",
     "image_with_text_wVQD9U",
-    "image_with_text_PQ79p4"
+    "image_with_text_PQ79p4",
+    "image_with_text_d3gfjn"
   ]
 }
