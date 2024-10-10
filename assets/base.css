@@ -1368,9 +1368,16 @@ summary::-webkit-details-marker {
 .media--400px {
 	height: 260px
 }
+.media--350px {
+	height: 280px
+}
 
 .media--450px {
 	height: 292.5px
+}
+
+.media--480px {
+	height: 300px
 }
 
 .media--500px {
@@ -1410,12 +1417,19 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (min-width: 750px) {
+	.media--350px {
+		height: 350px
+	}
 	.media--400px {
 		height: 400px
 	}
 
   .media--450px {
 		height: 450px
+	}
+
+  .media--480px {
+		height: 480px
 	}
 
 	.media--500px {
@@ -1573,8 +1587,9 @@ deferred-media {
 .button-label,
 .shopify-challenge__button {
   font-size: calc(var(--font-button-size) + 4px);
-  letter-spacing: 0.2em;
+  letter-spacing: 0;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
+  text-transform: inherit;
 }
 
 .button--tertiary {
@@ -1814,7 +1829,7 @@ deferred-media {
 .button--cta .label {
   padding-inline-end: 2rem;
   font-size: 1.6rem;
-  line-height: calc(1 + 0.8 / var(--font-body-scale));
+  line-height: calc(1 + 0.5 / var(--font-body-scale));
   letter-spacing: 0.04rem;
   text-align: start;
   display: inline-block;

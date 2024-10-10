@@ -332,7 +332,14 @@
         </div>
       {% endif %}
       <a href="{{ card_url }}"{% if disable_image_click %} onclick="if (!theme.config.mqlSmall) { return false; }"{% endif %} class="card__media media-wrapper" tabindex="-1">
-        <span class="product-media-tag">Reduziert</span>
+        {% for tag in card_product.tags %}
+           {% if tag contains 'badge_' %}
+             {% assign splitted_badge = tag | split: 'badge_' | last %}
+        <span class="product-media-tag">
+             <div class="best_seller_text">{{ splitted_badge | upcase }}</div>
+        </span>
+           {% endif %}
+          {% endfor %}
         <div {% if card_product_media.media_type == 'video' or card_product_media.media_type == 'external_video' %} style="display: none"{% endif %} class="card--image-animate image-animate media media--{{ media_size }} media--hover-effect{% unless enable_image_fill %} media--image-contain{% endunless %}"
           {%- if media_size == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif -%}
           >
@@ -371,6 +378,9 @@
     <a href="{{ card_url_with_default }}" class="full-unstyled-link">
       <span class="visually-hidden">{{ card_product.title | escape }}</span>
     </a>
+    <div class='jdgm-widget jdgm-preview-badge' data-id='{{ card_product.id }}'> 
+    {{ card_product.metafields.judgeme.badge }} 
+  </div> 
     <div class="card-information__wrapper">
       {%- if enable_color_swatches or show_vendor -%}
         <div class="card-information__top">
@@ -392,7 +402,7 @@
       </a>
 
       <div class="product-description">
-        <p>Transformiert elektrosmog-induzierten Stress und fördert erholsamen Schlaf.</p>
+        <p>{{ card_product.metafields.custom.short_description }}</p>
       </div>
 
       {% comment %} TODO: metafield {% endcomment %}

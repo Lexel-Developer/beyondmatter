@@ -64,13 +64,22 @@
     }
 }
 
-    @media only screen and (min-width:990px){
+    @media only screen and (min-width:750px){
 
     .block_cvr_image {
         margin-right: -20rem;
     }
 }
-@media only screen and (max-width:991px){
+@media only screen and (max-width:990px){
+    .quote-with-image-cvr {
+        column-gap: 40px;
+    }
+    
+    .quote-text-cvr {
+        width: calc(100% - 426px);
+    }
+}
+@media only screen and (max-width:749px){
     .quote-text-cvr {
         width: 100%;
     }

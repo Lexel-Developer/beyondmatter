@@ -54,7 +54,7 @@
                 {% endif %}
                 {% if section.settings.main_image != blank %}
                   <div class="cvr-main-image">
-                    {{ section.settings.main_image | image_url: width: 500 | image_tag: widths: '300, 500' }}
+                    {{ section.settings.main_image | image_url: width: 500 | image_tag: loading: 'lazy', widths: '375, 500, 750, 1100, 1500, 1780, 2000, 3000, 3840' }}
                   </div>
                 {% endif %}
               </div>
@@ -75,7 +75,7 @@
                 <div class="text-with-icon-cvr icon-with-text--{{ block.id }}" {{ block.shopify_attributes }}>
                   <div class="icon-box-cover">
                     {% if block.settings.icon != blank %}
-                      {{ block.settings.icon | image_url: width: 100 | image_tag: widths: '100, 200' }}
+                      {{ block.settings.icon | image_url: width: 100 | image_tag: loading: 'lazy', widths: '100, 375, 750, 1100, 1500, 1780, 2000, 3000, 3840' }}
                     {% endif %}
                   </div>
                   <div class="text-box-cover">

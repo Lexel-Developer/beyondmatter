@@ -16,7 +16,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    height: 42%;
+    height: 49%;
     pointer-events: none;
     background-color: rgba(var(--secondary-background), var(--secondary-background-alpha));
     z-index: -1;
@@ -126,6 +126,7 @@
     max-width: 1440px;
     padding: 110px 120px 110px 128px;
     background-color: var(--section-container-background);
+    margin: 0 auto;
 }
 .text-with-icon-box .title-wrapper { margin-bottom: 0; }
 

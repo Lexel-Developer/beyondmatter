@@ -6,8 +6,9 @@
 }
 
 .section-image-banner-new .banner__heading {
-    line-height: 1;
+    line-height: 1.09375;
     letter-spacing: 0;
+    margin-top: 1.55rem;
 }
 .section-image-banner-new  .banner__subheading + .banner__heading {
     margin-top: 1.5rem;
@@ -15,6 +16,7 @@
 .section-image-banner-new .banner__text {
     margin-top: 8px;
     letter-spacing: 0;
+    line-height: 1.5;
 }
 .section-image-banner-new .banner__box :last-child:is(.button) {
     margin-top: 2.4rem;
