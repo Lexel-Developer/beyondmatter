@@ -20,7 +20,7 @@
 {{ 'section-column-grid.css' | asset_url | stylesheet_tag }}
 
   <div class="section--padding">
-    <div class="{% if section.settings.full_width == false %}page-width--{{ section.settings.page_width }}{% endif %}">
+    <div class="page-width--{{ section.settings.page_width }}">
       <div class="{% if section.settings.show_inside_box == true %} enable_big_box{% endif %}">
 
         {% if section.settings.subtitle != blank or section.settings.subtitle != blank %}
@@ -45,7 +45,7 @@
                         --color-heading: {{ block.settings.title_color.red }},{{ block.settings.title_color.green }},{{ block.settings.title_color.blue }};
                         --color-foreground: {{ block.settings.text_color.red }},{{ block.settings.text_color.green }},{{ block.settings.text_color.blue }};
                         --box-background: {{ block.settings.background_color.red }},{{ block.settings.background_color.green }},{{ block.settings.background_color.blue }};
-                        --background-alpha: {% if block.settings.background_opacity < 100 %} 0.{{ block.settings.background_opacity }}; {% else %} 1{% endif %}
+                        --background-alpha: {% if block.settings.background_opacity < 100 %} 0.{{ block.settings.background_opacity }} {% else %} 1{% endif %};
 
                         color: rgb(var(--color-foreground));
                     }
@@ -80,12 +80,6 @@
   "tag": "section",
   "class": "section column-grid",
   "settings": [
-    {
-      "type": "checkbox",
-      "label": "t:sections.all.full_width.label",
-      "id": "full_width",
-      "default": false
-    },
     {
       "type": "select",
       "id": "page_width",

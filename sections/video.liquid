@@ -40,8 +40,8 @@
 {%- endcapture -%}     
    
 <div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
-  <div class="video-section{% unless section.settings.full_width %} page-width--{{ section.settings.page_width }}{% endunless %}">
-    <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}{% if section.settings.full_width %} page-width{% endif %} {{ section.settings.heading_alignment }}">
+  <div class="video-section page-width--{{ section.settings.page_width }}">
+    <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}{% if section.settings.page_width %} page-width{% endif %} {{ section.settings.heading_alignment }}">
       <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
     </div>
     <noscript>
@@ -129,12 +129,6 @@
   "tag": "section",
   "class": "section video_section",
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "full_width",
-      "default": false,
-      "label": "t:sections.all.full_width.label"
-    },
     {
       "type": "select",
       "id": "page_width",

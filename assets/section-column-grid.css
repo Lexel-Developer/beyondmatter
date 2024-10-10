@@ -24,7 +24,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    height: 42%;
+    height: 43%;
     pointer-events: none;
     background-color: var(--secondary-background);
 }
@@ -105,4 +105,13 @@
 }
 
 
+@media only screen and (max-width: 749px) {
 
+    .column_grid_top:has(+.column-grid-link) {
+        margin-bottom: 50px;
+    }
+    .column-grid-row .grid__item {
+        padding: 40px 20px;
+    }
+
+}

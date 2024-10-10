@@ -16,7 +16,7 @@
 {{ 'section-category-grid.css' | asset_url | stylesheet_tag }}
 
   <div class="section--padding">
-    <div class="{% if section.settings.enable_full_width == false %}page-width{% endif %}">
+    <div class="page-width--{{ section.settings.page_width }}">
       <div class="container">
 
         {% if section.settings.subtitle != blank or section.settings.subtitle != blank %}
@@ -58,6 +58,34 @@
   "tag": "section",
   "class": "section category-grid",
   "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
     {
       "type": "inline_richtext",
       "label": "Subtitle",
@@ -154,12 +182,6 @@
       "default": "h2",
       "label": "t:sections.all.heading_tag.label",
       "info": "t:sections.all.heading_tag.info"
-    },
-    {
-      "type": "checkbox",
-      "label": "t:sections.all.full_width.label",
-      "id": "enable_full_width",
-      "default": false
     },
     {
       "type": "header",
