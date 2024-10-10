@@ -140,6 +140,13 @@
         "content": "t:settings_schema.typography.settings.header__1.content"
       },
       {
+        "type": "checkbox",
+        "id": "use_custom_fonts",
+        "label": "Use Custom Fonts",
+        "info": "SharpGrotesk-Book20, MrsEavesXLSerifOT-RegItalic and Monotype - Helvetica Now Text",
+        "default": true
+      },
+      {
         "type": "font_picker",
         "id": "type_header_font",
         "default": "josefin_sans_n4",
