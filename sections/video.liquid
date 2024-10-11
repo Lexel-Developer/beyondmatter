@@ -2,14 +2,6 @@
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
-
-    --section-padding-left: {{ section.settings.padding_left }}px;
-    --section-padding-right: {{ section.settings.padding_right }}px;
-    --section-margin-top: {{ section.settings.margin_top }}px;
-    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
-
-    --primary-background: {{ section.settings.primary_background }};
-    --secondary-background: {{ section.settings.secondary_background }}
   }
 {%- endstyle -%}
 
@@ -40,8 +32,8 @@
 {%- endcapture -%}     
    
 <div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
-  <div class="video-section page-width--{{ section.settings.page_width }}">
-    <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}{% if section.settings.page_width %} page-width{% endif %} {{ section.settings.heading_alignment }}">
+  <div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}">
+    <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}{% if section.settings.full_width %} page-width{% endif %} {{ section.settings.heading_alignment }}">
       <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
     </div>
     <noscript>
@@ -94,11 +86,9 @@
         {%- else -%}
           {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}
-        {% comment %}
-          <span class="deferred-media__poster-button motion-reduce">
-            {%- render 'icon', icon: 'play' -%}
-          </span>
-        {% endcomment %}
+        <span class="deferred-media__poster-button motion-reduce">
+          {%- render 'icon', icon: 'play' -%}
+        </span>
       </button>
 
       <template>
@@ -127,36 +117,8 @@
 {
   "name": "t:sections.video.name",
   "tag": "section",
-  "class": "section video_section",
+  "class": "section",
   "settings": [
-    {
-      "type": "select",
-      "id": "page_width",
-      "options": [
-        {
-          "value": "narrow",
-          "label": "Narrow"
-        },
-        {
-          "value": "standard",
-          "label": "Standard"
-        },
-        {
-          "value": "wide",
-          "label": "Wide"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        },
-        {
-          "value": "full-width",
-          "label": "Full-Width"
-        }
-      ],
-      "default": "standard",
-      "label": "Section width"
-    },
     {
       "type": "checkbox",
       "id": "enable_video_looping",
@@ -198,6 +160,12 @@
       "id": "description",
       "label": "t:sections.video.settings.description.label",
       "info": "t:sections.video.settings.description.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": false,
+      "label": "t:sections.all.full_width.label"
     },
     {
       "type": "checkbox",
@@ -302,30 +270,14 @@
     },
     {
       "type": "header",
-      "content": "Section color"
-    },
-    {
-      "type": "color",
-      "label": "Primary Background",
-      "id": "primary_background",
-      "default": "#baab9e"
-    },
-    {
-      "type": "color",
-      "label": "Secondary Background",
-      "id": "secondary_background",
-      "default": "#d4cfcc"
-    },
-    {
-      "type": "header",
       "content": "t:sections.all.padding.header.content"
     },
     {
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 200,
-      "step": 2,
+      "max": 100,
+      "step": 4,
       "unit": "t:sections.all.padding.padding_top.unit",
       "label": "t:sections.all.padding.padding_top.label",
       "default": 36
@@ -334,51 +286,11 @@
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 200,
-      "step": 2,
+      "max": 100,
+      "step": 4,
       "unit": "t:sections.all.padding.padding_bottom.unit",
       "label": "t:sections.all.padding.padding_bottom.label",
       "default": 36
-    },
-    {
-      "type": "range",
-      "label": "Padding left",
-      "id": "padding_left",
-      "default": 0,
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "label": "Padding right",
-      "id": "padding_right",
-      "default": 0,
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "label": "Margin top",
-      "id": "margin_top",
-      "default": 0,
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "label": "Margin bottom",
-      "id": "margin_bottom",
-      "default": 0,
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px"
     }
   ],
   "presets": [
