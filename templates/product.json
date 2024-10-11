@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "empty-space": {
@@ -75,7 +84,7 @@
           "settings": {
             "icon": "none",
             "heading": "1. Collapsible tab",
-            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
             "page": ""
           }
         },
@@ -84,7 +93,7 @@
           "settings": {
             "icon": "none",
             "heading": "2. Collapsible tab",
-            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
             "page": ""
           }
         },
@@ -222,7 +231,7 @@
             "custom_icon": "",
             "title": "Guarantee heading",
             "title_size": "h4",
-            "text": "<p>Welcome to our store.<\/p>"
+            "text": "<p>Welcome to our store.</p>"
           }
         },
         "guarantee-1": {
@@ -233,7 +242,7 @@
             "custom_icon": "",
             "title": "Guarantee heading",
             "title_size": "h4",
-            "text": "<p>Welcome to our store.<\/p>"
+            "text": "<p>Welcome to our store.</p>"
           }
         },
         "guarantee-2": {
@@ -244,7 +253,7 @@
             "custom_icon": "",
             "title": "Guarantee heading",
             "title_size": "h4",
-            "text": "<p>Welcome to our store.<\/p>"
+            "text": "<p>Welcome to our store.</p>"
           }
         },
         "guarantee-3": {
@@ -255,7 +264,7 @@
             "custom_icon": "",
             "title": "Guarantee heading",
             "title_size": "h4",
-            "text": "<p>Welcome to our store.<\/p>"
+            "text": "<p>Welcome to our store.</p>"
           }
         }
       },
@@ -382,7 +391,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
             "image": "",
             "author": "Author's name"
           }
@@ -391,7 +400,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
             "image": "",
             "author": "Author's name"
           }
@@ -400,7 +409,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
             "image": "",
             "author": "Author's name"
           }
@@ -409,7 +418,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
             "image": "",
             "author": "Author's name"
           }
@@ -418,7 +427,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
             "image": "",
             "author": "Author's name"
           }
@@ -457,7 +466,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>#instagram<\/p>",
+            "text": "<p>#instagram</p>",
             "text_size": "typeset2",
             "secondary_color": true
           }
