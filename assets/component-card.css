@@ -184,6 +184,7 @@
   text-decoration: none;
   padding-bottom: 0.2rem;
   color: rgb(var(--color-link));
+  font-family: var(--font-body-family);
 }
 
 .card-information__text small {
@@ -333,7 +334,7 @@
 }
 
 .card-information__wrapper > *:not(.visually-hidden:first-child) + * {
-  margin-top: 0.6rem;
+  margin-top: 0.4rem;
 }
 
 .card-information__wrapper .caption {

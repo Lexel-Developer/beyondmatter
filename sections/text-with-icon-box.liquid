@@ -83,7 +83,7 @@
                       <h4>{{ block.settings.text }}</h4>
                     {% endif %}
                     {% if block.settings.block_description != blank %}
-                        {{ block.settings.block_description }}  
+                        <div class="{% if block.settings.hide_description_in_deskop %}hide_description_in_deskop{% endif %}">{{ block.settings.block_description }}</div>
                     {% endif %}
                   </div>
                 </div>
@@ -256,7 +256,7 @@
     {
     "type": "range",
     "id": "mobile_image_width",
-    "min": 250,
+    "min": 150,
     "max": 500,
     "step": 5,
     "unit": "px",
@@ -414,6 +414,12 @@
           "label": "Description",
           "id": "block_description",
           "default": "<p>Bessere Erholung Du regenerierst auch in Pausen besser, wenn dein Körper keinem Elektrosmog ausgesetzt ist.</p>"
+        },
+        {
+          "type": "checkbox",
+          "label": "hide description in deskop",
+          "id": "hide_description_in_deskop",
+          "default": false
         },
         {
         "type": "color",

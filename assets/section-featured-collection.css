@@ -1,14 +1,6 @@
 .featured-collection-section {
     position: relative;
 }
-.featured-collection-section     .container {
-    max-width: 1070px;
-    margin: 0 auto;
-}
-.featured-collection-section .container {
-    max-width: 1070px;
-    margin: 0 auto;
-}
 .featured-collection-section:before {
     content: "";
     position: absolute;
@@ -38,6 +30,8 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
+    letter-spacing: 0;
+    padding: 0;
 }
 .featured-collection-section .product-grid .card-information__button {
     position: unset;
@@ -93,7 +87,7 @@
     background-color: var(--product-grid-background);
 }
 
-.product-grid .grid__item .price__regular, .product-grid .grid__item .price .price__prefix {
+.product-grid .grid__item .price__regular {
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
@@ -106,13 +100,15 @@
 }
 .product-description p {
     margin: 0;
+    letter-spacing: 0;
 }
 .product-description {
     font-size: 16px;
     line-height: 24px;
 }
-.product-grid .card-information__button  .button--outline {
+.product-grid .card-information__button .button--outline {
     background: transparent;
+    border-color: var(--add_to_cart_outline_color);
 }
 
 .product-media-tag {
@@ -129,7 +125,7 @@
     z-index: 1;
     display: block;
     margin: 16px;
-    text-transform: capitalize;
+    letter-spacing: 0;
 }
 .product-grid .card__media {
     padding: 16px 16px 0 16px;
@@ -142,6 +138,12 @@
     margin-top: 16px;
 }
 
+
+@media only screen and (min-width:990px){
+    .featured-collection-section .title-wrapper {
+        margin-bottom: 5.2rem;
+    }
+}
 
 @media only screen and (max-width:1024px){
     .featured-collection-section .product-grid .card-information__button {
@@ -163,8 +165,12 @@
     }
 }
 
-@media only screen and (max-width:749px){
-    .slider.slider--tablet {
-        --grid-horizontal-spacing: 1.6rem;
-    }
+@media only screen and (max-width:767px){
+
+.featured-collection-section .slider.slider--tablet {
+    /* margin-left: calc(-1* var(--section-padding-left)); */
+    margin-right: calc(-1* var(--section-padding-right));
 }
+
+}
+

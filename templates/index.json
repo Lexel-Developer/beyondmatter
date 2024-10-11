@@ -307,8 +307,8 @@
         "primary_background": "#baab9e",
         "secondary_background": "#d4cfcc",
         "poroduct_grid_background": "#ffffff",
-        "subtitle": "<em>Unsere Kategrorien<\/em>",
-        "title": "So kannst Du Beyond Matter verwenden:",
+        "subtitle": "<em>Unsere Lieblinge</em>",
+        "title": "Derzeit beliebt bei unseren Kunden",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
@@ -336,6 +336,7 @@
         "details_buttons_outline": false,
         "button_text_color": "#3c3c3c",
         "button_background_color": "#d4cfcc",
+        "add_to_cart_outline_color": "#3c3c3c",
         "padding_top": 160,
         "padding_bottom": 140,
         "padding_left": 24,
@@ -373,9 +374,10 @@
         "icon_with_text_block_FEYxzR": {
           "type": "icon_with_text_block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/weather-sun_1.png",
-            "text": "Bessere Erholung\u2028",
-            "block_description": "<p>Du regenerierst auch in Pausen besser, wenn dein Körper keinem Elektrosmog ausgesetzt ist.<\/p>",
+            "icon": "shopify://shop_images/weather-sun_1.png",
+            "text": "Bessere Erholung ",
+            "block_description": "<p>Du regenerierst auch in Pausen besser, wenn dein Körper keinem Elektrosmog ausgesetzt ist.</p>",
+            "hide_description_in_deskop": false,
             "block_background": "#baab9e",
             "background_opacity": 60
           }
@@ -383,9 +385,10 @@
         "icon_with_text_block_AyBEGM": {
           "type": "icon_with_text_block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-cr.png",
-            "text": "Mehr Energie\u2028",
-            "block_description": "<p>Du fühlst dich fitter und hast mehr Leistung bereit, da kein Elektro-smog dein Energie-Level senk<\/p>",
+            "icon": "shopify://shop_images/icon-cr.png",
+            "text": "Mehr Energie ",
+            "block_description": "<p>Du fühlst dich fitter und hast mehr Leistung bereit, da kein Elektro-smog dein Energie-Level senk</p>",
+            "hide_description_in_deskop": false,
             "block_background": "#baab9e",
             "background_opacity": 80
           }
@@ -395,7 +398,8 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/emoji-flower-thankful_1.png",
             "text": "Mehr Flow",
-            "block_description": "<p>Du kommst einfacher in den Flow-Zustand und bist weniger gestresst und produktiver.<\/p>",
+            "block_description": "<p>Du kommst einfacher in den Flow-Zustand und bist weniger gestresst und produktiver.</p>",
+            "hide_description_in_deskop": false,
             "block_background": "#baab9e",
             "background_opacity": 100
           }
@@ -439,7 +443,8 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Icon.svg",
             "text": "Kopfschmerzen",
-            "block_description": "",
+            "block_description": "<p>Unsere Lösungen für einen klaren Kopf.</p>",
+            "hide_description_in_deskop": true,
             "block_background": "#f4f2f2",
             "background_opacity": 90
           }
@@ -449,7 +454,8 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Icon_1_e27e748c-9305-4941-adbb-b8351febf2aa.svg",
             "text": "Schlafstörungen",
-            "block_description": "",
+            "block_description": "<p>Holen Sie sich erholsamen Schlaf zurück.</p>",
+            "hide_description_in_deskop": true,
             "block_background": "#f4f2f2",
             "background_opacity": 80
           }
@@ -459,7 +465,8 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Icon_2_66cf1ac4-7f24-4763-a1f8-d6da1a550d98.svg",
             "text": "Antriebslosigkeit",
-            "block_description": "",
+            "block_description": "<p>Mit Beyond Matter zu mehr Elan im Alltag.</p>",
+            "hide_description_in_deskop": true,
             "block_background": "#f4f2f2",
             "background_opacity": 70
           }
@@ -471,7 +478,7 @@
         "icon_with_text_block_MabfpF"
       ],
       "settings": {
-        "page_width": "full-width",
+        "page_width": "large",
         "primary_background": "#d4cfcc",
         "primary_background_opacity": 80,
         "secondary_background": "#d4cfcc",
@@ -483,9 +490,9 @@
         "heading_size": "h1",
         "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
         "text_size": "typeset",
-        "main_image": "shopify:\/\/shop_images\/mask-group-image.svg",
-        "desktop_image_width": 300,
-        "mobile_image_width": 300,
+        "main_image": "shopify://shop_images/mask-group-image.svg",
+        "desktop_image_width": 340,
+        "mobile_image_width": 160,
         "heading_alignment": "left",
         "heading_tag": "h2",
         "padding_top": 120,
@@ -1111,7 +1118,7 @@
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
-            "heading": "Einfach großartig!\u2028Jahre lang hatte ich Kopfschmerzen am Computer. Diese konnte ich nun um ein vielfaches reduzieren.",
+            "heading": "Einfach großartig! <br>Jahre lang hatte ich Kopfschmerzen am Computer. Diese konnte ich nun um ein vielfaches reduzieren.",
             "heading_size": "h2",
             "text": "<p><strong>Sandra Z.<\/strong> aus Hamburg<\/p>",
             "link": "",
@@ -1164,7 +1171,7 @@
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
-            "heading": "Ich habe AVA auf fast allen elektronischen Geräten. Ich liebe es!",
+            "heading": "Ich habe AVA auf fast <br>allen elektronischen <br>Geräten. Ich liebe es!",
             "heading_size": "h2",
             "text": "<p><strong>Raphael K<\/strong>. aus Mainburg<\/p>",
             "link": "",
@@ -1322,10 +1329,10 @@
         "sub_text_color": "",
         "button_background_color": "#3c3c3c",
         "button_text_color": "#ffffff",
-        "padding_top": 120,
-        "padding_bottom": 120,
-        "padding_left": 15,
-        "padding_right": 15,
+        "padding_top": 114,
+        "padding_bottom": 114,
+        "padding_left": 24,
+        "padding_right": 24,
         "margin_top": 0,
         "margin_bottom": 0
       }

@@ -12,6 +12,8 @@
     --product-grid-background: {{ section.settings.poroduct_grid_background }};
     --button-background-color: {{ section.settings.button_background_color }};
     --button-text-color: {{ section.settings.button_text_color }};
+    --add_to_cart_outline_color: {{ section.settings.add_to_cart_outline_color }};
+    
 
   }
 {%- endstyle -%}
@@ -520,6 +522,12 @@
       "type": "color",
       "id": "button_background_color",
       "label": "Button background color",
+      "default":"#D4CFCC"
+    },
+    {
+      "type": "color",
+      "id": "add_to_cart_outline_color",
+      "label": "Add to cart outline color",
       "default":"#D4CFCC"
     },
     {

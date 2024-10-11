@@ -359,22 +359,16 @@
         tabindex="-1"
       >
         {% for tag in card_product.tags %}
-          {% if tag contains 'badge_' %}
-            {% assign splitted_badge = tag | split: 'badge_' | last %}
-            <span class="product-media-tag">
-              <div class="best_seller_text">{{ splitted_badge | upcase }}</div>
-            </span>
-          {% endif %}
-        {% endfor %}
-        <div
-          {% if card_product_media.media_type == 'video' or card_product_media.media_type == 'external_video' %}
-            style="display: none"
-          {% endif %}
-          class="card--image-animate image-animate media media--{{ media_size }} media--hover-effect{% unless enable_image_fill %} media--image-contain{% endunless %}"
-          {%- if media_size == 'adapt' %}
-            style="--image-ratio-percent: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"
-          {% endif -%}
-        >
+           {% if tag contains 'badge_' %}
+             {% assign splitted_badge = tag | split: 'badge_' | last %}
+        <span class="product-media-tag">
+             <div class="best_seller_text">{{ splitted_badge }}</div>
+        </span>
+           {% endif %}
+          {% endfor %}
+        <div {% if card_product_media.media_type == 'video' or card_product_media.media_type == 'external_video' %} style="display: none"{% endif %} class="card--image-animate image-animate media media--{{ media_size }} media--hover-effect{% unless enable_image_fill %} media--image-contain{% endunless %}"
+          {%- if media_size == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif -%}
+          >
           <picture is="prog-picture" class="motion-reduce" data-hq="{{ image.preview_image | image_url: width: 2000 }}">
             <source
               media="(min-resolution: 2dppx) and (max-width: 749px)"

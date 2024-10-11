@@ -61,6 +61,14 @@
       </dd>
     </div>
     <div class="price__sale">
+      <dt>
+        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
+      </dt>
+      <dd {% if show_badges == false %}class="price__last"{% endif %}>
+        <span class="price-item price-item--sale">
+          {{ money_price }}
+        </span>
+      </dd>
       {%- unless product.price_varies == false and product.compare_at_price_varies -%}
         <dt class="price__compare">
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
@@ -71,14 +79,6 @@
           </s>
         </dd>
       {%- endunless -%}
-      <dt>
-        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-      </dt>
-      <dd {% if show_badges == false %}class="price__last"{% endif %}>
-        <span class="price-item price-item--sale">
-          {{ money_price }}
-        </span>
-      </dd>
     </div>
     {%- if available and product.selected_or_first_available_variant.unit_price_measurement -%}
       <small class="unit-price">

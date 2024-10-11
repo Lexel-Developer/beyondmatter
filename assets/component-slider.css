@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 749px) {
   .slider-mobile-gutter {
-    margin-right: -24px;
+    /* margin-right: -24px; */
   }
 }
 

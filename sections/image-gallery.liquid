@@ -50,7 +50,7 @@
                     <h3 class="h1 sub_title" style="color: {{ section.settings.sub_text_color }};">{{ section.settings.subtitle }}</h3>
                     {% endif %}
                     {% if section.settings.heading != blank %}
-                        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
+                        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading }}</{{ section.settings.heading_tag }}>
                     {% endif %}
                 </div>
 
@@ -127,7 +127,7 @@
                             <p class="overlay-text__subheading {{ block.settings.subheading_size }}">{{ block.settings.subheading | escape }}</p>
                         {%- endif -%}
                         {%- if block.settings.heading != blank -%}
-                            <p class="overlay-text__heading {{ block.settings.heading_size }}">{{ block.settings.heading | escape }}</p>
+                            <p class="overlay-text__heading {{ block.settings.heading_size }}">{{ block.settings.heading }}</p>
                         {%- endif -%}
                         {%- if block.settings.text != blank -%}
                             </div>
