@@ -55,7 +55,16 @@
 .category-grid-row  span {
     font-size: 20px;
     line-height: 28px;
+    letter-spacing: 0;
 }
 
 
-
+@media only screen and (max-width:749px){
+    .category-grid-row img {
+        height: 38px;
+        width: 38px;
+    }
+    .category-grid-row .grid__item {
+        gap: 8px;
+    }
+}

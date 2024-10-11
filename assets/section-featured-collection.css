@@ -53,6 +53,8 @@
 .featured-collection-section .product-grid .card+.card-information {
     flex-direction: column;
     padding: 24px 16px 16px 16px;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 .featured-collection-section .product-grid .card-information__button add-to-cart {
     width: calc(100% - 131px) !important;
@@ -127,6 +129,7 @@
     z-index: 1;
     display: block;
     margin: 16px;
+    text-transform: capitalize;
 }
 .product-grid .card__media {
     padding: 16px 16px 0 16px;
@@ -157,5 +160,11 @@
     }
     .featured-collection-section .product-grid .card-information__button add-to-cart {
         width: 100% !important;
+    }
+}
+
+@media only screen and (max-width:749px){
+    .slider.slider--tablet {
+        --grid-horizontal-spacing: 1.6rem;
     }
 }

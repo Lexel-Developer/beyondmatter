@@ -117,9 +117,6 @@
     font-family: var(--font-heading-family);
 }
 
-.text-with-icon-grid-row .title-wrapper .title {
-    line-height: 44px;
-}
 .text-with-icon-grid-row { margin-bottom: 0;row-gap: 30px; }
 
 .text-with-icon-box .container-bg-cvr {
@@ -149,6 +146,9 @@
     }
     .text-with-icon-box .container-bg-cvr {
         padding: 16px;
+    }
+    .text-box-cover {
+        padding: 24px 27px 20px 24px;
     }
 }
 

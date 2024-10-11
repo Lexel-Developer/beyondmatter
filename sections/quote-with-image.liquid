@@ -1,70 +1,96 @@
 {%- style -%}
-  #shopify-section-{{ section.id }} {
-    --section-padding-top: {{ section.settings.padding_top }}px;
-    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
-    --section-padding-left: {{ section.settings.padding_left }}px;
-    --section-padding-right: {{ section.settings.padding_right }}px;
-    --section-margin-top: {{ section.settings.margin_top }}px;
-    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
-    --section-background: {{ section.settings.section_backgroud }};
-  }
+    #shopify-section-{{ section.id }} {
+      --section-padding-top: {{ section.settings.padding_top }}px;
+      --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+      --section-padding-left: {{ section.settings.padding_left }}px;
+      --section-padding-right: {{ section.settings.padding_right }}px;
+      --section-margin-top: {{ section.settings.margin_top }}px;
+      --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+      --section-background: {{ section.settings.section_backgroud }};
+    }
 
-{%- for block in section.blocks -%}
-    {%- case block.type -%}
-        {%- when 'heading' -%}
-            .quote-{{ section.id }} .quote_main__heading {
-                color:{{ block.settings.heading_primary_color }};
-            }
-            .quote-{{ section.id }} .highlighted_split {
-                color:{{ block.settings.heading_secondary_color }};
-            }
-    {% endcase %}
-{% endfor %}
-  
+  {%- for block in section.blocks -%}
+      {%- case block.type -%}
+          {%- when 'heading' -%}
+              .quote-{{ section.id }} .quote_main__heading {
+                  color:{{ block.settings.heading_primary_color }};
+              }
+              .quote-{{ section.id }} .highlighted_split {
+                  color:{{ block.settings.heading_secondary_color }};
+              }
+      {% endcase %}
+  {% endfor %}
 {%- endstyle -%}
-
 
 {{ 'section-quote-with-image.css' | asset_url | stylesheet_tag }}
 
 <div class="section--padding quote-with-image-wrapper">
-    <div class="page-width--{{ section.settings.page_width }}">
-            <div class="quote-with-image-cvr quote-{{ section.id }}">
-                <div class="quote-text-cvr">
-                    {%- for block in section.blocks -%}
-                        {%- case block.type -%}
-                            {%- when 'heading' -%}
-                                {% capture splittedheading %}{{ block.settings.heading | split: ';' | first }}<span class="highlighted_split">{{ block.settings.heading | split: ';' | last }}</span>{% endcapture %}
-                                <{{ block.settings.heading_tag }} class="quote_main__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ splittedheading }}</{{ block.settings.heading_tag }}>
-                            {%- when 'subheading' -%}
-                            <div class="subheading_cvr">
-                                {% if block.settings.subheading_image != blank %}
-                                    {{ block.settings.subheading_image | image_url: width: 200 | image_tag: loading: 'lazy', widths: '200, 375, 750, 1100, 1500, 1780, 2000, 3000, 3840' }}
-                                {% else %}
-                                    {% if block.settings.subheading != blank %}
-                                        <p class="quote__subheading{% if block.settings.secondary_color %} banner__subheading--colored{% endif %} {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</p>
-                                    {% endif %}
-                                {% endif %}
-                            </div>
-                            {%- when 'block_image' -%}
-                                {% if block.settings.cvr_image != blank %}
-                                    <div class="block_cvr_image">
-                                        {{ block.settings.cvr_image | image_url: width: 500 | image_tag: loading: 'lazy', widths: '375, 500, 750, 1100, 1500, 1780, 2000, 3000, 3840' }}
-                                    </div>
-                                {% endif %}
-                        {% endcase %}           
-                    {% endfor %}
-                </div>
-                {% if section.settings.image != blank %}
-                    <div class="quote-image-cvr">
-                        {{ section.settings.image | image_url: width: 500 | image_tag: loading: 'lazy', widths: '375, 500, 750, 1100, 1500, 1780, 2000, 3000, 3840' }}
-                    </div>
+  <div class="page-width--{{ section.settings.page_width }}">
+    <div class="quote-with-image-cvr quote-{{ section.id }}">
+      <div class="quote-text-cvr">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+              {% capture splittedheading %}{{ block.settings.heading | split: ';' | first }}<span class="highlighted_split">{{ block.settings.heading | split: ';' | last }}</span>{% endcapture %}
+              <{{ block.settings.heading_tag }}
+                class="quote_main__heading {{ block.settings.heading_size }}"
+                {{ block.shopify_attributes }}
+              >
+                {{- splittedheading -}}
+              </{{ block.settings.heading_tag }}>
+            {%- when 'subheading' -%}
+              <div class="subheading_cvr">
+                {% if block.settings.subheading_image != blank %}
+                  {{
+                    block.settings.subheading_image
+                    | image_url: width: 200
+                    | image_tag: loading: 'lazy', widths: '200, 375, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                  }}
                 {% else %}
-                    <div class="quote-image-cvr">
-                        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder image-animate' }}  
-                    </div>
+                  {% if block.settings.subheading != blank %}
+                    <p
+                      class="quote__subheading{% if block.settings.secondary_color %} banner__subheading--colored{% endif %} {{ block.settings.subheading_size }}"
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ block.settings.subheading | escape }}
+                    </p>
+                  {% endif %}
                 {% endif %}
-            </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+      <div class="quote-image-main-cvr">
+      {% if section.settings.desktop_image or section.settings.mobile_image != blank %}
+        <div class="quote-image-cvr">
+          {% if section.settings.desktop_image != blank %}
+            {{
+              section.settings.desktop_image
+              | image_url: width: 500
+              | image_tag: class:'image-only-desktop', loading: 'lazy', widths: '375, 500, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+            }}
+          {% endif %}
+          {% if section.settings.mobile_image != blank %}
+            {{
+              section.settings.mobile_image
+              | image_url: width: 500
+              | image_tag: class:'image-only-mobile', loading: 'lazy', widths: '375, 500, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+            }}
+          {% endif %}
+        </div>
+        {% else %}
+        <div class="quote-image-cvr">
+          {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder image-animate' }}
+        </div>
+      {% endif %}
+      {% if section.settings.cvr_image != blank %}
+        <div class="block_cvr_image">
+            {{ section.settings.cvr_image | image_url: width: 500 | image_tag: loading: 'lazy', widths: '375, 500, 750, 1100, 1500, 1780, 2000, 3000, 3840' }}
+        </div>
+      {% endif %}
     </div>
+  </div>
+  </div>
 </div>
 
 {% schema %}
@@ -102,38 +128,48 @@
       "label": "Section width"
     },
     {
-        "type": "color",
-        "id": "section_backgroud",
-        "label": "Section background color"
+      "type": "color",
+      "id": "section_backgroud",
+      "label": "Section background color"
     },
     {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop image"
     },
     {
-        "type": "header",
-        "content": "t:sections.all.padding.header.content"
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
     },
     {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 200,
-        "step": 2,
-        "unit": "t:sections.all.padding.padding_top.unit",
-        "label": "t:sections.all.padding.padding_top.label",
-        "default": 40
+      "type": "image_picker",
+      "id": "cvr_image",
+      "label": "Image second"
     },
     {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 200,
-        "step": 2,
-        "unit": "t:sections.all.padding.padding_bottom.unit",
-        "label": "t:sections.all.padding.padding_bottom.label",
-        "default": 40
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 40
     },
     {
       "type": "range",
@@ -155,7 +191,7 @@
       "step": 1,
       "unit": "px"
     },
-    {   
+    {
       "type": "range",
       "id": "margin_top",
       "label": "Top margin",
@@ -314,24 +350,12 @@
           "label": "t:sections.all.secondary_color.label"
         }
       ]
-    },
-    {
-      "type": "block_image",
-      "name": "Block image",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "cvr_image",
-          "label": "Image"
-        }
-      ]
-    },
-],
+    }
+  ],
   "presets": [
     {
       "name": "Quote With Image"
     }
-  ],
+  ]
 }
 {% endschema %}

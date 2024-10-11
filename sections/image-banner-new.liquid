@@ -165,23 +165,25 @@
                   </{{ block.settings.heading_tag }}>
                 {%- when 'subheading' -%}
                   <div {{ block.shopify_attributes }}>
-                  {% if block.settings.subheading_image != blank %}
-                    {{
-                      block.settings.subheading_image
-                      | image_url: width: 200
-                      | image_tag: loading: 'lazy', widths: '200, 375, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-                    }}
-                  {% else %}
-                    {% if block.settings.subheading != blank %}
-                      <p
-                        class="banner__subheading{% if block.settings.secondary_color %} banner__subheading--colored{% endif %} {{ block.settings.subheading_size }}"
-                        {{ block.shopify_attributes }}
-                      >
-                        {{ block.settings.subheading | escape }}
-                      </p>
-                    {% endif %}
-                  {% endif %}
+                  <p
+                    class="banner__subheading{% if block.settings.secondary_color %} banner__subheading--colored{% endif %} {{ block.settings.subheading_size }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.subheading | escape }}
+                  </p>
                 </div>
+                {%- when 'subimage' -%}
+                  {% if block.settings.subheading_image != blank %}
+                    <div class="banner__box_img">
+                      {% if block.settings.subheading_image != blank %}
+                        {{
+                          block.settings.subheading_image
+                          | image_url: width: 200
+                          | image_tag: loading: 'lazy', widths: '200, 375, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                        }}
+                      {% endif %}
+                    </div>
+                  {% endif %}
                 {%- when 'text' -%}
                   <div
                     class="banner__text{% if block.settings.secondary_color %} banner__text--colored{% endif %} {{ block.settings.text_size }} rte"
@@ -757,8 +759,8 @@
       ]
     },
     {
-      "type": "subheading",
-      "name": "t:sections.image-banner.blocks.subheading.name",
+      "type": "subimage",
+      "name": "Image",
       "limit": 2,
       "settings": [
         {
@@ -766,6 +768,13 @@
           "id": "subheading_image",
           "label": "Image"
         },
+      ],
+    },
+    {
+      "type": "subheading",
+      "name": "t:sections.image-banner.blocks.subheading.name",
+      "limit": 2,
+      "settings": [
         {
           "type": "inline_richtext",
           "id": "subheading",

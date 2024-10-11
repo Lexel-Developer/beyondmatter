@@ -112,6 +112,9 @@
     padding-inline-start: 3.2rem;
     padding-inline-end: 0;
   }
+  .image-with-text .image-with-text__content:has(.download-button-cta) {
+    padding-inline-start: 4.8rem;
+  }
   .image-with-text .image-with-text__grid--reverse .image-with-text__content {
     padding-inline-end: 3.2rem;
   }
@@ -122,6 +125,9 @@
     max-width: 66rem;
     padding-inline-start: 3.2rem;
     padding-inline-end: 0;
+  }
+  .image-with-text .image-with-text__content:has(.download-button-cta) {
+    padding-inline-start: 4.8rem;
   }
 
   .image-with-text .image-with-text__grid--reverse .image-with-text__content {
@@ -252,16 +258,16 @@
   }
 
   .image-with-text--small .grid__item:first-child {
-    max-width: calc(30.55% - var(--grid-horizontal-spacing) / 2);
+    max-width: calc(34.55% - var(--grid-horizontal-spacing) / 2);
   }
   .image-with-text--medium .grid__item:first-child {
-    max-width: calc(50% - var(--grid-horizontal-spacing) / 2);
+    max-width: calc(48.6% - var(--grid-horizontal-spacing) / 2);
   }
   .image-with-text--large .grid__item:first-child {
-    max-width: calc(60% - var(--grid-horizontal-spacing) / 2);
+    max-width: calc(58% - var(--grid-horizontal-spacing) / 2);
   }
   .image-with-text--large .grid__item:nth-child(2) {
-    max-width: calc(40% - var(--grid-horizontal-spacing) / 2);
+    max-width: calc(42% - var(--grid-horizontal-spacing) / 2);
   } 
 }
 
@@ -330,8 +336,9 @@
   margin-right: 8px;
 }
 .image-with-text-section .button--cta {
-  padding: 12px 24px;
+  padding: 11px 24px;
   border: 1px solid rgb(var(--color-border));
+  justify-content: center;
 }
 .image-with-text-section .button--cta .label {
   padding-right: 0;
@@ -350,6 +357,16 @@
 
 @media only screen and (max-width:749px){
   .image-with-text-section .button--cta {
-    padding: 12px 14px;
+    padding: 12px 4px;
   }
+}
+
+.image-with-text__text {
+  line-height: 1.5;
+}
+.image-with-text-section .page-width--narrow {
+  max-width: 1072px;
+}
+.image-with-text-section .download-button-cta i {
+  margin-left: 4px;
 }

@@ -14,6 +14,12 @@
   }
 }
 
+@media screen and (max-width: 749px) {
+  .slider-mobile-gutter {
+    margin-right: -24px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .slider-mobile-gutter + .view-all .button {
     width: 100%;
@@ -53,13 +59,13 @@
   }
 
   .slider-mobile-gutter > .slider.grid--2-col > .grid__item {
-    width: 42%;
+    width: 62%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .slider-mobile-gutter > .slider.grid--1-col-mobile > .grid__item {
-    width: 62%;
+    width: 82%;
   }
 }
 

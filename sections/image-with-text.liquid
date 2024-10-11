@@ -48,7 +48,7 @@
     }
   {% endif %}
 
-  @media only screen and (min-width:750px){
+  @media only screen and (min-width:990px){
     {% if section.settings.desktop_box_spacing != blank %}
       .grid--{{ section.id }} {
         padding:{{ section.settings.desktop_box_spacing }}px;
@@ -267,7 +267,7 @@
                 {%- if block.settings.button_label2 != blank -%}
                     <a class="download-button-cta button {% if block.settings.button_style2 == "secondary" %} button--cta {% endif %} button--{{ block.settings.button_size2 }}"{% if block.settings.button_link2 != blank %} href="{{ block.settings.button_link2 }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }} download>
                       {% render 'icon', icon: 'down-arrow' %}
-                      <span class="label">{{ block.settings.button_label2 | escape }}</span>
+                      <span class="label">{{ block.settings.button_label2 | escape }}<i>(PNG, 25kb)</i></span>
                     </a>
                 {%- endif -%}
             {%- endcase -%}

@@ -1,16 +1,7 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "current": {
-    "colors_solid_button_labels": "#212326",
-    "colors_accent": "#faeaa1",
+    "colors_solid_button_labels": "#ffffff",
+    "colors_accent": "#3c3c3c",
     "colors_background": "#ffffff",
     "colors_text": "#212326",
     "colors_heading": "#1a1b18",
