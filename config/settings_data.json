@@ -1,12 +1,21 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "colors_solid_button_labels": "#ffffff",
-    "colors_accent": "#3c3c3c",
+    "colors_accent": "#faeaa1",
     "colors_background": "#ffffff",
     "colors_text": "#212326",
     "colors_heading": "#1a1b18",
     "colors_price": "#1a1b18",
     "colors_sale_price": "#d72c0d",
+    "colors_solid_button_labels": "#212326",
     "colors_outline_button_labels": "#1a1b18",
     "colors_border": "#d2d5d9",
     "colors_reviews": "#ffb503",
@@ -28,9 +37,6 @@
     "price_superscript": true,
     "page_width": 1600,
     "spacing_sections": 0,
-    "page_transition_enabled": true,
-    "image_zoom_effect_enabled": true,
-    "image_loading_bar_enabled": true,
     "button_border_thickness": 1,
     "button_corner_radius": 0,
     "button_shadow_horizontal_offset": 0,
@@ -56,6 +62,9 @@
     "cart_recommendations_show_vendor": true,
     "predictive_search_show_vendor": true,
     "gift_card_logo_height": 70,
+    "page_transition_enabled": true,
+    "image_zoom_effect_enabled": true,
+    "image_loading_bar_enabled": true,
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -70,10 +79,7 @@
           "show_line_separator": false
         }
       }
-    },
-    "content_for_index": [
-
-    ]
+    }
   },
   "presets": {
     "Beauty": {

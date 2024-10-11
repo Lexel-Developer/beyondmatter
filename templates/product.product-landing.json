@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -79,7 +88,7 @@
         "rich-text-0-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -227,7 +236,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "1. Collapsible tab",
-            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
             "page": ""
           }
         },
@@ -235,7 +244,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "2. Collapsible tab",
-            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
             "page": ""
           }
         },
@@ -243,7 +252,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "3. Collapsible tab",
-            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
             "page": ""
           }
         }
@@ -359,7 +368,7 @@
         "rich-text-2-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
             "text_size": "typeset2",
             "secondary_color": true
           }
@@ -385,7 +394,7 @@
           "settings": {
             "image": "",
             "heading": "1. Image heading",
-            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -396,7 +405,7 @@
           "settings": {
             "image": "",
             "heading": "2. Image heading",
-            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -407,7 +416,7 @@
           "settings": {
             "image": "",
             "heading": "3. Image heading",
-            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -418,7 +427,7 @@
           "settings": {
             "image": "",
             "heading": "4. Image heading",
-            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -429,7 +438,7 @@
           "settings": {
             "image": "",
             "heading": "5. Image heading",
-            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -440,7 +449,7 @@
           "settings": {
             "image": "",
             "heading": "6. Image heading",
-            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -479,7 +488,7 @@
           "type": "video",
           "settings": {
             "cover_image": "",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description": "Describe the video for customers using screen readers",
             "heading": "Video heading"
           }
@@ -523,7 +532,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
             "image": "",
             "author": "Author's name"
           }
@@ -532,7 +541,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
             "image": "",
             "author": "Author's name"
           }
@@ -541,7 +550,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
             "image": "",
             "author": "Author's name"
           }
@@ -550,7 +559,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
             "image": "",
             "author": "Author's name"
           }
@@ -559,7 +568,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
             "image": "",
             "author": "Author's name"
           }
@@ -593,7 +602,7 @@
         "newsletter-1": {
           "type": "paragraph",
           "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         },
         "newsletter-2": {
@@ -628,7 +637,7 @@
         "map-1": {
           "type": "text",
           "settings": {
-            "text": "<p>620 King Street West<br\/>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
+            "text": "<p>620 King Street West<br/>Toronto, Canada</p><p>Mon - Fri, 8:30am - 10:30pm<br/>Saturday, 8:30am - 10:30pm<br/>Sunday, 8:30am - 10:30pm</p>",
             "text_size": "typeset",
             "secondary_color": true
           }
