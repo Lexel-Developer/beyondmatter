@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.overlay-group.name",
   "type": "custom.overlay",
@@ -15,7 +24,7 @@
         "popup-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up and get 10% off your first order<\/p>",
+            "text": "<p>Sign up and get 10% off your first order</p>",
             "text_size": "typeset3",
             "secondary_color": false
           }
@@ -23,7 +32,7 @@
         "popup-2": {
           "type": "newsletter",
           "settings": {
-            "text": "<p>Subscribe to our newsletter and be the first to hear about our new arrivals, special promotions and online exclusives.<\/p>",
+            "text": "<p>Subscribe to our newsletter and be the first to hear about our new arrivals, special promotions and online exclusives.</p>",
             "button_style_secondary": true,
             "button_full_width": false
           }
@@ -75,7 +84,7 @@
         "cookie-banner-0": {
           "type": "text",
           "settings": {
-            "text": "<p>We use cookies and similar technologies to provide the best experience on our website. <a href=\"\/policies\/privacy-policy\">Privacy Policy<\/a><\/p>",
+            "text": "<p>We use cookies and similar technologies to provide the best experience on our website. <a href=\"/policies/privacy-policy\">Privacy Policy</a></p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -118,7 +127,7 @@
         "age-verifier-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Are you 18 years old or older?<\/p>",
+            "text": "<p>Are you 18 years old or older?</p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -188,7 +197,7 @@
           "settings": {
             "custom_icon": "",
             "title": "Shop",
-            "link": "shopify:\/\/collections\/all"
+            "link": "shopify://collections/all"
           }
         },
         "mobile-dock-4": {

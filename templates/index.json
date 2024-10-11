@@ -1,781 +1,746 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "image_banner_new_UFaEY7": {
-      "type": "image-banner-new",
+    "slideshow": {
+      "type": "slideshow",
       "blocks": {
-        "subimage_qYPzUE": {
-          "type": "subimage",
+        "slide-0": {
+          "type": "image",
           "settings": {
-            "subheading_image": "shopify:\/\/shop_images\/Group_10.svg"
-          }
-        },
-        "heading_JQw8WD": {
-          "type": "heading",
-          "settings": {
-            "heading": "Effektiver Strahlenschutz für unterwegs: Ava.",
-            "heading_size": "x-large",
-            "heading_tag": "h1"
-          }
-        },
-        "text_CRpQQU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Schutz vor Elektrosmog von mobilen Endgeräten.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        },
-        "button_xGYPDA": {
-          "type": "button",
-          "settings": {
-            "button_label": "Ava entdecken",
-            "button_link": "#",
-            "button_size": "medium",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "subimage_qYPzUE",
-        "heading_JQw8WD",
-        "text_CRpQQU",
-        "button_xGYPDA"
-      ],
-      "settings": {
-        "page_width": "full-width",
-        "image": "shopify:\/\/shop_images\/banner-image.png",
-        "image_position": "center center",
-        "text_box_position": "middle-left",
-        "text_alignment": "left",
-        "image_ratio": "adapt",
-        "enable_boxed_height": false,
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_image": "shopify:\/\/shop_images\/mobile-image1.png",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "300px",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "show_text_box": false,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_overlay": "#212326",
-        "colors_overlay_opacity": 100,
-        "boxed_width": 50,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0,
-        "margin_top": 0,
-        "margin_bottom": 50
-      }
-    },
-    "image_banner_new_FzymdG": {
-      "type": "image-banner-new",
-      "settings": {
-        "page_width": "full-width",
-        "image": "shopify:\/\/shop_images\/image-2.png",
-        "image_position": "center center",
-        "text_box_position": "middle-left",
-        "text_alignment": "left",
-        "image_ratio": "adapt",
-        "enable_boxed_height": false,
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_text_alignment": "center",
-        "mobile_image_ratio": "200px",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "show_text_box": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_overlay": "#3c3c3c",
-        "colors_overlay_opacity": 0,
-        "boxed_width": 50,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0,
-        "margin_top": 0,
-        "margin_bottom": 50
-      }
-    },
-    "image_banner_new_hQtiGn": {
-      "type": "image-banner-new",
-      "blocks": {
-        "subheading_GbAyGq": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "",
+            "image_position": "center center",
+            "text_box_position": "bottom-left",
+            "subheading": "Add a tagline",
             "subheading_size": "h5",
-            "secondary_color": false
+            "heading": "Image slide",
+            "heading_size": "h0",
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": "typeset2",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
           }
         },
-        "heading_cX8jU3": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "text_box_position": "bottom-center",
+            "subheading": "Add a tagline",
+            "subheading_size": "h5",
+            "heading": "Image slide",
+            "heading_size": "h0",
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": "typeset2",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "text_box_position": "bottom-right",
+            "subheading": "Add a tagline",
+            "subheading_size": "h5",
+            "heading": "Image slide",
+            "heading_size": "h0",
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": "typeset2",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "slideshow_type": "legacy",
+        "text_alignment": "left",
+        "image_ratio": "100vh",
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "full_width": true,
+        "image_behavior": "none",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "600px",
+        "show_text_below": false,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_background": "#ffffff",
+        "colors_overlay": "#1a1b18",
+        "colors_overlay_opacity": 16,
+        "colors_navigation_text": "#ffffff",
+        "colors_navigation_background": "#1a1b18",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Sol",
-            "heading_size": "x-large",
-            "heading_tag": "h1"
+            "heading": "Talk about your brand",
+            "heading_size": "h1",
+            "heading_tag": "h2"
           }
         },
-        "text_BCHff9": {
+        "text": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Anhänger für den Körper<\/strong><\/p><p>Aus EssenceX Schungit.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
-          }
-        },
-        "button_9racnq": {
-          "type": "button",
-          "settings": {
-            "button_label": "Ava entdecken",
-            "button_link": "#",
-            "button_size": "medium",
-            "button_style": "primary"
+            "text": "<p>Share ✨ information ✨ about your brand with your customers 😄. You can also highlight text and use emoji to make certain words stand out.<\/p>",
+            "text_size": "typeset3",
+            "secondary_color": false,
+            "highlight_phrases": "highlight\nuse emoji",
+            "highlight_style": "circle"
           }
         }
       },
       "block_order": [
-        "subheading_GbAyGq",
-        "heading_cX8jU3",
-        "text_BCHff9",
-        "button_9racnq"
+        "heading",
+        "text"
       ],
       "settings": {
-        "page_width": "standard",
-        "image": "shopify:\/\/shop_images\/Mask_group.png",
-        "image_position": "center center",
-        "text_box_position": "middle-left",
-        "text_alignment": "left",
-        "image_ratio": "adapt",
-        "enable_boxed_height": true,
+        "text_alignment": "center",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": true,
         "show_divider": false,
-        "image_behavior": "none",
-        "mobile_text_alignment": "center",
-        "mobile_image_ratio": "200px",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "show_text_box": true,
+        "use_custom_colors": true,
         "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_overlay": "#b6ab9f",
-        "colors_overlay_opacity": 100,
-        "boxed_width": 44,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 50
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#ffb503",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "category_grid_NcjRfr": {
-      "type": "category-grid",
+    "bb3256b3-d2cb-467c-9f00-82cda1259a63": {
+      "type": "option-table",
       "blocks": {
-        "category_j3ApxM": {
-          "type": "category",
+        "ccf70423-c062-4400-8d76-5a5cee1caf46": {
+          "type": "product",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_1.svg",
-            "text": "An deinem <br> \u2028Körper",
-            "link": "",
-            "background_color": "#f3f1f1"
+            "product": ""
           }
         },
-        "category_De69eG": {
-          "type": "category",
+        "2a72bbb8-69db-475d-a438-70e33f702e69": {
+          "type": "product",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_2.svg",
-            "text": "An mobilen<br> Endgeräten",
-            "link": "",
-            "background_color": "#edeaea"
+            "product": ""
           }
         },
-        "category_3CKxAR": {
-          "type": "category",
+        "307cfa25-ee31-443b-ba59-86beb2541c0a": {
+          "type": "product",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_3.svg",
-            "text": "Im <br>\u2028Smart-Home",
-            "link": "",
-            "background_color": "#f3f1f1"
+            "product": ""
           }
         },
-        "category_tdYJqR": {
-          "type": "category",
+        "644b439e-29a8-41e9-a6df-1ceef3850970": {
+          "type": "product",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_4.svg",
-            "text": "Im Büro und<br> Zuhause",
-            "link": "",
-            "background_color": "#edeaea"
-          }
-        },
-        "category_YainVp": {
-          "type": "category",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_5.svg",
-            "text": "Im E-Auto und <br>\u2028am E-bike",
-            "link": "",
-            "background_color": "#f3f1f1"
-          }
-        },
-        "category_9zgLUg": {
-          "type": "category",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_6.svg",
-            "text": "Für deine<br> Lebensmittel",
-            "link": "",
-            "background_color": "#edeaea"
+            "product": ""
           }
         }
       },
       "block_order": [
-        "category_j3ApxM",
-        "category_De69eG",
-        "category_3CKxAR",
-        "category_tdYJqR",
-        "category_YainVp",
-        "category_9zgLUg"
+        "ccf70423-c062-4400-8d76-5a5cee1caf46",
+        "2a72bbb8-69db-475d-a438-70e33f702e69",
+        "307cfa25-ee31-443b-ba59-86beb2541c0a",
+        "644b439e-29a8-41e9-a6df-1ceef3850970"
       ],
       "settings": {
-        "page_width": "standard",
-        "subtitle": "<em>Unsere Kategrorien<\/em>",
-        "title": "So kannst Du Beyond Matter verwenden:",
+        "criteria_option": "Size",
+        "heading": "Find your ideal size",
         "heading_size": "h1",
-        "heading_alignment": "left",
         "heading_tag": "h2",
-        "primary_background": "#baab9e",
-        "secondary_background": "#d4cfcc",
-        "category_column_desktop": 3,
-        "category_column_mobile": "2",
-        "padding_top": 150,
-        "padding_bottom": 160,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "button_label": "Shop the collection",
+        "button_link": "",
+        "button_size": "medium",
+        "button_style_secondary": false,
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "show_divider": false,
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#faeaa1",
+        "colors_border": "#f3f3f3",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "quote_with_image_mTgYVk": {
-      "type": "quote-with-image",
+    "reveal-banner": {
+      "type": "reveal-banner",
       "blocks": {
-        "heading_cMXAYd": {
-          "type": "heading",
-          "settings": {
-            "heading": "Wir verbinden Technik mit \u2028der heil;enden Kraft der Natur. Wissenschaft-lich bewiesen und ein Leben lang.",
-            "heading_primary_color": "#3c3c3c",
-            "heading_secondary_color": "#f4f2f2",
-            "heading_size": "x-large",
-            "heading_tag": "h1"
-          }
-        },
-        "subheading_UUV8x9": {
+        "subheading": {
           "type": "subheading",
           "settings": {
-            "subheading_image": "shopify:\/\/shop_images\/Group_10.svg",
             "subheading": "Add a tagline",
             "subheading_size": "h5",
             "secondary_color": false
           }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Banner heading",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "video_button": "Play Video",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video_description": "Describe the video"
+          }
+        },
+        "slide": {
+          "type": "slide",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1",
+            "heading_tag": "h2",
+            "text": "<p>Add details on availability, style, or even provide a review.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false,
+            "colors_button_label": "#ffffff",
+            "colors_button_background": "#1a1b18",
+            "colors_text": "#1a1b18",
+            "colors_background": "#f7eedd",
+            "gradient_background": ""
+          }
         }
       },
       "block_order": [
-        "heading_cMXAYd",
-        "subheading_UUV8x9"
+        "subheading",
+        "heading",
+        "text",
+        "buttons",
+        "slide"
       ],
       "settings": {
-        "page_width": "narrow",
-        "section_backgroud": "#d4cfcc",
-        "desktop_image": "shopify:\/\/shop_images\/image-3.png",
-        "mobile_image": "shopify:\/\/shop_images\/mobile-cvr-image.png",
-        "cvr_image": "shopify:\/\/shop_images\/image-4.png",
-        "padding_top": 120,
-        "padding_bottom": 120,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "image_position": "center center",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "400px",
+        "show_text_below": false,
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 20,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "featured_collection_b8Yiq6": {
-      "type": "featured-collection",
+    "guarantees": {
+      "type": "guarantees",
+      "blocks": {
+        "guarantee-0": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "leaf",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Guarantee heading",
+            "title_size": "h4",
+            "text": "<p>Welcome to our store.<\/p>"
+          }
+        },
+        "guarantee-1": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "globe",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Guarantee heading",
+            "title_size": "h4",
+            "text": "<p>Welcome to our store.<\/p>"
+          }
+        },
+        "guarantee-2": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "recycle",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Guarantee heading",
+            "title_size": "h4",
+            "text": "<p>Welcome to our store.<\/p>"
+          }
+        },
+        "guarantee-3": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "shield",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Guarantee heading",
+            "title_size": "h4",
+            "text": "<p>Welcome to our store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee-0",
+        "guarantee-1",
+        "guarantee-2",
+        "guarantee-3"
+      ],
       "settings": {
-        "page_width": "standard",
-        "primary_background": "#baab9e",
-        "secondary_background": "#d4cfcc",
-        "poroduct_grid_background": "#ffffff",
-        "subtitle": "<em>Unsere Lieblinge</em>",
-        "title": "Derzeit beliebt bei unseren Kunden",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "heading_tag": "h2",
-        "collection": "bestseller",
-        "products_to_show": 3,
-        "products_to_row": 3,
-        "horizontal_scroll": false,
-        "show_view_all": false,
+        "layout": "default",
+        "column_alignment": "center",
+        "horizontal_content": false,
+        "full_width": false,
         "show_divider": false,
+        "heading": "Guarantees",
+        "heading_size": "h1",
+        "heading_tag": "h2",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "image_ratio": "square",
-        "image_position": "top center",
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "image_position": "center center",
         "enable_image_fill": true,
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "secondary_image_max": 1,
-        "show_vendor": false,
-        "show_rating": false,
+        "show_vendor": true,
+        "show_rating": true,
         "show_quick_buy": true,
-        "show_datails_button": true,
         "enable_quick_view": true,
         "enable_color_swatches": true,
         "enable_countdown": true,
-        "cart_buttons_outline": true,
-        "details_buttons_outline": false,
-        "button_text_color": "#3c3c3c",
-        "button_background_color": "#d4cfcc",
-        "add_to_cart_outline_color": "#3c3c3c",
-        "padding_top": 160,
-        "padding_bottom": 140,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "video_gTbc38": {
-      "type": "video",
+    "video-hero": {
+      "type": "video-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video hero",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
       "settings": {
-        "page_width": "standard",
-        "enable_video_looping": false,
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify:\/\/shop_images\/video_image.jpg",
-        "description": "",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "650px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "400px",
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 60,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "countdown-timer": {
+      "type": "countdown-timer",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Add a tagline",
+            "subheading_size": "h5",
+            "secondary_color": true
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Countdown timer",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "settings": {
+            "date": "01-01-2023",
+            "number_size": "small",
+            "message": "<p>New sales and discounts are added all the time.<\/p>",
+            "message_size": "typeset2"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "countdown",
+        "button"
+      ],
+      "settings": {
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "adapt",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#1a1b18",
+        "colors_background": "#f9f9f9",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "product-0": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "color": "#ffffff",
+            "horizontal": 30,
+            "vertical": 40
+          }
+        },
+        "product-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "color": "#ffffff",
+            "horizontal": 70,
+            "vertical": 45
+          }
+        },
+        "product-2": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "color": "#ffffff",
+            "horizontal": 45,
+            "vertical": 65
+          }
+        }
+      },
+      "block_order": [
+        "product-0",
+        "product-1",
+        "product-2"
+      ],
+      "settings": {
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "full_width": false,
+        "show_divider": false,
+        "heading": "Shop the Look",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "image_ratio": "portrait",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "lookbook": {
+      "type": "lookbook",
+      "blocks": {
+        "look-0": {
+          "type": "look",
+          "settings": {
+            "product": "",
+            "enable_quick_view": true,
+            "color": "#ffffff",
+            "horizontal": 25,
+            "vertical": 35
+          }
+        },
+        "look-1": {
+          "type": "look",
+          "settings": {
+            "product": "",
+            "enable_quick_view": true,
+            "color": "#ffffff",
+            "horizontal": 45,
+            "vertical": 65
+          }
+        },
+        "look-2": {
+          "type": "look",
+          "settings": {
+            "product": "",
+            "enable_quick_view": true,
+            "color": "#ffffff",
+            "horizontal": 70,
+            "vertical": 40
+          }
+        }
+      },
+      "block_order": [
+        "look-0",
+        "look-1",
+        "look-2"
+      ],
+      "settings": {
+        "full_width": true,
         "show_divider": false,
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
-        "primary_background": "#ede9e9",
-        "secondary_background": "#3c3c3c",
-        "padding_top": 160,
-        "padding_bottom": 160,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "colors_overlay": "#1a1b18",
+        "colors_overlay_opacity": 8,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "text_with_icon_box_Px6UnJ": {
-      "type": "text-with-icon-box",
-      "blocks": {
-        "icon_with_text_block_FEYxzR": {
-          "type": "icon_with_text_block",
-          "settings": {
-            "icon": "shopify://shop_images/weather-sun_1.png",
-            "text": "Bessere Erholung ",
-            "block_description": "<p>Du regenerierst auch in Pausen besser, wenn dein Körper keinem Elektrosmog ausgesetzt ist.</p>",
-            "hide_description_in_deskop": false,
-            "block_background": "#baab9e",
-            "background_opacity": 60
-          }
-        },
-        "icon_with_text_block_AyBEGM": {
-          "type": "icon_with_text_block",
-          "settings": {
-            "icon": "shopify://shop_images/icon-cr.png",
-            "text": "Mehr Energie ",
-            "block_description": "<p>Du fühlst dich fitter und hast mehr Leistung bereit, da kein Elektro-smog dein Energie-Level senk</p>",
-            "hide_description_in_deskop": false,
-            "block_background": "#baab9e",
-            "background_opacity": 80
-          }
-        },
-        "icon_with_text_block_zeWDcH": {
-          "type": "icon_with_text_block",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/emoji-flower-thankful_1.png",
-            "text": "Mehr Flow",
-            "block_description": "<p>Du kommst einfacher in den Flow-Zustand und bist weniger gestresst und produktiver.</p>",
-            "hide_description_in_deskop": false,
-            "block_background": "#baab9e",
-            "background_opacity": 100
-          }
-        }
-      },
-      "block_order": [
-        "icon_with_text_block_FEYxzR",
-        "icon_with_text_block_AyBEGM",
-        "icon_with_text_block_zeWDcH"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "primary_background": "#ede9e9",
-        "primary_background_opacity": 100,
-        "secondary_background": "#ede9e9",
-        "secondary_background_opacity": 100,
-        "icon_with_box_layout": "style-1",
-        "section_container_background": "",
-        "subtitle": "<em>Unsere Werte<\/em>",
-        "title": "Wir verbinden die Vorteile technischer Geräte mit der heilenden Kraft der Natur.",
-        "heading_size": "h1",
-        "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
-        "text_size": "typeset",
-        "desktop_image_width": 300,
-        "mobile_image_width": 300,
-        "heading_alignment": "left",
-        "heading_tag": "h2",
-        "padding_top": 120,
-        "padding_bottom": 160,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "text_with_icon_box_KeRfTa": {
-      "type": "text-with-icon-box",
-      "blocks": {
-        "icon_with_text_block_YJKtYa": {
-          "type": "icon_with_text_block",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon.svg",
-            "text": "Kopfschmerzen",
-            "block_description": "<p>Unsere Lösungen für einen klaren Kopf.</p>",
-            "hide_description_in_deskop": true,
-            "block_background": "#f4f2f2",
-            "background_opacity": 90
-          }
-        },
-        "icon_with_text_block_d4nFGm": {
-          "type": "icon_with_text_block",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_1_e27e748c-9305-4941-adbb-b8351febf2aa.svg",
-            "text": "Schlafstörungen",
-            "block_description": "<p>Holen Sie sich erholsamen Schlaf zurück.</p>",
-            "hide_description_in_deskop": true,
-            "block_background": "#f4f2f2",
-            "background_opacity": 80
-          }
-        },
-        "icon_with_text_block_MabfpF": {
-          "type": "icon_with_text_block",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_2_66cf1ac4-7f24-4763-a1f8-d6da1a550d98.svg",
-            "text": "Antriebslosigkeit",
-            "block_description": "<p>Mit Beyond Matter zu mehr Elan im Alltag.</p>",
-            "hide_description_in_deskop": true,
-            "block_background": "#f4f2f2",
-            "background_opacity": 70
-          }
-        }
-      },
-      "block_order": [
-        "icon_with_text_block_YJKtYa",
-        "icon_with_text_block_d4nFGm",
-        "icon_with_text_block_MabfpF"
-      ],
-      "settings": {
-        "page_width": "large",
-        "primary_background": "#d4cfcc",
-        "primary_background_opacity": 80,
-        "secondary_background": "#d4cfcc",
-        "secondary_background_opacity": 100,
-        "icon_with_box_layout": "style-2",
-        "section_container_background": "#baab9e",
-        "subtitle": "<em>Jetzt passende Lösung finden<\/em>",
-        "title": "Was führt dich zu uns?",
-        "heading_size": "h1",
-        "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
-        "text_size": "typeset",
-        "main_image": "shopify://shop_images/mask-group-image.svg",
-        "desktop_image_width": 340,
-        "mobile_image_width": 160,
-        "heading_alignment": "left",
-        "heading_tag": "h2",
-        "padding_top": 120,
-        "padding_bottom": 160,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "column_grid_aqfJxA": {
-      "type": "column-grid",
-      "blocks": {
-        "column_8EBxPK": {
-          "type": "column",
-          "settings": {
-            "title": "Wissenschaftliche Studien",
-            "heading_size": "h3",
-            "text": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
-            "link_text": "Zu unseren Studien",
-            "link": "#",
-            "title_color": "#baab9e",
-            "text_color": "#f4f2f2",
-            "background_color": "#d9d9d9",
-            "background_opacity": 15
-          }
-        },
-        "column_7i79GA": {
-          "type": "column",
-          "settings": {
-            "title": "Essence X Technologie",
-            "heading_size": "h3",
-            "text": "<p>Rohstoff unserer Produkte ist Schungit. Eine natürliche Ressource, die elektromagnetische Strahlungen neutralisieren kann. Unsere Essence X Technologie potenziert die Wirkung von Schungit und transformiert Elektrosmog zu einer Quelle förderlicher Energie.<\/p>",
-            "link_text": "Zu unseren Studien",
-            "link": "#",
-            "title_color": "#baab9e",
-            "text_color": "#f4f2f2",
-            "background_color": "#d9d9d9",
-            "background_opacity": 10
-          }
-        },
-        "column_hDQNwj": {
-          "type": "column",
-          "settings": {
-            "title": "Premium Materialen",
-            "heading_size": "h3",
-            "text": "<p>Wir verwenden nur die hochwertigsten Rohstoffe, welche ständiger Kontrolle unterliegen. So stellen wir sicher, dass unsere Produkte über keinerlei Verunreinigungen oder Einschlüsse verfügen und dich ein Leben lang beschützend begleiten.<\/p>",
-            "link_text": "Zu unseren Studien",
-            "link": "#",
-            "title_color": "#baab9e",
-            "text_color": "#f4f2f2",
-            "background_color": "#d9d9d9",
-            "background_opacity": 15
-          }
-        }
-      },
-      "block_order": [
-        "column_8EBxPK",
-        "column_7i79GA",
-        "column_hDQNwj"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "subtitle": "<em>Unsere Standards<\/em>",
-        "title": "Wofür wir stehen",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "heading_tag": "h2",
-        "show_inside_box": false,
-        "primary_background": "#3c3c3c",
-        "secondary_background": "#3c3c3c",
-        "box_background": "#ffffff",
-        "title_color": "#f4f2f2",
-        "sub_text_color": "",
-        "category_column_desktop": 3,
-        "category_column_mobile": "1",
-        "padding_top": 160,
-        "padding_bottom": 160,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "column_grid_Ri3Cej": {
-      "type": "column-grid",
-      "blocks": {
-        "column_9XRM8E": {
-          "type": "column",
-          "settings": {
-            "title": "Einfache Registrierung",
-            "heading_size": "h4",
-            "text": "<p>Unsere Studien erfüllen höchste Standards und werden von Fachjournalen veröffentlicht. Wir greifen auf renommierte Institute zurück, die seit vielen Jahren hochspezifische und bewährte Methoden anwenden.<\/p>",
-            "link_text": "",
-            "link": "#",
-            "title_color": "#3c3c3c",
-            "text_color": "#3c3c3c",
-            "background_color": "#d9d9d9",
-            "background_opacity": 0
-          }
-        },
-        "column_Hrzx7Y": {
-          "type": "column",
-          "settings": {
-            "title": "Faire Konditionen",
-            "heading_size": "h4",
-            "text": "<p>Studienteilnehmende werden zufällig, also randomisiert, in zwei Gruppen aufgeteilt: Der Verum- und der Placebo Gruppe. Der absolute Goldstandar im Studiendesign.<\/p>",
-            "link_text": "",
-            "link": "#",
-            "title_color": "#3c3c3c",
-            "text_color": "#3c3c3c",
-            "background_color": "#d9d9d9",
-            "background_opacity": 0
-          }
-        },
-        "column_FrELpA": {
-          "type": "column",
-          "settings": {
-            "title": "Einfache Bestellung",
-            "heading_size": "h4",
-            "text": "<p>Weder Studienteilnehmende, noch Sudiendurchführende wissen, wer randomisiert welcher Gruppe zugewiesen wurde. Doppelblinde Studien beugen Verzerrungseffekten vor.<\/p>",
-            "link_text": "",
-            "link": "",
-            "title_color": "#3c3c3c",
-            "text_color": "#3c3c3c",
-            "background_color": "#d9d9d9",
-            "background_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "column_9XRM8E",
-        "column_Hrzx7Y",
-        "column_FrELpA"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "subtitle": "<em>Jetzt als Händler registrieren<\/em>",
-        "title": "Werde Teil eines großen Ganzen",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "heading_tag": "h2",
-        "show_inside_box": true,
-        "primary_background": "#ede9e9",
-        "secondary_background": "#d4cfcc",
-        "box_background": "#ffffff",
-        "title_color": "#3c3c3c",
-        "sub_text_color": "#baab9e",
-        "category_column_desktop": 3,
-        "category_column_mobile": "1",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "padding_left": 0,
-        "padding_right": 0,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_B9mgtz": {
+    "image-with-text-0": {
       "type": "image-with-text",
       "blocks": {
-        "subheading_QwDQUe": {
+        "subheading": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p><em>Resultat<\/em><\/p>",
-            "sub_text_color": "#000000"
+            "subheading": "Add a tagline",
+            "subheading_size": "h5",
+            "secondary_color": true
           }
         },
-        "heading_wafkbG": {
+        "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Strahlenschutz, der hält, \u2028was er verspricht.",
+            "heading": "Image with text",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
         },
-        "text_nzN38q": {
+        "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Ohne Beyond Matter verschlechtert sich die HRV deutlich. Mit Beyond Matter passiert das nicht: SDNN- und RMSSD-Werte verbessern sich stark! Ohne Strahlenschutz durch Beyond Matter werden Stressmuster aktiviert, die wichtige Selbstregulationsprozesse des Körpers stören und Erschöpfungszustände fördern.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
         },
-        "download_button_block_wgGNqi": {
-          "type": "download_button_block",
+        "button": {
+          "type": "button",
           "settings": {
-            "button_label2": "Grafik herunterladen",
-            "button_link2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0848\/0931\/8728\/files\/gallery_4.jpg",
-            "button_size2": "medium",
-            "button_style2": "secondary"
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "subheading_QwDQUe",
-        "heading_wafkbG",
-        "text_nzN38q",
-        "download_button_block_wgGNqi"
+        "subheading",
+        "heading",
+        "text",
+        "button"
       ],
       "settings": {
-        "page_width": "narrow",
-        "primary_background": "#eae6e2",
-        "secondary_background": "#f6f6f6",
-        "main_description": "",
-        "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/images-1.png",
-        "image_position": "top center",
-        "layout": "image_first",
-        "desktop_box_spacing": 48,
-        "mobile_box_spacing": 15,
+        "image_position": "center center",
+        "layout": "text_first",
         "text_box_position": "middle",
         "text_alignment": "left",
-        "image_ratio": "adapt",
-        "enlarge_content": "small",
+        "image_ratio": "500px",
+        "enlarge_content": false,
+        "full_width": false,
         "show_divider": false,
         "image_behavior": "none",
         "mobile_layout": "image_first",
         "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
+        "mobile_image_ratio": "250px",
         "enable_video_looping": false,
         "video_url": "",
-        "use_custom_colors": true,
+        "use_custom_colors": false,
         "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
         "colors_background": "#ffffff",
         "gradient_background": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "image_with_text_hXgngA": {
+    "image-with-text-1": {
       "type": "image-with-text",
       "blocks": {
-        "subheading_4wPM97": {
+        "subheading": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p><em>Unser Team<\/em><\/p>",
-            "sub_text_color": "#3c3c3c"
+            "subheading": "Add a tagline",
+            "subheading_size": "h5",
+            "secondary_color": true
           }
         },
-        "heading_V38QJi": {
+        "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Von Technik fasziniert.  \u2028Der Gesundheit verpflichtet.",
+            "heading": "Image with text",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
         },
-        "text_GTCVQN": {
+        "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Wie der Name Beyond Matter schon sagt, gehen wir über das sichtbare und dingliche hinaus. Unser Team erforscht mit Neugier immer neue Wege, die Leiden durch Elektrosmog zu mindern. Die Leidenschaft unseres Teams macht uns zu einem der Marktführer im Schutz vor Elektrosmog.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "subheading_4wPM97",
-        "heading_V38QJi",
-        "text_GTCVQN"
+        "subheading",
+        "heading",
+        "text",
+        "button"
       ],
       "settings": {
-        "page_width": "standard",
-        "primary_background": "#ede9e9",
-        "secondary_background": "#ede9e9",
-        "main_description": "",
-        "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/images-2.png",
-        "image_position": "top center",
+        "image_position": "center center",
         "layout": "image_first",
-        "desktop_box_spacing": 0,
-        "mobile_box_spacing": 0,
         "text_box_position": "middle",
         "text_alignment": "left",
-        "image_ratio": "480px",
-        "enlarge_content": "medium",
+        "image_ratio": "500px",
+        "enlarge_content": false,
+        "full_width": false,
         "show_divider": false,
         "image_behavior": "none",
         "mobile_layout": "image_first",
@@ -783,659 +748,749 @@
         "mobile_image_ratio": "250px",
         "enable_video_looping": false,
         "video_url": "",
-        "use_custom_colors": true,
+        "use_custom_colors": false,
         "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_background": "#ede9e9",
-        "gradient_background": "",
-        "padding_top": 200,
-        "padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_y9jJGF": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_4azcyM": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<p><em>Kontakt & Hilfe<\/em><\/p>",
-            "sub_text_color": "#3c3c3c"
-          }
-        },
-        "heading_ekdhPm": {
-          "type": "heading",
-          "settings": {
-            "heading": "Wir sind für euch da",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
-        },
-        "text_78FTHP": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Erfahren Sie, wie Schungit als natürlicher Strahlenschutz funktioniert \u2028und Ihre Gesundheit schützt.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        },
-        "button_dG6K7n": {
-          "type": "button",
-          "settings": {
-            "button_label": "Zu Kontakt & Hilfe",
-            "button_link": "#",
-            "button_size": "medium",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_4azcyM",
-        "heading_ekdhPm",
-        "text_78FTHP",
-        "button_dG6K7n"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "primary_background": "#ede9e9",
-        "secondary_background": "#ede9e9",
-        "main_description": "",
-        "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/images-3.png",
-        "image_position": "top center",
-        "layout": "text_first",
-        "desktop_box_spacing": 0,
-        "mobile_box_spacing": 0,
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "480px",
-        "enlarge_content": "medium",
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "250px",
-        "enable_video_looping": false,
-        "video_url": "",
-        "use_custom_colors": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_background": "#ede9e9",
-        "gradient_background": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_wVQD9U": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_KdinBy": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<p><em>Gabi aus Wuppertal<\/em><\/p>",
-            "sub_text_color": "#3c3c3c"
-          }
-        },
-        "heading_8wBAEh": {
-          "type": "heading",
-          "settings": {
-            "heading": "Über den lebenslangen \u2028Weg mit Migräne",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
-        },
-        "text_wekLzy": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Untersucht die Strahlenbelastung durch Telefonate mit dem Handy. Als Schutzprodukt wird der Handychip AVA getestet. Von unabhängigem Institut durchgeführt.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        },
-        "button_9Uf7K3": {
-          "type": "button",
-          "settings": {
-            "button_label": "Mehr lesen",
-            "button_link": "#",
-            "button_size": "medium",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_KdinBy",
-        "heading_8wBAEh",
-        "text_wekLzy",
-        "button_9Uf7K3"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "primary_background": "#ede9e9",
-        "secondary_background": "#ede9e9",
-        "main_description": "",
-        "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/images-4.png",
-        "image_position": "top center",
-        "layout": "image_first",
-        "desktop_box_spacing": 0,
-        "mobile_box_spacing": 0,
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "480px",
-        "enlarge_content": "large",
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "250px",
-        "enable_video_looping": false,
-        "video_url": "",
-        "use_custom_colors": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_background": "#ede9e9",
-        "gradient_background": "",
-        "padding_top": 80,
-        "padding_bottom": 48,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_PQ79p4": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_LjqxmC": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<p><em>Heiko aus Hannover<\/em><\/p>",
-            "sub_text_color": "#3c3c3c"
-          }
-        },
-        "heading_e8KfHL": {
-          "type": "heading",
-          "settings": {
-            "heading": "Wie der Lärm Stadt auf einmal leise wurde",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
-        },
-        "text_3arKFU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Untersucht die Strahlenbelastung durch Telefonate mit dem Handy. Als Schutzprodukt wird der Handychip AVA getestet. Von unabhängigem Institut durchgeführt.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        },
-        "button_LkEMzg": {
-          "type": "button",
-          "settings": {
-            "button_label": "Mehr lesen",
-            "button_link": "#",
-            "button_size": "medium",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_LjqxmC",
-        "heading_e8KfHL",
-        "text_3arKFU",
-        "button_LkEMzg"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "primary_background": "#ede9e9",
-        "secondary_background": "#ede9e9",
-        "main_description": "",
-        "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/images-5.png",
-        "image_position": "top center",
-        "layout": "text_first",
-        "desktop_box_spacing": 0,
-        "mobile_box_spacing": 0,
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "480px",
-        "enlarge_content": "large",
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "250px",
-        "enable_video_looping": false,
-        "video_url": "",
-        "use_custom_colors": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_background": "#ede9e9",
-        "gradient_background": "",
-        "padding_top": 48,
-        "padding_bottom": 160,
-        "padding_left": 24,
-        "padding_right": 15,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_d3gfjn": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_6rByY6": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<p><em>Optionale Dachzeile<\/em><\/p>",
-            "sub_text_color": "#baab9e"
-          }
-        },
-        "heading_aNfMPW": {
-          "type": "heading",
-          "settings": {
-            "heading": "Guter Schlaf ist nicht selbstverständlich. \u2028Mit SAMSON schon.",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_6rByY6",
-        "heading_aNfMPW"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "primary_background": "#d4cfcc",
-        "secondary_background": "#baab9e",
-        "main_description": "<p>Der Alltag hat für jeden von uns immer mehr Herausforderungen und Eindrücke parat. Egal, ob beruflicher oder privater Natur, sind wir Stress ausgesetzt und es werden eher mehr als weniger Stressquellen. Neben diesen gibt es noch Quellen von Stress, deren wir uns meist nicht bewusst sind: elektromagnetische Felder. Elektrosmog. Und genau diese Stressquelle kannst du mit SAMSON ausschalten. Die ästhetisch hochwertige Kugel blockt Elektrosmog nicht nur, sondern macht diesen zu einer Energiequelle für dich.<\/p>",
-        "enable_main_image": false,
-        "image": "shopify:\/\/shop_images\/images-5.png",
-        "image_position": "top center",
-        "layout": "text_first",
-        "desktop_box_spacing": 50,
-        "mobile_box_spacing": 20,
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "480px",
-        "enlarge_content": "medium",
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "250px",
-        "enable_video_looping": false,
-        "video_url": "",
-        "use_custom_colors": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
         "colors_background": "#ffffff",
         "gradient_background": "",
-        "padding_top": 80,
-        "padding_bottom": 96,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "image_gallery_MaLEQ4": {
-      "type": "image-gallery",
+    "tab-collage": {
+      "type": "tab-collage",
       "blocks": {
-        "image_rDtjih": {
+        "image-0": {
           "type": "image",
           "settings": {
-            "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/gallery_1.jpg",
             "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "",
-            "background_color": "",
-            "background_opacity": 0
+            "heading": "1. Image heading",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "small",
+            "button_style_secondary": true
           }
         },
-        "image_7GDGYC": {
+        "image-1": {
           "type": "image",
           "settings": {
-            "enable_double_width": false,
             "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "Einfach großartig! <br>Jahre lang hatte ich Kopfschmerzen am Computer. Diese konnte ich nun um ein vielfaches reduzieren.",
-            "heading_size": "h2",
-            "text": "<p><strong>Sandra Z.<\/strong> aus Hamburg<\/p>",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "#85634a",
-            "background_color": "#ffffff",
-            "background_opacity": 100
+            "heading": "2. Image heading",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "small",
+            "button_style_secondary": true
           }
         },
-        "image_ccxm8q": {
+        "image-2": {
           "type": "image",
           "settings": {
-            "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/gallery_2.jpg",
             "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "",
-            "background_color": "",
-            "background_opacity": 0
+            "heading": "3. Image heading",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "small",
+            "button_style_secondary": true
           }
         },
-        "image_eANApJ": {
+        "image-3": {
           "type": "image",
           "settings": {
-            "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/Group_113.jpg",
             "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "<p><strong>Torsten H.<\/strong> aus Bonn<\/p>",
-            "link": "",
-            "text_box_position": "bottom-center",
-            "text_color": "#3c3c3c",
-            "background_color": "",
-            "background_opacity": 0
-          }
-        },
-        "image_dBnaTj": {
-          "type": "image",
-          "settings": {
-            "enable_double_width": false,
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "Ich habe AVA auf fast <br>allen elektronischen <br>Geräten. Ich liebe es!",
-            "heading_size": "h2",
-            "text": "<p><strong>Raphael K<\/strong>. aus Mainburg<\/p>",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "#f4f2f2",
-            "background_color": "#85634a",
-            "background_opacity": 100
-          }
-        },
-        "image_Aiwpn3": {
-          "type": "image",
-          "settings": {
-            "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/gallery_3.jpg",
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "",
-            "background_color": "",
-            "background_opacity": 0
-          }
-        },
-        "image_4KpVPE": {
-          "type": "image",
-          "settings": {
-            "enable_double_width": true,
-            "image": "shopify:\/\/shop_images\/gallery_4.jpg",
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "",
-            "background_color": "",
-            "background_opacity": 0
-          }
-        },
-        "image_BzHWDW": {
-          "type": "image",
-          "settings": {
-            "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/gallery_5.jpg",
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "",
-            "background_color": "",
-            "background_opacity": 0
-          }
-        },
-        "image_3aGCJn": {
-          "type": "image",
-          "settings": {
-            "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/Group_113_1.jpg",
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "<p><strong>Torsten H.<\/strong> aus Bonn<\/p>",
-            "link": "",
-            "text_box_position": "bottom-center",
-            "text_color": "#f4f2f2",
-            "background_color": "",
-            "background_opacity": 0
-          }
-        },
-        "image_EqWUHU": {
-          "type": "image",
-          "settings": {
-            "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/gallery_6.jpg",
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "",
-            "background_color": "",
-            "background_opacity": 0
-          }
-        },
-        "image_JXgb3D": {
-          "type": "image",
-          "settings": {
-            "enable_double_width": false,
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "Funktioniert und hilft. Punkt.",
-            "heading_size": "h3",
-            "text": "<p><strong>Andreas R.<\/strong> aus Köln<\/p>",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "#85634a",
-            "background_color": "#f4f2f2",
-            "background_opacity": 100
+            "heading": "3. Image heading",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "small",
+            "button_style_secondary": true
           }
         }
       },
       "block_order": [
-        "image_rDtjih",
-        "image_7GDGYC",
-        "image_ccxm8q",
-        "image_eANApJ",
-        "image_dBnaTj",
-        "image_Aiwpn3",
-        "image_4KpVPE",
-        "image_BzHWDW",
-        "image_3aGCJn",
-        "image_EqWUHU",
-        "image_JXgb3D"
+        "image-0",
+        "image-1",
+        "image-2",
+        "image-3"
       ],
       "settings": {
-        "page_width": "full-width",
-        "per_row": 4,
-        "spacing_images": 0,
-        "image_height": 400,
-        "apply_overlay": true,
+        "layout": "text_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "image_ratio": "500px",
+        "make_collapsible_rows": true,
+        "full_width": true,
         "show_divider": false,
-        "header_page_width": "standard",
-        "subtitle": "<em>Naturally connected<\/em>",
-        "heading": "Das sagen unsere Kunden",
-        "text": "<p>Wir entwickeln unsere Produkte im Austausch mit unserer Community.<\/p><p>Hier erfährst Du, was unsere Kunden über unsere Produkte denken.<\/p>",
+        "heading": "Tab collage",
         "heading_size": "h1",
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "heading_tag": "h2",
-        "button_label": "Mehr Beiträge laden",
-        "button_link": "",
-        "button_size": "medium",
-        "button_style_secondary": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "mobile_image_height": 300,
-        "primary_background": "#baab9e",
-        "secondary_background": "#d4cfcc",
-        "title_color": "",
-        "sub_text_color": "",
-        "button_background_color": "#3c3c3c",
-        "button_text_color": "#ffffff",
-        "padding_top": 114,
-        "padding_bottom": 114,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "mobile_layout": "text_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "200px",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#1a1b18",
+        "colors_border": "#a1a1a1",
+        "colors_background": "#f7eedd",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "image_gallery_njUQGQ": {
-      "type": "image-gallery",
+    "image-comparison": {
+      "type": "image-comparison",
       "blocks": {
-        "image_bCfbG7": {
-          "type": "image",
+        "look-0": {
+          "type": "look",
           "settings": {
-            "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-08-06_um_08.52.42_1.jpg",
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "",
-            "background_color": "",
-            "background_opacity": 0
+            "title": "",
+            "title_size": "small",
+            "title_position": "start"
           }
         },
-        "image_xMCpLM": {
-          "type": "image",
+        "look-1": {
+          "type": "look",
           "settings": {
-            "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-08-06_um_08.52.42_2.jpg",
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "",
-            "link": "",
-            "text_box_position": "bottom-left",
-            "text_color": "",
-            "background_color": "",
-            "background_opacity": 0
+            "title": "",
+            "title_size": "small",
+            "title_position": "start"
           }
         }
       },
       "block_order": [
-        "image_bCfbG7",
-        "image_xMCpLM"
+        "look-0",
+        "look-1"
       ],
       "settings": {
-        "page_width": "narrow",
-        "per_row": 4,
-        "spacing_images": 0,
-        "image_height": 470,
-        "apply_overlay": true,
+        "layout": "horizontal",
+        "image_ratio": "650px",
+        "mobile_image_ratio": "adapt",
+        "full_width": false,
         "show_divider": false,
-        "header_page_width": "standard",
-        "subtitle": "",
+        "heading": "Before & After",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "colors_line": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured-product": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "title_tag": "h2",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": "medium",
+            "show_badges": true,
+            "sale_badge_basis": "auto"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "swatches_source": "file",
+            "swatch_type": "round",
+            "enable_swatch_cross": true,
+            "enable_swatch_unavailable_click": false,
+            "size_chart": ""
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up ! Sale end in:",
+            "number_size": "compact",
+            "colors_heading": "#da3f3f",
+            "colors_text": "#da3f3f",
+            "colors_background": "#ffeeee"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "collapsible_tab-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "1. Collapsible row",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "2. Collapsible row",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "read_more": {
+          "type": "read_more",
+          "settings": {
+            "show_icon": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 20,
+            "show_inventory_transfer": true,
+            "color_scheme": "accent-3"
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "rating",
+        "price",
+        "variant_picker",
+        "countdown",
+        "description",
+        "collapsible_tab-0",
+        "collapsible_tab-1",
+        "read_more",
+        "buy_buttons",
+        "inventory_status",
+        "share"
+      ],
+      "settings": {
+        "product": "",
+        "layout": "media_first",
+        "full_width": false,
+        "show_divider": false,
+        "hide_variants": false,
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "image_ratio": "adapt_first",
+        "image_position": "center center",
+        "enable_layered_images": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "bundle-products": {
+      "type": "bundle-products",
+      "blocks": {
+        "product-0": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image_ratio": "square",
+            "show_vendor": true,
+            "show_quick_buy": true,
+            "enable_quick_view": true,
+            "color": "#ffffff",
+            "horizontal": 30,
+            "vertical": 40
+          }
+        },
+        "product-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image_ratio": "square",
+            "show_vendor": true,
+            "show_quick_buy": true,
+            "enable_quick_view": true,
+            "color": "#ffffff",
+            "horizontal": 70,
+            "vertical": 45
+          }
+        },
+        "product-2": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image_ratio": "square",
+            "show_vendor": true,
+            "show_quick_buy": true,
+            "enable_quick_view": true,
+            "color": "#ffffff",
+            "horizontal": 45,
+            "vertical": 65
+          }
+        }
+      },
+      "block_order": [
+        "product-0",
+        "product-1",
+        "product-2"
+      ],
+      "settings": {
+        "layout": "text_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "full_width": false,
+        "show_divider": false,
+        "subheading": "Add a tagline",
+        "subheading_size": "h5",
+        "heading": "Bundle products",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Add a tagline",
+            "subheading_size": "h5",
+            "secondary_color": true
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text overlay",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_position": "center center",
+        "text_box_position": "flex-end",
+        "text_alignment": "left",
+        "image_ratio": "550px",
+        "full_width": true,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_box_position": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "200px",
+        "video_url": "",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_overlay": "#fbf7ed",
+        "colors_overlay_opacity": 80,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "testimonial-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial-0",
+        "testimonial-1",
+        "testimonial-2",
+        "testimonial-3",
+        "testimonial-4"
+      ],
+      "settings": {
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "hide_images": false,
+        "show_divider": false,
+        "heading": "Testimonials",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich-text-1": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Express yourself with",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>#instagram<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": true,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "gallery": {
+      "type": "gallery",
+      "blocks": {
+        "image-0": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "middle-center"
+          }
+        },
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "subheading": "",
+            "subheading_size": "h4",
+            "heading": "",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "middle-center"
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "#summerMe",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "middle-center"
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "middle-center"
+          }
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "middle-center"
+          }
+        }
+      },
+      "block_order": [
+        "image-0",
+        "image-1",
+        "image-2",
+        "image-3",
+        "image-4"
+      ],
+      "settings": {
+        "per_row": 5,
+        "spacing_images": 0,
+        "image_height": 280,
+        "apply_overlay": true,
+        "full_width": false,
+        "show_divider": false,
         "heading": "",
-        "text": "",
         "heading_size": "h1",
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "heading_tag": "h2",
-        "button_label": "",
-        "button_link": "",
-        "button_size": "medium",
-        "button_style_secondary": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "mobile_image_height": 200,
-        "primary_background": "#ede9e9",
-        "secondary_background": "#ede9e9",
-        "title_color": "",
-        "sub_text_color": "",
-        "button_background_color": "",
-        "button_text_color": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "mobile_image_height": 160,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "scrolling-promotion": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image-0": {
+          "type": "image",
+          "settings": {
+            "height": 160,
+            "link": ""
+          }
+        },
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "height": 160,
+            "link": ""
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "height": 160,
+            "link": ""
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "height": 160,
+            "link": ""
+          }
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {
+            "height": 160,
+            "link": ""
+          }
+        },
+        "image-5": {
+          "type": "image",
+          "settings": {
+            "height": 160,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image-0",
+        "image-1",
+        "image-2",
+        "image-3",
+        "image-4",
+        "image-5"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 1.2,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "map": {
+      "type": "map",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Store",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>620 King Street West<br\/>Toronto, ON M5V 1M7, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get directions",
+            "button_link": "https:\/\/www.google.com\/maps\/place\/Peter+Bangs+Vej+15,+7600+Struer,+Denmark\/@56.4843068,8.6032672,17z\/data=!3m1!4b1!4m5!3m4!1s0x464a2dcc4bfc3e09:0x3222e80e09b18b8a!8m2!3d56.484304!4d8.605328",
+            "button_size": "small",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "map_address": "620 King St W, Toronto, ON M5V 1M7, Canada",
+        "map_api_key": "",
+        "map_zoom": 14,
+        "map_style": "standard",
+        "image_position": "center center",
+        "text_box_position": "middle-left",
+        "text_alignment": "left",
+        "image_ratio": "550px",
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_box_position": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "400px",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#1a1b18",
+        "colors_overlay": "#ffffff",
+        "gradient_overlay": "",
+        "colors_overlay_opacity": 100,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
-    "image_banner_new_UFaEY7",
-    "image_banner_new_FzymdG",
-    "image_banner_new_hQtiGn",
-    "category_grid_NcjRfr",
-    "quote_with_image_mTgYVk",
-    "featured_collection_b8Yiq6",
-    "video_gTbc38",
-    "text_with_icon_box_Px6UnJ",
-    "text_with_icon_box_KeRfTa",
-    "column_grid_aqfJxA",
-    "column_grid_Ri3Cej",
-    "image_with_text_B9mgtz",
-    "image_with_text_hXgngA",
-    "image_with_text_y9jJGF",
-    "image_with_text_wVQD9U",
-    "image_with_text_PQ79p4",
-    "image_with_text_d3gfjn",
-    "image_gallery_MaLEQ4",
-    "image_gallery_njUQGQ"
+    "slideshow",
+    "rich-text-0",
+    "bb3256b3-d2cb-467c-9f00-82cda1259a63",
+    "reveal-banner",
+    "guarantees",
+    "featured-collection",
+    "video-hero",
+    "countdown-timer",
+    "shop-the-look",
+    "lookbook",
+    "image-with-text-0",
+    "image-with-text-1",
+    "tab-collage",
+    "image-comparison",
+    "featured-product",
+    "bundle-products",
+    "image-with-text-overlay",
+    "testimonials",
+    "rich-text-1",
+    "gallery",
+    "scrolling-promotion",
+    "map"
   ]
 }
