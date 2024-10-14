@@ -59,6 +59,7 @@
 }
 
 
+
 @media only screen and (max-width:749px){
     .category-grid-row img {
         height: 38px;
@@ -66,5 +67,6 @@
     }
     .category-grid-row .grid__item {
         gap: 8px;
+        background-color: var(--box-background-mobile);
     }
 }

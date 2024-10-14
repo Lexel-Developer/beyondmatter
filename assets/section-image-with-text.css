@@ -215,6 +215,8 @@
 .image-with-text__content :last-child:is(.button) {
   margin-top: 2.4rem;
   margin-bottom: 0.1rem;
+  min-width: auto;
+  letter-spacing: 0.503px;
 }
 
 .image-with-text__content .button + .image-with-text__text {
@@ -349,6 +351,7 @@
   }
   .image-with-text__grid:has(.download-button-cta) .download-button-cta {
     margin-top: 25px;
+    padding: 11px 25.91px;
   }
   .image-with-text__grid:has(.download-button-cta) .image-with-text__heading {
     margin-top: 1px;

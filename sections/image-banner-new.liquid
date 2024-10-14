@@ -8,7 +8,7 @@
       --section-margin-top: {{ section.settings.margin_top }}px;
       --section-margin-bottom: {{ section.settings.margin_bottom }}px;
 
-      {%- if section.settings.image != blank or section.settings.image_2 != blank %}
+      {%- if section.settings.image != blank %}
         {%- assign section_image = section.settings.image | default: section.settings.image_2 -%}
         --image-ratio-percent: {{ 1 | divided_by: section_image.aspect_ratio | times: 100 }}%;
         --image-position: {{ section.settings.image_position }};
@@ -52,7 +52,7 @@
 
 <div
   id="section-{{ section.id }}"
-  class="section-image-banner-new section-{{ section.id }}-padding section--padding{% if section.settings.show_divider %} section--divider{% endif %}"
+  class="section-image-banner-new {% if section.settings.enable_spacing_left_right == false %}mobile_spacing--remove{% endif %} section-{{ section.id }}-padding section--padding{% if section.settings.show_divider %} section--divider{% endif %}"
 >
   <div class="page-width--{{ section.settings.page_width }}">
     <div
@@ -97,7 +97,7 @@
             </div>
           </use-animate>
         </div>
-      {%- elsif section.settings.image_2 == blank -%}
+      {%- else -%}
         <div class="banner__media">
           <use-animate
             data-animate="zoom-fade"
@@ -164,14 +164,16 @@
                     {{- block.settings.heading | escape -}}
                   </{{ block.settings.heading_tag }}>
                 {%- when 'subheading' -%}
-                  <div {{ block.shopify_attributes }}>
-                  <p
-                    class="banner__subheading{% if block.settings.secondary_color %} banner__subheading--colored{% endif %} {{ block.settings.subheading_size }}"
-                    {{ block.shopify_attributes }}
-                  >
-                    {{ block.settings.subheading | escape }}
-                  </p>
-                </div>
+                  {%  if  block.settings.subheading != blank %}
+                    <div {{ block.shopify_attributes }}>
+                    <p
+                      class="banner__subheading{% if block.settings.secondary_color %} banner__subheading--colored{% endif %} {{ block.settings.subheading_size }}"
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ block.settings.subheading }}
+                    </p>
+                  </div>
+                  {% endif %}
                 {%- when 'subimage' -%}
                   {% if block.settings.subheading_image != blank %}
                     <div class="banner__box_img">
@@ -521,6 +523,10 @@
           "value": "300px"
         },
         {
+          "label": "340px",
+          "value": "340px"
+        },
+        {
           "label": "t:sections.all.mobile_layout.mobile_image_ratio.options__5.label",
           "value": "400px"
         },
@@ -613,6 +619,12 @@
     {
       "type": "header",
       "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_spacing_left_right",
+      "default": true,
+      "label": "Enable mobile spacing left and right"
     },
     {
       "type": "range",

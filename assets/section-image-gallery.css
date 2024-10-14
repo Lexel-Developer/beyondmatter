@@ -123,5 +123,8 @@
     .gallery_btn .button {
         width: 100%;
     }
+    .image-gallery .head_right p {
+        font-size: 16px;
+    }
 }
 

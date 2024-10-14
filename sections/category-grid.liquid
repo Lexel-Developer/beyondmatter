@@ -36,7 +36,7 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'category' -%}
-                <a {% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="grid__item" style="--box-background: {{ block.settings.background_color }};" {{ block.shopify_attributes }}>
+                <a {% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="grid__item" style="--box-background: {{ block.settings.background_color }}; --box-background-mobile: {{ block.settings.background_color_mobile }}" {{ block.shopify_attributes }}>
                   {% if block.settings.icon != blank %}
                     {{ block.settings.icon | image_url: width: 100 | image_tag: widths: '100, 200' }}
                   {% endif %}
@@ -317,8 +317,14 @@
         },
         {
           "type": "color",
-          "label": "Background Color",
+          "label": "Background Color desktop",
           "id": "background_color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "label": "Background Color mobile",
+          "id": "background_color_mobile",
           "default": "#ffffff"
         }
       ]
