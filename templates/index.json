@@ -1413,7 +1413,7 @@
         "heading_aNfMPW": {
           "type": "heading",
           "settings": {
-            "heading": "Guter Schlaf ist nicht selbstverständlich. \u2028Mit SAMSON schon.",
+            "heading": "Guter Schlaf ist nicht selbstverständlich. <br>Mit SAMSON schon.",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
