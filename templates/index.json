@@ -289,22 +289,11 @@
             "subheading_size": "h5",
             "secondary_color": false
           }
-        },
-        "heading_87VXeJ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_primary_color": "#000000",
-            "heading_secondary_color": "#000000",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
         }
       },
       "block_order": [
         "heading_cMXAYd",
-        "subheading_UUV8x9",
-        "heading_87VXeJ"
+        "subheading_UUV8x9"
       ],
       "settings": {
         "page_width": "narrow",
