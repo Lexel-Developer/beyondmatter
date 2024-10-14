@@ -66,6 +66,8 @@
         "enable_spacing_left_right": true,
         "padding_top": 0,
         "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
         "padding_left": 0,
         "padding_right": 0,
         "margin_top": 0,
@@ -98,6 +100,8 @@
         "enable_spacing_left_right": true,
         "padding_top": 0,
         "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
         "padding_left": 0,
         "padding_right": 0,
         "margin_top": 0,
@@ -171,6 +175,8 @@
         "enable_spacing_left_right": false,
         "padding_top": 0,
         "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
         "padding_left": 24,
         "padding_right": 24,
         "margin_top": 0,
@@ -262,6 +268,8 @@
         "category_column_mobile": "2",
         "padding_top": 150,
         "padding_bottom": 160,
+        "mobile_padding_top": 92,
+        "mobile_padding_bottom": 80,
         "padding_left": 24,
         "padding_right": 24,
         "margin_top": 0,
@@ -301,6 +309,8 @@
         "cvr_image": "shopify:\/\/shop_images\/image-4.png",
         "padding_top": 120,
         "padding_bottom": 120,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 36,
         "padding_left": 24,
         "padding_right": 24,
         "margin_top": 0,
@@ -346,29 +356,8 @@
         "add_to_cart_outline_color": "#3c3c3c",
         "padding_top": 160,
         "padding_bottom": 140,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "video_gTbc38": {
-      "type": "video",
-      "settings": {
-        "page_width": "standard",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify:\/\/shop_images\/video_image.jpg",
-        "description": "",
-        "show_divider": false,
-        "heading": "",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "heading_tag": "h2",
-        "primary_background": "#ede9e9",
-        "secondary_background": "#3c3c3c",
-        "padding_top": 160,
-        "padding_bottom": 160,
+        "mobile_padding_top": 66,
+        "mobile_padding_bottom": 0,
         "padding_left": 24,
         "padding_right": 24,
         "margin_top": 0,
@@ -436,74 +425,33 @@
         "heading_tag": "h2",
         "padding_top": 120,
         "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
         "padding_left": 24,
         "padding_right": 24,
         "margin_top": 0,
         "margin_bottom": 0
       }
     },
-    "text_with_icon_box_KeRfTa": {
-      "type": "text-with-icon-box",
-      "blocks": {
-        "icon_with_text_block_YJKtYa": {
-          "type": "icon_with_text_block",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon.svg",
-            "text": "Kopfschmerzen",
-            "block_description": "<p>Unsere Lösungen für einen klaren Kopf.<\/p>",
-            "hide_description_in_deskop": true,
-            "block_background": "#f4f2f2",
-            "background_opacity": 90
-          }
-        },
-        "icon_with_text_block_d4nFGm": {
-          "type": "icon_with_text_block",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_1_e27e748c-9305-4941-adbb-b8351febf2aa.svg",
-            "text": "Schlafstörungen",
-            "block_description": "<p>Holen Sie sich erholsamen Schlaf zurück.<\/p>",
-            "hide_description_in_deskop": true,
-            "block_background": "#f4f2f2",
-            "background_opacity": 80
-          }
-        },
-        "icon_with_text_block_MabfpF": {
-          "type": "icon_with_text_block",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_2_66cf1ac4-7f24-4763-a1f8-d6da1a550d98.svg",
-            "text": "Antriebslosigkeit",
-            "block_description": "<p>Mit Beyond Matter zu mehr Elan im Alltag.<\/p>",
-            "hide_description_in_deskop": true,
-            "block_background": "#f4f2f2",
-            "background_opacity": 70
-          }
-        }
-      },
-      "block_order": [
-        "icon_with_text_block_YJKtYa",
-        "icon_with_text_block_d4nFGm",
-        "icon_with_text_block_MabfpF"
-      ],
+    "video_gTbc38": {
+      "type": "video",
       "settings": {
-        "page_width": "large",
-        "primary_background": "#d4cfcc",
-        "primary_background_opacity": 80,
-        "secondary_background": "#d4cfcc",
-        "secondary_background_opacity": 100,
-        "icon_with_box_layout": "style-2",
-        "section_container_background": "#baab9e",
-        "subtitle": "<em>Jetzt passende Lösung finden<\/em>",
-        "title": "Was führt dich zu uns?",
+        "page_width": "standard",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/video_image.jpg",
+        "description": "",
+        "show_divider": false,
+        "heading": "",
         "heading_size": "h1",
-        "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
-        "text_size": "typeset",
-        "main_image": "shopify:\/\/shop_images\/mask-group-image.svg",
-        "desktop_image_width": 340,
-        "mobile_image_width": 160,
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "heading_tag": "h2",
-        "padding_top": 120,
+        "primary_background": "#ede9e9",
+        "secondary_background": "#3c3c3c",
+        "padding_top": 160,
         "padding_bottom": 160,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 6,
         "padding_left": 24,
         "padding_right": 24,
         "margin_top": 0,
@@ -578,6 +526,8 @@
         "category_column_mobile": "1",
         "padding_top": 160,
         "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
         "padding_left": 24,
         "padding_right": 24,
         "margin_top": 0,
@@ -652,447 +602,10 @@
         "category_column_mobile": "1",
         "padding_top": 80,
         "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
         "padding_left": 0,
         "padding_right": 0,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_B9mgtz": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_QwDQUe": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<p><em>Resultat<\/em><\/p>",
-            "sub_text_color": "#000000"
-          }
-        },
-        "heading_wafkbG": {
-          "type": "heading",
-          "settings": {
-            "heading": "Strahlenschutz, der hält, \u2028was er verspricht.",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
-        },
-        "text_nzN38q": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Ohne Beyond Matter verschlechtert sich die HRV deutlich. Mit Beyond Matter passiert das nicht: SDNN- und RMSSD-Werte verbessern sich stark! Ohne Strahlenschutz durch Beyond Matter werden Stressmuster aktiviert, die wichtige Selbstregulationsprozesse des Körpers stören und Erschöpfungszustände fördern.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        },
-        "download_button_block_wgGNqi": {
-          "type": "download_button_block",
-          "settings": {
-            "button_label2": "Grafik herunterladen",
-            "button_link2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0848\/0931\/8728\/files\/gallery_4.jpg",
-            "button_size2": "medium",
-            "button_style2": "secondary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_QwDQUe",
-        "heading_wafkbG",
-        "text_nzN38q",
-        "download_button_block_wgGNqi"
-      ],
-      "settings": {
-        "page_width": "narrow",
-        "primary_background": "#eae6e2",
-        "secondary_background": "#f6f6f6",
-        "main_description": "",
-        "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/images-1.png",
-        "image_position": "top center",
-        "layout": "image_first",
-        "desktop_box_spacing": 48,
-        "mobile_box_spacing": 15,
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "adapt",
-        "enlarge_content": "small",
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "enable_video_looping": false,
-        "video_url": "",
-        "use_custom_colors": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_background": "#ffffff",
-        "gradient_background": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_hXgngA": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_4wPM97": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<p><em>Unser Team<\/em><\/p>",
-            "sub_text_color": "#3c3c3c"
-          }
-        },
-        "heading_V38QJi": {
-          "type": "heading",
-          "settings": {
-            "heading": "Von Technik fasziniert.  \u2028Der Gesundheit verpflichtet.",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
-        },
-        "text_GTCVQN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Wie der Name Beyond Matter schon sagt, gehen wir über das sichtbare und dingliche hinaus. Unser Team erforscht mit Neugier immer neue Wege, die Leiden durch Elektrosmog zu mindern. Die Leidenschaft unseres Teams macht uns zu einem der Marktführer im Schutz vor Elektrosmog.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "subheading_4wPM97",
-        "heading_V38QJi",
-        "text_GTCVQN"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "primary_background": "#ede9e9",
-        "secondary_background": "#ede9e9",
-        "main_description": "",
-        "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/images-2.png",
-        "image_position": "top center",
-        "layout": "image_first",
-        "desktop_box_spacing": 0,
-        "mobile_box_spacing": 0,
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "480px",
-        "enlarge_content": "medium",
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "250px",
-        "enable_video_looping": false,
-        "video_url": "",
-        "use_custom_colors": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_background": "#ede9e9",
-        "gradient_background": "",
-        "padding_top": 200,
-        "padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_y9jJGF": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_4azcyM": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<p><em>Kontakt & Hilfe<\/em><\/p>",
-            "sub_text_color": "#3c3c3c"
-          }
-        },
-        "heading_ekdhPm": {
-          "type": "heading",
-          "settings": {
-            "heading": "Wir sind für euch da",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
-        },
-        "text_78FTHP": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Erfahren Sie, wie Schungit als natürlicher Strahlenschutz funktioniert \u2028und Ihre Gesundheit schützt.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        },
-        "button_dG6K7n": {
-          "type": "button",
-          "settings": {
-            "button_label": "Zu Kontakt & Hilfe",
-            "button_link": "#",
-            "button_size": "medium",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_4azcyM",
-        "heading_ekdhPm",
-        "text_78FTHP",
-        "button_dG6K7n"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "primary_background": "#ede9e9",
-        "secondary_background": "#ede9e9",
-        "main_description": "",
-        "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/images-3.png",
-        "image_position": "top center",
-        "layout": "text_first",
-        "desktop_box_spacing": 0,
-        "mobile_box_spacing": 0,
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "480px",
-        "enlarge_content": "medium",
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "250px",
-        "enable_video_looping": false,
-        "video_url": "",
-        "use_custom_colors": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_background": "#ede9e9",
-        "gradient_background": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_wVQD9U": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_KdinBy": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<p><em>Gabi aus Wuppertal<\/em><\/p>",
-            "sub_text_color": "#3c3c3c"
-          }
-        },
-        "heading_8wBAEh": {
-          "type": "heading",
-          "settings": {
-            "heading": "Über den lebenslangen \u2028Weg mit Migräne",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
-        },
-        "text_wekLzy": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Untersucht die Strahlenbelastung durch Telefonate mit dem Handy. Als Schutzprodukt wird der Handychip AVA getestet. Von unabhängigem Institut durchgeführt.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        },
-        "button_9Uf7K3": {
-          "type": "button",
-          "settings": {
-            "button_label": "Mehr lesen",
-            "button_link": "#",
-            "button_size": "medium",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_KdinBy",
-        "heading_8wBAEh",
-        "text_wekLzy",
-        "button_9Uf7K3"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "primary_background": "#ede9e9",
-        "secondary_background": "#ede9e9",
-        "main_description": "",
-        "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/images-4.png",
-        "image_position": "top center",
-        "layout": "image_first",
-        "desktop_box_spacing": 0,
-        "mobile_box_spacing": 0,
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "480px",
-        "enlarge_content": "large",
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "250px",
-        "enable_video_looping": false,
-        "video_url": "",
-        "use_custom_colors": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_background": "#ede9e9",
-        "gradient_background": "",
-        "padding_top": 80,
-        "padding_bottom": 48,
-        "padding_left": 24,
-        "padding_right": 24,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_PQ79p4": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_LjqxmC": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<p><em>Heiko aus Hannover<\/em><\/p>",
-            "sub_text_color": "#3c3c3c"
-          }
-        },
-        "heading_e8KfHL": {
-          "type": "heading",
-          "settings": {
-            "heading": "Wie der Lärm Stadt auf einmal leise wurde",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
-        },
-        "text_3arKFU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Untersucht die Strahlenbelastung durch Telefonate mit dem Handy. Als Schutzprodukt wird der Handychip AVA getestet. Von unabhängigem Institut durchgeführt.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        },
-        "button_LkEMzg": {
-          "type": "button",
-          "settings": {
-            "button_label": "Mehr lesen",
-            "button_link": "#",
-            "button_size": "medium",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_LjqxmC",
-        "heading_e8KfHL",
-        "text_3arKFU",
-        "button_LkEMzg"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "primary_background": "#ede9e9",
-        "secondary_background": "#ede9e9",
-        "main_description": "",
-        "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/images-5.png",
-        "image_position": "top center",
-        "layout": "text_first",
-        "desktop_box_spacing": 0,
-        "mobile_box_spacing": 0,
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "480px",
-        "enlarge_content": "large",
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "250px",
-        "enable_video_looping": false,
-        "video_url": "",
-        "use_custom_colors": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_background": "#ede9e9",
-        "gradient_background": "",
-        "padding_top": 48,
-        "padding_bottom": 160,
-        "padding_left": 24,
-        "padding_right": 15,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "image_with_text_d3gfjn": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_6rByY6": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<p><em>Optionale Dachzeile<\/em><\/p>",
-            "sub_text_color": "#baab9e"
-          }
-        },
-        "heading_aNfMPW": {
-          "type": "heading",
-          "settings": {
-            "heading": "Guter Schlaf ist nicht selbstverständlich. \u2028Mit SAMSON schon.",
-            "heading_size": "h1",
-            "heading_tag": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_6rByY6",
-        "heading_aNfMPW"
-      ],
-      "settings": {
-        "page_width": "standard",
-        "primary_background": "#d4cfcc",
-        "secondary_background": "#baab9e",
-        "main_description": "<p>Der Alltag hat für jeden von uns immer mehr Herausforderungen und Eindrücke parat. Egal, ob beruflicher oder privater Natur, sind wir Stress ausgesetzt und es werden eher mehr als weniger Stressquellen. Neben diesen gibt es noch Quellen von Stress, deren wir uns meist nicht bewusst sind: elektromagnetische Felder. Elektrosmog. Und genau diese Stressquelle kannst du mit SAMSON ausschalten. Die ästhetisch hochwertige Kugel blockt Elektrosmog nicht nur, sondern macht diesen zu einer Energiequelle für dich.<\/p>",
-        "enable_main_image": false,
-        "image": "shopify:\/\/shop_images\/images-5.png",
-        "image_position": "top center",
-        "layout": "text_first",
-        "desktop_box_spacing": 50,
-        "mobile_box_spacing": 20,
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "480px",
-        "enlarge_content": "medium",
-        "show_divider": false,
-        "image_behavior": "none",
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "250px",
-        "enable_video_looping": false,
-        "video_url": "",
-        "use_custom_colors": true,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#3c3c3c",
-        "colors_text": "#3c3c3c",
-        "colors_background": "#ffffff",
-        "gradient_background": "",
-        "padding_top": 80,
-        "padding_bottom": 96,
-        "padding_left": 24,
-        "padding_right": 24,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1338,6 +851,8 @@
         "button_text_color": "#ffffff",
         "padding_top": 114,
         "padding_bottom": 114,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
         "padding_left": 24,
         "padding_right": 24,
         "margin_top": 0,
@@ -1417,6 +932,529 @@
         "button_text_color": "",
         "padding_top": 80,
         "padding_bottom": 80,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "text_with_icon_box_KeRfTa": {
+      "type": "text-with-icon-box",
+      "blocks": {
+        "icon_with_text_block_YJKtYa": {
+          "type": "icon_with_text_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon.svg",
+            "text": "Kopfschmerzen",
+            "block_description": "<p>Unsere Lösungen für einen klaren Kopf.<\/p>",
+            "hide_description_in_deskop": true,
+            "block_background": "#f4f2f2",
+            "background_opacity": 90
+          }
+        },
+        "icon_with_text_block_d4nFGm": {
+          "type": "icon_with_text_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_1_e27e748c-9305-4941-adbb-b8351febf2aa.svg",
+            "text": "Schlafstörungen",
+            "block_description": "<p>Holen Sie sich erholsamen Schlaf zurück.<\/p>",
+            "hide_description_in_deskop": true,
+            "block_background": "#f4f2f2",
+            "background_opacity": 80
+          }
+        },
+        "icon_with_text_block_MabfpF": {
+          "type": "icon_with_text_block",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_2_66cf1ac4-7f24-4763-a1f8-d6da1a550d98.svg",
+            "text": "Antriebslosigkeit",
+            "block_description": "<p>Mit Beyond Matter zu mehr Elan im Alltag.<\/p>",
+            "hide_description_in_deskop": true,
+            "block_background": "#f4f2f2",
+            "background_opacity": 70
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_block_YJKtYa",
+        "icon_with_text_block_d4nFGm",
+        "icon_with_text_block_MabfpF"
+      ],
+      "settings": {
+        "page_width": "large",
+        "primary_background": "#d4cfcc",
+        "primary_background_opacity": 80,
+        "secondary_background": "#d4cfcc",
+        "secondary_background_opacity": 100,
+        "icon_with_box_layout": "style-2",
+        "section_container_background": "#baab9e",
+        "subtitle": "<em>Jetzt passende Lösung finden<\/em>",
+        "title": "Was führt dich zu uns?",
+        "heading_size": "h1",
+        "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
+        "text_size": "typeset",
+        "main_image": "shopify:\/\/shop_images\/mask-group-image.svg",
+        "desktop_image_width": 340,
+        "mobile_image_width": 160,
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "padding_top": 120,
+        "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_B9mgtz": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_QwDQUe": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Resultat<\/em><\/p>",
+            "sub_text_color": "#000000"
+          }
+        },
+        "heading_wafkbG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Strahlenschutz, der hält, \u2028was er verspricht.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_nzN38q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ohne Beyond Matter verschlechtert sich die HRV deutlich. Mit Beyond Matter passiert das nicht: SDNN- und RMSSD-Werte verbessern sich stark! Ohne Strahlenschutz durch Beyond Matter werden Stressmuster aktiviert, die wichtige Selbstregulationsprozesse des Körpers stören und Erschöpfungszustände fördern.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "download_button_block_wgGNqi": {
+          "type": "download_button_block",
+          "settings": {
+            "button_label2": "Grafik herunterladen",
+            "button_link2": "https:\/\/cdn.shopify.com\/s\/files\/1\/0848\/0931\/8728\/files\/gallery_4.jpg",
+            "button_size2": "medium",
+            "button_style2": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_QwDQUe",
+        "heading_wafkbG",
+        "text_nzN38q",
+        "download_button_block_wgGNqi"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "primary_background": "#eae6e2",
+        "secondary_background": "#f6f6f6",
+        "main_description": "",
+        "enable_main_image": true,
+        "image": "shopify:\/\/shop_images\/images-1.png",
+        "image_position": "top center",
+        "layout": "image_first",
+        "desktop_box_spacing": 48,
+        "mobile_box_spacing": 15,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "enlarge_content": "small",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 40,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_hXgngA": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_4wPM97": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Unser Team<\/em><\/p>",
+            "sub_text_color": "#3c3c3c"
+          }
+        },
+        "heading_V38QJi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Von Technik fasziniert.  \u2028Der Gesundheit verpflichtet.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_GTCVQN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wie der Name Beyond Matter schon sagt, gehen wir über das sichtbare und dingliche hinaus. Unser Team erforscht mit Neugier immer neue Wege, die Leiden durch Elektrosmog zu mindern. Die Leidenschaft unseres Teams macht uns zu einem der Marktführer im Schutz vor Elektrosmog.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_4wPM97",
+        "heading_V38QJi",
+        "text_GTCVQN"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
+        "image": "shopify:\/\/shop_images\/images-2.png",
+        "image_position": "top center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "480px",
+        "enlarge_content": "medium",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ede9e9",
+        "gradient_background": "",
+        "padding_top": 200,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_y9jJGF": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_4azcyM": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Kontakt & Hilfe<\/em><\/p>",
+            "sub_text_color": "#3c3c3c"
+          }
+        },
+        "heading_ekdhPm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wir sind für euch da",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_78FTHP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Erfahren Sie, wie Schungit als natürlicher Strahlenschutz funktioniert \u2028und Ihre Gesundheit schützt.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_dG6K7n": {
+          "type": "button",
+          "settings": {
+            "button_label": "Zu Kontakt & Hilfe",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_4azcyM",
+        "heading_ekdhPm",
+        "text_78FTHP",
+        "button_dG6K7n"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
+        "image": "shopify:\/\/shop_images\/images-3.png",
+        "image_position": "top center",
+        "layout": "text_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "480px",
+        "enlarge_content": "medium",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ede9e9",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_wVQD9U": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_KdinBy": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Gabi aus Wuppertal<\/em><\/p>",
+            "sub_text_color": "#3c3c3c"
+          }
+        },
+        "heading_8wBAEh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Über den lebenslangen \u2028Weg mit Migräne",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_wekLzy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Untersucht die Strahlenbelastung durch Telefonate mit dem Handy. Als Schutzprodukt wird der Handychip AVA getestet. Von unabhängigem Institut durchgeführt.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_9Uf7K3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Mehr lesen",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_KdinBy",
+        "heading_8wBAEh",
+        "text_wekLzy",
+        "button_9Uf7K3"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
+        "image": "shopify:\/\/shop_images\/images-4.png",
+        "image_position": "top center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "480px",
+        "enlarge_content": "large",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ede9e9",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 48,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 40,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_PQ79p4": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_LjqxmC": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Heiko aus Hannover<\/em><\/p>",
+            "sub_text_color": "#3c3c3c"
+          }
+        },
+        "heading_e8KfHL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wie der Lärm Stadt auf einmal leise wurde",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_3arKFU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Untersucht die Strahlenbelastung durch Telefonate mit dem Handy. Als Schutzprodukt wird der Handychip AVA getestet. Von unabhängigem Institut durchgeführt.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_LkEMzg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Mehr lesen",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_LjqxmC",
+        "heading_e8KfHL",
+        "text_3arKFU",
+        "button_LkEMzg"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
+        "image": "shopify:\/\/shop_images\/images-5.png",
+        "image_position": "top center",
+        "layout": "text_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "480px",
+        "enlarge_content": "large",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ede9e9",
+        "gradient_background": "",
+        "padding_top": 48,
+        "padding_bottom": 160,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 24,
+        "padding_right": 15,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_d3gfjn": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_6rByY6": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Optionale Dachzeile<\/em><\/p>",
+            "sub_text_color": "#baab9e"
+          }
+        },
+        "heading_aNfMPW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Guter Schlaf ist nicht selbstverständlich. \u2028Mit SAMSON schon.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6rByY6",
+        "heading_aNfMPW"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#baab9e",
+        "main_description": "<p>Der Alltag hat für jeden von uns immer mehr Herausforderungen und Eindrücke parat. Egal, ob beruflicher oder privater Natur, sind wir Stress ausgesetzt und es werden eher mehr als weniger Stressquellen. Neben diesen gibt es noch Quellen von Stress, deren wir uns meist nicht bewusst sind: elektromagnetische Felder. Elektrosmog. Und genau diese Stressquelle kannst du mit SAMSON ausschalten. Die ästhetisch hochwertige Kugel blockt Elektrosmog nicht nur, sondern macht diesen zu einer Energiequelle für dich.<\/p>",
+        "enable_main_image": false,
+        "image": "shopify:\/\/shop_images\/images-5.png",
+        "image_position": "top center",
+        "layout": "text_first",
+        "desktop_box_spacing": 50,
+        "mobile_box_spacing": 20,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "480px",
+        "enlarge_content": "medium",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 96,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
         "padding_left": 24,
         "padding_right": 24,
         "margin_top": 0,
@@ -1431,18 +1469,18 @@
     "category_grid_NcjRfr",
     "quote_with_image_mTgYVk",
     "featured_collection_b8Yiq6",
-    "video_gTbc38",
     "text_with_icon_box_Px6UnJ",
-    "text_with_icon_box_KeRfTa",
+    "video_gTbc38",
     "column_grid_aqfJxA",
     "column_grid_Ri3Cej",
+    "image_gallery_MaLEQ4",
+    "image_gallery_njUQGQ",
+    "text_with_icon_box_KeRfTa",
     "image_with_text_B9mgtz",
     "image_with_text_hXgngA",
     "image_with_text_y9jJGF",
     "image_with_text_wVQD9U",
     "image_with_text_PQ79p4",
-    "image_with_text_d3gfjn",
-    "image_gallery_MaLEQ4",
-    "image_gallery_njUQGQ"
+    "image_with_text_d3gfjn"
   ]
 }
