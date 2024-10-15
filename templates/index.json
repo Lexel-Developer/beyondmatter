@@ -360,7 +360,7 @@
         "enable_countdown": true,
         "cart_buttons_outline": true,
         "details_buttons_outline": false,
-        "enable_discount_tag": false,
+        "enable_discount_tag": true,
         "button_text_color": "#3c3c3c",
         "button_background_color": "#d4cfcc",
         "add_to_cart_outline_color": "#3c3c3c",
@@ -522,7 +522,7 @@
       "settings": {
         "page_width": "standard",
         "subtitle": "<em>Unsere Standards</em>",
-        "title": "Wofür wir stehen",
+        "title": "<p>Wofür wir stehen</p>",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
@@ -598,7 +598,7 @@
       "settings": {
         "page_width": "standard",
         "subtitle": "<em>Jetzt als Händler registrieren</em>",
-        "title": "Werde Teil eines großen Ganzen",
+        "title": "<p>Werde Teil eines großen Ganzen</p>",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
