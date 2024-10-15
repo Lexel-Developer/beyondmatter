@@ -33,7 +33,7 @@
 
         {% if section.settings.title != blank or section.settings.subtitle != blank %}
           <div class="title-wrapper {{ section.settings.heading_alignment }}">
-            <div class="">
+            <div class="title-wrapper-inner">
               {% if section.settings.subtitle != blank %}
                 <h3 class="h1 sub_title" style="color: {{ section.settings.sub_text_color }};">{{ section.settings.subtitle }}</h3>
               {% endif %}
@@ -123,7 +123,7 @@
       "default": "<em>Unsere Kategrorien</em>"
     },
     {
-      "type": "richtext",
+      "type": "inline_richtext",
       "label": "Title",
       "id": "title"
     },
