@@ -23,9 +23,15 @@
 
 {{ 'section-category-grid.css' | asset_url | stylesheet_tag }}
 
+{%- liquid
+  assign fetchpriority = "auto"
+  if section.index == 1
+    assign fetchpriority = "high"
+  endif
+-%}
+
   <div class="section--padding">
     <div class="page-width--{{ section.settings.page_width }}">
-      <div class="container">
 
         {% if section.settings.title != blank or section.settings.subtitle != blank %}
           <div class="title-wrapper {{ section.settings.heading_alignment }}">
@@ -46,7 +52,7 @@
               {%- when 'category' -%}
                 <a {% if block.settings.link != blank %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="grid__item" style="--box-background: {{ block.settings.background_color }}; --box-background-mobile: {{ block.settings.background_color_mobile }}" {{ block.shopify_attributes }}>
                   {% if block.settings.icon != blank %}
-                    {{ block.settings.icon | image_url: width: 100 | image_tag: widths: '100, 200' }}
+                    {{ block.settings.icon | image_url: width: 100 | image_tag: widths: '100, 200', fetchpriority: fetchpriority }}
                   {% endif %}
                   {% if block.settings.text != blank %}
                     <span>{{ block.settings.text }}</span>
@@ -56,7 +62,6 @@
           {%- endfor -%}
         </div>
 
-      </div>
     </div>
   </div>
 
