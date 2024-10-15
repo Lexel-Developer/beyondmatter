@@ -526,7 +526,7 @@
         "heading_alignment": "left",
         "heading_tag": "h2",
         "show_inside_box": false,
-        "primary_background": "#3c3c3c",
+        "primary_background": "#f7eedd",
         "secondary_background": "#3c3c3c",
         "box_background": "#ffffff",
         "title_color": "#f4f2f2",
