@@ -56,15 +56,17 @@
                   {{ block.settings.heading }}
                 {% endif %}
               </{{ block.settings.heading_tag }}>
-            {%- when 'subheading' -%}
-              {% if block.settings.subheading != blank %}
-                <p
-                  class="quote__subheading{% if block.settings.secondary_color %} banner__subheading--colored{% endif %} {{ block.settings.subheading_size }}"
-                  {{ block.shopify_attributes }}
-                >
-                  {{ block.settings.subheading }}
-                </p>
-              {% endif %}
+              {%- when 'subheading' -%}
+                {%  if  block.settings.subheading != blank %}
+                  <div {{ block.shopify_attributes }}>
+                  <p
+                    class="banner__subheading{% if block.settings.secondary_color %} banner__subheading--colored{% endif %} {{ block.settings.subheading_size }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.subheading }}
+                  </p>
+                </div>
+                {% endif %}
               {%- when 'subimage' -%}
               {% if block.settings.subheading_image != blank %}
                 <div class="subheading_cvr" {{ block.shopify_attributes }}>
@@ -381,9 +383,9 @@
       "limit": 2,
       "settings": [
         {
-          "type": "richtext",
+          "type": "inline_richtext",
           "id": "subheading",
-          "default": "<p>Add a tagline</p>",
+          "default": "Add a tagline",
           "label": "t:sections.all.subheading.label"
         },
         {

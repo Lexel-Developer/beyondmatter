@@ -53,7 +53,7 @@
 .column-grid-row h4 {
     margin: 0 0 4px;
     letter-spacing: 0;
-    line-height: 1.5;
+    line-height: 1.333333;
 }
 .column-grid-row .grid__item p {
     margin-top: 0;
@@ -112,6 +112,7 @@
     .enable_big_box {
         padding: 30px;
     }
+    .column-grid .title-wrapper { padding: 0; }
 }
 
 
@@ -122,6 +123,17 @@
     }
     .column-grid-row .grid__item {
         padding: 40px 45px 48px 32px;
+    }
+    .column-grid-row .h3 {
+        font-size: calc(var(--font-heading-scale)* 2.4rem);
+    }
+    .column-grid-row .grid__item p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    .column-grid .column-grid-link {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
     }
 
 }

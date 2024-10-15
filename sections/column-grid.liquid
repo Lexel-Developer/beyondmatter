@@ -38,7 +38,7 @@
                 <h3 class="h1 sub_title" style="color: {{ section.settings.sub_text_color }};">{{ section.settings.subtitle }}</h3>
               {% endif %}
               {% if section.settings.title != blank %}
-                <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</{{ section.settings.heading_tag }}>
+                <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.title }}</{{ section.settings.heading_tag }}>
               {% endif %}
             </div>
           </div>
@@ -123,10 +123,9 @@
       "default": "<em>Unsere Kategrorien</em>"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "label": "Title",
-      "id": "title",
-      "default": "So kannst Du Beyond Matter verwenden:"
+      "id": "title"
     },
     {
       "type": "select",

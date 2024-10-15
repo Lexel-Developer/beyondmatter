@@ -273,12 +273,17 @@
                   {%- endif -%}
                 {%- endif -%}
               {%- when 'download_button_block' -%}
-                {%- if block.settings.button_label2 != blank -%}
+                {%- if block.settings.button_link2 != blank -%}
                     <a class="download-button-cta button {% if block.settings.button_style2 == "secondary" %} button--cta {% endif %} button--{{ block.settings.button_size2 }}"{% if block.settings.button_link2 != blank %} href="{{ block.settings.button_link2 }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }} download>
                       {% render 'icon', icon: 'down-arrow' %}
                       <span class="label">{{ block.settings.button_label2 | escape }}<i>(PNG, 25kb)</i></span>
                     </a>
-                {%- endif -%}
+                {% else %}
+                  <a class="download-button-cta button {% if block.settings.button_style2 == "secondary" %} button--cta {% endif %} button--{{ block.settings.button_size2 }}"{% if block.settings.download_image != blank %} href="{{ block.settings.download_image | image_url }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }} download>
+                    {% render 'icon', icon: 'down-arrow' %}
+                    <span class="label">{{ block.settings.button_label2 | escape }}<i>(PNG, 25kb)</i></span>
+                  </a>
+              {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
         </div>
@@ -1039,6 +1044,12 @@
           "id": "button_label2",
           "default": "Button label",
           "label": "Label"
+        },
+        {
+          "type": "image_picker",
+          "id": "download_image",
+          "label": "Image",
+          "info": "If you select an image the fill path should be empty"
         },
         {
           "type": "text",

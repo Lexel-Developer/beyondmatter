@@ -26,15 +26,15 @@
   {%- if target == product and product.price_varies -%}
     {%- if compare_at_price > price and available -%}
       {%- capture from_price -%}
-        <price-money><bdi>{% if settings.currency_code_enabled %}{{ price | money_with_currency }}{% else %}{{ price | money }}{% endif %}</bdi></price-money>
+        <price-money><bdi>{% if settings.currency_code_enabled %}{{ price | money_without_trailing_zeros }}{% else %}{{ price | money_without_trailing_zeros  }}{% endif %}</bdi></price-money>
       {%- endcapture -%}
       {{ 'products.product.price.from_price_html' | t: price: from_price }}
     {%- else -%}
-      <price-money><bdi>{% if settings.currency_code_enabled %}{{ product.price_min | money_with_currency }}{% else %}{{ product.price_min | money }}{% endif %}</bdi></price-money>
-      <price-money><bdi>{% if settings.currency_code_enabled %}{{ product.price_max | money_with_currency }}{% else %}{{ product.price_max | money }}{% endif %}</bdi></price-money>
+      <price-money><bdi>{% if settings.currency_code_enabled %}{{ product.price_min | money_without_trailing_zeros }}{% else %}{{ product.price_min | money_without_trailing_zeros }}{% endif %}</bdi></price-money>
+      <price-money><bdi>{% if settings.currency_code_enabled %}{{ product.price_max | money_without_trailing_zeros }}{% else %}{{ product.price_max | money_without_trailing_zeros }}{% endif %}</bdi></price-money>
     {%- endif -%}
   {%- else -%}
-    <price-money><bdi>{% if settings.currency_code_enabled %}{{ price | money_with_currency }}{% else %}{{ price | money }}{% endif %}</bdi></price-money>
+    <price-money><bdi>{% if settings.currency_code_enabled %}{{ price | money_without_trailing_zeros }}{% else %}{{ price | money_without_trailing_zeros }}{% endif %}</bdi></price-money>
   {%- endif -%}
 {%- endcapture -%}
 
@@ -75,7 +75,7 @@
         </dt>
         <dd class="price__compare">
           <s class="price-item price-item--regular">
-            <price-money><bdi>{% if settings.currency_code_enabled %}{{ compare_at_price | money_with_currency }}{% else %}{{ compare_at_price | money }}{% endif %}</bdi></price-money>
+            <price-money><bdi>{% if settings.currency_code_enabled %}{{ compare_at_price | money_without_trailing_zeros }}{% else %}{{ compare_at_price | money_without_trailing_zeros }}{% endif %}</bdi></price-money>
           </s>
         </dd>
       {%- endunless -%}

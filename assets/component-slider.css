@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 749px) {
   .slider-mobile-gutter > .slider.grid--1-col-mobile > .grid__item {
     width: 82%;
   }

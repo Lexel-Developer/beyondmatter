@@ -568,7 +568,7 @@
       {% endif %}
     </div>
   </div>
-
+{% if section.settings.enable_discount_tag == true %}
   <div class="card__badge">
     {%- if card_product.metafields.theme.label.value != blank -%}
       {%- capture badge_styles -%}
@@ -635,7 +635,7 @@
       {%- endif -%}
     {%- endif -%}
   </div>
-
+{%- endif -%}
   {%- if settings.quick_view_enabled and enable_quick_view -%}
     <quick-view-drawer>
       <details>

@@ -3760,5 +3760,11 @@ span[data-highlight=underline] mark svg path {
       font-size: 24px;
       line-height: 28px;
     }
+    .title-wrapper .title {
+      line-height: 1.333333;
+    }
+    .featured-collection-section .title-wrapper {
+      margin-bottom: 3.6rem;
+    }
   }
   

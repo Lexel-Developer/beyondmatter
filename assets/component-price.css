@@ -15,8 +15,8 @@
 }
 
 .price bdi {
-  line-height: 1;
-  font-size: calc(var(--font-price-scale) * 1.8rem);
+  line-height: 1.4;
+  font-size: calc(var(--font-price-scale) * 2rem);
   font-family: var(--font-price-family);
   letter-spacing: 0;
 }
@@ -46,7 +46,7 @@
 
 .price dd {
   margin-inline-start: 0;
-  margin-inline-end: 0.7rem;
+  margin-inline-end: 0.8rem;
 }
 
 .price .price__last:last-of-type {
@@ -96,7 +96,7 @@
   /* color: rgba(var(--color-foreground), 0.7); */
   color: #85634a;
   padding: revert;
-  top: -2px;
+  top: -5px;
   letter-spacing: 0;
 }
 
@@ -115,6 +115,7 @@
 .price--on-sale .price-item--regular bdi {
   font-weight: 300;
   font-size: 1.4rem;
+  line-height: 1.714289;
 }
 
 .price--on-sale .price-item--sale {
