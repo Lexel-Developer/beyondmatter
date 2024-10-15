@@ -135,7 +135,17 @@
 }
 
 .product-grid .card--product+.card-information .price {
-    margin-top: 16px;
+    margin-top: 12px;
+}
+.price_badge_container .card__badge {
+    position: unset;
+    width: auto;
+}
+
+.price_badge_container {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
 }
 
   .featured-collection-section .slider.slider--tablet {
@@ -199,16 +209,9 @@
     }
 }
 
-@media only screen and (min-width:364px)and (max-width:430px){
-    .products-details-btn {
-        max-width: 80px;
-    }
-    .featured-collection-section .product-grid .card-information__button add-to-cart {
-        padding: 0 4px;
-    }
-}
 
-@media only screen and (max-width:363px) {
+
+@media only screen and (max-width:430px) {
         
     .featured-collection-section .product-grid .card-information__button add-to-cart {
         width: 100% !important;

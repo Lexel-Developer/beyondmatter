@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 989px) {
+@media screen and (min-width: 481px) and (max-width: 989px) {
   .gallery--3 .gallery__item,
   .gallery--4 .gallery__item,
   .gallery--5 .gallery__item,

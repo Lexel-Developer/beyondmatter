@@ -54,6 +54,77 @@
   endif
 -%}
 
+{%- capture card_badge -%}
+{% if section.settings.enable_discount_tag %}
+  <div class="card__badge">
+    {%- if card_product.metafields.theme.label.value != blank -%}
+      {%- capture badge_styles -%}
+        {%- if card_product.metafields.theme.label_color.value != blank -%}
+          --color-badge-background: {{ card_product.metafields.theme.label_color.value }}; --color-badge-border: var(--color-badge-background); --color-badge-foreground: #ffffff;
+        {%- endif -%}
+      {%- endcapture -%}
+      {%- for label in card_product.metafields.theme.label.value -%}
+        <span
+          class="badge"
+          {% if badge_styles != blank %}
+            style="{{ badge_styles }}"
+          {% endif %}
+        >
+          {{ label | escape }}
+        </span>
+      {%- endfor -%}
+    {%- endif -%}
+
+    {%- if card_product.available == false -%}
+      <span class="badge badge--soldout" aria-hidden="true">
+        {{ 'products.product.sold_out' | t }}
+      </span>
+    {%- elsif card_product.compare_at_price > card_product.price -%}
+      {%- assign on_sale_text = 'products.product.on_sale' | t -%}
+      {%- if on_sale_text != blank and settings.sale_badge_basis != 'disable' -%}
+        <span class="badge badge--onsale" aria-hidden="true">
+          {%- case settings.sale_badge_basis %}
+            {%- when 'text' -%}
+              {{ 'products.product.on_sale' | t }}
+            {%- when 'percentage' -%}
+              &#8211;
+              {{-
+                card_product.compare_at_price
+                | minus: card_product.price
+                | times: 100.0
+                | divided_by: card_product.compare_at_price
+                | ceil
+              -}}
+              %
+            {%- when 'value' -%}
+              &#8211;
+              {%- if settings.currency_code_enabled -%}
+                {{- card_product.compare_at_price | minus: card_product.price | money_with_currency -}}
+              {%- else -%}
+                {{- card_product.compare_at_price | minus: card_product.price | money -}}
+              {%- endif %}
+            {%- else %}
+              {%- if card_product.variants.size == 1 -%}
+                &#8211;
+                {{-
+                  card_product.compare_at_price
+                  | minus: card_product.price
+                  | times: 100.0
+                  | divided_by: card_product.compare_at_price
+                  | ceil
+                -}}
+                %
+              {%- else -%}
+                {{ 'products.product.on_sale' | t }}
+              {%- endif -%}
+          {%- endcase %}
+        </span>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+ {% endif %}
+{%- endcapture -%}
+
 {%- if enable_color_swatches -%}
   {%- capture color_swatches -%}
     {%- liquid
@@ -456,9 +527,10 @@
 
         {% comment %} TODO: metafield {% endcomment %}
         <span class="caption-large light">{{ block.settings.text | escape }}</span>
-
+        <div class="price_badge_container">
         {% render 'price', product: card_product %}
-
+           {{ card_badge }}
+           </div>
         {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
           {% liquid
             assign rating_decimal = 0
@@ -568,74 +640,7 @@
       {% endif %}
     </div>
   </div>
-{% if section.settings.enable_discount_tag == true %}
-  <div class="card__badge">
-    {%- if card_product.metafields.theme.label.value != blank -%}
-      {%- capture badge_styles -%}
-        {%- if card_product.metafields.theme.label_color.value != blank -%}
-          --color-badge-background: {{ card_product.metafields.theme.label_color.value }}; --color-badge-border: var(--color-badge-background); --color-badge-foreground: #ffffff;
-        {%- endif -%}
-      {%- endcapture -%}
-      {%- for label in card_product.metafields.theme.label.value -%}
-        <span
-          class="badge"
-          {% if badge_styles != blank %}
-            style="{{ badge_styles }}"
-          {% endif %}
-        >
-          {{ label | escape }}
-        </span>
-      {%- endfor -%}
-    {%- endif -%}
 
-    {%- if card_product.available == false -%}
-      <span class="badge badge--soldout" aria-hidden="true">
-        {{ 'products.product.sold_out' | t }}
-      </span>
-    {%- elsif card_product.compare_at_price > card_product.price -%}
-      {%- assign on_sale_text = 'products.product.on_sale' | t -%}
-      {%- if on_sale_text != blank and settings.sale_badge_basis != 'disable' -%}
-        <span class="badge badge--onsale" aria-hidden="true">
-          {%- case settings.sale_badge_basis %}
-            {%- when 'text' -%}
-              {{ 'products.product.on_sale' | t }}
-            {%- when 'percentage' -%}
-              &#8211;
-              {{-
-                card_product.compare_at_price
-                | minus: card_product.price
-                | times: 100.0
-                | divided_by: card_product.compare_at_price
-                | ceil
-              -}}
-              %
-            {%- when 'value' -%}
-              &#8211;
-              {%- if settings.currency_code_enabled -%}
-                {{- card_product.compare_at_price | minus: card_product.price | money_with_currency -}}
-              {%- else -%}
-                {{- card_product.compare_at_price | minus: card_product.price | money -}}
-              {%- endif %}
-            {%- else %}
-              {%- if card_product.variants.size == 1 -%}
-                &#8211;
-                {{-
-                  card_product.compare_at_price
-                  | minus: card_product.price
-                  | times: 100.0
-                  | divided_by: card_product.compare_at_price
-                  | ceil
-                -}}
-                %
-              {%- else -%}
-                {{ 'products.product.on_sale' | t }}
-              {%- endif -%}
-          {%- endcase %}
-        </span>
-      {%- endif -%}
-    {%- endif -%}
-  </div>
-{%- endif -%}
   {%- if settings.quick_view_enabled and enable_quick_view -%}
     <quick-view-drawer>
       <details>
