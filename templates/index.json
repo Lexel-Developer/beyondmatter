@@ -522,7 +522,7 @@
       "settings": {
         "page_width": "standard",
         "subtitle": "<em>Unsere Standards</em>",
-        "title": "<p>Wofür wir stehen</p>",
+        "title": "Wofür wir stehen",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
@@ -598,7 +598,7 @@
       "settings": {
         "page_width": "standard",
         "subtitle": "<em>Jetzt als Händler registrieren</em>",
-        "title": "<p>Werde Teil eines großen Ganzen</p>",
+        "title": "Werde Teil eines großen Ganzen",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
