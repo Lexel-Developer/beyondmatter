@@ -156,12 +156,12 @@
     {%- if section.settings.button_label != blank -%}
         <div class="gallery_btn">
             {%- if section.settings.button_style_secondary -%}
-              <a class="button button--cta button--{{ section.settings.button_size }}" href="javascript:void(0);">
+              <a class="button button--cta button--{{ section.settings.button_size }}" href="{{ section.settings.button_link }}">
                 <span class="label">{{ section.settings.button_label | escape }}</span>
                 {% render 'icon', icon: 'refresh' %}
               </a>
             {%- else -%}
-              <a class="button button--{{ section.settings.button_size }}" href="javascript:void(0);">
+              <a class="button button--{{ section.settings.button_size }}" href="{{ section.settings.button_link }}">
                 <span class="label">{{ section.settings.button_label | escape }}</span>
                 {% render 'icon', icon: 'refresh' %}
               </a>
