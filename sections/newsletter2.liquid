@@ -92,8 +92,8 @@
 <div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="image-with-text{% if section.settings.use_custom_colors and section.settings.colors_background != settings.colors_background %} image-with-text--colored{% else %} image-with-text--alt{% endif %} image-with-text--{{ section.settings.enlarge_content }} page-width--{{ section.settings.page_width }}">
     <div class="{{ grid_class }} grid--{{ section.id }} grid grid--gapless grid--1-col grid--2-col-tablet">
-      <div class="grid__item">
-        {% if section.settings.enable_main_image == true %}
+      {% if section.settings.enable_main_image == true %}
+        <div class="grid__item">
           {% if section.settings.video == blank and section.settings.video_url == blank %}
           <use-animate data-animate="zoom-fade" class="media-wrapper">
             <div class="image-animate media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} {% if section.settings.image != blank %}media{% else %}media--placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
@@ -239,8 +239,8 @@
             </deferred-media>
           </div>
           {% endif %}
-        {% endif %}
-      </div>
+        </div>
+      {% endif %}
       <div class="grid__item">
         <div class="image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
           {%- for block in section.blocks -%}
@@ -252,7 +252,7 @@
                   <h3 class="h1 sub_title" style="color: {{ block.settings.sub_text_color }};">{{ block.settings.subheading }}</h3>
                 {% endif %}
               {%- when 'text' -%}
-                <div class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+                <div class="image-with-text__text text_list_icon{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- endcase -%}
           {%- endfor -%}
           
@@ -530,6 +530,10 @@
       "type": "select",
       "id": "image_ratio",
       "options": [
+        {
+          "label": "1:1",
+          "value": "image_square"
+        },
         {
           "label": "t:sections.all.image_ratio.options__1.label",
           "value": "adapt"
