@@ -240,11 +240,6 @@
           </div>
           {% endif %}
         {% endif %}
-        {% if section.settings.main_description != blank %}
-          <div class="grid_description-cvr">
-            {{ section.settings.main_description }}
-          </div>
-        {% endif %}
       </div>
       <div class="grid__item">
         <div class="image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
@@ -258,30 +253,69 @@
                 {% endif %}
               {%- when 'text' -%}
                 <div class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-              {%- when 'custom_liquid' -%}
-                <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.custom_liquid }}</div>
-              {%- when 'button' -%}
-                {%- if block.settings.button_label != blank -%}
-                  {%- if block.settings.button_style == "secondary" -%}
-                    <a class="button button--cta button--{{ block.settings.button_size }}"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                      {% render 'icon', icon: 'down-arrow' %}
-                      <span class="label">{{ block.settings.button_label | escape }}</span>
-                    </a>
-                  {%- else -%}
-                    <a class="button button--{{ block.settings.button_size }}"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                      {{ block.settings.button_label | escape }}
-                    </a>
-                  {%- endif -%}
-                {%- endif -%}
-              {%- when 'download_button_block' -%}
-                {%- if block.settings.button_label2 != blank -%}
-                    <a class="download-button-cta button {% if block.settings.button_style2 == "secondary" %} button--cta {% endif %} button--{{ block.settings.button_size2 }}"{% if block.settings.button_link2 != blank %} href="{{ block.settings.button_link2 }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }} download>
-                      {% render 'icon', icon: 'down-arrow' %}
-                      <span class="label">{{ block.settings.button_label2 | escape }}<i>(PNG, 25kb)</i></span>
-                    </a>
-                {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
+          
+
+          <div class="newslatter_cover">
+            {%- assign return_url = section.settings.return_url | default: 'back' | append: '' -%}
+            {% form 'customer', class: 'newsletter-form', return_to: return_url %}
+              <input type="hidden" name="contact[tags]" value="newsletter"/>
+              <div class="newsletter-form__field-wrapper">
+                <div class="field">
+                  <input
+                    id="NewsletterForm--{{ section.id }}"
+                    type="email"
+                    name="contact[email]"
+                    class="field__input required{% if form.errors %} invalid{% endif %}"
+                    value="{{ form.email }}"
+                    aria-required="true"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="email"
+                    {% if form.errors %}
+                      autofocus
+                      aria-invalid="true"
+                      aria-describedby="Newsletter-error--{{ section.id }}"
+                    {% elsif form.posted_successfully? %}
+                      aria-describedby="Newsletter-success--{{ section.id }}"
+                    {% endif %}
+                    {% if section.settings.email_placeholder != blank %}
+                      placeholder="{{ section.settings.email_placeholder }}"
+                    {% endif %}
+                    required
+                  />
+                  {% if section.settings.email_placeholder != blank %}
+                    <label class="visually-hidden" for="NewsletterForm--{{ section.id }}">{{ section.settings.email_placeholder }}</label>
+                  {% endif %}
+                  {% if section.settings.consent != blank %}
+                    <div class="privacy_text">
+                      <input type="checkbox" id="privacy_text" required>
+                      <label for="privacy_text">{{ section.settings.consent }}</label>
+                    </div>
+                  {% endif %}
+                  <button type="submit" class="button" name="commit" aria-label="{{ 'newsletter.button_label' | t }}">
+                    {{ 'newsletter.button_label' | t }}
+                  </button>
+                </div>
+                {%- if form.errors -%}
+                  <small class="form__message errors" id="Newsletter-error--{{ section.id }}">
+                    {% render 'icon', icon: 'error' %}
+                    {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+                  </small>
+                {%- endif -%}
+              </div>
+              {%- if form.posted_successfully? -%}
+                <p class="form__message h3" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>
+                  {% render 'icon', icon: 'success' %}
+                  {{ section.settings.success_message }}
+                  {% comment %} {{ 'newsletter.success' | t }} {% endcomment %}
+                </p>
+              {%- endif -%}
+            {% endform %}
+          </div>
+
+
         </div>
       </div>
     </div>
@@ -292,7 +326,7 @@
 {
   "name": "Newsletter",
   "tag": "section",
-  "class": "section newsletter image-with-text-section",
+  "class": "section newsletter-main image-with-text-section",
   "settings": [
     {
     "type": "select",
@@ -339,9 +373,26 @@
     "default": "#d4cfcc"
     },
     {
+      "type": "header",
+      "content": "Newsletter settings"
+    },
+    {
+      "type": "text",
+      "label": "Success Message",
+      "id": "success_message",
+      "default": "Thanks for subscribing"
+    },
+    {
+      "type": "text",
+      "label": "Email Placeholder",
+      "id": "email_placeholder",
+      "default": "Deine beste E-Mail-Adresse"
+    },
+    {
       "type": "richtext",
-      "id": "main_description",
-      "label": "Description"
+      "label": "Consent",
+      "id": "consent",
+      "default": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>"
     },
     {
       "type": "checkbox",
@@ -961,128 +1012,6 @@
           "label": "t:sections.all.secondary_color.label"
         }
       ]
-    },
-    {
-      "type": "custom_liquid",
-      "name": "t:sections.custom-liquid.name",
-      "limit": 2,
-      "settings": [
-        {
-          "type": "liquid",
-          "id": "custom_liquid",
-          "label": "t:sections.custom-liquid.settings.custom_liquid.label",
-          "info": "t:sections.custom-liquid.settings.custom_liquid.info"
-        }
-      ]
-    },
-    {
-      "type": "button",
-      "name": "t:sections.image-with-text.blocks.button.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "button_label",
-          "default": "Button label",
-          "label": "t:sections.all.button_label.label",
-          "info": "t:sections.all.button_label.info"
-        },
-        {
-          "type": "url",
-          "id": "button_link",
-          "label": "t:sections.all.button_link.label"
-        },
-        {
-          "type": "select",
-          "id": "button_size",
-          "options": [
-            {
-              "value": "small",
-              "label": "t:sections.all.button_size.options__1.label"
-            },
-            {
-              "value": "medium",
-              "label": "t:sections.all.button_size.options__2.label"
-            },
-            {
-              "value": "large",
-              "label": "t:sections.all.button_size.options__3.label"
-            }
-          ],
-          "default": "medium",
-          "label": "t:sections.all.button_size.label"
-        },
-        {
-          "type": "select",
-          "id": "button_style",
-          "options": [
-            {
-              "value": "primary",
-              "label": "Primary"
-            },
-            {
-              "value": "secondary",
-              "label": "Secondary"
-            }
-          ],
-          "default": "secondary",
-          "label": "Button style"
-        }
-      ]
-    },
-    {
-      "type": "download_button_block",
-      "name": "Download file button",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "button_label2",
-          "default": "Button label",
-          "label": "Label"
-        },
-        {
-          "type": "text",
-          "id": "button_link2",
-          "label": "File path"
-        },
-        {
-          "type": "select",
-          "id": "button_size2",
-          "options": [
-            {
-              "value": "small",
-              "label": "t:sections.all.button_size.options__1.label"
-            },
-            {
-              "value": "medium",
-              "label": "t:sections.all.button_size.options__2.label"
-            },
-            {
-              "value": "large",
-              "label": "t:sections.all.button_size.options__3.label"
-            }
-          ],
-          "default": "medium",
-          "label": "t:sections.all.button_size.label"
-        },
-        {
-          "type": "select",
-          "id": "button_style2",
-          "options": [
-            {
-              "value": "primary",
-              "label": "Primary"
-            },
-            {
-              "value": "secondary",
-              "label": "Secondary"
-            }
-          ],
-          "default": "primary",
-          "label": "Button style"
-        }
-      ]
     }
   ],
   "presets": [
@@ -1094,9 +1023,6 @@
         },
         {
           "type": "text"
-        },
-        {
-          "type": "button"
         }
       ]
     }

@@ -111,7 +111,7 @@
   "newsletter": {
     "label": "Enter email here",
     "success": "Thanks for subscribing",
-    "button_label": "Subscribe"
+    "button_label": "Subscribe to newsletter now",
   },
   "accessibility": {
     "skip_to_text": "Skip to content",
