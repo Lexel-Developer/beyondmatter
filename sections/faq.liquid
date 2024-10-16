@@ -2,82 +2,282 @@
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+
+    --section-padding-left: {{ section.settings.padding_left }}px;
+    --section-padding-right: {{ section.settings.padding_right }}px;
+    --section-margin-top: {{ section.settings.margin_top }}px;
+    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
+    --primary-background: {{ section.settings.primary_background.red }},{{ section.settings.primary_background.green }},{{ section.settings.primary_background.blue }};
+    --secondary-background: {{ section.settings.secondary_background.red }},{{ section.settings.secondary_background.green }},{{ section.settings.secondary_background.blue }};
+
+    --block-text-color: {{ section.settings.block_text_color.red }}, {{ section.settings.block_text_color.green }}, {{ section.settings.block_text_color.blue }};
+    --accordion-icon-color: {{ section.settings.accordion_icon_color.red }}, {{ section.settings.accordion_icon_color.green }}, {{ section.settings.accordion_icon_color.blue }};
+    --color-heading: {{ section.settings.title_color.red }}, {{ section.settings.title_color.green }}, {{ section.settings.title_color.blue }};
+    --block-color-heading: {{ section.settings.block_bg_color.red }}, {{ section.settings.block_bg_color.green }}, {{ section.settings.block_bg_color.blue }};
+
+  }
+
+    #shopify-section-{{ section.id }} .accordion-question-main-cover,  #shopify-section-{{ section.id }} .title-wrapper {
+      max-width:{{ section.settings.desktop_accordion_width }}rem;
+    }
+
+  @media only screen and (max-width:749px){
+    #shopify-section-{{ section.id }} .section--padding {
+      --section-padding-top: {{ section.settings.mobile_padding_top }}px;
+      --section-padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+      padding-top:var(--section-padding-top);
+      padding-bottom:var(--section-padding-bottom);
+    }
   }
 {%- endstyle -%}
 
 {{ 'section-faq.css' | asset_url | stylesheet_tag }}
 
 <div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
-  {%- if section.settings.secondary_background -%}
-    <div class="faq--colored">
-  {%- endif -%}
-    <div class="faq page-width{% if section.settings.narrow %} page-width--inner{% endif %}">
-      <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %} {{ section.settings.heading_alignment }}">
-        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
-      </div>
+  <div class="page-width--{{ section.settings.page_width }}">
+    <div class="faq">
+      {% if section.settings.heading != blank or section.settings.subtitle != blank %}
+        <div class="title-wrapper {{ section.settings.heading_alignment }}">
+          <div class="title-wrapper-inner">
+            {% if section.settings.subtitle != blank %}
+              <h3 class="h1 sub_title" style="color: {{ section.settings.sub_text_color }};">
+                {{ section.settings.subtitle }}
+              </h3>
+            {% endif %}
+            {% if section.settings.heading != blank %}
+              <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
+                {{- section.settings.heading -}}
+              </{{ section.settings.heading_tag }}>
+            {% endif %}
+            {% if section.settings.description != blank %}
+              <div
+                class="main-description {{ section.settings.text_size }}"
+                style="color: {{ section.settings.description_color }};"
+              >
+                {{ section.settings.description }}
+              </div>
+            {% endif %}
+            {% if section.settings.category != blank %}
+              <div
+                class="category_text"
+                style="color: {{ section.settings.category_color }};"
+              >
+                <h6>{{ section.settings.category }}</h6>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
 
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'rich-text' -%}
-            <p class="h3" {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</p>
-            <div class="rte">{{ block.settings.text }}</div>
-          {%- when 'question' -%}
-            {%- if block.settings.text != blank -%}
-            <accordion-tab {{ block.shopify_attributes }}>
-              <details>
-                <summary>
-                  <span>
-                    <span class="icon icon-plus-alt"></span>
-                    {{ block.settings.title | escape }}
-                  </span>
-                </summary>
-                <div class="accordion__content rte typeset">
-                  {{ block.settings.text }}
-                </div>
-              </details>
-            </accordion-tab>
-            {%- endif -%}
-        {%- endcase -%}
-      {%- endfor -%}
+      <div class="accordion-main-row">
+        {% if section.settings.title != blank %}
+          <div class="accordion-title-cover">
+            <div class="accordion-title">
+              <p class="h3">{{ section.settings.title | escape }}</p>
+            </div>
+          </div>
+        {% endif %}
+        <div class="accordion-question-cover {% if section.settings.accordion_layout == "border" %}accordion-border-layout{% endif %}" id="accordion--{{ section.id }}">
+          <div class="accordion-question-main-cover accordion--{{ section.settings.layout }}">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'question' -%}
+                {%- if block.settings.text != blank -%}
+                  <accordion-tab {% if section.settings.accordion_alignment == 'right' %}class="{% if section.settings.accordion_alignment == 'right' %}accordion-icon-style{% endif %}"{% endif %} {{ block.shopify_attributes }}>
+                    <details>
+                        <summary>
+                          <span>
+                              {% if section.settings.accordion_alignment == "left" %}
+                                {% if section.settings.accordion_icon == "arrow" %}
+                                  <span class="icon icon-down-arrow-cvr">
+                                    {% render "icon-down-arrow" %}
+                                  </span>
+                                {% else %}
+                                    <span class="icon icon-plus-alt"></span>
+                                {% endif %}
+                              {% endif %}
+                            {{ block.settings.title | escape }}
+                            {% if section.settings.accordion_alignment == "right" %}
+                              {% if section.settings.accordion_icon == "arrow" %}
+                                <span class="icon icon-down-arrow-cvr">
+                                  {% render "icon-down-arrow" %}
+                                </span>
+                              {% else %}
+                                  <span class="icon icon-plus-alt"></span>
+                              {% endif %}
+                            {% endif %}
+                          </span>
+                        </summary>
+                      <div class="accordion__content rte typeset">
+                        <div class="accordion__content_inr_cvr">
+                          {% if block.settings.author_name != blank %}
+                            <div class="accordion-author-name">
+                              <h4>{{ block.settings.author_name }}</h4>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.author_position != blank %}
+                            <div class="author-position-name">
+                              <h5>{{ block.settings.author_position }}</h5>
+                            </div>
+                          {% endif %}
+                          {% if block.settings.author_description != blank %}
+                            <div class="author-description-name">
+                              {{ block.settings.author_description }}
+                            </div>
+                          {% endif %}
+                        </div>
+                        {% if block.settings.text != blank %}
+                          <div class="accordion-main-description">
+                            {{ block.settings.text }}
+                          </div>
+                        {% endif %}
+                      </div>
+                    </details>
+                  </accordion-tab>
+                {%- endif -%}
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      </div>
+      </div>
     </div>
-  {%- if section.settings.secondary_background -%}
-    </div>
-  {%- endif -%}
+  </div>
 </div>
 
 {% schema %}
 {
   "name": "t:sections.faq.name",
   "tag": "section",
-  "class": "section",
+  "class": "section faq-section",
   "settings": [
     {
-      "type": "checkbox",
-      "id": "narrow",
-      "default": false,
-      "label": "t:sections.all.narrow.label"
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
     },
     {
-      "type": "checkbox",
-      "id": "secondary_background",
-      "default": false,
-      "label": "t:sections.faq.settings.secondary_background.label"
+      "type": "select",
+      "id": "accordion_layout",
+      "options": [
+        {
+          "value": "border",
+          "label": "Border"
+        },
+        {
+          "value": "block",
+          "label": "Block"
+        }
+      ],
+      "default": "block",
+      "label": "Accordion layout"
     },
     {
-      "type": "checkbox",
-      "id": "show_divider",
-      "default": false,
-      "label": "t:sections.all.show_divider.label"
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "label": "Accordion alignment"
+    },
+    {
+      "type": "select",
+      "id": "accordion_icon",
+      "options": [
+        {
+          "value": "plus_minus",
+          "label": "Plus minus"
+        },
+        {
+          "value": "arrow",
+          "label": "Arrow"
+        }
+      ],
+      "default": "plus_minus",
+      "label": "Accordion icon style"
+    },
+    {
+      "type": "select",
+      "id": "accordion_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "label": "Accordion icon alignment"
+    },
+    {
+      "type": "range",
+      "label": "Accordion width",
+      "id": "desktop_accordion_width",
+      "default": 80,
+      "min": 50,
+      "max": 150,
+      "step": 1,
+      "unit": "rem"
     },
     {
       "type": "header",
       "content": "t:sections.all.heading.label"
     },
     {
+      "type": "inline_richtext",
+      "label": "Subtitle",
+      "id": "subtitle",
+      "default": "<em>Unsere Kategrorien</em>"
+    },
+    {
       "type": "text",
       "id": "heading",
       "default": "FAQs",
       "label": "t:sections.all.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "default": "<p>Description</p>",
+      "label": "Description"
     },
     {
       "type": "select",
@@ -98,6 +298,26 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "options": [
+        {
+          "value": "typeset",
+          "label": "t:sections.all.text_size.options__1.label"
+        },
+        {
+          "value": "typeset2",
+          "label": "t:sections.all.text_size.options__2.label"
+        },
+        {
+          "value": "typeset3",
+          "label": "t:sections.all.text_size.options__3.label"
+        }
+      ],
+      "default": "typeset",
+      "label": "t:sections.all.text_size.label"
     },
     {
       "type": "select",
@@ -165,6 +385,76 @@
       "info": "t:sections.all.heading_tag.info"
     },
     {
+      "type": "text",
+      "id": "title",
+      "label": "Category"
+    },
+    {
+      "type": "header",
+      "content": "Section color"
+    },
+    {
+      "type": "color",
+      "label": "Primary Background",
+      "id": "primary_background",
+      "default": "#baab9e"
+    },
+    {
+      "type": "color",
+      "label": "Secondary Background",
+      "id": "secondary_background",
+      "default": "#d4cfcc"
+    },
+    {
+      "type": "color",
+      "label": "Box background",
+      "id": "box_background",
+      "default": "#ffffff",
+      "info": "Box background color apply only when 'Show inside box?' setting is true"
+    },
+    {
+      "type": "color",
+      "label": "Title color",
+      "id": "title_color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "label": "Sub title color",
+      "id": "sub_text_color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "label": "Description color",
+      "id": "description_color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "label": "Category color",
+      "id": "category_color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "label": "Border/Block background color",
+      "id": "block_bg_color",
+      "default": "#F4F2F2"
+    },
+    {
+      "type": "color",
+      "label": "Block text color",
+      "id": "block_text_color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "label": "Accordion icon color",
+      "id": "accordion_icon_color",
+      "default": "#212326"
+    },
+    {
       "type": "header",
       "content": "t:sections.all.padding.header.content"
     },
@@ -172,42 +462,84 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 200,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "t:sections.all.padding.padding_top.label",
+      "label": "Desktop top padding",
       "default": 36
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 200,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "t:sections.all.padding.padding_bottom.label",
+      "label": "Desktop bottom padding",
       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Mobile top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Mobile bottom padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Padding left",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding right",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin top",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin bottom",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px"
     }
   ],
   "blocks": [
-    {
-      "type": "rich-text",
-      "name": "t:sections.faq.blocks.rich-text.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "default": "Rich text",
-          "label": "t:sections.faq.blocks.rich-text.settings.title.label"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>",
-          "label": "t:sections.faq.blocks.rich-text.settings.text.label"
-        }
-      ]
-    },
     {
       "type": "question",
       "name": "t:sections.faq.blocks.question.name",
@@ -222,6 +554,22 @@
           "type": "richtext",
           "id": "text",
           "label": "t:sections.faq.blocks.question.settings.text.label",
+          "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+        },
+        {
+          "type": "text",
+          "id": "author_name",
+          "label": "Author name"
+        },
+        {
+          "type": "text",
+          "id": "author_position",
+          "label": "Author position"
+        },
+        {
+          "type": "richtext",
+          "id": "author_description",
+          "label": "Author description",
           "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
         }
       ]

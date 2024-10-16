@@ -1,0 +1,338 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "faq_QneGEA": {
+      "type": "faq",
+      "blocks": {
+        "question_dUDJ9J": {
+          "type": "question",
+          "settings": {
+            "title": "Wo wird  Shungit abgebaut?",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        },
+        "question_qjMftJ": {
+          "type": "question",
+          "settings": {
+            "title": "Wo wird  Shungit abgebaut?",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_dUDJ9J",
+        "question_qjMftJ"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_layout": "block",
+        "layout": "left",
+        "accordion_icon": "plus_minus",
+        "accordion_alignment": "left",
+        "desktop_accordion_width": 100,
+        "subtitle": "<em>Optionale Dachzeile<\/em>",
+        "heading": "Häufig gestellte Fragen zum Händlerprogramm",
+        "description": "",
+        "heading_size": "h1",
+        "text_size": "typeset2",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "title": "Konditionen",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "title_color": "#3c3c3c",
+        "sub_text_color": "#3c3c3c",
+        "description_color": "#3c3c3c",
+        "category_color": "#212326",
+        "block_bg_color": "#f4f2f2",
+        "block_text_color": "#3c3c3c",
+        "accordion_icon_color": "#baab9e",
+        "padding_top": 160,
+        "padding_bottom": 24,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "faq_4aBL9C": {
+      "type": "faq",
+      "blocks": {
+        "question_xN8pkQ": {
+          "type": "question",
+          "settings": {
+            "title": "Wie hoch ist der Versand?",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        },
+        "question_CfW6hn": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Möglichkeiten des Widerrufs stehen mir zu?",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        },
+        "question_3kp7dV": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Materialien werden für die Verpackung genutzt?",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_xN8pkQ",
+        "question_CfW6hn",
+        "question_3kp7dV"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_layout": "block",
+        "layout": "left",
+        "accordion_icon": "plus_minus",
+        "accordion_alignment": "left",
+        "desktop_accordion_width": 100,
+        "subtitle": "",
+        "heading": "",
+        "description": "",
+        "heading_size": "h1",
+        "text_size": "typeset2",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "title": "Abwicklung, Versand & Rückerstattungen",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "title_color": "#3c3c3c",
+        "sub_text_color": "#3c3c3c",
+        "description_color": "#3c3c3c",
+        "category_color": "#212326",
+        "block_bg_color": "#f4f2f2",
+        "block_text_color": "#3c3c3c",
+        "accordion_icon_color": "#baab9e",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "faq_Lhm7pU": {
+      "type": "faq",
+      "blocks": {
+        "question_Vbft3U": {
+          "type": "question",
+          "settings": {
+            "title": "Wie hoch ist der Versand?",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        },
+        "question_L8Fdy4": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Möglichkeiten des Widerrufs stehen mir zu?",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        },
+        "question_dpWcN6": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Materialien werden für die Verpackung genutzt?",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_Vbft3U",
+        "question_L8Fdy4",
+        "question_dpWcN6"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_layout": "block",
+        "layout": "left",
+        "accordion_icon": "plus_minus",
+        "accordion_alignment": "left",
+        "desktop_accordion_width": 100,
+        "subtitle": "",
+        "heading": "",
+        "description": "",
+        "heading_size": "h1",
+        "text_size": "typeset2",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "title": "Support",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "title_color": "#3c3c3c",
+        "sub_text_color": "#3c3c3c",
+        "description_color": "#3c3c3c",
+        "category_color": "#212326",
+        "block_bg_color": "#f4f2f2",
+        "block_text_color": "#3c3c3c",
+        "accordion_icon_color": "#baab9e",
+        "padding_top": 24,
+        "padding_bottom": 0,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "faq_AjaKRM": {
+      "type": "faq",
+      "blocks": {
+        "question_MDLLK3": {
+          "type": "question",
+          "settings": {
+            "title": "Analyse von Rohstoffen und Lieferketten",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        },
+        "question_U88c8f": {
+          "type": "question",
+          "settings": {
+            "title": "Hochwertiges Studiendesign",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        },
+        "question_bXnrWb": {
+          "type": "question",
+          "settings": {
+            "title": "Umfangreiche Stichproben",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        },
+        "question_icdVna": {
+          "type": "question",
+          "settings": {
+            "title": "Randomisierte Tests",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        },
+        "question_frXgiK": {
+          "type": "question",
+          "settings": {
+            "title": "Doppelt verblindete Tests",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        },
+        "question_ThEpr4": {
+          "type": "question",
+          "settings": {
+            "title": "Reproduzierbare Studienergebnisse",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "author_name": "Adam",
+            "author_position": "Web designer",
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_MDLLK3",
+        "question_U88c8f",
+        "question_bXnrWb",
+        "question_icdVna",
+        "question_frXgiK",
+        "question_ThEpr4"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_layout": "border",
+        "layout": "left",
+        "accordion_icon": "arrow",
+        "accordion_alignment": "right",
+        "desktop_accordion_width": 82,
+        "subtitle": "",
+        "heading": "Wir denken ganzheitlich.",
+        "description": "<p>Unser Anspruch ist es, höchste Qualität und Effektivität zu bieten. Angefangen bei der Auswahl und Analyse der Rohstoffe über die Sorgfalt bei Lieferketten bis zur Auswahl von Partnern und Instituten und der Hochwertigkeit der Studiendesigns.<\/p>",
+        "heading_size": "h1",
+        "text_size": "typeset",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "title": "",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "title_color": "#3c3c3c",
+        "sub_text_color": "#3c3c3c",
+        "description_color": "#3c3c3c",
+        "category_color": "#212326",
+        "block_bg_color": "#baab9e",
+        "block_text_color": "#3c3c3c",
+        "accordion_icon_color": "#3c3c3c",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq_QneGEA",
+    "faq_4aBL9C",
+    "faq_Lhm7pU",
+    "faq_AjaKRM"
+  ]
+}

@@ -49,7 +49,7 @@
 .icon-boxes-section .guarantee__item:not(:has(.guarantee__icon)) .heading-inr {
     margin: 0 0 1.6rem;
 }
-
+.icon-boxes-section .guarantee__icon { display: block; }
 .icon-boxes-section .guarantees { background: transparent; }
 .icon-boxes-section .guarantees .grid .grid {
     margin-top: 0;
@@ -58,7 +58,7 @@
 
 @media only screen and (min-width: 990px) {
     .icon-boxes-section .grid {
-        --grid-horizontal-spacing: 9.2rem;
+        --grid-horizontal-spacing: 9.3rem;
     }
 }
 
