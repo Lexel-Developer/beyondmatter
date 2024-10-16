@@ -75,7 +75,7 @@
         max-width: calc(38.55% - var(--grid-horizontal-spacing) / 2);
     }
     .newsletter-main .image-with-text .image-with-text__content {
-        padding: 4rem 6.4rem;
+        padding: 3rem 6.4rem;
         padding-inline-end: 4rem !important;
     }
 }
