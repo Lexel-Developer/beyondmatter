@@ -326,6 +326,73 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "testimonials_2_EdGgBk": {
+      "type": "testimonials-2",
+      "blocks": {
+        "column_E6JTaV": {
+          "type": "column",
+          "settings": {
+            "rating_text": "Sterne",
+            "review_star": 3.5,
+            "author_name": "Stephan Huerzeler\u2028",
+            "author_position": "über Amazon",
+            "author_description": "<p>Ein tolles Produkt. Man hat den<\/p><p> Unterschied direkt gemerkt. Ich habe in jedem Zimmer eine Kugel stehen und fühle mich seitdem sehr wohl.<\/p>"
+          }
+        },
+        "column_rMzXbr": {
+          "type": "column",
+          "settings": {
+            "rating_text": "Sterne",
+            "review_star": 3.5,
+            "author_name": "Stephan Huerzeler\u2028",
+            "author_position": "über Amazon",
+            "author_description": "<p>Ein tolles Produkt. Man hat den<\/p><p> Unterschied direkt gemerkt. Ich habe in jedem Zimmer eine Kugel stehen und fühle mich seitdem sehr wohl.<\/p>"
+          }
+        },
+        "column_JNeAXx": {
+          "type": "column",
+          "settings": {
+            "rating_text": "Sterne",
+            "review_star": 3.5,
+            "author_name": "Stephan Huerzeler\u2028",
+            "author_position": "über Amazon",
+            "author_description": "<p>Ein tolles Produkt. Man hat den<\/p><p> Unterschied direkt gemerkt. Ich habe in jedem Zimmer eine Kugel stehen und fühle mich seitdem sehr wohl.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_E6JTaV",
+        "column_rMzXbr",
+        "column_JNeAXx"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "subtitle": "<em>Rezensionen<\/em>",
+        "title": "Das sagen unsere Kunden",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "show_inside_box": false,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#d4cfcc",
+        "box_background": "#c4a7a7",
+        "title_color": "#3c3c3c",
+        "sub_text_color": "#3c3c3c",
+        "star_icon_color": "#baab9e",
+        "text_color": "#000000",
+        "background_color": "#fffefe",
+        "category_column_desktop": 3,
+        "category_column_mobile": "1",
+        "padding_top": 80,
+        "padding_bottom": 160,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -333,6 +400,7 @@
     "faq_QneGEA",
     "faq_4aBL9C",
     "faq_Lhm7pU",
-    "faq_AjaKRM"
+    "faq_AjaKRM",
+    "testimonials_2_EdGgBk"
   ]
 }

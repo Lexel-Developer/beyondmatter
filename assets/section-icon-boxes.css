@@ -78,6 +78,11 @@
     background: transparent;
 }
 
+.icon-boxes-section .guarantee__item .rte p {
+    margin: 0;
+    color: rgba(var(--color-foreground));
+}
+
 @media only screen and (min-width: 990px) {
     .icon-boxes-section .grid {
         --grid-horizontal-spacing: 9.3rem;
@@ -117,7 +122,9 @@
     .mobile--right .guarantee__icon {
         justify-content: flex-end;
     } */
-
+    .icon-boxes-section .guarantee__item .rte {
+        display: ruby;
+    }
     
 }
 @media only screen and (min-width:750px) and (max-width:990px) {

@@ -16,6 +16,8 @@
 
 .faq .h3 {
   margin-top: 0;
+  letter-spacing: 0;
+  line-height: 1.333333;
 }
 
 .faq .h3 + .rte {
@@ -204,13 +206,13 @@ accordion-tab.accordion-icon-style .accordion__content {
 
 .accordion-main-description p {
   margin: 10px 0 0;
+  letter-spacing: 0;
+  line-height: 1.5;
 }
 
 .main-description p {
   margin: 22px 0 0;
-}
-.main-description p {
-  margin: 22px 0 0;
+  line-height: 1.5;
 }
 
 .faq:has(.accordion-border-layout) .title-wrapper {
@@ -220,6 +222,12 @@ accordion-tab.accordion-icon-style .accordion__content {
 .faq .accordion-border-layout accordion-tab:first-child {
   margin-top: 0;
 }
+
+.faq_enable_big_box { background-color: var(--box-background); padding: 4.5rem; }
+
+.title-wrapper.left  { margin-left: 0; margin-right: auto ; }
+.title-wrapper.center  { margin: 0 auto ; }
+.title-wrapper.right  { margin-right: 0; margin-left: auto ; }
 
 @media only screen and (min-width:750px){
   .accordion-title-cover {
@@ -231,6 +239,13 @@ accordion-tab.accordion-icon-style .accordion__content {
   .accordion-question-cover {
     width: calc(72% - 3.2rem );
     flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:1025px){
+  .faq .accordion-border-layout  details summary {
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
 }
 
@@ -267,4 +282,9 @@ accordion-tab.accordion-icon-style .accordion__content {
   .main-description p {
     margin: 8px 0 0;
   }
+  .faq-section .title-wrapper-inner .sub_title {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 8px;
+  } 
 }
