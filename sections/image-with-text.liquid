@@ -240,7 +240,7 @@
           {% endif %}
         {% endif %}
         {% if section.settings.main_description != blank %}
-          <div class="grid_description-cvr">
+          <div class="grid_description-cvr image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
             {{ section.settings.main_description }}
           </div>
         {% endif %}

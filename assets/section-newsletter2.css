@@ -10,11 +10,12 @@
     margin: 0;
 }
 .newslatter_cover .newsletter-form .field__input {
-    border: 1px solid;
+    border: 1px solid rgb(var(--color-button-border));
     font-size: 1.6rem;
     letter-spacing: 0;
     line-height: 1.5;
     min-height: 4.8rem;
+    padding: 12px 15px;
 }
 .newslatter_cover .newsletter-form .field__input:hover {
     border-color: inherit;
@@ -31,6 +32,11 @@
     width: 1.6rem;
     min-width: 1.6rem;
     accent-color: rgb(var(--color-foreground));
+    appearance: none;
+    border: 1px solid rgb(var(--color-foreground));
+}
+.newslatter_cover input[type=checkbox]:checked {
+    appearance: auto;
 }
 .privacy_text p {
     margin: 0;
@@ -58,6 +64,20 @@
 .newsletter-main .grid__item:only-child {
     max-width: 100% !important;
 }
+.newsletter-main .image-with-text .image-with-text__content {
+    letter-spacing: 0;
+}
+.newslatter_cover .button {
+    letter-spacing: 0 !important;
+    line-height: 1.5;
+}
+.center .newslatter_cover .field {
+    align-items: center;
+}
+.right .newslatter_cover .field {
+    align-items: flex-end;
+}
+
 
 
 @media screen and (min-width: 750px) {
@@ -72,7 +92,7 @@
 
 @media screen and (min-width: 950px) {
     .newsletter-main .image-with-text--small .grid__item:first-child {
-        max-width: calc(38.55% - var(--grid-horizontal-spacing) / 2);
+        max-width: calc(40.8% - var(--grid-horizontal-spacing) / 2);
     }
     .newsletter-main .image-with-text .image-with-text__content {
         padding: 3rem 6.4rem;
@@ -89,17 +109,27 @@
     .newsletter-main .image-with-text__content {
         padding: 4.6rem 2.4rem 4rem;
     }
+    .newsletter-main  .grid__item {
+        max-width: 100% !important;
+        width: 100%;
+    }
 
 }
 
 @media screen and (max-width: 749px) {
 
     .newsletter-main .image-with-text__content .button {
-        margin-top: 3.6rem;
+        margin-top: 3.2rem;
         margin-bottom: 0;
     }
     .newslatter_cover .privacy_text {
         margin-top: 2.6rem;
+    }
+    .newsletter-main .image-with-text__heading {
+        line-height: 1.333333;
+    }
+    .newsletter-main .image-with-text__heading+.image-with-text__text {
+        margin-top: 10px;
     }
 
 }

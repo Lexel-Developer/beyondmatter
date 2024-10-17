@@ -2,7 +2,6 @@
   background: var(--gradient-background);
   background-color: rgb(var(--color-background));
   color: rgb(var(--color-foreground));
-  align-items: center;
 }
 
 @media screen and (min-width: 750px) {
@@ -257,6 +256,10 @@
   margin: 0;
   line-height: 1.5;
 }
+.grid_description-cvr {
+  padding: 0 !important;
+}
+
 
 @media screen and (min-width: 750px) {
   .image-with-text__subheading.h5 {

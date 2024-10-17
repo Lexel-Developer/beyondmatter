@@ -1483,7 +1483,6 @@
             "image": "shopify://shop_images/cash-payment-coin-1_1.svg",
             "custom_icon": "",
             "title": "Geld-zurück-Garantie",
-            "block_heading_tag": "h2",
             "title_size": "h3",
             "text": "<p>Risikofreies Testen für 60 Tage. Solltest du unzufrieden mit dem Produkt sein, nehmen wir es zurück ohne Fragen zu stellen.</p>",
             "text_size": "typeset"
@@ -1497,7 +1496,6 @@
             "image": "shopify://shop_images/warehouse-cart-package-ribbon-1_1.svg",
             "custom_icon": "",
             "title": "Versandkostenfrei ab 90€",
-            "block_heading_tag": "h2",
             "title_size": "h3",
             "text": "<p>Wir versenden Deine gesamte Bestellung kostenfrei sobald sie einen Einkaufswert von 90€ überschreitet.</p>",
             "text_size": "typeset"
@@ -1511,7 +1509,6 @@
             "image": "shopify://shop_images/Icon_24px_-_Heart.svg",
             "custom_icon": "",
             "title": "Made in Germany",
-            "block_heading_tag": "h2",
             "title_size": "h3",
             "text": "<p>Unsere Produkte werden ausschließlich in Deutschland hergestellt, verpackt und versendet.</p>",
             "text_size": "typeset"
@@ -1529,8 +1526,6 @@
         "secondary_background": "#d4cfcc",
         "layout": "default",
         "column_alignment": "left",
-        "desktop_column_alignment": "left",
-        "mobile_column_alignment": "left",
         "horizontal_content": false,
         "show_divider": false,
         "columns_desktop": 3,
@@ -1564,7 +1559,6 @@
             "icon_size": "large",
             "custom_icon": "",
             "title": "300%",
-            "block_heading_tag": "h2",
             "title_size": "x-large",
             "text": "<p>Beyond Matter Produkte haben 300 % Wirküberlegenheit gegenüber Placebo.</p>",
             "text_size": "typeset2"
@@ -1577,7 +1571,6 @@
             "icon_size": "large",
             "custom_icon": "",
             "title": "84% ",
-            "block_heading_tag": "h2",
             "title_size": "x-large",
             "text": "<p>84 % der Menschen in unseren Testgruppen haben positiv auf Beyond Matter Produkte reagiert.</p>",
             "text_size": "typeset2"
@@ -1590,7 +1583,6 @@
             "icon_size": "large",
             "custom_icon": "",
             "title": "40%",
-            "block_heading_tag": "h2",
             "title_size": "x-large",
             "text": "<p>Beyond Matter Produkte senken Beschwerden durch Elektrosmog um sagenhafte 40 %</p>",
             "text_size": "typeset2"
@@ -1608,8 +1600,6 @@
         "secondary_background": "#f4f2f2",
         "layout": "default",
         "column_alignment": "left",
-        "desktop_column_alignment": "left",
-        "mobile_column_alignment": "left",
         "horizontal_content": false,
         "show_divider": false,
         "columns_desktop": 3,
