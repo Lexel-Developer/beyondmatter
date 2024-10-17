@@ -369,6 +369,9 @@
   .image-with-text-section .button--cta {
     padding: 12px 4px;
   }
+  .image-with-text-section .sub_title {
+    line-height: 1.166666;
+  }
 }
 
 .image-with-text__text {
