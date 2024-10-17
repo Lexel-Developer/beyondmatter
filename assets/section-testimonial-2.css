@@ -37,6 +37,7 @@
     margin-bottom: 1.6rem;
     font-size: 1.6rem;
     line-height: 1.5;
+    flex-wrap: wrap;
 }
 .review_star_main strong {
     font-weight: 400;
@@ -62,10 +63,6 @@
 @media only screen and (max-width:749px){
     .testimonial-section .column-grid-row {
         row-gap: 2.2rem;
-    }
-    .testimonial-section .grid--2-col .grid__item {
-        width: calc(100% - var(--grid-horizontal-spacing) / 1);
-        max-width: 100%;
     }
     .testimonial-section .column-grid-row .grid__item {
         row-gap: 4rem;
