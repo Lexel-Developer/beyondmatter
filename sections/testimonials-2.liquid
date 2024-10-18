@@ -64,16 +64,16 @@
                             {% assign decStar = review_star | split: '.' | last | plus: 0 %}
                             {% assign decRemainStar = review_star | minus: intStar %}
                             {% for star in (1..intStar) %}
-                                <li>{% render 'icon-star-fill' %}</li>
+                                <li>{% render 'icon', icon: 'icon-star-fill' %}</li>
                             {% endfor %}
                             {% if decRemainStar > 0 and  decRemainStar < 1 %}
-                                <li>{% render 'icon-star-half' %}</li>
+                                <li>{% render 'icon', icon: 'icon-star-half' %}</li>
                             {% endif %}
                             {% assign blankStar = 5 | minus: review_star %}
                             {% assign firstDigit = blankStar | split: '.' | first| plus: 0 %}
                             {% assign lastDigit = blankStar | split: '.' | last | plus: 0 %}
                             {% for i in (1..firstDigit) %}
-                                <li>{% render 'icon-star-blank' %}</li>
+                                <li>{% render 'icon', icon: 'icon-star-blank' %}</li>
                             {% endfor %}
 
                                 {% comment %} {%- for i in (1..block.settings.review_star) -%}
