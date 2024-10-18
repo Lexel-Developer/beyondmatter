@@ -1,0 +1,784 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+
+    --section-padding-left: {{ section.settings.padding_left }}px;
+    --section-padding-right: {{ section.settings.padding_right }}px;
+    --section-margin-top: {{ section.settings.margin_top }}px;
+    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
+    --primary-background: {{ section.settings.primary_background }};
+    --secondary-background: {{ section.settings.secondary_background }};
+    --box-background: {{ section.settings.box_background }};
+
+    --color-heading: {{ section.settings.title_color.red }}, {{ section.settings.title_color.green }}, {{ section.settings.title_color.blue }};
+
+    --text-color: {{ section.settings.text_color.red }}, {{ section.settings.text_color.green }}, {{ section.settings.text_color.blue }};
+    --rating-color: {{ section.settings.rating_color.red }}, {{ section.settings.rating_color.green }}, {{ section.settings.rating_color.blue }};
+
+    --first-row-color: {{ section.settings.first_row_color.red }}, {{ section.settings.first_row_color.green }}, {{ section.settings.first_row_color.blue }};
+    --first-row-opacity: {% if section.settings.first_row_opacity < 100 %} 0.{{ section.settings.first_row_opacity }} {% else %} 1{% endif %};
+
+    --second-row-color: {{ section.settings.second_row_color.red }}, {{ section.settings.second_row_color.green }}, {{ section.settings.second_row_color.blue }};
+    --second-row-opacity: {% if section.settings.second_row_opacity < 100 %} 0.{{ section.settings.second_row_opacity }} {% else %} 1{% endif %};
+
+    --color-button-background: {{ section.settings.colors_button_background.red }}, {{ section.settings.colors_button_background.green }}, {{ section.settings.colors_button_background.blue }};
+    --color-button-text: {{ section.settings.colors_button_label.red }}, {{ section.settings.colors_button_label.green }}, {{ section.settings.colors_button_label.blue }};
+    --color-button-border: var(--color-button-background);
+  }
+
+
+  @media only screen and (max-width:749px){
+    #shopify-section-{{ section.id }} .section--padding {
+      --section-padding-top: {{ section.settings.mobile_padding_top }}px;
+      --section-padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+      padding-top:var(--section-padding-top);
+      padding-bottom:var(--section-padding-bottom);
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign fetchpriority = 'auto'
+  if section.index == 1
+    assign fetchpriority = 'high'
+  endif
+-%}
+
+{{ 'section-comparison-table.css' | asset_url | stylesheet_tag }}
+
+<div class="section--padding">
+  <div class="page-width--{{ section.settings.page_width }}">
+    {% if section.settings.show_inside_box == true %}<div class="comparison_enable_big_box">{% endif %}
+    {% if section.settings.title != blank or section.settings.subtitle != blank %}
+      <div class="title-wrapper {{ section.settings.heading_alignment }}">
+        <div class="title-wrapper-inner">
+          {% if section.settings.subtitle != blank %}
+            <h3 class="h1 sub_title" style="color: {{ section.settings.sub_text_color }};">
+              {{ section.settings.subtitle }}
+            </h3>
+          {% endif %}
+          {% if section.settings.title != blank %}
+            <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
+              {{- section.settings.title -}}
+            </{{ section.settings.heading_tag }}>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+    <div class="comparison-table">
+      <div class="comparison-tablebody">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'comparison_table' -%}
+              <div class="comparison-tablerow" {{ block.shopify_attributes }}>
+                <div class="comparison-tablecell">
+                  {% if block.settings.block_title != blank %}
+                    <div class="first-row-title">
+                      <span>{{ block.settings.block_title }}</span>
+                    </div>
+                  {% endif %}
+                </div>
+                <div class="comparison-tablecell">
+                  {% if block.settings.enable_porduct %}
+                    {% if block.settings.product_1 != blank %}
+                      {% assign product = all_products[block.settings.product_1] %}
+                      <div class="comparison-image-has-text">
+                        <div class="comparison-product-image">
+                          {{
+                            product.featured_image
+                            | image_url: width: 100
+                            | image_tag: widths: '100, 200', fetchpriority: 'high'
+                          }}
+                        </div>
+                        <div class="comparison-product-title">
+                          {{ product.title }}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                  {% if block.settings.enable_description %}
+                    {% if block.settings.description != blank %}
+                      <div class="tablecell-description">
+                        {{ block.settings.description }}
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                  {% if block.settings.enable_review %}
+                    {% if block.settings.review_star != blank %}
+                      <ul class="tablecell_review_cover">
+                        {%- assign review_star = block.settings.review_star -%}
+                        {% assign intStar = review_star | split: '.' | first | plus: 0 %}
+                        {% assign decStar = review_star | split: '.' | last | plus: 0 %}
+                        {% assign decRemainStar = review_star | minus: intStar %}
+                        {% for star in (1..intStar) %}
+                          <li class="tablecell_review_fill"><span></span></li>
+                        {% endfor %}
+                        {% assign blankStar = 5 | minus: review_star %}
+                        {% assign firstDigit = blankStar | split: '.' | first | plus: 0 %}
+                        {% assign lastDigit = blankStar | split: '.' | last | plus: 0 %}
+                        {% for i in (1..firstDigit) %}
+                          <li class="tablecell_review_blank"></li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  {% endif %}
+                  {% if block.settings.enable_check_icon %}
+                    {% if block.settings.check_icon != blank %}
+                      <div class="table_check_icon">
+                        {{
+                          block.settings.check_icon
+                          | image_url: width: 100
+                          | image_tag: widths: '100, 200', fetchpriority: fetchpriority
+                        }}
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                  {% if block.settings.enable_button %}
+                    <div class="tablecell-button">
+                      <a
+                        class="button {% if block.settings.button_style_secondary %} button--cta{% endif %} button--{{ block.settings.button_size }}"
+                        {% if block.settings.button_link != blank %}
+                          href="{{ block.settings.button_link }}"
+                        {% else %}
+                          role="link" aria-disabled="true"
+                        {% endif %}
+                      >
+                        <span class="label">{{ block.settings.button_label | escape }}</span>
+                      </a>
+                    </div>
+                  {% endif %}
+                </div>
+                <div class="comparison-tablecell">
+                  {% if block.settings.enable_porduct2 %}
+                    {% if block.settings.product_2 != blank %}
+                      {% assign product2 = all_products[block.settings.product_2] %}
+                      <div class="comparison-image-has-text">
+                        <div class="comparison-product-image">
+                          {{
+                            product2.featured_image
+                            | image_url: width: 100
+                            | image_tag: widths: '100, 200', fetchpriority: 'high'
+                          }}
+                        </div>
+                        <div class="comparison-product-title">
+                          {{ product2.title }}
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                  {% if block.settings.enable_description2 %}
+                    {% if block.settings.description2 != blank %}
+                      <div class="tablecell-description">
+                        {{ block.settings.description2 }}
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                  {% if block.settings.enable_review2 %}
+                    {% if block.settings.review_star2 != blank %}
+                      <ul class="tablecell_review_cover">
+                        {%- assign review_star = block.settings.review_star2 -%}
+                        {% assign intStar = review_star | split: '.' | first | plus: 0 %}
+                        {% assign decStar = review_star | split: '.' | last | plus: 0 %}
+                        {% assign decRemainStar = review_star | minus: intStar %}
+                        {% for star in (1..intStar) %}
+                          <li class="tablecell_review_fill"><span></span></li>
+                        {% endfor %}
+                        {% assign blankStar = 5 | minus: review_star %}
+                        {% assign firstDigit = blankStar | split: '.' | first | plus: 0 %}
+                        {% assign lastDigit = blankStar | split: '.' | last | plus: 0 %}
+                        {% for i in (1..firstDigit) %}
+                          <li class="tablecell_review_blank"></li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  {% endif %}
+                  {% if block.settings.enable_check_icon2 %}
+                    {% if block.settings.check_icon2 != blank %}
+                      <div class="table_check_icon">
+                        {{
+                          block.settings.check_icon2
+                          | image_url: width: 100
+                          | image_tag: widths: '100, 200', fetchpriority: fetchpriority
+                        }}
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                  {% if block.settings.enable_button2 %}
+                    <div class="tablecell-button">
+                      <a
+                        class="button {% if block.settings.button_style_secondary2 %} button--cta{% endif %} button--{{ block.settings.button_size2 }}"
+                        {% if block.settings.button_link2 != blank %}
+                          href="{{ block.settings.button_link2 }}"
+                        {% else %}
+                          role="link" aria-disabled="true"
+                        {% endif %}
+                      >
+                        <span class="label">{{ block.settings.button_label2 | escape }}</span>
+                      </a>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+    {% if section.settings.show_inside_box == true %}</div>{% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Comparison table",
+  "tag": "section",
+  "class": "section section-comparison-table",
+  "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Subtitle",
+      "id": "subtitle",
+      "default": "<em>Unsere Kategrorien</em>"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.all.heading_alignment.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.all.heading_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.all.heading_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.all.heading_alignment.options__3.label"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.all.heading_tag.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.all.heading_tag.options__5.label"
+        },
+        {
+          "value": "h6",
+          "label": "t:sections.all.heading_tag.options__6.label"
+        },
+        {
+          "value": "div",
+          "label": "t:sections.all.heading_tag.options__7.label"
+        },
+        {
+          "value": "span",
+          "label": "t:sections.all.heading_tag.options__8.label"
+        },
+        {
+          "value": "p",
+          "label": "t:sections.all.heading_tag.options__9.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_tag.label",
+      "info": "t:sections.all.heading_tag.info"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show layout boxed",
+      "id": "show_inside_box",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Section color"
+    },
+    {
+      "type": "color",
+      "label": "Primary Background",
+      "id": "primary_background",
+      "default": "#baab9e"
+    },
+    {
+      "type": "color",
+      "label": "Secondary Background",
+      "id": "secondary_background",
+      "default": "#d4cfcc"
+    },
+    {
+      "type": "color",
+      "label": "Box background",
+      "id": "box_background",
+      "default": "#ffffff",
+      "info": "Layout boxed background color apply only when 'Show layout boxed?' setting is true"
+    },
+    {
+      "type": "color",
+      "label": "Title color",
+      "id": "title_color"
+    },
+    {
+      "type": "color",
+      "label": "Sub title color",
+      "id": "sub_text_color"
+    },
+    {
+      "type": "color",
+      "label": "Border color",
+      "id": "border_color"
+    },
+    {
+      "type": "color",
+      "label": "First row color",
+      "id": "first_row_color",
+      "default": "#FFFEFE"
+    },
+    {
+      "type": "range",
+      "label": "First row opacity",
+      "id": "first_row_opacity",
+      "default": 80,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "color",
+      "label": "Second row color",
+      "id": "second_row_color",
+      "default": "#FFFEFE"
+    },
+    {
+      "type": "range",
+      "label": "Second row opacity",
+      "id": "second_row_opacity",
+      "default": 100,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "color",
+      "label": "Text color",
+      "id": "text_color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "label": "Rating color",
+      "id": "rating_color",
+      "default": "#BAAB9E"
+    },
+    {
+      "type": "color",
+      "id": "colors_button_label",
+      "label": "t:sections.all.colors.colors_button_label.label",
+      "default": "#1a1b18"
+    },
+    {
+      "type": "color",
+      "id": "colors_button_background",
+      "label": "t:sections.all.colors.colors_button_background.label",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Grid Layout"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Desktop top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Desktop bottom padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Mobile top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Mobile bottom padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Padding left",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding right",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin top",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin bottom",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_table",
+      "name": "comparison table",
+      "settings": [
+        {
+          "type": "header",
+          "content": "First Column (Header)"
+        },
+        {
+          "type": "text",
+          "label": "Title",
+          "id": "block_title",
+          "default": "Title"
+        },
+        {
+          "type": "header",
+          "content": "Second Column (Header)"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_description",
+          "default": true,
+          "label": "Enable description"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_porduct",
+          "default": false,
+          "label": "Enable product"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_review",
+          "default": false,
+          "label": "Enable rating"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_button",
+          "default": false,
+          "label": "Enable button"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_check_icon",
+          "default": false,
+          "label": "Enable check icon"
+        },
+        {
+          "type": "product",
+          "label": "Product 1",
+          "id": "product_1"
+        },
+        {
+          "type": "richtext",
+          "label": "Description",
+          "default": "<p>Description</p>",
+          "id": "description"
+        },
+        {
+          "type": "text",
+          "id": "rating_text",
+          "label": "Rating text",
+          "default": "Rating title"
+        },
+        {
+          "type": "range",
+          "label": "Review star",
+          "id": "review_star",
+          "default": 5,
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "unit": "☆"
+        },
+        {
+          "type": "image_picker",
+          "label": "Check Icon ",
+          "id": "check_icon"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.all.button_label.label",
+          "info": "t:sections.all.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.all.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:sections.all.button_size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.all.button_size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.all.button_size.options__3.label"
+            }
+          ],
+          "default": "medium",
+          "label": "t:sections.all.button_size.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "t:sections.all.button_style_secondary.label"
+        },
+        {
+          "type": "header",
+          "content": "Second Column (Header)"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_description2",
+          "default": true,
+          "label": "Enable description"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_porduct2",
+          "default": false,
+          "label": "Enable product"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_review2",
+          "default": false,
+          "label": "Enable rating"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_button2",
+          "default": false,
+          "label": "Enable button"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_check_icon2",
+          "default": false,
+          "label": "Enable check icon"
+        },
+        {
+          "type": "product",
+          "label": "Product 2",
+          "id": "product_2"
+        },
+        {
+          "type": "richtext",
+          "label": "Description",
+          "default": "<p>Description</p>",
+          "id": "description2"
+        },
+        {
+          "type": "text",
+          "id": "rating_text2",
+          "label": "Rating text",
+          "default": "Rating title"
+        },
+        {
+          "type": "range",
+          "label": "Review star",
+          "id": "review_star2",
+          "default": 5,
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "unit": "☆"
+        },
+        {
+          "type": "image_picker",
+          "label": "Check Icon ",
+          "id": "check_icon2"
+        },
+        {
+          "type": "text",
+          "id": "button_label2",
+          "default": "Button label",
+          "label": "t:sections.all.button_label.label",
+          "info": "t:sections.all.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link2",
+          "label": "t:sections.all.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "button_size2",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:sections.all.button_size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.all.button_size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.all.button_size.options__3.label"
+            }
+          ],
+          "default": "medium",
+          "label": "t:sections.all.button_size.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary2",
+          "default": false,
+          "label": "t:sections.all.button_style_secondary.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison table"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}

@@ -60,75 +60,76 @@
   endif
 -%}
 {%- if section.settings.show_divider %}<div class="section--divider">{% endif -%}
-  <div class="page-width--{{ section.settings.page_width }}">
-    <div class="guarantees {% if section.settings.use_custom_colors == false %}guarantees-wrapper{% endif %} section--padding {{ custom_class }}">
-      {%- if section.settings.heading != blank and section.settings.layout == 'default' -%}
-        <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %} {{ section.settings.column_alignment }}">
-          <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
+<div class="page-width--{{ section.settings.page_width }}">
+  <div class="guarantees {% if section.settings.use_custom_colors == false %}guarantees-wrapper{% endif %} section--padding {{ custom_class }}">
+    {%- if section.settings.heading != blank and section.settings.layout == 'default' -%}
+      <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %} {{ section.settings.column_alignment }}">
+        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
+          {{- section.settings.heading | escape -}}
+        </{{ section.settings.heading_tag }}>
+      </div>
+    {%- endif -%}
+
+    <div class="grid grid--2-col-mobile">
+      {%- if section.settings.heading != blank and section.settings.layout == 'sidebar' -%}
+        <div class="grid__item grid__item--one-quarter">
+          <{{ section.settings.heading_tag }} class="guarantees__title {{ section.settings.heading_size }}">
             {{- section.settings.heading | escape -}}
           </{{ section.settings.heading_tag }}>
         </div>
       {%- endif -%}
 
-      <div class="grid grid--2-col-mobile">
-        {%- if section.settings.heading != blank and section.settings.layout == 'sidebar' -%}
-          <div class="grid__item grid__item--one-quarter">
-            <{{ section.settings.heading_tag }} class="guarantees__title {{ section.settings.heading_size }}">
-              {{- section.settings.heading | escape -}}
-            </{{ section.settings.heading_tag }}>
-          </div>
-        {%- endif -%}
-
-        {%- if section.blocks.size > 0 -%}
-          <slider-component class="slider-mobile-gutter grid__item{% if section.settings.heading == blank or section.settings.layout == 'default' %} grid__item--full-width{% else %} grid__item--three-quarter{% endif %}">
-            <ul
-              id="Guarantees-{{ section.id }}"
-              class="grid grid--2-col{% if section.settings.columns_mobile == '1' %} grid--1-col-mobile{% endif %}{% if section.settings.heading == blank or section.settings.layout == 'default' %}{% if section.blocks.size == 4 %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %} grid--rigid grid--{{ section.settings.columns_desktop }}-col-desktop{% else %} grid--2-col-tablet{% endif %}{% if section.settings.swipe_on_mobile %} slider slider--tablet{% endif %}"
-              role="list"
-            >
-              {%- for block in section.blocks -%}
-                <li
-                  id="Slide-{{ section.id }}-{{ forloop.index }}"
-                  class="grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}"
-                  {{ block.shopify_attributes }}
+      {%- if section.blocks.size > 0 -%}
+        <slider-component class="slider-mobile-gutter grid__item{% if section.settings.heading == blank or section.settings.layout == 'default' %} grid__item--full-width{% else %} grid__item--three-quarter{% endif %}">
+          <ul
+            id="Guarantees-{{ section.id }}"
+            class="grid grid--2-col{% if section.settings.columns_mobile == '1' %} grid--1-col-mobile{% endif %}{% if section.settings.heading == blank or section.settings.layout == 'default' %}{% if section.blocks.size == 4 %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %} grid--rigid grid--{{ section.settings.columns_desktop }}-col-desktop{% else %} grid--2-col-tablet{% endif %}{% if section.settings.swipe_on_mobile %} slider slider--tablet{% endif %}"
+            role="list"
+          >
+            {%- for block in section.blocks -%}
+              <li
+                id="Slide-{{ section.id }}-{{ forloop.index }}"
+                class="grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <use-animate
+                  data-animate="zoom-fade"
+                  class="guarantee__item desktop--{{ section.settings.desktop_column_alignment }} mobile--{{ section.settings.mobile_column_alignment }} guarantee-icon--{{ block.settings.icon_size }}"
                 >
-                  <use-animate
-                    data-animate="zoom-fade"
-                    class="guarantee__item desktop--{{ section.settings.desktop_column_alignment }} mobile--{{ section.settings.mobile_column_alignment }} guarantee-icon--{{ block.settings.icon_size }}"
-                  >
-                    {%- if block.settings.custom_icon != blank -%}
-                      <span class="guarantee__icon">
-                        {{ block.settings.custom_icon }}
-                      </span>
-                    {%- elsif block.settings.image != blank -%}
-                      <span class="guarantee__icon">
-                        <img
-                          srcset="{{ block.settings.image | image_url: width: 50 }} 1x, {{ block.settings.image | image_url: width: 52 }} 2x"
-                          src="{{ block.settings.image | image_url: width: 50 }}"
-                          alt="{{ block.settings.image.alt | escape }}"
-                          loading="lazy"
-                          width="50"
-                          height="{{ 50 | divided_by: block.settings.image.aspect_ratio | ceil }}"
-                          is="lazy-image"
-                          fetchpriority="{{ fetchpriority }}"
-                        >
-                      </span>
-                    {%- elsif block.settings.icon != 'none' -%}
-                      <span class="guarantee__icon">
-                        {% render 'icon-guarantee', icon: block.settings.icon %}
-                      </span>
-                    {%- endif -%}
-                    <div>
-                      <{{ block.settings.block_heading_tag }} class="heading-inr {{ block.settings.title_size }}">{{ block.settings.title | escape }}</{{ block.settings.block_heading_tag }}>
-                      <div class="rte {{  block.settings.text_size}}">{{ block.settings.text }}</div>
-                    </div>
-                  </use-animate>
-                </li>
-              {%- endfor -%}
-            </ul>
-          </slider-component>
-        {%- endif -%}
-      </div>
+                  {%- if block.settings.custom_icon != blank -%}
+                    <span class="guarantee__icon">
+                      {{ block.settings.custom_icon }}
+                    </span>
+                  {%- elsif block.settings.image != blank -%}
+                    <span class="guarantee__icon">
+                      <img
+                        srcset="{{ block.settings.image | image_url: width: 50 }} 1x, {{ block.settings.image | image_url: width: 52 }} 2x"
+                        src="{{ block.settings.image | image_url: width: 50 }}"
+                        alt="{{ block.settings.image.alt | escape }}"
+                        loading="lazy"
+                        width="50"
+                        height="{{ 50 | divided_by: block.settings.image.aspect_ratio | ceil }}"
+                        is="lazy-image"
+                        fetchpriority="{{ fetchpriority }}"
+                      >
+                    </span>
+                  {%- elsif block.settings.icon != 'none' -%}
+                    <span class="guarantee__icon">
+                      {% render 'icon-guarantee', icon: block.settings.icon %}
+                    </span>
+                  {%- endif -%}
+                  <div>
+                    <{{ block.settings.block_heading_tag }} class="heading-inr {{ block.settings.title_size }}">
+                      {{- block.settings.title | escape -}}
+                    </{{ block.settings.block_heading_tag }}>
+                    <div class="rte {{  block.settings.text_size}}">{{ block.settings.text }}</div>
+                  </div>
+                </use-animate>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </slider-component>
+      {%- endif -%}
     </div>
   </div>
 </div>

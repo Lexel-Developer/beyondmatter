@@ -1,3 +1,31 @@
+
+.testimonial-section {
+    position: relative;
+}
+.testimonial-section:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 54%;
+    pointer-events: none;
+    background-color: var(--primary-background);
+}
+.testimonial-section:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 46%;
+    pointer-events: none;
+    background-color: var(--secondary-background);
+}
+.testimonial-section>* {
+    position: relative;
+    z-index: 1;
+}
 .testimonial-section .column-grid-row {
     --grid-horizontal-spacing: 3.2rem;
     row-gap: 3.2rem;
