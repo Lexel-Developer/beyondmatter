@@ -59,12 +59,16 @@
     padding: 24px 34px 24px 32px;
     min-height: 120px;
     color: rgba(var(--text-color));
+    border: 1px solid rgba(var(--border-color));
 }
 .comparison-tablerow:nth-child(odd) {
     background-color: rgba(var(--first-row-color),var(--first-row-opacity));
 }
 .comparison-tablerow:nth-child(even) {
     background-color: rgba(var(--second-row-color),var(--second-row-opacity));
+}
+.comparison-tablerow:not(:first-child) {
+    border-top: 0;
 }
 
 

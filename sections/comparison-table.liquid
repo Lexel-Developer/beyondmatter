@@ -16,6 +16,7 @@
 
     --text-color: {{ section.settings.text_color.red }}, {{ section.settings.text_color.green }}, {{ section.settings.text_color.blue }};
     --rating-color: {{ section.settings.rating_color.red }}, {{ section.settings.rating_color.green }}, {{ section.settings.rating_color.blue }};
+    --border-color: {{ section.settings.border_color.red }}, {{ section.settings.border_color.green }}, {{ section.settings.border_color.blue }};
 
     --first-row-color: {{ section.settings.first_row_color.red }}, {{ section.settings.first_row_color.green }}, {{ section.settings.first_row_color.blue }};
     --first-row-opacity: {% if section.settings.first_row_opacity < 100 %} 0.{{ section.settings.first_row_opacity }} {% else %} 1{% endif %};
