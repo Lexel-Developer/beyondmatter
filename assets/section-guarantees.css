@@ -42,7 +42,7 @@
   width: auto;
   height: var(--icon-height);
   max-width: var(--icon-height);
-  fill: currentColor;
+  /* fill: currentColor; */
 }
 
 .guarantee__item .h3 {
@@ -93,8 +93,13 @@
 
   .guarantees--horizontal .guarantee__item {
     display: flex;
+    align-items: flex-start;
     column-gap: 1.5rem;
     text-align: start;
+  }
+
+  .guarantees--horizontal .grid__item:not(:first-of-type) .guarantee__item {
+    justify-content: center;
   }
 
   .guarantees--horizontal .guarantee__item.center {
@@ -117,5 +122,19 @@
 
   .guarantees--horizontal .guarantee__icon {
     flex: 0 0 auto;
+  }
+
+  .guarantees li {
+    position: relative;
+  }
+
+  .guarantees li:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: black;
   }
 }

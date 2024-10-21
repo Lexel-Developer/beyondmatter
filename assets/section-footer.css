@@ -51,7 +51,6 @@
 
 @media screen and (min-width: 750px) {
   .footer__content-top {
-    padding-top: 7rem;
     padding-bottom: 6rem;
   }
 
@@ -68,6 +67,7 @@
 .footer__content-bottom-wrapper {
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 749px) {
@@ -375,6 +375,10 @@ localization-form .localization-selector {
   margin-top: 1.5rem;
 }
 
+.footer__payment svg {
+  filter: sepia(1);
+}
+
 .footer__copyright {
   text-align: center;
   font-size: 1.4rem;
@@ -383,6 +387,7 @@ localization-form .localization-selector {
 .copyright__content {
   display: block;
   font-size: 1.2rem;
+  opacity: 0.25;
 }
 
 footer details[open] summary {
@@ -395,10 +400,11 @@ footer details[empty] summary {
 
 footer .accordion__title {
   max-width: 100%;
-  font-size: 1.2rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: rgb(var(--color-heading));
+  text-decoration: none;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 
 footer .accordion__title:empty + .icon {
@@ -420,10 +426,6 @@ footer .accordion__title:empty + .icon {
 
   footer details summary .icon {
     display: none;
-  }
-
-  footer .accordion__title {
-    font-size: 1rem;
   }
 
   .footer__copyright {
@@ -575,5 +577,59 @@ footer .accordion__title:empty + .icon {
   100% {
     opacity: 1;
     transform: translate(-50%, 0);
+  }
+}
+
+.footer__content-intro {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 72px;
+  padding-bottom: 36px;
+}
+
+@media screen and (max-width: 749px) {
+  .footer__content-intro {
+    align-items: flex-start;
+  }
+}
+
+.footer__content-intro .featured-image {
+  display: none;
+}
+
+.footer__payment-wrapper,
+.footer__content-bottom-wrapper {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+@media screen and (max-width: 749px) {
+  .footer__payment-heading {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .footer__content-intro .featured-image {
+    display: block;
+  }
+  
+  .footer__content-intro {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 750px) {
+  .footer__copyright {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

@@ -15,6 +15,13 @@
         "content": "t:settings_schema.colors.settings.header__1.content"
       },
       {
+        "type": "checkbox",
+        "id": "use_custom_colors",
+        "label": "Use Custom Colors",
+        "info": "Uses the colors under the heading 'Custom Colors' as a default value",
+        "default": true
+      },
+      {
         "type": "color",
         "id": "colors_solid_button_labels",
         "default": "#FFFFFF",
@@ -118,6 +125,140 @@
       },
       {
         "type": "header",
+        "content": "Custom Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_primary_mineral",
+        "label": "Primary Mineral",
+        "default": "#3C3C3C"
+      },
+      {
+        "type": "color",
+        "id": "color_primary_energy",
+        "label": "Primary Energy",
+        "default": "#F4F2F2"
+      },
+      {
+        "type": "color",
+        "id": "color_primary_balance",
+        "label": "Primary Balance",
+        "default": "#D4CFCC"
+      },
+      {
+        "type": "color",
+        "id": "color_primary_earth",
+        "label": "Primary Earth",
+        "default": "#85634A"
+      },
+      {
+        "type": "color",
+        "id": "color_primary_human",
+        "label": "Primary Human",
+        "default": "#BAAB9E"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary_light",
+        "label": "Secondary Light",
+        "default": "#EDE9E9"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary_medium_light",
+        "label": "Secondary Medium Light",
+        "default": "#F6F6F6"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary_medium",
+        "label": "Secondary Medium",
+        "default": "#4D4B4B"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary_dark",
+        "label": "Secondary Dark",
+        "default": "#EAE6E2"
+      },
+      {
+        "type": "header",
+        "content": "Buttons"
+      },
+      {
+        "type": "color",
+        "id": "primary_button_background",
+        "label": "Primary Button Background",
+        "default": "#3C3C3C"
+      },
+      {
+        "type": "color",
+        "id": "primary_button_border",
+        "label": "Primary Button Border",
+        "default": "#3C3C3C"
+      },
+      {
+        "type": "color",
+        "id": "primary_button_text",
+        "label": "Primary Button Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "primary_button_hover_background",
+        "label": "Primary Button Hover Background",
+        "default": "#2A2A2A"
+      },
+      {
+        "type": "color",
+        "id": "primary_button_hover_border",
+        "label": "Primary Button Hover Border",
+        "default": "#2A2A2A"
+      },
+      {
+        "type": "color",
+        "id": "primary_button_hover_text",
+        "label": "Primary Button Hover Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "secondary_button_background",
+        "label": "Secondary Button Background",
+        "default": "transparent"
+      },
+      {
+        "type": "color",
+        "id": "secondary_button_border",
+        "label": "Secondary Button Border",
+        "default": "#3C3C3C"
+      },
+      {
+        "type": "color",
+        "id": "secondary_button_text",
+        "label": "Secondary Button Text",
+        "default": "#3C3C3C"
+      },
+      {
+        "type": "color",
+        "id": "secondary_button_hover_background",
+        "label": "Secondary Button Hover Background",
+        "default": "#3C3C3C"
+      },
+      {
+        "type": "color",
+        "id": "secondary_button_hover_border",
+        "label": "Secondary Button Hover Border",
+        "default": "#3C3C3C"
+      },
+      {
+        "type": "color",
+        "id": "secondary_button_hover_text",
+        "label": "Secondary Button Hover Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
         "content": "t:settings_schema.colors.settings.header__3.content"
       },
       {
@@ -135,10 +276,6 @@
   {
     "name": "t:settings_schema.typography.name",
     "settings": [
-      {
-        "type": "header",
-        "content": "t:settings_schema.typography.settings.header__1.content"
-      },
       {
         "type": "checkbox",
         "id": "use_custom_fonts",

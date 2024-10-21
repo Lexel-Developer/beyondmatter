@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header-group.name",
   "type": "header",
@@ -8,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "<p>SALE: Wir schenken dir 20% als Boost für deine Vorsätze! | Jetzt sparen</p>",
             "text_on_mobile": "",
             "text_size": 13,
             "link": ""
@@ -27,8 +36,8 @@
         "show_navigation": true,
         "direction": "left",
         "speed": 1.6,
-        "colors_text": "#1a1b18",
-        "colors_background": "#f7eedd",
+        "colors_text": "#ffffff",
+        "colors_background": "#baab9e",
         "gradient_background": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -37,18 +46,19 @@
     "header": {
       "type": "header",
       "settings": {
+        "logo": "shopify://shop_images/Logo_31760296-d4c8-4386-879a-48aef3eb2d74.svg",
         "logo_height": 50,
         "mobile_logo_height": 44,
-        "logo_position": "top-center",
+        "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_mobile": "main-menu",
-        "enable_dropdown_menu": true,
-        "show_line_separator": true,
-        "uppercase_menu_items": true,
-        "cart_icon": "cart",
+        "enable_dropdown_menu": false,
+        "show_line_separator": false,
+        "uppercase_menu_items": false,
+        "cart_icon": "bag",
         "icon_weight": "1.1",
         "enable_country_selector": false,
-        "enable_language_selector": false,
+        "enable_language_selector": true,
         "enable_sticky_header": true,
         "show_sticky_header_scroll_up": false,
         "enable_transparent_header": false,
@@ -59,7 +69,7 @@
         "enable_highlight": false,
         "highlight_labels": "",
         "highlight_style": "marker",
-        "mobile_logo_position": "center",
+        "mobile_logo_position": "left",
         "colors_text": "#282828",
         "colors_border": "#d2d5d9",
         "colors_background": "#ffffff",

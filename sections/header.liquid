@@ -160,9 +160,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
   {%- if section.settings.cart_icon == 'bag' %}
     <symbol id="icon-cart" fill="none" viewbox="0 0 24 24">
-      <path d="M16 10V6a4 4 0 0 0-8 0v4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
-      <path class="icon-fill" d="M20.46 15.44 18.39 21a1.39 1.39 0 0 1-1.27.93H6.88A1.39 1.39 0 0 1 5.61 21l-2.07-5.56-1.23-3.26c-.12-.34-.23-.62-.32-.85a17.28 17.28 0 0 1 20 0c-.09.23-.2.51-.32.85Z" fill="none"/>
-      <path d="M20.46 15.44 18.39 21a1.39 1.39 0 0 1-1.27.93H6.88A1.39 1.39 0 0 1 5.61 21l-2.07-5.56-1.23-3.26c-.12-.34-.23-.62-.32-.85a17.28 17.28 0 0 1 20 0c-.09.23-.2.51-.32.85Z" fill="none" stroke="currentColor" stroke-miterlimit="10" vector-effect="non-scaling-stroke"/>
+      <path d="M4.29628 8.94089C4.32622 8.68939 4.5395 8.5 4.79278 8.5H19.2072C19.4605 8.5 19.6738 8.68939 19.7037 8.94089L21.2373 21.8227C21.3435 22.7151 20.6465 23.5 19.7478 23.5H4.25222C3.3535 23.5 2.6565 22.7151 2.76274 21.8227L4.29628 8.94089Z" stroke="#3C3C3C"/>
+      <mask id="path-2-inside-1_8356_2244" fill="white">
+      <path d="M7 7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7V9H7V7Z"/>
+      </mask>
+      <path d="M17 9V10H18V9H17ZM7 9H6V10H7V9ZM16 7V9H18V7H16ZM17 8H7V10H17V8ZM8 9V7H6V9H8ZM12 3C14.2091 3 16 4.79086 16 7H18C18 3.68629 15.3137 1 12 1V3ZM12 1C8.68629 1 6 3.68629 6 7H8C8 4.79086 9.79086 3 12 3V1Z" fill="#3C3C3C" mask="url(#path-2-inside-1_8356_2244)"/>
     </symbol>
   {% else %}
     <symbol id="icon-cart" fill="none" viewbox="0 0 18 19">
@@ -175,9 +177,14 @@
     <path d="M1 1L11 11" stroke="currentColor" stroke-linecap="round" fill="none"/>
     <path d="M11 1L1 11" stroke="currentColor" stroke-linecap="round" fill="none"/>
   </symbol>
-  <symbol id="icon-search" fill="none" viewBox="0 0 15 17">
-    <circle cx="7.11113" cy="7.11113" r="6.56113" stroke="currentColor" fill="none"/>
-    <path d="M11.078 12.3282L13.8878 16.0009" stroke="currentColor" stroke-linecap="round" fill="none"/>
+  <symbol id="icon-close-alt" fill="none" viewBox="0 0 12 12">
+    <path d="M1.33301 1.33301L16.6663 16.6663" stroke="#3C3C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M16.6663 1.33301L1.33301 16.6663" stroke="#3C3C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-search" fill="none" viewBox="2 5 30 24">
+    <path d="M0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20Z" fill="#F4F2F2"/>
+    <path d="M10 19C10 21.3869 10.9482 23.6761 12.636 25.364C14.3239 27.0518 16.6131 28 19 28C21.3869 28 23.6761 27.0518 25.364 25.364C27.0518 23.6761 28 21.3869 28 19C28 16.6131 27.0518 14.3239 25.364 12.636C23.6761 10.9482 21.3869 10 19 10C16.6131 10 14.3239 10.9482 12.636 12.636C10.9482 14.3239 10 16.6131 10 19Z" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M25.5 25.5L31 31" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
 </svg>
 
@@ -205,8 +212,7 @@
           <span class="visually-hidden" id="HeaderLanguageLabel">{{ 'localization.language_label' | t }}</span>
           <div class="disclosure">
             <button type="button" class="disclosure__button localization-form__select localization-selector header__icon" aria-expanded="false" aria-controls="HeaderLanguageList" aria-describedby="HeaderLanguageLabel">
-              {% render 'icon', icon: 'localization' %}
-              <span class="label">{{ localization.language.endonym_name | capitalize }}</span>
+              <span class="label">{{ localization.language.iso_code | capitalize }}</span>
               {% render 'icon', icon: 'caret' %}
             </button>
             <ul id="HeaderLanguageList" role="list" class="disclosure__list list-unstyled" hidden>
@@ -325,7 +331,7 @@
                     <use href="#icon-search"></use>
                   </svg>
                   <svg class="icon icon-close modal__toggle-close" aria-hidden="true" focusable="false">
-                    <use href="#icon-close"></use>
+                    <use href="#icon-close-alt"></use>
                   </svg>
                 </span>
               </summary>
@@ -444,7 +450,7 @@
                 <use href="#icon-search"></use>
               </svg>
               <svg class="icon icon-close modal__toggle-close" aria-hidden="true" focusable="false">
-                <use href="#icon-close"></use>
+                <use href="#icon-close-alt"></use>
               </svg>
             </span>
           </summary>
