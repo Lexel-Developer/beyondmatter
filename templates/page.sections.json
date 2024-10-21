@@ -716,6 +716,8 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
+        "primary_background": "#ffffff",
+        "secondary_background": "#ffffff",
         "box_background": "#ffffff",
         "heading_text_color": "#ffffff",
         "heading_background_color": "#3c3c3c",
@@ -724,10 +726,108 @@
         "colors_drag": "#baab9e",
         "padding_top": 160,
         "padding_bottom": 158,
-        "mobile_padding_top": 80,
+        "mobile_padding_top": 40,
         "mobile_padding_bottom": 80,
         "padding_left": 24,
         "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "slideshow_KLhM9e": {
+      "type": "slideshow",
+      "blocks": {
+        "image_eTFkkB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/after-before-image.png",
+            "image_position": "center center",
+            "text_box_position": "middle-center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h1",
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": "typeset",
+            "button_label": "",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "image_tw3kE7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/after-before-image.png",
+            "image_position": "center center",
+            "text_box_position": "middle-center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h1",
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": "typeset",
+            "button_label": "",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "image_htDAVK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/after-before-image.png",
+            "image_position": "center center",
+            "text_box_position": "middle-center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h1",
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": "typeset",
+            "button_label": "",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "image_eTFkkB",
+        "image_tw3kE7",
+        "image_htDAVK"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "image_ratio": "650px",
+        "show_inside_box": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "full_width": true,
+        "image_behavior": "none",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "300px",
+        "show_text_below": false,
+        "box_background": "#ffffff",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#d4cfcc",
+        "colors_text": "#baab9e",
+        "colors_background": "#ffffff",
+        "colors_overlay": "#ffffff",
+        "colors_overlay_opacity": 0,
+        "colors_navigation_text": "#3c3c3c",
+        "colors_navigation_background": "#d4cfcc",
+        "colors_dots_background": "#baab9e",
+        "colors_active_dots_background": "#d4cfcc",
+        "padding_top": 150,
+        "padding_bottom": 150,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -741,6 +841,7 @@
     "faq_AjaKRM",
     "testimonials_2_EdGgBk",
     "comparison_table_fWRj36",
-    "image_comparison_Vziedk"
+    "image_comparison_Vziedk",
+    "slideshow_KLhM9e"
   ]
 }
