@@ -177,8 +177,8 @@
         "padding_bottom": 0,
         "mobile_padding_top": 0,
         "mobile_padding_bottom": 0,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 50
       }
@@ -240,7 +240,7 @@
           "type": "category",
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon_6.svg",
-            "text": "Für deine<br> Lebensmittel",
+            "text": "Für deine Lebensmittel",
             "link": "",
             "background_color": "#edeaea",
             "background_color_mobile": "#f3f1f1"
@@ -270,8 +270,8 @@
         "padding_bottom": 160,
         "mobile_padding_top": 92,
         "mobile_padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -311,8 +311,8 @@
         "padding_bottom": 120,
         "mobile_padding_top": 0,
         "mobile_padding_bottom": 36,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -359,8 +359,8 @@
         "padding_bottom": 140,
         "mobile_padding_top": 66,
         "mobile_padding_bottom": 0,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -428,8 +428,8 @@
         "padding_bottom": 160,
         "mobile_padding_top": 80,
         "mobile_padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -453,8 +453,8 @@
         "padding_bottom": 160,
         "mobile_padding_top": 0,
         "mobile_padding_bottom": 6,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -529,8 +529,8 @@
         "padding_bottom": 160,
         "mobile_padding_top": 80,
         "mobile_padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -854,8 +854,8 @@
         "padding_bottom": 114,
         "mobile_padding_top": 80,
         "mobile_padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -935,8 +935,8 @@
         "padding_bottom": 80,
         "mobile_padding_top": 80,
         "mobile_padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1005,8 +1005,8 @@
         "padding_bottom": 160,
         "mobile_padding_top": 80,
         "mobile_padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1086,8 +1086,8 @@
         "padding_bottom": 80,
         "mobile_padding_top": 80,
         "mobile_padding_bottom": 40,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1156,8 +1156,8 @@
         "padding_bottom": 80,
         "mobile_padding_top": 40,
         "mobile_padding_bottom": 40,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1236,8 +1236,8 @@
         "padding_bottom": 80,
         "mobile_padding_top": 40,
         "mobile_padding_bottom": 40,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1316,8 +1316,8 @@
         "padding_bottom": 48,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 40,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1396,8 +1396,8 @@
         "padding_bottom": 160,
         "mobile_padding_top": 40,
         "mobile_padding_bottom": 40,
-        "padding_left": 24,
-        "padding_right": 15,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1457,8 +1457,8 @@
         "padding_bottom": 96,
         "mobile_padding_top": 40,
         "mobile_padding_bottom": 40,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1539,8 +1539,8 @@
         "padding_bottom": 124,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1618,8 +1618,8 @@
         "padding_bottom": 80,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -1690,8 +1690,8 @@
         "padding_bottom": 160,
         "mobile_padding_top": 80,
         "mobile_padding_bottom": 80,
-        "padding_left": 24,
-        "padding_right": 24,
+        "padding_left": 0,
+        "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
       }
