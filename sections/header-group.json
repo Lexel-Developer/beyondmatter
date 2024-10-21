@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "name": "t:sections.header-group.name",
   "type": "header",
@@ -17,7 +8,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<p>SALE: Wir schenken dir 20% als Boost für deine Vorsätze! | Jetzt sparen</p>",
+            "text": "<p>SALE: Wir schenken dir 20% als Boost für deine Vorsätze! | Jetzt sparen<\/p>",
             "text_on_mobile": "",
             "text_size": 13,
             "link": ""
@@ -46,7 +37,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo": "shopify://shop_images/Logo_31760296-d4c8-4386-879a-48aef3eb2d74.svg",
+        "logo": "shopify:\/\/shop_images\/Logo_31760296-d4c8-4386-879a-48aef3eb2d74.svg",
         "logo_height": 50,
         "mobile_logo_height": 44,
         "logo_position": "middle-left",

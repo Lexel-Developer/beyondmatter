@@ -1,13 +1,4 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
- {
+{
   "sections": {
     "main": {
       "type": "main-page",
@@ -678,6 +669,59 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "image_comparison_Vziedk": {
+      "type": "image-comparison",
+      "blocks": {
+        "look_rNwg4x": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/after-before-image.png",
+            "title": "Vorher",
+            "title_size": "default",
+            "title_position": "end"
+          }
+        },
+        "look_yHRRmc": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/after-before-image.png",
+            "title": "Nachher",
+            "title_size": "default",
+            "title_position": "end"
+          }
+        }
+      },
+      "block_order": [
+        "look_rNwg4x",
+        "look_yHRRmc"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "layout": "horizontal",
+        "image_ratio": "650px",
+        "mobile_image_ratio": "auto",
+        "show_divider": false,
+        "show_inside_box": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "box_background": "#ffffff",
+        "heading_text_color": "#ffffff",
+        "heading_background_color": "#3c3c3c",
+        "heading_background_opacity": 60,
+        "colors_line": "#f4f2f2",
+        "colors_drag": "#baab9e",
+        "padding_top": 160,
+        "padding_bottom": 158,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 24,
+        "padding_right": 24,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -687,6 +731,7 @@
     "faq_Lhm7pU",
     "faq_AjaKRM",
     "testimonials_2_EdGgBk",
-    "comparison_table_fWRj36"
+    "comparison_table_fWRj36",
+    "image_comparison_Vziedk"
   ]
 }

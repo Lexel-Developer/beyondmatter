@@ -15,7 +15,24 @@
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
     --image-ratio-percent: {{ image_ratio_percent }}%;
+
+    --boxed-background: {{ section.settings.box_background }};
+
+    --section-padding-left: {{ section.settings.padding_left }}px;
+    --section-padding-right: {{ section.settings.padding_right }}px;
+    --section-margin-top: {{ section.settings.margin_top }}px;
+    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
+    --primary-background: {{ section.settings.primary_background }};
+    --secondary-background: {{ section.settings.secondary_background }};
+
+    --heading-text-color: {{ section.settings.heading_text_color.red }}, {{ section.settings.heading_text_color.green }}, {{ section.settings.heading_text_color.blue }};
+    --heading-background-color: {{ section.settings.heading_background_color.red }}, {{ section.settings.heading_background_color.green }}, {{ section.settings.heading_background_color.blue }};
+    --heading-background-opacity: {% if section.settings.heading_background_opacity < 100 %} 0.{{ section.settings.heading_background_opacity }} {% else %} 1{% endif %};
+
   }
+
+
   {%- if before_image.settings.image_mobile != blank and section.settings.mobile_image_ratio == 'adapt' %}
     @media screen and (max-width: 749px) {
       #shopify-section-{{ section.id }} {
@@ -26,75 +43,88 @@
 
   #shopify-section-{{ section.id }} .image-comparison {
     --color-border: {{ section.settings.colors_line.red }}, {{ section.settings.colors_line.green }}, {{ section.settings.colors_line.blue }};
+    --color-drag: {{ section.settings.colors_drag.red }}, {{ section.settings.colors_drag.green }}, {{ section.settings.colors_drag.blue }};
   }
+
+  @media only screen and (max-width:749px){
+    #shopify-section-{{ section.id }} .section--padding {
+      --section-padding-top: {{ section.settings.mobile_padding_top }}px;
+      --section-padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+      padding-top:var(--section-padding-top);
+      padding-bottom:var(--section-padding-bottom);
+    }
+  } 
 {%- endstyle -%}
 
 {{ 'section-image-comparison.css' | asset_url | stylesheet_tag }}
 
 <div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
-  <div class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
-    <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}{% if section.settings.full_width %} page-width{% endif %} {{ section.settings.heading_alignment }}">
-      <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
-    </div>
+  <div class="page-width--{{ section.settings.page_width }}">
+    {% if section.settings.show_inside_box %}<div class="comparison--enable_big_box">{% endif %}
+      <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}{% if section.settings.full_width %} page-width{% endif %} {{ section.settings.heading_alignment }}">
+        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
+      </div>
 
-    <image-comparison class="image-comparison" data-layout="{{ section.settings.layout }}">
-      <span class="image-comparison__animate"></span>
-      {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}{%- endcapture -%}
-      
-      {%- if before_image != blank -%}
-        <div class="image-comparison__before image-comparison__item--{{ before_image.settings.title_position }} media-wrapper" {{ before_image.shopify_attributes }}>
-          <p class="image-comparison__title h3 button button--{{ before_image.settings.title_size }} small-hide">{{ before_image.settings.title | escape }}</p>
+      <image-comparison class="image-comparison" data-layout="{{ section.settings.layout }}">
+        <span class="image-comparison__animate"></span>
+        {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}{%- endcapture -%}
+        
+        {%- if before_image != blank -%}
+          <div class="image-comparison__before image-comparison__item--{{ before_image.settings.title_position }} media-wrapper" {{ before_image.shopify_attributes }}>
+            <p class="image-comparison__title h3 button button--{{ before_image.settings.title_size }} small-hide">{{ before_image.settings.title | escape }}</p>
 
-          {%- if before_image.settings.image != blank -%}
-            <div class="media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }}">
-              {%- liquid
-                if before_image.settings.image_mobile == blank
-                  echo before_image.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
-                else
-                  echo before_image.settings.image_mobile | image_url: width: 3840 | image_tag: loading: 'lazy', class: 'medium-hide large-up-hide', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
-                  echo before_image.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', class: 'small-hide', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
-                endif
-              -%}
+            {%- if before_image.settings.image != blank -%}
+              <div class="media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }}">
+                {%- liquid
+                  if before_image.settings.image_mobile == blank
+                    echo before_image.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
+                  else
+                    echo before_image.settings.image_mobile | image_url: width: 3840 | image_tag: loading: 'lazy', class: 'medium-hide large-up-hide', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
+                    echo before_image.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', class: 'small-hide', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
+                  endif
+                -%}
+                </div>
+            {%- else -%}
+              <div class="media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} comparison-placeholder">
+                {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder' }}
               </div>
-          {%- else -%}
-            <div class="media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} comparison-placeholder">
-              {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder' }}
-            </div>
-          {%- endif -%}
-        </div>
-      {%- endif -%}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
 
-      {%- if after_image != blank -%}
-        <div class="image-comparison__after image-comparison__item--{{ after_image.settings.title_position }} media-wrapper" {{ after_image.shopify_attributes }}>
-          <p class="image-comparison__title h3 button button--{{ after_image.settings.title_size }} small-hide">{{ after_image.settings.title | escape }}</p>
+        {%- if after_image != blank -%}
+          <div class="image-comparison__after image-comparison__item--{{ after_image.settings.title_position }} media-wrapper" {{ after_image.shopify_attributes }}>
+            <p class="image-comparison__title h3 button button--{{ after_image.settings.title_size }} small-hide">{{ after_image.settings.title | escape }}</p>
 
-          {%- if after_image.settings.image != blank -%}
-            <div class="media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }}">
-              {%- liquid
-                if after_image.settings.image_mobile == blank
-                  echo after_image.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
-                else
-                  echo after_image.settings.image_mobile | image_url: width: 3840 | image_tag: loading: 'lazy', class: 'medium-hide large-up-hide', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
-                  echo after_image.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', class: 'small-hide', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
-                endif
-              -%}
+            {%- if after_image.settings.image != blank -%}
+              <div class="media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }}">
+                {%- liquid
+                  if after_image.settings.image_mobile == blank
+                    echo after_image.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
+                  else
+                    echo after_image.settings.image_mobile | image_url: width: 3840 | image_tag: loading: 'lazy', class: 'medium-hide large-up-hide', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
+                    echo after_image.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', class: 'small-hide', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', is: 'lazy-image'
+                  endif
+                -%}
+                </div>
+            {%- else -%}
+              <div class="media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} comparison-placeholder">
+                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder' }}
               </div>
-          {%- else -%}
-            <div class="media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} comparison-placeholder">
-              {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder' }}
-            </div>
-          {%- endif -%}
-        </div>
-      {%- endif -%}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
 
-      {%- if before_image != blank and after_image != blank -%}
-        <button type="button" class="image-comparison__button">
-          <span>
-            {% render 'icon', icon: 'drag' %}
-          </span>
-        </button>
-      {%- endif -%}
-    </image-comparison>
+        {%- if before_image != blank and after_image != blank -%}
+          <button type="button" class="image-comparison__button">
+            <span>
+              {% render 'icon', icon: 'icon-left-arrow' %}
+              {% render 'icon', icon: 'icon-right-arrow' %}
+            </span>
+          </button>
+        {%- endif -%}
+      </image-comparison>
+    {% if section.settings.show_inside_box %}</div>{% endif %}
   </div>
 </div>
 
@@ -102,9 +132,37 @@
 {
   "name": "t:sections.image-comparison.name",
   "tag": "section",
-  "class": "section",
+  "class": "section section-image-comparison",
   "max_blocks": 2,
   "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
     {
       "type": "select",
       "id": "layout",
@@ -215,15 +273,15 @@
     },
     {
       "type": "checkbox",
-      "id": "full_width",
-      "default": false,
-      "label": "t:sections.all.full_width.label"
-    },
-    {
-      "type": "checkbox",
       "id": "show_divider",
       "default": false,
       "label": "t:sections.all.show_divider.label"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show layout box?",
+      "id": "show_inside_box",
+      "default": false
     },
     {
       "type": "header",
@@ -326,8 +384,42 @@
     },
     {
       "type": "color",
+      "label": "Layout background",
+      "id": "box_background",
+      "default": "#ffffff",
+      "info": "Box background color apply only when 'Show inside box?' setting is true"
+    },
+    {
+      "type": "color",
+      "label": "Heading text color",
+      "id": "heading_text_color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "label": "Heading background color",
+      "id": "heading_background_color",
+      "default": "#3C3C3C"
+    },
+    {
+      "type": "range",
+      "label": "Heading background opacity",
+      "id": "heading_background_opacity",
+      "default": 100,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "type": "color",
       "id": "colors_line",
       "label": "t:sections.all.colors.colors_line.label",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "colors_drag",
+      "label": "Drag",
       "default": "#FFFFFF"
     },
     {
@@ -338,21 +430,81 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 200,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "t:sections.all.padding.padding_top.label",
+      "label": "Desktop top padding",
       "default": 36
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 200,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "t:sections.all.padding.padding_bottom.label",
+      "label": "Desktop bottom padding",
       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Mobile top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Mobile bottom padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Padding left",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding right",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin top",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin bottom",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
     }
   ],
   "blocks": [

@@ -85,6 +85,8 @@
     min-width: 75px;
     display: block;
     object-fit: cover;
+    object-position: top;
+
 }
 
 .table_check_icon img {
