@@ -1,0 +1,115 @@
+.iwt-tab-nav ul {
+    display: flex;
+    column-gap: 3.2rem;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.iwt-tab-nav ul li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    border-bottom: 0.4rem solid transparent;
+    cursor: pointer;
+    padding-bottom: 0.8rem;
+}
+.iwt-tab-nav ul li.tab-target.active {
+    border-color: #BAAB9E;
+}
+.iwt-progress-counter .counter-title {
+    margin: 0;
+    line-height: 1.09375;
+}
+.iwt-progress-description p {
+    margin: 0.8rem 0;
+}
+
+.iwt-progress-counter {
+    width: 23%;
+}
+
+.iwt-progress-counter .counter-title {
+    margin: 0;
+    line-height: 1.09375;
+}
+
+.iwt-progress-cvr {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2.4rem;
+}
+
+.iwt-tab-main-cover {
+    width: 100%;
+}
+
+.iwt-progress-inr {
+    width: calc(77% - 2.4rem);
+}
+
+.iwt-tab-data-inr-wrap {
+    margin-top: 0.8rem;
+}
+.iwt-tab { width: 100%; }
+
+.iwt-progress-label p {
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+.iwt-progress-label {
+    margin-bottom: 0.6rem;
+}
+
+.iwt-pl-cvr {
+    position: relative;
+}
+
+.iwt-progress-static {
+    display: inline-block !important;
+    min-height: 2.4rem;
+    width: 100%;
+    background: #D4CFCC;
+    border-radius: 80px;
+}
+
+.iwt-progress-bg {
+    display: inline-block !important;
+    min-height: 2.4rem;
+    width: 100%;
+    background: #372c26;
+    border-radius: 8rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.image-with-tab-section .iwt-tab-main-cover {
+    margin-top: 2.4rem;
+}
+.iwt-tab-data-main-cvr {
+    display: none;
+}
+
+.iwt-tab-data-main-cvr.active {
+    display: block;
+}
+.iwt-progress-cvr:nth-child(even) {
+    margin: 1.6rem 0;
+}
+.image-with-tab-section .iwt-button-cvr .button {
+    margin-top: 1.6rem;
+}
+.image-with-tab-section .iwt-tab {
+    margin: 0;
+}
+@media screen and (min-width: 750px) {
+    .image-with-tab-section .image-with-text .image-with-text__content {
+        padding: 1.2rem;
+    }
+}

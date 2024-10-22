@@ -1000,6 +1000,113 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "image_with_tabs_HVxjC6": {
+      "type": "image-with-tabs",
+      "blocks": {
+        "heading_GbQfQM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nachgewiesene Ergebnisse nach 150 Tagen",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "iwt_block_KKKdAp": {
+          "type": "iwt_block",
+          "settings": {
+            "tab_title": "Erster Themenblock",
+            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse:<\/p>",
+            "main_title": "97%",
+            "progress_label": "verzeichnen weniger Haarausfall",
+            "main_title2": "64",
+            "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
+            "main_title3": "78%",
+            "progress_label3": "verzeichnen weniger Haarausfall",
+            "button_label": "Studie ansehen",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        },
+        "iwt_block_JyQUML": {
+          "type": "iwt_block",
+          "settings": {
+            "tab_title": "Zweiter Themenblock",
+            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse:<\/p>",
+            "main_title": "64%",
+            "progress_label": "verzeichnen weniger Haarausfall",
+            "main_title2": "64",
+            "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
+            "main_title3": "78%",
+            "progress_label3": "verzeichnen weniger Haarausfall",
+            "button_label": "Studie ansehen",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        },
+        "iwt_block_8NHhnF": {
+          "type": "iwt_block",
+          "settings": {
+            "tab_title": "Dritter Themenblock",
+            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse:<\/p>",
+            "main_title": "78%",
+            "progress_label": "verzeichnen weniger Haarausfall",
+            "main_title2": "64",
+            "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
+            "main_title3": "78%",
+            "progress_label3": "verzeichnen weniger Haarausfall",
+            "button_label": "Studie ansehen",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GbQfQM",
+        "iwt_block_KKKdAp",
+        "iwt_block_JyQUML",
+        "iwt_block_8NHhnF"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
+        "image": "shopify:\/\/shop_images\/image-with-tabs.png",
+        "image_position": "center center",
+        "layout": "text_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "enlarge_content": "medium",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ede9e9",
+        "gradient_background": "",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -1014,6 +1121,7 @@
     "slideshow_KLhM9e",
     "rich_text_E7D9LE",
     "rich_text_jb4xTw",
-    "rich_text_ff7JBN"
+    "rich_text_ff7JBN",
+    "image_with_tabs_HVxjC6"
   ]
 }

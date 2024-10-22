@@ -3698,3 +3698,27 @@ class LocalizationForm extends HTMLElement {
   }
 }
 customElements.define('localization-form', LocalizationForm);
+
+const iwtTab = document.querySelectorAll('.iwt-tab-nav .tab-target');
+if (iwtTab.length > 0) {
+  iwtTab[0].classList.add('active');
+  document.querySelectorAll('.iwt-tab-data-main-cvr')[0].classList.add('active');
+  
+  iwtTab.forEach(function(tabLink) {
+    tabLink.addEventListener('click', function() {
+      document.querySelectorAll('.iwt-tab-data-main-cvr').forEach(function(tab) {
+        tab.classList.remove('active');
+      });
+
+      var tabId = this.getAttribute('data-id');
+      
+      document.querySelector(".iwt-tab-data-main-cvr[data-id='" + tabId + "']").classList.add('active');
+
+      iwtTab.forEach(function(tabLink) {
+        tabLink.classList.remove('active');
+      });
+      
+      this.classList.add('active');
+    });
+  });
+}
