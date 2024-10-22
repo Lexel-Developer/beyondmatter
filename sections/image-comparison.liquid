@@ -65,13 +65,13 @@
         <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</{{ section.settings.heading_tag }}>
       </div>
 
-      <image-comparison class="image-comparison" data-layout="{{ section.settings.layout }}">
+      <image-comparison class="image-comparison" data-layout="horizontal">
         <span class="image-comparison__animate"></span>
         {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}{%- endcapture -%}
         
         {%- if before_image != blank -%}
           <div class="image-comparison__before image-comparison__item--{{ before_image.settings.title_position }} media-wrapper" {{ before_image.shopify_attributes }}>
-            <p class="image-comparison__title h3 button button--{{ before_image.settings.title_size }} small-hide">{{ before_image.settings.title | escape }}</p>
+            <p class="image-comparison__title h3 button button--{{ before_image.settings.title_size }}">{{ before_image.settings.title | escape }}</p>
 
             {%- if before_image.settings.image != blank -%}
               <div class="media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }}">
@@ -94,7 +94,7 @@
 
         {%- if after_image != blank -%}
           <div class="image-comparison__after image-comparison__item--{{ after_image.settings.title_position }} media-wrapper" {{ after_image.shopify_attributes }}>
-            <p class="image-comparison__title h3 button button--{{ after_image.settings.title_size }} small-hide">{{ after_image.settings.title | escape }}</p>
+            <p class="image-comparison__title h3 button button--{{ after_image.settings.title_size }}">{{ after_image.settings.title | escape }}</p>
 
             {%- if after_image.settings.image != blank -%}
               <div class="media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }}">
@@ -162,22 +162,6 @@
       ],
       "default": "standard",
       "label": "Section width"
-    },
-    {
-      "type": "select",
-      "id": "layout",
-      "options": [
-        {
-          "value": "horizontal",
-          "label": "t:sections.image-comparison.settings.layout.options__1.label"
-        },
-        {
-          "value": "vertical",
-          "label": "t:sections.image-comparison.settings.layout.options__2.label"
-        }
-      ],
-      "default": "horizontal",
-      "label": "t:sections.image-comparison.settings.layout.label"
     },
     {
       "type": "select",

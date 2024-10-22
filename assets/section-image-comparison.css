@@ -172,8 +172,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 0.8rem;
   z-index: 1;
+}
+.image-comparison__button .icon:first-child {
+  margin-right: 0.4rem;
+}
+
+.image-comparison__button .icon:last-child {
+  margin-left: 0.4rem;
 }
 
 .image-comparison[data-layout=vertical] .image-comparison__button span {
@@ -183,6 +189,7 @@
 .image-comparison__button .icon {
   height: 1rem;
   width: auto;
+  display: inline-block;
 }
 
 .image-comparison__title {
@@ -199,7 +206,8 @@
   min-height: 3.2rem;
   height: auto;
   line-height: 1.5;
-  letter-spacing: 0.5012px;
+  /* letter-spacing: 0.5012px; */
+  letter-spacing: 0;
 }
 
 .image-comparison[data-layout=horizontal] .image-comparison__before .image-comparison__title {
@@ -210,8 +218,8 @@
 }
 
 .image-comparison[data-layout=horizontal] .image-comparison__after .image-comparison__title {
-  right: 15%;
-  top: 1.6rem;
+  left: 76%;
+  right: auto;
   transform: translateX(-50%);
 }
 
@@ -256,3 +264,4 @@
 .image-comparison__before .comparison-placeholder {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
