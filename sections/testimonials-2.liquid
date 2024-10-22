@@ -123,7 +123,7 @@
       "options": [
         {
           "value": "narrow",
-          "label": "Narrow"
+          "label": "Schmal"
         },
         {
           "value": "standard",
@@ -131,29 +131,29 @@
         },
         {
           "value": "wide",
-          "label": "Wide"
+          "label": "Breit"
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "Groß"
         },
         {
           "value": "full-width",
-          "label": "Full-Width"
+          "label": "Volle Breite"
         }
       ],
       "default": "standard",
-      "label": "Section width"
+      "label": "Abschnittsbreite"
     },
     {
       "type": "inline_richtext",
-      "label": "Subtitle",
+      "label": "Untertitel",
       "id": "subtitle",
       "default": "<em>Rezensionen</em>"
     },
     {
       "type": "inline_richtext",
-      "label": "Title",
+      "label": "Titel",
       "id": "title"
     },
     {
@@ -243,68 +243,68 @@
     },
     {
       "type": "checkbox",
-      "label": "Show layout box?",
+      "label": "Layout-Box anzeigen?",
       "id": "show_inside_box",
       "default": false
     },
     {
       "type": "header",
-      "content": "Section color"
+      "content": "Abschnittsfarbe"
     },
     {
       "type": "color",
-      "label": "Primary Background",
+      "label": "Primärer Hintergrund",
       "id": "primary_background",
       "default": "#baab9e"
     },
     {
       "type": "color",
-      "label": "Secondary Background",
+      "label": "Sekundärer Hintergrund",
       "id": "secondary_background",
       "default": "#d4cfcc"
     },
     {
       "type": "color",
-      "label": "Layout background",
+      "label": "Box-Hintergrund",
       "id": "box_background",
       "default": "#ffffff",
-      "info": "Box background color apply only when 'Show inside box?' setting is true"
+      "info": "Box-Hintergrundfarbe wird nur angewendet, wenn 'Layout-Box anzeigen?' aktiviert ist"
     },
     {
       "type": "color",
-      "label": "Title color",
+      "label": "Titelfarbe",
       "id": "title_color"
     },
     {
       "type": "color",
-      "label": "Sub title color",
+      "label": "Untertitelfarbe",
       "id": "sub_text_color"
     },
     {
-        "type": "color",
-        "label": "Star Color",
-        "id": "star_icon_color",
-        "default": "#BAAB9E"
+      "type": "color",
+      "label": "Sternfarbe",
+      "id": "star_icon_color",
+      "default": "#BAAB9E"
     },
     {
-    "type": "color",
-    "label": "Text Color",
-    "id": "text_color",
-    "default": "#F4F2F2"
+      "type": "color",
+      "label": "Textfarbe",
+      "id": "text_color",
+      "default": "#F4F2F2"
     },
     {
-    "type": "color",
-    "label": "Background Color",
-    "id": "background_color",
-    "default": "#D9D9D9"
+      "type": "color",
+      "label": "Hintergrundfarbe",
+      "id": "background_color",
+      "default": "#D9D9D9"
     },
     {
       "type": "header",
-      "content": "Grid Layout"
+      "content": "Gitter-Layout"
     },
     {
       "type": "range",
-      "label": "Category Column Desktop",
+      "label": "Kategorien-Spalten (Desktop)",
       "id": "category_column_desktop",
       "default": 3,
       "min": 2,
@@ -314,7 +314,7 @@
     },
     {
       "type": "select",
-      "label": "Category Column Mobile",
+      "label": "Kategorien-Spalten (Mobil)",
       "id": "category_column_mobile",
       "default": "1",
       "options": [
@@ -339,7 +339,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "Desktop top padding",
+      "label": "Polsterung oben (Desktop)",
       "default": 36
     },
     {
@@ -349,7 +349,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "Desktop bottom padding",
+      "label": "Polsterung unten (Desktop)",
       "default": 36
     },
     {
@@ -359,7 +359,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "Mobile top padding",
+      "label": "Polsterung oben (Mobil)",
       "default": 36
     },
     {
@@ -369,12 +369,12 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "Mobile bottom padding",
+      "label": "Polsterung unten (Mobil)",
       "default": 36
     },
     {
       "type": "range",
-      "label": "Padding left",
+      "label": "Polsterung links",
       "id": "padding_left",
       "default": 0,
       "min": 0,
@@ -384,7 +384,7 @@
     },
     {
       "type": "range",
-      "label": "Padding right",
+      "label": "Polsterung rechts",
       "id": "padding_right",
       "default": 0,
       "min": 0,
@@ -394,7 +394,7 @@
     },
     {
       "type": "range",
-      "label": "Margin top",
+      "label": "Abstand oben",
       "id": "margin_top",
       "default": 0,
       "min": 0,
@@ -404,7 +404,7 @@
     },
     {
       "type": "range",
-      "label": "Margin bottom",
+      "label": "Abstand unten",
       "id": "margin_bottom",
       "default": 0,
       "min": 0,
@@ -416,43 +416,43 @@
   "blocks": [
     {
       "type": "column",
-      "name": "Column",
+      "name": "Spalte",
       "settings": [
         {
-        "type": "text",
-        "id": "rating_text",
-        "label": "Text",
-        "default": "Rating title"
+          "type": "text",
+          "id": "rating_text",
+          "label": "Text",
+          "default": "Bewertungstitel"
         },
         {
-        "type": "range",
-        "label": "Review star",
-        "id": "review_star",
-        "default": 5,
-        "min": 0,
-        "max": 5,
-        "step": 0.5,
-        "unit": "☆"
+          "type": "range",
+          "label": "Bewertungssterne",
+          "id": "review_star",
+          "default": 5,
+          "min": 0,
+          "max": 5,
+          "step": 0.5,
+          "unit": "☆"
         },
         {
-            "type": "text",
-            "id": "author_name",
-            "label": "Author name"
+          "type": "text",
+          "id": "author_name",
+          "label": "Autorenname"
         },
         {
-        "type": "text",
-        "id": "author_position",
-        "label": "Author position"
+          "type": "text",
+          "id": "author_position",
+          "label": "Autorenposition"
         },
         {
-        "type": "richtext",
-        "id": "author_description",
-        "label": "Author description",
-        "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          "type": "richtext",
+          "id": "author_description",
+          "label": "Autorenbeschreibung",
+          "default": "<p>Verwenden Sie diesen Text, um Fragen so detailliert wie möglich für Ihre Kunden zu beantworten.</p>"
         },
         {
-            "type": "header",
-            "content": "Block color settings"
+          "type": "header",
+          "content": "Block-Farbeinstellungen"
         }
       ]
     }

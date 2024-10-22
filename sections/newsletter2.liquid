@@ -329,76 +329,76 @@
   "class": "section newsletter-main image-with-text-section",
   "settings": [
     {
-    "type": "select",
-    "id": "page_width",
-    "options": [
+      "type": "select",
+      "id": "page_width",
+      "options": [
         {
-        "value": "narrow",
-        "label": "Narrow"
+          "value": "narrow",
+          "label": "Schmal"
         },
         {
-        "value": "standard",
-        "label": "Standard"
+          "value": "standard",
+          "label": "Standard"
         },
         {
-        "value": "wide",
-        "label": "Wide"
+          "value": "wide",
+          "label": "Breit"
         },
         {
-        "value": "large",
-        "label": "Large"
+          "value": "large",
+          "label": "Groß"
         },
         {
-        "value": "full-width",
-        "label": "Full-Width"
+          "value": "full-width",
+          "label": "Volle Breite"
         }
-    ],
-    "default": "standard",
-    "label": "Section width"
-    },
-    {
-    "type": "header",
-    "content": "Section color"
-    },
-    {
-    "type": "color",
-    "label": "Primary Background",
-    "id": "primary_background",
-    "default": "#baab9e"
-    },
-    {
-    "type": "color",
-    "label": "Secondary Background",
-    "id": "secondary_background",
-    "default": "#d4cfcc"
+      ],
+      "default": "standard",
+      "label": "Abschnittsbreite"
     },
     {
       "type": "header",
-      "content": "Newsletter settings"
+      "content": "Abschnittsfarbe"
+    },
+    {
+      "type": "color",
+      "label": "Primärer Hintergrund",
+      "id": "primary_background",
+      "default": "#baab9e"
+    },
+    {
+      "type": "color",
+      "label": "Sekundärer Hintergrund",
+      "id": "secondary_background",
+      "default": "#d4cfcc"
+    },
+    {
+      "type": "header",
+      "content": "Newsletter-Einstellungen"
     },
     {
       "type": "text",
-      "label": "Success Message",
+      "label": "Erfolgsmeldung",
       "id": "success_message",
-      "default": "Thanks for subscribing"
+      "default": "Danke für das Abonnieren"
     },
     {
       "type": "text",
-      "label": "Email Placeholder",
+      "label": "E-Mail-Platzhalter",
       "id": "email_placeholder",
       "default": "Deine beste E-Mail-Adresse"
     },
     {
       "type": "richtext",
-      "label": "Consent",
+      "label": "Einwilligung",
       "id": "consent",
       "default": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>"
     },
     {
       "type": "checkbox",
       "id": "enable_main_image",
-      "label": "Enable image",
-      "default":true
+      "label": "Bild aktivieren",
+      "default": true
     },
     {
       "type": "image_picker",
@@ -468,7 +468,7 @@
     },
     {
       "type": "range",
-      "label": "Desktop box spacing",
+      "label": "Box-Abstand (Desktop)",
       "id": "desktop_box_spacing",
       "default": 0,
       "min": 0,
@@ -478,7 +478,7 @@
     },
     {
       "type": "range",
-      "label": "Mobile box spacing",
+      "label": "Box-Abstand (Mobil)",
       "id": "mobile_box_spacing",
       "default": 0,
       "min": 0,
@@ -512,19 +512,19 @@
       "options": [
         {
           "value": "left",
-          "label": "t:sections.all.text_alignment.options__1.label"
+          "label": "Links"
         },
         {
           "value": "center",
-          "label": "t:sections.all.text_alignment.options__2.label"
+          "label": "Zentriert"
         },
         {
           "value": "right",
-          "label": "t:sections.all.text_alignment.options__3.label"
+          "label": "Rechts"
         }
       ],
       "default": "left",
-      "label": "t:sections.all.text_alignment.label"
+      "label": "Textausrichtung"
     },
     {
       "type": "select",
@@ -588,19 +588,19 @@
       "options": [
         {
           "value": "small",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "medium",
-          "label": "Medium"
+          "label": "Mittel"
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "Groß"
         }
       ],
       "default": "medium",
-      "label": "Image width"
+      "label": "Bildbreite"
     },
     {
       "type": "checkbox",
@@ -667,19 +667,19 @@
       "options": [
         {
           "value": "left",
-          "label": "t:sections.all.mobile_layout.mobile_text_alignment.options__1.label"
+          "label": "Links"
         },
         {
           "value": "center",
-          "label": "t:sections.all.mobile_layout.mobile_text_alignment.options__2.label"
+          "label": "Zentriert"
         },
         {
           "value": "right",
-          "label": "t:sections.all.mobile_layout.mobile_text_alignment.options__3.label"
+          "label": "Rechts"
         }
       ],
       "default": "left",
-      "label": "t:sections.all.mobile_layout.mobile_text_alignment.label"
+      "label": "Textausrichtung (Mobil)"
     },
     {
       "type": "select",
@@ -805,7 +805,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "Desktop top padding",
+      "label": "Polsterung oben (Desktop)",
       "default": 36
     },
     {
@@ -815,7 +815,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "Desktop bottom padding",
+      "label": "Polsterung unten (Desktop)",
       "default": 36
     },
     {
@@ -825,7 +825,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "Mobile top padding",
+      "label": "Polsterung oben (Mobil)",
       "default": 36
     },
     {
@@ -835,49 +835,48 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "Mobile bottom padding",
+      "label": "Polsterung unten (Mobil)",
       "default": 36
     },
-
     {
-    "type": "range",
-    "label": "Padding left",
-    "id": "padding_left",
-    "default": 0,
-    "min": 0,
-    "max": 100,
-    "step": 1,
-    "unit": "px"
+      "type": "range",
+      "label": "Polsterung links",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
     },
     {
-    "type": "range",
-    "label": "Padding right",
-    "id": "padding_right",
-    "default": 0,
-    "min": 0,
-    "max": 100,
-    "step": 1,
-    "unit": "px"
+      "type": "range",
+      "label": "Polsterung rechts",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
     },
     {
-    "type": "range",
-    "label": "Margin top",
-    "id": "margin_top",
-    "default": 0,
-    "min": 0,
-    "max": 200,
-    "step": 2,
-    "unit": "px"
+      "type": "range",
+      "label": "Abstand oben",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px"
     },
     {
-    "type": "range",
-    "label": "Margin bottom",
-    "id": "margin_bottom",
-    "default": 0,
-    "min": 0,
-    "max": 200,
-    "step": 2,
-    "unit": "px"
+      "type": "range",
+      "label": "Abstand unten",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px"
     }
   ],
   "blocks": [
@@ -889,7 +888,7 @@
         {
           "type": "text",
           "id": "heading",
-          "default": "Image with text",
+          "default": "Bild mit Text",
           "label": "t:sections.all.heading.label"
         },
         {
@@ -967,12 +966,12 @@
         {
           "type": "richtext",
           "id": "subheading",
-          "default": "<p>Add a tagline</p>",
+          "default": "<p>Fügen Sie einen Slogan hinzu</p>",
           "label": "t:sections.all.subheading.label"
         },
         {
           "type": "color",
-          "label": "Sub title color",
+          "label": "Untertitelfarbe",
           "id": "sub_text_color",
           "default": "#000000"
         }
@@ -986,7 +985,7 @@
         {
           "type": "richtext",
           "id": "text",
-          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "default": "<p>Verknüpfen Sie Text mit einem Bild, um das von Ihnen gewählte Produkt, die Sammlung oder den Blogbeitrag hervorzuheben.</p>",
           "label": "t:sections.all.text.label"
         },
         {
