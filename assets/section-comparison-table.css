@@ -46,6 +46,9 @@
 .comparison-tablerow .comparison-tablecell:first-child {
     justify-content: inherit;
 }
+.comparison-tablerow:has(.tablecell-button) .comparison-tablecell:first-child, .comparison-tablerow:has(.tablecell_review_cover) .comparison-tablecell:first-child {
+    justify-content: center;
+}
 
 .comparison_enable_big_box {
     padding: 40px;
@@ -93,7 +96,8 @@
     width: 100%;
     height: auto;
     display: block;
-    max-width: 23px;
+    max-width: 24px;
+    min-height: 24px;
 }
 
 .tablecell_review_cover {

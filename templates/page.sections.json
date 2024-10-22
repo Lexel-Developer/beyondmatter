@@ -698,7 +698,6 @@
       ],
       "settings": {
         "page_width": "standard",
-        "layout": "horizontal",
         "image_ratio": "650px",
         "mobile_image_ratio": "auto",
         "show_divider": false,
