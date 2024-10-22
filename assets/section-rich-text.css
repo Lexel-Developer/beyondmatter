@@ -208,7 +208,12 @@
   font-family: 'MrsEavesXLSerifOT-RegItalic';
   font-style: italic;
 }
+@media screen and (min-width: 990px) {
 
+  .download-button-cta-rich {
+    padding: 1rem 3.35rem;
+  }
+}
 
 @media screen and (max-width: 989px) {
   .rich-text__block_main:has(>.intro_title) {
@@ -229,3 +234,10 @@
   }
 }
 
+
+@media only screen and (max-width:440px) {
+  .rich-text__blocks .button {
+    padding: 1rem 0.4rem;
+    font-size: 1.4rem;
+  }
+}

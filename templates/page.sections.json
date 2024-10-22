@@ -698,7 +698,7 @@
       ],
       "settings": {
         "page_width": "standard",
-        "image_ratio": "650px",
+        "image_ratio": "640px",
         "mobile_image_ratio": "auto",
         "show_divider": false,
         "show_inside_box": false,
@@ -941,7 +941,7 @@
           "type": "heading",
           "settings": {
             "heading": "Wie lauten die Ergebnisse der Studie?",
-            "heading_size": "h3",
+            "heading_size": "h1",
             "heading_tag": "h2"
           }
         },

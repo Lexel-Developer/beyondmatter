@@ -99,12 +99,12 @@
                   {%- if block.settings.button_link2 != blank -%}
                     <a class="download-button-cta-rich button {% if block.settings.button_style2 == "secondary" %} button--cta {% endif %} button--{{ block.settings.button_size2 }}"{% if block.settings.button_link2 != blank %} href="{{ block.settings.button_link2 }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }} download>
                       {% render 'icon', icon: 'down-arrow' %}
-                      <span class="label">{{ block.settings.button_label2 | escape }}<i>(PDF, 25kb)</i></span>
+                      <span class="label">{{ block.settings.button_label2 | escape }} <i>(PDF, 25kb)</i></span>
                     </a>
                   {% else %}
                     <a class="download-button-cta-rich button {% if block.settings.button_style2 == "secondary" %} button--cta {% endif %} button--{{ block.settings.button_size2 }}"{% if block.settings.download_image != blank %} href="{{ block.settings.download_image | image_url }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }} download>
                       {% render 'icon', icon: 'down-arrow' %}
-                      <span class="label">{{ block.settings.button_label2 | escape }}<i>(PDF, 25kb)</i></span>
+                      <span class="label">{{ block.settings.button_label2 | escape }} <i>(PDF, 25kb)</i></span>
                     </a>
                 {%- endif -%}
             {%- endcase -%}
