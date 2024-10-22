@@ -127,7 +127,7 @@
       "options": [
         {
           "value": "narrow",
-          "label": "Narrow"
+          "label": "Schmal"
         },
         {
           "value": "standard",
@@ -135,41 +135,41 @@
         },
         {
           "value": "wide",
-          "label": "Wide"
+          "label": "Breit"
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "Groß"
         },
         {
           "value": "full-width",
-          "label": "Full-Width"
+          "label": "Volle Breite"
         }
       ],
       "default": "standard",
-      "label": "Section width"
+      "label": "Abschnittsbreite"
     },
     {
       "type": "checkbox",
-      "label": "Show layout boxed",
+      "label": "Layout in Box anzeigen",
       "id": "show_inside_box",
       "default": false
     },
     {
       "type": "checkbox",
-      "label": "Enable Intro title",
+      "label": "Intro-Titel aktivieren",
       "id": "enable_intro_title",
       "default": false
     },
     {
       "type": "text",
-      "label": "Intro title",
+      "label": "Intro-Titel",
       "id": "intro_title",
-      "default": "Intro title"
+      "default": "Intro-Titel"
     },
     {
       "type": "range",
-      "label": "Content width",
+      "label": "Inhaltsbreite",
       "id": "content_width",
       "default": 900,
       "min": 300,
@@ -179,19 +179,19 @@
     },
     {
       "type": "select",
-      "label": "Box alignment",
+      "label": "Box-Ausrichtung",
       "id": "box_alignment",
       "options": [
         {
-          "label": "Left",
+          "label": "Links",
           "value": "box_left"
         },
         {
-          "label": "Center",
+          "label": "Zentriert",
           "value": "box_center"
         },
         {
-          "label": "Right",
+          "label": "Rechts",
           "value": "box_right"
         }
       ]
@@ -266,13 +266,13 @@
     },
     {
       "type": "color",
-      "label": "Primary Background",
+      "label": "Primärer Hintergrund",
       "id": "primary_background",
       "default": "#baab9e"
     },
     {
       "type": "color",
-      "label": "Secondary Background",
+      "label": "Sekundärer Hintergrund",
       "id": "secondary_background",
       "default": "#d4cfcc"
     },
@@ -336,7 +336,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "Mobile top padding",
+      "label": "Polsterung oben (Mobile)",
       "default": 36
     },
     {
@@ -346,12 +346,12 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "Mobile bottom padding",
+      "label": "Polsterung unten (Mobile)",
       "default": 36
     },
     {
       "type": "range",
-      "label": "Padding left",
+      "label": "Polsterung links",
       "id": "padding_left",
       "default": 0,
       "min": 0,
@@ -361,7 +361,7 @@
     },
     {
       "type": "range",
-      "label": "Padding right",
+      "label": "Polsterung rechts",
       "id": "padding_right",
       "default": 0,
       "min": 0,
@@ -371,7 +371,7 @@
     },
     {
       "type": "range",
-      "label": "Margin top",
+      "label": "Abstand oben",
       "id": "margin_top",
       "default": 0,
       "min": 0,
@@ -381,7 +381,7 @@
     },
     {
       "type": "range",
-      "label": "Margin bottom",
+      "label": "Abstand unten",
       "id": "margin_bottom",
       "default": 0,
       "min": 0,
@@ -399,7 +399,7 @@
         {
           "type": "text",
           "id": "heading",
-          "default": "Talk about your brand",
+          "default": "Erzählen Sie von Ihrer Marke",
           "label": "t:sections.all.heading.label"
         },
         {
@@ -408,7 +408,7 @@
           "options": [
             {
               "value": "h3",
-              "label": "X-small"
+              "label": "Sehr klein"
             },
             {
               "value": "h2",
@@ -481,7 +481,7 @@
         {
           "type": "text",
           "id": "subheading",
-          "default": "Add a tagline",
+          "default": "Fügen Sie eine Tagline hinzu",
           "label": "t:sections.all.subheading.label"
         },
         {
@@ -520,7 +520,7 @@
         {
           "type": "richtext",
           "id": "text",
-          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "default": "<p>Teilen Sie Informationen über Ihre Marke mit Ihren Kunden. Beschreiben Sie ein Produkt, machen Sie Ankündigungen oder begrüßen Sie Kunden in Ihrem Geschäft.</p>",
           "label": "t:sections.all.text.label"
         },
         {
@@ -602,7 +602,7 @@
         {
           "type": "text",
           "id": "button_label",
-          "default": "Button label",
+          "default": "Schaltflächenbeschriftung",
           "label": "t:sections.all.button_label.label",
           "info": "t:sections.all.button_label.info"
         },
@@ -641,25 +641,25 @@
     },
     {
       "type": "download_button_block",
-      "name": "Download file button",
+      "name": "Schaltfläche für Datei herunterladen",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "button_label2",
-          "default": "Button label",
-          "label": "Label"
+          "default": "Schaltflächenbeschriftung",
+          "label": "Beschriftung"
         },
         {
           "type": "image_picker",
           "id": "download_image",
-          "label": "Image",
-          "info": "If you select an image the fill path should be empty"
+          "label": "Bild",
+          "info": "Wenn Sie ein Bild auswählen, sollte der Dateipfad leer sein"
         },
         {
           "type": "text",
           "id": "button_link2",
-          "label": "File path"
+          "label": "Dateipfad"
         },
         {
           "type": "select",
@@ -687,15 +687,15 @@
           "options": [
             {
               "value": "primary",
-              "label": "Primary"
+              "label": "Primär"
             },
             {
               "value": "secondary",
-              "label": "Secondary"
+              "label": "Sekundär"
             }
           ],
           "default": "primary",
-          "label": "Button style"
+          "label": "Schaltflächenstil"
         }
       ]
     }

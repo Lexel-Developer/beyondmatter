@@ -230,6 +230,7 @@
   </div>
 </div>
 
+
 {% schema %}
 {
   "name": "Comparison table",
@@ -242,7 +243,7 @@
       "options": [
         {
           "value": "narrow",
-          "label": "Narrow"
+          "label": "Schmal"
         },
         {
           "value": "standard",
@@ -250,29 +251,29 @@
         },
         {
           "value": "wide",
-          "label": "Wide"
+          "label": "Breit"
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "Groß"
         },
         {
           "value": "full-width",
-          "label": "Full-Width"
+          "label": "Volle Breite"
         }
       ],
       "default": "standard",
-      "label": "Section width"
+      "label": "Abschnittsbreite"
     },
     {
       "type": "inline_richtext",
-      "label": "Subtitle",
+      "label": "Untertitel",
       "id": "subtitle",
-      "default": "<em>Unsere Kategrorien</em>"
+      "default": "<em>Unsere Kategorien</em>"
     },
     {
       "type": "inline_richtext",
-      "label": "Title",
+      "label": "Titel",
       "id": "title"
     },
     {
@@ -281,7 +282,7 @@
       "options": [
         {
           "value": "h3",
-          "label": "X-small"
+          "label": "Sehr klein"
         },
         {
           "value": "h2",
@@ -366,57 +367,57 @@
     },
     {
       "type": "checkbox",
-      "label": "Show layout boxed",
+      "label": "Layout in Box anzeigen",
       "id": "show_inside_box",
       "default": false
     },
     {
       "type": "header",
-      "content": "Section color"
+      "content": "Abschnittsfarbe"
     },
     {
       "type": "color",
-      "label": "Primary Background",
+      "label": "Primärer Hintergrund",
       "id": "primary_background",
       "default": "#baab9e"
     },
     {
       "type": "color",
-      "label": "Secondary Background",
+      "label": "Sekundärer Hintergrund",
       "id": "secondary_background",
       "default": "#d4cfcc"
     },
     {
       "type": "color",
-      "label": "Box background",
+      "label": "Box-Hintergrund",
       "id": "box_background",
       "default": "#ffffff",
-      "info": "Layout boxed background color apply only when 'Show layout boxed?' setting is true"
+      "info": "Die Hintergrundfarbe des Layouts in der Box wird nur angewendet, wenn die Einstellung 'Layout in Box anzeigen?' aktiviert ist"
     },
     {
       "type": "color",
-      "label": "Title color",
+      "label": "Titelfarbe",
       "id": "title_color"
     },
     {
       "type": "color",
-      "label": "Sub title color",
+      "label": "Untertitelfarbe",
       "id": "sub_text_color"
     },
     {
       "type": "color",
-      "label": "Border color",
+      "label": "Randfarbe",
       "id": "border_color"
     },
     {
       "type": "color",
-      "label": "First row color",
+      "label": "Erste Zeilenfarbe",
       "id": "first_row_color",
       "default": "#FFFEFE"
     },
     {
       "type": "range",
-      "label": "First row opacity",
+      "label": "Deckkraft der ersten Zeile",
       "id": "first_row_opacity",
       "default": 80,
       "min": 0,
@@ -425,13 +426,13 @@
     },
     {
       "type": "color",
-      "label": "Second row color",
+      "label": "Zweite Zeilenfarbe",
       "id": "second_row_color",
       "default": "#FFFEFE"
     },
     {
       "type": "range",
-      "label": "Second row opacity",
+      "label": "Deckkraft der zweiten Zeile",
       "id": "second_row_opacity",
       "default": 100,
       "min": 0,
@@ -440,13 +441,13 @@
     },
     {
       "type": "color",
-      "label": "Text color",
+      "label": "Textfarbe",
       "id": "text_color",
       "default": "#212326"
     },
     {
       "type": "color",
-      "label": "Rating color",
+      "label": "Bewertungsfarbe",
       "id": "rating_color",
       "default": "#BAAB9E"
     },
@@ -464,7 +465,7 @@
     },
     {
       "type": "header",
-      "content": "Grid Layout"
+      "content": "Rasterlayout"
     },
     {
       "type": "header",
@@ -477,7 +478,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "Desktop top padding",
+      "label": "Polsterung oben (Desktop)",
       "default": 36
     },
     {
@@ -487,7 +488,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "Desktop bottom padding",
+      "label": "Polsterung unten (Desktop)",
       "default": 36
     },
     {
@@ -497,7 +498,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "Mobile top padding",
+      "label": "Polsterung oben (Mobile)",
       "default": 36
     },
     {
@@ -507,12 +508,12 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "Mobile bottom padding",
+      "label": "Polsterung unten (Mobile)",
       "default": 36
     },
     {
       "type": "range",
-      "label": "Padding left",
+      "label": "Polsterung links",
       "id": "padding_left",
       "default": 0,
       "min": 0,
@@ -522,7 +523,7 @@
     },
     {
       "type": "range",
-      "label": "Padding right",
+      "label": "Polsterung rechts",
       "id": "padding_right",
       "default": 0,
       "min": 0,
@@ -532,7 +533,7 @@
     },
     {
       "type": "range",
-      "label": "Margin top",
+      "label": "Abstand oben",
       "id": "margin_top",
       "default": 0,
       "min": 0,
@@ -542,7 +543,7 @@
     },
     {
       "type": "range",
-      "label": "Margin bottom",
+      "label": "Abstand unten",
       "id": "margin_bottom",
       "default": 0,
       "min": 0,
@@ -558,68 +559,68 @@
       "settings": [
         {
           "type": "header",
-          "content": "First Column (Header)"
+          "content": "Erste Spalte (Kopfzeile)"
         },
         {
           "type": "text",
-          "label": "Title",
+          "label": "Titel",
           "id": "block_title",
-          "default": "Title"
+          "default": "Titel"
         },
         {
           "type": "header",
-          "content": "Second Column (Header)"
+          "content": "Zweite Spalte (Kopfzeile)"
         },
         {
           "type": "checkbox",
           "id": "enable_description",
           "default": true,
-          "label": "Enable description"
+          "label": "Beschreibung aktivieren"
         },
         {
           "type": "checkbox",
           "id": "enable_porduct",
           "default": false,
-          "label": "Enable product"
+          "label": "Produkt aktivieren"
         },
         {
           "type": "checkbox",
           "id": "enable_review",
           "default": false,
-          "label": "Enable rating"
+          "label": "Bewertung aktivieren"
         },
         {
           "type": "checkbox",
           "id": "enable_button",
           "default": false,
-          "label": "Enable button"
+          "label": "Schaltfläche aktivieren"
         },
         {
           "type": "checkbox",
           "id": "enable_check_icon",
           "default": false,
-          "label": "Enable check icon"
+          "label": "Häkchen-Symbol aktivieren"
         },
         {
           "type": "product",
-          "label": "Product 1",
+          "label": "Produkt 1",
           "id": "product_1"
         },
         {
           "type": "richtext",
-          "label": "Description",
-          "default": "<p>Description</p>",
+          "label": "Beschreibung",
+          "default": "<p>Beschreibung</p>",
           "id": "description"
         },
         {
           "type": "text",
           "id": "rating_text",
-          "label": "Rating text",
-          "default": "Rating title"
+          "label": "Bewertungstext",
+          "default": "Bewertungstitel"
         },
         {
           "type": "range",
-          "label": "Review star",
+          "label": "Bewertungssterne",
           "id": "review_star",
           "default": 5,
           "min": 1,
@@ -629,13 +630,13 @@
         },
         {
           "type": "image_picker",
-          "label": "Check Icon ",
+          "label": "Häkchen-Symbol",
           "id": "check_icon"
         },
         {
           "type": "text",
           "id": "button_label",
-          "default": "Button label",
+          "default": "Schaltflächenbeschriftung",
           "label": "t:sections.all.button_label.label",
           "info": "t:sections.all.button_label.info"
         },
@@ -672,58 +673,58 @@
         },
         {
           "type": "header",
-          "content": "Second Column (Header)"
+          "content": "Zweite Spalte (Kopfzeile)"
         },
         {
           "type": "checkbox",
           "id": "enable_description2",
           "default": true,
-          "label": "Enable description"
+          "label": "Beschreibung aktivieren"
         },
         {
           "type": "checkbox",
           "id": "enable_porduct2",
           "default": false,
-          "label": "Enable product"
+          "label": "Produkt aktivieren"
         },
         {
           "type": "checkbox",
           "id": "enable_review2",
           "default": false,
-          "label": "Enable rating"
+          "label": "Bewertung aktivieren"
         },
         {
           "type": "checkbox",
           "id": "enable_button2",
           "default": false,
-          "label": "Enable button"
+          "label": "Schaltfläche aktivieren"
         },
         {
           "type": "checkbox",
           "id": "enable_check_icon2",
           "default": false,
-          "label": "Enable check icon"
+          "label": "Häkchen-Symbol aktivieren"
         },
         {
           "type": "product",
-          "label": "Product 2",
+          "label": "Produkt 2",
           "id": "product_2"
         },
         {
           "type": "richtext",
-          "label": "Description",
-          "default": "<p>Description</p>",
+          "label": "Beschreibung",
+          "default": "<p>Beschreibung</p>",
           "id": "description2"
         },
         {
           "type": "text",
           "id": "rating_text2",
-          "label": "Rating text",
-          "default": "Rating title"
+          "label": "Bewertungstext",
+          "default": "Bewertungstitel"
         },
         {
           "type": "range",
-          "label": "Review star",
+          "label": "Bewertungssterne",
           "id": "review_star2",
           "default": 5,
           "min": 1,
@@ -733,13 +734,13 @@
         },
         {
           "type": "image_picker",
-          "label": "Check Icon ",
+          "label": "Häkchen-Symbol",
           "id": "check_icon2"
         },
         {
           "type": "text",
           "id": "button_label2",
-          "default": "Button label",
+          "default": "Schaltflächenbeschriftung",
           "label": "t:sections.all.button_label.label",
           "info": "t:sections.all.button_label.info"
         },
