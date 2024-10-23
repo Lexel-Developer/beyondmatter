@@ -1109,6 +1109,126 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "quote_QPywyN": {
+      "type": "quote",
+      "blocks": {
+        "heading_Ep4EkG": {
+          "type": "heading",
+          "settings": {
+            "enable_text_italic": true,
+            "heading": "Wir müssen das Thema Gesundheit ganzheitlich fassen, denn nur die wenigsten bekommen einen Gehirntumor vom Handy. Elektrosmog unterminiert Gesundheit allgemein: Vitalität, innere Ausgeglichenheit und psychische Resilienz.",
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "subheading_DPPH67": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Christian Opitz",
+            "subheading_size": "h4",
+            "secondary_color": false
+          }
+        },
+        "text_9XUJrj": {
+          "type": "text",
+          "settings": {
+            "text": "EMF-Experte, Autor & Wissenschaftler",
+            "text_size": "typeset"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ep4EkG",
+        "subheading_DPPH67",
+        "text_9XUJrj"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "show_inside_box": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "box_alignment": "box_left",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#baab9e",
+        "secondary_background": "#baab9e",
+        "colors_quote_text": "#f4f2f2",
+        "colors_author_text": "#f4f2f2",
+        "colors_profession_text": "#3c3c3c",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "quote_KUDQqc": {
+      "type": "quote",
+      "blocks": {
+        "heading_WJd9LX": {
+          "type": "heading",
+          "settings": {
+            "enable_text_italic": true,
+            "heading": "Wir müssen das Thema Gesundheit ganzheitlich fassen, denn nur die wenigsten bekommen einen Gehirntumor vom Handy. Elektrosmog unterminiert Gesundheit allgemein: Vitalität, innere Ausgeglichenheit und psychische Resilienz.",
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "subheading_tzcAPT": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Christian Opitz",
+            "subheading_size": "h4",
+            "secondary_color": false
+          }
+        },
+        "text_JiYPJq": {
+          "type": "text",
+          "settings": {
+            "text": "EMF-Experte, Autor & Wissenschaftler",
+            "text_size": "typeset"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WJd9LX",
+        "subheading_tzcAPT",
+        "text_JiYPJq"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "show_inside_box": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "box_alignment": "box_left",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#d4cfcc",
+        "colors_quote_text": "#3c3c3c",
+        "colors_author_text": "#4d4b4b",
+        "colors_profession_text": "#3c3c3c",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -1124,6 +1244,8 @@
     "rich_text_E7D9LE",
     "rich_text_jb4xTw",
     "rich_text_ff7JBN",
-    "image_with_tabs_HVxjC6"
+    "image_with_tabs_HVxjC6",
+    "quote_QPywyN",
+    "quote_KUDQqc"
   ]
 }

@@ -1,0 +1,50 @@
+.section-main-quote {
+    position: relative;
+}
+.section-main-quote:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 58%;
+    pointer-events: none;
+    background-color: var(--primary-background);
+}
+.section-main-quote:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 43%;
+    pointer-events: none;
+    background-color: var(--secondary-background);
+}
+.section-main-quote>* {
+    position: relative;
+    z-index: 1;
+}
+.section-main-quote .rich-text__subheading {
+    text-transform: inherit;
+    letter-spacing: 0;
+    color: rgba(var(--color-author-text));
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.section-main-quote .rich-text__heading i {
+    font-family: 'MrsEavesXLSerifOT-RegItalic';
+}
+.section-main-quote .rich-text__heading {
+    color: rgba(var(--color-quote-text));
+    line-height: 1.133333;
+}
+.section-main-quote .rich-text__text {
+    color: rgba(var(--color-profession-text));
+}
+.section-main-quote .rich-text__blocks>*+* {
+    margin-top: 2.4rem;
+}
+.section-main-quote .rich-text__blocks use-animate {
+    margin-top: 0;
+}
