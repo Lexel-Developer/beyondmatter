@@ -8,17 +8,12 @@
 }
 
 .iwt-tab-nav ul li {
-    font-size: 1.6rem;
-    line-height: 1.5;
-    font-weight: 700;
-    letter-spacing: 0;
-    text-transform: capitalize;
     border-bottom: 0.4rem solid transparent;
-    cursor: pointer;
     padding-bottom: 0.8rem;
 }
+li.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weight: 700;text-transform: capitalize;cursor: pointer;}
 .iwt-tab-nav ul li.tab-target.active {
-    border-color: #BAAB9E;
+    border-color: rgba(var(--color-active-progress-background));
 }
 .iwt-progress-counter .counter-title {
     margin: 0;
@@ -26,6 +21,8 @@
 }
 .iwt-progress-description p {
     margin: 0.8rem 0;
+    letter-spacing: 0;
+    line-height: 1.5;
 }
 
 .iwt-progress-counter {
@@ -72,18 +69,18 @@
 }
 
 .iwt-progress-static {
-    display: inline-block !important;
+    display: block !important;
     min-height: 2.4rem;
     width: 100%;
-    background: #D4CFCC;
+    background: rgba(var(--color-default-progress-background));
     border-radius: 80px;
 }
 
-.iwt-progress-bg {
-    display: inline-block !important;
+.iwt-progress-active {
+    display: block !important;
     min-height: 2.4rem;
     width: 100%;
-    background: #372c26;
+    background: rgba(var(--color-active-progress-background));
     border-radius: 8rem;
     position: absolute;
     left: 0;
@@ -108,8 +105,114 @@
 .image-with-tab-section .iwt-tab {
     margin: 0;
 }
+.image-with-tab-section .iwt-button-cvr .button--cta {
+    padding: 0;
+    min-height: auto;
+    border: none;
+}
+.image-with-tab-section .iwt-button-cvr .button--cta svg {
+    transition: transform var(--duration-default) ease;
+    margin-left: 4px;
+}
+.image-with-tab-section .iwt-button-cvr .button--cta  {
+    overflow: visible;
+}
+.image-with-tab-section .iwt-button-cvr .button--cta .icon {
+    height: 1.2rem;
+}
+.image-with-tab-section .iwt-button-cvr .button--cta:hover {
+    padding-right: 0.5rem;
+}
+.image-with-tab-section .iwt-button-cvr .button--cta:hover svg {
+    transform: translateX(0.5rem);
+    transition: transform var(--duration-default) ease;
+}
+.image-with-tab-section .iwt-button-cvr .button .label {
+    letter-spacing: 0;
+}
+.image-with-tab-section .iwt-button-cvr .button {
+    justify-content: flex-start;
+}
+.mobile-tabs-accordion { display: none; }
+
+
+@media screen and (min-width: 990px) {
+    .image-with-tab-section .page-width--standard {
+        padding: 0 15px;
+    }
+}
+
 @media screen and (min-width: 750px) {
     .image-with-tab-section .image-with-text .image-with-text__content {
         padding: 1.2rem;
+    }
+}
+
+@media only screen and (min-width:990px) and (max-width:1024px){
+    .iwt-progress-counter .counter-title.x-large { font-size: calc(var(--font-heading-scale)* 5rem);}
+}
+
+
+@media only screen and (max-width:1024px){
+    .mobile-tabs-accordion {
+        display: block;
+        border: 1px solid rgba(var(--color-active-progress-background));
+    }
+    .iwt-tab-data-inr-wrap {
+        margin-top: 0;
+        border: 1px solid rgba(var(--color-active-progress-background));
+        padding: 10px;
+        border-top: 0;
+    }
+    .desktop-tabs { display: none; }
+    li.tab-target {
+        padding: 10px;
+        background: rgba(var(--color-default-progress-background));
+        margin-top: 1.6rem;
+    }
+    li.tab-target.active {
+        background: rgba(var(--color-active-progress-background));
+    }
+    .iwt-tab-nav ul li {
+        font-size: 1.4rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .iwt-tab-nav ul {
+        column-gap: 1rem;
+    }
+    
+    .iwt-progress-description p {
+        font-size: 1.4rem;
+    }
+
+    .iwt-progress-label p {
+        font-size: 1.4rem;
+    }
+    .iwt-progress-cvr {
+        column-gap: 1rem;
+    }
+    
+    .iwt-progress-counter {
+        width: 12%;
+        min-width: 65px;
+    }
+    
+    .iwt-progress-inr {
+        width: calc(88% - 1rem);
+    }
+    
+    .iwt-progress-counter .counter-title.x-large {
+        font-size: calc(var(--font-heading-scale)* 3.2rem);
+    }
+    
+    .iwt-progress-active, .iwt-progress-static {
+        min-height: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:364px){
+    .iwt-progress-counter .counter-title.x-large {
+        font-size: calc(var(--font-heading-scale)* 2.8rem);
     }
 }

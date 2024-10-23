@@ -24,6 +24,8 @@
       --gradient-background: {% if section.settings.gradient_background != blank %}{{ section.settings.gradient_background }}{% else %}{{ section.settings.colors_background }}{% endif %};
       --color-background: {{ section.settings.colors_background.red }}, {{ section.settings.colors_background.green }}, {{ section.settings.colors_background.blue }};
       --color-foreground: {{ section.settings.colors_text.red }}, {{ section.settings.colors_text.green }}, {{ section.settings.colors_text.blue }};
+      --color-active-progress-background: {{ section.settings.active_progress_background.red }}, {{ section.settings.active_progress_background.green }}, {{ section.settings.active_progress_background.blue }};
+      --color-default-progress-background: {{ section.settings.default_progress_background.red }}, {{ section.settings.default_progress_background.green }}, {{ section.settings.default_progress_background.blue }};
       --color-link: var(--color-foreground);
       --color-border: var(--color-foreground);
       --color-heading: var(--color-foreground);
@@ -367,7 +369,7 @@
             {%- endcase -%}
           {%- endfor -%}
 
-          <div class="iwt-tab-main-cover">
+          <div class="iwt-tab-main-cover desktop-tabs">
             <div class="iwt-tab-cover">
               <div class="iwt-tab-nav">
                 <ul>
@@ -375,13 +377,15 @@
                   {% for block in section.blocks %}
                     {% case block.type %}
                       {% when 'iwt_block' %}
+                        {% if block.settings.tab_title != blank %}
                         <li
                           class="tab-target{% if forloop.index == active_tab %} active{% endif %}"
-                          data-id="tabbing-{{ forloop.index }}"
+                          rel="tab{{ forloop.index }}"
                           {{ block.shopify_attributes }}
                         >
                           {{ block.settings.tab_title }}
                         </li>
+                      {% endif %}
                     {% endcase %}
                   {% endfor %}
                 </ul>
@@ -393,55 +397,77 @@
             {% for block in section.blocks %}
               {% case block.type %}
                 {% when 'iwt_block' %}
+                  {% if block.settings.tab_title != blank %}
+                    <li
+                      class="mobile-tabs-accordion tab-target{% if forloop.index == active_tab %} active{% endif %}"
+                      rel="tab{{ forloop.index }}"
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ block.settings.tab_title }}
+                    </li>
+                  {% endif %}
                   <div
-                    data-id="tabbing-{{ forloop.index }}"
+                    id="tab{{ forloop.index }}"
                     class="{% if forloop.index == 1 %} active{% endif %} iwt-tab-data-main-cvr"
                     {{ block.shopify_attributes }}
                   >
+                    
                     <div class="iwt-tab-data-inr-wrap">
-                      <div class="iwt-progress-description">
-                        {{ block.settings.progress_description }}
-                      </div>
+                      {% if block.settings.progress_description != blank %}
+                        <div class="iwt-progress-description">
+                          {{ block.settings.progress_description }}
+                        </div>
+                      {% endif %}
                       <div class="iwt-progress-inr-cvr">
                         <div class="iwt-progress-cvr">
-                          <div class="iwt-progress-counter">
-                            <h2 class="counter-title x-large">{{ block.settings.main_title }}</h2>
-                          </div>
-                          <div class="iwt-progress-inr">
-                            <div class="iwt-progress-label">
-                              <p>{{ block.settings.progress_label }}</p>
+                          {% if block.settings.main_title != blank %}
+                            <div class="iwt-progress-counter">
+                              <h2 class="counter-title x-large">{{ block.settings.main_title }}%</h2>
                             </div>
+                          {% endif %}
+                          <div class="iwt-progress-inr">
+                            {% if block.settings.progress_label != blank %}
+                              <div class="iwt-progress-label">
+                                <p>{{ block.settings.progress_label }}</p>
+                              </div>
+                            {% endif %}
                             <div class="iwt-pl-cvr">
                               <div class="iwt-progress-static"></div>
-                              <div class="iwt-progress-bg" style="max-width:97%"></div>
+                              <div class="iwt-progress-active" style="max-width:{{ block.settings.main_title }}%"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="iwt-progress-cvr">
+                          {% if block.settings.main_title2 != blank %}
+                            <div class="iwt-progress-counter">
+                              <h2 class="counter-title x-large">{{ block.settings.main_title2 }}</h2>
+                            </div>
+                          {% endif %}
+                          <div class="iwt-progress-inr">
+                            {% if block.settings.progress_label2 != blank %}
+                              <div class="iwt-progress-label">
+                                <p>{{ block.settings.progress_label2 }}</p>
+                              </div>
+                            {% endif %}
+                            <div class="iwt-pl-cvr">
+                              <div class="iwt-progress-static"></div>
+                              <div class="iwt-progress-active" style="max-width:{{ block.settings.main_title2 }}%"></div>
                             </div>
                           </div>
                         </div>
                         <div class="iwt-progress-cvr">
                           <div class="iwt-progress-counter">
-                            <h2 class="counter-title x-large">{{ block.settings.main_title2 }}</h2>
+                            <h2 class="counter-title x-large">{{ block.settings.main_title3 }}%</h2>
                           </div>
                           <div class="iwt-progress-inr">
-                            <div class="iwt-progress-label">
-                              <p>{{ block.settings.progress_label2 }}</p>
-                            </div>
+                            {% if block.settings.progress_label3 != blank %}
+                              <div class="iwt-progress-label">
+                                <p>{{ block.settings.progress_label3 }}</p>
+                              </div>
+                            {% endif %}
                             <div class="iwt-pl-cvr">
                               <div class="iwt-progress-static"></div>
-                              <div class="iwt-progress-bg" style="max-width:97%"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="iwt-progress-cvr">
-                          <div class="iwt-progress-counter">
-                            <h2 class="counter-title x-large">{{ block.settings.main_title3 }}</h2>
-                          </div>
-                          <div class="iwt-progress-inr">
-                            <div class="iwt-progress-label">
-                              <p>{{ block.settings.progress_label3 }}</p>
-                            </div>
-                            <div class="iwt-pl-cvr">
-                              <div class="iwt-progress-static"></div>
-                              <div class="iwt-progress-bg" style="max-width:97%"></div>
+                              <div class="iwt-progress-active" style="max-width:{{ block.settings.main_title3 }}%"></div>
                             </div>
                           </div>
                         </div>
@@ -459,8 +485,8 @@
                               {% endif %}
                               {{ block.shopify_attributes }}
                             >
-                              {% render 'icon', icon: 'down-arrow' %}
                               <span class="label">{{ block.settings.button_label | escape }}</span>
+                              {% render 'icon', icon: 'arrow' %}
                             </a>
                           {%- else -%}
                             <a
@@ -940,6 +966,18 @@
       "label": "t:sections.all.colors.gradient_background.label"
     },
     {
+      "type": "color",
+      "id": "active_progress_background",
+      "label": "Active progress background",
+      "default": "#BAAB9E"
+    },
+    {
+      "type": "color",
+      "id": "default_progress_background",
+      "label": "Default progress background",
+      "default": "#D4CFCC"
+    },
+    {
       "type": "header",
       "content": "t:sections.all.padding.header.content"
     },
@@ -1029,6 +1067,7 @@
     {
       "name": "Image with tabs block",
       "type": "iwt_block",
+      "limit": 3,
       "settings": [
         {
           "type": "text",
@@ -1046,9 +1085,14 @@
           "content": "Tabs data 1"
         },
         {
-          "type": "text",
+          "type": "range",
+          "label": "Number",
           "id": "main_title",
-          "label": "Title"
+          "default": 50,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
         },
         {
           "type": "inline_richtext",
@@ -1060,9 +1104,14 @@
           "content": "Tabs data 2"
         },
         {
-          "type": "text",
+          "type": "range",
+          "label": "Number 2",
           "id": "main_title2",
-          "label": "Title"
+          "default": 50,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
         },
         {
           "type": "inline_richtext",
@@ -1074,9 +1123,14 @@
           "content": "Tabs data 3"
         },
         {
-          "type": "text",
+          "type": "range",
+          "label": "Number 3",
           "id": "main_title3",
-          "label": "Title"
+          "default": 50,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%"
         },
         {
           "type": "inline_richtext",

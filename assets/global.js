@@ -3699,26 +3699,29 @@ class LocalizationForm extends HTMLElement {
 }
 customElements.define('localization-form', LocalizationForm);
 
-const iwtTab = document.querySelectorAll('.iwt-tab-nav .tab-target');
-if (iwtTab.length > 0) {
-  iwtTab[0].classList.add('active');
-  document.querySelectorAll('.iwt-tab-data-main-cvr')[0].classList.add('active');
-  
-  iwtTab.forEach(function(tabLink) {
-    tabLink.addEventListener('click', function() {
-      document.querySelectorAll('.iwt-tab-data-main-cvr').forEach(function(tab) {
-        tab.classList.remove('active');
-      });
 
-      var tabId = this.getAttribute('data-id');
-      
-      document.querySelector(".iwt-tab-data-main-cvr[data-id='" + tabId + "']").classList.add('active');
+document.addEventListener("DOMContentLoaded", function() {
+  const tabContents = document.querySelectorAll(".iwt-tab-data-main-cvr");
+  const tabs = document.querySelectorAll(".desktop-tabs ul li");
+  const drawerHeadings = document.querySelectorAll(".mobile-tabs-accordion");
 
-      iwtTab.forEach(function(tabLink) {
-        tabLink.classList.remove('active');
-      });
-      
-      this.classList.add('active');
-    });
-  });
-}
+  function switchTab(activeTab) {
+    tabContents.forEach(content => content.style.display = "none");
+    document.getElementById(activeTab).style.display = "block";
+
+    tabs.forEach(tab => tab.classList.remove("active"));
+    document.querySelector(".desktop-tabs ul li[rel='" + activeTab + "']").classList.add("active");
+
+    drawerHeadings.forEach(heading => heading.classList.remove("active"));
+    document.querySelector(".mobile-tabs-accordion[rel='" + activeTab + "']").classList.add("active");
+  }
+
+  if (tabContents.length > 0) tabContents[0].style.display = "block";
+  if (tabs.length > 0) tabs[0].classList.add("active");
+  if (drawerHeadings.length > 0) drawerHeadings[0].classList.add("active");
+
+  tabs.forEach(tab => tab.addEventListener("click", () => switchTab(tab.getAttribute("rel"))));
+  drawerHeadings.forEach(heading => heading.addEventListener("click", () => switchTab(heading.getAttribute("rel"))));
+
+  if (tabs.length > 0) tabs[tabs.length - 1].classList.add("tab_last");
+});

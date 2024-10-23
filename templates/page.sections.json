@@ -1016,17 +1016,17 @@
           "type": "iwt_block",
           "settings": {
             "tab_title": "Erster Themenblock",
-            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse:<\/p>",
-            "main_title": "97%",
+            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse: <\/p>",
+            "main_title": 97,
             "progress_label": "verzeichnen weniger Haarausfall",
-            "main_title2": "64",
+            "main_title2": 64,
             "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
-            "main_title3": "78%",
+            "main_title3": 78,
             "progress_label3": "verzeichnen weniger Haarausfall",
             "button_label": "Studie ansehen",
             "button_link": "#",
             "button_size": "medium",
-            "button_style": "primary"
+            "button_style": "secondary"
           }
         },
         "iwt_block_JyQUML": {
@@ -1034,16 +1034,16 @@
           "settings": {
             "tab_title": "Zweiter Themenblock",
             "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse:<\/p>",
-            "main_title": "64%",
+            "main_title": 50,
             "progress_label": "verzeichnen weniger Haarausfall",
-            "main_title2": "64",
+            "main_title2": 64,
             "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
-            "main_title3": "78%",
+            "main_title3": 78,
             "progress_label3": "verzeichnen weniger Haarausfall",
             "button_label": "Studie ansehen",
             "button_link": "#",
             "button_size": "medium",
-            "button_style": "primary"
+            "button_style": "secondary"
           }
         },
         "iwt_block_8NHhnF": {
@@ -1051,16 +1051,16 @@
           "settings": {
             "tab_title": "Dritter Themenblock",
             "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse:<\/p>",
-            "main_title": "78%",
+            "main_title": 78,
             "progress_label": "verzeichnen weniger Haarausfall",
-            "main_title2": "64",
+            "main_title2": 64,
             "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
-            "main_title3": "78%",
+            "main_title3": 50,
             "progress_label3": "verzeichnen weniger Haarausfall",
             "button_label": "Studie ansehen",
             "button_link": "#",
             "button_size": "medium",
-            "button_style": "primary"
+            "button_style": "secondary"
           }
         }
       },
@@ -1098,6 +1098,8 @@
         "colors_text": "#3c3c3c",
         "colors_background": "#ede9e9",
         "gradient_background": "",
+        "active_progress_background": "#baab9e",
+        "default_progress_background": "#d4cfcc",
         "padding_top": 160,
         "padding_bottom": 160,
         "mobile_padding_top": 40,
