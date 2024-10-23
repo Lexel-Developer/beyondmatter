@@ -1,3 +1,4 @@
+/* .image-with-tab-section {word-break: break-word;} */
 .iwt-tab-nav ul {
     display: flex;
     column-gap: 3.2rem;
@@ -20,7 +21,7 @@ li.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weig
     line-height: 1.09375;
 }
 .iwt-progress-description p {
-    margin: 0.8rem 0;
+    margin: 0.8rem 0 1.5rem;
     letter-spacing: 0;
     line-height: 1.5;
 }
@@ -32,6 +33,7 @@ li.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weig
 .iwt-progress-counter .counter-title {
     margin: 0;
     line-height: 1.09375;
+    letter-spacing: 0;
 }
 
 .iwt-progress-cvr {
@@ -110,21 +112,22 @@ li.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weig
     min-height: auto;
     border: none;
 }
-.image-with-tab-section .iwt-button-cvr .button--cta svg {
+
+.image-with-tab-section .iwt-button-cvr .button svg {
     transition: transform var(--duration-default) ease;
     margin-left: 4px;
 }
-.image-with-tab-section .iwt-button-cvr .button--cta  {
-    overflow: visible;
-}
-.image-with-tab-section .iwt-button-cvr .button--cta .icon {
+.image-with-tab-section .iwt-button-cvr .button .icon {
     height: 1.2rem;
 }
-.image-with-tab-section .iwt-button-cvr .button--cta:hover {
-    padding-right: 0.5rem;
+@media screen and (hover: hover) {
+    .image-with-tab-section .iwt-button-cvr .button:hover .label {
+        transform: none;
+    }
 }
-.image-with-tab-section .iwt-button-cvr .button--cta:hover svg {
-    transform: translateX(0.5rem);
+
+.image-with-tab-section .iwt-button-cvr .button:hover svg {
+    transform: none;
     transition: transform var(--duration-default) ease;
 }
 .image-with-tab-section .iwt-button-cvr .button .label {
@@ -134,6 +137,70 @@ li.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weig
     justify-content: flex-start;
 }
 .mobile-tabs-accordion { display: none; }
+.image-with-tab-section .image-with-text__grid {
+    background: transparent;
+}
+
+.image-with-tab-section .tabs_enable_big_box  {
+    background-color: var(--box-background);
+    padding: 4.5rem;
+}
+.image-with-tab-section .tabs_enable_big_box .iwt-tab-nav ul {
+    column-gap: 1.2rem;
+}
+
+
+
+
+.image-with-tab-section .button--link {
+    --color-button-background: var(--color-background);
+    --color-button-border: var(--color-base-outline-button-labels);
+    --color-button-text: var(--color-base-outline-button-labels);
+}
+.image-with-tab-section .button--link:hover {
+    background-color: var(--secondary-button-hover-background, #3C3C3C);
+    border-color: var(--secondary-button-hover-border, #3C3C3C);
+    color: var(--secondary-button-hover-text, #ffffff);
+}
+
+@media screen and (hover: hover) {
+    .image-with-tab-section .button--link:hover:after {
+        animation: none;
+        transform: rotate3d(0, 0, 1, 0) translateZ(0);
+    }
+
+    .image-with-tab-section .button--link:after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        background-image: none;
+        background-color: rgb(var(--color-button-text));
+        backface-visibility: hidden;
+        will-change: transform;
+        transform: rotate3d(0, 0, 1, 10deg) translate3d(-1.2em, 110%, 0);
+        transform-origin: 0% 100%;
+        transition: transform var(--duration-long) ease;
+    }
+}
+
+.image-with-tab-section .button--link {
+    background-color: var(--secondary-button-background, transparent);
+    border-color: transparent !important;
+    border-bottom-color: 1px solid var(--secondary-button-border, #3C3C3C) !important;
+    color: var(--secondary-button-text, #3C3C3C);
+    width: fit-content;
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color .3s ease, border-color .3s ease, color .3s ease;
+}
+
+
 
 
 @media screen and (min-width: 990px) {
@@ -163,12 +230,17 @@ li.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weig
         border: 1px solid rgba(var(--color-active-progress-background));
         padding: 10px;
         border-top: 0;
+        word-break: break-word;
     }
     .desktop-tabs { display: none; }
     li.tab-target {
         padding: 10px;
         background: rgba(var(--color-default-progress-background));
         margin-top: 1.6rem;
+        word-break: break-word;
+    }
+    .image-with-tab-section .image-with-text__heading {
+        word-break: break-word;
     }
     li.tab-target.active {
         background: rgba(var(--color-active-progress-background));

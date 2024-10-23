@@ -1,0 +1,482 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+
+    --section-padding-left: {{ section.settings.padding_left }}px;
+    --section-padding-right: {{ section.settings.padding_right }}px;
+    --section-margin-top: {{ section.settings.margin_top }}px;
+    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
+    --primary-background: {{ section.settings.primary_background }};
+    --secondary-background: {{ section.settings.secondary_background }};
+    --box-background: {{ section.settings.box_background }};
+
+    --color-heading: {{ section.settings.title_color.red }}, {{ section.settings.title_color.green }}, {{ section.settings.title_color.blue }};
+
+  }
+  @media only screen and (max-width:749px){
+    #shopify-section-{{ section.id }} .section--padding {
+      --section-padding-top: {{ section.settings.mobile_padding_top }}px;
+      --section-padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+      padding-top:var(--section-padding-top);
+      padding-bottom:var(--section-padding-bottom);
+    }
+  }
+{%- endstyle -%}
+
+{{ 'section-page-header.css' | asset_url | stylesheet_tag }}
+
+<div class="section--padding">
+  <div class="page-width--{{ section.settings.page_width }}">
+    {% if section.settings.show_inside_box == true %}<div class="enable_big_box">{% endif %}
+    <div class="grid grid--1-col grid--2-col-desktop">
+      <div class="grid__item">
+        {% if section.settings.enable_breadcrumbs == true %}
+          <div class="ph-breadcrumbs">
+            {% render 'breadcrumbs' %}
+          </div>
+        {% endif %}
+        {% if section.settings.title != blank %}
+          <div class="title-wrapper {{ section.settings.heading_alignment }}">
+            <div class="title-wrapper-inner">
+              {% if section.settings.title != blank %}
+                <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
+                  {{- section.settings.title -}}
+                </{{ section.settings.heading_tag }}>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+      <div class="grid__item">
+        <div class="ph-content-cvr">
+          <div class="ph-description">
+            {% if section.settings.description != blank %}
+              {{ section.settings.description }}
+            {% endif %}
+          </div>
+          {%- if section.settings.button_label != blank or section.settings.button_label2 != blank -%}
+            <div class="ph-button-cvr">
+              <div class="button-list-cover">
+                {%- if section.settings.button_label != blank -%}
+                  <a
+                    class="button button--{{ section.settings.button_style }}"
+                    {% if section.settings.button_link != blank %}
+                      href="{{ section.settings.button_link }}"
+                    {% else %}
+                      role="link" aria-disabled="true"
+                    {% endif %}
+                  >
+                    {% if section.settings.enbale_icon %}{% render 'icon', icon: 'icon-mobile' %}{% endif %}
+                    <span class="label">{{ section.settings.button_label | escape }}</span>
+                  </a>
+                {%- endif -%}
+              </div>
+              <div class="button-list-cover">
+                {%- if section.settings.button_label2 != blank -%}
+                  <a
+                    class="button button--{{ section.settings.button_style2 }}"
+                    {% if section.settings.button_link2 != blank %}
+                      href="{{ section.settings.button_link2 }}"
+                    {% else %}
+                      role="link" aria-disabled="true"
+                    {% endif %}
+                  >
+                    {% if section.settings.enbale_icon2 %}{% render 'icon', icon: 'icon-mobile' %}{% endif %}
+                    <span class="label">{{ section.settings.button_label2 | escape }}</span>
+                  </a>
+                {%- endif -%}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% if section.settings.show_inside_box == true %}</div>{% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Page header",
+  "tag": "section",
+  "class": "section section-page-header",
+  "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_breadcrumbs",
+      "label": "Enable breadcrumbs",
+      "default": true
+    },
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title",
+      "default": "title"
+    },
+    {
+      "type": "richtext",
+      "label": "Description",
+      "id": "description",
+      "default": "<p>description</p>"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.all.heading_alignment.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.all.heading_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.all.heading_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.all.heading_alignment.options__3.label"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.all.heading_tag.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.all.heading_tag.options__5.label"
+        },
+        {
+          "value": "h6",
+          "label": "t:sections.all.heading_tag.options__6.label"
+        },
+        {
+          "value": "div",
+          "label": "t:sections.all.heading_tag.options__7.label"
+        },
+        {
+          "value": "span",
+          "label": "t:sections.all.heading_tag.options__8.label"
+        },
+        {
+          "value": "p",
+          "label": "t:sections.all.heading_tag.options__9.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_tag.label",
+      "info": "t:sections.all.heading_tag.info"
+    },
+    {
+      "type": "header",
+      "content": "First Button (Header)"
+    },
+    {
+      "type": "checkbox",
+      "id": "enbale_icon",
+      "label": "Enable icon"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Button label",
+      "label": "t:sections.all.button_label.label",
+      "info": "t:sections.all.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.all.button_link.label"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "link",
+          "label": "Link"
+        }
+      ],
+      "default": "primary",
+      "label": "Button style"
+    },
+    {
+      "type": "header",
+      "content": "Second Button (Header)"
+    },
+    {
+      "type": "checkbox",
+      "id": "enbale_icon2",
+      "label": "Enable icon"
+    },
+    {
+      "type": "text",
+      "id": "button_label2",
+      "default": "Button label",
+      "label": "t:sections.all.button_label.label",
+      "info": "t:sections.all.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link2",
+      "label": "t:sections.all.button_link.label"
+    },
+    {
+      "type": "select",
+      "id": "button_style2",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "link",
+          "label": "Link"
+        }
+      ],
+      "default": "secondary",
+      "label": "Button style"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show inside box?",
+      "id": "show_inside_box",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Section color"
+    },
+    {
+      "type": "color",
+      "label": "Primary Background",
+      "id": "primary_background",
+      "default": "#EDE9E9"
+    },
+    {
+      "type": "color",
+      "label": "Secondary Background",
+      "id": "secondary_background",
+      "default": "#EDE9E9"
+    },
+    {
+      "type": "color",
+      "label": "Box background",
+      "id": "box_background",
+      "default": "#ffffff",
+      "info": "Box background color apply only when 'Show inside box?' setting is true"
+    },
+    {
+      "type": "color",
+      "label": "Title color",
+      "id": "title_color"
+    },
+    {
+      "type": "color",
+      "label": "Sub title color",
+      "id": "sub_text_color"
+    },
+    {
+      "type": "header",
+      "content": "Grid Layout"
+    },
+    {
+      "type": "range",
+      "label": "Category Column Desktop",
+      "id": "category_column_desktop",
+      "default": 3,
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "unit": "Col"
+    },
+    {
+      "type": "select",
+      "label": "Category Column Mobile",
+      "id": "category_column_mobile",
+      "default": "1",
+      "options": [
+        {
+          "label": "1",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Desktop top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Desktop bottom padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Mobile top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Mobile bottom padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Padding left",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding right",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin top",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin bottom",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page header"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}
