@@ -1023,10 +1023,10 @@
             "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
             "main_title3": 78,
             "progress_label3": "verzeichnen weniger Haarausfall",
+            "enbale_icon": true,
             "button_label": "Studie ansehen",
             "button_link": "#",
-            "button_size": "medium",
-            "button_style": "secondary"
+            "button_style": "cta"
           }
         },
         "iwt_block_JyQUML": {
@@ -1040,10 +1040,10 @@
             "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
             "main_title3": 78,
             "progress_label3": "verzeichnen weniger Haarausfall",
+            "enbale_icon": true,
             "button_label": "Studie ansehen",
             "button_link": "#",
-            "button_size": "medium",
-            "button_style": "secondary"
+            "button_style": "cta"
           }
         },
         "iwt_block_8NHhnF": {
@@ -1057,10 +1057,10 @@
             "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
             "main_title3": 50,
             "progress_label3": "verzeichnen weniger Haarausfall",
+            "enbale_icon": true,
             "button_label": "Studie ansehen",
             "button_link": "#",
-            "button_size": "medium",
-            "button_style": "secondary"
+            "button_style": "cta"
           }
         }
       },
@@ -1072,6 +1072,7 @@
       ],
       "settings": {
         "page_width": "standard",
+        "show_inside_box": false,
         "primary_background": "#ede9e9",
         "secondary_background": "#ede9e9",
         "main_description": "",
@@ -1096,7 +1097,7 @@
         "colors_button_label": "#ffffff",
         "colors_button_background": "#1a1b18",
         "colors_text": "#3c3c3c",
-        "colors_background": "#ede9e9",
+        "box_background": "#ffffff",
         "gradient_background": "",
         "active_progress_background": "#baab9e",
         "default_progress_background": "#d4cfcc",
@@ -1157,6 +1158,7 @@
         "use_custom_colors": true,
         "primary_background": "#baab9e",
         "secondary_background": "#baab9e",
+        "box_background": "#ffffff",
         "colors_quote_text": "#f4f2f2",
         "colors_author_text": "#f4f2f2",
         "colors_profession_text": "#3c3c3c",
@@ -1217,11 +1219,84 @@
         "use_custom_colors": true,
         "primary_background": "#d4cfcc",
         "secondary_background": "#d4cfcc",
+        "box_background": "#ffffff",
         "colors_quote_text": "#3c3c3c",
         "colors_author_text": "#4d4b4b",
         "colors_profession_text": "#3c3c3c",
         "padding_top": 160,
         "padding_bottom": 160,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "page_header_rm7ri6": {
+      "type": "page-header",
+      "settings": {
+        "page_width": "standard",
+        "enable_breadcrumbs": true,
+        "title": "Kundenerfahrungen",
+        "description": "<p>Wir haben schon sehr vielen Menschen mit unterschiedlichen Beschwerden zu mehr Energie, Freude und Leichtigkeit im Leben verholfen. Wir hoffen, dass noch viele weitere dazukommen und geben täglich unser Bestes.<\/p>",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "enbale_icon": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "enbale_icon2": false,
+        "button_label2": "",
+        "button_link2": "",
+        "button_style2": "primary",
+        "show_inside_box": false,
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "title_color": "",
+        "sub_text_color": "",
+        "category_column_desktop": 3,
+        "category_column_mobile": "1",
+        "padding_top": 80,
+        "padding_bottom": 104,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "page_header_ynV8Ui": {
+      "type": "page-header",
+      "settings": {
+        "page_width": "standard",
+        "enable_breadcrumbs": true,
+        "title": "Service & Kontakt",
+        "description": "<p>Bitte melde dich bei Fragen zu unseren Produkten oder anderen Themen. Eine Website kann nicht leisten, was ein persönliches Gespräch leistet. \u2028Wir freuen uns auf deinen Anruf.<\/p>",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "enbale_icon": true,
+        "button_label": "+49 030 84 65 74",
+        "button_link": "tel:+49 030 84 65 74",
+        "button_style": "primary",
+        "enbale_icon2": false,
+        "button_label2": "",
+        "button_link2": "#",
+        "button_style2": "link",
+        "show_inside_box": false,
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "title_color": "",
+        "sub_text_color": "",
+        "category_column_desktop": 3,
+        "category_column_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 104,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36,
         "padding_left": 0,
@@ -1246,6 +1321,8 @@
     "rich_text_ff7JBN",
     "image_with_tabs_HVxjC6",
     "quote_QPywyN",
-    "quote_KUDQqc"
+    "quote_KUDQqc",
+    "page_header_rm7ri6",
+    "page_header_ynV8Ui"
   ]
 }
