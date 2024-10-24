@@ -13,11 +13,10 @@
     --primary-background: {{ section.settings.primary_background.red }},{{ section.settings.primary_background.green }},{{ section.settings.primary_background.blue }};
     --secondary-background: {{ section.settings.secondary_background.red }},{{ section.settings.secondary_background.green }},{{ section.settings.secondary_background.blue }};
 
-    --block-text-color: {{ section.settings.block_text_color.red }}, {{ section.settings.block_text_color.green }}, {{ section.settings.block_text_color.blue }};
-    --accordion-icon-color: {{ section.settings.accordion_icon_color.red }}, {{ section.settings.accordion_icon_color.green }}, {{ section.settings.accordion_icon_color.blue }};
-    --color-heading: {{ section.settings.title_color.red }}, {{ section.settings.title_color.green }}, {{ section.settings.title_color.blue }};
-    --block-color-heading: {{ section.settings.block_bg_color.red }}, {{ section.settings.block_bg_color.green }}, {{ section.settings.block_bg_color.blue }};
+    --color-underline: {{ section.settings.tab_title_underline.red }}, {{ section.settings.tab_title_underline.green }}, {{ section.settings.tab_title_underline.blue }};
 
+    --text-color: {{ section.settings.text_color.red }}, {{ section.settings.text_color.green }}, {{ section.settings.text_color.blue }};
+    --color-heading: {{ section.settings.title_color.red }}, {{ section.settings.title_color.green }}, {{ section.settings.title_color.blue }};
   }
 
     #shopify-section-{{ section.id }} .cwt-tab-main-cover,  #shopify-section-{{ section.id }} .title-wrapper {
@@ -75,7 +74,7 @@
                         {% if block.settings.tab_title != blank %}
                           <li
                             class="cwt-tab-target{% if forloop.index == active_tab %} active{% endif %}"
-                            rel="tab-{{ forloop.index }}"
+                            rel="tab-{{ block.id }}"
                             {{ block.shopify_attributes }}
                           >
                             {{ block.settings.tab_title }}
@@ -90,20 +89,21 @@
               {% for block in section.blocks %}
                 {% case block.type %}
                   {% when 'tab' %}
-                    {% if block.settings.tab_title != blank %}
-                      <li
-                        class="cwt-mobile-tabs-accordion cwt-tab-target{% if forloop.index == active_tab %} active{% endif %}"
-                        rel="tab-{{ forloop.index }}"
-                        {{ block.shopify_attributes }}
-                      >
-                        {{ block.settings.tab_title }}
-                      </li>
-                    {% endif %}
+                    
                     <div
-                      id="tab-{{ forloop.index }}"
+                      id="tab-{{ block.id }}"
                       class="{% if forloop.index == 1 %} active{% endif %} cwt-tab-data-main-cvr"
                       {{ block.shopify_attributes }}
                     >
+                        {% if block.settings.tab_title != blank %}
+                            <div
+                              class="cwt-mobile-tabs-accordion cwt-tab-target{% if forloop.index == active_tab %} active{% endif %}"
+                              rel="tab-{{ block.id }}"
+                              {{ block.shopify_attributes }}
+                            >
+                              {{ block.settings.tab_title }}
+                            </div>
+                          {% endif %}
                       <div class="cwt-tab-data-inr-wrap">
                         {% if block.settings.description != blank %}
                           <div class="cwt-description">
@@ -317,13 +317,13 @@
       "type": "color",
       "label": "Primärer Hintergrund",
       "id": "primary_background",
-      "default": "#baab9e"
+      "default": "#F4F2F2"
     },
     {
       "type": "color",
       "label": "Sekundärer Hintergrund",
       "id": "secondary_background",
-      "default": "#d4cfcc"
+      "default": "#F4F2F2"
     },
     {
       "type": "color",
@@ -334,28 +334,28 @@
     },
     {
       "type": "color",
-      "label": "Titelfarbe",
+      "label": "Heading Color",
       "id": "title_color",
       "default": "#212326"
     },
     {
       "type": "color",
-      "label": "Untertitelfarbe",
+      "label": "Subtitle Color",
       "id": "sub_text_color",
       "default": "#212326"
     },
     {
       "type": "color",
-      "label": "Beschreibungsfarbe",
-      "id": "description_color",
+      "label": "Tab Title underline",
+      "id": "tab_title_underline",
       "default": "#212326"
     },
     {
-      "type": "color",
-      "label": "Akkordeon-Symbolfarbe",
-      "id": "accordion_icon_color",
-      "default": "#212326"
-    },
+        "type": "color",
+        "label": "Akkordeon-Symbolfarbe",
+        "id": "text_color",
+        "default": "#212326"
+      },
     {
       "type": "header",
       "content": "t:sections.all.padding.header.content"

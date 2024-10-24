@@ -317,7 +317,7 @@
                         {% if block.settings.tab_title != blank %}
                           <li
                             class="tab-target{% if forloop.index == active_tab %} active{% endif %}"
-                            rel="tab{{ forloop.index }}"
+                            rel="tab{{ block.id }}"
                             {{ block.shopify_attributes }}
                           >
                             {{ block.settings.tab_title }}
@@ -334,20 +334,20 @@
             {% for block in section.blocks %}
               {% case block.type %}
                 {% when 'iwt_block' %}
-                  {% if block.settings.tab_title != blank %}
-                    <li
-                      class="mobile-tabs-accordion tab-target{% if forloop.index == active_tab %} active{% endif %}"
-                      rel="tab{{ forloop.index }}"
-                      {{ block.shopify_attributes }}
-                    >
-                      {{ block.settings.tab_title }}
-                    </li>
-                  {% endif %}
                   <div
-                    id="tab{{ forloop.index }}"
+                    id="tab{{ block.id }}"
                     class="{% if forloop.index == 1 %} active{% endif %} iwt-tab-data-main-cvr"
                     {{ block.shopify_attributes }}
                   >
+                    {% if block.settings.tab_title != blank %}
+                      <div
+                        class="mobile-tabs-accordion tab-target{% if forloop.index == active_tab %} active{% endif %}"
+                        rel="tab{{ block.id }}"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.tab_title }}
+                      </div>
+                    {% endif %}
                     <div class="iwt-tab-data-inr-wrap">
                       {% if block.settings.progress_description != blank %}
                         <div class="iwt-progress-description">

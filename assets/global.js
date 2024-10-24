@@ -3702,54 +3702,53 @@ customElements.define('localization-form', LocalizationForm);
 
 // Image with tab js
 
-document.addEventListener("DOMContentLoaded", function() {
-  const tabContents = document.querySelectorAll(".iwt-tab-data-main-cvr");
-  const tabs = document.querySelectorAll(".desktop-tabs ul li");
-  const drawerHeadings = document.querySelectorAll(".mobile-tabs-accordion");
+document.querySelectorAll('.image-with-text__grid').forEach(container => {
+  const tabContents2 = container.querySelectorAll('.iwt-tab-data-main-cvr');
+  const tabTargets2 = container.querySelectorAll('.tab-target');
 
   function switchTab(activeTab) {
-    tabContents.forEach(content => content.style.display = "none");
-    document.getElementById(activeTab).style.display = "block";
+    tabContents2.forEach(content => content.classList.remove("active"));
+    tabTargets2.forEach(target => target.classList.remove("active"));
 
-    tabs.forEach(tab => tab.classList.remove("active"));
-    document.querySelector(".desktop-tabs ul li[rel='" + activeTab + "']").classList.add("active");
+    const activeContent2 = document.getElementById(activeTab);
+    if (activeContent2) activeContent2.classList.add("active");
 
-    drawerHeadings.forEach(heading => heading.classList.remove("active"));
-    document.querySelector(".mobile-tabs-accordion[rel='" + activeTab + "']").classList.add("active");
+    const activeTabTarget2 = container.querySelector(`.tab-target[rel='${activeTab}']`);
+    if (activeTabTarget2) activeTabTarget2.classList.add("active");
   }
 
-  if (tabContents.length > 0) tabContents[0].style.display = "block";
-  if (tabs.length > 0) tabs[0].classList.add("active");
-  if (drawerHeadings.length > 0) drawerHeadings[0].classList.add("active");
+  if (tabContents2.length) tabContents2[0].classList.add("active");
+  if (tabTargets2.length) tabTargets2[0].classList.add("active");
 
-  tabs.forEach(tab => tab.addEventListener("click", () => switchTab(tab.getAttribute("rel"))));
-  drawerHeadings.forEach(heading => heading.addEventListener("click", () => switchTab(heading.getAttribute("rel"))));
-
+  tabTargets2.forEach(target => {
+    target.addEventListener("click", () => switchTab(target.getAttribute("rel")));
+  });
 });
 
-// Content with tab js
+// // Content with tab js
 
-document.addEventListener("DOMContentLoaded", function() {
-  const tabContents = document.querySelectorAll(".cwt-tab-data-main-cvr");
-  const tabs = document.querySelectorAll(".cwt-desktop-tabs ul li");
-  const drawerHeadings = document.querySelectorAll(".cwt-mobile-tabs-accordion");
+document.querySelectorAll('.content-with-tabs').forEach(container => {
+  const tabContents = container.querySelectorAll('.cwt-tab-data-main-cvr');
+  const tabTargets = container.querySelectorAll('.cwt-tab-target');
 
-  function switchTab(activeTab) {
-    tabContents.forEach(content => content.style.display = "none");
-    document.getElementById(activeTab).style.display = "block";
+  function switchTab(activeTab, target) {
+    tabContents.forEach(content => content.classList.remove("active"));
+    tabTargets.forEach(target => target.classList.remove("active"));
+    target.classList.add("active");
+    const activeContent = document.getElementById(activeTab);
+    if (activeContent) activeContent.classList.add("active");
 
-    tabs.forEach(tab => tab.classList.remove("active"));
-    document.querySelector(".cwt-desktop-tabs ul li[rel='-" + activeTab + "']").classList.add("active");
-
-    drawerHeadings.forEach(heading => heading.classList.remove("active"));
-    document.querySelector(".cwt-mobile-tabs-accordion[rel='-" + activeTab + "']").classList.add("active");
+    const activeTabTarget = document.querySelector(`.cwt-tab-target[rel='-${activeTab}']`);
+    if (activeTabTarget) activeTabTarget.classList.add("active");
   }
 
-  if (tabContents.length > 0) tabContents[0].style.display = "block";
-  if (tabs.length > 0) tabs[0].classList.add("active");
-  if (drawerHeadings.length > 0) drawerHeadings[0].classList.add("active");
+  if (tabContents.length) tabContents[0].classList.add("active");
+  if (tabTargets.length) tabTargets[0].classList.add("active");
 
-  tabs.forEach(tab => tab.addEventListener("click", () => switchTab(tab.getAttribute("rel"))));
-  drawerHeadings.forEach(heading => heading.addEventListener("click", () => switchTab(heading.getAttribute("rel"))));
-
+  tabTargets.forEach(target => {
+    target.addEventListener("click", () => switchTab(target.getAttribute("rel"), target));
+  });
 });
+
+
+

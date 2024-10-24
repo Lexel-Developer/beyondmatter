@@ -12,7 +12,7 @@
     border-bottom: 0.4rem solid transparent;
     padding-bottom: 0.8rem;
 }
-li.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weight: 700;text-transform: capitalize;cursor: pointer;}
+.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weight: 700;text-transform: capitalize;cursor: pointer;}
 .iwt-tab-nav ul li.tab-target.active {
     border-color: rgba(var(--color-active-progress-background));
 }
@@ -233,7 +233,7 @@ li.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weig
         word-break: break-word;
     }
     .desktop-tabs { display: none; }
-    li.tab-target {
+    .tab-target {
         padding: 10px;
         background: rgba(var(--color-default-progress-background));
         margin-top: 1.6rem;
@@ -242,7 +242,7 @@ li.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weig
     .image-with-tab-section .image-with-text__heading {
         word-break: break-word;
     }
-    li.tab-target.active {
+    .tab-target.active {
         background: rgba(var(--color-active-progress-background));
     }
     .iwt-tab-nav ul li {
@@ -280,6 +280,20 @@ li.tab-target { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0;font-weig
     
     .iwt-progress-active, .iwt-progress-static {
         min-height: 1.4rem;
+    }
+    .iwt-tab-data-main-cvr.active .iwt-tab-data-inr-wrap {
+        display: block;
+    }
+    
+    .iwt-tab-data-main-cvr {
+        display: block !important;
+    }
+    .iwt-tab-data-main-cvr.active .tab-target {
+        background: rgba(var(--color-active-progress-background));
+    }
+    
+    .iwt-tab-data-inr-wrap {
+        display: none;
     }
 }
 
