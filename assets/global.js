@@ -3700,6 +3700,8 @@ class LocalizationForm extends HTMLElement {
 customElements.define('localization-form', LocalizationForm);
 
 
+// Image with tab js
+
 document.addEventListener("DOMContentLoaded", function() {
   const tabContents = document.querySelectorAll(".iwt-tab-data-main-cvr");
   const tabs = document.querySelectorAll(".desktop-tabs ul li");
@@ -3723,5 +3725,31 @@ document.addEventListener("DOMContentLoaded", function() {
   tabs.forEach(tab => tab.addEventListener("click", () => switchTab(tab.getAttribute("rel"))));
   drawerHeadings.forEach(heading => heading.addEventListener("click", () => switchTab(heading.getAttribute("rel"))));
 
-  if (tabs.length > 0) tabs[tabs.length - 1].classList.add("tab_last");
+});
+
+// Content with tab js
+
+document.addEventListener("DOMContentLoaded", function() {
+  const tabContents = document.querySelectorAll(".cwt-tab-data-main-cvr");
+  const tabs = document.querySelectorAll(".cwt-desktop-tabs ul li");
+  const drawerHeadings = document.querySelectorAll(".cwt-mobile-tabs-accordion");
+
+  function switchTab(activeTab) {
+    tabContents.forEach(content => content.style.display = "none");
+    document.getElementById(activeTab).style.display = "block";
+
+    tabs.forEach(tab => tab.classList.remove("active"));
+    document.querySelector(".cwt-desktop-tabs ul li[rel='-" + activeTab + "']").classList.add("active");
+
+    drawerHeadings.forEach(heading => heading.classList.remove("active"));
+    document.querySelector(".cwt-mobile-tabs-accordion[rel='-" + activeTab + "']").classList.add("active");
+  }
+
+  if (tabContents.length > 0) tabContents[0].style.display = "block";
+  if (tabs.length > 0) tabs[0].classList.add("active");
+  if (drawerHeadings.length > 0) drawerHeadings[0].classList.add("active");
+
+  tabs.forEach(tab => tab.addEventListener("click", () => switchTab(tab.getAttribute("rel"))));
+  drawerHeadings.forEach(heading => heading.addEventListener("click", () => switchTab(heading.getAttribute("rel"))));
+
 });

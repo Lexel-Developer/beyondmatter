@@ -14,6 +14,7 @@
         --color-quote-text: {{ section.settings.colors_quote_text.red }}, {{ section.settings.colors_quote_text.green }}, {{ section.settings.colors_quote_text.blue }};
         --color-author-text: {{ section.settings.colors_author_text.red }}, {{ section.settings.colors_author_text.green }}, {{ section.settings.colors_author_text.blue }};
         --color-profession-text: {{ section.settings.colors_profession_text.red }}, {{ section.settings.colors_profession_text.green }}, {{ section.settings.colors_profession_text.blue }};
+        --box-background: {{ section.settings.box_background }};
     {% endif -%}
   }
 
@@ -192,12 +193,6 @@
     },
     {
       "type": "checkbox",
-      "id": "narrow",
-      "default": false,
-      "label": "t:sections.all.narrow.label"
-    },
-    {
-      "type": "checkbox",
       "id": "show_divider",
       "default": false,
       "label": "t:sections.all.show_divider.label"
@@ -373,7 +368,7 @@
               "label": "t:sections.all.heading_size.options__3.label"
             }
           ],
-          "default": "h1",
+          "default": "h0",
           "label": "t:sections.all.heading_size.label"
         },
         {
@@ -431,7 +426,7 @@
         {
           "type": "text",
           "id": "subheading",
-          "default": "Fügen Sie eine Tagline hinzu",
+          "default": "Christian Opitz",
           "label": "Author"
         },
         {
@@ -439,26 +434,20 @@
           "id": "subheading_size",
           "options": [
             {
-              "value": "h5",
-              "label": "t:sections.all.subheading_size.options__1.label"
+              "value": "typeset",
+              "label": "t:sections.all.text_size.options__1.label"
             },
             {
-              "value": "h4",
-              "label": "t:sections.all.subheading_size.options__2.label"
+              "value": "typeset2",
+              "label": "t:sections.all.text_size.options__2.label"
             },
             {
-              "value": "h3",
-              "label": "t:sections.all.subheading_size.options__3.label"
+              "value": "typeset3",
+              "label": "t:sections.all.text_size.options__3.label"
             }
           ],
-          "default": "h5",
-          "label": "t:sections.all.subheading_size.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "secondary_color",
-          "default": false,
-          "label": "t:sections.all.secondary_color.label"
+          "default": "typeset2",
+          "label": "t:sections.all.text_size.label"
         }
       ]
     },
@@ -470,7 +459,7 @@
         {
           "type": "text",
           "id": "text",
-          "default": "<p>Teilen Sie Informationen über Ihre Marke mit Ihren Kunden. Beschreiben Sie ein Produkt, machen Sie Ankündigungen oder begrüßen Sie Kunden in Ihrem Geschäft.</p>",
+          "default": "<p>EMF-Experte, Autor & Wissenschaftler</p>",
           "label": "Profession"
         },
         {
@@ -502,6 +491,9 @@
       "blocks": [
         {
           "type": "heading"
+        },
+        {
+          "type": "subheading"
         },
         {
           "type": "text"

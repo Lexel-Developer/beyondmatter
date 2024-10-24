@@ -1,3 +1,7 @@
+.section-main-quote .page-width--standard {
+    padding: 0 1.5rem;
+}
+
 .section-main-quote {
     position: relative;
 }
@@ -31,6 +35,7 @@
     color: rgba(var(--color-author-text));
     font-weight: 700;
     letter-spacing: 0;
+    line-height: 1.4;
 }
 .section-main-quote .rich-text__heading i {
     font-family: 'MrsEavesXLSerifOT-RegItalic';
@@ -47,4 +52,10 @@
 }
 .section-main-quote .rich-text__blocks use-animate {
     margin-top: 0;
+}
+
+
+
+.section-main-quote .rich_box {
+    background-color: var(--box-background);
 }

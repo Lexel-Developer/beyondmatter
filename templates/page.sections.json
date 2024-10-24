@@ -1127,8 +1127,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "Christian Opitz",
-            "subheading_size": "h4",
-            "secondary_color": false
+            "subheading_size": "typeset2"
           }
         },
         "text_9XUJrj": {
@@ -1153,12 +1152,11 @@
         "text_alignment": "left",
         "mobile_text_alignment": "left",
         "horizontal_content": false,
-        "narrow": false,
         "show_divider": false,
         "use_custom_colors": true,
         "primary_background": "#baab9e",
         "secondary_background": "#baab9e",
-        "box_background": "#ffffff",
+        "box_background": "#3c3c3c",
         "colors_quote_text": "#f4f2f2",
         "colors_author_text": "#f4f2f2",
         "colors_profession_text": "#3c3c3c",
@@ -1188,8 +1186,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "Christian Opitz",
-            "subheading_size": "h4",
-            "secondary_color": false
+            "subheading_size": "typeset2"
           }
         },
         "text_JiYPJq": {
@@ -1214,7 +1211,6 @@
         "text_alignment": "left",
         "mobile_text_alignment": "left",
         "horizontal_content": false,
-        "narrow": false,
         "show_divider": false,
         "use_custom_colors": true,
         "primary_background": "#d4cfcc",
@@ -1304,6 +1300,64 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "content_with_tabs_zrFaQ9": {
+      "type": "content-with-tabs",
+      "blocks": {
+        "tab_aFwQYN": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Analyseverfahren",
+            "description": "<p>Die Dunkelfeldmikroskopie (DFM) ist ein alternativmedizinisches Diagnoseverfahren. Dabei wird Blut unter einem Dunkelfeldmikroskop untersucht.<\/p><p>Aufgrund des speziellen Aufnahmeverfahrens – das Präparat wird seitlich stark belichtet, so dass gewöhnliche Lichtstrahlen nicht in das Objektiv des Mikroskops eindringen – heben sich die zu beobachtenden Zellen hell vor einem dunklen Bildhintergrund ab. Dadurch wird alles, was im Blut enthalten ist, optisch sichtbar gemacht.<\/p><p>Um eine Untersuchung des Bluts mittels DFM durchzuführen, wird dem Patienten ein kleiner Tropfen Kapillarblut entnommen.<\/p>"
+          }
+        },
+        "tab_jH9FWn": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Kapillarblut",
+            "description": "<p>Die Dunkelfeldmikroskopie (DFM) ist ein alternativmedizinisches Diagnoseverfahren. Dabei wird Blut unter einem Dunkelfeldmikroskop untersucht.<\/p><p>Aufgrund des speziellen Aufnahmeverfahrens – das Präparat wird seitlich stark belichtet, so dass gewöhnliche Lichtstrahlen nicht in das Objektiv des Mikroskops eindringen – heben sich die zu beobachtenden Zellen hell vor einem dunklen Bildhintergrund ab. Dadurch wird alles, was im Blut enthalten ist, optisch sichtbar gemacht.<\/p><p>Um eine Untersuchung des Bluts mittels DFM durchzuführen, wird dem Patienten ein kleiner Tropfen Kapillarblut entnommen.<\/p>"
+          }
+        },
+        "tab_UegJUB": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Expertise",
+            "description": "<p>Die Dunkelfeldmikroskopie (DFM) ist ein alternativmedizinisches Diagnoseverfahren. Dabei wird Blut unter einem Dunkelfeldmikroskop untersucht.<\/p><p>Aufgrund des speziellen Aufnahmeverfahrens – das Präparat wird seitlich stark belichtet, so dass gewöhnliche Lichtstrahlen nicht in das Objektiv des Mikroskops eindringen – heben sich die zu beobachtenden Zellen hell vor einem dunklen Bildhintergrund ab. Dadurch wird alles, was im Blut enthalten ist, optisch sichtbar gemacht.<\/p><p>Um eine Untersuchung des Bluts mittels DFM durchzuführen, wird dem Patienten ein kleiner Tropfen Kapillarblut entnommen.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_aFwQYN",
+        "tab_jH9FWn",
+        "tab_UegJUB"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_alignment": "left",
+        "desktop_accordion_width": 82,
+        "heading": "Was können Untersuchungen im Dunkelfeld leisten \u2028und was nicht?",
+        "subtitle": "Dunkelfeld-mikroskopie",
+        "heading_size": "h1",
+        "text_size": "typeset",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "show_inside_box": false,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "box_background": "#ffffff",
+        "title_color": "#212326",
+        "sub_text_color": "#212326",
+        "description_color": "#212326",
+        "accordion_icon_color": "#212326",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -1323,6 +1377,7 @@
     "quote_QPywyN",
     "quote_KUDQqc",
     "page_header_rm7ri6",
-    "page_header_ynV8Ui"
+    "page_header_ynV8Ui",
+    "content_with_tabs_zrFaQ9"
   ]
 }

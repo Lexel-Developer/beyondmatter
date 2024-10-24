@@ -1,0 +1,484 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+
+    --section-padding-left: {{ section.settings.padding_left }}px;
+    --section-padding-right: {{ section.settings.padding_right }}px;
+    --section-margin-top: {{ section.settings.margin_top }}px;
+    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
+    --box-background: {{ section.settings.box_background }};
+
+    --primary-background: {{ section.settings.primary_background.red }},{{ section.settings.primary_background.green }},{{ section.settings.primary_background.blue }};
+    --secondary-background: {{ section.settings.secondary_background.red }},{{ section.settings.secondary_background.green }},{{ section.settings.secondary_background.blue }};
+
+    --block-text-color: {{ section.settings.block_text_color.red }}, {{ section.settings.block_text_color.green }}, {{ section.settings.block_text_color.blue }};
+    --accordion-icon-color: {{ section.settings.accordion_icon_color.red }}, {{ section.settings.accordion_icon_color.green }}, {{ section.settings.accordion_icon_color.blue }};
+    --color-heading: {{ section.settings.title_color.red }}, {{ section.settings.title_color.green }}, {{ section.settings.title_color.blue }};
+    --block-color-heading: {{ section.settings.block_bg_color.red }}, {{ section.settings.block_bg_color.green }}, {{ section.settings.block_bg_color.blue }};
+
+  }
+
+    #shopify-section-{{ section.id }} .cwt-tab-main-cover,  #shopify-section-{{ section.id }} .title-wrapper {
+      max-width:{{ section.settings.desktop_accordion_width }}rem;
+    }
+
+  @media only screen and (max-width:749px){
+    #shopify-section-{{ section.id }} .section--padding {
+      --section-padding-top: {{ section.settings.mobile_padding_top }}px;
+      --section-padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+      padding-top:var(--section-padding-top);
+      padding-bottom:var(--section-padding-bottom);
+    }
+  }
+{%- endstyle -%}
+
+{{ 'section-content-with-tabs.css' | asset_url | stylesheet_tag }}
+
+<div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
+  <div class="page-width--{{ section.settings.page_width }}">
+    <div class="{% if section.settings.show_inside_box == true %} faq_enable_big_box{% endif %}">
+      <div class="content-with-tabs">
+        {% if section.settings.heading != blank %}
+          <div class="title-wrapper {{ section.settings.heading_alignment }}">
+            <div class="title-wrapper-inner">
+              {% if section.settings.heading != blank %}
+                <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
+                  {{- section.settings.heading -}}
+                </{{ section.settings.heading_tag }}>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+
+        <div class="cwt-main-row">
+          {% if section.settings.title != blank or section.settings.subtitle != blank %}
+            <div class="cwt-title-cover">
+              <div class="cwt-title">
+                {% if section.settings.subtitle != blank %}
+                    <h3 class="h3 sub_title" style="color: {{ section.settings.sub_text_color }};">
+                      {{ section.settings.subtitle }}
+                    </h3>
+                  {% endif %}
+              </div>
+            </div>
+          {% endif %}
+          <div class="cwt-tab-main-cover">
+            <div class="cwt-tab-cover cwt-desktop-tabs">
+              <div class="cwt-tab-nav">
+                <ul class="cwt-tab-list-nav">
+                  {% assign active_tab = 1 %}
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when 'tab' %}
+                        {% if block.settings.tab_title != blank %}
+                          <li
+                            class="cwt-tab-target{% if forloop.index == active_tab %} active{% endif %}"
+                            rel="tab-{{ forloop.index }}"
+                            {{ block.shopify_attributes }}
+                          >
+                            {{ block.settings.tab_title }}
+                          </li>
+                        {% endif %}
+                    {% endcase %}
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            <div class="content-tab-main">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'tab' %}
+                    {% if block.settings.tab_title != blank %}
+                      <li
+                        class="cwt-mobile-tabs-accordion cwt-tab-target{% if forloop.index == active_tab %} active{% endif %}"
+                        rel="tab-{{ forloop.index }}"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.tab_title }}
+                      </li>
+                    {% endif %}
+                    <div
+                      id="tab-{{ forloop.index }}"
+                      class="{% if forloop.index == 1 %} active{% endif %} cwt-tab-data-main-cvr"
+                      {{ block.shopify_attributes }}
+                    >
+                      <div class="cwt-tab-data-inr-wrap">
+                        {% if block.settings.description != blank %}
+                          <div class="cwt-description">
+                            {{ block.settings.description }}
+                          </div>
+                        {% endif %}
+                      </div>
+                    </div>
+                {% endcase %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Content with tabs",
+  "tag": "section",
+  "class": "section content-with-tab-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Schmal"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Breit"
+        },
+        {
+          "value": "large",
+          "label": "Groß"
+        },
+        {
+          "value": "full-width",
+          "label": "Volle Breite"
+        }
+      ],
+      "default": "standard",
+      "label": "Abschnittsbreite"
+    },
+    {
+      "type": "select",
+      "id": "accordion_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left",
+      "label": "Akkordeon-Symbolausrichtung"
+    },
+    {
+      "type": "range",
+      "label": "Akkordeon-Breite",
+      "id": "desktop_accordion_width",
+      "default": 80,
+      "min": 50,
+      "max": 150,
+      "step": 1,
+      "unit": "rem"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.heading.label"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "FAQs",
+      "label": "t:sections.all.heading.label"
+    },
+    {
+      "type": "text",
+      "label": "Untertitel",
+      "id": "subtitle",
+      "default": "<em>Unsere Kategorien</em>"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "options": [
+        {
+          "value": "typeset",
+          "label": "t:sections.all.text_size.options__1.label"
+        },
+        {
+          "value": "typeset2",
+          "label": "t:sections.all.text_size.options__2.label"
+        },
+        {
+          "value": "typeset3",
+          "label": "t:sections.all.text_size.options__3.label"
+        }
+      ],
+      "default": "typeset",
+      "label": "t:sections.all.text_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.all.heading_alignment.label",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.all.heading_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.all.heading_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.all.heading_alignment.options__3.label"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.all.heading_tag.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.all.heading_tag.options__5.label"
+        },
+        {
+          "value": "h6",
+          "label": "t:sections.all.heading_tag.options__6.label"
+        },
+        {
+          "value": "div",
+          "label": "t:sections.all.heading_tag.options__7.label"
+        },
+        {
+          "value": "span",
+          "label": "t:sections.all.heading_tag.options__8.label"
+        },
+        {
+          "value": "p",
+          "label": "t:sections.all.heading_tag.options__9.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_tag.label",
+      "info": "t:sections.all.heading_tag.info"
+    },
+    {
+      "type": "header",
+      "content": "Abschnittsfarbe"
+    },
+    {
+      "type": "checkbox",
+      "label": "Layout in Box anzeigen?",
+      "id": "show_inside_box",
+      "default": false
+    },
+    {
+      "type": "color",
+      "label": "Primärer Hintergrund",
+      "id": "primary_background",
+      "default": "#baab9e"
+    },
+    {
+      "type": "color",
+      "label": "Sekundärer Hintergrund",
+      "id": "secondary_background",
+      "default": "#d4cfcc"
+    },
+    {
+      "type": "color",
+      "label": "Box-Hintergrund",
+      "id": "box_background",
+      "default": "#ffffff",
+      "info": "Die Hintergrundfarbe der Box wird nur angewendet, wenn die Einstellung 'Layout in Box anzeigen?' aktiviert ist"
+    },
+    {
+      "type": "color",
+      "label": "Titelfarbe",
+      "id": "title_color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "label": "Untertitelfarbe",
+      "id": "sub_text_color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "label": "Beschreibungsfarbe",
+      "id": "description_color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "label": "Akkordeon-Symbolfarbe",
+      "id": "accordion_icon_color",
+      "default": "#212326"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Polsterung oben (Desktop)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Polsterung unten (Desktop)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Polsterung oben (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Polsterung unten (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Polsterung links",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Polsterung rechts",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Abstand oben",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Abstand unten",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "default": "Title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Verwenden Sie diesen Text, um Fragen so detailliert wie möglich für Ihre Kunden zu beantworten.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Content with tabs",
+      "blocks": [
+        {
+          "type": "tab"
+        },
+        {
+          "type": "tab"
+        },
+        {
+          "type": "tab"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}
