@@ -3700,7 +3700,7 @@ class LocalizationForm extends HTMLElement {
 customElements.define('localization-form', LocalizationForm);
 
 
-// Image with tab js
+// Image with tabs js
 
 document.querySelectorAll('.image-with-text__grid').forEach(container => {
   const tabContents2 = container.querySelectorAll('.iwt-tab-data-main-cvr');
@@ -3717,15 +3717,36 @@ document.querySelectorAll('.image-with-text__grid').forEach(container => {
     if (activeTabTarget2) activeTabTarget2.classList.add("active");
   }
 
+  function swatchImage(clickedSelector, selectorID){
+    const closestContainer = clickedSelector?.closest('.image-with-text__grid');
+    const allImages = closestContainer?.querySelectorAll('use-animate');
+    if(allImages.length > 0){
+      allImages.forEach(container=>{
+        const containerId = container.getAttribute('data-id');
+        container.classList.add('hidden');
+        if(containerId == selectorID){
+          container.classList.remove('hidden');
+        }
+      })
+    }
+  }
+
   if (tabContents2.length) tabContents2[0].classList.add("active");
   if (tabTargets2.length) tabTargets2[0].classList.add("active");
 
   tabTargets2.forEach(target => {
-    target.addEventListener("click", () => switchTab(target.getAttribute("rel")));
+    target.addEventListener("click", () => {
+      switchTab(target.getAttribute("rel"));
+      swatchImage(target, target.getAttribute("rel"));
+    });
+    if(target.classList.contains('active')){
+      let selectedTab = target.getAttribute("rel");
+      swatchImage(target, selectedTab);  
+    }
   });
 });
 
-// // Content with tab js
+// Content with tab js
 
 document.querySelectorAll('.content-with-tabs').forEach(container => {
   const tabContents = container.querySelectorAll('.cwt-tab-data-main-cvr');
