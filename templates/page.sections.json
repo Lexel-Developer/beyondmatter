@@ -1497,6 +1497,416 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "contact_form_ABqemf": {
+      "type": "contact-form",
+      "blocks": {
+        "custom_field_C3NCaz": {
+          "type": "custom_field",
+          "settings": {
+            "width": "full",
+            "type": "radio",
+            "label": "Anrede",
+            "placeholder": "",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "Frau, Herr, Keine Angabe",
+            "select_options": ""
+          }
+        },
+        "custom_field_nRfwHt": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Vorname",
+            "placeholder": "Max",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_YU7Pmn": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Name",
+            "placeholder": "Mustermann",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_LrYyNe": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Firma",
+            "placeholder": "Musterfirma",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "blank_KTgiDg": {
+          "type": "blank",
+          "settings": {
+          }
+        },
+        "custom_field_NCbTDh": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Sraße",
+            "placeholder": "max@mustermann.de",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_YVNFWp": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Hausnummer",
+            "placeholder": "DE 12345678912",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_LDnfAP": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "PLZ",
+            "placeholder": "12345",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_RYDBfV": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Ort",
+            "placeholder": "Musterstadt",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "email_field_Eaggpg": {
+          "type": "email_field",
+          "settings": {
+            "label": "E-Mail-Adresse für Auszahlung über PayPal",
+            "placeholder": "max@mustermann.de",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "phone_field_BMimFM": {
+          "type": "phone_field",
+          "settings": {
+            "label": "Telefonnumer für Rückfragen",
+            "placeholder": "DE 12345678912",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "custom_field_bdPBdV": {
+          "type": "custom_field",
+          "settings": {
+            "width": "full",
+            "type": "textarea",
+            "label": "Liste mit URLs deiner Kommunikationskanäle die zur Bewerbung unserer Produkte dienen",
+            "placeholder": "Nachricht",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_iC7x9U": {
+          "type": "custom_field",
+          "settings": {
+            "width": "full",
+            "type": "checkbox",
+            "label": "Ich habe die Datenschutzbestimmungen gelesen und akzeptiert und stimme darüber hinaus den Teilnahmebedinungen zu.",
+            "placeholder": "",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_field_C3NCaz",
+        "custom_field_nRfwHt",
+        "custom_field_YU7Pmn",
+        "custom_field_LrYyNe",
+        "blank_KTgiDg",
+        "custom_field_NCbTDh",
+        "custom_field_YVNFWp",
+        "custom_field_LDnfAP",
+        "custom_field_RYDBfV",
+        "email_field_Eaggpg",
+        "phone_field_BMimFM",
+        "custom_field_bdPBdV",
+        "custom_field_iC7x9U"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "return_url": "",
+        "show_divider": false,
+        "heading": "Registrierung als Händler",
+        "heading_size": "h2",
+        "heading_tag": "h2",
+        "text": "<p>Die meisten Themen rund um Elektrosmog sind komplexer Natur.</p><p>Nicht so einfach zu erklären. Wir haben es trotzdem versucht. Jedes Thema wird im praktischen Frage-Antwort-</p><p>Format präsentiert. So kannst du jeden Argumentationsschritt einfach nachvollziehen.</p>",
+        "show_inside_box": true,
+        "primary_background": "#ede9e9",
+        "secondary_background": "#d4cfcc",
+        "box_background": "#f4f2f2",
+        "text_color": "#3c3c3c",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "contact_form_DfTLGU": {
+      "type": "contact-form",
+      "blocks": {
+        "custom_field_PNazFp": {
+          "type": "custom_field",
+          "settings": {
+            "width": "full",
+            "type": "radio",
+            "label": "Anrede",
+            "placeholder": "",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "Frau, Herr, Keine Angabe",
+            "select_options": ""
+          }
+        },
+        "custom_field_wXg63L": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Vorname",
+            "placeholder": "Max",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_CBFTmd": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Name",
+            "placeholder": "Mustermann",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_FE8ddc": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Firma",
+            "placeholder": "Musterfirma",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "blank_8iM4HM": {
+          "type": "blank",
+          "settings": {
+          }
+        },
+        "custom_field_NbYpnT": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Sraße",
+            "placeholder": "max@mustermann.de",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_qHUc7Q": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Hausnummer",
+            "placeholder": "DE 12345678912",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_74jzEq": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "PLZ",
+            "placeholder": "12345",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_aAPkp8": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Ort",
+            "placeholder": "Musterstadt",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "email_field_B4Tb8U": {
+          "type": "email_field",
+          "settings": {
+            "label": "E-Mail-Adresse für Auszahlung über PayPal",
+            "placeholder": "max@mustermann.de",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "phone_field_CMRj7z": {
+          "type": "phone_field",
+          "settings": {
+            "label": "Telefonnumer für Rückfragen",
+            "placeholder": "DE 12345678912",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "custom_field_epFnEU": {
+          "type": "custom_field",
+          "settings": {
+            "width": "full",
+            "type": "textarea",
+            "label": "Liste mit URLs deiner Kommunikationskanäle die zur Bewerbung unserer Produkte dienen",
+            "placeholder": "Nachricht",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_gpPcm6": {
+          "type": "custom_field",
+          "settings": {
+            "width": "full",
+            "type": "checkbox",
+            "label": "Ich habe die Datenschutzbestimmungen gelesen und akzeptiert und stimme darüber hinaus den Teilnahmebedinungen zu.",
+            "placeholder": "",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_field_PNazFp",
+        "custom_field_wXg63L",
+        "custom_field_CBFTmd",
+        "custom_field_FE8ddc",
+        "blank_8iM4HM",
+        "custom_field_NbYpnT",
+        "custom_field_qHUc7Q",
+        "custom_field_74jzEq",
+        "custom_field_aAPkp8",
+        "email_field_B4Tb8U",
+        "phone_field_CMRj7z",
+        "custom_field_epFnEU",
+        "custom_field_gpPcm6"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "return_url": "",
+        "show_divider": false,
+        "heading": "Registrierung als Händler",
+        "heading_size": "h2",
+        "heading_tag": "h2",
+        "text": "<p>Die meisten Themen rund um Elektrosmog sind komplexer Natur.</p><p>Nicht so einfach zu erklären. Wir haben es trotzdem versucht. Jedes Thema wird im praktischen Frage-Antwort-</p><p>Format präsentiert. So kannst du jeden Argumentationsschritt einfach nachvollziehen.</p>",
+        "show_inside_box": true,
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#d4cfcc",
+        "box_background": "#edeaea",
+        "text_color": "#3c3c3c",
+        "padding_top": 0,
+        "padding_bottom": 80,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -1519,6 +1929,8 @@
     "page_header_ynV8Ui",
     "content_with_tabs_zrFaQ9",
     "content_with_tabs_rppwF3",
-    "featured_posts_pJrfGq"
+    "featured_posts_pJrfGq",
+    "contact_form_ABqemf",
+    "contact_form_DfTLGU"
   ]
 }
