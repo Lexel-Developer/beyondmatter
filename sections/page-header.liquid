@@ -51,11 +51,34 @@
       </div>
       <div class="grid__item">
         <div class="ph-content-cvr">
-          <div class="ph-description">
-            {% if section.settings.description != blank %}
-              {{ section.settings.description }}
+          {% assign template = template.name %}
+          {% if template == 'page' %}
+            {% if page.content != blank or section.settings.description != blank %}
+              <div class="ph-description">
+                {% if section.settings.description != blank %}
+                  {{ section.settings.description }}
+                {% else %}
+                  {{ page.content }}
+                {% endif %}
+              </div>
             {% endif %}
-          </div>
+          {% elsif template == 'article' %}
+            {% if article.content  != blank or section.settings.description != blank %}
+              <div class="ph-description">
+                {% if section.settings.description != blank %}
+                  {{ section.settings.description }}
+                {% else %}
+                  {{ article.content }}
+                {% endif %}
+              </div>
+            {% endif %}
+          {% else %}
+            {% if section.settings.description != blank %}
+              <div class="ph-description">
+                {{ section.settings.description }}
+              </div>
+            {% endif %}
+          {% endif %}
           {%- if section.settings.button_label != blank or section.settings.button_label2 != blank -%}
             <div class="ph-button-cvr">
               <div class="button-list-cover">
@@ -146,8 +169,7 @@
     {
       "type": "richtext",
       "label": "Description",
-      "id": "description",
-      "default": "<p>description</p>"
+      "id": "description"
     },
     {
       "type": "select",
