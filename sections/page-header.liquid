@@ -13,6 +13,8 @@
     --box-background: {{ section.settings.box_background }};
 
     --color-heading: {{ section.settings.title_color.red }}, {{ section.settings.title_color.green }}, {{ section.settings.title_color.blue }};
+    --color-breadcrumb: {{ section.settings.breadcrumb_color.red }}, {{ section.settings.breadcrumb_color.green }}, {{ section.settings.breadcrumb_color.blue }};
+    --breadcrumb-opacity: {% if section.settings.breadcrumb_opacity < 100 %} 0.{{ section.settings.breadcrumb_opacity }} {% else %} 1{% endif %};
 
   }
   @media only screen and (max-width:749px){
@@ -371,6 +373,21 @@
       "type": "color",
       "label": "Title color",
       "id": "title_color"
+    },
+    {
+      "type": "color",
+      "label": "Breadcrumb color",
+      "id": "breadcrumb_color",
+      "default":"#3C3C3C"
+    },
+    {
+      "type": "range",
+      "label": "Background opacity",
+      "id": "breadcrumb_opacity",
+      "default": 100,
+      "min": 0,
+      "max": 100,
+      "step": 1
     },
     {
       "type": "header",
