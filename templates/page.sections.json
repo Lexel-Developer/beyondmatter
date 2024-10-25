@@ -1047,7 +1047,7 @@
             "enbale_icon": true,
             "button_label": "Studie ansehen",
             "button_link": "#",
-            "button_style": "primary"
+            "button_style": "cta"
           }
         },
         "iwt_block_JyQUML": {
