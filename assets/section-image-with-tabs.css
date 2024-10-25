@@ -218,6 +218,9 @@
 @media only screen and (min-width:990px) and (max-width:1024px){
     .iwt-progress-counter .counter-title.x-large { font-size: calc(var(--font-heading-scale)* 5rem);}
 }
+[data-animate-image] use-animate:has(svg.placeholder) {
+    display: flex;
+}
 
 
 @media only screen and (max-width:1024px){

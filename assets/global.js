@@ -3773,3 +3773,15 @@ document.querySelectorAll('.content-with-tabs').forEach(container => {
 
 
 
+function showPopupAndUpdateDiv() {
+  document.querySelector(".show-popup-btn").classList.add('show');
+  document.querySelector("html").classList.add('overflow-hidden');
+  document.querySelector(".commonpopup").classList.add('show');
+}
+function hidePopupAndUpdateDiv() {
+  document.querySelector(".closepopup").classList.remove('show');
+  document.querySelector("html").classList.remove('overflow-hidden');
+  document.querySelector(".commonpopup").classList.remove('show');
+}
+document.querySelector(".show-popup-btn").addEventListener("click", showPopupAndUpdateDiv);
+document.querySelector(".closepopup").addEventListener("click", hidePopupAndUpdateDiv);

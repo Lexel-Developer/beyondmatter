@@ -101,9 +101,9 @@
         {% for block in section.blocks %}
           {% case block.type %}
             {% when 'iwt_block' %}
-              {% if block.settings.image != blank or block.settings.image_mobile != blank %}
-                {% if block.settings.video == blank and block.settings.video_url == blank %}
-                  <use-animate data-animate="zoom-fade" class="media-wrapper" data-id="tab{{ block.id }}">
+              {% if block.settings.video == blank and block.settings.video_url == blank %}
+                <use-animate data-animate="zoom-fade" class="media-wrapper" data-id="tab{{ block.id }}">
+                    {% if block.settings.image != blank or block.settings.image_mobile != blank %}
                     <div class="image-animate media--{{ block.settings.image_ratio }} media-mobile--{{ block.settings.mobile_image_ratio }} {% if block.settings.image != blank %}media{% else %}media--placeholder{% endif %}{% if block.settings.image_behavior != 'none' %} animate--{{ block.settings.image_behavior }}{% endif %}">
                       {%- if block.settings.image != blank -%}
                         {%- if block.settings.image_behavior == 'ambient' -%}
@@ -131,147 +131,149 @@
                         {{ 'image' | placeholder_svg_tag: 'placeholder' }}
                       {%- endif -%}
                     </div>
-                  </use-animate>
-                {% else %}
-                  {% comment %} VIDEO PART {% endcomment %}
-                  <div class="image-with-text--video image-animate media media--{{ block.settings.image_ratio }} media-mobile--{{ block.settings.mobile_image_ratio }}">
-                    {%- liquid
-                      assign video_id = block.settings.video.id | default: block.settings.video_url.id
-                      assign video_alt = block.settings.video.alt | default: block: section.settings.description
-                      assign alt = 'sections.video.load_video' | t: description: video_alt | escape
-                      assign poster = block.settings.image | default: block.settings.video.preview_image
-                      if block.settings.image_mobile != blank
-                        assign poster_mobile = block.settings.image_mobile | default: block.settings.video.preview_image
-                      else
-                        assign poster_mobile = section.settings.image | default: block.settings.video.preview_image
+                    {% else %}
+                      {{ 'image' | placeholder_svg_tag: 'placeholder' }}
+                    {% endif %}
+                </use-animate>
+              {% else %}
+                {% comment %} VIDEO PART {% endcomment %}
+                <div class="image-with-text--video image-animate media media--{{ block.settings.image_ratio }} media-mobile--{{ block.settings.mobile_image_ratio }}">
+                  {%- liquid
+                    assign video_id = block.settings.video.id | default: block.settings.video_url.id
+                    assign video_alt = block.settings.video.alt | default: block: section.settings.description
+                    assign alt = 'sections.video.load_video' | t: description: video_alt | escape
+                    assign poster = block.settings.image | default: block.settings.video.preview_image
+                    if block.settings.image_mobile != blank
+                      assign poster_mobile = block.settings.image_mobile | default: block.settings.video.preview_image
+                    else
+                      assign poster_mobile = section.settings.image | default: block.settings.video.preview_image
+                    endif
+                    if block.settings.video != null
+                      assign ratio_diff = block.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
+                      if ratio_diff < 0.01 and ratio_diff > 0
+                        assign fix_ratio = true
                       endif
-                      if block.settings.video != null
-                        assign ratio_diff = block.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
-                        if ratio_diff < 0.01 and ratio_diff > 0
-                          assign fix_ratio = true
-                        endif
-                      endif
-                    -%}
-      
-                    <noscript>
-                      <div class="image-with-text-video-section__media">
-                        {%- if block.settings.video == null and block.settings.video_url != null -%}
-                          <a href="{{ block.settings.video_url }}" class="card-wrapper">
-                            <div class="card deferred-media__poster">
-                              <span class="deferred-media__poster-button motion-reduce">
-                                {%- render 'icon', icon: 'play' -%}
-                              </span>
-      
-                              <div class="media media--{{ block.settings.image_ratio }} media-mobile--{{ block.settings.mobile_image_ratio }}">
-                                {%- if poster != null -%}
-                                  {{
-                                    poster
-                                    | image_url: width: 1500
-                                    | image_tag:
-                                      loading: 'lazy',
-                                      class: 'image-fit medium-hide large-up-hide',
-                                      sizes: sizes,
-                                      widths: '375, 750, 1100, 1500, 1780, 2000, 3000'
-                                  }}
-                                  {{
-                                    poster_mobile
-                                    | image_url: width: 1500
-                                    | image_tag:
-                                      loading: 'lazy',
-                                      class: 'image-fit small-hide',
-                                      sizes: sizes,
-                                      widths: '375, 750, 1100, 1500, 1780, 2000, 3000'
-                                  }}
-                                {%- else -%}
-                                  {{
-                                    'hero-apparel-3'
-                                    | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image'
-                                  }}
-                                {%- endif -%}
-                              </div>
+                    endif
+                  -%}
+    
+                  <noscript>
+                    <div class="image-with-text-video-section__media">
+                      {%- if block.settings.video == null and block.settings.video_url != null -%}
+                        <a href="{{ block.settings.video_url }}" class="card-wrapper">
+                          <div class="card deferred-media__poster">
+                            <span class="deferred-media__poster-button motion-reduce">
+                              {%- render 'icon', icon: 'play' -%}
+                            </span>
+    
+                            <div class="media media--{{ block.settings.image_ratio }} media-mobile--{{ block.settings.mobile_image_ratio }}">
+                              {%- if poster != null -%}
+                                {{
+                                  poster
+                                  | image_url: width: 1500
+                                  | image_tag:
+                                    loading: 'lazy',
+                                    class: 'image-fit medium-hide large-up-hide',
+                                    sizes: sizes,
+                                    widths: '375, 750, 1100, 1500, 1780, 2000, 3000'
+                                }}
+                                {{
+                                  poster_mobile
+                                  | image_url: width: 1500
+                                  | image_tag:
+                                    loading: 'lazy',
+                                    class: 'image-fit small-hide',
+                                    sizes: sizes,
+                                    widths: '375, 750, 1100, 1500, 1780, 2000, 3000'
+                                }}
+                              {%- else -%}
+                                {{
+                                  'hero-apparel-3'
+                                  | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image'
+                                }}
+                              {%- endif -%}
                             </div>
-                          </a>
-                        {%- else -%}
-                          {{
-                            block.settings.video
-                            | video_tag:
-                              image_size: '1100x',
-                              loop: block.settings.enable_video_looping,
-                              controls: true,
-                              muted: false
-                          }}
-                        {%- endif -%}
-                      </div>
-                    </noscript>
-                    <deferred-media
-                      class="card-wrapper deferred-media no-js-hidden media-wrapper media-wrapper--large{% if fix_ratio %} media-fit-cover{% endif %}"
-                      data-media-id="{{ video_id }}"
+                          </div>
+                        </a>
+                      {%- else -%}
+                        {{
+                          block.settings.video
+                          | video_tag:
+                            image_size: '1100x',
+                            loop: block.settings.enable_video_looping,
+                            controls: true,
+                            muted: false
+                        }}
+                      {%- endif -%}
+                    </div>
+                  </noscript>
+                  <deferred-media
+                    class="card-wrapper deferred-media no-js-hidden media-wrapper media-wrapper--large{% if fix_ratio %} media-fit-cover{% endif %}"
+                    data-media-id="{{ video_id }}"
+                  >
+                    <button
+                      id="Deferred-Poster-{{ block.settings.video_url.id }}"
+                      class="card deferred-media__poster"
+                      type="button"
                     >
-                      <button
-                        id="Deferred-Poster-{{ block.settings.video_url.id }}"
-                        class="card deferred-media__poster"
-                        type="button"
-                      >
-                        <span class="deferred-media__poster-button motion-reduce">
-                          {%- render 'icon', icon: 'play' -%}
-                        </span>
-                        <use-animate data-animate="zoom-fade-small" class="media-wrapper">
-                          {%- if poster != blank -%}
-                            {%- assign alt = 'sections.video.load_video'
-                              | t: description: section.settings.description
-                              | escape
-                            -%}
-                            {{
-                              poster
-                              | image_url: width: 1500
-                              | image_tag:
-                                loading: 'lazy',
-                                class: 'image-fit medium-hide large-up-hide',
-                                sizes: sizes,
-                                widths: '375, 750, 1100, 1500, 1780, 2000, 3000',
-                                alt: alt,
-                                is: 'lazy-image'
-                            }}
-                            {{
-                              poster_mobile
-                              | image_url: width: 1500
-                              | image_tag:
-                                loading: 'lazy',
-                                class: 'image-fit small-hide',
-                                sizes: sizes,
-                                widths: '375, 750, 1100, 1500, 1780, 2000, 3000',
-                                alt: alt,
-                                is: 'lazy-image'
-                            }}
-                          {%- else -%}
-                            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image' }}
-                          {%- endif -%}
-                        </use-animate>
-                      </button>
-                      <template>
-                        {%- if block.settings.video == null and block.settings.video_url != null -%}
-                          <video-section
-                            data-init-mode="template"
-                            data-parent="deferred-media"
-                            data-loop="{% if block.settings.enable_video_looping %}1{% else %}0{% endif %}"
-                            data-type="{{ block.settings.video_url.type }}"
-                            data-video-id="{{ block.settings.video_url.id }}"
-                          ></video-section>
-                        {%- else -%}
+                      <span class="deferred-media__poster-button motion-reduce">
+                        {%- render 'icon', icon: 'play' -%}
+                      </span>
+                      <use-animate data-animate="zoom-fade-small" class="media-wrapper">
+                        {%- if poster != blank -%}
+                          {%- assign alt = 'sections.video.load_video'
+                            | t: description: section.settings.description
+                            | escape
+                          -%}
                           {{
-                            block.settings.video
-                            | video_tag:
-                              image_size: '1100x',
-                              autoplay: true,
-                              loop: section.settings.enable_video_looping,
-                              controls: true,
-                              muted: false
+                            poster
+                            | image_url: width: 1500
+                            | image_tag:
+                              loading: 'lazy',
+                              class: 'image-fit medium-hide large-up-hide',
+                              sizes: sizes,
+                              widths: '375, 750, 1100, 1500, 1780, 2000, 3000',
+                              alt: alt,
+                              is: 'lazy-image'
                           }}
+                          {{
+                            poster_mobile
+                            | image_url: width: 1500
+                            | image_tag:
+                              loading: 'lazy',
+                              class: 'image-fit small-hide',
+                              sizes: sizes,
+                              widths: '375, 750, 1100, 1500, 1780, 2000, 3000',
+                              alt: alt,
+                              is: 'lazy-image'
+                          }}
+                        {%- else -%}
+                          {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image' }}
                         {%- endif -%}
-                      </template>
-                    </deferred-media>
-                  </div>
-                {% endif %}
+                      </use-animate>
+                    </button>
+                    <template>
+                      {%- if block.settings.video == null and block.settings.video_url != null -%}
+                        <video-section
+                          data-init-mode="template"
+                          data-parent="deferred-media"
+                          data-loop="{% if block.settings.enable_video_looping %}1{% else %}0{% endif %}"
+                          data-type="{{ block.settings.video_url.type }}"
+                          data-video-id="{{ block.settings.video_url.id }}"
+                        ></video-section>
+                      {%- else -%}
+                        {{
+                          block.settings.video
+                          | video_tag:
+                            image_size: '1100x',
+                            autoplay: true,
+                            loop: section.settings.enable_video_looping,
+                            controls: true,
+                            muted: false
+                        }}
+                      {%- endif -%}
+                    </template>
+                  </deferred-media>
+                </div>
               {% endif %}
               {% if section.settings.main_description != blank %}
                 <div class="grid_description-cvr image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">

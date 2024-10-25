@@ -1,0 +1,733 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+
+    --section-padding-left: {{ section.settings.padding_left }}px;
+    --section-padding-right: {{ section.settings.padding_right }}px;
+    --section-margin-top: {{ section.settings.margin_top }}px;
+    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
+    {%- if section.settings.use_custom_colors %}
+      --primary-background: {{ section.settings.primary_background }};
+      --secondary-background: {{ section.settings.secondary_background }};
+      --step-background-color: {{ section.settings.step_background_color }};
+
+      {% comment %}
+      --gradient-background: {% if section.settings.gradient_background != blank %}{{ section.settings.gradient_background }}{% else %}{{ section.settings.colors_background }}{% endif %};
+      --color-background: {{ section.settings.colors_background.red }}, {{ section.settings.colors_background.green }}, {{ section.settings.colors_background.blue }};
+      {% endcomment %}
+
+      --color-foreground: {{ section.settings.colors_text.red }}, {{ section.settings.colors_text.green }}, {{ section.settings.colors_text.blue }};
+      --step-text-color: {{ section.settings.step_text_color.red }}, {{ section.settings.step_text_color.green }}, {{ section.settings.step_text_color.blue }};
+      --step-counte-bg-color: {{ section.settings.step_counte_bg_color.red }}, {{ section.settings.step_counte_bg_color.green }}, {{ section.settings.step_counte_bg_color.blue }};
+      --step-counte-text-color: {{ section.settings.step_counte_text_color.red }}, {{ section.settings.step_counte_text_color.green }}, {{ section.settings.step_counte_text_color.blue }};
+
+
+      --color-link: var(--color-foreground);
+      --color-border: var(--color-foreground);
+      --color-heading: var(--color-foreground);
+      --color-button-background: {{ section.settings.colors_button_background.red }}, {{ section.settings.colors_button_background.green }}, {{ section.settings.colors_button_background.blue }};
+      --color-button-text: {{ section.settings.colors_button_label.red }}, {{ section.settings.colors_button_label.green }}, {{ section.settings.colors_button_label.blue }};
+      --color-button-border: var(--color-button-background);
+    {% endif -%}
+  }
+
+  #shopify-section-{{ section.id }} .rich-text__blocks {
+    max-width: {{ section.settings.content_width }}px;
+    width: 100%;
+  }
+
+  @media only screen and (max-width:749px){
+    #shopify-section-{{ section.id }} .section--padding {
+      --section-padding-top: {{ section.settings.mobile_padding_top }}px;
+      --section-padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+      padding-top:var(--section-padding-top);
+      padding-bottom:var(--section-padding-bottom);
+    }
+  }
+{%- endstyle -%}
+
+{{ 'section-step-by-step.css' | asset_url | stylesheet_tag }}
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- liquid
+  assign custom_class = ''
+  if section.settings.use_custom_colors
+    assign custom_class = custom_class | append: ' rich-text--colored'
+  endif
+  if section.settings.horizontal_content
+    assign custom_class = custom_class | append: ' rich-text--horizontal'
+  endif
+
+  assign fetchpriority = 'auto'
+  if section.index == 1
+    assign fetchpriority = 'high'
+  endif
+-%}
+
+{%- if section.settings.show_divider %}<div class="section--divider">{% endif -%}
+<div class="rich-text section--padding{{ custom_class }}">
+  <div class="page-width--{{ section.settings.page_width }}">
+    <div class="rich-text__block_main {% if section.settings.show_inside_box %} rich_box{% endif %}">
+      {% if section.settings.intro_title != blank and section.settings.enable_intro_title %}
+        <div class="intro_title">
+          {{ section.settings.intro_title }}
+        </div>
+      {% endif %}
+      <div class="rich-text__blocks {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }} {{ section.settings.box_alignment }}">
+        <{{ section.settings.heading_tag }}
+          class="rich-text__heading {{ section.settings.heading_size }}"
+          {{ section.shopify_attributes }}
+        >
+          {{- section.settings.heading | escape -}}
+        </{{ section.settings.heading_tag }}>
+        <p
+          class="rich-text__subheading{% if section.settings.secondary_color2 %} rich-text__subheading--colored{% endif %} {{ section.settings.subheading_size }}"
+          {{ section.shopify_attributes }}
+        >
+          {{ section.settings.subheading | escape }}
+        </p>
+        <use-animate>
+          <div
+            class="rich-text__text{% if section.settings.secondary_color2 %} rich-text__text--colored{% endif %} {{ section.settings.text_size }} rte"
+          >
+            {%- render 'highlight-text',
+              hl_input: section.settings.text,
+              hl_phrases: section.settings.highlight_phrases,
+              hl_style: section.settings.highlight_style
+            -%}
+          </div>
+        </use-animate>
+      </div>
+    </div>
+    <div class="step-by-step-main">
+      <div class="step-by-step-row">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'step_by_step' -%}
+              <div class="step-by-step-cvr" {{ block.shopify_attributes }}>
+                <div class="step-counte-block">
+                  <div class="step-counte-block">
+                    {%- assign step = 1 -%}
+                    <h2 class="step-counte--title x-large">
+                      {%- assign dynamic_step = forloop.index | times: step -%}                    
+                      {%- assign display_number = dynamic_step | prepend: "0" | slice: -2, 2 -%}                    
+                      {{ display_number }}
+                    </h2>                    
+                  </div>
+                </div>
+                <div class="step-content-cvr">
+                  <div class="step-content-inr">
+                    {% if block.settings.step_title != blank %}
+                      <div class="step-title-cvr">
+                        <h2 class="step-title h1">{{ block.settings.step_title }}</h2>
+                      </div>
+                    {% endif %}
+                    {% if block.settings.block_description != blank %}
+                      <div class="step-description-cvr">
+                        {{ block.settings.block_description }}
+                      </div>
+                    {% endif %}
+                    <div class="step-button-cvr">
+                      {%- if block.settings.button_label != blank -%}
+                        <button
+                          class="button show-popup-btn {% if block.settings.button_style_secondary %} button--secondary{% endif %} button--{{ block.settings.button_size }}"
+                          id="{{ block.settings.button_id }}"
+                        >
+                          {% if block.settings.button_icon != blank %}
+                            {{
+                              block.settings.button_icon
+                              | image_url: width: 100
+                              | image_tag: widths: '100, 200', fetchpriority: fetchpriority
+                            }}
+                          {% endif %}
+                          <span class="label">{{ block.settings.button_label }}</span>
+                        </button>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+{%- if section.settings.show_divider %}</div>{% endif -%}
+
+<div class="popup commonpopup">
+  <div class="popup-content">
+    <div class="popup-content-inr">
+      <a class="closepopup"></a>
+      <div class="prduct-content-main">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'step_by_step' -%}
+              {% if block.settings.popup_button_image != blank %}
+                <div class="popup-button-image">
+                  {{
+                    block.settings.popup_button_image
+                    | image_url: width: 1920
+                    | image_tag: widths: '100, 200, 400, 700, 900, 1200, 1500, 1920', fetchpriority: fetchpriority
+                  }}
+                </div>
+              {% endif %}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Step by step",
+  "tag": "section",
+  "class": "section section-setp-by-step",
+  "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Schmal"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Breit"
+        },
+        {
+          "value": "large",
+          "label": "Groß"
+        },
+        {
+          "value": "full-width",
+          "label": "Volle Breite"
+        }
+      ],
+      "default": "standard",
+      "label": "Abschnittsbreite"
+    },
+    {
+      "type": "checkbox",
+      "label": "Layout in Box anzeigen",
+      "id": "show_inside_box",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "label": "Intro-Titel aktivieren",
+      "id": "enable_intro_title",
+      "default": true
+    },
+    {
+      "type": "text",
+      "label": "Intro-Titel",
+      "id": "intro_title",
+      "default": "Testreihe 1"
+    },
+    {
+      "type": "range",
+      "label": "Inhaltsbreite",
+      "id": "content_width",
+      "default": 900,
+      "min": 300,
+      "max": 1000,
+      "step": 10,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "label": "Box-Ausrichtung",
+      "id": "box_alignment",
+      "options": [
+        {
+          "label": "Links",
+          "value": "box_left"
+        },
+        {
+          "label": "Zentriert",
+          "value": "box_center"
+        },
+        {
+          "label": "Rechts",
+          "value": "box_right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.all.text_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.all.text_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.all.text_alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.all.text_alignment.label"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.all.mobile_layout.mobile_text_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.all.mobile_layout.mobile_text_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.all.mobile_layout.mobile_text_alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.all.mobile_layout.mobile_text_alignment.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "horizontal_content",
+      "default": false,
+      "label": "t:sections.rich-text.settings.horizontal_content.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "default": false,
+      "label": "t:sections.all.show_divider.label"
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Erzählen Sie von Ihrer Marke",
+      "label": "t:sections.all.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h3",
+          "label": "Sehr klein"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.all.heading_tag.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.all.heading_tag.options__5.label"
+        },
+        {
+          "value": "h6",
+          "label": "t:sections.all.heading_tag.options__6.label"
+        },
+        {
+          "value": "div",
+          "label": "t:sections.all.heading_tag.options__7.label"
+        },
+        {
+          "value": "span",
+          "label": "t:sections.all.heading_tag.options__8.label"
+        },
+        {
+          "value": "p",
+          "label": "t:sections.all.heading_tag.options__9.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_tag.label",
+      "info": "t:sections.all.heading_tag.info"
+    },
+    {
+      "type": "header",
+      "content": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Fügen Sie eine Tagline hinzu",
+      "label": "t:sections.all.subheading.label"
+    },
+    {
+      "type": "select",
+      "id": "subheading_size",
+      "options": [
+        {
+          "value": "h5",
+          "label": "t:sections.all.subheading_size.options__1.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.all.subheading_size.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.all.subheading_size.options__3.label"
+        }
+      ],
+      "default": "h5",
+      "label": "t:sections.all.subheading_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "secondary_color2",
+      "default": false,
+      "label": "t:sections.all.secondary_color.label"
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "default": "<p>Teilen Sie Informationen über Ihre Marke mit Ihren Kunden. Beschreiben Sie ein Produkt, machen Sie Ankündigungen oder begrüßen Sie Kunden in Ihrem Geschäft.</p>",
+      "label": "t:sections.all.text.label"
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "options": [
+        {
+          "value": "typeset",
+          "label": "t:sections.all.text_size.options__1.label"
+        },
+        {
+          "value": "typeset2",
+          "label": "t:sections.all.text_size.options__2.label"
+        },
+        {
+          "value": "typeset3",
+          "label": "t:sections.all.text_size.options__3.label"
+        }
+      ],
+      "default": "typeset2",
+      "label": "t:sections.all.text_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "secondary_color",
+      "default": false,
+      "label": "t:sections.all.secondary_color.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.highlight.header.content"
+    },
+    {
+      "type": "html",
+      "id": "highlight_phrases",
+      "label": "t:sections.all.highlight.phrases.label",
+      "info": "t:sections.all.highlight.phrases.info"
+    },
+    {
+      "type": "select",
+      "id": "highlight_style",
+      "options": [
+        {
+          "value": "marker",
+          "label": "t:sections.all.highlight.style.options__1.label"
+        },
+        {
+          "value": "circle",
+          "label": "t:sections.all.highlight.style.options__2.label"
+        },
+        {
+          "value": "underline",
+          "label": "t:sections.all.highlight.style.options__3.label"
+        }
+      ],
+      "default": "marker",
+      "label": "t:sections.all.highlight.style.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.colors.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_custom_colors",
+      "default": false,
+      "label": "t:sections.all.colors.use_custom_colors.label"
+    },
+    {
+      "type": "color",
+      "label": "Primärer Hintergrund",
+      "id": "primary_background",
+      "default": "#baab9e"
+    },
+    {
+      "type": "color",
+      "label": "Sekundärer Hintergrund",
+      "id": "secondary_background",
+      "default": "#d4cfcc"
+    },
+    {
+      "type": "color",
+      "id": "colors_text",
+      "label": "t:sections.all.colors.colors_text.label",
+      "default": "#212326"
+    },
+    {
+      "type": "header",
+      "content": "Block color"
+    },
+    {
+      "type": "color",
+      "label": "Step count background color",
+      "id": "step_counte_bg_color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "label": "Step count text color",
+      "id": "step_counte_text_color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "label": "Step background color",
+      "id": "step_background_color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "label": "Step text color",
+      "id": "step_text_color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "id": "colors_button_label",
+      "label": "t:sections.all.colors.colors_button_label.label",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "colors_button_background",
+      "label": "t:sections.all.colors.colors_button_background.label",
+      "default": "#1a1b18"
+    },
+
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Polsterung oben (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Polsterung unten (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Polsterung links",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Polsterung rechts",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Abstand oben",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Abstand unten",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step_by_step",
+      "name": "Step by step",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Title",
+          "id": "step_title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "label": "Description ",
+          "id": "block_description",
+          "default": "<p>Description&nbsp;</p>"
+        },
+        {
+          "type": "image_picker",
+          "label": "Popup button image ",
+          "id": "popup_button_image"
+        },
+        {
+          "type": "image_picker",
+          "label": "Button icon ",
+          "id": "button_icon"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Schaltflächenbeschriftung",
+          "label": "t:sections.all.button_label.label",
+          "info": "t:sections.all.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_id",
+          "label": "Use button id"
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "options": [
+            {
+              "value": "small",
+              "label": "t:sections.all.button_size.options__1.label"
+            },
+            {
+              "value": "medium",
+              "label": "t:sections.all.button_size.options__2.label"
+            },
+            {
+              "value": "large",
+              "label": "t:sections.all.button_size.options__3.label"
+            }
+          ],
+          "default": "medium",
+          "label": "t:sections.all.button_size.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "Use secondary button style"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Step by step",
+      "blocks": []
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}
