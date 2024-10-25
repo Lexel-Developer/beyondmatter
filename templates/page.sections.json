@@ -1391,44 +1391,12 @@
             "tab_title": "Einkauf als Händler",
             "description": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>"
           }
-        },
-        "tab_hpxajx": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Title",
-            "description": "<p>Verwenden Sie diesen Text, um Fragen so detailliert wie möglich für Ihre Kunden zu beantworten.</p>"
-          }
-        },
-        "tab_cqygcJ": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Title",
-            "description": "<p>Verwenden Sie diesen Text, um Fragen so detailliert wie möglich für Ihre Kunden zu beantworten.</p>"
-          }
-        },
-        "tab_HrQ63w": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Title",
-            "description": "<p>Verwenden Sie diesen Text, um Fragen so detailliert wie möglich für Ihre Kunden zu beantworten.</p>"
-          }
-        },
-        "tab_bKQxnt": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Title",
-            "description": "<p>Verwenden Sie diesen Text, um Fragen so detailliert wie möglich für Ihre Kunden zu beantworten.</p>"
-          }
         }
       },
       "block_order": [
         "tab_d69dji",
         "tab_G3MNwM",
-        "tab_hcaGAw",
-        "tab_hpxajx",
-        "tab_cqygcJ",
-        "tab_HrQ63w",
-        "tab_bKQxnt"
+        "tab_hcaGAw"
       ],
       "settings": {
         "page_width": "standard",
