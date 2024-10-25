@@ -60,11 +60,11 @@
 @media screen and (min-width: 750px) {
   .contact.page-width--inner .contact__fields {
     display: flex;
-    grid-column-gap: 2rem;
+    grid-column-gap: 3.3rem;
     flex-wrap: wrap;
   }
   .contact .field.col-half {
-    width: calc((100% / 2) - 10px);
+    width: calc((100% / 2) - 17px);
   }
 }
 
@@ -134,6 +134,7 @@
   word-break: break-word;
   line-height: 1.6rem;
   cursor: pointer;
+  letter-spacing: 0;
 }
 
 .contact-form__input .form__facet-checkbox input[type=checkbox] {
@@ -219,9 +220,10 @@
 }
 .contact-form-section .title-wrapper p {
   margin: 0;
+  letter-spacing: 0;
 }
 .contact-form-section .title-wrapper {
-  gap: 24px;
+  gap: 16px;
 }
 
 .contact-form-section .title-wrapper .title {
@@ -235,11 +237,28 @@
 
 .contact .form__label {
   margin-bottom: .4rem;
+  font-size: inherit;
+  line-height: 1.5;
+  letter-spacing: 0;
 }
 
 .contact .title-wrapper img:has(+.title) {
   margin-bottom: -17px;
 }
+.contact-form-section .field__input {
+  letter-spacing: 0;
+}
+.contact-form-section .button {
+  line-height: 1.5;
+}
+.contact .field:has([type="radio"]) {
+  margin-bottom: 2.4rem;
+}
+.contact-form-section .field__input {
+  letter-spacing: 0;
+  height: 4.8rem;
+}
+
 
 @media only screen and (min-width: 990px) {
 
@@ -272,6 +291,9 @@
 }
 .contact-form__input .contact-form__input:has(.form__facet-radio) {
   column-gap: 20px;
+}
+.contact .field:has([type=radio]) {
+  margin-bottom: 1.5rem;
 }
 
 }
