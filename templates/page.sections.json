@@ -1024,7 +1024,6 @@
         "iwt_block_KKKdAp": {
           "type": "iwt_block",
           "settings": {
-            "image": "shopify://shop_images/image-with-tabs.png",
             "image_position": "center center",
             "desktop_box_spacing": 0,
             "text_box_position": "middle",
