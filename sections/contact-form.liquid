@@ -188,7 +188,11 @@
 
             <div class="contact__button">
               <button type="submit" class="button">
-                {{ 'templates.contact.form.send' | t }}
+                {% if section.settings.button_text != blank %}
+                  {{ section.settings.button_text }}
+                {% else %}
+                  {{ 'templates.contact.form.send' | t }}
+                {% endif %}
               </button>
             </div>
 
@@ -346,6 +350,12 @@
       "label": "Show inside box?",
       "id": "show_inside_box",
       "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "default": "Nachricht verschicken",
+      "label": "Button text"
     },
     {
       "type": "header",
