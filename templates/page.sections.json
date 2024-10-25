@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "main-page",
@@ -1675,7 +1675,7 @@
         "page_width": "standard",
         "return_url": "",
         "show_divider": false,
-        "heading": "Registrierung als Händler",
+        "heading": "Bewerbung Partnerprogramm",
         "heading_size": "h2",
         "heading_tag": "h2",
         "text": "<p>Die meisten Themen rund um Elektrosmog sind komplexer Natur.</p><p>Nicht so einfach zu erklären. Wir haben es trotzdem versucht. Jedes Thema wird im praktischen Frage-Antwort-</p><p>Format präsentiert. So kannst du jeden Argumentationsschritt einfach nachvollziehen.</p>",
@@ -1938,6 +1938,7 @@
       ],
       "settings": {
         "page_width": "narrow",
+        "show_back_link": true,
         "show_inside_box": false,
         "heading": "Ein Schutz vor Elektrosmog,  der hält, was er verspricht.",
         "heading_size": "h0",
