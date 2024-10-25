@@ -1,0 +1,135 @@
+.blog-intro {
+    position: relative;
+}
+.blog-intro .title-wrapper .sub_title {
+    margin: 0 0 0.4rem;
+}
+.blog-intro:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50%;
+    pointer-events: none;
+    background-color: var(--primary-background);
+}
+.blog-intro:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: calc(50% + 1px);
+    pointer-events: none;
+    background-color: var(--secondary-background);
+}
+.blog-intro>* {
+    position: relative;
+    z-index: 1;
+}
+.blog-intro .title-wrapper .rich-text__heading {
+    margin: 0;
+}
+.blog-intro .title-wrapper {
+    max-width: 93rem;
+}
+.blog-intro  .intro_title {
+    max-width: 23rem;
+}
+.intro_social_media {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.scroll_id ul {
+    display: flex;
+    column-gap: 3.9rem;
+    row-gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.scroll_id ul a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    line-height: 1.5;
+    color: rgb(var(--color-foreground));
+}
+.scroll_id ul a svg {
+    width: 1.5rem;
+    height: auto;
+}
+.scroll_id_main h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: var(--font-body-family);
+    line-height: 2.4rem;
+    margin: 0 0 0.8rem;
+}
+.scroll_id_main {
+    margin-top: 3.2rem;
+}
+.blog-intro .rich-text__blocks>*+a {
+    margin-top: 2.1rem;
+}
+.back_link {
+    display: inline-flex;
+    gap: 4px;
+    color: rgb(var(--color-foreground));
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+.back_link svg {
+    min-width: 15px;
+    width: 15px;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+    
+    .blog-intro .rich-text__heading.h0 {
+        font-size: calc(var(--font-heading-scale)* 6.4rem);
+        line-height: calc(var(--font-heading-scale)* 7rem);
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+
+    .intro_main_cover {
+        padding-right: 80px;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .intro_main_cover {
+        padding-right: 0;
+    }
+    .intro_social_media {
+        left: 0;
+        top: 0;
+        transform: unset;
+        position: relative;
+        padding: 0 1.5rem;
+        margin-top: 2rem;
+    }
+    .blog-intro .title-wrapper .rich-text__heading {
+        margin: 0;
+        line-height: 1.2;
+    }
+}
+

@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "main-page",
@@ -1898,6 +1898,85 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "blog_intro_figJNW": {
+      "type": "blog-intro",
+      "blocks": {
+        "title_qTzwVF": {
+          "type": "title",
+          "settings": {
+            "title": "Sprungmarken zu"
+          }
+        },
+        "link_id_bwFy64": {
+          "type": "link_id",
+          "settings": {
+            "title": "Auftrag",
+            "id": "id1"
+          }
+        },
+        "link_id_xPCTbj": {
+          "type": "link_id",
+          "settings": {
+            "title": "Resultate",
+            "id": "id2"
+          }
+        },
+        "link_id_433kqP": {
+          "type": "link_id",
+          "settings": {
+            "title": "Fazit",
+            "id": "id3"
+          }
+        }
+      },
+      "block_order": [
+        "title_qTzwVF",
+        "link_id_bwFy64",
+        "link_id_xPCTbj",
+        "link_id_433kqP"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "heading": "Ein Schutz vor Elektrosmog,  der hält, was er verspricht.",
+        "heading_size": "h0",
+        "heading_tag": "h2",
+        "title": "Was untersucht die Studie?",
+        "text": "<p>Die von einem unabhängigen Institut durchgeführte Studie untersucht die gesundheitlichen Auswirkungen von Handytelefonaten auf den Körper: Was lösen elektromagnetische Felder (Elektrosmog) im Körper aus und wie kannst du dich effektiv davor schützen?</p>",
+        "text_size": "typeset",
+        "secondary_color": false,
+        "highlight_phrases": "",
+        "highlight_style": "marker",
+        "button_label": "Ergebnisbericht herunterladen",
+        "button_link": "https://cdn.shopify.com/s/files/1/0848/0931/8728/files/file-sample_150kB.pdf?v=1729853643",
+        "button_size": "medium",
+        "button_style": "primary",
+        "show_social_media": true,
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#3c3c3c",
+        "colors_button_background": "#d4cfcc",
+        "colors_text": "#212326",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
@@ -1923,6 +2002,7 @@
     "featured_posts_pJrfGq",
     "contact_form_ABqemf",
     "contact_form_DfTLGU",
-    "step_by_step_gG8Na8"
+    "step_by_step_gG8Na8",
+    "blog_intro_figJNW"
   ]
 }
