@@ -329,6 +329,12 @@
     pointer-events: none;
     background-color: var(--secondary-background);
 }
+.image-with-text__text p em {
+  color: var(--secondary-background);
+}
+.image-with-text__text p:first-child {
+  margin-bottom: 0;
+}
 .image-with-text-section>* {
     position: relative;
     z-index: 1;
@@ -352,6 +358,25 @@
 .image-with-text-section .button--cta .label {
   padding-right: 0;
 }
+
+.image-with-text__text ul li {
+  margin: 0;
+  list-style: none;
+  padding-left: 25px;
+  background-image: url(check.svg);
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  background-size: 14px;
+}
+
+.image-with-text__text ul {
+  margin: 1.6rem 0;
+  padding: 0 !important;
+}
+.image-with-text__text ul li:nth-child(even) {
+  margin: 0.5rem 0;
+}
+
 @media only screen and (min-width:750px){
   .image-with-text__grid:has(.download-button-cta) .image-with-text__text.typeset {
     margin-top: 2.4rem;

@@ -10,7 +10,7 @@
 
     --primary-background: {{ section.settings.primary_background }};
     --secondary-background: {{ section.settings.secondary_background }};
-    
+       
     {%- if section.settings.image != blank %}
       --image-ratio-percent: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
       --image-position: {{ section.settings.image_position }};
@@ -252,8 +252,13 @@
               {%- when 'heading' -%}
                 <{{ block.settings.heading_tag }} class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading }}</{{ block.settings.heading_tag }}>
               {%- when 'subheading' -%}
+                <style>
+                  #block--{{ block.id }} {
+                    --secondary-background: {{ block.settings.sub_text_color }};
+                  }
+                </style>
                 {% if block.settings.subheading != blank %}
-                  <h3 class="h1 sub_title" style="color: {{ block.settings.sub_text_color }};">{{ block.settings.subheading }}</h3>
+                  <h3 id="block--{{ block.id }}" class="h1 sub_title" style="color: {{ block.settings.sub_text_color }};">{{ block.settings.subheading }}</h3>
                 {% endif %}
               {%- when 'text' -%}
                 <div class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>

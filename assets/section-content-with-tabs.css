@@ -107,10 +107,6 @@
     color: rgba(var(--text-color));
 }
 
-.content-with-tab-section .page-width--standard {
-    padding: 0 1.5rem;
-}
-
 .content-with-tab-section .title-wrapper {
     margin-bottom: 5rem;
 }

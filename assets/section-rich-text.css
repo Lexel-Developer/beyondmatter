@@ -107,7 +107,7 @@
 
 .rich-text__heading {
   margin-bottom: 0;
-  line-height: 1.333333;
+  line-height:1.222222;
   letter-spacing: 0;
 }
 
@@ -175,7 +175,7 @@
 }
 .rich-text__block_main:has(>.intro_title) {
   display: flex;
-  gap: 40px;
+  gap: 43px;
 }
 .intro_title + .rich-text__blocks {
   display: inline-flex;
@@ -206,7 +206,8 @@
   font-weight: 400;
   line-height: 1.11111;
   font-family: 'MrsEavesXLSerifOT-RegItalic';
-  font-style: italic;
+  font-style: italic;  
+  letter-spacing: 0;
 }
 @media screen and (min-width: 990px) {
 

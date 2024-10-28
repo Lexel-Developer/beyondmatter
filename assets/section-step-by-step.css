@@ -29,6 +29,7 @@
     text-transform: inherit;
     letter-spacing: 0;
     line-height: 1.333333;
+    margin-top: 3.6rem;
 }
 
 .step-button-cvr .button img {
@@ -36,6 +37,7 @@
     height: auto;
     max-width: 2.4rem;
     pointer-events: none;
+    margin-right: 0.8rem;
 }
 
 .step-button-cvr .button .label {
@@ -44,7 +46,8 @@
 
 
 .step-button-cvr .button {
-    column-gap: 0.8rem;
+    line-height: 1.5;
+    padding: 1.1rem 2.4rem;
 }
 
 .step-button-cvr {display: inline-block;}
@@ -79,8 +82,10 @@
 }
 
 .step-title {
-    margin: 0 0 0.7rem;
+    margin: 0 0 .7rem;
     color: rgba(var(--step-text-color));
+    line-height: 1.222222;
+    letter-spacing: 0;
 }
 
 .step-description-cvr p {
@@ -88,6 +93,10 @@
     color: rgba(var(--step-text-color));
     letter-spacing: 0;
     line-height: 1.5;
+}
+.step-description-cvr a {
+    text-underline-offset: 3.5px;
+    color: rgba(var(--step-text-color));
 }
 .step-button-cvr {
     margin-top: 1.5rem;
@@ -179,6 +188,7 @@
     object-fit: cover;
     object-position: center;
     max-height: 70rem;
+    aspect-ratio: 1;
 }
 @media only screen and (max-width:989px){
     .step-by-step-cvr {
