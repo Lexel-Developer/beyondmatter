@@ -1850,25 +1850,11 @@
             "button_size": "medium",
             "button_style_secondary": true
           }
-        },
-        "step_by_step_kmB3Gy": {
-          "type": "step_by_step",
-          "settings": {
-            "step_title": "Title",
-            "block_description": "<p>Description </p>",
-            "popup_button_image": "shopify://shop_images/Bildschirmfoto_2024-08-06_um_08.52.42_2.jpg",
-            "button_icon": "shopify://shop_images/chat.svg",
-            "button_label": "Schaltflächenbeschriftung",
-            "button_id": "",
-            "button_size": "medium",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "step_by_step_gyjUNR",
-        "step_by_step_PaT3b4",
-        "step_by_step_kmB3Gy"
+        "step_by_step_PaT3b4"
       ],
       "settings": {
         "page_width": "narrow",
