@@ -129,6 +129,7 @@
       {%  assign share_title = article.title | strip %}
       {% assign share_image = article.image |  image_url %}
       <div class="intro_social_media">
+        <div class="social_share_title">TEILEN</div>
         {% comment %} {% render 'share-button', share_link: share_link, share_title: share_title, share_image: share_image %} {% endcomment %}
         <ul class="list-social list-unstyled">
           {%- if settings.share_facebook -%}

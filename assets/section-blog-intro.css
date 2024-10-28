@@ -93,7 +93,14 @@
     height: auto;
     transform: rotate(180deg);
 }
-
+.social_share_title {
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+    width: 40px;
+    margin-bottom: 70px;
+    margin-left: -5px;
+    color: #BAAB9E;
+}
 
 
 
@@ -133,6 +140,14 @@
     .blog-intro .title-wrapper .rich-text__heading {
         margin: 0;
         line-height: 1.2;
+    }
+    .social_share_title {
+        width: auto;
+        transform: none;
+        margin: 0;
+    }
+    .intro_social_media ul.list-social {
+        flex-direction: row;
     }
 }
 
