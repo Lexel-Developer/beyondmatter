@@ -67,8 +67,9 @@
             {%- endif -%}
 
           {%- when 'read_more'-%}
-            <div class="article-card__footer" {{ block.shopify_attributes }}>
+            <div class="article-card__footer button button--{{ block.settings.link_style }}" {{ block.shopify_attributes }}>
               <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">{{ 'blogs.article.read_more' | t }}</span>
+              {% render 'icon', icon: 'arrow' %}
             </div>
         {%- endcase -%}
       {%- endfor -%}

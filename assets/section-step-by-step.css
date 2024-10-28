@@ -35,7 +35,13 @@
     width: 100%;
     height: auto;
     max-width: 2.4rem;
+    pointer-events: none;
 }
+
+.step-button-cvr .button .label {
+    pointer-events: none;
+}
+
 
 .step-button-cvr .button {
     column-gap: 0.8rem;
@@ -144,8 +150,10 @@
     text-decoration: none;
     color: #000;
     cursor: pointer;
-    display: inline-block !important;
+    display: block !important;
     margin: 5px 0;
+    max-width: 2.2rem;
+    margin-left: auto;
   }
   .closepopup:before, .closepopup:after {
     height: 100%;

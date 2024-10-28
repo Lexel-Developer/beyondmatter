@@ -3773,15 +3773,29 @@ document.querySelectorAll('.content-with-tabs').forEach(container => {
 
 
 
-function showPopupAndUpdateDiv() {
-  document.querySelector(".show-popup-btn").classList.add('show');
-  document.querySelector("html").classList.add('overflow-hidden');
-  document.querySelector(".commonpopup").classList.add('show');
+const AllPopupButtons = document.querySelectorAll('.show-popup-btn');
+const AllCloseButtons = document.querySelectorAll('.closepopup');
+
+if(AllPopupButtons.length > 0){
+  AllPopupButtons.forEach(button=> button.addEventListener('click', showPopupAndUpdateDiv.bind(this)), true);
 }
-function hidePopupAndUpdateDiv() {
-  document.querySelector(".closepopup").classList.remove('show');
-  document.querySelector("html").classList.remove('overflow-hidden');
-  document.querySelector(".commonpopup").classList.remove('show');
+if(AllCloseButtons.length > 0){
+  AllCloseButtons.forEach(closeButton=> closeButton.addEventListener('click', hidePopupAndUpdateDiv.bind(this)), true);
 }
-document.querySelector(".show-popup-btn").addEventListener("click", showPopupAndUpdateDiv);
-document.querySelector(".closepopup").addEventListener("click", hidePopupAndUpdateDiv);
+
+function showPopupAndUpdateDiv(evt){
+  const _ = evt.target;
+  const popupModel = _?.closest('.step-by-step-cvr')?.querySelector('.commonpopup');
+  popupModel.classList.add('show');
+  _.classList.add('show');
+  document.documentElement.classList.add('overflow-hidden');
+}
+
+function hidePopupAndUpdateDiv(evt){
+  const _ = evt.target;
+  const closestPopupModel = _?.closest('.commonpopup');
+  const closestPopupOpenButton = _?.closest('.step-by-step-cvr')?.querySelector('.show-popup-btn');
+  closestPopupModel?.classList.remove('show');
+  closestPopupOpenButton.classList.remove('show');
+  document.documentElement.classList.remove('overflow-hidden');
+}

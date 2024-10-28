@@ -151,6 +151,24 @@
                     </div>
                   </div>
                 </div>
+                <div class="popup commonpopup">
+                  <div class="popup-content">
+                    <div class="popup-content-inr">
+                      <a class="closepopup"></a>
+                      <div class="prduct-content-main">
+                        {% if block.settings.popup_button_image != blank %}
+                          <div class="popup-button-image">
+                            {{
+                              block.settings.popup_button_image
+                              | image_url: width: 1920
+                              | image_tag: widths: '100, 200, 400, 700, 900, 1200, 1500, 1920', fetchpriority: fetchpriority
+                            }}
+                          </div>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
           {%- endcase -%}
         {%- endfor -%}
@@ -160,29 +178,6 @@
 </div>
 {%- if section.settings.show_divider %}</div>{% endif -%}
 
-<div class="popup commonpopup">
-  <div class="popup-content">
-    <div class="popup-content-inr">
-      <a class="closepopup"></a>
-      <div class="prduct-content-main">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'step_by_step' -%}
-              {% if block.settings.popup_button_image != blank %}
-                <div class="popup-button-image">
-                  {{
-                    block.settings.popup_button_image
-                    | image_url: width: 1920
-                    | image_tag: widths: '100, 200, 400, 700, 900, 1200, 1500, 1920', fetchpriority: fetchpriority
-                  }}
-                </div>
-              {% endif %}
-          {%- endcase -%}
-        {%- endfor -%}
-      </div>
-    </div>
-  </div>
-</div>
 
 {% schema %}
 {

@@ -1,0 +1,217 @@
+{%- style -%}
+    #shopify-section-{{ section.id }} {
+      --section-padding-top: {{ section.settings.padding_top }}px;
+      --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+
+      --section-padding-left: {{ section.settings.padding_left }}px;
+      --section-padding-right: {{ section.settings.padding_right }}px;
+      --section-margin-top: {{ section.settings.margin_top }}px;
+      --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
+      --primary-background: {{ section.settings.primary_background }};
+      --secondary-background: {{ section.settings.secondary_background }}
+    }
+    @media only screen and (max-width:749px){
+      #shopify-section-{{ section.id }} .section--padding {
+        --section-padding-top: {{ section.settings.mobile_padding_top }}px;
+        --section-padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+        padding-top:var(--section-padding-top);
+        padding-bottom:var(--section-padding-bottom);
+      }
+  }
+{%- endstyle -%}
+
+{{ 'section-blog-box.css' | asset_url | stylesheet_tag }}
+
+<div class="section--padding">
+  <div class="page-width--{{ section.settings.page_width }}">
+    <div class="blog-box-grid-row grid grid--1-col grid--2-col-desktop">
+      <div class="grid__item">
+        <div class="blog-box-image">
+            <img src="https://cdn.shopify.com/s/files/1/0848/0931/8728/files/gallery_2.jpg" alt="gallery_2">
+        </div>
+      </div>
+      <div class="grid__item">
+        <div class="blog-box-content">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog box",
+  "tag": "section",
+  "class": "section main-blog-box",
+  "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
+    {
+      "type": "header",
+      "content": "Section color"
+    },
+    {
+      "type": "color",
+      "label": "Primary Background",
+      "id": "primary_background",
+      "default": "#baab9e"
+    },
+    {
+      "type": "color",
+      "label": "Secondary Background",
+      "id": "secondary_background",
+      "default": "#d4cfcc"
+    },
+    {
+      "type": "header",
+      "content": "Grid Layout"
+    },
+    {
+      "type": "range",
+      "label": "Category Column Desktop",
+      "id": "category_column_desktop",
+      "default": 3,
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "unit": "Col"
+    },
+    {
+      "type": "select",
+      "label": "Category Column Mobile",
+      "id": "category_column_mobile",
+      "default": "1",
+      "options": [
+        {
+          "label": "1",
+          "value": "1"
+        },
+        {
+          "label": "2",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Mobile top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Mobile bottom padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Padding left",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding right",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin top",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin bottom",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog box"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}
