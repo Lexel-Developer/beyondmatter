@@ -110,7 +110,7 @@ html {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0rem;
     margin: 0 auto;
   }
 
@@ -2507,7 +2507,7 @@ input[type=checkbox] {
 
 .cart-count-bubble {
   position: absolute;
-  background-color: rgb(var(--color-base-accent));
+  background-color: #EDE9E9;
   color: rgb(var(--color-base-solid-button-labels));
   font-family: var(--font-button-family);
   height: 1.4rem;
@@ -2943,8 +2943,10 @@ search-modal {
 }
 
 /* Header cart drawer */
+
+/*
 summary .header__icon--summary::after,
-drawer-close-button.header__icon--summary::after,
+.disclosure__button.localization-form__select svg::after,
 drawer-close-button.header__icon--menu::after {
   content: '';
   position: absolute;
@@ -2955,6 +2957,7 @@ drawer-close-button.header__icon--menu::after {
   background-color: rgba(var(--color-foreground), 0.08);
   transition: transform var(--duration-default) ease;
 }
+  */
 
 details[open].menu-opening > summary .header__icon--summary::after {
   transform: scale(1);
@@ -2974,8 +2977,8 @@ drawer-close-button.header__icon--menu {
 }
 
 drawer-close-button.header__icon--menu {
-  right: auto;
-  left: 1rem;
+  right: 1rem;
+  left: auto;
 }
 
 drawer-close-button.header__icon--summary .icon-close,
@@ -3218,6 +3221,8 @@ details[open].menu-opening > .header__icon--menu span {
   .header-section--padding {
     padding-top: var(--section-padding-top);
     padding-bottom: var(--section-padding-bottom);
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
@@ -3767,7 +3772,7 @@ span[data-highlight=underline] mark svg path {
 }
 .section {
   margin-bottom: -1px;
-} 
+}
 
 @media only screen and (max-width: 767px) {
   .sub_title {
@@ -3781,6 +3786,3 @@ span[data-highlight=underline] mark svg path {
     margin-bottom: 3.6rem;
   }
 }
-
-
-

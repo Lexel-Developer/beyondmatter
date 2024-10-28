@@ -1,5 +1,8 @@
 {
   "general": {
+    "menu": {
+      "heading": "Categories"
+    },
     "password_page": {
       "login_form_heading": "Enter store using password:",
       "login_password_button": "Enter using password",
@@ -363,6 +366,7 @@
       "onboarding_content": "Give your customers a summary of your blog post"
     },
     "featured_collection": {
+      "view_all_products": "View all products",
       "view_all": "View all",
       "view_all_label": "View all products in the {{ collection_name }} collection"
     },

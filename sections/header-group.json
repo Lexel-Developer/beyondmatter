@@ -36,6 +36,30 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "mega_menu_LfbeFi": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "Shop",
+            "narrow": true,
+            "show_menu_image": true,
+            "promotion_select": "collection",
+            "promo_image_1": "shopify:\/\/shop_images\/after-before-image.png",
+            "promo_image_ratio_1": "landscape",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "Ava – Der Schutz\u2028für dein Smartphone",
+            "promo_text_1": "Für kurze Zeit 30% reduziert.",
+            "promo_overlay_content_1": false,
+            "promo_link_text": "Jetzt entdecken",
+            "promo_link_1": "shopify:\/\/products\/ava",
+            "featured_collection": "bestseller",
+            "featured_collection_heading": "Bestseller"
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_LfbeFi"
+      ],
       "settings": {
         "logo": "shopify:\/\/shop_images\/Logo_31760296-d4c8-4386-879a-48aef3eb2d74.svg",
         "logo_height": 50,
@@ -43,7 +67,7 @@
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_mobile": "main-menu",
-        "enable_dropdown_menu": false,
+        "enable_dropdown_menu": true,
         "show_line_separator": false,
         "uppercase_menu_items": false,
         "cart_icon": "bag",

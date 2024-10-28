@@ -19,25 +19,23 @@
   </a>
   {%- if link.links != blank or promo_images -%}
     <div class="list-menu-dropdown hidden">
-      <div class="page-width{% if block.settings.narrow %} page-width--inner{% endif %}">
+      <div class="list-menu-wrapper">
         {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 10rem) / 4), (min-width: 750px) calc((100vw - 10rem) / 3), calc(100vw - 3rem){%- endcapture -%}
 
         {%- if link.links != blank -%}
           <div class="list-mega-menu">
+            <div class="list-mega-menu__heading">{{ 'general.menu.heading' | t }}</div>
             {%- for childlink in link.links -%}
               <div class="mega-menu__item">
                 <a href="{{ childlink.url }}" class="mega-menu__item-link list-menu__item focus-inset{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                  {%- if childlink.type == 'collection_link' and childlink.object.image and block.settings.show_menu_image -%}
-                    <div class="image-animate media media--wide">
-                      {{ childlink.object.image | image_url: width: 1100 | image_tag:
-                        loading: 'lazy',
-                        class: 'motion-reduce',
-                        sizes: sizes,
-                        widths: '165, 360, 535, 750, 940, 1100',
-                        is: 'lazy-image'
-                      }}
-                    </div>
-                  {%- endif -%}
+                  {% assign collection_item = collections[childlink.handle] %}
+                  {{ collection_item.metafields.custom.menu_icon | image_url: width: 25 | image_tag:
+                    loading: 'lazy',
+                    class: 'image-fit',
+                    sizes: sizes,
+                    widths: '165, 360, 535, 750, 1100, 1500',
+                    is: 'lazy-image'
+                  }}
                   <div class="header__menu-item">
                     <span class="label">{{ childlink.title | escape }}</span>
                   </div>
@@ -62,61 +60,104 @@
           </div>
         {%- endif -%}
 
-        {%- if block.settings.promo_image_1 != blank -%}
-          <div class="mega-menu__promo{% if block.settings.promo_overlay_content_1 %} mega-menu__promo--overlay{% endif %}">
-            <a class="mega-menu__promo-link media-wrapper"{% if block.settings.promo_link_1 != blank %} href="{{ block.settings.promo_link_1 }}"{% else %} role="link" aria-disabled="true"{% endif %}>
-              <div class="image-animate media media--{{ block.settings.promo_image_ratio_1 }}"
-                style="--image-position: {{ block.settings.promo_image_position_1 }};{% if block.settings.promo_image_ratio_1 == 'adapt' %}--image-ratio-percent: {{ 1 | divided_by: block.settings.promo_image_1.aspect_ratio | times: 100 }}%;{% endif %}"
-              >
-                {{ block.settings.promo_image_1 | image_url: width: 1100 | image_tag:
-                  loading: 'lazy',
-                  class: 'motion-reduce',
-                  sizes: sizes,
-                  widths: '165, 360, 535, 750, 940, 1100',
-                  is: 'lazy-image'
-                }}
-              </div>
-              {%- if block.settings.promo_heading_1 != blank or block.settings.promo_text_1 != blank -%}
-                <div class="mega-menu__promo-content">
-                  {%- if block.settings.promo_heading_1 != blank -%}
-                    <div class="mega-menu__promo-heading">
-                      <span class="label">{{ block.settings.promo_heading_1 | escape }}</span>
-                    </div>
-                  {%- endif -%}
-                  <div class="mega-menu__promo-subheading">{{ block.settings.promo_text_1 | escape }}</div>
+        {% if block.settings.promotion_select == 'banner'%}
+          {%- if block.settings.promo_image_1 != blank -%}
+            <div class="mega-menu__promo{% if block.settings.promo_overlay_content_1 %} mega-menu__promo--overlay{% endif %}">
+              <div class="mega-menu__header">
+                <div class="mega-menu__promo-title">
+                  {{  block.settings.promo_title }}
                 </div>
-              {%- endif -%}
-            </a>
-          </div>
-        {%- endif -%}
-
-        {%- if block.settings.promo_image_2 != blank -%}
-          <div class="mega-menu__promo{% if block.settings.promo_overlay_content_2 %} mega-menu__promo--overlay{% endif %}">
-            <a class="mega-menu__promo-link media-wrapper"{% if block.settings.promo_link_2 != blank %} href="{{ block.settings.promo_link_2 }}"{% else %} role="link" aria-disabled="true"{% endif %}>
-              <div class="image-animate media media--{{ block.settings.promo_image_ratio_2 }}"
-                style="--image-position: {{ block.settings.promo_image_position_2 }};{% if block.settings.promo_image_ratio_2 == 'adapt' %}--image-ratio-percent: {{ 1 | divided_by: block.settings.promo_image_2.aspect_ratio | times: 100 }}%;{% endif %}"
-              >
-                {{ block.settings.promo_image_2 | image_url: width: 1100 | image_tag:
-                  loading: 'lazy',
-                  class: 'motion-reduce',
-                  sizes: sizes,
-                  widths: '165, 360, 535, 750, 940, 1100',
-                  is: 'lazy-image'
-                }}
-              </div>
-              {%- if block.settings.promo_heading_2 != blank or block.settings.promo_text_2 != blank -%}
-                <div class="mega-menu__promo-content">
-                  {%- if block.settings.promo_heading_2 != blank -%}
-                    <div class="mega-menu__promo-heading">
-                      <span class="label">{{ block.settings.promo_heading_2 | escape }}</span>
-                    </div>
-                  {%- endif -%}
-                  <div class="mega-menu__promo-subheading">{{ block.settings.promo_text_2 | escape }}</div>
+                <div class="mega-menu__products-all-link">
+                  <a href="/collections/all">{{ 'sections.featured_collection.view_all_products' | t }}</a>
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-arrow" fill="none" viewBox="0 0 14 10">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path>
+                  </svg>
                 </div>
-              {%- endif -%}
-            </a>
+              </div>
+              <div class="mega-menu__promo-link media-wrapper"{% if block.settings.promo_link_1 != blank %} href="{{ block.settings.promo_link_1 }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+                <div class="image-animate media media--{{ block.settings.promo_image_ratio_1 }}"
+                  style="--image-position: {{ block.settings.promo_image_position_1 }};{% if block.settings.promo_image_ratio_1 == 'adapt' %}--image-ratio-percent: {{ 1 | divided_by: block.settings.promo_image_1.aspect_ratio | times: 100 }}%;{% endif %}"
+                >
+                  {{ block.settings.promo_image_1 | image_url: width: 1100 | image_tag:
+                    loading: 'lazy',
+                    class: 'motion-reduce',
+                    sizes: sizes,
+                    widths: '165, 360, 535, 750, 940, 1100',
+                    is: 'lazy-image'
+                  }}
+                </div>
+                {%- if block.settings.promo_heading_1 != blank or block.settings.promo_text_1 != blank -%}
+                  <div class="mega-menu__promo-content">
+                    {%- if block.settings.promo_heading_1 != blank -%}
+                      <div class="mega-menu__promo-heading h1">
+                        <span class="label">{{ block.settings.promo_heading_1 | escape }}</span>
+                      </div>
+                    {%- endif -%}
+                    <div class="mega-menu__promo-subheading">
+                      {{ block.settings.promo_text_1 | escape }}
+                    </div>
+                    {% if block.settings.promo_link_text != blank %}
+                      <div class="mega-menu__button">
+                        <a href="{{ block.settings.promo_link_1 }}" class="button button--primary">{{ block.settings.promo_link_text }}</a>
+                      </div>
+                    {% endif %}
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        {% else %}
+          <div class="mega-menu__collection">
+            <div class="mega-menu__header">
+              <div class="mega-menu__promo-title">
+                {{  block.settings.featured_collection.title }}
+              </div>
+              <div class="mega-menu__products-all-link">
+                <a href="/collections/all">{{ 'sections.featured_collection.view_all_products' | t }}</a>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-arrow" fill="none" viewBox="0 0 14 10">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="mega-menu__collection-grid">
+              <ul id="Grid-{{ section.id }}"
+                class="product-grid grid"
+                role="list"{% if section.settings.horizontal_scroll %} is="scroll-snap-slider" data-draggable="true"{% endif %}
+              >
+                {%- for product in block.settings.featured_collection.products limit: 5 -%}
+                  <li id="Slide-{{ section.id }}-{{ forloop.index }}"
+                    class="grid__item"
+                  >
+                    {% render 'card-product',
+                      card_product: product,
+                      card_collection: block.settings.collection,
+                      media_size: 'square',
+                      enable_quick_view: false,
+                      enable_countdown: false
+                    %}
+                  </li>
+                {%- else -%}
+                  {%- for i in (1..4) -%}
+                    <li class="grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}">
+                      {% render 'card-product-placeholder', media_size: section.settings.image_ratio %}
+                    </li>
+                  {%- endfor -%}
+                {%- endfor -%}
+              </ul>
+              {% if section.settings.horizontal_scroll %}
+                <div class="slider-buttons no-js-hidden small-hide{% if section.settings.products_to_show <= 4 %} large-up-hide{% if section.settings.products_to_show <= 3 %} medium-hide{% endif %}{% endif %}">
+                  <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}" disabled="disabled">
+                    {% render 'icon', icon: 'arrow' %}
+                  </button>
+                  <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">
+                    {% render 'icon', icon: 'arrow' %}
+                  </button>
+                </div>
+              {% endif %}
+            </div>
           </div>
-        {%- endif -%}
+        {% endif %}
+        
       </div>
     </div>
   {%- endif -%}

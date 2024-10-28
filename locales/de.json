@@ -1,5 +1,8 @@
 {
   "general": {
+    "menu": {
+      "heading": "Kategorien"
+    },
     "password_page": {
       "login_form_heading": "Geben Sie den Store mit dem Passwort ein:",
       "login_password_button": "Mit Passwort eingeben",
@@ -363,6 +366,7 @@
       "onboarding_content": "Geben Sie Ihren Kunden eine Zusammenfassung Ihres Blog-Posts"
     },
     "featured_collection": {
+      "view_all_products": "Alle Produkte anzeigen",
       "view_all": "Alle anzeigen",
       "view_all_label": "Alle Produkte in der Kollektion {{ collection_name }} anzeigen"
     },

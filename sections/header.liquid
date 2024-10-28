@@ -161,10 +161,10 @@
   {%- if section.settings.cart_icon == 'bag' %}
     <symbol id="icon-cart" fill="none" viewbox="0 0 24 24">
       <path d="M4.29628 8.94089C4.32622 8.68939 4.5395 8.5 4.79278 8.5H19.2072C19.4605 8.5 19.6738 8.68939 19.7037 8.94089L21.2373 21.8227C21.3435 22.7151 20.6465 23.5 19.7478 23.5H4.25222C3.3535 23.5 2.6565 22.7151 2.76274 21.8227L4.29628 8.94089Z" stroke="#3C3C3C"/>
-      <mask id="path-2-inside-1_8356_2244" fill="white">
+      <mask id="path-2-inside-1_8655_1675" fill="white">
       <path d="M7 7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7V9H7V7Z"/>
       </mask>
-      <path d="M17 9V10H18V9H17ZM7 9H6V10H7V9ZM16 7V9H18V7H16ZM17 8H7V10H17V8ZM8 9V7H6V9H8ZM12 3C14.2091 3 16 4.79086 16 7H18C18 3.68629 15.3137 1 12 1V3ZM12 1C8.68629 1 6 3.68629 6 7H8C8 4.79086 9.79086 3 12 3V1Z" fill="#3C3C3C" mask="url(#path-2-inside-1_8356_2244)"/>
+      <path d="M17 9V10H18V9H17ZM7 9H6V10H7V9ZM16 7V9H18V7H16ZM17 8H7V10H17V8ZM8 9V7H6V9H8ZM12 3C14.2091 3 16 4.79086 16 7H18C18 3.68629 15.3137 1 12 1V3ZM12 1C8.68629 1 6 3.68629 6 7H8C8 4.79086 9.79086 3 12 3V1Z" fill="#3C3C3C" mask="url(#path-2-inside-1_8655_1675)"/>
     </symbol>
   {% else %}
     <symbol id="icon-cart" fill="none" viewbox="0 0 18 19">
@@ -173,7 +173,7 @@
       <path d="M3.72831 16.8554C3.72831 17.6005 4.33233 18.2045 5.07741 18.2045C5.8225 18.2045 6.42651 17.6005 6.42651 16.8554C6.42651 16.1104 5.8225 15.5063 5.07741 15.5063C4.33233 15.5063 3.72831 16.1104 3.72831 16.8554Z" fill="currentColor"/>
     </symbol>
   {% endif -%}
-  <symbol id="icon-close" fill="none" viewBox="0 0 12 12">
+  <symbol id="icon-close" fill="none" viewBox="5 0 8 8">
     <path d="M1 1L11 11" stroke="currentColor" stroke-linecap="round" fill="none"/>
     <path d="M11 1L1 11" stroke="currentColor" stroke-linecap="round" fill="none"/>
   </symbol>
@@ -185,6 +185,10 @@
     <path d="M0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20Z" fill="#F4F2F2"/>
     <path d="M10 19C10 21.3869 10.9482 23.6761 12.636 25.364C14.3239 27.0518 16.6131 28 19 28C21.3869 28 23.6761 27.0518 25.364 25.364C27.0518 23.6761 28 21.3869 28 19C28 16.6131 27.0518 14.3239 25.364 12.636C23.6761 10.9482 21.3869 10 19 10C16.6131 10 14.3239 10.9482 12.636 12.636C10.9482 14.3239 10 16.6131 10 19Z" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M25.5 25.5L31 31" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-search-clean" fill="none" viewBox="2 5 30 24">
+    <path d="M2.33337 12.833C2.33337 15.6178 3.43962 18.2885 5.40875 20.2576C7.37788 22.2268 10.0486 23.333 12.8334 23.333C15.6181 23.333 18.2889 22.2268 20.258 20.2576C22.2271 18.2885 23.3334 15.6178 23.3334 12.833C23.3334 10.0482 22.2271 7.37752 20.258 5.40839C18.2889 3.43925 15.6181 2.33301 12.8334 2.33301C10.0486 2.33301 7.37788 3.43925 5.40875 5.40839C3.43962 7.37752 2.33337 10.0482 2.33337 12.833Z" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20.4166 20.417L26.8333 26.8337" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
 </svg>
 
@@ -1105,6 +1109,23 @@
           "label": "t:sections.header.blocks.mega_menu.settings.show_menu_image.label"
         },
         {
+          "type": "select",
+          "id": "promotion_select",
+          "options": [
+            {
+              "value": "banner",
+              "label": "Banner"
+            },
+            {
+              "value": "collection",
+              "label": "Collection"
+            }
+          ],
+          "default": "banner",
+          "label": "Promotion selection",
+          "info": "Please choose whether you want to feature a collection or banner promotion"
+        },
+        {
           "type": "header",
           "content": "t:sections.header.blocks.mega_menu.settings.header__1.content"
         },
@@ -1188,6 +1209,12 @@
         },
         {
           "type": "text",
+          "id": "promo_title",
+          "label": "Promo Titel",
+          "default": "Aktion"
+        },
+        {
+          "type": "text",
           "id": "promo_heading_1",
           "label": "t:sections.header.blocks.mega_menu.settings.promo_heading_1.label"
         },
@@ -1203,112 +1230,28 @@
           "label": "t:sections.header.blocks.mega_menu.settings.promo_overlay_content_1.label"
         },
         {
+          "type": "text",
+          "id": "promo_link_text",
+          "label": "Promo link text"
+        },
+        {
           "type": "url",
           "id": "promo_link_1",
           "label": "t:sections.header.blocks.mega_menu.settings.promo_link_1.label"
         },
         {
           "type": "header",
-          "content": "t:sections.header.blocks.mega_menu.settings.header__2.content"
+          "content": "Featured Collection"
         },
         {
-          "type": "image_picker",
-          "id": "promo_image_2",
-          "label": "t:sections.header.blocks.mega_menu.settings.promo_image_2.label"
-        },
-        {
-          "type": "select",
-          "id": "promo_image_ratio_2",
-          "options": [
-            {
-              "value": "adapt",
-              "label": "t:sections.all.card_image_ratio.options__1.label"
-            },
-            {
-              "value": "square",
-              "label": "t:sections.all.card_image_ratio.options__2.label"
-            },
-            {
-              "value": "portrait",
-              "label": "t:sections.all.card_image_ratio.options__3.label"
-            },
-            {
-              "value": "landscape",
-              "label": "t:sections.all.card_image_ratio.options__4.label"
-            },
-            {
-              "value": "wide",
-              "label": "t:sections.all.card_image_ratio.options__5.label"
-            }
-          ],
-          "default": "adapt",
-          "label": "t:sections.all.card_image_ratio.label"
-        },
-        {
-          "type": "select",
-          "id": "promo_image_position_2",
-          "options": [
-            {
-              "value": "20% 0",
-              "label": "t:sections.all.image_position.options__1.label"
-            },
-            {
-              "value": "top center",
-              "label": "t:sections.all.image_position.options__2.label"
-            },
-            {
-              "value": "80% 0",
-              "label": "t:sections.all.image_position.options__3.label"
-            },
-            {
-              "value": "20% 50%",
-              "label": "t:sections.all.image_position.options__4.label"
-            },
-            {
-              "value": "center center",
-              "label": "t:sections.all.image_position.options__5.label"
-            },
-            {
-              "value": "80% 50%",
-              "label": "t:sections.all.image_position.options__6.label"
-            },
-            {
-              "value": "20% 100%",
-              "label": "t:sections.all.image_position.options__7.label"
-            },
-            {
-              "value": "bottom center",
-              "label": "t:sections.all.image_position.options__8.label"
-            },
-            {
-              "value": "80% 100%",
-              "label": "t:sections.all.image_position.options__9.label"
-            }
-          ],
-          "default": "center center",
-          "label": "t:sections.all.image_position.label",
-          "info": "t:sections.all.image_position.info"
+          "type": "collection",
+          "id": "featured_collection",
+          "label": "Featured Collection"
         },
         {
           "type": "text",
-          "id": "promo_heading_2",
-          "label": "t:sections.header.blocks.mega_menu.settings.promo_heading_2.label"
-        },
-        {
-          "type": "text",
-          "id": "promo_text_2",
-          "label": "t:sections.header.blocks.mega_menu.settings.promo_text_2.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "promo_overlay_content_2",
-          "default": false,
-          "label": "t:sections.header.blocks.mega_menu.settings.promo_overlay_content_2.label"
-        },
-        {
-          "type": "url",
-          "id": "promo_link_2",
-          "label": "t:sections.header.blocks.mega_menu.settings.promo_link_2.label"
+          "id": "featured_collection_heading",
+          "label": "Heading"
         }
       ]
     }
