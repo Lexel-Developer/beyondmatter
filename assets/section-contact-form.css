@@ -218,6 +218,10 @@
 .contact-form-section {
   color: rgb(var(--color-foreground));
 }
+.contact-form-section .title-wrapper .head_text {
+  letter-spacing: 0;
+  line-height: 1.5;
+}
 .contact-form-section .title-wrapper p {
   margin: 0;
   letter-spacing: 0;
@@ -245,9 +249,6 @@
 .contact .title-wrapper img:has(+.title) {
   margin-bottom: -17px;
 }
-.contact-form-section .field__input {
-  letter-spacing: 0;
-}
 .contact-form-section .button {
   line-height: 1.5;
 }
@@ -257,6 +258,8 @@
 .contact-form-section .field__input {
   letter-spacing: 0;
   height: 4.8rem;
+  line-height: 1.5;
+  font-size: 1.6rem;
 }
 
 
