@@ -279,9 +279,16 @@
                 {%- endif -%}
               {%- when 'download_button_block' -%}
                 {%- if block.settings.button_link2 != blank -%}
+                  {% if block.settings.button_link2 contains 'jpg' %}
+                    {% assign fileFormat = 'JPG' %}
+                  {% elsif block.settings.button_link2 contains 'png' %}
+                    {% assign fileFormat = 'PNG' %}
+                  {% elsif block.settings.button_link2 contains 'svg' %}
+                    {% assign fileFormat = 'SVG' %}
+                  {% endif %}
                     <a class="download-button-cta button {% if block.settings.button_style2 == "secondary" %} button--cta {% endif %} button--{{ block.settings.button_size2 }}"{% if block.settings.button_link2 != blank %} href="{{ block.settings.button_link2 }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }} download>
                       {% render 'icon', icon: 'down-arrow' %}
-                      <span class="label">{{ block.settings.button_label2 | escape }}<i>(PNG, 25kb)</i></span>
+                      <span class="label">{{ block.settings.button_label2 | escape }}<i>({% if fileFormat != blank %}{{ fileFormat }}{% endif %}{% if fileFormat != blank and block.settings.file_size != blank %},{% endif %}{% if block.settings.file_size != blank %} {{ block.settings.file_size }}{% endif %})</i></span>
                     </a>
                 {% else %}
                   <a class="download-button-cta button {% if block.settings.button_style2 == "secondary" %} button--cta {% endif %} button--{{ block.settings.button_size2 }}"{% if block.settings.download_image != blank %} href="{{ block.settings.download_image | image_url }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }} download>
@@ -1060,6 +1067,11 @@
           "type": "text",
           "id": "button_link2",
           "label": "File path"
+        },
+        {
+          "type": "text",
+          "id": "file_size",
+          "label": "File Size"
         },
         {
           "type": "select",

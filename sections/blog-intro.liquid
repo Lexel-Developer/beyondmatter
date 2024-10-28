@@ -61,7 +61,7 @@
       <div class="{% if section.settings.show_social_media %}intro_main_cover{% endif %} {% if section.settings.show_inside_box %} rich_box{% endif %}">
 
         {% if section.settings.show_back_link %}
-          <div class="back_link_cover"><a href="#" class="back_link">{% render 'icon', icon: 'arrow-right' %} Zurück zur Übersicht</a></div>
+          <div class="back_link_cover"><a href="{{ blog.url }}" class="back_link">{% render 'icon', icon: 'arrow-right' %} Zurück zur Übersicht</a></div>
         {% endif %}
 
         {% if section.settings.heading != blank %}
@@ -86,9 +86,13 @@
               </use-animate>
             {% endif %}
             {% if section.settings.button_label != blank %}
+              {% assign hasTypePDF = false %}
+              {% if section.settings.button_link contains '.pdf' %}
+                {% assign hasTypePDF = true %}
+              {% endif %}
               <a class="download-button-cta-rich button {% if section.settings.button_style == "secondary" %} button--cta {% endif %} button--{{ section.settings.button_size }}"{% if section.settings.button_link != blank %} href="{{ section.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} download>
                 {% render 'icon', icon: 'down-arrow' %}
-                <span class="label">{{ section.settings.button_label | escape }} <i>(PDF, 25kb)</i></span>
+              <span class="label">{{ section.settings.button_label | escape }} <i>({% if hasTypePDF == true %}PDF{% endif %}{% if hasTypePDF == true and section.settings.file_size != blank %}, {% endif %}{% if section.settings.file_size != blank %}{{ section.settings.file_size }}{% endif %})</i></span>
               </a>
             {% endif %}
 
@@ -107,7 +111,7 @@
                     {%- case block.type -%}
                       {%- when 'link_id' -%}
                         {% if block.settings.title != blank %}
-                          <li {{ block.shopify_attributes }}><a {% if block.settings.id != blank %}href="#{{ block.settings.id }}"{% else %} role="link" aria-disabled="true"{% endif %}>{{ block.settings.title }} {% render 'icon', icon: 'arrow' %}</a></li>
+                          <li {{ block.shopify_attributes }}><a {% if block.settings.id != blank %}href="{{ request.path }}/{{ block.settings.id }}"{% else %} role="link" aria-disabled="true"{% endif %}>{{ block.settings.title }} {% render 'icon', icon: 'arrow' %}</a></li>
                         {% endif %}
                     {% endcase %}
                   {% endfor %}
@@ -121,7 +125,96 @@
     </div>
     
     {% if section.settings.show_social_media %}
-      <div class="intro_social_media">Social media</div>
+      {% assign share_link = shop.url | append: request.path %}
+      {%  assign share_title = article.title | strip %}
+      {% assign share_image = article.image |  image_url %}
+      <div class="intro_social_media">
+        {% comment %} {% render 'share-button', share_link: share_link, share_title: share_title, share_image: share_image %} {% endcomment %}
+        <ul class="list-social list-unstyled">
+          {%- if settings.share_facebook -%}
+            <li class="list-social__item">
+              <a
+                class="list-social__link link link--text link-with-icon"
+                href="//www.facebook.com/sharer.php?u={{ share_link }}"
+                target="_blank"
+                rel="noopener"
+              >
+                {% render 'icon-brand', icon: 'facebook' %}
+                <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_on_facebook' | t }}</span>
+                <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.share_twitter -%}
+            <li class="list-social__item">
+              <a
+                class="list-social__link link link--text link-with-icon"
+                href="//twitter.com/intent/tweet?text={{ share_title | url_param_escape }}&amp;url={{ share_link }}"
+                target="_blank"
+                rel="noopener"
+              >
+                {% render 'icon-brand', icon: 'twitter' %}
+                <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_on_twitter' | t }}</span>
+                <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.share_pinterest -%}
+            <li class="list-social__item">
+              <a
+                class="list-social__link link link--text link-with-icon"
+                href="//pinterest.com/pin/create/button/?url={{ share_link }}&amp;media={{ share_image | image_url }}&amp;description={{ share_title | url_param_escape }}"
+                target="_blank"
+                rel="noopener"
+              >
+                {% render 'icon-brand', icon: 'pinterest' %}
+                <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_on_pinterest' | t }}</span>
+                <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.share_whatsapp -%}
+            <li class="list-social__item">
+              <a
+                class="list-social__link link link--text link-with-icon"
+                href="//web.whatsapp.com/send?text={{ share_link }}"
+                target="_blank"
+                rel="noopener"
+              >
+                {% render 'icon-brand', icon: 'whatsapp' %}
+                <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_on_whatsapp' | t }}</span>
+                <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.share_telegram -%}
+            <li class="list-social__item">
+              <a
+                class="list-social__link link link--text link-with-icon"
+                href="//telegram.me/share/url?url={{ share_link }}&amp;media={{ share_image | image_url }}"
+                target="_blank"
+                rel="noopener"
+              >
+                {% render 'icon-brand', icon: 'telegram' %}
+                <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_on_telegram' | t }}</span>
+                <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.share_email -%}
+            <li class="list-social__item">
+              <a
+                class="list-social__link link link--text link-with-icon"
+                href="mailto:?&subject={{ share_title | url_param_escape }}&body={{ share_link }}"
+              >
+                {% render 'icon-brand', icon: 'envelope' %}
+                <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_by_email' | t }}</span>
+                <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+        </ul>
+      </div>
     {% endif %}
 
   </div>
@@ -329,6 +422,11 @@
       "type": "text",
       "id": "button_link",
       "label": "File path"
+    },
+    {
+      "type": "text",
+      "id": "file_size",
+      "label": "File Size"
     },
     {
       "type": "select",

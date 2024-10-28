@@ -1476,7 +1476,13 @@
         "box_background": "#ffffff",
         "show_inside_box": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
       }
     },
     "contact_form_ABqemf": {
@@ -1941,6 +1947,7 @@
         "highlight_style": "marker",
         "button_label": "Ergebnisbericht herunterladen",
         "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0848\/0931\/8728\/files\/file-sample_150kB.pdf?v=1729853643",
+        "file_size": "142.79 KB",
         "button_size": "medium",
         "button_style": "primary",
         "show_social_media": true,
@@ -1976,6 +1983,7 @@
         "primary_background": "#ede9e9",
         "secondary_background": "#ede9e9",
         "colors_text": "#3c3c3c",
+        "background_text": "#ffffff",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",

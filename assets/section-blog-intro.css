@@ -43,6 +43,9 @@
     top: 50%;
     transform: translate(0, -50%);
 }
+.intro_social_media .list-social {
+    flex-direction: column;
+}
 .scroll_id ul {
     display: flex;
     column-gap: 3.9rem;

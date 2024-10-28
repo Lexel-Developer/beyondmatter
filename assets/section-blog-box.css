@@ -84,7 +84,7 @@
 }
 
 .blog-box-grid-row {
-    background: #fff;
+    background: rgba(var(--color-background));
     gap: 0;
     margin: 0;
 }
