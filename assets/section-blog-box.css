@@ -1,0 +1,122 @@
+
+.main-blog-box {
+    position: relative;
+}
+.main-blog-box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 57.5%;
+    pointer-events: none;
+    background-color: var(--primary-background);
+}
+.main-blog-box:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 43.5%;
+    pointer-events: none;
+    background-color: var(--secondary-background);
+}
+.main-blog-box>* {
+    position: relative;
+    z-index: 1;
+}
+
+.list-boxed ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6rem;
+    row-gap: 2rem;
+}
+
+.list-boxed ul li {
+    width: calc(100% / 2 - 30px);
+    display: inline-block;
+    word-break: break-word;
+}
+
+.list-boxed ul li a {
+    display: inline-flex;
+    align-items: center;
+    color: rgb(var(--color-heading));
+}
+
+.list-boxed ul li a svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 1rem;
+}
+
+.list-boxed ul li a {
+    text-decoration: none;
+}
+
+.blog-box-grid-row .title-wrapper {
+    margin-bottom: 4rem;
+}
+
+.blog-box-grid-row .title-wrapper p {
+    margin: 0;
+    color: rgb(var(--color-heading));
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+.blog-box-image {
+    height: 100%;
+}
+.blog-box-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.blog-box-grid-row .grid__item {
+    padding: 0;
+}
+
+.blog-box-grid-row {
+    background: #fff;
+    gap: 0;
+    margin: 0;
+}
+.blog-box-grid-row .title-wrapper .title {
+    margin-bottom: 1rem;
+}
+.blog-box-grid-row .grid__item .blog-box-content {
+    height: 100%;
+    padding: 5.5rem;
+}
+
+@media only screen and (min-width:990px){
+    .blog-box-grid-row .grid__item:first-child {
+        max-width: calc(34.55% - var(--grid-horizontal-spacing) / 2);
+    }
+}
+
+@media only screen and (max-width:749px){
+    .blog-box-grid-row .grid__item .blog-box-content {
+        padding: 1.5rem;
+    }
+    .blog-box-grid-row .title-wrapper {
+        margin-bottom: 2rem;
+    }    
+    .list-boxed ul {
+        column-gap: 2rem;
+    }    
+    .list-boxed ul li {
+        width: 100%;
+    }
+    .list-boxed ul {
+        row-gap: 1rem;
+    }
+
+}

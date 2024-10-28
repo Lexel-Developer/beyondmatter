@@ -28,7 +28,7 @@
 <div class="section--padding">
   <div class="page-width--{{ section.settings.page_width }}">
     {% if section.settings.show_inside_box == true %}<div class="posts_enable_big_box">{% endif %}
-    {% if section.settings.title != blank %}
+    {% if section.settings.title != blank or section.settings.button_label != blank%}
       <div class="title-wrapper {{ section.settings.heading_alignment }}">
         <div class="">
           {% if section.settings.title != blank %}
