@@ -29,34 +29,67 @@
 
 <div class="section--padding">
   <div class="page-width--{{ section.settings.page_width }}">
-    <div class="blog-box-grid-row grid grid--1-col grid--2-col-desktop">
-      <div class="grid__item">
-        <div class="blog-box-image">
-            <img src="https://cdn.shopify.com/s/files/1/0848/0931/8728/files/gallery_2.jpg" alt="gallery_2">
-        </div>
-      </div>
-      <div class="grid__item">
-        <div class="blog-box-content">
-          <div class="title-wrapper {{ section.settings.heading_alignment }}">
-            <div class="">
-                <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
-                  Schmerzbilder
-                </{{ section.settings.heading_tag }}>
-              <div class="description">
-                <p>Die meisten Themen rund um Elektrosmog sind komplexer Natur.  Nicht so einfach zu erklären. Wir haben es trotzdem versucht. Jedes Thema wird im praktischen Frage-Antwort-Format präsentiert. So kannst du jeden Argumentationsschritt einfach nachvollziehen.</p>
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'article' %}
+          {% assign article = block.settings.article %}
+          <div class="blog-box-grid-row grid grid--1-col grid--2-col-desktop">
+            {%if article.image %}
+              <div class="grid__item">
+                <div class="blog-box-image">
+                    {{ article.image | image_url: width: '1500' | image_tag }}
+                </div>
               </div>
+            {% endif %}
+            <div class="grid__item">
+              <div class="blog-box-content">
+                {% if block.settings.custom_text != blank or article.title != blank
+                  or block.settings.custom_description != blank or article.excerpt_or_content != blank
+                %}
+                  <div class="title-wrapper {{ section.settings.heading_alignment }}">
+                    <div class="">
+                      {% if block.settings.custom_text != blank %}
+                        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
+                          {{ block.settings.custom_text }}
+                        </{{ section.settings.heading_tag }}>
+                      {% else %}                      
+                        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
+                          {{ article.title }}
+                        </{{ section.settings.heading_tag }}>
+                      {% endif %}
+                      <div class="description">
+                        {% if block.settings.custom_description != blank %}
+                          {{ block.settings.custom_description }}
+                        {% else %}
+                          <p>{{ article.excerpt_or_content }}</p>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+                <div class="list-boxed">
+                  <ul>
+                    {% for i in (1..10) %}
+                      {% liquid
+                        capture text
+                        echo 'blog_box_text_' | append: forloop.index
+                        endcapture
+
+                        capture link
+                        echo 'blog_box_link_' | append: forloop.index
+                        endcapture
+                      %}
+                      {% if article.metafields.custom[text] != blank %}
+                      <li><a {% if article.metafields.custom[link] != blank %}href="{{ article.metafields.custom[link] }}"{% endif %}><span>{{ article.metafields.custom[text] }}</span>{% render 'icon', icon: 'arrow' %}</a></li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
             </div>
-        </div>
-        <div class="list-boxed">
-          <ul>
-            <li><a href="#"><span>Gesundheitsrisiken</span>{% render 'icon', icon: 'arrow' %}</a></li>
-            <li><a href="#"><span>Heilungskrisen</span>{% render 'icon', icon: 'arrow' %}</a></li>
-            <li><a href="#"><span>Schlafstorungen</span>{% render 'icon', icon: 'arrow' %}</a></li>
-            <li><a href="#"><span>Elektrohypersensitivittat</span>{% render 'icon', icon: 'arrow' %}</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+          </div>  
+        </div>  
+      {% endcase %}
+    {% endfor %}
   </div>
 </div>
 
@@ -65,6 +98,47 @@
   "name": "Blog box",
   "tag": "section",
   "class": "section main-blog-box",
+  "blocks":[
+    {
+      "type": "article",
+      "name": "article",
+      "settings": [
+        {
+          "type": "article",
+          "id": "article",
+          "label": "article"
+        },
+        {
+          "type": "text",
+          "id": "custom_text",
+          "label": "Custom Text"
+        },
+        {
+          "type": "richtext",
+          "id": "custom_description",
+          "label": "Custom Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_image",
+          "default": true,
+          "label": "t:sections.main-blog.settings.show_image.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_title",
+          "default": true,
+          "label": "Show title"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_description",
+          "default": true,
+          "label": "Show description"
+        }
+      ]
+    }
+  ],
   "settings": [
     {
       "type": "select",

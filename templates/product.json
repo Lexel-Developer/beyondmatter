@@ -218,7 +218,7 @@
         "box_background": "#ffffff",
         "title_color": "#3c3c3c",
         "sub_text_color": "#3c3c3c",
-        "star_icon_color": "#BAAB9E",
+        "star_icon_color": "#baab9e",
         "text_color": "#000000",
         "background_color": "#fffefe",
         "category_column_desktop": 3,
@@ -233,262 +233,65 @@
         "margin_bottom": 0
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "product_list_limit": 4,
-        "show_divider": false,
-        "heading": "You May Also Like",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "heading_tag": "h2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "image_ratio": "portrait",
-        "image_position": "center center",
-        "enable_image_fill": true,
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
-        "show_quick_buy": true,
-        "enable_quick_view": true,
-        "enable_color_swatches": true,
-        "enable_countdown": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "recently-viewed-products": {
-      "type": "recently-viewed-products",
-      "settings": {
-        "show_divider": false,
-        "heading": "Recently Viewed",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "heading_tag": "h2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "image_ratio": "portrait",
-        "image_position": "center center",
-        "enable_image_fill": true,
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
-        "show_quick_buy": true,
-        "enable_quick_view": true,
-        "enable_color_swatches": true,
-        "enable_countdown": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "testimonials": {
-      "type": "testimonials",
+    "image_with_text_d3gfjn": {
+      "type": "image-with-text",
       "blocks": {
-        "testimonial-0": {
-          "type": "testimonial",
+        "subheading_6rByY6": {
+          "type": "subheading",
           "settings": {
-            "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "Author's name"
+            "subheading": "<p><em>Optionale Dachzeile<\/em><\/p>",
+            "sub_text_color": "#baab9e"
           }
         },
-        "testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "Author's name"
-          }
-        },
-        "testimonial-2": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "Author's name"
-          }
-        },
-        "testimonial-3": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "Author's name"
-          }
-        },
-        "testimonial-4": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "Author's name"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial-0",
-        "testimonial-1",
-        "testimonial-2",
-        "testimonial-3",
-        "testimonial-4"
-      ],
-      "settings": {
-        "autorotate": false,
-        "autorotate_speed": 5,
-        "hide_images": false,
-        "show_divider": false,
-        "heading": "Testimonials",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "heading_tag": "h2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
+        "heading_aNfMPW": {
           "type": "heading",
           "settings": {
-            "heading": "Express yourself with",
+            "heading": "Guter Schlaf ist nicht selbstverständlich. <br>Mit SAMSON schon.",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>#instagram<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": true,
-            "highlight_phrases": "",
-            "highlight_style": "marker"
-          }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "subheading_6rByY6",
+        "heading_aNfMPW"
       ],
       "settings": {
         "page_width": "standard",
-        "show_inside_box": false,
-        "enable_intro_title": false,
-        "intro_title": "Intro-Titel",
-        "content_width": 900,
-        "box_alignment": "box_left",
-        "text_alignment": "center",
-        "mobile_text_alignment": "center",
-        "horizontal_content": false,
-        "narrow": false,
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#baab9e",
+        "main_description": "<p>Der Alltag hat für jeden von uns immer mehr Herausforderungen und Eindrücke parat. Egal, ob beruflicher oder privater Natur, sind wir Stress ausgesetzt und es werden eher mehr als weniger Stressquellen. Neben diesen gibt es noch Quellen von Stress, deren wir uns meist nicht bewusst sind: elektromagnetische Felder. Elektrosmog. Und genau diese Stressquelle kannst du mit SAMSON ausschalten. Die ästhetisch hochwertige Kugel blockt Elektrosmog nicht nur, sondern macht diesen zu einer Energiequelle für dich.<\/p>",
+        "enable_main_image": false,
+        "image": "shopify:\/\/shop_images\/images-5.png",
+        "image_position": "top center",
+        "layout": "text_first",
+        "desktop_box_spacing": 50,
+        "mobile_box_spacing": 20,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "480px",
+        "enlarge_content": "medium",
         "show_divider": false,
-        "use_custom_colors": false,
-        "primary_background": "#baab9e",
-        "secondary_background": "#d4cfcc",
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
         "colors_button_label": "#ffffff",
-        "colors_button_background": "#1a1b18",
-        "colors_text": "#212326",
-        "colors_highlight": "#bbff00",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ffffff",
         "gradient_background": "",
-        "padding_top": 36,
-        "padding_bottom": 28,
-        "mobile_padding_top": 36,
-        "mobile_padding_bottom": 36,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
         "padding_left": 0,
         "padding_right": 0,
         "margin_top": 0,
         "margin_bottom": 0
-      }
-    },
-    "gallery": {
-      "type": "gallery",
-      "blocks": {
-        "image-0": {
-          "type": "image",
-          "settings": {
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "link": "",
-            "text_box_position": "middle-center"
-          }
-        },
-        "image-1": {
-          "type": "image",
-          "settings": {
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h4",
-            "heading": "",
-            "heading_size": "h3",
-            "link": "",
-            "text_box_position": "middle-center"
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "#summerMe",
-            "heading_size": "h3",
-            "link": "",
-            "text_box_position": "middle-center"
-          }
-        },
-        "image-3": {
-          "type": "image",
-          "settings": {
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "link": "",
-            "text_box_position": "middle-center"
-          }
-        },
-        "image-4": {
-          "type": "image",
-          "settings": {
-            "image_position": "center center",
-            "subheading": "",
-            "subheading_size": "h5",
-            "heading": "",
-            "heading_size": "h3",
-            "link": "",
-            "text_box_position": "middle-center"
-          }
-        }
-      },
-      "block_order": [
-        "image-0",
-        "image-1",
-        "image-2",
-        "image-3",
-        "image-4"
-      ],
-      "settings": {
-        "per_row": 5,
-        "spacing_images": 4,
-        "image_height": 280,
-        "apply_overlay": true,
-        "full_width": false,
-        "show_divider": false,
-        "heading": "",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "heading_tag": "h2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "mobile_image_height": 160,
-        "padding_top": 0,
-        "padding_bottom": 4
       }
     }
   },
@@ -496,10 +299,6 @@
     "empty-space",
     "main",
     "testimonials_2_UdgYGq",
-    "product-recommendations",
-    "recently-viewed-products",
-    "testimonials",
-    "rich-text",
-    "gallery"
+    "image_with_text_d3gfjn"
   ]
 }
