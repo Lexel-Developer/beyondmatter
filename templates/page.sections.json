@@ -1422,41 +1422,12 @@
     },
     "featured_posts_pJrfGq": {
       "type": "featured-posts",
-      "blocks": {
-        "title_t9rJXD": {
-          "type": "title",
-          "settings": {
-            "show_date": false,
-            "show_author": false,
-            "show_comment_count": false
-          }
-        },
-        "summary_Y8DhK8": {
-          "type": "summary",
-          "settings": {
-          }
-        },
-        "read_more_biR6hz": {
-          "type": "read_more",
-          "settings": {
-            "link_style": "cta"
-          }
-        }
-      },
-      "block_order": [
-        "title_t9rJXD",
-        "summary_Y8DhK8",
-        "read_more_biR6hz"
-      ],
       "settings": {
         "page_width": "standard",
         "text_alignment": "left",
         "columns_desktop": 3,
         "columns_mobile": "1",
         "image_ratio": "wide",
-        "show_image": true,
-        "show_title": true,
-        "show_description": true,
         "title": "Unsere Studien",
         "heading_size": "h1",
         "heading_alignment": "left",
@@ -1934,6 +1905,7 @@
       ],
       "settings": {
         "page_width": "narrow",
+        "back_link_title": "Zurück zur Übersicht",
         "show_back_link": true,
         "show_inside_box": false,
         "heading": "Ein Schutz vor Elektrosmog, \u2028der hält, was er verspricht.",
@@ -1965,7 +1937,6 @@
         "colors_button_background": "#d4cfcc",
         "colors_text": "#212326",
         "colors_highlight": "#bbff00",
-        "gradient_background": "",
         "padding_top": 80,
         "padding_bottom": 80,
         "mobile_padding_top": 80,
@@ -1978,6 +1949,22 @@
     },
     "blog_box_zDzXFC": {
       "type": "blog-box",
+      "blocks": {
+        "article_ceAnDF": {
+          "type": "article",
+          "settings": {
+            "article": "ratgeber\/elektrosmog-was-ist-bioelektrizitaet",
+            "custom_text": "",
+            "custom_description": "",
+            "show_image": true,
+            "show_title": true,
+            "show_description": true
+          }
+        }
+      },
+      "block_order": [
+        "article_ceAnDF"
+      ],
       "settings": {
         "page_width": "standard",
         "primary_background": "#ede9e9",
