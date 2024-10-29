@@ -77,33 +77,87 @@
     height: 100%;
     display: block;
     object-fit: cover;
+    aspect-ratio: 1;
 }
 
 .blog-box-grid-row .grid__item {
     padding: 0;
 }
 
-.blog-box-grid-row {
+
+.blog-box-content {
     background: rgba(var(--color-background));
-    gap: 0;
-    margin: 0;
+    padding: 6rem;
+    height: 100%;
 }
 .blog-box-grid-row .title-wrapper .title {
     margin-bottom: 1rem;
 }
 .blog-box-grid-row .grid__item .blog-box-content {
-    height: 100%;
     padding: 5.5rem;
 }
 
-@media only screen and (min-width:990px){
-    .blog-box-grid-row .grid__item:first-child {
-        max-width: calc(34.55% - var(--grid-horizontal-spacing) / 2);
+.blog-box-grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.image--grid__item {
+    width: 30%;
+}
+
+.content--grid__item {
+    width: calc(100% - 30%);
+}
+
+.main-section-grid.grid {
+    row-gap: 3rem;
+}
+
+
+.main-section-grid.grid--2-col-desktop .blog-box-grid-row {
+    flex-direction: column;
+}
+.main-section-grid.grid--2-col-desktop .content--grid__item, .main-section-grid.grid--2-col-desktop .image--grid__item {
+    width: 100%;
+}
+.main-section-grid.grid--2-col-desktop .content--grid__item .blog-box-content {
+    padding: 3rem;
+}
+.elementor-heading-title {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    margin: 0;
+    font-family: var(--font-body-family);
+}
+.main-section-grid .content--grid__item {
+    flex-grow: 1;
+}
+@media only screen and (max-width:990px){
+    .main-section-grid.grid--1-col-mobile .grid__item {
+        max-width: 100%;
+        width: 100%;
+    }
+    .main-section-grid.grid--2-col-desktop.list-boxed ul {
+        flex-direction: column;
+    }
+    
+    .main-section-grid.grid--2-col-desktop.list-boxed ul li {
+        width: 100%;
+    }
+    .image--grid__item {
+        width: 100%;
+    }
+    
+    .content--grid__item {
+        width: 100%;
     }
 }
 
 @media only screen and (max-width:749px){
-    .blog-box-grid-row .grid__item .blog-box-content {
+    .blog-box-grid-row .blog-box-content {
         padding: 1.5rem;
     }
     .blog-box-grid-row .title-wrapper {

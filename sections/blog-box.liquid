@@ -29,19 +29,21 @@
 
 <div class="section--padding">
   <div class="page-width--{{ section.settings.page_width }}">
+    <div class="main-section-grid grid grid--1-col-mobile grid--{{ section.settings.columns_desktop }}-col-desktop">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'article' %}
           {% assign article = block.settings.article %}
-          <div class="blog-box-grid-row grid grid--1-col grid--2-col-desktop">
+          <div class="grid__item">
+          <div class="blog-box-grid-row">
             {%if article.image %}
-              <div class="grid__item">
+              <div class="image--grid__item">
                 <div class="blog-box-image">
                     {{ article.image | image_url: width: '1500' | image_tag }}
                 </div>
               </div>
             {% endif %}
-            <div class="grid__item">
+            <div class="content--grid__item">
               <div class="blog-box-content">
                 {% if block.settings.custom_text != blank or article.title != blank
                   or block.settings.custom_description != blank or article.excerpt_or_content != blank
@@ -61,12 +63,13 @@
                         {% if block.settings.custom_description != blank %}
                           {{ block.settings.custom_description }}
                         {% else %}
-                          <p>{{ article.excerpt_or_content }}</p>
+                          {{ article.excerpt_or_content }}
                         {% endif %}
                       </div>
                     </div>
                   </div>
                 {% endif %}
+                {% if article.metafields.custom != blank %}
                 <div class="list-boxed">
                   <ul>
                     {% for i in (1..10) %}
@@ -85,12 +88,15 @@
                     {% endfor %}
                   </ul>
                 </div>
+              {% endif %}
             </div>
           </div>  
+        </div>  
         </div>  
       {% endcase %}
     {% endfor %}
   </div>
+</div>
 </div>
 
 {% schema %}
@@ -287,33 +293,23 @@
     },
     {
       "type": "header",
-      "content": "Grid Layout"
-    },
-    {
-      "type": "range",
-      "label": "Category Column Desktop",
-      "id": "category_column_desktop",
-      "default": 3,
-      "min": 2,
-      "max": 5,
-      "step": 1,
-      "unit": "Col"
+      "content": "Desktop layout"
     },
     {
       "type": "select",
-      "label": "Category Column Mobile",
-      "id": "category_column_mobile",
-      "default": "1",
+      "id": "columns_desktop",
       "options": [
         {
-          "label": "1",
-          "value": "1"
+          "value": "1",
+          "label": "t:sections.all.mobile_layout.columns_mobile.options__1.label"
         },
         {
-          "label": "2",
-          "value": "2"
+          "value": "2",
+          "label": "t:sections.all.mobile_layout.columns_mobile.options__2.label"
         }
-      ]
+      ],
+      "default": "1",
+      "label": "Number of columns on desktop"
     },
     {
       "type": "header",
