@@ -145,14 +145,15 @@
         padding: 0.2rem 0.6rem;
         min-height: 4.2rem;
     }
-}
-
-@media only screen and (max-width:749px){
-    .grid {
+    .section-featured-post .grid {
         --grid-horizontal-spacing: 2rem;
         row-gap: 2rem;
     }    
-    .grid .grid__item {
+    .section-featured-post .grid .grid__item {
         padding-bottom: 0;
+    }
+    .section-featured-post .grid--1-col-mobile .grid__item{
+        max-width: 100%;
+        width: 100%;
     }
 }
