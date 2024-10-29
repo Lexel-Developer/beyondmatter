@@ -238,7 +238,7 @@
         "show_quick_buy": true,
         "show_datails_button": true,
         "enable_quick_view": true,
-        "enable_color_swatches": true,
+        "enable_color_swatches": false,
         "enable_countdown": true,
         "cart_buttons_outline": true,
         "details_buttons_outline": false,
@@ -917,30 +917,50 @@
     "featured_posts_pJrfGq": {
       "type": "featured-posts",
       "blocks": {
-        "title_t9rJXD": {
-          "type": "title",
+        "article_pdfF6J": {
+          "type": "article",
           "settings": {
+            "article": "ratgeber\/elektrosmog-wie-elektromagnetische-felder-den-koerper-beeinflussen",
+            "show_image": true,
+            "show_title": true,
+            "show_description": true,
             "show_date": false,
             "show_author": false,
-            "show_comment_count": false
+            "show_comment_count": false,
+            "link_style": "cta"
           }
         },
-        "summary_Y8DhK8": {
-          "type": "summary",
+        "article_CpefGk": {
+          "type": "article",
           "settings": {
+            "article": "ratgeber\/elektrosmog-was-ist-elektrosmog",
+            "show_image": true,
+            "show_title": true,
+            "show_description": true,
+            "show_date": false,
+            "show_author": false,
+            "show_comment_count": false,
+            "link_style": "cta"
           }
         },
-        "read_more_biR6hz": {
-          "type": "read_more",
+        "article_tRwVbF": {
+          "type": "article",
           "settings": {
+            "article": "ratgeber\/elektrosmog-was-ist-bioelektrizitaet",
+            "show_image": true,
+            "show_title": true,
+            "show_description": true,
+            "show_date": false,
+            "show_author": false,
+            "show_comment_count": false,
             "link_style": "cta"
           }
         }
       },
       "block_order": [
-        "title_t9rJXD",
-        "summary_Y8DhK8",
-        "read_more_biR6hz"
+        "article_pdfF6J",
+        "article_CpefGk",
+        "article_tRwVbF"
       ],
       "settings": {
         "page_width": "standard",
@@ -948,9 +968,6 @@
         "columns_desktop": 3,
         "columns_mobile": "1",
         "image_ratio": "wide",
-        "show_image": true,
-        "show_title": true,
-        "show_description": true,
         "title": "Unsere Studien",
         "heading_size": "h1",
         "heading_alignment": "left",

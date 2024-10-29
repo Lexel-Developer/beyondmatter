@@ -61,7 +61,9 @@
       <div class="{% if section.settings.show_social_media %}intro_main_cover{% endif %} {% if section.settings.show_inside_box %} rich_box{% endif %}">
 
         {% if section.settings.show_back_link %}
-          <div class="back_link_cover"><a href="{{ blog.url }}" class="back_link">{% render 'icon', icon: 'arrow-right' %} Zurück zur Übersicht</a></div>
+          {% if section.settings.back_link_title != blank %}
+          <div class="back_link_cover"><a href="{{ blog.url }}" class="back_link">{% render 'icon', icon: 'arrow-right' %} {{  section.settings.back_link_title }}</a></div>
+          {% endif %}
         {% endif %}
 
         {% if section.settings.heading != blank %}
@@ -111,7 +113,7 @@
                     {%- case block.type -%}
                       {%- when 'link_id' -%}
                         {% if block.settings.title != blank %}
-                          <li {{ block.shopify_attributes }}><a {% if block.settings.id != blank %}href="{{ request.path }}/{{ block.settings.id }}"{% else %} role="link" aria-disabled="true"{% endif %}>{{ block.settings.title }} {% render 'icon', icon: 'arrow' %}</a></li>
+                          <li {{ block.shopify_attributes }}><a {% if block.settings.id != blank %}href="{{ request.path }}#{{ block.settings.id }}"{% else %} role="link" aria-disabled="true"{% endif %}>{{ block.settings.title }} {% render 'icon', icon: 'arrow' %}</a></li>
                         {% endif %}
                     {% endcase %}
                   {% endfor %}
@@ -125,9 +127,11 @@
     </div>
     
     {% if section.settings.show_social_media %}
-      {% assign share_link = shop.url | append: request.path %}
-      {%  assign share_title = article.title | strip %}
-      {% assign share_image = article.image |  image_url %}
+      {%comment%}
+        {% assign share_link = shop.url | append: request.path %}
+        {%  assign share_title = article.title | strip %}
+        {% assign share_image = article.image |  image_url %}
+      {% endcomment %}
       <div class="intro_social_media">
         <div class="social_share_title">TEILEN</div>
         {% comment %} {% render 'share-button', share_link: share_link, share_title: share_title, share_image: share_image %} {% endcomment %}
@@ -136,12 +140,38 @@
             <li class="list-social__item">
               <a
                 class="list-social__link link link--text link-with-icon"
-                href="//www.facebook.com/sharer.php?u={{ share_link }}"
+              {% if settings.facebook_link != blank %}href="{{ settings.facebook_link }}"{% endif %}
                 target="_blank"
                 rel="noopener"
               >
-                {% render 'icon-brand', icon: 'facebook' %}
+                {% render 'icon-brand', icon: 'facebook-new' %}
                 <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_on_facebook' | t }}</span>
+                <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.share_whatsapp -%}
+            <li class="list-social__item">
+              <a
+                class="list-social__link link link--text link-with-icon"
+              {% if settings.whatsapp_link != blank %}href="{{ settings.whatsapp_link }}"{% endif %}
+                target="_blank"
+                rel="noopener"
+              >
+                {% render 'icon-brand', icon: 'whatsapp-new' %}
+                <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_on_whatsapp' | t }}</span>
+                <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
+          {%- if settings.share_email -%}
+            <li class="list-social__item">
+              <a
+                class="list-social__link link link--text link-with-icon"
+              {% if settings.email_link != blank %}href="{{ settings.email_link }}"{% endif %}
+              >
+                {% render 'icon-brand', icon: 'envelope-new' %}
+                <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_by_email' | t }}</span>
                 <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
               </a>
             </li>
@@ -150,11 +180,11 @@
             <li class="list-social__item">
               <a
                 class="list-social__link link link--text link-with-icon"
-                href="//twitter.com/intent/tweet?text={{ share_title | url_param_escape }}&amp;url={{ share_link }}"
+              {% if settings.twitter_link != blank %}href="{{ settings.twitter_link }}"{% endif %}
                 target="_blank"
                 rel="noopener"
               >
-                {% render 'icon-brand', icon: 'twitter' %}
+                {% render 'icon-brand', icon: 'twitter-new' %}
                 <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_on_twitter' | t }}</span>
                 <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
               </a>
@@ -164,7 +194,7 @@
             <li class="list-social__item">
               <a
                 class="list-social__link link link--text link-with-icon"
-                href="//pinterest.com/pin/create/button/?url={{ share_link }}&amp;media={{ share_image | image_url }}&amp;description={{ share_title | url_param_escape }}"
+              {% if settings.pinterest_link != blank %}href="{{ settings.pinterest_link }}"{% endif %}
                 target="_blank"
                 rel="noopener"
               >
@@ -174,42 +204,16 @@
               </a>
             </li>
           {%- endif -%}
-          {%- if settings.share_whatsapp -%}
-            <li class="list-social__item">
-              <a
-                class="list-social__link link link--text link-with-icon"
-                href="//web.whatsapp.com/send?text={{ share_link }}"
-                target="_blank"
-                rel="noopener"
-              >
-                {% render 'icon-brand', icon: 'whatsapp' %}
-                <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_on_whatsapp' | t }}</span>
-                <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
-              </a>
-            </li>
-          {%- endif -%}
           {%- if settings.share_telegram -%}
             <li class="list-social__item">
               <a
                 class="list-social__link link link--text link-with-icon"
-                href="//telegram.me/share/url?url={{ share_link }}&amp;media={{ share_image | image_url }}"
+              {% if settings.telegram_link != blank %}href="{{ settings.telegram_link }}"{% endif %}
                 target="_blank"
                 rel="noopener"
               >
                 {% render 'icon-brand', icon: 'telegram' %}
                 <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_on_telegram' | t }}</span>
-                <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
-              </a>
-            </li>
-          {%- endif -%}
-          {%- if settings.share_email -%}
-            <li class="list-social__item">
-              <a
-                class="list-social__link link link--text link-with-icon"
-                href="mailto:?&subject={{ share_title | url_param_escape }}&body={{ share_link }}"
-              >
-                {% render 'icon-brand', icon: 'envelope' %}
-                <span class="visually-hidden" aria-hidden="true">{{ 'general.social.alt_text.share_by_email' | t }}</span>
                 <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
               </a>
             </li>
@@ -257,6 +261,12 @@
       ],
       "default": "standard",
       "label": "Section width"
+    },
+    {
+      "type": "text",
+      "label": "Back link title",
+      "id": "back_link_title",
+      "default": "Zurück zur Übersicht"
     },
     {
       "type": "checkbox",
@@ -603,11 +613,6 @@
       "id": "colors_highlight",
       "label": "t:sections.all.colors.colors_highlight.label",
       "default": "#bbff00"
-    },
-    {
-      "type": "color_background",
-      "id": "gradient_background",
-      "label": "t:sections.all.colors.gradient_background.label"
     },
     {
       "type": "header",

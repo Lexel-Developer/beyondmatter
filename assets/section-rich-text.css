@@ -209,10 +209,14 @@
   font-style: italic;  
   letter-spacing: 0;
 }
+.download-button-cta-rich {
+  line-height: 1.5;
+}
+
 @media screen and (min-width: 990px) {
 
   .download-button-cta-rich {
-    padding: 1rem 3.35rem;
+    padding: 1.2rem 2.4rem;
   }
 }
 

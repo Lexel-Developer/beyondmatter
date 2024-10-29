@@ -912,10 +912,20 @@
         "label": "t:settings_schema.social-media.settings.share_facebook.label"
       },
       {
+        "type": "text",
+        "id": "facebook_link",
+        "label": "Facebook Share Link"
+      },
+      {
         "type": "checkbox",
         "id": "share_twitter",
         "default": true,
         "label": "t:settings_schema.social-media.settings.share_twitter.label"
+      },
+      {
+        "type": "text",
+        "id": "twitter_link",
+        "label": "Twitter Share Link"
       },
       {
         "type": "checkbox",
@@ -924,10 +934,20 @@
         "label": "t:settings_schema.social-media.settings.share_pinterest.label"
       },
       {
+        "type": "text",
+        "id": "pinterest_link",
+        "label": "Pinterest Share Link"
+      },
+      {
         "type": "checkbox",
         "id": "share_whatsapp",
         "default": true,
         "label": "t:settings_schema.social-media.settings.share_whatsapp.label"
+      },
+      {
+        "type": "text",
+        "id": "whatsapp_link",
+        "label": "Whatsapp Share Link"
       },
       {
         "type": "checkbox",
@@ -936,10 +956,20 @@
         "label": "t:settings_schema.social-media.settings.share_telegram.label"
       },
       {
+        "type": "text",
+        "id": "telegram_link",
+        "label": "Telegram Share Link"
+      },
+      {
         "type": "checkbox",
         "id": "share_email",
         "default": true,
         "label": "t:settings_schema.social-media.settings.share_email.label"
+      },
+      {
+        "type": "text",
+        "id": "email_link",
+        "label": "Email Share Link"
       },
       {
         "type": "header",

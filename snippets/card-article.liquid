@@ -8,7 +8,7 @@
   - image_ratio: {String} The setting either show the article image ratio
 
   Usage:
-  {% render 'card-article', blog: blog, article: article, show_image: section.settings.show_image, image_ratio: section.settings.image_ratio %}
+  {% render 'card-article', blog: blog, article: article, show_image: block.settings.show_image, image_ratio: section.settings.image_ratio %}
 {% endcomment %}
 
 <article class="article-card{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
@@ -31,48 +31,41 @@
     {%- endif -%}
 
     <div class="article-card__info">
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'title'-%}
-            <header class="article-card__header" {{ block.shopify_attributes }}>
-              <h3 class="article-card__title h3" id="Article-{{ article.id }}">
-                {{ article.title | escape }}
-              </h3>
-              <div>
-                {%- if block.settings.show_date -%}
-                  <span class="circle-divider caption-with-letter-spacing light">
-                    {{- article.published_at | time_tag: format: 'month_day_year' -}}
-                  </span>
-                {%- endif -%}
-                {%- if block.settings.show_author -%}
-                  <span class="circle-divider caption-with-letter-spacing light">{{ article.author }}</span>
-                {%- endif -%}
-                {%- if block.settings.show_comment_count and article.comments_count > 0 and blog.comments_enabled? -%}
-                  <span class="circle-divider caption-with-letter-spacing light">{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
-                {%- endif -%}
-              </div>
-            </header>
+      <header class="article-card__header" {{ block.shopify_attributes }}>
+        <h3 class="article-card__title h3" id="Article-{{ article.id }}">
+          {{ article.title | escape }}
+        </h3>
+        <div>
+          {%- if block.settings.show_date -%}
+            <span class="circle-divider caption-with-letter-spacing light">
+              {{- article.published_at | time_tag: format: 'month_day_year' -}}
+            </span>
+          {%- endif -%}
+          {%- if block.settings.show_author -%}
+            <span class="circle-divider caption-with-letter-spacing light">{{ article.author }}</span>
+          {%- endif -%}
+          {%- if block.settings.show_comment_count and article.comments_count > 0 and blog.comments_enabled? -%}
+            <span class="circle-divider caption-with-letter-spacing light">{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+          {%- endif -%}
+        </div>
+      </header>
 
-          {%- when 'summary'-%}
-            {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-              <p class="article-card__excerpt rte" {{ block.shopify_attributes }}>
-                {%- liquid
-                  if article.excerpt.size > 0
-                    echo article.excerpt | strip_html | truncatewords: 30
-                  else
-                    echo article.content | strip_html | truncatewords: 30
-                  endif
-                -%}
-              </p>
-            {%- endif -%}
+      {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+        <p class="article-card__excerpt rte" {{ block.shopify_attributes }}>
+          {%- liquid
+            if article.excerpt.size > 0
+              echo article.excerpt | strip_html | truncatewords: 30
+            else
+              echo article.content | strip_html | truncatewords: 30
+            endif
+          -%}
+        </p>
+      {%- endif -%}
 
-          {%- when 'read_more'-%}
-            <div class="article-card__footer button button--{{ block.settings.link_style }}" {{ block.shopify_attributes }}>
-              <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">{{ 'blogs.article.read_more' | t }}</span>
-              {% render 'icon', icon: 'arrow' %}
-            </div>
-        {%- endcase -%}
-      {%- endfor -%}
+      <div class="article-card__footer button button--{{ block.settings.link_style }}" {{ block.shopify_attributes }}>
+        <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">{{ 'blogs.article.read_more' | t }}</span>
+        {% render 'icon', icon: 'arrow' %}
+      </div>
     </div>
   </a>
 </article>

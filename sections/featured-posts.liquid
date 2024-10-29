@@ -75,14 +75,20 @@
     <div
       class="grid grid--2-col{% if section.settings.columns_mobile == '1' %} grid--1-col-mobile{% endif %} grid--rigid grid--{{ section.settings.columns_desktop }}-col-desktop"
     >
-      {%- for article in blogs.ratgeber.articles -%}
-        <div class="blog-articles__article article grid__item {% if section.settings.show_title == false %}article-title_hide{% endif %} {% if section.settings.show_description == false %}article-title_description{% endif %}">
-          {%- render 'card-article',
-            article: article,
-            show_image: section.settings.show_image,
-            image_ratio: section.settings.image_ratio
-          -%}
-        </div>
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {% when 'article' %}
+            {% if block.settings.article != blank %}
+              <div class="blog-articles__article article grid__item {% if block.settings.show_title == false %}article-title_hide{% endif %} {% if block.settings.show_description == false %}article-title_description{% endif %}">
+                {%- render 'card-article',
+                  block: block,
+                  article: block.settings.article,
+                  show_image: block.settings.show_image,
+                  image_ratio: section.settings.image_ratio
+                -%}
+              </div>
+            {% endif %}
+        {% endcase %}
       {%- endfor -%}
     </div>
     {% if section.settings.show_inside_box == true %}</div>{% endif %}
@@ -204,24 +210,6 @@
       "default": "landscape",
       "label": "t:sections.all.card_image_ratio.label",
       "info": "t:sections.main-blog.settings.image_ratio.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_image",
-      "default": true,
-      "label": "t:sections.main-blog.settings.show_image.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_title",
-      "default": true,
-      "label": "Show title"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_description",
-      "default": true,
-      "label": "Show description"
     },
     {
       "type": "header",
@@ -505,10 +493,32 @@
   ],
   "blocks": [
     {
-      "type": "title",
-      "name": "t:sections.main-blog.blocks.title.name",
-      "limit": 1,
+      "type": "article",
+      "name": "article",
       "settings": [
+        {
+          "type": "article",
+          "id": "article",
+          "label": "article"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_image",
+          "default": true,
+          "label": "t:sections.main-blog.settings.show_image.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_title",
+          "default": true,
+          "label": "Show title"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_description",
+          "default": true,
+          "label": "Show description"
+        },
         {
           "type": "checkbox",
           "id": "show_date",
@@ -526,19 +536,7 @@
           "id": "show_comment_count",
           "default": false,
           "label": "t:sections.main-blog.blocks.title.settings.show_comment_count.label"
-        }
-      ]
-    },
-    {
-      "type": "summary",
-      "name": "t:sections.main-blog.blocks.summary.name",
-      "limit": 1
-    },
-    {
-      "type": "read_more",
-      "name": "t:sections.main-blog.blocks.read_more.name",
-      "limit": 1,
-      "settings": [
+        },
         {
           "type": "select",
           "id": "link_style",
