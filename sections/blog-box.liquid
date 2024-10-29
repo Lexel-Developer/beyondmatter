@@ -104,47 +104,6 @@
   "name": "Blog box",
   "tag": "section",
   "class": "section main-blog-box",
-  "blocks":[
-    {
-      "type": "article",
-      "name": "article",
-      "settings": [
-        {
-          "type": "article",
-          "id": "article",
-          "label": "article"
-        },
-        {
-          "type": "text",
-          "id": "custom_text",
-          "label": "Custom Text"
-        },
-        {
-          "type": "richtext",
-          "id": "custom_description",
-          "label": "Custom Description"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_image",
-          "default": true,
-          "label": "t:sections.main-blog.settings.show_image.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_title",
-          "default": true,
-          "label": "Show title"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_description",
-          "default": true,
-          "label": "Show description"
-        }
-      ]
-    }
-  ],
   "settings": [
     {
       "type": "select",
@@ -152,7 +111,7 @@
       "options": [
         {
           "value": "narrow",
-          "label": "Narrow"
+          "label": "Schmal"
         },
         {
           "value": "standard",
@@ -160,51 +119,51 @@
         },
         {
           "value": "wide",
-          "label": "Wide"
+          "label": "Breit"
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "Groß"
         },
         {
           "value": "full-width",
-          "label": "Full-Width"
+          "label": "Volle Breite"
         }
       ],
       "default": "standard",
-      "label": "Section width"
+      "label": "Abschnittsbreite"
     },
     {
       "type": "header",
-      "content": "Section color"
+      "content": "Abschnittsfarbe"
     },
     {
       "type": "color",
-      "label": "Primary Background",
+      "label": "Primäre Hintergrundfarbe",
       "id": "primary_background",
       "default": "#baab9e"
     },
     {
       "type": "color",
-      "label": "Secondary Background",
+      "label": "Sekundäre Hintergrundfarbe",
       "id": "secondary_background",
       "default": "#d4cfcc"
     },
     {
       "type": "color",
       "id": "colors_text",
-      "label": "Text color",
+      "label": "Textfarbe",
       "default": "#212326"
     },
     {
       "type": "color",
       "id": "background_text",
-      "label": "Background Color",
+      "label": "Hintergrundfarbe",
       "default": "#ffffff"
     },
     {
       "type": "header",
-      "content": "Heading header"
+      "content": "Überschrift"
     },
     {
       "type": "select",
@@ -293,7 +252,7 @@
     },
     {
       "type": "header",
-      "content": "Desktop layout"
+      "content": "Desktop-Layout"
     },
     {
       "type": "select",
@@ -309,7 +268,7 @@
         }
       ],
       "default": "1",
-      "label": "Number of columns on desktop"
+      "label": "Anzahl der Spalten auf dem Desktop"
     },
     {
       "type": "header",
@@ -342,7 +301,7 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "Mobile top padding",
+      "label": "Mobiles oberes Padding",
       "default": 36
     },
     {
@@ -352,12 +311,12 @@
       "max": 200,
       "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "Mobile bottom padding",
+      "label": "Mobiles unteres Padding",
       "default": 36
     },
     {
       "type": "range",
-      "label": "Padding left",
+      "label": "Padding links",
       "id": "padding_left",
       "default": 0,
       "min": 0,
@@ -367,7 +326,7 @@
     },
     {
       "type": "range",
-      "label": "Padding right",
+      "label": "Padding rechts",
       "id": "padding_right",
       "default": 0,
       "min": 0,
@@ -377,7 +336,7 @@
     },
     {
       "type": "range",
-      "label": "Margin top",
+      "label": "Abstand oben",
       "id": "margin_top",
       "default": 0,
       "min": 0,
@@ -387,13 +346,54 @@
     },
     {
       "type": "range",
-      "label": "Margin bottom",
+      "label": "Abstand unten",
       "id": "margin_bottom",
       "default": 0,
       "min": 0,
       "max": 100,
       "step": 1,
       "unit": "px"
+    }
+  ],
+  "blocks":[
+    {
+      "type": "article",
+      "name": "article",
+      "settings": [
+        {
+          "type": "article",
+          "id": "article",
+          "label": "article"
+        },
+        {
+          "type": "text",
+          "id": "custom_text",
+          "label": "Benutzerdefinierter Text"
+        },
+        {
+          "type": "richtext",
+          "id": "custom_description",
+          "label": "Benutzerdefinierte Beschreibung"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_image",
+          "default": true,
+          "label": "t:sections.main-blog.settings.show_image.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_title",
+          "default": true,
+          "label": "Titel anzeigen"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_description",
+          "default": true,
+          "label": "Beschreibung anzeigen"
+        }
+      ]
     }
   ],
   "presets": [
