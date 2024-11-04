@@ -30,61 +30,61 @@
 <div class="section--padding">
   <div class="page-width--{{ section.settings.page_width }}">
     <div class="main-section-grid grid grid--1-col-mobile grid--{{ section.settings.columns_desktop }}-col-desktop">
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'article' %}
-          {% assign article = block.settings.article %}
-          <div class="grid__item">
+        <div class="grid__item">
           <div class="blog-box-grid-row">
-            {%if article.image %}
+            {% if section.settings.image %}
               <div class="image--grid__item">
                 <div class="blog-box-image">
-                    {{ article.image | image_url: width: '1500' | image_tag }}
+                    {{ section.settings.image | image_url: width: '1500' | image_tag }}
                 </div>
               </div>
             {% endif %}
             <div class="content--grid__item">
               <div class="blog-box-content">
-                {% if block.settings.custom_text != blank or article.title != blank
-                  or block.settings.custom_description != blank or article.excerpt_or_content != blank
+                {% if section.settings.heading != blank or section.settings.description != blank
                 %}
                   <div class="title-wrapper {{ section.settings.heading_alignment }}">
                     <div class="">
-                      {% if block.settings.custom_text != blank %}
+                      {% if section.settings.heading != blank %}
                         <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
-                          {{ block.settings.custom_text }}
-                        </{{ section.settings.heading_tag }}>
-                      {% else %}                      
-                        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
-                          {{ article.title }}
+                          {{ section.settings.heading }}
                         </{{ section.settings.heading_tag }}>
                       {% endif %}
                       <div class="description">
-                        {% if block.settings.custom_description != blank %}
-                          {{ block.settings.custom_description }}
-                        {% else %}
-                          {{ article.excerpt_or_content }}
+                        {% if section.settings.description != blank %}
+                          {{ section.settings.description }}
                         {% endif %}
                       </div>
                     </div>
                   </div>
                 {% endif %}
-                {% if article.metafields.custom != blank %}
+                {% assign counter = 0 %}
+                {% for block in section.blocks %}
+                  {% case block.type %}
+                  {% when 'article' %}
+                    {% assign counter = counter | plus: 1 %}
+                  {% endcase %}
+                {% endfor %}
+                {% if counter > 0 %}
                 <div class="list-boxed">
                   <ul>
-                    {% for i in (1..10) %}
-                      {% liquid
-                        capture text
-                        echo 'blog_box_text_' | append: forloop.index
-                        endcapture
-
-                        capture link
-                        echo 'blog_box_link_' | append: forloop.index
-                        endcapture
-                      %}
-                      {% if article.metafields.custom[text] != blank %}
-                      <li><a {% if article.metafields.custom[link] != blank %}href="{{ article.metafields.custom[link] }}"{% endif %}><span>{{ article.metafields.custom[text] }}</span>{% render 'icon', icon: 'arrow' %}</a></li>
-                      {% endif %}
+                    {% for block in section.blocks %}
+                      {% case block.type %}
+                      {% when 'article' %} 
+                        {% assign article = block.settings.article %}
+                        {% if article != blank %}
+                          <li>
+                            <a {% if article.url %}href="{{ article }}"{% endif %}>
+                              {% if block.settings.custom_text != blank %}
+                                <span>{{ block.settings.custom_text }}</span>
+                                {% else %}
+                                <span>{{ article.title }}</span>
+                              {% endif %}
+                              {% render 'icon', icon: 'arrow' %} 
+                            </a>
+                          </li>
+                        {% endif %}
+                      {% endcase %}
                     {% endfor %}
                   </ul>
                 </div>
@@ -92,9 +92,7 @@
             </div>
           </div>  
         </div>  
-        </div>  
-      {% endcase %}
-    {% endfor %}
+      </div>
   </div>
 </div>
 </div>
@@ -132,6 +130,27 @@
       ],
       "default": "standard",
       "label": "Abschnittsbreite"
+    },
+    {
+      "type": "header",
+      "content": "Abschnitt Inhalt"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Bild"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Überschrift",
+      "default": "Blog Box Überschrift"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Beschreibung",
+      "default": "<p>Blog Box Beschreibung</p>"
     },
     {
       "type": "header",
@@ -369,29 +388,6 @@
           "type": "text",
           "id": "custom_text",
           "label": "Benutzerdefinierter Text"
-        },
-        {
-          "type": "richtext",
-          "id": "custom_description",
-          "label": "Benutzerdefinierte Beschreibung"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_image",
-          "default": true,
-          "label": "t:sections.main-blog.settings.show_image.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_title",
-          "default": true,
-          "label": "Titel anzeigen"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_description",
-          "default": true,
-          "label": "Beschreibung anzeigen"
         }
       ]
     }
