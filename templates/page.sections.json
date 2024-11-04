@@ -810,6 +810,8 @@
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "300px",
         "show_text_below": false,
+        "primary_background": "#ffffff",
+        "secondary_background": "#ffffff",
         "box_background": "#ffffff",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#d4cfcc",
@@ -1036,10 +1038,10 @@
             "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
             "main_title3": 78,
             "progress_label3": "verzeichnen weniger Haarausfall",
-            "enbale_icon": true,
             "button_label": "Studie ansehen",
             "button_link": "#",
-            "button_style": "cta"
+            "button_style": "cta",
+            "enbale_icon": true
           }
         },
         "iwt_block_JyQUML": {
@@ -1057,10 +1059,10 @@
             "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
             "main_title3": 78,
             "progress_label3": "verzeichnen weniger Haarausfall",
-            "enbale_icon": true,
             "button_label": "Studie ansehen",
             "button_link": "#",
-            "button_style": "cta"
+            "button_style": "cta",
+            "enbale_icon": true
           }
         },
         "iwt_block_8NHhnF": {
@@ -1078,10 +1080,10 @@
             "progress_label2": "hatten einen klinisch nachgewiesenen Rückgang",
             "main_title3": 50,
             "progress_label3": "verzeichnen weniger Haarausfall",
-            "enbale_icon": true,
             "button_label": "Studie ansehen",
             "button_link": "#",
-            "button_style": "cta"
+            "button_style": "cta",
+            "enbale_icon": true
           }
         }
       },
@@ -1937,7 +1939,6 @@
         "text_alignment": "left",
         "mobile_text_alignment": "left",
         "horizontal_content": false,
-        "narrow": false,
         "show_divider": false,
         "use_custom_colors": true,
         "primary_background": "#f4f2f2",

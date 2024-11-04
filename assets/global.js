@@ -3702,7 +3702,7 @@ customElements.define('localization-form', LocalizationForm);
 
 // Image with tabs js
 
-document.querySelectorAll('.image-with-text__grid').forEach(container => {
+function initializeTabs(container) {
   const tabContents2 = container.querySelectorAll('.iwt-tab-data-main-cvr');
   const tabTargets2 = container.querySelectorAll('.tab-target');
 
@@ -3717,17 +3717,17 @@ document.querySelectorAll('.image-with-text__grid').forEach(container => {
     if (activeTabTarget2) activeTabTarget2.classList.add("active");
   }
 
-  function swatchImage(clickedSelector, selectorID){
+  function swatchImage(clickedSelector, selectorID) {
     const closestContainer = clickedSelector?.closest('.image-with-text__grid');
     const allImages = closestContainer?.querySelectorAll('use-animate');
-    if(allImages.length > 0){
-      allImages.forEach(container=>{
+    if (allImages.length > 0) {
+      allImages.forEach(container => {
         const containerId = container.getAttribute('data-id');
         container.classList.add('hidden');
-        if(containerId == selectorID){
+        if (containerId === selectorID) {
           container.classList.remove('hidden');
         }
-      })
+      });
     }
   }
 
@@ -3739,12 +3739,28 @@ document.querySelectorAll('.image-with-text__grid').forEach(container => {
       switchTab(target.getAttribute("rel"));
       swatchImage(target, target.getAttribute("rel"));
     });
-    if(target.classList.contains('active')){
+    if (target.classList.contains('active')) {
       let selectedTab = target.getAttribute("rel");
       swatchImage(target, selectedTab);  
     }
   });
+}
+
+document.querySelectorAll('.image-with-text__grid').forEach(initializeTabs);
+
+const observer = new MutationObserver((mutationsList) => {
+  for (const mutation of mutationsList) {
+    if (mutation.type === 'childList') {
+      document.querySelectorAll('.image-with-text__grid').forEach(initializeTabs);
+    }
+  }
 });
+
+observer.observe(document.body, {
+  childList: true,
+  subtree: true
+});
+
 
 // Content with tab js
 
