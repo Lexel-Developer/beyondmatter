@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -16,20 +25,20 @@
           "type": "question",
           "settings": {
             "title": "Wo wird  Shungit abgebaut?",
-            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.<\/p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         },
         "question_qjMftJ": {
           "type": "question",
           "settings": {
             "title": "Wo wird  Shungit abgebaut?",
-            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.<\/p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         }
       },
@@ -44,7 +53,7 @@
         "accordion_icon": "plus_minus",
         "accordion_alignment": "left",
         "desktop_accordion_width": 100,
-        "subtitle": "<em>Optionale Dachzeile<\/em>",
+        "subtitle": "<em>Optionale Dachzeile</em>",
         "heading": "Häufig gestellte Fragen zum Händlerprogramm",
         "description": "",
         "heading_size": "h1",
@@ -80,30 +89,30 @@
           "type": "question",
           "settings": {
             "title": "Wie hoch ist der Versand?",
-            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         },
         "question_CfW6hn": {
           "type": "question",
           "settings": {
             "title": "Welche Möglichkeiten des Widerrufs stehen mir zu?",
-            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         },
         "question_3kp7dV": {
           "type": "question",
           "settings": {
             "title": "Welche Materialien werden für die Verpackung genutzt?",
-            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.<\/p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         }
       },
@@ -155,30 +164,30 @@
           "type": "question",
           "settings": {
             "title": "Wie hoch ist der Versand?",
-            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         },
         "question_L8Fdy4": {
           "type": "question",
           "settings": {
             "title": "Welche Möglichkeiten des Widerrufs stehen mir zu?",
-            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         },
         "question_dpWcN6": {
           "type": "question",
           "settings": {
             "title": "Welche Materialien werden für die Verpackung genutzt?",
-            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.<\/p>",
+            "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         }
       },
@@ -230,60 +239,60 @@
           "type": "question",
           "settings": {
             "title": "Analyse von Rohstoffen und Lieferketten",
-            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         },
         "question_U88c8f": {
           "type": "question",
           "settings": {
             "title": "Hochwertiges Studiendesign",
-            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         },
         "question_bXnrWb": {
           "type": "question",
           "settings": {
             "title": "Umfangreiche Stichproben",
-            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         },
         "question_icdVna": {
           "type": "question",
           "settings": {
             "title": "Randomisierte Tests",
-            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         },
         "question_frXgiK": {
           "type": "question",
           "settings": {
             "title": "Doppelt verblindete Tests",
-            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         },
         "question_ThEpr4": {
           "type": "question",
           "settings": {
             "title": "Reproduzierbare Studienergebnisse",
-            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.<\/p>",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften, werden diese sorgfältigst auf Reinheit und Belastungen geprüft.</p>",
             "author_name": "Adam",
             "author_position": "Web designer",
-            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites<\/strong>.<\/p>"
+            "author_description": "<p><strong>Driven and experienced web designer with a passion for creating compelling and visually appealing websites</strong>.</p>"
           }
         }
       },
@@ -304,7 +313,7 @@
         "desktop_accordion_width": 67,
         "subtitle": "",
         "heading": "Wir denken ganzheitlich.",
-        "description": "<p>Unser Anspruch ist es, höchste Qualität und Effektivität zu bieten. Angefangen bei der Auswahl und Analyse der Rohstoffe über die Sorgfalt bei Lieferketten bis zur Auswahl von Partnern und Instituten und der Hochwertigkeit der Studiendesigns.<\/p>",
+        "description": "<p>Unser Anspruch ist es, höchste Qualität und Effektivität zu bieten. Angefangen bei der Auswahl und Analyse der Rohstoffe über die Sorgfalt bei Lieferketten bis zur Auswahl von Partnern und Instituten und der Hochwertigkeit der Studiendesigns.</p>",
         "heading_size": "h1",
         "text_size": "typeset",
         "heading_alignment": "left",
@@ -339,9 +348,9 @@
           "settings": {
             "rating_text": "Sterne",
             "review_star": 3.5,
-            "author_name": "Stephan Huerzeler\u2028",
+            "author_name": "Stephan Huerzeler ",
             "author_position": "über Amazon",
-            "author_description": "<p>Ein tolles Produkt. Man hat den<\/p><p> Unterschied direkt gemerkt. Ich habe in jedem Zimmer eine Kugel stehen und fühle mich seitdem sehr wohl.<\/p>"
+            "author_description": "<p>Ein tolles Produkt. Man hat den</p><p> Unterschied direkt gemerkt. Ich habe in jedem Zimmer eine Kugel stehen und fühle mich seitdem sehr wohl.</p>"
           }
         },
         "column_rMzXbr": {
@@ -349,9 +358,9 @@
           "settings": {
             "rating_text": "Sterne",
             "review_star": 3.5,
-            "author_name": "Stephan Huerzeler\u2028",
+            "author_name": "Stephan Huerzeler ",
             "author_position": "über Amazon",
-            "author_description": "<p>Ein tolles Produkt. Man hat den<\/p><p> Unterschied direkt gemerkt. Ich habe in jedem Zimmer eine Kugel stehen und fühle mich seitdem sehr wohl.<\/p>"
+            "author_description": "<p>Ein tolles Produkt. Man hat den</p><p> Unterschied direkt gemerkt. Ich habe in jedem Zimmer eine Kugel stehen und fühle mich seitdem sehr wohl.</p>"
           }
         },
         "column_JNeAXx": {
@@ -359,9 +368,9 @@
           "settings": {
             "rating_text": "Sterne",
             "review_star": 3.5,
-            "author_name": "Stephan Huerzeler\u2028",
+            "author_name": "Stephan Huerzeler ",
             "author_position": "über Amazon",
-            "author_description": "<p>Ein tolles Produkt. Man hat den<\/p><p> Unterschied direkt gemerkt. Ich habe in jedem Zimmer eine Kugel stehen und fühle mich seitdem sehr wohl.<\/p>"
+            "author_description": "<p>Ein tolles Produkt. Man hat den</p><p> Unterschied direkt gemerkt. Ich habe in jedem Zimmer eine Kugel stehen und fühle mich seitdem sehr wohl.</p>"
           }
         }
       },
@@ -372,7 +381,7 @@
       ],
       "settings": {
         "page_width": "standard",
-        "subtitle": "<em>Rezensionen<\/em>",
+        "subtitle": "<em>Rezensionen</em>",
         "title": "Das sagen unsere Kunden",
         "heading_size": "h1",
         "heading_alignment": "left",
@@ -411,7 +420,7 @@
             "enable_button": false,
             "enable_check_icon": false,
             "product_1": "yay-samson",
-            "description": "<p>Description<\/p>",
+            "description": "<p>Description</p>",
             "rating_text": "Rating title",
             "review_star": 5,
             "button_label": "Button label",
@@ -424,7 +433,7 @@
             "enable_button2": false,
             "enable_check_icon2": false,
             "product_2": "yay-ra",
-            "description2": "<p>Description<\/p>",
+            "description2": "<p>Description</p>",
             "rating_text2": "Rating title",
             "review_star2": 5,
             "button_label2": "Button label",
@@ -443,7 +452,7 @@
             "enable_button": false,
             "enable_check_icon": false,
             "product_1": "",
-            "description": "<p>At vero eos et accusam et justo duo dolores et ea <\/p><p>rebum. Stet clita kasd gubergren, no sea<\/p><p> takimata sanctus est Lorem ipsum dolor sit amet.<\/p>",
+            "description": "<p>At vero eos et accusam et justo duo dolores et ea </p><p>rebum. Stet clita kasd gubergren, no sea</p><p> takimata sanctus est Lorem ipsum dolor sit amet.</p>",
             "rating_text": "Rating title",
             "review_star": 5,
             "button_label": "Button label",
@@ -456,7 +465,7 @@
             "enable_button2": false,
             "enable_check_icon2": false,
             "product_2": "",
-            "description2": "<p>At vero eos et accusam et justo duo dolores et ea<\/p><p> rebum. Stet clita kasd gubergren, no sea<\/p><p> takimata sanctus est Lorem ipsum dolor sit amet.<\/p>",
+            "description2": "<p>At vero eos et accusam et justo duo dolores et ea</p><p> rebum. Stet clita kasd gubergren, no sea</p><p> takimata sanctus est Lorem ipsum dolor sit amet.</p>",
             "rating_text2": "Rating title",
             "review_star2": 5,
             "button_label2": "Button label",
@@ -475,7 +484,7 @@
             "enable_button": false,
             "enable_check_icon": false,
             "product_1": "",
-            "description": "<p>At vero eos et accusam et justo duo dolores et ea<\/p><p> rebum. Stet clita kasd gubergren, no sea<\/p><p> takimata sanctus est Lorem ipsum dolor sit amet.<\/p>",
+            "description": "<p>At vero eos et accusam et justo duo dolores et ea</p><p> rebum. Stet clita kasd gubergren, no sea</p><p> takimata sanctus est Lorem ipsum dolor sit amet.</p>",
             "rating_text": "Rating title",
             "review_star": 5,
             "button_label": "Button label",
@@ -488,7 +497,7 @@
             "enable_button2": false,
             "enable_check_icon2": false,
             "product_2": "",
-            "description2": "<p>At vero eos et accusam et justo duo dolores et ea<\/p><p> rebum. Stet clita kasd gubergren, no sea<\/p><p> takimata sanctus est Lorem ipsum dolor sit amet.<\/p>",
+            "description2": "<p>At vero eos et accusam et justo duo dolores et ea</p><p> rebum. Stet clita kasd gubergren, no sea</p><p> takimata sanctus est Lorem ipsum dolor sit amet.</p>",
             "rating_text2": "Rating title",
             "review_star2": 5,
             "button_label2": "Button label",
@@ -507,7 +516,7 @@
             "enable_button": false,
             "enable_check_icon": false,
             "product_1": "",
-            "description": "<p>At vero eos et accusam et justo duo dolores et ea<\/p><p> rebum. Stet clita kasd gubergren, no sea<\/p><p> takimata sanctus est Lorem ipsum dolor sit amet.<\/p>",
+            "description": "<p>At vero eos et accusam et justo duo dolores et ea</p><p> rebum. Stet clita kasd gubergren, no sea</p><p> takimata sanctus est Lorem ipsum dolor sit amet.</p>",
             "rating_text": "Rating title",
             "review_star": 5,
             "button_label": "Button label",
@@ -520,7 +529,7 @@
             "enable_button2": false,
             "enable_check_icon2": false,
             "product_2": "",
-            "description2": "<p>At vero eos et accusam et justo duo dolores et ea<\/p><p> rebum. Stet clita kasd gubergren, no sea<\/p><p> takimata sanctus est Lorem ipsum dolor sit amet.<\/p>",
+            "description2": "<p>At vero eos et accusam et justo duo dolores et ea</p><p> rebum. Stet clita kasd gubergren, no sea</p><p> takimata sanctus est Lorem ipsum dolor sit amet.</p>",
             "rating_text2": "Rating title",
             "review_star2": 5,
             "button_label2": "Button label",
@@ -539,7 +548,7 @@
             "enable_button": false,
             "enable_check_icon": false,
             "product_1": "",
-            "description": "<p>Wert ganz kurz<\/p>",
+            "description": "<p>Wert ganz kurz</p>",
             "rating_text": "Rating title",
             "review_star": 5,
             "button_label": "Button label",
@@ -552,7 +561,7 @@
             "enable_button2": false,
             "enable_check_icon2": false,
             "product_2": "",
-            "description2": "<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<\/p>",
+            "description2": "<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
             "rating_text2": "Rating title",
             "review_star2": 3,
             "button_label2": "Button label",
@@ -571,10 +580,10 @@
             "enable_button": false,
             "enable_check_icon": true,
             "product_1": "",
-            "description": "<p>Wert ganz kurz<\/p>",
+            "description": "<p>Wert ganz kurz</p>",
             "rating_text": "Rating title",
             "review_star": 5,
-            "check_icon": "shopify:\/\/shop_images\/Check_Icon_c412736e-6e20-49c4-8092-e20020b595cd.svg",
+            "check_icon": "shopify://shop_images/Check_Icon_c412736e-6e20-49c4-8092-e20020b595cd.svg",
             "button_label": "Button label",
             "button_link": "",
             "button_size": "medium",
@@ -585,10 +594,10 @@
             "enable_button2": false,
             "enable_check_icon2": true,
             "product_2": "",
-            "description2": "<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<\/p>",
+            "description2": "<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
             "rating_text2": "Rating title",
             "review_star2": 5,
-            "check_icon2": "shopify:\/\/shop_images\/Group_317.svg",
+            "check_icon2": "shopify://shop_images/Group_317.svg",
             "button_label2": "Button label",
             "button_link2": "",
             "button_size2": "medium",
@@ -605,10 +614,10 @@
             "enable_button": true,
             "enable_check_icon": false,
             "product_1": "",
-            "description": "<p>Wert ganz kurz<\/p>",
+            "description": "<p>Wert ganz kurz</p>",
             "rating_text": "Rating title",
             "review_star": 5,
-            "check_icon": "shopify:\/\/shop_images\/Check_Icon_c412736e-6e20-49c4-8092-e20020b595cd.svg",
+            "check_icon": "shopify://shop_images/Check_Icon_c412736e-6e20-49c4-8092-e20020b595cd.svg",
             "button_label": "Mehr erfahren",
             "button_link": "#",
             "button_size": "medium",
@@ -619,7 +628,7 @@
             "enable_button2": true,
             "enable_check_icon2": false,
             "product_2": "",
-            "description2": "<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<\/p>",
+            "description2": "<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
             "rating_text2": "Rating title",
             "review_star2": 5,
             "button_label2": "Mehr erfahren",
@@ -676,7 +685,7 @@
         "look_rNwg4x": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/after-before-image.png",
+            "image": "shopify://shop_images/after-before-image.png",
             "title": "Vorher",
             "title_size": "default",
             "title_position": "end"
@@ -685,7 +694,7 @@
         "look_yHRRmc": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/after-before-image.png",
+            "image": "shopify://shop_images/after-before-image.png",
             "title": "Nachher",
             "title_size": "default",
             "title_position": "end"
@@ -730,7 +739,7 @@
         "image_eTFkkB": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/after-before-image.png",
+            "image": "shopify://shop_images/after-before-image.png",
             "image_position": "center center",
             "text_box_position": "middle-center",
             "subheading": "",
@@ -749,7 +758,7 @@
         "image_tw3kE7": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/after-before-image.png",
+            "image": "shopify://shop_images/after-before-image.png",
             "image_position": "center center",
             "text_box_position": "middle-center",
             "subheading": "",
@@ -768,7 +777,7 @@
         "image_htDAVK": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/after-before-image.png",
+            "image": "shopify://shop_images/after-before-image.png",
             "image_position": "center center",
             "text_box_position": "middle-center",
             "subheading": "",
@@ -838,7 +847,7 @@
         "text_eKgwtw": {
           "type": "text",
           "settings": {
-            "text": "<p>Bei regelmäßiger Nutzung profitierst du sowohl vom Neutralisierungs- als auch Transformationseffekt der Produkte.<\/p><p>Dadurch wird die Selbstregulation deines Körpers verbessert. Die Folge: Stressresilienz sowie Erholungs- und Leistungsfähigkeit werden gestärkt.<\/p><p>Studien zeigen: Wenn <a href=\"https:\/\/beyondmatter.com\/elektrosmog-schutz-5g\/anhaenger-sol\/\" target=\"_blank\" title=\"https:\/\/beyondmatter.com\/elektrosmog-schutz-5g\/anhaenger-sol\/\">Anhänger Sol<\/a> und <a href=\"https:\/\/beyondmatter.com\/elektrosmog-schutz-5g\/einlegesohlen-tom\/\" target=\"_blank\" title=\"https:\/\/beyondmatter.com\/elektrosmog-schutz-5g\/einlegesohlen-tom\/\">Einlegesohlen Tom<\/a> getragen und gleichzeitig das Smartphone mit einem <a href=\"https:\/\/beyondmatter.com\/elektrosmog-schutz-5g\/grosser-chip-ava\/\" target=\"_blank\" title=\"https:\/\/beyondmatter.com\/elektrosmog-schutz-5g\/grosser-chip-ava\/\">Handychip Ava<\/a> entstört wird, verbessern sich Erholungs- und Leistungsparameter über das Ausgangsniveau der Testung hinaus!<\/p><p>Mit anderen Worten: Wer vor der Nutzung in einem guten physiologischen Zustand war, ist nach der Nutzung der Produkte in einem (noch) besseren.<\/p>",
+            "text": "<p>Bei regelmäßiger Nutzung profitierst du sowohl vom Neutralisierungs- als auch Transformationseffekt der Produkte.</p><p>Dadurch wird die Selbstregulation deines Körpers verbessert. Die Folge: Stressresilienz sowie Erholungs- und Leistungsfähigkeit werden gestärkt.</p><p>Studien zeigen: Wenn <a href=\"https://beyondmatter.com/elektrosmog-schutz-5g/anhaenger-sol/\" target=\"_blank\" title=\"https://beyondmatter.com/elektrosmog-schutz-5g/anhaenger-sol/\">Anhänger Sol</a> und <a href=\"https://beyondmatter.com/elektrosmog-schutz-5g/einlegesohlen-tom/\" target=\"_blank\" title=\"https://beyondmatter.com/elektrosmog-schutz-5g/einlegesohlen-tom/\">Einlegesohlen Tom</a> getragen und gleichzeitig das Smartphone mit einem <a href=\"https://beyondmatter.com/elektrosmog-schutz-5g/grosser-chip-ava/\" target=\"_blank\" title=\"https://beyondmatter.com/elektrosmog-schutz-5g/grosser-chip-ava/\">Handychip Ava</a> entstört wird, verbessern sich Erholungs- und Leistungsparameter über das Ausgangsniveau der Testung hinaus!</p><p>Mit anderen Worten: Wer vor der Nutzung in einem guten physiologischen Zustand war, ist nach der Nutzung der Produkte in einem (noch) besseren.</p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -894,7 +903,7 @@
         "text_BhiPwQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Im Anhang findest du eine Liste von insgesamt 29 Reviews (Übersichtsarbeiten), die sich mit den biologischen Auswirkungen von Elektrosmog auf die Gesundheit im Allgemeinen beschäftigen. <a href=\"#\" title=\"#\">Demnach gefährden EMF die Gesundheit auf vielfältige Weise.<\/a><\/p><p>Die Ausgangsliste zum Thema Elektrosmog umfasst 113 Reviews, wovon 102 „peer-reviewed“ und d.h. von anerkannten Fachwissenschaftlern als Stand des Wissens geprüft sind (01).<\/p><p>Die Liste stammt aus der Datenbank des EMF-Portal der RWTH Aachen.<\/p>",
+            "text": "<p>Im Anhang findest du eine Liste von insgesamt 29 Reviews (Übersichtsarbeiten), die sich mit den biologischen Auswirkungen von Elektrosmog auf die Gesundheit im Allgemeinen beschäftigen. <a href=\"#\" title=\"#\">Demnach gefährden EMF die Gesundheit auf vielfältige Weise.</a></p><p>Die Ausgangsliste zum Thema Elektrosmog umfasst 113 Reviews, wovon 102 „peer-reviewed“ und d.h. von anerkannten Fachwissenschaftlern als Stand des Wissens geprüft sind (01).</p><p>Die Liste stammt aus der Datenbank des EMF-Portal der RWTH Aachen.</p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -950,7 +959,7 @@
         "text_JmfLUe": {
           "type": "text",
           "settings": {
-            "text": "<p>Die Handystudie zeigt auf, wie sich Elektrosmog auf den Körper auswirkt. Schon ein 15-minütiges Handy-Telefonat setzt den Körper stark unter Stress (01). Dieser Stress endet, sobald der Handychip Ava angebracht wird. Und mehr noch: Unsere Produkte neutralisieren Elektrosmog nicht nur, sie transformieren ihn!<\/p>",
+            "text": "<p>Die Handystudie zeigt auf, wie sich Elektrosmog auf den Körper auswirkt. Schon ein 15-minütiges Handy-Telefonat setzt den Körper stark unter Stress (01). Dieser Stress endet, sobald der Handychip Ava angebracht wird. Und mehr noch: Unsere Produkte neutralisieren Elektrosmog nicht nur, sie transformieren ihn!</p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -961,7 +970,7 @@
           "type": "download_button_block",
           "settings": {
             "button_label2": "Ergebnisbericht herunterladen",
-            "download_image": "shopify:\/\/shop_images\/mobile-newslatter-image.png",
+            "download_image": "shopify://shop_images/mobile-newslatter-image.png",
             "button_link2": "",
             "button_size2": "medium",
             "button_style2": "primary"
@@ -1017,12 +1026,12 @@
         "iwt_block_KKKdAp": {
           "type": "iwt_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image-with-tabs.png",
+            "image": "shopify://shop_images/image-with-tabs.png",
             "image_behavior": "none",
             "enable_video_looping": false,
             "video_url": "",
             "tab_title": "Erster Themenblock",
-            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse: <\/p>",
+            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse: </p>",
             "main_title": 97,
             "progress_label": "verzeichnen weniger Haarausfall",
             "main_title2": 64,
@@ -1038,12 +1047,12 @@
         "iwt_block_JyQUML": {
           "type": "iwt_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/table-product-image.png",
+            "image": "shopify://shop_images/table-product-image.png",
             "image_behavior": "none",
             "enable_video_looping": false,
             "video_url": "",
             "tab_title": "Zweiter Themenblock",
-            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse:<\/p>",
+            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse:</p>",
             "main_title": 50,
             "progress_label": "verzeichnen weniger Haarausfall",
             "main_title2": 64,
@@ -1059,12 +1068,12 @@
         "iwt_block_8NHhnF": {
           "type": "iwt_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/newsletter.jpg",
+            "image": "shopify://shop_images/newsletter.jpg",
             "image_behavior": "none",
             "enable_video_looping": false,
             "video_url": "",
             "tab_title": "Dritter Themenblock",
-            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse:<\/p>",
+            "progress_description": "<p>Wir haben die Bio-Pilixin®-Formel entwickelt und als Marke geschützt, die in einer proprietären Studie Dritter klinisch getestet wurde. Unser Bio-Pilixin® Activation Serum zeigte folgende Ergebnisse:</p>",
             "main_title": 78,
             "progress_label": "verzeichnen weniger Haarausfall",
             "main_title2": 64,
@@ -1244,7 +1253,7 @@
         "page_width": "standard",
         "enable_breadcrumbs": true,
         "title": "Kundenerfahrungen",
-        "description": "<p>Wir haben schon sehr vielen Menschen mit unterschiedlichen Beschwerden zu mehr Energie, Freude und Leichtigkeit im Leben verholfen. Wir hoffen, dass noch viele weitere dazukommen und geben täglich unser Bestes.<\/p>",
+        "description": "<p>Wir haben schon sehr vielen Menschen mit unterschiedlichen Beschwerden zu mehr Energie, Freude und Leichtigkeit im Leben verholfen. Wir hoffen, dass noch viele weitere dazukommen und geben täglich unser Bestes.</p>",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
@@ -1279,7 +1288,7 @@
         "page_width": "standard",
         "enable_breadcrumbs": true,
         "title": "Service & Kontakt",
-        "description": "<p>Bitte melde dich bei Fragen zu unseren Produkten oder anderen Themen. Eine Website kann nicht leisten, was ein persönliches Gespräch leistet. \u2028Wir freuen uns auf deinen Anruf.<\/p>",
+        "description": "<p>Bitte melde dich bei Fragen zu unseren Produkten oder anderen Themen. Eine Website kann nicht leisten, was ein persönliches Gespräch leistet.  Wir freuen uns auf deinen Anruf.</p>",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
@@ -1315,21 +1324,21 @@
           "type": "tab",
           "settings": {
             "tab_title": "Analyseverfahren",
-            "description": "<p>Die Dunkelfeldmikroskopie (DFM) ist ein alternativmedizinisches Diagnoseverfahren. Dabei wird Blut unter einem Dunkelfeldmikroskop untersucht.<\/p><p>Aufgrund des speziellen Aufnahmeverfahrens – das Präparat wird seitlich stark belichtet, so dass gewöhnliche Lichtstrahlen nicht in das Objektiv des Mikroskops eindringen – heben sich die zu beobachtenden Zellen hell vor einem dunklen Bildhintergrund ab. Dadurch wird alles, was im Blut enthalten ist, optisch sichtbar gemacht.<\/p><p>Um eine Untersuchung des Bluts mittels DFM durchzuführen, wird dem Patienten ein kleiner Tropfen Kapillarblut entnommen.<\/p>"
+            "description": "<p>Die Dunkelfeldmikroskopie (DFM) ist ein alternativmedizinisches Diagnoseverfahren. Dabei wird Blut unter einem Dunkelfeldmikroskop untersucht.</p><p>Aufgrund des speziellen Aufnahmeverfahrens – das Präparat wird seitlich stark belichtet, so dass gewöhnliche Lichtstrahlen nicht in das Objektiv des Mikroskops eindringen – heben sich die zu beobachtenden Zellen hell vor einem dunklen Bildhintergrund ab. Dadurch wird alles, was im Blut enthalten ist, optisch sichtbar gemacht.</p><p>Um eine Untersuchung des Bluts mittels DFM durchzuführen, wird dem Patienten ein kleiner Tropfen Kapillarblut entnommen.</p>"
           }
         },
         "tab_jH9FWn": {
           "type": "tab",
           "settings": {
             "tab_title": "Kapillarblut",
-            "description": "<p>Die Dunkelfeldmikroskopie (DFM) ist ein alternativmedizinisches Diagnoseverfahren. Dabei wird Blut unter einem Dunkelfeldmikroskop untersucht.<\/p><p>Aufgrund des speziellen Aufnahmeverfahrens – das Präparat wird seitlich stark belichtet, so dass gewöhnliche Lichtstrahlen nicht in das Objektiv des Mikroskops <\/p><p>Um eine Untersuchung des Bluts mittels DFM durchzuführen, wird dem Patienten ein kleiner Tropfen Kapillarblut entnommen.<\/p>"
+            "description": "<p>Die Dunkelfeldmikroskopie (DFM) ist ein alternativmedizinisches Diagnoseverfahren. Dabei wird Blut unter einem Dunkelfeldmikroskop untersucht.</p><p>Aufgrund des speziellen Aufnahmeverfahrens – das Präparat wird seitlich stark belichtet, so dass gewöhnliche Lichtstrahlen nicht in das Objektiv des Mikroskops </p><p>Um eine Untersuchung des Bluts mittels DFM durchzuführen, wird dem Patienten ein kleiner Tropfen Kapillarblut entnommen.</p>"
           }
         },
         "tab_UegJUB": {
           "type": "tab",
           "settings": {
             "tab_title": "Expertise",
-            "description": "<p>Die Dunkelfeldmikroskopie (DFM) ist ein alternativmedizinisches Diagnoseverfahren. Dabei wird Blut unter einem Dunkelfeldmikroskop untersucht.<\/p><p>Objektiv des Mikroskops eindringen – heben sich die zu beobachtenden Zellen hell vor einem dunklen Bildhintergrund ab. Dadurch wird alles, was im Blut enthalten ist, optisch sichtbar gemacht.<\/p><p>Um eine Untersuchung des Bluts mittels DFM durchzuführen, wird dem Patienten ein kleiner Tropfen Kapillarblut entnommen.<\/p>"
+            "description": "<p>Die Dunkelfeldmikroskopie (DFM) ist ein alternativmedizinisches Diagnoseverfahren. Dabei wird Blut unter einem Dunkelfeldmikroskop untersucht.</p><p>Objektiv des Mikroskops eindringen – heben sich die zu beobachtenden Zellen hell vor einem dunklen Bildhintergrund ab. Dadurch wird alles, was im Blut enthalten ist, optisch sichtbar gemacht.</p><p>Um eine Untersuchung des Bluts mittels DFM durchzuführen, wird dem Patienten ein kleiner Tropfen Kapillarblut entnommen.</p>"
           }
         }
       },
@@ -1341,7 +1350,7 @@
       "settings": {
         "page_width": "standard",
         "desktop_accordion_width": 82,
-        "heading": "Was können Untersuchungen im Dunkelfeld leisten \u2028und was nicht?",
+        "heading": "Was können Untersuchungen im Dunkelfeld leisten  und was nicht?",
         "subtitle": "Dunkelfeld-mikroskopie",
         "heading_size": "h1",
         "text_size": "typeset",
@@ -1372,21 +1381,21 @@
           "type": "tab",
           "settings": {
             "tab_title": "Grundvorraussetzungen",
-            "description": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>"
+            "description": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>"
           }
         },
         "tab_G3MNwM": {
           "type": "tab",
           "settings": {
             "tab_title": "Bestätigung als Händler",
-            "description": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat dolores et ea rebum.<\/p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>"
+            "description": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat dolores et ea rebum.</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>"
           }
         },
         "tab_hcaGAw": {
           "type": "tab",
           "settings": {
             "tab_title": "Einkauf als Händler",
-            "description": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>"
+            "description": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>"
           }
         }
       },
@@ -1647,7 +1656,7 @@
         "heading": "Bewerbung Partnerprogramm",
         "heading_size": "h1",
         "heading_tag": "h2",
-        "text": "<p>Die meisten Themen rund um Elektrosmog sind komplexer Natur.<\/p><p>Nicht so einfach zu erklären. Wir haben es trotzdem versucht. Jedes Thema wird im praktischen Frage-Antwort-<\/p><p>Format präsentiert. So kannst du jeden Argumentationsschritt einfach nachvollziehen.<\/p>",
+        "text": "<p>Die meisten Themen rund um Elektrosmog sind komplexer Natur.</p><p>Nicht so einfach zu erklären. Wir haben es trotzdem versucht. Jedes Thema wird im praktischen Frage-Antwort-</p><p>Format präsentiert. So kannst du jeden Argumentationsschritt einfach nachvollziehen.</p>",
         "show_inside_box": true,
         "button_text": "Berwerbung abschicken",
         "primary_background": "#ede9e9",
@@ -1770,11 +1779,11 @@
         "page_width": "standard",
         "return_url": "",
         "show_divider": false,
-        "icon": "shopify:\/\/shop_images\/chat.svg",
+        "icon": "shopify://shop_images/chat.svg",
         "heading": "Ich möchte Kontakt aufnehmen",
         "heading_size": "h1",
         "heading_tag": "h2",
-        "text": "<p>Lass uns ein paar Zeilen da und schildere uns dein Anliegen. Die Natur deines Anliegens wird entscheiden, ob wir uns per Mail oder mit einem kurzen Anruf melden. Letzteres kann sinnvoll bei etwaigen Folgefragen sein. In jedem Falle freuen wir uns über deine Meldung.<\/p>",
+        "text": "<p>Lass uns ein paar Zeilen da und schildere uns dein Anliegen. Die Natur deines Anliegens wird entscheiden, ob wir uns per Mail oder mit einem kurzen Anruf melden. Letzteres kann sinnvoll bei etwaigen Folgefragen sein. In jedem Falle freuen wir uns über deine Meldung.</p>",
         "show_inside_box": true,
         "button_text": "Nachricht verschicken",
         "primary_background": "#d4cfcc",
@@ -1799,9 +1808,9 @@
           "type": "step_by_step",
           "settings": {
             "step_title": "Ausgangszustand",
-            "block_description": "<p>Das Blut im Ausgangszustand: Überlastung der Leber (Stress) erkennbar an sog. „Leberinseln“. Je größer und dunkler, desto stärker die Belastung.<\/p>",
-            "popup_button_image": "shopify:\/\/shop_images\/image-with-tabs.png",
-            "button_icon": "shopify:\/\/shop_images\/icon-view.svg",
+            "block_description": "<p>Das Blut im Ausgangszustand: Überlastung der Leber (Stress) erkennbar an sog. „Leberinseln“. Je größer und dunkler, desto stärker die Belastung.</p>",
+            "popup_button_image": "shopify://shop_images/image-with-tabs.png",
+            "button_icon": "shopify://shop_images/icon-view.svg",
             "button_label": "Blutbild anzeigen",
             "button_id": "",
             "button_size": "medium",
@@ -1812,9 +1821,9 @@
           "type": "step_by_step",
           "settings": {
             "step_title": "Beyond Matter",
-            "block_description": "<p>Nach einem Monat mit Einlegesohlen Tom: Rückgang von Entzündungen erkennbar an der Zunahme weißer Blutkörperchen.<\/p>",
-            "popup_button_image": "shopify:\/\/shop_images\/mobile-newslatter-image.png",
-            "button_icon": "shopify:\/\/shop_images\/icon-view.svg",
+            "block_description": "<p>Nach einem Monat mit Einlegesohlen Tom: Rückgang von Entzündungen erkennbar an der Zunahme weißer Blutkörperchen.</p>",
+            "popup_button_image": "shopify://shop_images/mobile-newslatter-image.png",
+            "button_icon": "shopify://shop_images/icon-view.svg",
             "button_label": "Blutbild anzeigen",
             "button_id": "",
             "button_size": "medium",
@@ -1843,7 +1852,7 @@
         "subheading": "Marker für Stressbelastung gehen zurück",
         "subheading_size": "h3",
         "secondary_color2": false,
-        "text": "<p>Das Blut des Probanden weist im Ausgangszustand sog. „Leberinseln“ auf. Diese weisen auf eine Belastung der Leber hin und sind Anzeichen für Stress (Stressmarker).<\/p><p>Auch dieser Proband nutzt ausschließlich unsere <a href=\"https:\/\/beyondmatter.com\/elektrosmog-schutz-5g\/einlegesohlen-tom\/\" title=\"https:\/\/beyondmatter.com\/elektrosmog-schutz-5g\/einlegesohlen-tom\/\">Einlegesohlen Tom<\/a> aus <a href=\"https:\/\/beyondmatter.com\/essencex-technologie\/\" title=\"https:\/\/beyondmatter.com\/essencex-technologie\/\">EssenceX Schungit<\/a> für 30 Tage. Die Nutzung erfolgt täglich sowohl innerhalb als auch außerhalb des Wohnung.<\/p><p>Das Ergebnis nach einem Monat: Ein deutlich sichtbarer Rückgang der Leberbelastung – erkennbar an der Zunahme weißer Blutkörperchen.<\/p>",
+        "text": "<p>Das Blut des Probanden weist im Ausgangszustand sog. „Leberinseln“ auf. Diese weisen auf eine Belastung der Leber hin und sind Anzeichen für Stress (Stressmarker).</p><p>Auch dieser Proband nutzt ausschließlich unsere <a href=\"https://beyondmatter.com/elektrosmog-schutz-5g/einlegesohlen-tom/\" title=\"https://beyondmatter.com/elektrosmog-schutz-5g/einlegesohlen-tom/\">Einlegesohlen Tom</a> aus <a href=\"https://beyondmatter.com/essencex-technologie/\" title=\"https://beyondmatter.com/essencex-technologie/\">EssenceX Schungit</a> für 30 Tage. Die Nutzung erfolgt täglich sowohl innerhalb als auch außerhalb des Wohnung.</p><p>Das Ergebnis nach einem Monat: Ein deutlich sichtbarer Rückgang der Leberbelastung – erkennbar an der Zunahme weißer Blutkörperchen.</p>",
         "text_size": "typeset",
         "secondary_color": false,
         "highlight_phrases": "",
@@ -1910,17 +1919,17 @@
         "back_link_title": "Zurück zur Übersicht",
         "show_back_link": true,
         "show_inside_box": false,
-        "heading": "Ein Schutz vor Elektrosmog, \u2028der hält, was er verspricht.",
+        "heading": "Ein Schutz vor Elektrosmog,  der hält, was er verspricht.",
         "heading_size": "h0",
         "heading_tag": "h2",
         "title": "Was untersucht die Studie?",
-        "text": "<p>Die von einem unabhängigen Institut durchgeführte Studie untersucht die gesundheitlichen Auswirkungen von Handytelefonaten auf den Körper: Was lösen elektromagnetische Felder (Elektrosmog) im Körper aus und wie kannst du dich effektiv davor schützen?<\/p>",
+        "text": "<p>Die von einem unabhängigen Institut durchgeführte Studie untersucht die gesundheitlichen Auswirkungen von Handytelefonaten auf den Körper: Was lösen elektromagnetische Felder (Elektrosmog) im Körper aus und wie kannst du dich effektiv davor schützen?</p>",
         "text_size": "typeset",
         "secondary_color": false,
         "highlight_phrases": "",
         "highlight_style": "marker",
         "button_label": "Ergebnisbericht herunterladen",
-        "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0848\/0931\/8728\/files\/file-sample_150kB.pdf?v=1729853643",
+        "button_link": "https://cdn.shopify.com/s/files/1/0848/0931/8728/files/file-sample_150kB.pdf?v=1729853643",
         "file_size": "142.79 KB",
         "button_size": "medium",
         "button_style": "primary",
@@ -1929,7 +1938,7 @@
         "box_alignment": "box_right",
         "text_alignment": "left",
         "mobile_text_alignment": "left",
-        "horizontal_content": false,
+        "horizontal_content": true,
         "show_divider": false,
         "use_custom_colors": true,
         "primary_background": "#f4f2f2",
@@ -1955,28 +1964,28 @@
         "article_QVezCb": {
           "type": "article",
           "settings": {
-            "article": "ratgeber\/elektrosmog-was-ist-bioelektrizitaet",
+            "article": "ratgeber/elektrosmog-was-ist-bioelektrizitaet",
             "custom_text": "Die Essenz des Lebens"
           }
         },
         "article_FFjBJb": {
           "type": "article",
           "settings": {
-            "article": "ratgeber\/elektrosmog-was-ist-elektrosmog",
+            "article": "ratgeber/elektrosmog-was-ist-elektrosmog",
             "custom_text": ""
           }
         },
         "article_hrrdTh": {
           "type": "article",
           "settings": {
-            "article": "ratgeber\/elektrosmog-wie-elektromagnetische-felder-den-koerper-beeinflussen",
+            "article": "ratgeber/elektrosmog-wie-elektromagnetische-felder-den-koerper-beeinflussen",
             "custom_text": "Natürliche & technische"
           }
         },
         "article_AFkCjH": {
           "type": "article",
           "settings": {
-            "article": "studien\/studienuberblick",
+            "article": "studien/studienuberblick",
             "custom_text": ""
           }
         }
@@ -1989,9 +1998,9 @@
       ],
       "settings": {
         "page_width": "standard",
-        "image": "shopify:\/\/shop_images\/Mask_group.jpg",
+        "image": "shopify://shop_images/Mask_group.jpg",
         "heading": "Bioelektrizität. Die Essenz des Lebens.",
-        "description": "<p>Bioelektrizität ist die Essenz des Lebens. Ohne Bioelektrizität funktioniert dein Körper nicht.<\/p>",
+        "description": "<p>Bioelektrizität ist die Essenz des Lebens. Ohne Bioelektrizität funktioniert dein Körper nicht.</p>",
         "primary_background": "#ede9e9",
         "secondary_background": "#ede9e9",
         "colors_text": "#3c3c3c",
