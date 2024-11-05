@@ -160,7 +160,9 @@
     line-height: 1.333333;
 }
 
-
+.section-comparison-table {
+    overflow: hidden;
+}
 
 
 
@@ -185,6 +187,7 @@
         overflow: hidden;
         overflow-x: auto;
         margin-right: -24px;
+        width: 100%;
     }
     .comparison-tablebody {
         min-width: 750px;

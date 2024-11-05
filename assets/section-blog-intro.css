@@ -173,5 +173,12 @@
         flex-direction: row;
         gap: 0.6rem;
     }
+    .intro_social_media {
+        width: 100%;
+    }
+    .intro_social_media ul.list-social {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
