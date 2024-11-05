@@ -87,7 +87,7 @@
                                 {% if section.settings.accordion_alignment == "left" %}
                                   {% if section.settings.accordion_icon == "arrow" %}
                                     <span class="icon icon-down-arrow-cvr">
-                                      {% render "icon-down-arrow" %}
+                                      {% render 'icon', icon: 'icon-down-arrow' %}
                                     </span>
                                   {% else %}
                                       <span class="icon icon-plus-alt"></span>
@@ -97,7 +97,7 @@
                               {% if section.settings.accordion_alignment == "right" %}
                                 {% if section.settings.accordion_icon == "arrow" %}
                                   <span class="icon icon-down-arrow-cvr">
-                                    {% render "icon-down-arrow" %}
+                                    {% render 'icon', icon: 'icon-down-arrow' %}
                                   </span>
                                 {% else %}
                                     <span class="icon icon-plus-alt"></span>
