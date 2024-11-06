@@ -134,6 +134,8 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "primary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#212326",
         "colors_text": "#212326",
@@ -283,7 +285,7 @@
         "button_xGYPDA"
       ],
       "settings": {
-        "page_width": "full-width",
+        "page_width": "narrow",
         "image": "shopify://shop_images/banner-image.png",
         "image_position": "center center",
         "text_box_position": "middle-left",
@@ -298,6 +300,8 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#3c3c3c",
         "colors_text": "#3c3c3c",
@@ -337,6 +341,13 @@
             "highlight_style": "marker"
           }
         },
+        "blank_space_98ibzr": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
+          }
+        },
         "heading_3de3tX": {
           "type": "heading",
           "settings": {
@@ -354,6 +365,13 @@
             "secondary_color": false,
             "highlight_phrases": "",
             "highlight_style": "marker"
+          }
+        },
+        "blank_space_pYMMWP": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
           }
         },
         "heading_mxxneT": {
@@ -379,8 +397,10 @@
       "block_order": [
         "heading_htqkxP",
         "text_RgQxR4",
+        "blank_space_98ibzr",
         "heading_3de3tX",
         "text_L7UXeT",
+        "blank_space_pYMMWP",
         "heading_mxxneT",
         "text_y9KPT9"
       ],
@@ -510,6 +530,13 @@
             "highlight_style": "marker"
           }
         },
+        "blank_space_re4YFf": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
+          }
+        },
         "heading_Gn7paU": {
           "type": "heading",
           "settings": {
@@ -528,34 +555,14 @@
             "highlight_phrases": "",
             "highlight_style": "marker"
           }
-        },
-        "heading_xqBfYT": {
-          "type": "heading",
-          "settings": {
-            "heading": "Bioelektrizität ist die Essenz des Lebens. Gestörte Bioelektrizität bedeutet Krankheit. Ihre Abwesenheit bedeutet Tod.",
-            "enable_italic": true,
-            "heading_size": "h0",
-            "heading_tag": "h2"
-          }
-        },
-        "text_7HL7g9": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Max Mustermann</strong></p>",
-            "text_size": "typeset",
-            "secondary_color": false,
-            "highlight_phrases": "",
-            "highlight_style": "marker"
-          }
         }
       },
       "block_order": [
         "heading_pJjM3a",
         "text_RgaYD8",
+        "blank_space_re4YFf",
         "heading_Gn7paU",
-        "text_qXbp74",
-        "heading_xqBfYT",
-        "text_7HL7g9"
+        "text_qXbp74"
       ],
       "settings": {
         "page_width": "narrow",
@@ -576,11 +583,70 @@
         "colors_button_background": "#1a1b18",
         "colors_text": "#3c3c3c",
         "heading_color": "#3c3c3c",
-        "link_text_color": "#212326",
+        "link_text_color": "#baab9e",
         "colors_highlight": "#bbff00",
         "gradient_background": "",
         "padding_top": 80,
         "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_BUVPyt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KFXtH7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bioelektrizität ist die Essenz des Lebens. Gestörte Bioelektrizität bedeutet Krankheit. Ihre Abwesenheit bedeutet Tod.",
+            "enable_italic": true,
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "text_qjzXQB": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Max Mustermann</strong></p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KFXtH7",
+        "text_qjzXQB"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#baab9e",
+        "link_text_color": "#baab9e",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 180,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36,
         "padding_left": 0,
@@ -633,7 +699,7 @@
         "button_Dq3wmX"
       ],
       "settings": {
-        "page_width": "full-width",
+        "page_width": "narrow",
         "image": "shopify://shop_images/Mask_group.png",
         "image_position": "center center",
         "text_box_position": "middle-left",
@@ -648,6 +714,8 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#3c3c3c",
         "colors_text": "#3c3c3c",
@@ -687,6 +755,13 @@
             "highlight_style": "marker"
           }
         },
+        "blank_space_tg3Gky": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
+          }
+        },
         "heading_HJ3h7F": {
           "type": "heading",
           "settings": {
@@ -704,6 +779,13 @@
             "secondary_color": false,
             "highlight_phrases": "",
             "highlight_style": "marker"
+          }
+        },
+        "blank_space_KRCM7c": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
           }
         },
         "heading_EjRQLm": {
@@ -729,8 +811,10 @@
       "block_order": [
         "heading_qTNLy8",
         "text_gTctc9",
+        "blank_space_tg3Gky",
         "heading_HJ3h7F",
         "text_zmVWYC",
+        "blank_space_KRCM7c",
         "heading_EjRQLm",
         "text_tmiVA6"
       ],
@@ -756,8 +840,8 @@
         "link_text_color": "#212326",
         "colors_highlight": "#bbff00",
         "gradient_background": "",
-        "padding_top": 80,
-        "padding_bottom": 80,
+        "padding_top": 160,
+        "padding_bottom": 200,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36,
         "padding_left": 0,
@@ -783,6 +867,8 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "primary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#212326",
         "colors_text": "#212326",
@@ -822,6 +908,13 @@
             "highlight_style": "marker"
           }
         },
+        "blank_space_Fdijwf": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
+          }
+        },
         "heading_BYGFLA": {
           "type": "heading",
           "settings": {
@@ -839,6 +932,13 @@
             "secondary_color": false,
             "highlight_phrases": "",
             "highlight_style": "marker"
+          }
+        },
+        "blank_space_kWaMPB": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
           }
         },
         "heading_XWfNta": {
@@ -859,36 +959,17 @@
             "highlight_phrases": "",
             "highlight_style": "marker"
           }
-        },
-        "heading_WUwen3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Der Mensch ist ein durch und durch bioelektrisch organisiertes Lebewesen.",
-            "enable_italic": true,
-            "heading_size": "h0",
-            "heading_tag": "h2"
-          }
-        },
-        "text_X9dFfM": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Max Mustermann</strong></p>",
-            "text_size": "typeset",
-            "secondary_color": false,
-            "highlight_phrases": "",
-            "highlight_style": "marker"
-          }
         }
       },
       "block_order": [
         "heading_cMQjtN",
         "text_Aga9NR",
+        "blank_space_Fdijwf",
         "heading_BYGFLA",
         "text_a6kqq6",
+        "blank_space_kWaMPB",
         "heading_XWfNta",
-        "text_WDrCWa",
-        "heading_WUwen3",
-        "text_X9dFfM"
+        "text_WDrCWa"
       ],
       "settings": {
         "page_width": "narrow",
@@ -912,8 +993,67 @@
         "link_text_color": "#212326",
         "colors_highlight": "#bbff00",
         "gradient_background": "",
-        "padding_top": 80,
+        "padding_top": 160,
         "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_iKyUwx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bCzPPx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Der Mensch ist ein durch und durch bioelektrisch organisiertes Lebewesen.",
+            "enable_italic": true,
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "text_UPa9xE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Max Mustermann</strong></p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bCzPPx",
+        "text_UPa9xE"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#baab9e",
+        "link_text_color": "#baab9e",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 200,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36,
         "padding_left": 0,
@@ -966,7 +1106,7 @@
         "button_azf3wf"
       ],
       "settings": {
-        "page_width": "full-width",
+        "page_width": "narrow",
         "image": "shopify://shop_images/Mask_group_c6d387cb-294f-42af-9576-e73be822c6a8.png",
         "image_position": "center center",
         "text_box_position": "middle-left",
@@ -981,6 +1121,8 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#3c3c3c",
         "colors_text": "#3c3c3c",
@@ -1020,6 +1162,13 @@
             "highlight_style": "marker"
           }
         },
+        "blank_space_kxBzrN": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
+          }
+        },
         "heading_3NNJLc": {
           "type": "heading",
           "settings": {
@@ -1039,6 +1188,13 @@
             "highlight_style": "marker"
           }
         },
+        "blank_space_eY9in7": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
+          }
+        },
         "heading_eDPNR4": {
           "type": "heading",
           "settings": {
@@ -1056,6 +1212,13 @@
             "secondary_color": false,
             "highlight_phrases": "",
             "highlight_style": "marker"
+          }
+        },
+        "blank_space_dn8Lk7": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
           }
         },
         "heading_tchMUj": {
@@ -1081,10 +1244,13 @@
       "block_order": [
         "heading_F4UmY6",
         "text_wPG4xC",
+        "blank_space_kxBzrN",
         "heading_3NNJLc",
         "text_f7xrba",
+        "blank_space_eY9in7",
         "heading_eDPNR4",
         "text_yJRGFN",
+        "blank_space_dn8Lk7",
         "heading_tchMUj",
         "text_9A7CTz"
       ],
@@ -1155,7 +1321,7 @@
       "settings": {
         "page_width": "standard",
         "primary_background": "#f4f2f2",
-        "secondary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
         "success_message": "Thanks for subscribing",
         "email_placeholder": "Deine beste E-Mail-Adresse",
         "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
@@ -1182,8 +1348,8 @@
         "colors_text": "#212326",
         "colors_background": "#ffffff",
         "gradient_background": "",
-        "padding_top": 100,
-        "padding_bottom": 80,
+        "padding_top": 160,
+        "padding_bottom": 50,
         "mobile_padding_top": 80,
         "mobile_padding_bottom": 80,
         "padding_left": 0,
@@ -1213,14 +1379,64 @@
             "highlight_phrases": "",
             "highlight_style": "marker"
           }
+        },
+        "heading_gWqmFT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ich möchte mich jetzt schützen. Was kann ich tun?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_eh4X9A": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Idealerweise schützt du deine Gesundheit mit einer Kombination folgender Produkte:</p><ul><li>1 x <a href=\"#\" title=\"#\">Basisset Essentials</a>.</li><li>1 x <a href=\"#\" title=\"#\">Kugel Samson</a> bzw. <a href=\"#\" title=\"#\">Pyramide Ra</a>.</li></ul><p>Das <strong>Basisset</strong> enthält alle essenziellen Produkte, um dich vor Elektrosmog und 5G zu schützen: <a href=\"#\" title=\"#\">Anhänger Sol</a>, <a href=\"#\" title=\"#\">Einlegesohlen Tom</a> und <a href=\"#\" title=\"#\">Handychip Ava</a>.</p><p>Während Anhänger und Einlegesohlen über Fußreflexzonen und Solar Plexus regulierend auf den Körper einwirken und dich dadurch stärken und stabilisieren, ist der Chip dazu da, dein wichtigstes mobiles Endgerät zu entstören – in der Regel das Handy (Stichwort: Handystrahlung).</p><p>Da Elektrosmog keinen Halt vor deinem Schlafzimmer macht, solltest du zusätzlich deinen <strong>Schlafraum</strong> mit unserer Kugel Samson entstören. Der Grund: <a href=\"#\" title=\"#\">Erholsamer Schlaf wird durch Elektrosmog mehr und mehr unmöglich</a>. </p><p>Mit der <a href=\"#\" title=\"#\">Pyramide Ra</a> schützt du dich vor extremer Strahlenbelastung, wie sie typischerweise in <strong>Arbeitsräumen</strong> und <strong>Großraumbüros</strong> anzutreffen ist. </p><p>Solltest du ein <strong>Elektroauto / E-Auto</strong> besitzen, dann bist du <a href=\"#\" title=\"#\">sehr starker</a> </p><p><a href=\"#\" title=\"#\">Strahlenbelastung</a> ausgesetzt. <a href=\"#\" title=\"#\">Elektrosmog im E-Auto neutralisierst du mit Max.</a></p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "blank_space_U9cnmB": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
+          }
+        },
+        "heading_XaGK8Q": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wie lange halten die Produkte?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_cTpzyM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Die Produkte halten ein Leben lang.</strong> 💪</p><p>Und da sie tatsächlich dazu beitragen dein Leben zu erhalten, lohnt sich diese einmalige Investition in  jedem Fall.</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
         }
       },
       "block_order": [
         "heading_7cUqDW",
-        "text_ePPd4E"
+        "text_ePPd4E",
+        "heading_gWqmFT",
+        "text_eh4X9A",
+        "blank_space_U9cnmB",
+        "heading_XaGK8Q",
+        "text_cTpzyM"
       ],
       "settings": {
-        "page_width": "standard",
+        "page_width": "narrow",
         "show_inside_box": false,
         "remove_gap": false,
         "enable_intro_title": true,
@@ -1231,8 +1447,8 @@
         "mobile_text_alignment": "left",
         "horizontal_content": true,
         "show_divider": false,
-        "use_custom_colors": false,
-        "primary_background": "#baab9e",
+        "use_custom_colors": true,
+        "primary_background": "#d4cfcc",
         "secondary_background": "#d4cfcc",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#3c3c3c",
@@ -1241,8 +1457,8 @@
         "link_text_color": "#baab9e",
         "colors_highlight": "#bbff00",
         "gradient_background": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 200,
+        "padding_bottom": 160,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36,
         "padding_left": 0,
@@ -1261,10 +1477,12 @@
     "rich_text_ayp9PJ",
     "newsletter2_6Bybyx",
     "rich_text_WPJFpG",
+    "rich_text_BUVPyt",
     "image_banner_new_4LG3rt",
     "rich_text_GzakzV",
     "image_banner_new_37XEtf",
     "rich_text_dXYJEq",
+    "rich_text_iKyUwx",
     "image_banner_new_YpYKmj",
     "rich_text_NE6Kzg",
     "newsletter2_w6Mq4U",
