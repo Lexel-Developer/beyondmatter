@@ -110,6 +110,9 @@
   line-height:1.222222;
   letter-spacing: 0;
 }
+.rich-text__heading em {
+    font-family: 'MrsEavesXLSerifOT-RegItalic';
+}
 
 .rich-text__subheading + .rich-text__heading {
   margin-top: 0.5rem;
@@ -214,15 +217,21 @@
 }
 .rich-text:not(.rich-text--horizontal) .rich-text__block_main {
   flex-wrap: wrap;
+  gap: 30px;
 }
 .rich-text:not(.rich-text--horizontal) .rich-text__block_main .intro_title {
   max-width: 100%;
   width: 100%;
 }
-.rich-text:not(.rich-text--horizontal) .rich-text__block_main .rich-text__blocks {
+/* .rich-text:not(.rich-text--horizontal) .rich-text__block_main .rich-text__blocks {
   margin-left: 0;
+} */
+.rich-text__block_main.remove_gap {
+  row-gap: 4px !important;
 }
-
+.rich-text__block_main.remove_gap .rich-text__blocks>*+* {
+  margin-top: 8px;
+}
 
 
 @media screen and (min-width: 990px) {

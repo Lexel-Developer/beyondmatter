@@ -1,0 +1,824 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "image_banner_new_PijXhk": {
+      "type": "image-banner-new",
+      "settings": {
+        "page_width": "full-width",
+        "image": "shopify://shop_images/240_F_237412371_zBixmx4uuHYUB5tMiYebjJVyVNIkmHfb_2.png",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "450px",
+        "enable_boxed_height": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "200px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_box": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#212326",
+        "colors_text": "#212326",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 28,
+        "boxed_width": 50,
+        "enable_spacing_left_right": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "page_header_ygrK3H": {
+      "type": "page-header",
+      "settings": {
+        "page_width": "standard",
+        "enable_breadcrumbs": true,
+        "title": "Unsere Mission",
+        "description": "<p> </p>",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "enbale_icon": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "enbale_icon2": false,
+        "button_label2": "",
+        "button_link2": "#",
+        "button_style2": "primary",
+        "show_inside_box": false,
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "title_color": "#3c3c3c",
+        "breadcrumb_color": "#3c3c3c",
+        "breadcrumb_opacity": 100,
+        "padding_top": 80,
+        "padding_bottom": 88,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_BtyPmz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_QAXaWA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wir alle begegnen immer mehr Technik im Alltag. Damit  diese Technik für, statt gegen dich arbeitet, entwickeln wir hochgradig wirkungsvolle Produkte, die dich schützen.   Egal, ob zu Hause, im Büro, unterwegs, beim Essen oder im Schlaf: Wir verbinden Technik mit der heilenden Kraft der Natur. Wissenschaftlich bewiesen und ein Leben lang.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "subheading_fEAAfP": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>#Naturallyconnected</em></p>",
+            "sub_text_color": "#3c3c3c"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QAXaWA",
+        "subheading_fEAAfP"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
+        "grid_column_spacing": false,
+        "image": "shopify://shop_images/mask-group-image.svg",
+        "image_position": "center center",
+        "layout": "text_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "enlarge_content": "small",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ede9e9",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 36,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_gallery_HKUJNN": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_dcBWBi": {
+          "type": "image",
+          "settings": {
+            "enable_double_width": false,
+            "image": "shopify://shop_images/Bildschirmfoto_2024-08-06_um_08.52.42_1_fc2e75f9-e4e2-4757-b0fb-0b40310ebc06.jpg",
+            "image_position": "center center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "text": "",
+            "link": "",
+            "text_box_position": "bottom-left",
+            "text_color": "",
+            "background_color": "",
+            "background_opacity": 0
+          }
+        },
+        "image_tEigyY": {
+          "type": "image",
+          "settings": {
+            "enable_double_width": false,
+            "image": "shopify://shop_images/Bildschirmfoto_2024-08-06_um_08.52.42_2_44b0c845-b6f4-41e0-afde-b3bd99c05c91.jpg",
+            "image_position": "center center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "text": "",
+            "link": "",
+            "text_box_position": "bottom-left",
+            "text_color": "",
+            "background_color": "",
+            "background_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_dcBWBi",
+        "image_tEigyY"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "per_row": 2,
+        "spacing_images": 0,
+        "image_height": 470,
+        "apply_overlay": true,
+        "show_divider": false,
+        "header_page_width": "standard",
+        "subtitle": "",
+        "heading": "",
+        "text": "",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "button_label": "",
+        "button_link": "",
+        "button_size": "medium",
+        "button_style_secondary": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "mobile_image_height": 160,
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "title_color": "",
+        "sub_text_color": "",
+        "button_background_color": "",
+        "button_text_color": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_a3wpHd": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_6rPd3w": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Unser Antrieb</em></p>",
+            "sub_text_color": "#3c3c3c"
+          }
+        },
+        "heading_TcdYfi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wir verbinden die Vorteile technischer Geräte mit der heilenden Kraft der Natur.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6rPd3w",
+        "heading_TcdYfi"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "main_description": "<p>Wir sind angetreten, zu beweisen, dass niemand unter Elektrosmog leiden muss. Mit Essence X haben wir eine Technologie entwickelt, die das Leben und den Alltag unserer Kunden auf einfachste Art und Wiese messbar verbessert.</p>",
+        "enable_main_image": false,
+        "grid_column_spacing": false,
+        "image_position": "center center",
+        "layout": "text_first",
+        "desktop_box_spacing": 33,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": "medium",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ede9e9",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 100,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "quote_RmAAK4": {
+      "type": "quote",
+      "blocks": {
+        "heading_Lb4yfG": {
+          "type": "heading",
+          "settings": {
+            "enable_text_italic": true,
+            "heading": "Wir müssen das Thema Gesundheit ganzheitlich fassen, denn nur die wenigsten bekommen einen Gehirntumor vom Handy. Elektrosmog unterminiert Gesundheit allgemein: Vitalität, innere Ausgeglichenheit und psychische Resilienz.",
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "subheading_dfqgbT": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Christian Opitz",
+            "subheading_size": "typeset2"
+          }
+        },
+        "text_fNUwRD": {
+          "type": "text",
+          "settings": {
+            "text": "EMF-Experte, Autor & Wissenschaftler",
+            "text_size": "typeset"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Lb4yfG",
+        "subheading_dfqgbT",
+        "text_fNUwRD"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "show_inside_box": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "box_alignment": "box_left",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#baab9e",
+        "secondary_background": "#baab9e",
+        "box_background": "#ffffff",
+        "colors_quote_text": "#f4f2f2",
+        "colors_author_text": "#f4f2f2",
+        "colors_profession_text": "#212326",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_QiJ3tV": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_HY4Ngn": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Beyond Matter</em></p>",
+            "sub_text_color": "#baab9e"
+          }
+        },
+        "heading_JTbimg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Naturally connected",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_HY4Ngn",
+        "heading_JTbimg"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#baab9e",
+        "secondary_background": "#ede9e9",
+        "main_description": "<p>Wir sind angetreten, zu beweisen, dass niemand unter Elektrosmog leiden muss. Mit Essence X haben wir eine Technologie entwickelt, die das Leben und den Alltag unserer Kunden auf einfachste Art und Wiese messbar verbessert. Ein Leben lang.</p>",
+        "enable_main_image": false,
+        "grid_column_spacing": false,
+        "image_position": "center center",
+        "layout": "text_first",
+        "desktop_box_spacing": 80,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": "medium",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#f4f2f2",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_hXgngA": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_4wPM97": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Unser Team</em></p>",
+            "sub_text_color": "#3c3c3c"
+          }
+        },
+        "heading_V38QJi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Von Technik fasziniert.   Der Gesundheit verpflichtet.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_GTCVQN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wie der Name Beyond Matter schon sagt, gehen wir über das sichtbare und dingliche hinaus. Unser Team erforscht mit Neugier immer neue Wege, die Leiden durch Elektrosmog zu mindern. Die Leidenschaft unseres Teams macht uns zu einem der Marktführer im Schutz vor Elektrosmog.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_4wPM97",
+        "heading_V38QJi",
+        "text_GTCVQN"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
+        "grid_column_spacing": false,
+        "image": "shopify://shop_images/images-2.png",
+        "image_position": "top center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "480px",
+        "enlarge_content": "medium",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ede9e9",
+        "gradient_background": "",
+        "padding_top": 200,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_y9jJGF": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_4azcyM": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Kontakt & Hilfe</em></p>",
+            "sub_text_color": "#3c3c3c"
+          }
+        },
+        "heading_ekdhPm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wir sind für euch da",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_78FTHP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Erfahren Sie, wie Schungit als natürlicher Strahlenschutz funktioniert  und Ihre Gesundheit schützt.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_dG6K7n": {
+          "type": "button",
+          "settings": {
+            "button_label": "Zu Kontakt & Hilfe",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_4azcyM",
+        "heading_ekdhPm",
+        "text_78FTHP",
+        "button_dG6K7n"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
+        "grid_column_spacing": false,
+        "image": "shopify://shop_images/images-3.png",
+        "image_position": "top center",
+        "layout": "text_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "480px",
+        "enlarge_content": "medium",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_background": "#ede9e9",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 200,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_tfMzHC": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_fjaBM6": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Unser Produktfinder</em></p>",
+            "sub_text_color": "#baab9e"
+          }
+        },
+        "heading_3YCdXr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Finde raus, was dir hilft.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_wKFeyD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Entdecke in unserem Produktfinder, welches unserer </p><p>Produkte das Beste für deine Bedürfnisse ist. </p><p><em>Dauer: Max. 2 Min</em></p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "text_pk6Jdd": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Entdecke deine größte Problemstelle</li><li>Erhalte eine individuelle Produktempfehlung</li><li>Sichere dir einen exklusiven Rabatt</li></ul>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_yJQVeR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt Produktfinder starten",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_fjaBM6",
+        "heading_3YCdXr",
+        "text_wKFeyD",
+        "text_pk6Jdd",
+        "button_yJQVeR"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#d4cfcc",
+        "main_description": "",
+        "enable_main_image": true,
+        "grid_column_spacing": false,
+        "image": "shopify://shop_images/Mask_group_1.png",
+        "image_position": "center center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "480px",
+        "enlarge_content": "medium",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#212326",
+        "colors_background": "#f4f2f2",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "icon_boxes_VQFMye": {
+      "type": "icon-boxes",
+      "blocks": {
+        "guarantee_TFgVPr": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/cash-payment-coin-1_1.svg",
+            "custom_icon": "",
+            "title": "Geld-zurück-Garantie",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Risikofreies Testen für 60 Tage. Solltest du unzufrieden mit dem Produkt sein, nehmen wir es zurück ohne Fragen zu stellen.</p>",
+            "text_size": "typeset"
+          }
+        },
+        "guarantee_qzeJNB": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/warehouse-cart-package-ribbon-1_1.svg",
+            "custom_icon": "",
+            "title": "Versandkostenfrei ab 90€",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Wir versenden Deine gesamte Bestellung kostenfrei sobald sie einen Einkaufswert von 90€ überschreitet.</p>",
+            "text_size": "typeset"
+          }
+        },
+        "guarantee_6dXhWN": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/Icon_24px_-_Heart.svg",
+            "custom_icon": "",
+            "title": "Made in Germany",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Unsere Produkte werden ausschließlich in Deutschland hergestellt, verpackt und versendet.</p>",
+            "text_size": "typeset"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_TFgVPr",
+        "guarantee_qzeJNB",
+        "guarantee_6dXhWN"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#d4cfcc",
+        "layout": "default",
+        "column_alignment": "left",
+        "desktop_column_alignment": "left",
+        "mobile_column_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "columns_desktop": 3,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "newsletter2_6Bybyx": {
+      "type": "newsletter2",
+      "blocks": {
+        "subheading_kcpXzJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Unsere Newsletter</em></p>",
+            "sub_text_color": "#baab9e"
+          }
+        },
+        "heading_dLByRx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Newsletter abonnieren und <br>nichts mehr verpassen!",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_fpeFAq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Abonniere jetzt unseren Newsletter für exklusive Angebote und Neuheiten aus der Welt von Beyond Matter. Als Dankeschön  erhältst du 10% Rabatt auf deinen ersten Einkauf.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_kcpXzJ",
+        "heading_dLByRx",
+        "text_fpeFAq"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "success_message": "Thanks for subscribing",
+        "email_placeholder": "Deine beste E-Mail-Adresse",
+        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
+        "enable_main_image": true,
+        "image": "shopify://shop_images/newsletter.jpg",
+        "image_position": "top center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "image_square",
+        "enlarge_content": "small",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "300px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_new_PijXhk",
+    "page_header_ygrK3H",
+    "image_with_text_BtyPmz",
+    "image_gallery_HKUJNN",
+    "image_with_text_a3wpHd",
+    "quote_RmAAK4",
+    "image_with_text_QiJ3tV",
+    "image_with_text_hXgngA",
+    "image_with_text_y9jJGF",
+    "image_with_text_tfMzHC",
+    "icon_boxes_VQFMye",
+    "newsletter2_6Bybyx"
+  ]
+}

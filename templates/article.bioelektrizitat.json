@@ -1,0 +1,1273 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "medium"
+          }
+        },
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "settings": {
+            "text_style": "uppercase",
+            "show_divider": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": true,
+            "blog_show_comment_count": true
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "back_to_blog": {
+          "type": "back_to_blog",
+          "settings": {
+          }
+        },
+        "next_previous_posts": {
+          "type": "next_previous_posts",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "breadcrumb",
+        "title",
+        "content",
+        "share",
+        "back_to_blog",
+        "next_previous_posts"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_gravatar": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "blog_intro_figJNW": {
+      "type": "blog-intro",
+      "settings": {
+        "page_width": "narrow",
+        "back_link_title": "Zurück zur Übersicht",
+        "show_back_link": true,
+        "show_inside_box": false,
+        "heading": "Bioelektrizität.  Die Essenz des Lebens.",
+        "heading_size": "h0",
+        "heading_tag": "h2",
+        "title": "Das Wichtigste auf einen Blick:",
+        "text": "<p>Die von einem unabhängigen Institut durchgeführte Studie untersucht die gesundheitlichen Auswirkungen von Handytelefonaten auf den Körper: Was lösen elektromagnetische Felder (Elektrosmog) im Körper aus und wie kannst du dich effektiv davor schützen?</p>",
+        "text_size": "typeset",
+        "secondary_color": false,
+        "highlight_phrases": "",
+        "highlight_style": "marker",
+        "button_label": "",
+        "button_link": "https://cdn.shopify.com/s/files/1/0848/0931/8728/files/file-sample_150kB.pdf?v=1729853643",
+        "file_size": "142.79 KB",
+        "button_size": "medium",
+        "button_style": "primary",
+        "show_social_media": true,
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": true,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "box_background": "#ffffff",
+        "colors_button_label": "#3c3c3c",
+        "colors_button_background": "#d4cfcc",
+        "colors_text": "#212326",
+        "colors_highlight": "#bbff00",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_banner_new_PijXhk": {
+      "type": "image-banner-new",
+      "settings": {
+        "page_width": "full-width",
+        "image": "shopify://shop_images/FullWidth-Bild_-_0px_Spacing.jpg",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "600px",
+        "enable_boxed_height": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "200px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_box": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#212326",
+        "colors_text": "#212326",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 28,
+        "boxed_width": 50,
+        "enable_spacing_left_right": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_XnBC6E": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zMYYHf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bioelektrizität: Was ist das?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_L8AMRc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Von Albert Szent-Györgyi, Mediziner, Biochemiker und Nobelpreisträger für Medizin, stammt der Satz <strong>„Bioelektrizität ist die Essenz des Lebens“.</strong></p><p>Und genau darum geht es: <strong>biologische Elektrizität;</strong> natürliche elektromagnetische Felder, die das Leben im Großen und Kleinen bestimmen. </p><p>Mit „bestimmen“ ist gemeint: Bioelektrizität lenkt, steuert und organisiert Leben. 👈 </p><p>Wer die <a href=\"#\" title=\"#\">Gefahren von Mobilfunk, WLAN, 4G (LTE) und 5G</a> richtig einschätzen möchte, muss das, was nun folgt, konsequent mitdenken.</p><p>Fangen wir also an. Mit dem „großen Ganzen“: dem Leben auf unserem Planeten. Denn Leben wird durch und durch von natürlicher Elektromagnetik bestimmt.</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "blank_space_P6Ued3": {
+          "type": "blank_space",
+          "settings": {
+            "desktop_padding": 160,
+            "mobile_padding": 50
+          }
+        },
+        "heading_VAFkyr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wir Menschen sind fester Bestandteil eines elektromagnetischen Wechselspiels.",
+            "enable_italic": true,
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "text_DrYCpn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Max Mustermann</strong></p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zMYYHf",
+        "text_L8AMRc",
+        "blank_space_P6Ued3",
+        "heading_VAFkyr",
+        "text_DrYCpn"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#baab9e",
+        "link_text_color": "#baab9e",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 100,
+        "padding_bottom": 160,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_banner_new_UFaEY7": {
+      "type": "image-banner-new",
+      "blocks": {
+        "heading_JQw8WD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ava",
+            "heading_size": "x-large",
+            "heading_tag": "h1"
+          }
+        },
+        "text_86aCAc": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Chip für alle mobilen Endgeräte.</strong></p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "text_CRpQQU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aus EssenceX Schungit.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_xGYPDA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt entdecken",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JQw8WD",
+        "text_86aCAc",
+        "text_CRpQQU",
+        "button_xGYPDA"
+      ],
+      "settings": {
+        "page_width": "full-width",
+        "image": "shopify://shop_images/banner-image.png",
+        "image_position": "center center",
+        "text_box_position": "middle-left",
+        "text_alignment": "left",
+        "image_ratio": "350px",
+        "enable_boxed_height": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_image": "shopify://shop_images/mobile-image1.png",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "340px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_box": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 100,
+        "boxed_width": 50,
+        "enable_spacing_left_right": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_ayp9PJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_htqkxP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wie bestimmt natürliche Elektromagnetik das Leben auf unserem Planeten?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_RgQxR4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Um diese Frage zu beantworten, blicken wir zunächst in den Kosmos. Denn dort, im Kosmos, beginnt die elektromagnetische Beeinflussung von Leben auf unserem Planten, der Erde.</p><p>Die Galaxie, in der wir leben, die sogenannte „Milchstraße“ rotiert alle 250 Millionen Jahre ein Mal um ihre eigene Achse. Dadurch entsteht Energie, denn bei einem Durchmesser von ca. 100.000 Lichtjahren (01) bewegen sich Sternenkonstellationen mit einer schier unfassbaren Geschwindigkeit innerhalb dieser Rotation.</p><p><strong>Und Rotation erzeugt Energie.</strong></p><p>Mit anderen Worten: Im Zentrum der Rotation entsteht <strong>Elektrizität.</strong> 🙌</p><p>Diese Elektrizität ist es, die als starke <strong>Strahlung elektromagnetischer Energie</strong> unseren Planeten, die Erde, erreicht.</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_3de3tX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was passiert mit der kosmischen Strahlung auf unserem Planeten?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_L7UXeT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kosmische Strahlung besteht aus extrem energiereichen Teilchen, die das Leben auf unserem Planeten zerstören könnten. Damit das nicht passiert, existiert das <strong>Erdmagnetfeld.</strong></p><p>Das Erdmagnetfeld wirkt als Schutzschild; genauer: als Filter. Seine Aufgabe: Es lenkt die energiereichen Teilchen aus dem All entlang der <strong>Magnetfeldlinien</strong> um die Erde herum. Auf der sonnenabgewandten Seite entsteht dadurch ein Schweif elektromagnetischer Energie, der mehrere Millionen Kilometer misst.</p><p>Nur an den magnetischen Polen unseres Planeten schaffen es einige Teilchen zur Erde. Treffen diese Teilchen auf die Erdatmosphäre entstehen die sogenannten <strong>Polarlichter</strong>.</p><p>Das Erdmagnetfeld geht in den sogenannten „<strong>Van-Allen-Strahlungsgürteln</strong>“ (benannt nach dem Astrophysiker James Van Allen) bis zu 55.000 Kilometer hoch. Hier bildet es den Strahlungsgürtel der Erde; einen Torus energiereich geladener Elementarteilchen im Weltraum, die im Erdmagnetfeld eingeschlossen sind (02).</p><p>Das Erdmagnetfeld schirmt kosmische Strahlung nicht einfach nur ab, es filtert sie; d.h. es lässt exakt das durch, was biologisches Leben auf unserem Planeten überhaupt erst möglich macht!</p><p>Anders gesagt: <strong>Ohne kosmische Strahlung kein Leben </strong>❗</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_mxxneT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wie schaut es auf der Erde selbst aus?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_y9KPT9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Die vielleicht grundlegendste <a href=\"#\" title=\"#\">natürliche elektromagnetische Frequenz</a> unseres Planeten ist die <strong>Eigenfrequenz der Erde</strong>, die sogenannte Schumann-Resonanz. Sie liegt bei 8 Hz und wurde 1953 von Winfried Schumann und Herbert König entdeckt. </p><p>Die Schumann-Resonanz entsteht durch hunderte von Blitzschlägen, die pro Sekunde auf unseren Planeten treffen (03). Ein solcher Blitzschlag entlädt Milliarden von Watt, erzeugt negativ geladenen Stickstoff – essenziell wichtig für Pflanzen – und wirkt auf das Erdmagnetfeld wie das Schlagen eines Gongs.</p><p>Wenig bekannt: Die 8 Hz der Schumann-Resonanz entsprechen den 8 Hz Alphawellen unseres Gehirns (04). Diese Frequenz stellt eine Art „idealen“ Zustand dar, indem sowohl Entspannung als auch wache Aufmerksamkeit vereint sind. 😇</p><p>Karl Hecht, emeritierter Professor für Neurophysiologie an der Charité, bringt die Bedeutung der Schumannwellen wie folgt auf den Punkt: „<strong>Die Schumannwellen gewährleisten das Leben auf unserem Planeten, sie bestimmen tiefgreifend unser Gesundsein. Ohne Schumannwelle könnten wir nicht leben</strong>“ (05).</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_htqkxP",
+        "text_RgQxR4",
+        "heading_3de3tX",
+        "text_L7UXeT",
+        "heading_mxxneT",
+        "text_y9KPT9"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#3c3c3c",
+        "link_text_color": "#212326",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 100,
+        "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "newsletter2_6Bybyx": {
+      "type": "newsletter2",
+      "blocks": {
+        "subheading_kcpXzJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Unsere Newsletter</em></p>",
+            "sub_text_color": "#baab9e"
+          }
+        },
+        "heading_dLByRx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Jeden Monat 20% sparen?",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_fpeFAq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kein Witz: Bei uns gibt es exklusiv für Newsletter-Abonnenten jeden Monat Rabatte von 20% und Mehr. Außerdem versüßen wir deine Anmeldung mit einem 10% Willkommens-Gutschein!</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_kcpXzJ",
+        "heading_dLByRx",
+        "text_fpeFAq"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#baab9e",
+        "secondary_background": "#f4f2f2",
+        "success_message": "Thanks for subscribing",
+        "email_placeholder": "Deine beste E-Mail-Adresse",
+        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
+        "enable_main_image": true,
+        "image": "shopify://shop_images/newsletter.jpg",
+        "image_position": "top center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "image_square",
+        "enlarge_content": "small",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "300px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 100,
+        "padding_bottom": 80,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_WPJFpG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pJjM3a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wie schaut es auf der Erde selbst aus?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_RgaYD8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Exakt. Wir sind gewissermaßen „mittig“ eingebunden: unter uns die Erde, über uns der Himmel.</p><p>Beide tragen unterschiedliche elektrische Ladungen.</p><p>Die Ladung der Erde; oder besser: der Erdkugel, ist als Ganzes elektrisch <strong>negativ</strong>. Die Ladung der Ionosphäre hingegen, jenem Teil der Atmosphäre, der große Mengen von Ionen und freien Elektronen enthält, ist elektrisch <strong>positiv</strong> (06).</p><p>Dazwischen stehen wir: die Menschen.<br/>Der TCM, der traditionellen chinesischen Medizin folgend, verfügt jeder Mensch über zwei überaus besondere Punkte; Punkte, die uns mit der Erde einerseits und dem Kosmos anderseits, verbinden.</p><p>Die Verbindung zur Erde kommt zustande am sogenannten „<strong>Yongquan</strong>“; die „Sprudelnde Quelle“, der <strong>Akupunktur-Punkt Niere 1</strong>, der erste Punkt des Nieren-Meridians. Er ist der tiefste Akupunkturpunkt des Körpers und der einzige an der Fußsohle (07).</p><p>Die Verbindung zum Kosmos hingegen findet am „<strong>Bai Hui</strong>“ statt, dem Punkt der „Hundert Konvergenzen“; zu finden auf der Mittellinie unseres Kopfes (08).</p><p>Beide Punkte sind über das sogenannte <strong>Meridiansystem</strong> verbunden. Dieses Leitsystem wurden vor ca. 2.500 Jahren im Buch den Gelben Kaisers in China als die Meridiane der Akupunktur beschrieben. </p><p>In den 1950er Jahren wurde es von Dr. Reinhold Voll; einem deutschen Arzt und Erfinder der Elektroakupunktur, experimentell nachgewiesen.</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_Gn7paU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was sind Akupunkturpunkte und Meridiane?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_qXbp74": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Akupunkturmeridiane sind Leitbahnen für freie Elektronen. </strong></p><p>Sie zeichnen sich durch einen geringeren elektrischen Widerstand bei zugleich höherer Konduktivität (elektrische Leitfähigkeit) aus.</p><p>Entsprechendes gilt für Akupunkturpunkte: Die Hautoberfläche über einem Akupunkturpunkt weist einen deutlich geringeren elektrischen Widerstand auf, als dessen Umgebungsfläche. Im Durchschnitt weisen Akupunkturpunkte 5 mV auf, die diese umgebende Haut 1 mV.</p><p>Immer dann, wenn wir in Kontakt mit der Erde stehen, also barfuß laufen, nehmen wir über die „Sprudelnde Quelle“ <strong>freie Elektronen</strong> auf.</p><p>Freie Elektronen sind Elektronen, die von ihrem Atomverband gelöst sind. <strong>Es sind „Extra-Elektronen“ mit großem Nutzen für deine Gesundheit (09)</strong>.</p><p>Die durch Barfußlaufen aufgenommenen Elektronen werden über das Meridiansystem unseres Körpers nach oben transportiert; vom Punkt „Sprudelnde Quelle“ hinauf zum Punkt der „Hundert Konvergenzen“. Dort, am „Konvergenzpunkt“, nähern sich Endlichkeit (Mensch) und Unendlichkeit (Kosmos) an: sie berühren sich gewissermaßen. Nichts anderes meint der Begriff der Konvergenz (10). 🙂</p><p>Am Punkt der „Hundert Konvergenzen“ ziehen wir die positive Ladung der Atmosphäre an – und nutzen sie für unsere Gesundheit. </p><p><strong>Die Anziehung positiver Ionen setzt allerdings voraus, dass wir gut mit freien Elektronen „versorgt“ sind</strong>. Sind wir es nicht, weil uns zum Beispiel der Kontakt zur Erde fehlt, entgeht uns ein wichtiger Faktor zur Gesunderhaltung.</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_xqBfYT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bioelektrizität ist die Essenz des Lebens. Gestörte Bioelektrizität bedeutet Krankheit. Ihre Abwesenheit bedeutet Tod.",
+            "enable_italic": true,
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "text_7HL7g9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Max Mustermann</strong></p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pJjM3a",
+        "text_RgaYD8",
+        "heading_Gn7paU",
+        "text_qXbp74",
+        "heading_xqBfYT",
+        "text_7HL7g9"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#3c3c3c",
+        "link_text_color": "#212326",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_banner_new_4LG3rt": {
+      "type": "image-banner-new",
+      "blocks": {
+        "heading_eNmyPf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sol",
+            "heading_size": "x-large",
+            "heading_tag": "h1"
+          }
+        },
+        "text_GttDG4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Anhänger für den Körper</strong></p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "text_c9Eide": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aus EssenceX Schungit.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_Dq3wmX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt entdecken",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eNmyPf",
+        "text_GttDG4",
+        "text_c9Eide",
+        "button_Dq3wmX"
+      ],
+      "settings": {
+        "page_width": "full-width",
+        "image": "shopify://shop_images/Mask_group.png",
+        "image_position": "center center",
+        "text_box_position": "middle-left",
+        "text_alignment": "left",
+        "image_ratio": "350px",
+        "enable_boxed_height": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_image": "shopify://shop_images/mobile-image1.png",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "340px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_box": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 100,
+        "boxed_width": 50,
+        "enable_spacing_left_right": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_GzakzV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qTNLy8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welche Auswirkungen haben Akupunkturpunkte auf den Körper?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_gTctc9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Der TCM folgend beginnt Gesundheit hier: im <strong>Energiesystem</strong> des Körpers.</p><p>Tatsächlich ist es gar nicht nötig auf die TCM zu verweisen, um die Bedeutung des Meridiansystems zu verdeutlichen.</p><p>Analog zu den Akupunktur-Meridianen existiert ein Röhrensystem in unserem Körper, das im Bindegewebe lokalisiert ist. Es wurde in den 1960er Jahren von Bohan Kim, einem koreanischen Arzt und Wissenschaftler entdeckt (11).</p><p>Dieses Röhrensystem trägt die Bezeichnung „<strong>primovaskuläre System</strong>“.</p><p>Kim konnte nachweisen, dass Kontrastmittel, dass an einem Akupunkturpunkt ins Bindegewebe gespritzt wurde, sich exakt entlang jener Linien verteilt, die als Meridiane beschrieben werden. Wissenschaftler der Seoul National University bestätigten diese Experimente Jahrzehnte später (12).</p><p>Und noch etwas überaus Faszinierendes entdeckte man: Im primovaskulären System transportiert unser Körper <strong>DNA von Stammzellen – das Rohmaterial aller zellulären Erneuerung</strong> (13).</p><p>Zudem zeigte sich, dass das primovaskuläre System einwandfrei nur dann funktioniert, wenn die dazugehörigen Akupunktur-Meridiane intakt waren! </p><p>Und „intakt“ heißt was?</p><p>Richtig: Das Elektronen frei fließen können! Mit anderen Worten: <strong>Auch die physiologische Regeneration von Zellen wird bioelektrisch gesteuert!</strong></p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_HJ3h7F": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was passiert, wenn unsere natürliche Bioelektrizität gestört wird?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_zmVWYC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wie schon Albert Szent-Györgyi, Nobelpreisträger für Mediziner, sagte: <strong>„Bioelektrizität ist die Essenz des Lebens“</strong>. Und wenn diese Essenz gestört ist, dann ist Leben so, wie es sein sollte, nicht mehr möglich.</p><p>Der große Weltraummediziner, Prof. Karl Hecht drückt es wie folgt aus: „Alles Leben vollzieht sich in einer elektromagnetischen Umwelt. <strong>Alle Lebewesen sind elektromagnetisch determiniert</strong>. Die <a href=\"#\" title=\"#\">natürlichen EMF Frequenzen</a> unserer Umwelt takten sich regulierend in die Informationsprozesse lebender Systeme ein. <strong>Gestörte Bioelektrizität bedeutet Krankheit. Ihre Abwesenheit bedeutet Tod.</strong>“ 😳</p><p>Übrigens: Szent-Györgyi drängte darauf, die Biochemie der Medizin um die Physik zu erweitern. Szent-Györgyi sah in menschlichen Zellen <strong>Flüssigkristalle</strong>, d.h. <strong>elektromagnetisch koordinierte Strukturen</strong>.</p><p>Mit dieser Vermutung lag Szent-Györgyi goldrichtig: Inzwischen sind viele Eigenschaften von Halbleitern sowie piezoelektrische Eigenschaften (die Fähigkeit, mechanischen Druck in elektrische Spannung umzuwandeln) von Proteinen, DNA, Blutkörperchen, Zellmembranen, Fettsäuren, Kollagen und anderen Bestandteilen des Körpers nachgewiesen.</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_EjRQLm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Gesundheit bedeutet also immer auch im „Fluss“ zu sein - Elektronen frei fließen zu lassen?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_tmiVA6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Absolut richtig.</p><p>Alle alten Weisheitstraditionen sehen Gesundheit immer auch aus energetischer Perspektive. Die TCM steht hier nur stellvertretend.</p><p>Für die traditionelle chinesische Medizin – ein Gesundheitssystem mit fast 2000 Jahren Erfahrung – beruht letztlich jede Erkrankung auf einer <strong>Störung der Lebensenergie</strong>. </p><p>Diese Lebensenergie wird durch den ständigen Beschuss technischer EMF (EMF = elektromagnetischer Felder) gestört – und zwar dauerhaft gestört. 😢</p><p>Und das hat Folgen.</p><p>Folgen, die wir alle kennen: Erschöpfung, Müdigkeit, Schlafstörungen, Konzentrationsmangel, Verdauungsstörungen, Leaky Gut sowie ein ständiges Gefühl latenter Überforderung. 😓</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qTNLy8",
+        "text_gTctc9",
+        "heading_HJ3h7F",
+        "text_zmVWYC",
+        "heading_EjRQLm",
+        "text_tmiVA6"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#3c3c3c",
+        "link_text_color": "#212326",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_banner_new_37XEtf": {
+      "type": "image-banner-new",
+      "settings": {
+        "page_width": "full-width",
+        "image": "shopify://shop_images/AdobeStock_893485358_1.jpg",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "600px",
+        "enable_boxed_height": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "200px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_box": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#212326",
+        "colors_text": "#212326",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 28,
+        "boxed_width": 50,
+        "enable_spacing_left_right": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_dXYJEq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cMQjtN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was ist mit unseren Zellen: Werden auch sie elektrisch gesteuert?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_Aga9NR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jede unserer Zellen ist mit einer Zellmembran umgeben, die das Zellinnere umschließt und es dadurch abgrenzt. Auf diese Weise erhalten unsere Zellen das Milieu in ihrem Inneren aufrecht.</p><p>Zellmembranen haben verschiedenste Aufgaben; der Stofftransport zwischen extra- und intrazellulärem Raum stellt dabei die zentrale Aufgabe dar. Der Transport von Stoffen erfolgt, indem röhrenförmig angeordnete Proteinkomplexe, eingelagert in den Zellmembranen – sogenannte Ionenkanäle – genutzt werden.</p><p>Und jetzt kommt’s: Rate doch mal, was Ionenkanäle eigentlich sind?</p><p>Exakt: <strong>Kanäle elektrischer Strömungen!</strong> Genauer: Ionenkanäle sind Kanäle, die durch Spannungen gesteuert werden. Ihr Öffnen und Schließen ist abhängig von der Membranspannung der Zelle. Aus diesem Grund spricht man von sogenannten <strong>spannungsgesteuerten Ionenkanälen</strong> (14) (15)❗</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_BYGFLA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unsere Zellen stehen also unter Spannung?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_a6kqq6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ganz genau: Gesunde Zellen weisen eine <strong>Membranspannung von ca. 70</strong> mV auf (16). Nicht mehr und nicht weniger.</p><p>Sinkt diese Spannung wird die Zelle krank. Bei Krebspatienten beispielsweise sinkt die Zellmembranspannung auf bis zu 30 mV ab (17).😨</p><p>Bei einem anderen Typus von Zellen, unseren Nervenzellen, liegt der Schwellenwert bei gerade einmal 40 mV.</p><p>Anders ausgedrückt: Bei Nervenzellen entscheiden 40 mV darüber, ob wir gelassen bleiben – also auf einen Gedanken mit starkem Stress reagieren – oder nicht. Werden die 40 mV nicht überschritten, so bleiben wir im Gleichgewicht mit dem, was wir denken, fühlen oder über unsere Sinne wahrnehmen. Werden die 40 mV hingegen überschritten, kommt es zur <a href=\"#\" title=\"#\">Öffnung spannungsgesteuerter Ionenkanäle</a> und <strong>eine Depolarisation </strong>der Zelle setzt ein (Depolarisation = Erregung der Zelle durch Einströmen von elektrischen Ladungen).</p><p>Die Depolarisation setzt unterschiedlichste Reaktionen des Nervensystems in Gang, die alle eines gemeinsam haben: Sie lösen Stress aus (18) (19) (20).</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_XWfNta": {
+          "type": "heading",
+          "settings": {
+            "heading": "Zellgesundheit geht also einher mit Zellspannung?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_WDrCWa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ganz genau: <strong>Die Spannungssteuerung unserer Zellen ist entscheidend für die Zellgesundheit.</strong></p><p>Da du letztlich nichts anderes bist, als ein sehr großer „Haufen von Zellen“, die dich auf wundersame Art und Weise am Leben erhalten, geht es auch dir nur dann gut, wenn es deinen Zellen gut geht.</p><p><strong>Jeder Erwachsene besteht aus ca. 1014 bzw. 100 Billionen bzw. 100.000.000.000.000 dieser wundervollen Lebensspender (21).</strong></p><p>Bei einem gesunden Menschen steht jede einzelne dieser 100 Billionen Zellen unter optimaler Spannung!</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_WUwen3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Der Mensch ist ein durch und durch bioelektrisch organisiertes Lebewesen.",
+            "enable_italic": true,
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "text_X9dFfM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Max Mustermann</strong></p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cMQjtN",
+        "text_Aga9NR",
+        "heading_BYGFLA",
+        "text_a6kqq6",
+        "heading_XWfNta",
+        "text_WDrCWa",
+        "heading_WUwen3",
+        "text_X9dFfM"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#3c3c3c",
+        "link_text_color": "#212326",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_banner_new_YpYKmj": {
+      "type": "image-banner-new",
+      "blocks": {
+        "heading_mKABPq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lotte",
+            "heading_size": "x-large",
+            "heading_tag": "h1"
+          }
+        },
+        "text_fCHGDL": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Platte für Lebensmittel und Getränke.</strong></p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "text_gxkfTL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aus EssenceX Schungit.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_azf3wf": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt entdecken",
+            "button_link": "#",
+            "button_size": "medium",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mKABPq",
+        "text_fCHGDL",
+        "text_gxkfTL",
+        "button_azf3wf"
+      ],
+      "settings": {
+        "page_width": "full-width",
+        "image": "shopify://shop_images/Mask_group_c6d387cb-294f-42af-9576-e73be822c6a8.png",
+        "image_position": "center center",
+        "text_box_position": "middle-left",
+        "text_alignment": "left",
+        "image_ratio": "350px",
+        "enable_boxed_height": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_image": "shopify://shop_images/mobile-image1.png",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "340px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_box": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 100,
+        "boxed_width": 50,
+        "enable_spacing_left_right": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_NE6Kzg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_F4UmY6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Was ist mit unserem Energiestoffwechsel: wird er ebenfalls elektromagnetisch gesteuert?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_wPG4xC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In der Schule lernt jeder Schüler, dass unsere Energie in den Mitochondrien, den „Zellkraftwerken“ des Menschen, erzeugt werden. Dort wird ATP, Adenosintriphosphat produziert. ATP ist der universelle, unmittelbar verfügbare Energieträger in Zellen und wichtigster Regulator aller energieliefernden Prozesse im Menschen (22).</p><p>Was jedoch kaum thematisiert wird und folglich in keiner Schule gelehrt: Wie die Erzeugung von Energie konkret erfolgt.</p><p>Die wenig überraschende Antwort lautet: im Wege eines durch und durch <strong>elektromagnetischen Prozesses</strong>. 😎</p><p>Im Mittelpunkt dieses Prozesses stehen sogenannte <strong>Cytochrom-Oxidasen</strong>; ein Komplex der mitochondrialen Atmungskette, der in der inneren Mitochondrienmembran verankert ist und die Elektronenbeschleunigung zur Energiegewinnung vornimmt (23).</p><p>Diese Beschleunigung setzt Infrarot frei, was in nutzbare Energie zur Herstellung des Zellkraftstoffs ATP umgewandelt wird.</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_3NNJLc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Und wie steht es mit dem Sauerstoffkreislauf?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_f7xrba": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Auch der Sauerstoffkreislauf wird elektromagnetisch gesteuert. Im Zentrum der Steuerung stehen sog. <strong>Porphyrine</strong>, die <strong>Antennen für elektromagnetische Wellen</strong> sind.</p><p>Porphyrine sind Moleküle, denen im menschlichen Stoffwechsel an verschiedensten Stellen eine zentrale Rolle zukommt (24).</p><p>Hier ein kleiner Auszug: Das im roten Blutfarbstoff gebundene <strong>Hämoglobin</strong>, verantwortlich für den Transport von Sauerstoff im Blut, ist ein <strong>Porphyrin</strong> (25). Ebenso das <strong>Myoglobin</strong>, ein Muskelprotein, dass für das Funktionieren der Muskeln, unerlässlich ist (26). Auch das wichtigste Entgiftungsenzym der Leber, <strong>Cytochrom</strong> P450, ist ein Porphyrin (27). 🤓</p><p>Porphyrine sind Bestandteile vieler lebenswichtiger Enzyme; wie z.B. der Katalase oder den oben erwähnten Cytochrom-Oxidasen.</p><p>Das einzigartige an Porphyrinen: <strong>Porphyrinen reagieren sehr sensibel auf elektromagnetische Schwingungen</strong>. 👈</p><p>Chlorophyll beispielsweise – ebenfalls ein Porphyrin – nimmt elektromagnetische Energie in Form von Sonnenlicht auf, bündelt es und nutzt es anschließend zum Aufbrechen von Kohlendioxidmolekülen im Wege der Photosynthese (28).</p><p>Bis zu 1.000 Chlorophyllmoleküle arbeiten zusammen, wenn sie mit der Energie, die sie aus der Sonne aufnehmen, ein Molekül Kohlendioxid spalten, damit ein Molekül Sauerstoff freigesetzt werden kann.</p><p>In unserem Körper setzen dann die Verwandten des Chlorophylls – Hämoglobin und Myoglobin – den Kreislauf des Lebens fort. Sie sorgen für den Sauerstofftransport in die Zellen hinein. Und hier, in den Zellen, in unseren Mitochondrien, den Zellkraftwerken, vollenden Cytochrom-Oxidasen – ebenfalls Porphyrine – das Gesamtkunstwerk des Lebens: Sie stellen uns lebenswichtige Energie zur Verfügung.</p><p>Merke: <strong>Ohne Energie kein Leben. Ohne Porphyrine keine Energie. Und ohne Elektromagnetik keine Porphyrine.</strong> 🍀</p><p>So einfach ist das.</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_eDPNR4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Leben ist also durch und durch bioelektrisch organisiert?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_yJRGFN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aus dem bisher Gesagten – und die Reihe an Beispielen ließe sich endlos fortsetzen – ergibt sich vor allem eines: <strong>Der Mensch ist ein durch und durch bioelektrisch organisiertes Lebewesen</strong>. Kein Bereich, </p><p>der nicht durch elektrische bzw. elektromagnetische Ordnungsprinzipen organisiert würde.<br/>Wir Menschen sind dafür gemacht an Sonne, Erdmagnetfeld oder kosmische Hintergrundstrahlung angebunden zu sein. </p><p>Die Bioelektrizität, die uns als Menschen ausmacht, die über Gesundheit, Vitalität und Wohlbefinden entscheidet, <a href=\"#\" title=\"#\">hat sich über eine unglaublich lange Zeit entwickelt</a>; nicht etwa isoliert, sondern im Wechselspiel zwischen Erdmagnetfeld, Sonnenenergie und kosmischer Hintergrundstrahlung.</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        },
+        "heading_tchMUj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Worin unterscheiden sich natürliche elektromagnetische Felder von technischen elektromagnetischen Feldern?​",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_9A7CTz": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>An natürliche EMF sind wir seit Jahrmillionen angepasst; an technische EMF nicht. 🙁</strong></p><p><a href=\"#\" title=\"#\">Technische EMF (umgangssprachlich: Elektrosmog) existieren erst seit etwa 100 Jahren</a>. Natürliche EMF existieren seit Jahrmillionen.</p><p>Hinzu kommt: Technische EMF sind uns <strong>artfremd</strong>. Sie weisen drei Wesensmerkmale auf, die sie von natürlichen EMF fundamental unterscheiden:</p><ul><li>Stärke der technischen Elektrizität: <strong>Intensität</strong>.</li><li>Art und Weise des Stromflusses: <strong>Wechselstrom</strong>.</li><li>An- und Ausschalten von Trägerwellen: <strong>Pulsation</strong>.</li></ul><p>Diese Wesensmerkmale sind es, die technische EMF und d.h. Elektrosmog gefährlich machen. Gefährlich für Gesundheit, Vitalität und Wohlbefinden❗</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_F4UmY6",
+        "text_wPG4xC",
+        "heading_3NNJLc",
+        "text_f7xrba",
+        "heading_eDPNR4",
+        "text_yJRGFN",
+        "heading_tchMUj",
+        "text_9A7CTz"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#3c3c3c",
+        "link_text_color": "#baab9e",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 160,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "newsletter2_w6Mq4U": {
+      "type": "newsletter2",
+      "blocks": {
+        "subheading_nU3EJf": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Unsere Newsletter</em></p>",
+            "sub_text_color": "#baab9e"
+          }
+        },
+        "heading_ME3VkU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Jeden Monat 20% sparen?",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_hJJNYW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kein Witz: Bei uns gibt es exklusiv für Newsletter-Abonnenten jeden Monat Rabatte von 20% und Mehr. Außerdem versüßen wir deine Anmeldung mit einem 10% Willkommens-Gutschein!</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nU3EJf",
+        "heading_ME3VkU",
+        "text_hJJNYW"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#baab9e",
+        "success_message": "Thanks for subscribing",
+        "email_placeholder": "Deine beste E-Mail-Adresse",
+        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
+        "enable_main_image": true,
+        "image": "shopify://shop_images/newsletter.jpg",
+        "image_position": "top center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "image_square",
+        "enlarge_content": "small",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "300px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 100,
+        "padding_bottom": 80,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_HYkQwk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7cUqDW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Elektrosmog abschirmen! Die Lösung?",
+            "enable_italic": false,
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_ePPd4E": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nein. Ganz sicher nicht. Aus vielerlei Gründen. Die wichtigsten drei im Schnelldurchlauf:</p><p>Erstens. Eine Abschirmung ist dank <strong>EssenceX</strong>, <a href=\"#\" title=\"#\">der Technologie auf der unsere Produkte basieren</a>, nicht mehr notwendig. Abschirmen war gestern. Heute ist Beyond Matter.</p><p>Zweitens: In einer abgeschirmten Umgebung erholt sich dein Körper zwar, wird aber wahrscheinlich umso sensibler, wenn du deine häusliche Umgebung verlassen musst! Auf Dauer ist das <strong>kontraproduktiv</strong>.</p><p>Drittens: Abschirmung stellt psychologisch immer eine <strong>Kapitulation vor Elektrosmog</strong> dar. Du verhältst dich, als ob Elektrosmog ein unlösbares Problem darstellt, vor dem man sich nur zurückziehen kann.</p><p>Kurzum: Abschirmen kann in seltenen Fällen kurzfristig angebracht sein. Langfristig muss es aber immer darum gehen, dass Menschen in einer elektrisch ungesunden Welt gesund leben können.</p><p>Und genau das geht mit Beyond Matter!</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7cUqDW",
+        "text_ePPd4E"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": true,
+        "intro_title": "Fazit:",
+        "content_width": 830,
+        "box_alignment": "box_left",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": true,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "primary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#3c3c3c",
+        "link_text_color": "#baab9e",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blog_intro_figJNW",
+    "image_banner_new_PijXhk",
+    "rich_text_XnBC6E",
+    "image_banner_new_UFaEY7",
+    "rich_text_ayp9PJ",
+    "newsletter2_6Bybyx",
+    "rich_text_WPJFpG",
+    "image_banner_new_4LG3rt",
+    "rich_text_GzakzV",
+    "image_banner_new_37XEtf",
+    "rich_text_dXYJEq",
+    "image_banner_new_YpYKmj",
+    "rich_text_NE6Kzg",
+    "newsletter2_w6Mq4U",
+    "rich_text_HYkQwk"
+  ]
+}

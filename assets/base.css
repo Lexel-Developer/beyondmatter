@@ -1275,7 +1275,7 @@ summary::-webkit-details-marker {
   display: block;
   position: relative;
   overflow: hidden;
-  background-color: rgb(var(--color-placeholder));
+  /* background-color: rgb(var(--color-placeholder)); */
 }
 
 [data-lazy-image] .media-wrapper.loading,
@@ -3773,6 +3773,18 @@ span[data-highlight=underline] mark svg path {
 }
 .section {
   margin-bottom: -1px;
+}
+
+.breadcrumb, .breadcrumb .link {
+    font-size: 1.2rem;
+    color: rgba(var(--color-breadcrumb), var(--breadcrumb-opacity));
+    letter-spacing: 0;
+    line-height: 1.33333;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem;
 }
 
 @media only screen and (max-width: 767px) {

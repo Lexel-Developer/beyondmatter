@@ -40,7 +40,7 @@
         --image-ratio-percent: {{ 1 | divided_by: section.settings.image_mobile.aspect_ratio | times: 100 }}%;
       }
     }  
-    {% endif -%}
+  {% endif -%}
 
   {% if section.settings.mobile_box_spacing != blank %}
     .grid--{{ section.id }} {
@@ -65,6 +65,13 @@
       padding-bottom:var(--section-padding-bottom);
     }
   }
+
+  .section--{{ section.id }} .image-with-text__grid {
+    background: var(--gradient-background);
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+  }
+  
 {%- endstyle -%}
 
 {{ 'section-image-with-text.css' | asset_url | stylesheet_tag }}
@@ -88,7 +95,7 @@
   endif
 -%}
 
-<div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
+<div class="section--{{ section.id }} section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="image-with-text{% if section.settings.use_custom_colors and section.settings.colors_background != settings.colors_background %} image-with-text--colored{% else %} image-with-text--alt{% endif %} image-with-text--{{ section.settings.enlarge_content }} page-width--{{ section.settings.page_width }}">
     <div class="{{ grid_class }} grid--{{ section.id }} grid grid--gapless grid--1-col grid--2-col-tablet">
       <div class="grid__item">
@@ -246,7 +253,7 @@
         {% endif %}
       </div>
       <div class="grid__item">
-        <div class="image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
+        <div class="image-with-text__content {{ section.settings.image_with_text_grid  }} {% if section.settings.grid_column_spacing %}grid-image-with-text__content{% endif %} {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
           {%- for block in section.blocks -%}
             {% case block.type %}
               {%- when 'heading' -%}
@@ -364,6 +371,17 @@
       "id": "enable_main_image",
       "label": "Enable image",
       "default":true
+    },
+    {
+      "type": "checkbox",
+      "id": "grid_column_spacing",
+      "label": "Enable mobile column spacing",
+      "default":false
+    },
+    {
+      "type": "text",
+      "id": "image_with_text_grid",
+      "label": "Use this (image-with-text-grid) custom class"
     },
     {
       "type": "image_picker",

@@ -15,22 +15,22 @@
 
     {%- if template.name == 'product' -%}
       {%- if collection and collection.handle %}
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+        <span class="breadcrumb__divider" aria-hidden="true">{%- render 'icon', icon: 'icon-breadcrumbs' -%}</span>
         {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
         {{ collection.title | link_to: url, class: "link" }}
       {%- endif %}
       
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      <span class="breadcrumb__divider" aria-hidden="true">{%- render 'icon', icon: 'icon-breadcrumbs' -%}</span>
 
     {%- elsif template.name == 'collection' and collection.handle %}
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      <span class="breadcrumb__divider" aria-hidden="true">{%- render 'icon', icon: 'icon-breadcrumbs' -%}</span>
 
       {%- if current_tags -%}
 
         {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
         {{ collection.title | link_to: url, class: "link" }}
 
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+        <span class="breadcrumb__divider" aria-hidden="true">{%- render 'icon', icon: 'icon-breadcrumbs' -%}</span>
 
         {%- for tag in current_tags -%}
           {%- liquid
@@ -58,18 +58,18 @@
 
     {%- elsif template.name == 'blog' %}
 
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      <span class="breadcrumb__divider" aria-hidden="true">{%- render 'icon', icon: 'icon-breadcrumbs' -%}</span>
       {%- if current_tags %}
         {{ blog.title | link_to: blog.url, class: "link" }}
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+        <span class="breadcrumb__divider" aria-hidden="true">{%- render 'icon', icon: 'icon-breadcrumbs' -%}</span>
         <span>{{ current_tags | join: " + " }}</span>
       {%- endif -%}
 
     {%- elsif template.name == 'article' %}
 
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      <span class="breadcrumb__divider" aria-hidden="true">{%- render 'icon', icon: 'icon-breadcrumbs' -%}</span>
       {{ blog.title | link_to: blog.url, class: "link" }}
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      <span class="breadcrumb__divider" aria-hidden="true">{%- render 'icon', icon: 'icon-breadcrumbs' -%}</span>
 
     {%- elsif template.name == 'page' %}
 
@@ -78,12 +78,12 @@
 
     {%- elsif template.name == 'search' %}
 
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      <span class="breadcrumb__divider" aria-hidden="true">{%- render 'icon', icon: 'icon-breadcrumbs' -%}</span>
       <span>{{ page_title | replace: '*', '' }}</span>
 
     {%- else %}
 
-      <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      <span class="breadcrumb__divider" aria-hidden="true">{%- render 'icon', icon: 'icon-breadcrumbs' -%}</span>
       <span>{{ page_title }}</span>
 
     {%- endif -%}

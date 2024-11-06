@@ -65,6 +65,11 @@
       padding-bottom:var(--section-padding-bottom);
     }
   }
+  .section--{{ section.id }} .image-with-text__grid {
+    background: var(--gradient-background);
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+  }
 {%- endstyle -%}
 
 {{ 'section-image-with-text.css' | asset_url | stylesheet_tag }}
@@ -89,7 +94,7 @@
   endif
 -%}
 
-<div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
+<div class="section--{{ section.id }} section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="image-with-text{% if section.settings.use_custom_colors and section.settings.colors_background != settings.colors_background %} image-with-text--colored{% else %} image-with-text--alt{% endif %} image-with-text--{{ section.settings.enlarge_content }} page-width--{{ section.settings.page_width }}">
     <div class="{{ grid_class }} grid--{{ section.id }} grid grid--gapless grid--1-col grid--2-col-tablet">
       {% if section.settings.enable_main_image == true %}

@@ -18,9 +18,11 @@
       {% endcomment %}
 
       --color-foreground: {{ section.settings.colors_text.red }}, {{ section.settings.colors_text.green }}, {{ section.settings.colors_text.blue }};
-      --color-link: var(--color-foreground);
-      --color-border: var(--color-foreground);
-      --color-heading: var(--color-foreground);
+      --color-foreground-heading: {{ section.settings.heading_color.red }}, {{ section.settings.heading_color.green }}, {{ section.settings.heading_color.blue }};
+      --color-link-text: {{ section.settings.link_text_color.red }}, {{ section.settings.link_text_color.green }}, {{ section.settings.link_text_color.blue }};
+      --color-link: var(--color-link-text);
+      --color-border: var(--color-link-text);
+      --color-heading: var(--color-foreground-heading);
       --color-button-background: {{ section.settings.colors_button_background.red }}, {{ section.settings.colors_button_background.green }}, {{ section.settings.colors_button_background.blue }};
       --color-button-text: {{ section.settings.colors_button_label.red }}, {{ section.settings.colors_button_label.green }}, {{ section.settings.colors_button_label.blue }};
       --color-button-border: var(--color-button-background);
@@ -61,7 +63,7 @@
 {%- if section.settings.show_divider %}<div class="section--divider">{% endif -%}
   <div class="rich-text section--padding{{ custom_class }}">
     <div class="page-width--{{ section.settings.page_width }}">
-      <div class="rich-text__block_main {% if section.settings.show_inside_box %} rich_box{% endif %}">
+      <div class="rich-text__block_main {% if section.settings.show_inside_box %} rich_box{% endif %} {% if section.settings.remove_gap %} remove_gap{% endif %} ">
         {% if section.settings.intro_title != blank and section.settings.enable_intro_title %}
           <div class="intro_title">
             {{ section.settings.intro_title }}
@@ -71,7 +73,7 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'heading' -%}
-                <{{ block.settings.heading_tag }} class="rich-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</{{ block.settings.heading_tag }}>
+                <{{ block.settings.heading_tag }} class="rich-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{% if block.settings.enable_italic %}<em>{% endif %}{{ block.settings.heading }}{% if block.settings.enable_italic %}</em>{% endif %}</{{ block.settings.heading_tag }}>
               {%- when 'subheading' -%}
                 <p class="rich-text__subheading{% if block.settings.secondary_color %} rich-text__subheading--colored{% endif %} {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</p>
               {%- when 'text' -%}
@@ -80,6 +82,21 @@
                     {%- render 'highlight-text', hl_input: block.settings.text, hl_phrases: block.settings.highlight_phrases, hl_style: block.settings.highlight_style -%}
                   </div>
                 </use-animate>
+              {%- when 'blank_space' -%}
+                  <style>
+                    #shopify-section-{{ section.id }} #block--{{ block.id }} {
+                      --block-padding-top: {{ block.settings.desktop_padding }}px;
+                      padding-top:var(--block-padding-top);
+                    }
+
+                    @media only screen and (max-width:749px){
+                      #shopify-section-{{ section.id }} #block--{{ block.id }} {
+                        --block-padding-top: {{ block.settings.mobile_padding }}px;
+                        padding-top:var(--block-padding-top);
+                      }
+                    }
+                  </style>
+                  <div id="block--{{ block.id }}" class="block-blank-space" style="display:block; margin:0;" {{ block.shopify_attributes }}></div>
               {%- when 'custom_liquid' -%}
                 <div class="rich-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.custom_liquid }}</div>
               {%- when 'button' -%}
@@ -157,6 +174,12 @@
     },
     {
       "type": "checkbox",
+      "label": "Elementlücke entfernen",
+      "id": "remove_gap",
+      "default": false
+    },
+    {
+      "type": "checkbox",
       "label": "Intro-Titel aktivieren",
       "id": "enable_intro_title",
       "default": false
@@ -173,7 +196,7 @@
       "id": "content_width",
       "default": 900,
       "min": 300,
-      "max": 1000,
+      "max": 1300,
       "step": 10,
       "unit": "px"
     },
@@ -244,12 +267,6 @@
     },
     {
       "type": "checkbox",
-      "id": "narrow",
-      "default": false,
-      "label": "t:sections.all.narrow.label"
-    },
-    {
-      "type": "checkbox",
       "id": "show_divider",
       "default": false,
       "label": "t:sections.all.show_divider.label"
@@ -292,6 +309,18 @@
       "type": "color",
       "id": "colors_text",
       "label": "t:sections.all.colors.colors_text.label",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "id": "link_text_color",
+      "label": "Link text color",
       "default": "#212326"
     },
     {
@@ -392,15 +421,46 @@
   ],
   "blocks": [
     {
+      "type": "blank_space",
+      "name": "Blank space",
+      "settings": [
+        {
+          "type": "range",
+          "id": "desktop_padding",      
+          "min": 0,
+          "max": 200,
+          "step": 2,
+          "unit": "t:sections.all.padding.padding_top.unit",
+          "label": "Desktop spacing",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "mobile_padding",      
+          "min": 0,
+          "max": 200,
+          "step": 2,
+          "unit": "t:sections.all.padding.padding_top.unit",
+          "label": "Mobile spacing",
+          "default": 50
+        },
+      ]
+    },
+    {
       "type": "heading",
       "name": "t:sections.rich-text.blocks.heading.name",
-      "limit": 2,
       "settings": [
         {
           "type": "text",
           "id": "heading",
           "default": "Erzählen Sie von Ihrer Marke",
           "label": "t:sections.all.heading.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_italic",
+          "default": false,
+          "label": "Use text italic"
         },
         {
           "type": "select",
@@ -476,7 +536,6 @@
     {
       "type": "subheading",
       "name": "t:sections.rich-text.blocks.subheading.name",
-      "limit": 2,
       "settings": [
         {
           "type": "text",
@@ -515,7 +574,6 @@
     {
       "type": "text",
       "name": "t:sections.rich-text.blocks.text.name",
-      "limit": 2,
       "settings": [
         {
           "type": "richtext",
@@ -584,7 +642,6 @@
     {
       "type": "custom_liquid",
       "name": "t:sections.custom-liquid.name",
-      "limit": 2,
       "settings": [
         {
           "type": "liquid",
@@ -597,7 +654,6 @@
     {
       "type": "button",
       "name": "t:sections.rich-text.blocks.button.name",
-      "limit": 1,
       "settings": [
         {
           "type": "text",
@@ -642,7 +698,6 @@
     {
       "type": "download_button_block",
       "name": "Download button",
-      "limit": 1,
       "settings": [
         {
           "type": "text",

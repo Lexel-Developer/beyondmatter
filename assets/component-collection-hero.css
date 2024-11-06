@@ -1,5 +1,7 @@
 .collection-hero__title {
   margin: 0;
+  line-height: 1.222222;
+  letter-spacing: 0;
 }
 
 .collection-hero__title + .collection-hero__description {

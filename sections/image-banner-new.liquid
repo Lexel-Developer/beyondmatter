@@ -8,6 +8,9 @@
       --section-margin-top: {{ section.settings.margin_top }}px;
       --section-margin-bottom: {{ section.settings.margin_bottom }}px;
 
+      --primary-background: {{ section.settings.primary_background }};
+      --secondary-background: {{ section.settings.secondary_background }};
+
       {%- if section.settings.image != blank %}
         {%- assign section_image = section.settings.image | default: section.settings.image_2 -%}
         --image-ratio-percent: {{ 1 | divided_by: section_image.aspect_ratio | times: 100 }}%;
@@ -253,7 +256,7 @@
 {
   "name": "Image banner new",
   "tag": "section",
-  "class": "section",
+  "class": "section image-banner-new",
   "settings": [
     {
       "type": "select",
@@ -580,6 +583,18 @@
     {
       "type": "header",
       "content": "t:sections.all.colors.header.content"
+    },
+    {
+      "type": "color",
+      "label": "Primäre Hintergrundfarbe",
+      "id": "primary_background",
+      "default": "#baab9e"
+    },
+    {
+      "type": "color",
+      "label": "Sekundäre Hintergrundfarbe",
+      "id": "secondary_background",
+      "default": "#d4cfcc"
     },
     {
       "type": "color",

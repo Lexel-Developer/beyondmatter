@@ -13,6 +13,9 @@
     --box-background: {{ section.settings.box_background }};
 
     --color-heading: {{ section.settings.title_color.red }}, {{ section.settings.title_color.green }}, {{ section.settings.title_color.blue }};
+    {% if section.settings.description_color.red != blank %}
+      --color-foreground: {{ section.settings.description_color.red }}, {{ section.settings.description_color.green }}, {{ section.settings.description_color.blue }};
+    {% endif %}
     --color-breadcrumb: {{ section.settings.breadcrumb_color.red }}, {{ section.settings.breadcrumb_color.green }}, {{ section.settings.breadcrumb_color.blue }};
     --breadcrumb-opacity: {% if section.settings.breadcrumb_opacity < 100 %} 0.{{ section.settings.breadcrumb_opacity }} {% else %} 1{% endif %};
 
@@ -373,6 +376,11 @@
       "type": "color",
       "label": "Titel-Farbe",
       "id": "title_color"
+    },
+    {
+      "type": "color",
+      "label": "Beschreibung Farbe",
+      "id": "description_color"
     },
     {
       "type": "color",

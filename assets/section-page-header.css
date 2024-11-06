@@ -58,17 +58,6 @@
     border-color: var(--secondary-button-hover-border, #3C3C3C);
     color: var(--secondary-button-hover-text, #ffffff);
 }
-.breadcrumb, .breadcrumb .link {
-    font-size: 1.2rem;
-    color: rgba(var(--color-breadcrumb), var(--breadcrumb-opacity));
-    letter-spacing: 0;
-    line-height: 1.33333;
-}
-.breadcrumb {
-    display: flex;
-    align-items: center;
-    column-gap: 0.6rem;
-}
 
 @media screen and (hover: hover) {
     .section-page-header .button--link:hover:after {
@@ -116,6 +105,12 @@
     line-height: 1.5;
     letter-spacing: 0;
 }
+.ph-description {
+    color: rgb(var(--color-foreground));
+}
+
+
+
 
 @media only screen and (min-width:481px) and (max-width:749px) {
     .button-list-cover {

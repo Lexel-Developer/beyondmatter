@@ -11,6 +11,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "page_width": "standard",
         "heading_size": "h1",
@@ -30,6 +31,70 @@
         "padding_bottom": 38,
         "mobile_padding_top": 0,
         "mobile_padding_bottom": 30,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_MierVz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dNFGgg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Im Büro- und Zuhause",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_Ugipgx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mach dein Zuhause wieder zu einem Ort der Entspannung und Regeneration. Ob Home-Office, ein gemeinsamer Abend mit Familie und Freunden oder Schlaf – alles in den eigenen vier Wänden wird entspannter mit unseren Produkten.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dNFGgg",
+        "text_Ugipgx"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#ede9e9",
+        "main_description": "",
+        "enable_main_image": true,
+        "grid_column_spacing": true,
+        "image_with_text_grid": "",
+        "image": "shopify://shop_images/newsletter.jpg",
+        "image_position": "center center",
+        "layout": "text_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "400px",
+        "enlarge_content": "small",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#f4f2f2",
+        "colors_background": "#3c3c3c",
+        "gradient_background": "",
+        "padding_top": 64,
+        "padding_bottom": 48,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
         "padding_left": 0,
         "padding_right": 0,
         "margin_top": 0,
@@ -79,7 +144,7 @@
         "enable_quick_view": true,
         "enable_color_swatches": true,
         "enable_countdown": true,
-        "padding_top": 0,
+        "padding_top": 48,
         "padding_bottom": 72
       }
     },
@@ -221,6 +286,7 @@
         "main_description": "",
         "enable_main_image": true,
         "grid_column_spacing": true,
+        "image_with_text_grid": "",
         "image": "shopify://shop_images/Mask_group.jpg",
         "image_position": "center center",
         "layout": "image_first",
@@ -283,6 +349,7 @@
         "main_description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens.  Die Kugel SAMSON sorgt mit der Kombination aus 100 % reinem Schungit und unserer EssenceX Technologie dafür, dass du deine Geräte ohne Nachteile nutzen und deine, sowie die Gesundheit deiner Lieben schützen kannst.</p>",
         "enable_main_image": false,
         "grid_column_spacing": false,
+        "image_with_text_grid": "image-with-text-grid",
         "image": "shopify://shop_images/images-5.png",
         "image_position": "top center",
         "layout": "text_first",
@@ -390,6 +457,7 @@
   },
   "order": [
     "banner",
+    "image_with_text_MierVz",
     "subs",
     "product-grid",
     "icon_boxes_VQFMye",

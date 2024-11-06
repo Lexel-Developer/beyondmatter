@@ -40,7 +40,7 @@
 -%}
 
 <{% if enable_sticky_facet %}sticky-facet-filters class="facet-filters facet-filters-sticky is--vertical-top"{% else %}div class="facet-filters is--vertical-top"{% endif %} id="main-facet-filters" data-id="{{ section.id }}">
-  <div class="page-width{% unless enable_sorting or enable_viewing %} medium-hide large-up-hide{% endunless %}">
+  <div class="page-width--{{ section.settings.page_width }}{% unless enable_sorting or enable_viewing %} medium-hide large-up-hide{% endunless %}">
     {%- if enable_filtering or enable_sorting or enable_viewing -%}
       <facet-filters-form class="facets small-hide">
         <form id="FacetSortFiltersForm" class="facets__form">

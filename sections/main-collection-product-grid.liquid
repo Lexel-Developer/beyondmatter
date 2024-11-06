@@ -48,7 +48,7 @@
   <script src="{{ 'infinite-scroll.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<div class="section--padding{% if filter_type == 'vertical' or blocks_count > 0 %} page-width facets-vertical{% endif %}">
+<div class="section--padding{% if filter_type == 'vertical' or blocks_count > 0 %} page-width--{{ section.settings.page_width }} facets-vertical{% endif %}">
   {%- if enable_filtering or enable_sorting or enable_viewing -%}
     {%- if collection.all_products_count > 0 -%}
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
@@ -76,7 +76,7 @@
     endif
   -%}
 
-  <div class="product-grid-container{% unless filter_type == 'vertical' or blocks_count > 0 %} page-width{% endunless %}">
+  <div class="product-grid-container{% unless filter_type == 'vertical' or blocks_count > 0 %} page-width--{{ section.settings.page_width }} {% endunless %}">
     {%- liquid
       if enable_filtering or enable_sorting or enable_viewing
         if collection.all_products_count > 0
@@ -168,6 +168,34 @@
   "tag": "section",
   "class": "section collection-grid-section",
   "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
     {
       "type": "range",
       "id": "products_per_row",

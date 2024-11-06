@@ -1,0 +1,647 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "image_banner_new_PijXhk": {
+      "type": "image-banner-new",
+      "settings": {
+        "page_width": "full-width",
+        "image": "shopify://shop_images/240_F_237412371_zBixmx4uuHYUB5tMiYebjJVyVNIkmHfb_1.jpg",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "450px",
+        "enable_boxed_height": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "200px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_box": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#212326",
+        "colors_text": "#212326",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 28,
+        "boxed_width": 50,
+        "enable_spacing_left_right": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "page_header_ynV8Ui": {
+      "type": "page-header",
+      "settings": {
+        "page_width": "standard",
+        "enable_breadcrumbs": true,
+        "title": "Partner werden",
+        "description": "<p>Wer in den Genuss der heilenden Wirkung von Beyond Matter Produkten gekommen ist, kann diese besser erklären. Werde Teil unserer Community und hilf ihr beim Wachsen!</p>",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "enbale_icon": false,
+        "button_label": "Jetzt Partner werden",
+        "button_link": "#",
+        "button_style": "primary",
+        "enbale_icon2": false,
+        "button_label2": "Partner-Login",
+        "button_link2": "#",
+        "button_style2": "secondary",
+        "show_inside_box": false,
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "title_color": "#3c3c3c",
+        "breadcrumb_color": "#3c3c3c",
+        "breadcrumb_opacity": 50,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "column_grid_xAexn7": {
+      "type": "column-grid",
+      "blocks": {
+        "column_3afN4a": {
+          "type": "column",
+          "settings": {
+            "title": "1. Registrierung",
+            "heading_size": "h4",
+            "text": "<p>Eintragen, Website und Social-Media-Kanäle angeben.</p>",
+            "link_text": "Zu unseren Studien",
+            "link": "",
+            "title_color": "#3c3c3c",
+            "text_color": "#3c3c3c",
+            "background_color": "#D9D9D9",
+            "background_opacity": 0
+          }
+        },
+        "column_P9xBpt": {
+          "type": "column",
+          "settings": {
+            "title": "2. Prüfung",
+            "heading_size": "h4",
+            "text": "<p>Wir prüfen deine Anfrage. Die Bestätigung kann 1-3 Tage dauern.</p>",
+            "link_text": "Zu unseren Studien",
+            "link": "",
+            "title_color": "#3c3c3c",
+            "text_color": "#3c3c3c",
+            "background_color": "#D9D9D9",
+            "background_opacity": 0
+          }
+        },
+        "column_eUUKft": {
+          "type": "column",
+          "settings": {
+            "title": "3. Los geht’s",
+            "heading_size": "h4",
+            "text": "<p>Nach Bestätigung erhältst Du dein Partnerkonto und Werbematerial.</p>",
+            "link_text": "Zu unseren Studien",
+            "link": "",
+            "title_color": "#3c3c3c",
+            "text_color": "#3c3c3c",
+            "background_color": "#D9D9D9",
+            "background_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "column_3afN4a",
+        "column_P9xBpt",
+        "column_eUUKft"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "subtitle": "<em>Drei Schritte zur Partnerschaft</em>",
+        "title": "Und so einfach funktioniert’s:",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "show_inside_box": true,
+        "primary_background": "#ede9e9",
+        "secondary_background": "#f6f6f6",
+        "box_background": "#ffffff",
+        "title_color": "#3c3c3c",
+        "sub_text_color": "#baab9e",
+        "category_column_desktop": 3,
+        "category_column_mobile": "1",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "column_grid_kkjyhJ": {
+      "type": "column-grid",
+      "blocks": {
+        "column_aRjn7r": {
+          "type": "column",
+          "settings": {
+            "title": "Du gewinnst",
+            "heading_size": "h3",
+            "text": "<p>Indem du 10% von jedem verkauften Produkt als deinen Gewinn behältst.</p>",
+            "link_text": "Zu unseren Studien",
+            "link": "",
+            "title_color": "#3c3c3c",
+            "text_color": "#3c3c3c",
+            "background_color": "#D9D9D9",
+            "background_opacity": 0
+          }
+        },
+        "column_4yq47G": {
+          "type": "column",
+          "settings": {
+            "title": "Wir gewinnen",
+            "heading_size": "h3",
+            "text": "<p>Unsere Botschaft und Produkte erreichen mehr Menschen.</p>",
+            "link_text": "Zu unseren Studien",
+            "link": "",
+            "title_color": "#3c3c3c",
+            "text_color": "#3c3c3c",
+            "background_color": "#D9D9D9",
+            "background_opacity": 0
+          }
+        },
+        "column_hTPNfi": {
+          "type": "column",
+          "settings": {
+            "title": "Alle gewinnen",
+            "heading_size": "h3",
+            "text": "<p>Mehr Menschen können sich vor Elektrosmog und 5G schützen.</p>",
+            "link_text": "Zu unseren Studien",
+            "link": "",
+            "title_color": "#3c3c3c",
+            "text_color": "#3c3c3c",
+            "background_color": "#D9D9D9",
+            "background_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "column_aRjn7r",
+        "column_4yq47G",
+        "column_hTPNfi"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "subtitle": "",
+        "title": "Werde Teil eines großen Ganzen!",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "show_inside_box": true,
+        "primary_background": "#f6f6f6",
+        "secondary_background": "#f6f6f6",
+        "box_background": "rgba(0,0,0,0)",
+        "title_color": "#3c3c3c",
+        "sub_text_color": "#baab9e",
+        "category_column_desktop": 3,
+        "category_column_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 56,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 20,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_banner_new_FrkpdB": {
+      "type": "image-banner-new",
+      "settings": {
+        "page_width": "large",
+        "image": "shopify://shop_images/FullWidth-Bild_-_0px_Spacing.jpg",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "600px",
+        "enable_boxed_height": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_box": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#212326",
+        "colors_text": "#212326",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 0,
+        "boxed_width": 30,
+        "enable_spacing_left_right": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "contact_form_ABqemf": {
+      "type": "contact-form",
+      "blocks": {
+        "custom_field_C3NCaz": {
+          "type": "custom_field",
+          "settings": {
+            "width": "full",
+            "type": "radio",
+            "label": "Anrede",
+            "placeholder": "",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "Frau, Herr, Keine Angabe",
+            "select_options": ""
+          }
+        },
+        "custom_field_nRfwHt": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Vorname",
+            "placeholder": "Max",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_YU7Pmn": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Name",
+            "placeholder": "Mustermann",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_LrYyNe": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Firma",
+            "placeholder": "Musterfirma",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "blank_KTgiDg": {
+          "type": "blank",
+          "settings": {
+          }
+        },
+        "custom_field_NCbTDh": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Sraße",
+            "placeholder": "max@mustermann.de",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_YVNFWp": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Hausnummer",
+            "placeholder": "DE 12345678912",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_LDnfAP": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "PLZ",
+            "placeholder": "12345",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_RYDBfV": {
+          "type": "custom_field",
+          "settings": {
+            "width": "half",
+            "type": "text",
+            "label": "Ort",
+            "placeholder": "Musterstadt",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "email_field_Eaggpg": {
+          "type": "email_field",
+          "settings": {
+            "label": "E-Mail-Adresse für Auszahlung über PayPal",
+            "placeholder": "max@mustermann.de",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "phone_field_BMimFM": {
+          "type": "phone_field",
+          "settings": {
+            "label": "Telefonnumer für Rückfragen",
+            "placeholder": "DE 12345678912",
+            "required": true,
+            "width": "half"
+          }
+        },
+        "custom_field_bdPBdV": {
+          "type": "custom_field",
+          "settings": {
+            "width": "full",
+            "type": "textarea",
+            "label": "Liste mit URLs deiner Kommunikationskanäle die zur Bewerbung unserer Produkte dienen",
+            "placeholder": "Nachricht",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field_iC7x9U": {
+          "type": "custom_field",
+          "settings": {
+            "width": "full",
+            "type": "checkbox",
+            "label": "Ich habe die Datenschutzbestimmungen gelesen und akzeptiert und stimme darüber hinaus den Teilnahmebedinungen zu.",
+            "placeholder": "",
+            "required": true,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_field_C3NCaz",
+        "custom_field_nRfwHt",
+        "custom_field_YU7Pmn",
+        "custom_field_LrYyNe",
+        "blank_KTgiDg",
+        "custom_field_NCbTDh",
+        "custom_field_YVNFWp",
+        "custom_field_LDnfAP",
+        "custom_field_RYDBfV",
+        "email_field_Eaggpg",
+        "phone_field_BMimFM",
+        "custom_field_bdPBdV",
+        "custom_field_iC7x9U"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "return_url": "",
+        "show_divider": false,
+        "heading": "Bewerbung Partnerprogramm",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "text": "<p>Die meisten Themen rund um Elektrosmog sind komplexer Natur.</p><p>Nicht so einfach zu erklären. Wir haben es trotzdem versucht. Jedes Thema wird im praktischen Frage-Antwort-</p><p>Format präsentiert. So kannst du jeden Argumentationsschritt einfach nachvollziehen.</p>",
+        "show_inside_box": true,
+        "button_text": "Berwerbung abschicken",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#d4cfcc",
+        "box_background": "#f4f2f2",
+        "text_color": "#3c3c3c",
+        "border_color": "#3c3c3c",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "icon_boxes_VQFMye": {
+      "type": "icon-boxes",
+      "blocks": {
+        "guarantee_TFgVPr": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/cash-payment-coin-1_1.svg",
+            "custom_icon": "",
+            "title": "Geld-zurück-Garantie",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Risikofreies Testen für 60 Tage. Solltest du unzufrieden mit dem Produkt sein, nehmen wir es zurück ohne Fragen zu stellen.</p>",
+            "text_size": "typeset"
+          }
+        },
+        "guarantee_qzeJNB": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/warehouse-cart-package-ribbon-1_1.svg",
+            "custom_icon": "",
+            "title": "Versandkostenfrei ab 90€",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Wir versenden Deine gesamte Bestellung kostenfrei sobald sie einen Einkaufswert von 90€ überschreitet.</p>",
+            "text_size": "typeset"
+          }
+        },
+        "guarantee_6dXhWN": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/Icon_24px_-_Heart.svg",
+            "custom_icon": "",
+            "title": "Made in Germany",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Unsere Produkte werden ausschließlich in Deutschland hergestellt, verpackt und versendet.</p>",
+            "text_size": "typeset"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_TFgVPr",
+        "guarantee_qzeJNB",
+        "guarantee_6dXhWN"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#d4cfcc",
+        "layout": "default",
+        "column_alignment": "left",
+        "desktop_column_alignment": "left",
+        "mobile_column_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "columns_desktop": 3,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "newsletter2_6Bybyx": {
+      "type": "newsletter2",
+      "blocks": {
+        "subheading_kcpXzJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Unsere Newsletter</em></p>",
+            "sub_text_color": "#baab9e"
+          }
+        },
+        "heading_dLByRx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Newsletter abonnieren und nichts mehr verpassen!",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_fpeFAq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Abonniere jetzt unseren Newsletter für exklusive Angebote und Neuheiten aus der Welt von Beyond Matter. Als Dankeschön  erhältst du 10% Rabatt auf deinen ersten Einkauf.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_kcpXzJ",
+        "heading_dLByRx",
+        "text_fpeFAq"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "success_message": "Thanks for subscribing",
+        "email_placeholder": "Deine beste E-Mail-Adresse",
+        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
+        "enable_main_image": true,
+        "image": "shopify://shop_images/newsletter.jpg",
+        "image_position": "top center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "image_square",
+        "enlarge_content": "small",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "300px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_new_PijXhk",
+    "page_header_ynV8Ui",
+    "column_grid_xAexn7",
+    "column_grid_kkjyhJ",
+    "image_banner_new_FrkpdB",
+    "contact_form_ABqemf",
+    "icon_boxes_VQFMye",
+    "newsletter2_6Bybyx"
+  ]
+}

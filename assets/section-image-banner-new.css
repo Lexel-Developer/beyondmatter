@@ -1,3 +1,34 @@
+.image-banner-new {
+    position: relative;
+}
+
+.image-banner-new:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50%;
+    pointer-events: none;
+    background-color: var(--primary-background);
+}
+
+.image-banner-new:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    pointer-events: none;
+    background-color: var(--secondary-background);
+}
+
+.image-banner-new>* {
+    position: relative;
+    z-index: 1;
+}
+
 .section-image-banner-new .banner__box_img img {
     width: 100%;
     height: auto;

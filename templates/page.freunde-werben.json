@@ -1,0 +1,463 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "image_banner_new_PijXhk": {
+      "type": "image-banner-new",
+      "settings": {
+        "page_width": "full-width",
+        "image": "shopify://shop_images/240_F_237412371_zBixmx4uuHYUB5tMiYebjJVyVNIkmHfb_1_1.jpg",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "450px",
+        "enable_boxed_height": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "200px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_box": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#212326",
+        "colors_text": "#212326",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 28,
+        "boxed_width": 50,
+        "enable_spacing_left_right": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "page_header_ynV8Ui": {
+      "type": "page-header",
+      "settings": {
+        "page_width": "standard",
+        "enable_breadcrumbs": true,
+        "title": "Freunde werben",
+        "description": "<p>Da wir alle von immer mehr Geräten und somit auch potenziellen Quellen von Elektrosmog umgeben sind, ist es sehr wahrscheinlich, dass du jemanden kennst, der vielleicht darunter leidet.</p>",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "enbale_icon": false,
+        "button_label": "",
+        "button_link": "#",
+        "button_style": "primary",
+        "enbale_icon2": false,
+        "button_label2": "",
+        "button_link2": "#",
+        "button_style2": "secondary",
+        "show_inside_box": false,
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "title_color": "#3c3c3c",
+        "breadcrumb_color": "#3c3c3c",
+        "breadcrumb_opacity": 50,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "column_grid_xAexn7": {
+      "type": "column-grid",
+      "blocks": {
+        "column_3afN4a": {
+          "type": "column",
+          "settings": {
+            "title": "1. Empfehlen",
+            "heading_size": "h4",
+            "text": "<p>Du erhältst einen persönlichen Empfehlungscode per Mail. Teile ihn mit Freunden.</p>",
+            "link_text": "Zu unseren Studien",
+            "link": "",
+            "title_color": "#3c3c3c",
+            "text_color": "#3c3c3c",
+            "background_color": "#d9d9d9",
+            "background_opacity": 0
+          }
+        },
+        "column_P9xBpt": {
+          "type": "column",
+          "settings": {
+            "title": "2. Rabatt für Freunde",
+            "heading_size": "h4",
+            "text": "<p>Dein Freund erhält XX% Rabatt auf die erste Bestellung bei Beyond Matter.</p>",
+            "link_text": "Zu unseren Studien",
+            "link": "",
+            "title_color": "#3c3c3c",
+            "text_color": "#3c3c3c",
+            "background_color": "#d9d9d9",
+            "background_opacity": 0
+          }
+        },
+        "column_eUUKft": {
+          "type": "column",
+          "settings": {
+            "title": "3. Rabatt für dich",
+            "heading_size": "h4",
+            "text": "<p>Du bekommst einen XX€ Gutschein für deine nächste Bestellung bei Beyond Matter.</p>",
+            "link_text": "Zu unseren Studien",
+            "link": "",
+            "title_color": "#3c3c3c",
+            "text_color": "#3c3c3c",
+            "background_color": "#d9d9d9",
+            "background_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "column_3afN4a",
+        "column_P9xBpt",
+        "column_eUUKft"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "subtitle": "<em>So funktioniert’s</em>",
+        "title": "Deine Empfehlung macht den Unterschied.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "show_inside_box": true,
+        "primary_background": "#ede9e9",
+        "secondary_background": "#d4cfcc",
+        "box_background": "#ffffff",
+        "title_color": "#3c3c3c",
+        "sub_text_color": "#baab9e",
+        "category_column_desktop": 3,
+        "category_column_mobile": "1",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "quote_j4zaJw": {
+      "type": "quote",
+      "blocks": {
+        "heading_kM7EPz": {
+          "type": "heading",
+          "settings": {
+            "enable_text_italic": true,
+            "heading": "Glück ist das Einzige, das sich verdoppelt, wenn man es teilt.",
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "subheading_DTyQcc": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Albert Schweizer",
+            "subheading_size": "typeset2"
+          }
+        },
+        "text_4HnVnG": {
+          "type": "text",
+          "settings": {
+            "text": "Arzt & Philosoph",
+            "text_size": "typeset"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kM7EPz",
+        "subheading_DTyQcc",
+        "text_4HnVnG"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "show_inside_box": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "box_alignment": "box_left",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#d4cfcc",
+        "box_background": "#ffffff",
+        "colors_quote_text": "#212326",
+        "colors_author_text": "#212326",
+        "colors_profession_text": "#212326",
+        "padding_top": 82,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "newsletter2_6Bybyx": {
+      "type": "newsletter2",
+      "blocks": {
+        "subheading_kcpXzJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Jetzt Freunde werben</em></p>",
+            "sub_text_color": "#baab9e"
+          }
+        },
+        "heading_dLByRx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Warum empfehlen?",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_fpeFAq": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Helfe Menschen, die dir nahe stehen, mehr Lebensqualität zu  erlangen.</li><li>Hilf Freunden, ihre Kinder vor Belastungen durch Elektrosmog zu schützen.</li><li>Sorge für mehr Bewusstsein und Harmonie im Leben deiner Freunde. </li></ul>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_kcpXzJ",
+        "heading_dLByRx",
+        "text_fpeFAq"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#ede9e9",
+        "success_message": "Thanks for subscribing",
+        "email_placeholder": "Deine beste E-Mail-Adresse",
+        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
+        "enable_main_image": true,
+        "image": "shopify://shop_images/AdobeStock_893485358_1.jpg",
+        "image_position": "top center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "image_square",
+        "enlarge_content": "small",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "300px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "faq_PAyR7c": {
+      "type": "faq",
+      "blocks": {
+        "question_rJ6PhR": {
+          "type": "question",
+          "settings": {
+            "title": "Wie und wann erhalte ich meinen Rabattcode?",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften,  werden diese sorgfältigst auf Reinheit und Belastungen geprüft.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_hc73bk": {
+          "type": "question",
+          "settings": {
+            "title": "Darf ich mehrere Rabattcodes versenden?",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften,  werden diese sorgfältigst auf Reinheit und Belastungen geprüft.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_VrmxnV": {
+          "type": "question",
+          "settings": {
+            "title": "Wie viele Freunde darf ich werben?",
+            "text": "<p>Nach dem umweltschonenden Abbau unserer Rohstoffe durch langfristige und faire Partnerschaften,  werden diese sorgfältigst auf Reinheit und Belastungen geprüft.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "question_rJ6PhR",
+        "question_hc73bk",
+        "question_VrmxnV"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_layout": "border",
+        "layout": "right",
+        "accordion_icon": "arrow",
+        "accordion_alignment": "right",
+        "desktop_accordion_width": 100,
+        "subtitle": "",
+        "heading": "",
+        "description": "",
+        "heading_size": "h1",
+        "text_size": "typeset",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "title": "Unsere  Faktoren",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "show_inside_box": false,
+        "title_color": "#212326",
+        "sub_text_color": "#212326",
+        "description_color": "#212326",
+        "category_color": "#212326",
+        "block_bg_color": "#baab9e",
+        "block_text_color": "#3c3c3c",
+        "accordion_icon_color": "#3c3c3c",
+        "padding_top": 160,
+        "padding_bottom": 164,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "icon_boxes_VQFMye": {
+      "type": "icon-boxes",
+      "blocks": {
+        "guarantee_TFgVPr": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/cash-payment-coin-1_1.svg",
+            "custom_icon": "",
+            "title": "Geld-zurück-Garantie",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Risikofreies Testen für 60 Tage. Solltest du unzufrieden mit dem Produkt sein, nehmen wir es zurück ohne Fragen zu stellen.</p>",
+            "text_size": "typeset"
+          }
+        },
+        "guarantee_qzeJNB": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/warehouse-cart-package-ribbon-1_1.svg",
+            "custom_icon": "",
+            "title": "Versandkostenfrei ab 90€",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Wir versenden Deine gesamte Bestellung kostenfrei sobald sie einen Einkaufswert von 90€ überschreitet.</p>",
+            "text_size": "typeset"
+          }
+        },
+        "guarantee_6dXhWN": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/Icon_24px_-_Heart.svg",
+            "custom_icon": "",
+            "title": "Made in Germany",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Unsere Produkte werden ausschließlich in Deutschland hergestellt, verpackt und versendet.</p>",
+            "text_size": "typeset"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_TFgVPr",
+        "guarantee_qzeJNB",
+        "guarantee_6dXhWN"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#d4cfcc",
+        "layout": "default",
+        "column_alignment": "left",
+        "desktop_column_alignment": "left",
+        "mobile_column_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "columns_desktop": 3,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_new_PijXhk",
+    "page_header_ynV8Ui",
+    "column_grid_xAexn7",
+    "quote_j4zaJw",
+    "newsletter2_6Bybyx",
+    "faq_PAyR7c",
+    "icon_boxes_VQFMye"
+  ]
+}

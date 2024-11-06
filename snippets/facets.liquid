@@ -42,7 +42,7 @@
 -%}
 
 <{% if enable_sticky_facet %}sticky-facet-filters class="facet-filters facet-filters-sticky"{% else %}div class="facet-filters"{% endif %} id="main-facet-filters" data-id="{{ section.id }}">
-  <div class="page-width{% if enable_filtering and filter_type == 'drawer' %} facets-container-drawer{% endif %}">
+  <div class="page-width--{{ section.settings.page_width }}{% if enable_filtering and filter_type == 'drawer' %} facets-container-drawer{% endif %}">
     {%- if enable_filtering or enable_sorting or enable_viewing -%}
       <facet-filters-form class="facets small-hide">
         <form id="FacetSortFiltersForm" class="facets__form"{% if enable_filtering %} data-filter-type="{{ filter_type }}"{% endif %}>
@@ -746,7 +746,7 @@
   </div>
 </{% if enable_sticky_facet %}sticky-facet-filters{% else %}div{% endif %}>
 
-<div class="page-width">
+<div class="page-width--{{ section.settings.page_width }}">
   <div class="active-facets-mobile">
     {%- if enable_filtering -%}
       <div class="active-facets{% if total_active_values == 0 and price_range_active == false %} hidden{% endif %}">

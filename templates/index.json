@@ -15,7 +15,7 @@
         "subimage_qYPzUE": {
           "type": "subimage",
           "settings": {
-            "subheading_image": "shopify:\/\/shop_images\/Group_10.svg"
+            "subheading_image": "shopify://shop_images/Group_10.svg"
           }
         },
         "heading_JQw8WD": {
@@ -29,7 +29,7 @@
         "text_CRpQQU": {
           "type": "text",
           "settings": {
-            "text": "<p>Schutz vor Elektrosmog von mobilen Endgeräten.<\/p>",
+            "text": "<p>Schutz vor Elektrosmog von mobilen Endgeräten.</p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -52,7 +52,7 @@
       ],
       "settings": {
         "page_width": "full-width",
-        "image": "shopify:\/\/shop_images\/banner-image.png",
+        "image": "shopify://shop_images/banner-image.png",
         "image_position": "center center",
         "text_box_position": "middle-left",
         "text_alignment": "left",
@@ -60,7 +60,7 @@
         "enable_boxed_height": false,
         "show_divider": false,
         "image_behavior": "none",
-        "mobile_image": "shopify:\/\/shop_images\/mobile-image1.png",
+        "mobile_image": "shopify://shop_images/mobile-image1.png",
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "340px",
         "stack_images_on_mobile": true,
@@ -89,8 +89,8 @@
         "category_j3ApxM": {
           "type": "category",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_1.svg",
-            "text": "An deinem <br> \u2028Körper",
+            "icon": "shopify://shop_images/icon_1.svg",
+            "text": "An deinem <br>  Körper",
             "link": "",
             "background_color": "#f3f1f1",
             "background_color_mobile": "#edeaea"
@@ -99,7 +99,7 @@
         "category_De69eG": {
           "type": "category",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_2.svg",
+            "icon": "shopify://shop_images/icon_2.svg",
             "text": "An mobilen<br> Endgeräten",
             "link": "",
             "background_color": "#edeaea",
@@ -109,8 +109,8 @@
         "category_3CKxAR": {
           "type": "category",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_3.svg",
-            "text": "Im <br>\u2028Smart-Home",
+            "icon": "shopify://shop_images/icon_3.svg",
+            "text": "Im <br> Smart-Home",
             "link": "",
             "background_color": "#f3f1f1",
             "background_color_mobile": "#f3f1f1"
@@ -119,7 +119,7 @@
         "category_tdYJqR": {
           "type": "category",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_4.svg",
+            "icon": "shopify://shop_images/icon_4.svg",
             "text": "Im Büro und<br> Zuhause",
             "link": "",
             "background_color": "#edeaea",
@@ -129,8 +129,8 @@
         "category_YainVp": {
           "type": "category",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_5.svg",
-            "text": "Im E-Auto und <br>\u2028am E-bike",
+            "icon": "shopify://shop_images/icon_5.svg",
+            "text": "Im E-Auto und <br> am E-bike",
             "link": "",
             "background_color": "#f3f1f1",
             "background_color_mobile": "#edeaea"
@@ -139,7 +139,7 @@
         "category_9zgLUg": {
           "type": "category",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon_6.svg",
+            "icon": "shopify://shop_images/icon_6.svg",
             "text": "Für deine Lebensmittel",
             "link": "",
             "background_color": "#edeaea",
@@ -157,7 +157,7 @@
       ],
       "settings": {
         "page_width": "standard",
-        "subtitle": "<em>Unsere Kategrorien<\/em>",
+        "subtitle": "<em>Unsere Kategrorien</em>",
         "title": "So kannst Du Beyond Matter verwenden:",
         "heading_size": "h1",
         "heading_alignment": "left",
@@ -182,7 +182,7 @@
         "heading_cMXAYd": {
           "type": "heading",
           "settings": {
-            "heading": "Wir verbinden Technik mit \u2028der heil;enden Kraft der Natur. Wissenschaft-lich bewiesen und ein Leben lang.",
+            "heading": "Wir verbinden Technik mit  der heil;enden Kraft der Natur. Wissenschaft-lich bewiesen und ein Leben lang.",
             "heading_primary_color": "#3c3c3c",
             "heading_secondary_color": "#f4f2f2",
             "heading_size": "x-large",
@@ -192,7 +192,7 @@
         "subimage_nBtFr6": {
           "type": "subimage",
           "settings": {
-            "subheading_image": "shopify:\/\/shop_images\/Group_10.svg"
+            "subheading_image": "shopify://shop_images/Group_10.svg"
           }
         }
       },
@@ -204,9 +204,9 @@
         "page_width": "narrow",
         "primary_background": "#d4cfcc",
         "secondary_background": "#d4cfcc",
-        "desktop_image": "shopify:\/\/shop_images\/image-3.png",
-        "mobile_image": "shopify:\/\/shop_images\/mobile-cvr-image.png",
-        "cvr_image": "shopify:\/\/shop_images\/image-4.png",
+        "desktop_image": "shopify://shop_images/image-3.png",
+        "mobile_image": "shopify://shop_images/mobile-cvr-image.png",
+        "cvr_image": "shopify://shop_images/image-4.png",
         "padding_top": 120,
         "padding_bottom": 120,
         "mobile_padding_top": 0,
@@ -224,7 +224,7 @@
         "primary_background": "#d4cfcc",
         "secondary_background": "#ede9e9",
         "poroduct_grid_background": "#ffffff",
-        "subtitle": "<em>Unsere Lieblinge<\/em>",
+        "subtitle": "<em>Unsere Lieblinge</em>",
         "title": "Derzeit beliebt bei unseren Kunden",
         "heading_size": "h1",
         "heading_alignment": "left",
@@ -271,9 +271,9 @@
         "icon_with_text_block_FEYxzR": {
           "type": "icon_with_text_block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/weather-sun_1.png",
-            "text": "Bessere Erholung\u2028",
-            "block_description": "<p>Du regenerierst auch in Pausen besser, wenn dein Körper keinem Elektrosmog ausgesetzt ist.<\/p>",
+            "icon": "shopify://shop_images/weather-sun_1.png",
+            "text": "Bessere Erholung ",
+            "block_description": "<p>Du regenerierst auch in Pausen besser, wenn dein Körper keinem Elektrosmog ausgesetzt ist.</p>",
             "hide_description_in_deskop": false,
             "block_background": "#baab9e",
             "background_opacity": 60
@@ -282,9 +282,9 @@
         "icon_with_text_block_AyBEGM": {
           "type": "icon_with_text_block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-cr.png",
-            "text": "Mehr Energie\u2028",
-            "block_description": "<p>Du fühlst dich fitter und hast mehr Leistung bereit, da kein Elektro-smog dein Energie-Level senk<\/p>",
+            "icon": "shopify://shop_images/icon-cr.png",
+            "text": "Mehr Energie ",
+            "block_description": "<p>Du fühlst dich fitter und hast mehr Leistung bereit, da kein Elektro-smog dein Energie-Level senk</p>",
             "hide_description_in_deskop": false,
             "block_background": "#baab9e",
             "background_opacity": 80
@@ -293,9 +293,9 @@
         "icon_with_text_block_zeWDcH": {
           "type": "icon_with_text_block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/emoji-flower-thankful_1.png",
+            "icon": "shopify://shop_images/emoji-flower-thankful_1.png",
             "text": "Mehr Flow",
-            "block_description": "<p>Du kommst einfacher in den Flow-Zustand und bist weniger gestresst und produktiver.<\/p>",
+            "block_description": "<p>Du kommst einfacher in den Flow-Zustand und bist weniger gestresst und produktiver.</p>",
             "hide_description_in_deskop": false,
             "block_background": "#baab9e",
             "background_opacity": 100
@@ -315,10 +315,10 @@
         "secondary_background_opacity": 100,
         "icon_with_box_layout": "style-1",
         "section_container_background": "",
-        "subtitle": "<em>Unsere Werte<\/em>",
+        "subtitle": "<em>Unsere Werte</em>",
         "title": "Wir verbinden die Vorteile technischer Geräte mit der heilenden Kraft der Natur.",
         "heading_size": "h1",
-        "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
+        "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.</p>",
         "text_size": "typeset",
         "desktop_image_width": 300,
         "mobile_image_width": 300,
@@ -339,8 +339,8 @@
       "settings": {
         "page_width": "standard",
         "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify:\/\/shop_images\/video_image.jpg",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/video_image.jpg",
         "description": "",
         "show_divider": false,
         "heading": "",
@@ -367,7 +367,7 @@
           "settings": {
             "title": "Wissenschaftliche Studien",
             "heading_size": "h3",
-            "text": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
+            "text": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.</p>",
             "link_text": "Zu unseren Studien",
             "link": "#",
             "title_color": "#baab9e",
@@ -381,7 +381,7 @@
           "settings": {
             "title": "Essence X Technologie",
             "heading_size": "h3",
-            "text": "<p>Rohstoff unserer Produkte ist Schungit. Eine natürliche Ressource, die elektromagnetische Strahlungen neutralisieren kann. Unsere Essence X Technologie potenziert die Wirkung von Schungit und transformiert Elektrosmog zu einer Quelle förderlicher Energie.<\/p>",
+            "text": "<p>Rohstoff unserer Produkte ist Schungit. Eine natürliche Ressource, die elektromagnetische Strahlungen neutralisieren kann. Unsere Essence X Technologie potenziert die Wirkung von Schungit und transformiert Elektrosmog zu einer Quelle förderlicher Energie.</p>",
             "link_text": "Zu unseren Studien",
             "link": "#",
             "title_color": "#baab9e",
@@ -395,7 +395,7 @@
           "settings": {
             "title": "Premium Materialen",
             "heading_size": "h3",
-            "text": "<p>Wir verwenden nur die hochwertigsten Rohstoffe, welche ständiger Kontrolle unterliegen. So stellen wir sicher, dass unsere Produkte über keinerlei Verunreinigungen oder Einschlüsse verfügen und dich ein Leben lang beschützend begleiten.<\/p>",
+            "text": "<p>Wir verwenden nur die hochwertigsten Rohstoffe, welche ständiger Kontrolle unterliegen. So stellen wir sicher, dass unsere Produkte über keinerlei Verunreinigungen oder Einschlüsse verfügen und dich ein Leben lang beschützend begleiten.</p>",
             "link_text": "Zu unseren Studien",
             "link": "#",
             "title_color": "#baab9e",
@@ -412,7 +412,7 @@
       ],
       "settings": {
         "page_width": "standard",
-        "subtitle": "<em>Unsere Standards<\/em>",
+        "subtitle": "<em>Unsere Standards</em>",
         "title": "Wofür wir stehen",
         "heading_size": "h1",
         "heading_alignment": "left",
@@ -441,7 +441,7 @@
         "subheading_m88VNL": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p><em>Unser Produktfinder<\/em><\/p>",
+            "subheading": "<p><em>Unser Produktfinder</em></p>",
             "sub_text_color": "#baab9e"
           }
         },
@@ -456,7 +456,7 @@
         "text_6BWMpL": {
           "type": "text",
           "settings": {
-            "text": "<p>Entdecke in unserem Produktfinder, welches unserer \u2028Produkte das Beste für deine Bedürfnisse ist.\u2028Dauer: <\/p><p><em>Max. 2 Min<\/em><\/p>",
+            "text": "<p>Entdecke in unserem Produktfinder, welches unserer  Produkte das Beste für deine Bedürfnisse ist. Dauer: </p><p><em>Max. 2 Min</em></p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -464,7 +464,7 @@
         "text_Kzj3hP": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Entdecke deine größte Problemstelle<\/li><li>Erhalte eine individuelle Produktempfehlung<\/li><li>Sichere dir einen exklusiven Rabatt<\/li><\/ul>",
+            "text": "<ul><li>Entdecke deine größte Problemstelle</li><li>Erhalte eine individuelle Produktempfehlung</li><li>Sichere dir einen exklusiven Rabatt</li></ul>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -492,7 +492,7 @@
         "secondary_background": "#baab9e",
         "main_description": "",
         "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/Mask_group.jpg",
+        "image": "shopify://shop_images/Mask_group.jpg",
         "image_position": "center center",
         "layout": "image_first",
         "desktop_box_spacing": 0,
@@ -531,7 +531,7 @@
           "type": "image",
           "settings": {
             "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/gallery_1.jpg",
+            "image": "shopify://shop_images/gallery_1.jpg",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -552,9 +552,9 @@
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
-            "heading": "Einfach großartig!\u2028<br>Jahre lang hatte ich Kopfschmerzen am Computer. Diese konnte ich nun um ein vielfaches reduzieren.",
+            "heading": "Einfach großartig! <br>Jahre lang hatte ich Kopfschmerzen am Computer. Diese konnte ich nun um ein vielfaches reduzieren.",
             "heading_size": "h2",
-            "text": "<p><strong>Sandra Z.<\/strong> aus Hamburg<\/p>",
+            "text": "<p><strong>Sandra Z.</strong> aus Hamburg</p>",
             "link": "",
             "text_box_position": "bottom-left",
             "text_color": "#85634a",
@@ -566,7 +566,7 @@
           "type": "image",
           "settings": {
             "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/gallery_2.jpg",
+            "image": "shopify://shop_images/gallery_2.jpg",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -584,13 +584,13 @@
           "type": "image",
           "settings": {
             "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/Group_113.jpg",
+            "image": "shopify://shop_images/Group_113.jpg",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
             "heading": "",
             "heading_size": "h3",
-            "text": "<p><strong>Torsten H.<\/strong> aus Bonn<\/p>",
+            "text": "<p><strong>Torsten H.</strong> aus Bonn</p>",
             "link": "",
             "text_box_position": "bottom-center",
             "text_color": "#3c3c3c",
@@ -607,7 +607,7 @@
             "subheading_size": "h5",
             "heading": "Ich habe AVA auf fast <br>allen elektronischen <br>Geräten. Ich liebe es!",
             "heading_size": "h2",
-            "text": "<p><strong>Raphael K<\/strong>. aus Mainburg<\/p>",
+            "text": "<p><strong>Raphael K</strong>. aus Mainburg</p>",
             "link": "",
             "text_box_position": "bottom-left",
             "text_color": "#f4f2f2",
@@ -619,7 +619,7 @@
           "type": "image",
           "settings": {
             "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/gallery_3.jpg",
+            "image": "shopify://shop_images/gallery_3.jpg",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -637,7 +637,7 @@
           "type": "image",
           "settings": {
             "enable_double_width": true,
-            "image": "shopify:\/\/shop_images\/gallery_4.jpg",
+            "image": "shopify://shop_images/gallery_4.jpg",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -655,7 +655,7 @@
           "type": "image",
           "settings": {
             "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/gallery_5.jpg",
+            "image": "shopify://shop_images/gallery_5.jpg",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -673,13 +673,13 @@
           "type": "image",
           "settings": {
             "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/Group_113_1.jpg",
+            "image": "shopify://shop_images/Group_113_1.jpg",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
             "heading": "",
             "heading_size": "h3",
-            "text": "<p><strong>Torsten H.<\/strong> aus Bonn<\/p>",
+            "text": "<p><strong>Torsten H.</strong> aus Bonn</p>",
             "link": "",
             "text_box_position": "bottom-center",
             "text_color": "#f4f2f2",
@@ -691,7 +691,7 @@
           "type": "image",
           "settings": {
             "enable_double_width": false,
-            "image": "shopify:\/\/shop_images\/gallery_6.jpg",
+            "image": "shopify://shop_images/gallery_6.jpg",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -714,7 +714,7 @@
             "subheading_size": "h5",
             "heading": "Funktioniert und hilft. Punkt.",
             "heading_size": "h3",
-            "text": "<p><strong>Andreas R.<\/strong> aus Köln<\/p>",
+            "text": "<p><strong>Andreas R.</strong> aus Köln</p>",
             "link": "",
             "text_box_position": "bottom-left",
             "text_color": "#85634a",
@@ -744,14 +744,14 @@
         "apply_overlay": true,
         "show_divider": false,
         "header_page_width": "standard",
-        "subtitle": "<em>Naturally connected<\/em>",
+        "subtitle": "<em>Naturally connected</em>",
         "heading": "Das sagen unsere Kunden",
-        "text": "<p>Wir entwickeln unsere Produkte im Austausch mit unserer Community.<\/p><p>Hier erfährst Du, was unsere Kunden über unsere Produkte denken.<\/p>",
+        "text": "<p>Wir entwickeln unsere Produkte im Austausch mit unserer Community.</p><p>Hier erfährst Du, was unsere Kunden über unsere Produkte denken.</p>",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
         "button_label": "Mehr Beiträge laden",
-        "button_link": "shopify:\/\/collections",
+        "button_link": "shopify://collections",
         "button_size": "medium",
         "button_style_secondary": false,
         "columns_mobile": "1",
@@ -781,12 +781,12 @@
           "settings": {
             "icon": "truck",
             "icon_size": "large",
-            "image": "shopify:\/\/shop_images\/cash-payment-coin-1_1.svg",
+            "image": "shopify://shop_images/cash-payment-coin-1_1.svg",
             "custom_icon": "",
             "title": "Geld-zurück-Garantie",
             "block_heading_tag": "h2",
             "title_size": "h3",
-            "text": "<p>Risikofreies Testen für 60 Tage. Solltest du unzufrieden mit dem Produkt sein, nehmen wir es zurück ohne Fragen zu stellen.<\/p>",
+            "text": "<p>Risikofreies Testen für 60 Tage. Solltest du unzufrieden mit dem Produkt sein, nehmen wir es zurück ohne Fragen zu stellen.</p>",
             "text_size": "typeset"
           }
         },
@@ -795,12 +795,12 @@
           "settings": {
             "icon": "truck",
             "icon_size": "large",
-            "image": "shopify:\/\/shop_images\/warehouse-cart-package-ribbon-1_1.svg",
+            "image": "shopify://shop_images/warehouse-cart-package-ribbon-1_1.svg",
             "custom_icon": "",
             "title": "Versandkostenfrei ab 90€",
             "block_heading_tag": "h2",
             "title_size": "h3",
-            "text": "<p>Wir versenden Deine gesamte Bestellung kostenfrei sobald sie einen Einkaufswert von 90€ überschreitet.<\/p>",
+            "text": "<p>Wir versenden Deine gesamte Bestellung kostenfrei sobald sie einen Einkaufswert von 90€ überschreitet.</p>",
             "text_size": "typeset"
           }
         },
@@ -809,12 +809,12 @@
           "settings": {
             "icon": "truck",
             "icon_size": "large",
-            "image": "shopify:\/\/shop_images\/Icon_24px_-_Heart.svg",
+            "image": "shopify://shop_images/Icon_24px_-_Heart.svg",
             "custom_icon": "",
             "title": "Made in Germany",
             "block_heading_tag": "h2",
             "title_size": "h3",
-            "text": "<p>Unsere Produkte werden ausschließlich in Deutschland hergestellt, verpackt und versendet.<\/p>",
+            "text": "<p>Unsere Produkte werden ausschließlich in Deutschland hergestellt, verpackt und versendet.</p>",
             "text_size": "typeset"
           }
         }
@@ -859,9 +859,9 @@
         "icon_with_text_block_YJKtYa": {
           "type": "icon_with_text_block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon.svg",
+            "icon": "shopify://shop_images/Icon.svg",
             "text": "Kopfschmerzen",
-            "block_description": "<p>Unsere Lösungen für einen klaren Kopf.<\/p>",
+            "block_description": "<p>Unsere Lösungen für einen klaren Kopf.</p>",
             "hide_description_in_deskop": true,
             "block_background": "#f4f2f2",
             "background_opacity": 90
@@ -870,9 +870,9 @@
         "icon_with_text_block_d4nFGm": {
           "type": "icon_with_text_block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_1_e27e748c-9305-4941-adbb-b8351febf2aa.svg",
+            "icon": "shopify://shop_images/Icon_1_e27e748c-9305-4941-adbb-b8351febf2aa.svg",
             "text": "Schlafstörungen",
-            "block_description": "<p>Holen Sie sich erholsamen Schlaf zurück.<\/p>",
+            "block_description": "<p>Holen Sie sich erholsamen Schlaf zurück.</p>",
             "hide_description_in_deskop": true,
             "block_background": "#f4f2f2",
             "background_opacity": 80
@@ -881,9 +881,9 @@
         "icon_with_text_block_MabfpF": {
           "type": "icon_with_text_block",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Icon_2_66cf1ac4-7f24-4763-a1f8-d6da1a550d98.svg",
+            "icon": "shopify://shop_images/Icon_2_66cf1ac4-7f24-4763-a1f8-d6da1a550d98.svg",
             "text": "Antriebslosigkeit",
-            "block_description": "<p>Mit Beyond Matter zu mehr Elan im Alltag.<\/p>",
+            "block_description": "<p>Mit Beyond Matter zu mehr Elan im Alltag.</p>",
             "hide_description_in_deskop": true,
             "block_background": "#f4f2f2",
             "background_opacity": 70
@@ -903,12 +903,12 @@
         "secondary_background_opacity": 100,
         "icon_with_box_layout": "style-2",
         "section_container_background": "#baab9e",
-        "subtitle": "<em>Jetzt passende Lösung finden<\/em>",
+        "subtitle": "<em>Jetzt passende Lösung finden</em>",
         "title": "Was führt dich zu uns?",
         "heading_size": "h1",
-        "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
+        "description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.</p>",
         "text_size": "typeset",
-        "main_image": "shopify:\/\/shop_images\/mask-group-image.svg",
+        "main_image": "shopify://shop_images/mask-group-image.svg",
         "desktop_image_width": 340,
         "mobile_image_width": 160,
         "heading_alignment": "left",
@@ -929,7 +929,7 @@
         "article_pdfF6J": {
           "type": "article",
           "settings": {
-            "article": "ratgeber\/elektrosmog-wie-elektromagnetische-felder-den-koerper-beeinflussen",
+            "article": "ratgeber/elektrosmog-wie-elektromagnetische-felder-den-koerper-beeinflussen",
             "show_image": true,
             "show_title": true,
             "show_description": true,
@@ -942,7 +942,7 @@
         "article_CpefGk": {
           "type": "article",
           "settings": {
-            "article": "ratgeber\/elektrosmog-was-ist-elektrosmog",
+            "article": "ratgeber/elektrosmog-was-ist-elektrosmog",
             "show_image": true,
             "show_title": true,
             "show_description": true,
@@ -955,7 +955,7 @@
         "article_tRwVbF": {
           "type": "article",
           "settings": {
-            "article": "ratgeber\/elektrosmog-was-ist-bioelektrizitaet",
+            "article": "ratgeber/elektrosmog-was-ist-bioelektrizitaet",
             "show_image": true,
             "show_title": true,
             "show_description": true,
@@ -982,7 +982,7 @@
         "heading_alignment": "left",
         "heading_tag": "h2",
         "enbale_icon": false,
-        "button_label": "",
+        "button_label": "Zu unserem Ratgeber",
         "button_link": "#",
         "button_style": "primary",
         "primary_background": "#d4cfcc",
@@ -1011,7 +1011,7 @@
         "subheading_kcpXzJ": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p><em>Unsere Newsletter<\/em><\/p>",
+            "subheading": "<p><em>Unsere Newsletter</em></p>",
             "sub_text_color": "#baab9e"
           }
         },
@@ -1026,7 +1026,7 @@
         "text_fpeFAq": {
           "type": "text",
           "settings": {
-            "text": "<p>Abonniere jetzt unseren Newsletter für exklusive Angebote und Neuheiten aus der Welt von Beyond Matter. Als Dankeschön \u2028erhältst du 10% Rabatt auf deinen ersten Einkauf.<\/p>",
+            "text": "<p>Abonniere jetzt unseren Newsletter für exklusive Angebote und Neuheiten aus der Welt von Beyond Matter. Als Dankeschön  erhältst du 10% Rabatt auf deinen ersten Einkauf.</p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -1043,9 +1043,9 @@
         "secondary_background": "#ede9e9",
         "success_message": "Thanks for subscribing",
         "email_placeholder": "Deine beste E-Mail-Adresse",
-        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.<\/p>",
+        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
         "enable_main_image": true,
-        "image": "shopify:\/\/shop_images\/newsletter.jpg",
+        "image": "shopify://shop_images/newsletter.jpg",
         "image_position": "top center",
         "layout": "image_first",
         "desktop_box_spacing": 0,

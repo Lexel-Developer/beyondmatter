@@ -1,0 +1,801 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "image_banner_new_PijXhk": {
+      "type": "image-banner-new",
+      "settings": {
+        "page_width": "full-width",
+        "image": "shopify://shop_images/240_F_237412371_zBixmx4uuHYUB5tMiYebjJVyVNIkmHfb_2.jpg",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "450px",
+        "enable_boxed_height": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "200px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_box": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#212326",
+        "colors_text": "#212326",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 28,
+        "boxed_width": 50,
+        "enable_spacing_left_right": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "page_header_ynV8Ui": {
+      "type": "page-header",
+      "settings": {
+        "page_width": "standard",
+        "enable_breadcrumbs": true,
+        "title": "Service & Kontakt",
+        "description": "<p>Bitte melde dich bei Fragen zu unseren Produkten oder anderen Themen. Eine Website kann nicht leisten, was ein persönliches Gespräch leistet.  Wir freuen uns auf deinen Anruf.</p>",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "enbale_icon": true,
+        "button_label": "+49 030 84 65 74",
+        "button_link": "tel:+49 030 84 65 74",
+        "button_style": "primary",
+        "enbale_icon2": false,
+        "button_label2": "",
+        "button_link2": "#",
+        "button_style2": "secondary",
+        "show_inside_box": false,
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#d4cfcc",
+        "box_background": "#ffffff",
+        "title_color": "#3c3c3c",
+        "breadcrumb_color": "#3c3c3c",
+        "breadcrumb_opacity": 50,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "category_grid_NcjRfr": {
+      "type": "category-grid",
+      "blocks": {
+        "category_j3ApxM": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_7.svg",
+            "text": "Ich möchte Kontakt <br>aufnehmen",
+            "link": "",
+            "background_color": "#f3f1f1",
+            "background_color_mobile": "#f3f1f1"
+          }
+        },
+        "category_De69eG": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_8.svg",
+            "text": "Meine Bestellung kommt nicht",
+            "link": "",
+            "background_color": "#edeaea",
+            "background_color_mobile": "#edeaea"
+          }
+        },
+        "category_3CKxAR": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_9.svg",
+            "text": "Ich möchte etwas <br>zurückgeben",
+            "link": "",
+            "background_color": "#f3f1f1",
+            "background_color_mobile": "#edeaea"
+          }
+        },
+        "category_tdYJqR": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_4.svg",
+            "text": "Ich brauche eine Kaufberatung",
+            "link": "",
+            "background_color": "#edeaea",
+            "background_color_mobile": "#f3f1f1"
+          }
+        },
+        "category_YainVp": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_5.svg",
+            "text": "Ich möchte etwas reklamieren",
+            "link": "",
+            "background_color": "#f3f1f1",
+            "background_color_mobile": "#f3f1f1"
+          }
+        },
+        "category_9zgLUg": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_12.svg",
+            "text": "Ich möchte Feedback teilen",
+            "link": "",
+            "background_color": "#edeaea",
+            "background_color_mobile": "#edeaea"
+          }
+        }
+      },
+      "block_order": [
+        "category_j3ApxM",
+        "category_De69eG",
+        "category_3CKxAR",
+        "category_tdYJqR",
+        "category_YainVp",
+        "category_9zgLUg"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "subtitle": "",
+        "title": "",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#d4cfcc",
+        "category_column_desktop": 3,
+        "category_column_mobile": "2",
+        "padding_top": 80,
+        "padding_bottom": 160,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "faq_PAyR7c": {
+      "type": "faq",
+      "blocks": {
+        "question_rJ6PhR": {
+          "type": "question",
+          "settings": {
+            "title": "Welche EU-Länder werden beliefert?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_hc73bk": {
+          "type": "question",
+          "settings": {
+            "title": "Wie lang dauert die Lieferung?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_VrmxnV": {
+          "type": "question",
+          "settings": {
+            "title": "Wird weltweit versendet?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_r4geLx": {
+          "type": "question",
+          "settings": {
+            "title": "Wie kann ich den Versandstatus meiner Bestellung verfolgen?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_ULyBht": {
+          "type": "question",
+          "settings": {
+            "title": "Welchen Versanddienstleister nutzen wir?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_nbG6GH": {
+          "type": "question",
+          "settings": {
+            "title": "Welchen Versanddienstleister nutzen wir?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_wpW9QN": {
+          "type": "question",
+          "settings": {
+            "title": "Wie lange habe ich Zeit meine Bestellung zu widerrufen?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_Q7wEHn": {
+          "type": "question",
+          "settings": {
+            "title": "Was muss ich bei Retouren in jedem Fall beachten?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_6VbKzg": {
+          "type": "question",
+          "settings": {
+            "title": "Wie sende ich erhaltene Ware zurück?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "question_rJ6PhR",
+        "question_hc73bk",
+        "question_VrmxnV",
+        "question_r4geLx",
+        "question_ULyBht",
+        "question_nbG6GH",
+        "question_wpW9QN",
+        "question_Q7wEHn",
+        "question_6VbKzg"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_layout": "block",
+        "layout": "right",
+        "accordion_icon": "plus_minus",
+        "accordion_alignment": "left",
+        "desktop_accordion_width": 100,
+        "subtitle": "<em>FAQ</em>",
+        "heading": "Häufig gestellte Fragen",
+        "description": "",
+        "heading_size": "h1",
+        "text_size": "typeset",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "title": "Versand, Lieferzeit, Retouren",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "show_inside_box": false,
+        "title_color": "#212326",
+        "sub_text_color": "#212326",
+        "description_color": "#212326",
+        "category_color": "#212326",
+        "block_bg_color": "#f4f2f2",
+        "block_text_color": "#3c3c3c",
+        "accordion_icon_color": "#3c3c3c",
+        "padding_top": 160,
+        "padding_bottom": 48,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 20,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "faq_7XDVED": {
+      "type": "faq",
+      "blocks": {
+        "question_pmdRpd": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Zahlungsmöglichkeiten stehen aktuell zur Verfügung?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_m46Hym": {
+          "type": "question",
+          "settings": {
+            "title": "Ich habe Fragen zu weiteren Zahlarten, an wen wende ich mich?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "question_pmdRpd",
+        "question_m46Hym"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_layout": "block",
+        "layout": "right",
+        "accordion_icon": "plus_minus",
+        "accordion_alignment": "left",
+        "desktop_accordion_width": 100,
+        "subtitle": "",
+        "heading": "",
+        "description": "",
+        "heading_size": "h1",
+        "text_size": "typeset",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "title": "Zahlarten",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "show_inside_box": false,
+        "title_color": "#212326",
+        "sub_text_color": "#212326",
+        "description_color": "#212326",
+        "category_color": "#212326",
+        "block_bg_color": "#f4f2f2",
+        "block_text_color": "#3c3c3c",
+        "accordion_icon_color": "#3c3c3c",
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 20,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "faq_JDeeY8": {
+      "type": "faq",
+      "blocks": {
+        "question_YHV3a9": {
+          "type": "question",
+          "settings": {
+            "title": "Wie kommt ihr an Rohstoffe?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_yBMb8t": {
+          "type": "question",
+          "settings": {
+            "title": "Wie erfolgt der Rohstoffabbau?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_yrgztn": {
+          "type": "question",
+          "settings": {
+            "title": "Wie nachhaltig sind eure Verpackungen?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_hyJd8Q": {
+          "type": "question",
+          "settings": {
+            "title": "Wie übernehmt ihr soziale Verantwortung?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "question_YHV3a9",
+        "question_yBMb8t",
+        "question_yrgztn",
+        "question_hyJd8Q"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_layout": "block",
+        "layout": "right",
+        "accordion_icon": "plus_minus",
+        "accordion_alignment": "left",
+        "desktop_accordion_width": 100,
+        "subtitle": "",
+        "heading": "",
+        "description": "",
+        "heading_size": "h1",
+        "text_size": "typeset",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "title": "Nachhaltigkeit",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "show_inside_box": false,
+        "title_color": "#212326",
+        "sub_text_color": "#212326",
+        "description_color": "#212326",
+        "category_color": "#212326",
+        "block_bg_color": "#f4f2f2",
+        "block_text_color": "#3c3c3c",
+        "accordion_icon_color": "#3c3c3c",
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 20,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "faq_VdjKrh": {
+      "type": "faq",
+      "blocks": {
+        "question_Pwh9cF": {
+          "type": "question",
+          "settings": {
+            "title": "Was ist der Unterschied zwischen normalem Schungit und EssenceX-Schungit?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_YVkfVg": {
+          "type": "question",
+          "settings": {
+            "title": "Woran kann ich die Wirkung der Produkte spüren?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_itPRqP": {
+          "type": "question",
+          "settings": {
+            "title": "Ich habe die Produkte anfangs deutlich gespürt, dann jedoch nicht mehr. Wirken sie nun nicht mehr?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_Qq3ax8": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich die Wirksamkeit der Produkte messen?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "question_Pwh9cF",
+        "question_YVkfVg",
+        "question_itPRqP",
+        "question_Qq3ax8"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_layout": "block",
+        "layout": "right",
+        "accordion_icon": "plus_minus",
+        "accordion_alignment": "left",
+        "desktop_accordion_width": 100,
+        "subtitle": "",
+        "heading": "",
+        "description": "",
+        "heading_size": "h1",
+        "text_size": "typeset",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "title": "Schungit, Essence-X Schungit, Wirkung",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "show_inside_box": false,
+        "title_color": "#212326",
+        "sub_text_color": "#212326",
+        "description_color": "#212326",
+        "category_color": "#212326",
+        "block_bg_color": "#f4f2f2",
+        "block_text_color": "#3c3c3c",
+        "accordion_icon_color": "#3c3c3c",
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 20,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "faq_JafMTM": {
+      "type": "faq",
+      "blocks": {
+        "question_7C7jJW": {
+          "type": "question",
+          "settings": {
+            "title": "Was sind die wichtigsten Beyond Matter Produkte?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_7CrLHt": {
+          "type": "question",
+          "settings": {
+            "title": "Gibt es richtige und falsche Reihenfolgen in der Benutzung von Beyond Matter Produkten?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        },
+        "question_wJRaN8": {
+          "type": "question",
+          "settings": {
+            "title": "Wenn ich mir zur Zeit nur ein Produkt leisten kann, welches ist das Wichtigste?",
+            "text": "<p>Wir liefern nach Deutschland, Österreich, Belgien, Niederlande, Luxemburg, Schweiz sowie alle anderen EU-Länder.</p>",
+            "author_name": "",
+            "author_position": "",
+            "author_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "question_7C7jJW",
+        "question_7CrLHt",
+        "question_wJRaN8"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "accordion_layout": "block",
+        "layout": "right",
+        "accordion_icon": "plus_minus",
+        "accordion_alignment": "left",
+        "desktop_accordion_width": 100,
+        "subtitle": "",
+        "heading": "",
+        "description": "",
+        "heading_size": "h1",
+        "text_size": "typeset",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "title": "Schungit, Essence-X Schungit, Wirkung",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "box_background": "#ffffff",
+        "show_inside_box": false,
+        "title_color": "#212326",
+        "sub_text_color": "#212326",
+        "description_color": "#212326",
+        "category_color": "#212326",
+        "block_bg_color": "#f4f2f2",
+        "block_text_color": "#3c3c3c",
+        "accordion_icon_color": "#3c3c3c",
+        "padding_top": 0,
+        "padding_bottom": 160,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "icon_boxes_VQFMye": {
+      "type": "icon-boxes",
+      "blocks": {
+        "guarantee_TFgVPr": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/cash-payment-coin-1_1.svg",
+            "custom_icon": "",
+            "title": "Geld-zurück-Garantie",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Risikofreies Testen für 60 Tage. Solltest du unzufrieden mit dem Produkt sein, nehmen wir es zurück ohne Fragen zu stellen.</p>",
+            "text_size": "typeset"
+          }
+        },
+        "guarantee_qzeJNB": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/warehouse-cart-package-ribbon-1_1.svg",
+            "custom_icon": "",
+            "title": "Versandkostenfrei ab 90€",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Wir versenden Deine gesamte Bestellung kostenfrei sobald sie einen Einkaufswert von 90€ überschreitet.</p>",
+            "text_size": "typeset"
+          }
+        },
+        "guarantee_6dXhWN": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "image": "shopify://shop_images/Icon_24px_-_Heart.svg",
+            "custom_icon": "",
+            "title": "Made in Germany",
+            "block_heading_tag": "h2",
+            "title_size": "h3",
+            "text": "<p>Unsere Produkte werden ausschließlich in Deutschland hergestellt, verpackt und versendet.</p>",
+            "text_size": "typeset"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_TFgVPr",
+        "guarantee_qzeJNB",
+        "guarantee_6dXhWN"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#d4cfcc",
+        "secondary_background": "#d4cfcc",
+        "layout": "default",
+        "column_alignment": "left",
+        "desktop_column_alignment": "left",
+        "mobile_column_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "columns_desktop": 3,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "newsletter2_6Bybyx": {
+      "type": "newsletter2",
+      "blocks": {
+        "subheading_kcpXzJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Unsere Newsletter</em></p>",
+            "sub_text_color": "#baab9e"
+          }
+        },
+        "heading_dLByRx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Newsletter abonnieren und nichts mehr verpassen!",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_fpeFAq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Abonniere jetzt unseren Newsletter für exklusive Angebote und Neuheiten aus der Welt von Beyond Matter. Als Dankeschön  erhältst du 10% Rabatt auf deinen ersten Einkauf.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_kcpXzJ",
+        "heading_dLByRx",
+        "text_fpeFAq"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ede9e9",
+        "secondary_background": "#ede9e9",
+        "success_message": "Thanks for subscribing",
+        "email_placeholder": "Deine beste E-Mail-Adresse",
+        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
+        "enable_main_image": true,
+        "image": "shopify://shop_images/newsletter.jpg",
+        "image_position": "top center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "image_square",
+        "enlarge_content": "small",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "300px",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_new_PijXhk",
+    "page_header_ynV8Ui",
+    "category_grid_NcjRfr",
+    "faq_PAyR7c",
+    "faq_7XDVED",
+    "faq_JDeeY8",
+    "faq_VdjKrh",
+    "faq_JafMTM",
+    "icon_boxes_VQFMye",
+    "newsletter2_6Bybyx"
+  ]
+}

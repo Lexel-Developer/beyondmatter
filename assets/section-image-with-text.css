@@ -1,9 +1,3 @@
-.image-with-text__grid {
-  background: var(--gradient-background);
-  background-color: rgb(var(--color-background));
-  color: rgb(var(--color-foreground));
-}
-
 @media screen and (min-width: 750px) {
   .image-with-text__grid--reverse {
     flex-direction: row-reverse;
@@ -61,8 +55,12 @@
   padding-top: 3rem;
 }
 
-.image-with-text--colored .image-with-text__content {
+/* .image-with-text--colored .image-with-text__content {
   padding: 3rem 1.5rem;
+} */
+.image-with-text__grid .grid__item:has(use-animate) .grid_description-cvr {
+    height: auto;
+    margin-top: 2rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -72,6 +70,9 @@
   }
   .image-with-text .image-with-text__grid--reverse .image-with-text__content {
     padding-inline-end: 3.2rem;
+  }
+  .image-with-text .image-with-text__grid--reverse .image-with-text-grid {
+    padding-left:0;
   }
 
   .image-with-text__content.center {
@@ -99,9 +100,6 @@
 
   .image-with-text__content.bottom {
     justify-content: flex-end;
-  }
-  .image-with-text .image-with-text__grid--reverse .image-with-text__content {
-    padding-left: 0;
   }
 }
 
@@ -177,6 +175,9 @@
     width: 100%;
     height: 100%;
     justify-content: flex-end;
+  }
+  .grid-image-with-text__content {
+    padding: 4.6rem 2.4rem 4rem;
   }
 }
 

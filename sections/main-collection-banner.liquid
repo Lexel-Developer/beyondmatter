@@ -3,10 +3,19 @@
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    
+    --section-padding-left: {{ section.settings.padding_left }}px;
+    --section-padding-right: {{ section.settings.padding_right }}px;
+    --section-margin-top: {{ section.settings.margin_top }}px;
+    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
+    
     {%- if section.settings.show_image and collection.image != blank %}
       --image-ratio-percent: {{ 1 | divided_by: collection.image.aspect_ratio | times: 100 }}%;
       --image-position: {{ section.settings.image_position }};
     {% endif -%}
+    --color-breadcrumb: {{ section.settings.breadcrumb_color.red }}, {{ section.settings.breadcrumb_color.green }}, {{ section.settings.breadcrumb_color.blue }};
+    --breadcrumb-opacity: {% if section.settings.breadcrumb_opacity < 100 %} 0.{{ section.settings.breadcrumb_opacity }} {% else %} 1{% endif %};
   }
 {%- endstyle -%}
 
@@ -28,7 +37,12 @@
         </use-animate>
       </div>
     {%- endif -%}
-    <div class="page-width">
+    <div class="page-width--{{ section.settings.page_width }}">
+      {% if section.settings.enable_breadcrumbs == true %}
+        <div class="ph-breadcrumbs">
+          {% render 'breadcrumbs' %}
+        </div>
+      {% endif %}
       <div class="collection-hero__text-wrapper {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
         <h1 class="collection-hero__title {{ section.settings.heading_size }}">
           <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}:</span>
@@ -49,6 +63,34 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
     {
       "type": "paragraph",
       "content": "t:sections.main-collection-banner.settings.paragraph.content"
@@ -91,6 +133,31 @@
       "default": true,
       "label": "t:sections.main-collection-banner.settings.apply_overlay.label",
       "info": "t:sections.main-collection-banner.settings.apply_overlay.info"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_breadcrumbs",
+      "label": "Brotkrumen aktivieren",
+      "default": true
+    },
+    {
+      "type": "color",
+      "label": "Brotkrumen-Farbe",
+      "id": "breadcrumb_color",
+      "default": "#3C3C3C"
+    },
+    {
+      "type": "range",
+      "label": "Hintergrund-Deckkraft",
+      "id": "breadcrumb_opacity",
+      "default": 100,
+      "min": 0,
+      "max": 100,
+      "step": 1
     },
     {
       "type": "select",
@@ -288,21 +355,81 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 200,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "t:sections.all.padding.padding_top.label",
+      "label": "Polsterung oben (Desktop)",
       "default": 36
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 200,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "t:sections.all.padding.padding_bottom.label",
+      "label": "Polsterung unten (Desktop)",
       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Polsterung oben (Mobil)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Polsterung unten (Mobil)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Polsterung links",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Polsterung rechts",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Abstand oben",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Abstand unten",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px"
     }
   ]
 }
