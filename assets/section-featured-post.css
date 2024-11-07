@@ -126,6 +126,9 @@
 .section-featured-post .article-title_description .article-card__excerpt {
     display: none;
 }
+.mobile-header-button {
+  display:none;
+}
 
 
 @media only screen and (min-width:990px){
@@ -156,4 +159,14 @@
         max-width: 100%;
         width: 100%;
     }
+  .mobile-header-button {
+    width: 100%;
+    display:inline-block;
+  }
+  .mobile-header-button .button {
+    width: 100%;
+  }
+  .desktop-header-button {
+    display:none;
+  }
 }

@@ -55,7 +55,7 @@
           {% endif %}
         </div>
         {%- if section.settings.button_label != blank -%}
-        <div class="header-button">
+        <div class="header-button desktop-header-button">
           <a
             class="button button--{{ section.settings.button_style }}"
             {% if section.settings.button_link != blank %}
@@ -91,6 +91,21 @@
         {% endcase %}
       {%- endfor -%}
     </div>
+    {%- if section.settings.button_label != blank -%}
+      <div class="header-button mobile-header-button">
+        <a
+          class="button button--{{ section.settings.button_style }}"
+          {% if section.settings.button_link != blank %}
+            href="{{ section.settings.button_link }}"
+          {% else %}
+            role="link" aria-disabled="true"
+          {% endif %}
+        >
+          <span class="label">{{ section.settings.button_label | escape }}</span>
+          {% if section.settings.enbale_icon == true %}{% render 'icon', icon: 'arrow' %}{% endif %}
+        </a>
+      </div>
+    {% endif %}
     {% if section.settings.show_inside_box == true %}</div>{% endif %}
   </div>
 </div>

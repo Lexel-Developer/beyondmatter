@@ -53,7 +53,7 @@
 .icon-boxes-section .guarantee__item .typeset { line-height: 1.5; }
 .icon-boxes-section .guarantee__item .typeset2 { line-height: 1.4; }
 .icon-boxes-section .guarantee__item:not(:has(.guarantee__icon)) .heading-inr {
-    margin: 0 0 1.6rem;
+    margin: 0 0 0.5rem;
 }
 /* .icon-boxes-section .guarantee__icon { display: block; } */
 /* .icon-boxes-section .guarantees { background: transparent; } */

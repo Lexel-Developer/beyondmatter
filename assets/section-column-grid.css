@@ -98,6 +98,9 @@
     margin-bottom: 8px;
     font-weight: 700;
 }
+.enable_big_box .column_grid_top .h3 {
+    font-weight: 400;
+}
 .column-grid .title-wrapper {
     margin-bottom: 5.6rem;
 }

@@ -35,6 +35,8 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "primary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#212326",
         "colors_text": "#212326",
@@ -57,8 +59,8 @@
       "settings": {
         "page_width": "standard",
         "enable_breadcrumbs": true,
-        "title": "EssenceX-Technologie",
-        "description": "<p>Mit EssenceX haben wir eine innovative Lösung für ein allgegenwärtiges Problem  moderner Gesellschaften gefunden:  elektromagnetische Strahlung. In seiner schädlichsten Form auch bekannt als Elektrosmog.</p>",
+        "title": "Über uns",
+        "description": "<p>Seit über 10 Jahren begleiten unsere Produkte im Alltag und ermöglichen ihnen, die Vorteile von modernen Technologien nutzen zu können, oder unter ihren Nachteilen leiden zu müssen.</p>",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
@@ -75,8 +77,9 @@
         "secondary_background": "#ede9e9",
         "box_background": "#ffffff",
         "title_color": "#3c3c3c",
-        "breadcrumb_color": "#3c3c3c",
-        "breadcrumb_opacity": 100,
+        "description_color": "",
+        "breadcrumb_color": "#000000",
+        "breadcrumb_opacity": 50,
         "padding_top": 80,
         "padding_bottom": 104,
         "mobile_padding_top": 36,
@@ -175,7 +178,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Unser Antrieb</em></p>",
-            "sub_text_color": "#3c3c3c"
+            "sub_text_color": "#3c3c3c",
+            "subheading_color_opacity": 100
           }
         },
         "heading_TcdYfi": {
@@ -198,9 +202,10 @@
         "main_description": "<p>Beyond Matter gehört zum Besten, was der Markt zu bieten hat: Hochwertige Produkte, hochgradige Wirkung die mit Studien belegt ist und zeitloses Design.</p>",
         "enable_main_image": false,
         "grid_column_spacing": false,
+        "image_with_text_grid": "",
         "image_position": "center center",
         "layout": "text_first",
-        "desktop_box_spacing": 33,
+        "desktop_box_spacing": 0,
         "mobile_box_spacing": 0,
         "text_box_position": "middle",
         "text_alignment": "left",
@@ -219,8 +224,8 @@
         "colors_text": "#3c3c3c",
         "colors_background": "#ede9e9",
         "gradient_background": "",
-        "padding_top": 80,
-        "padding_bottom": 100,
+        "padding_top": 50,
+        "padding_bottom": 70,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36,
         "padding_left": 0,
@@ -295,7 +300,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Beyond Matter</em></p>",
-            "sub_text_color": "#baab9e"
+            "sub_text_color": "#baab9e",
+            "subheading_color_opacity": 100
           }
         },
         "heading_JTbimg": {
@@ -318,10 +324,11 @@
         "main_description": "<p>Wir sind angetreten, zu beweisen, dass niemand unter Elektrosmog leiden muss. Mit Essence X haben wir eine Technologie entwickelt, die das Leben und den Alltag unserer Kunden auf einfachste Art und Wiese messbar verbessert. Ein Leben lang.</p>",
         "enable_main_image": false,
         "grid_column_spacing": false,
+        "image_with_text_grid": "image-with-text-grid",
         "image_position": "center center",
         "layout": "text_first",
-        "desktop_box_spacing": 80,
-        "mobile_box_spacing": 0,
+        "desktop_box_spacing": 40,
+        "mobile_box_spacing": 20,
         "text_box_position": "middle",
         "text_alignment": "left",
         "image_ratio": "650px",
@@ -356,13 +363,14 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Unser Team</em></p>",
-            "sub_text_color": "#3c3c3c"
+            "sub_text_color": "#3c3c3c",
+            "subheading_color_opacity": 100
           }
         },
         "heading_V38QJi": {
           "type": "heading",
           "settings": {
-            "heading": "Von Technik fasziniert.   Der Gesundheit verpflichtet.",
+            "heading": "Von Technik fasziniert.<br> Der Gesundheit verpflichtet.",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -388,6 +396,7 @@
         "main_description": "",
         "enable_main_image": true,
         "grid_column_spacing": false,
+        "image_with_text_grid": "",
         "image": "shopify://shop_images/images-2.png",
         "image_position": "top center",
         "layout": "image_first",
@@ -427,7 +436,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Kontakt & Hilfe</em></p>",
-            "sub_text_color": "#3c3c3c"
+            "sub_text_color": "#3c3c3c",
+            "subheading_color_opacity": 100
           }
         },
         "heading_ekdhPm": {
@@ -469,6 +479,7 @@
         "main_description": "",
         "enable_main_image": true,
         "grid_column_spacing": false,
+        "image_with_text_grid": "",
         "image": "shopify://shop_images/images-3.png",
         "image_position": "top center",
         "layout": "text_first",
@@ -508,7 +519,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Unser Produktfinder</em></p>",
-            "sub_text_color": "#baab9e"
+            "sub_text_color": "#baab9e",
+            "subheading_color_opacity": 100
           }
         },
         "heading_3YCdXr": {
@@ -558,7 +570,8 @@
         "secondary_background": "#d4cfcc",
         "main_description": "",
         "enable_main_image": true,
-        "grid_column_spacing": false,
+        "grid_column_spacing": true,
+        "image_with_text_grid": "",
         "image": "shopify://shop_images/Mask_group_1.png",
         "image_position": "center center",
         "layout": "image_first",

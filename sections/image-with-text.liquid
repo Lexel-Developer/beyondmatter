@@ -261,11 +261,12 @@
               {%- when 'subheading' -%}
                 <style>
                   #block--{{ block.id }} {
-                    --secondary-background: {{ block.settings.sub_text_color }};
+                    --secondary-background: {{ block.settings.sub_text_color.red }}, {{ block.settings.sub_text_color.green }}, {{ block.settings.sub_text_color.blue }};
+                    --subheading-color-opacity: {% if block.settings.subheading_color_opacity < 100 %} 0.{{ block.settings.subheading_color_opacity }} {% else %} 1{% endif %};
                   }
                 </style>
                 {% if block.settings.subheading != blank %}
-                  <h3 id="block--{{ block.id }}" class="h1 sub_title" style="color: {{ block.settings.sub_text_color }};">{{ block.settings.subheading }}</h3>
+                  <h3 id="block--{{ block.id }}" class="h1 sub_title" style="color:rgba(var(--secondary-background), var(--subheading-color-opacity));">{{ block.settings.subheading }}</h3>
                 {% endif %}
               {%- when 'text' -%}
                 <div class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
@@ -954,7 +955,16 @@
           "label": "Sub title color",
           "id": "sub_text_color",
           "default": "#000000"
-        }
+        },
+        {
+          "type": "range",
+          "label": "Color opacity",
+          "id": "subheading_color_opacity",
+          "default": 100,
+          "min": 0,
+          "max": 100,
+          "step": 1
+        },
       ]
     },
     {

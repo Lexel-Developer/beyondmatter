@@ -295,7 +295,7 @@
         "show_divider": false,
         "header_page_width": "standard",
         "subtitle": "<em>Optionale Dachzeile</em>",
-        "heading": "Bringt Balance ins Haus: SAMSON hat Kraft die Ruhe bringt, für Ruhe, die Kraft bringt.",
+        "heading": "Bringt Balance ins Haus: SAMSON hat Kraft die Ruhe bringt,<br> für Ruhe, die Kraft bringt.",
         "text": "",
         "heading_size": "h1",
         "heading_alignment": "left",
@@ -407,7 +407,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Optionale Dachzeile</em></p>",
-            "sub_text_color": "#baab9e"
+            "sub_text_color": "#baab9e",
+            "subheading_color_opacity": 100
           }
         },
         "heading_aNfMPW": {
@@ -429,6 +430,8 @@
         "secondary_background": "#baab9e",
         "main_description": "<p>Der Alltag hat für jeden von uns immer mehr Herausforderungen und Eindrücke parat. Egal, ob beruflicher oder privater Natur, sind wir Stress ausgesetzt und es werden eher mehr als weniger Stressquellen. Neben diesen gibt es noch Quellen von Stress, deren wir uns meist nicht bewusst sind: elektromagnetische Felder. Elektrosmog. Und genau diese Stressquelle kannst du mit SAMSON ausschalten. Die ästhetisch hochwertige Kugel blockt Elektrosmog nicht nur, sondern macht diesen zu einer Energiequelle für dich.</p>",
         "enable_main_image": false,
+        "grid_column_spacing": false,
+        "image_with_text_grid": "",
         "image": "shopify://shop_images/images-5.png",
         "image_position": "top center",
         "layout": "text_first",
@@ -467,7 +470,8 @@
         "heading_dVWMBq": {
           "type": "heading",
           "settings": {
-            "heading": "Wir verbinden die Vorteile technischer Geräte mit der heilenden Kraft der Natur.",
+            "heading": "Wir verbinden die Vorteile technischer Geräte mit der<br> heilenden Kraft der Natur.",
+            "enable_italic": false,
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -505,6 +509,8 @@
         "colors_button_label": "#ffffff",
         "colors_button_background": "#1a1b18",
         "colors_text": "#212326",
+        "heading_color": "#212326",
+        "link_text_color": "#212326",
         "colors_highlight": "#bbff00",
         "gradient_background": "",
         "padding_top": 80,

@@ -237,7 +237,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Gabi aus Wuppertal</em></p>",
-            "sub_text_color": "#3c3c3c"
+            "sub_text_color": "#3c3c3c",
+            "subheading_color_opacity": 100
           }
         },
         "heading_V38QJi": {
@@ -319,7 +320,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p>Heiko aus Hannover</p>",
-            "sub_text_color": "#3c3c3c"
+            "sub_text_color": "#3c3c3c",
+            "subheading_color_opacity": 100
           }
         },
         "heading_eQCVAP": {
@@ -401,7 +403,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Unser Produktfinder</em></p>",
-            "sub_text_color": "#baab9e"
+            "sub_text_color": "#baab9e",
+            "subheading_color_opacity": 100
           }
         },
         "heading_3YCdXr": {
@@ -451,7 +454,7 @@
         "secondary_background": "#d4cfcc",
         "main_description": "",
         "enable_main_image": true,
-        "grid_column_spacing": false,
+        "grid_column_spacing": true,
         "image_with_text_grid": "",
         "image": "shopify://shop_images/Mask_group_1.png",
         "image_position": "center center",

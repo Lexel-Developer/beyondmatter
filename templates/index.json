@@ -66,6 +66,8 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "primary_background": "#f6f6f6",
+        "secondary_background": "#f6f6f6",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#3c3c3c",
         "colors_text": "#3c3c3c",
@@ -76,7 +78,7 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "mobile_padding_top": 0,
-        "mobile_padding_bottom": 0,
+        "mobile_padding_bottom": 34,
         "padding_left": 0,
         "padding_right": 0,
         "margin_top": 0,
@@ -442,7 +444,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Unser Produktfinder</em></p>",
-            "sub_text_color": "#baab9e"
+            "sub_text_color": "#baab9e",
+            "subheading_color_opacity": 100
           }
         },
         "heading_qmEzML": {
@@ -456,7 +459,7 @@
         "text_6BWMpL": {
           "type": "text",
           "settings": {
-            "text": "<p>Entdecke in unserem Produktfinder, welches unserer  Produkte das Beste für deine Bedürfnisse ist. Dauer: </p><p><em>Max. 2 Min</em></p>",
+            "text": "<p>Entdecke in unserem Produktfinder, welches unserer </p><p>Produkte das Beste für deine Bedürfnisse ist. </p><p><em>Dauer: Max. 2 Min</em></p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -492,6 +495,8 @@
         "secondary_background": "#baab9e",
         "main_description": "",
         "enable_main_image": true,
+        "grid_column_spacing": true,
+        "image_with_text_grid": "",
         "image": "shopify://shop_images/Mask_group.jpg",
         "image_position": "center center",
         "layout": "image_first",
@@ -977,7 +982,7 @@
         "columns_desktop": 3,
         "columns_mobile": "1",
         "image_ratio": "wide",
-        "title": "Unsere Studien",
+        "title": "Aus unserem Ratgeber",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",

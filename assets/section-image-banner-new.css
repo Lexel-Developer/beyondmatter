@@ -96,6 +96,7 @@
     height: 0;
     padding-bottom: 53.0625%;
 }
+
 @media only screen and (min-width:990px){
     .section-image-banner-new .banner--container .banner__box {
         padding: 4rem 6rem !important;
@@ -125,6 +126,12 @@
         align-items: flex-start;
         justify-content: center;
     }
+}
+
+@media only screen and (max-width:989px){
+  .section-image-banner-new .page-width--full-width .banner .banner__content {
+    background: transparent;
+  }
 }
 
 @media only screen and (max-width:749px){

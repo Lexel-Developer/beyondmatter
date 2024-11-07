@@ -104,8 +104,8 @@
         "subheading_fEAAfP": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p><em>#Naturallyconnected</em></p>",
-            "sub_text_color": "#3c3c3c"
+            "subheading": "<p><em>#Naturally </em>connected</p>",
+            "subheading_color_opacity": 50
           }
         }
       },
@@ -241,7 +241,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Unser Antrieb</em></p>",
-            "sub_text_color": "#3c3c3c"
+            "subheading_color_opacity": 100
           }
         },
         "heading_TcdYfi": {
@@ -379,7 +379,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Unser Produktfinder</em></p>",
-            "sub_text_color": "#baab9e"
+            "subheading_color_opacity": 100
           }
         },
         "heading_3YCdXr": {

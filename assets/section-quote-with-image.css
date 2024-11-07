@@ -109,6 +109,11 @@
         padding-right: 32px;
     }
 }
+@media only screen and (min-width:750px) and (max-width:990px){
+  .quote_main__heading.x-large {
+    font-size: calc(var(--font-heading-scale)* 3.4rem);
+  }
+}
 
 @media only screen and (max-width:990px){
     .quote-with-image-cvr {

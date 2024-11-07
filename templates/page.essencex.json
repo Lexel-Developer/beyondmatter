@@ -60,7 +60,7 @@
         "page_width": "standard",
         "enable_breadcrumbs": true,
         "title": "EssenceX-Technologie",
-        "description": "<p>Mit EssenceX haben wir eine innovative Lösung für ein allgegenwärtiges Problem  moderner Gesellschaften gefunden:  elektromagnetische Strahlung. In seiner schädlichsten Form auch bekannt als Elektrosmog.</p>",
+        "description": "<p>Mit EssenceX haben wir eine innovative Lösung für ein allgegenwärtiges </p><p>Problem  moderner Gesellschaften gefunden:  elektromagnetische</p><p> Strahlung. In seiner schädlichsten Form auch bekannt als Elektrosmog.</p>",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
@@ -79,7 +79,7 @@
         "title_color": "#f4f2f2",
         "description_color": "#f4f2f2",
         "breadcrumb_color": "#f4f2f2",
-        "breadcrumb_opacity": 100,
+        "breadcrumb_opacity": 50,
         "padding_top": 80,
         "padding_bottom": 104,
         "mobile_padding_top": 36,
@@ -97,7 +97,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Die Technologie</em></p>",
-            "sub_text_color": "#baab9e"
+            "sub_text_color": "#baab9e",
+            "subheading_color_opacity": 100
           }
         },
         "heading_EtrCxM": {
@@ -111,8 +112,8 @@
         "text_wDQFzd": {
           "type": "text",
           "settings": {
-            "text": "<p>Wir haben die natürliche Fähigkeit des Schungits, elektromagnetische Wellen zu resorbieren, durch fortschrittliche Technologie potenziert, sodass bereits ein punktueller Kontakt ausreicht, um Elektrosmog effektiv zu neutralisieren. </p>",
-            "text_size": "typeset2",
+            "text": "<p>Wir haben die natürliche Fähigkeit des Schungits,</p><p> elektromagnetische Wellen zu resorbieren, durch fortschrittliche </p><p>Technologie potenziert, sodass bereits ein punktueller Kontakt</p><p> ausreicht, um Elektrosmog effektiv zu neutralisieren. </p>",
+            "text_size": "typeset",
             "secondary_color": false
           }
         }
@@ -128,7 +129,7 @@
         "secondary_background": "#4d4b4b",
         "main_description": "",
         "enable_main_image": true,
-        "grid_column_spacing": false,
+        "grid_column_spacing": true,
         "image_with_text_grid": "",
         "image": "shopify://shop_images/Isolationsmodus_02a6d2a1-11b9-4466-98f1-82d05a0bb21e.png",
         "image_position": "center center",
@@ -230,7 +231,7 @@
         "colors_icon": "#f4f2f2",
         "colors_text": "#f4f2f2",
         "padding_top": 80,
-        "padding_bottom": 160,
+        "padding_bottom": 80,
         "mobile_padding_top": 40,
         "mobile_padding_bottom": 80,
         "padding_left": 0,
@@ -282,7 +283,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Unser Produktfinder</em></p>",
-            "sub_text_color": "#baab9e"
+            "sub_text_color": "#baab9e",
+            "subheading_color_opacity": 100
           }
         },
         "heading_3YCdXr": {

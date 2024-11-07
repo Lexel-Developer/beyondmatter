@@ -35,6 +35,8 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "primary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#212326",
         "colors_text": "#212326",
@@ -75,6 +77,7 @@
         "secondary_background": "#ede9e9",
         "box_background": "#ffffff",
         "title_color": "#3c3c3c",
+        "description_color": "",
         "breadcrumb_color": "#3c3c3c",
         "breadcrumb_opacity": 50,
         "padding_top": 80,
@@ -100,7 +103,7 @@
             "link": "",
             "title_color": "#3c3c3c",
             "text_color": "#3c3c3c",
-            "background_color": "#D9D9D9",
+            "background_color": "#d9d9d9",
             "background_opacity": 0
           }
         },
@@ -114,7 +117,7 @@
             "link": "",
             "title_color": "#3c3c3c",
             "text_color": "#3c3c3c",
-            "background_color": "#D9D9D9",
+            "background_color": "#d9d9d9",
             "background_opacity": 0
           }
         },
@@ -128,7 +131,7 @@
             "link": "",
             "title_color": "#3c3c3c",
             "text_color": "#3c3c3c",
-            "background_color": "#D9D9D9",
+            "background_color": "#d9d9d9",
             "background_opacity": 0
           }
         }
@@ -176,7 +179,7 @@
             "link": "",
             "title_color": "#3c3c3c",
             "text_color": "#3c3c3c",
-            "background_color": "#D9D9D9",
+            "background_color": "#d9d9d9",
             "background_opacity": 0
           }
         },
@@ -190,7 +193,7 @@
             "link": "",
             "title_color": "#3c3c3c",
             "text_color": "#3c3c3c",
-            "background_color": "#D9D9D9",
+            "background_color": "#d9d9d9",
             "background_opacity": 0
           }
         },
@@ -204,7 +207,7 @@
             "link": "",
             "title_color": "#3c3c3c",
             "text_color": "#3c3c3c",
-            "background_color": "#D9D9D9",
+            "background_color": "#d9d9d9",
             "background_opacity": 0
           }
         }
@@ -256,6 +259,8 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "primary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#212326",
         "colors_text": "#212326",
@@ -323,7 +328,7 @@
           "settings": {
             "width": "half",
             "type": "text",
-            "label": "Firma",
+            "label": "Benutzername:* Bitte ohne Leer- und Sonderzeichen",
             "placeholder": "Musterfirma",
             "required": true,
             "checked_value": "Yes",
@@ -405,9 +410,9 @@
         "phone_field_BMimFM": {
           "type": "phone_field",
           "settings": {
-            "label": "Telefonnumer für Rückfragen",
+            "label": "Umsatzsteuer-Identifikationsnummer (Sofern Vorhanden) ",
             "placeholder": "DE 12345678912",
-            "required": true,
+            "required": false,
             "width": "half"
           }
         },
