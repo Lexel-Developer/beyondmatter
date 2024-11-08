@@ -122,6 +122,7 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "enable_content_space": false,
         "primary_background": "#baab9e",
         "secondary_background": "#d4cfcc",
         "colors_button_label": "#ffffff",
@@ -288,8 +289,9 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "enable_content_space": false,
         "primary_background": "#f4f2f2",
-        "secondary_background": "#f4f2f2",
+        "secondary_background": "#ebe6e2",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#3c3c3c",
         "colors_text": "#3c3c3c",
@@ -405,8 +407,8 @@
         "horizontal_content": false,
         "show_divider": false,
         "use_custom_colors": true,
-        "primary_background": "#f4f2f2",
-        "secondary_background": "#f4f2f2",
+        "primary_background": "#ebe6e2",
+        "secondary_background": "#ebe6e2",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#1a1b18",
         "colors_text": "#3c3c3c",
@@ -458,7 +460,7 @@
       ],
       "settings": {
         "page_width": "standard",
-        "primary_background": "#baab9e",
+        "primary_background": "#ebe6e2",
         "secondary_background": "#f4f2f2",
         "success_message": "Thanks for subscribing",
         "email_placeholder": "Deine beste E-Mail-Adresse",
@@ -702,6 +704,7 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "enable_content_space": false,
         "primary_background": "#f4f2f2",
         "secondary_background": "#f4f2f2",
         "colors_button_label": "#ffffff",
@@ -855,6 +858,7 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "enable_content_space": false,
         "primary_background": "#baab9e",
         "secondary_background": "#d4cfcc",
         "colors_button_label": "#ffffff",
@@ -972,8 +976,8 @@
         "horizontal_content": false,
         "show_divider": false,
         "use_custom_colors": true,
-        "primary_background": "#f4f2f2",
-        "secondary_background": "#f4f2f2",
+        "primary_background": "#fbfaf9",
+        "secondary_background": "#fbfaf9",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#1a1b18",
         "colors_text": "#3c3c3c",
@@ -1031,8 +1035,8 @@
         "horizontal_content": false,
         "show_divider": false,
         "use_custom_colors": true,
-        "primary_background": "#f4f2f2",
-        "secondary_background": "#f4f2f2",
+        "primary_background": "#fbfaf9",
+        "secondary_background": "#fbfaf9",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#3c3c3c",
         "colors_text": "#3c3c3c",
@@ -1109,7 +1113,8 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
-        "primary_background": "#f4f2f2",
+        "enable_content_space": false,
+        "primary_background": "#fbfaf9",
         "secondary_background": "#f4f2f2",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#3c3c3c",
@@ -1309,7 +1314,7 @@
       "settings": {
         "page_width": "standard",
         "primary_background": "#f4f2f2",
-        "secondary_background": "#d4cfcc",
+        "secondary_background": "#ebe6e2",
         "success_message": "Thanks for subscribing",
         "email_placeholder": "Deine beste E-Mail-Adresse",
         "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.<\/p>",
@@ -1436,8 +1441,8 @@
         "horizontal_content": true,
         "show_divider": false,
         "use_custom_colors": true,
-        "primary_background": "#d4cfcc",
-        "secondary_background": "#d4cfcc",
+        "primary_background": "#ebe6e2",
+        "secondary_background": "#ebe6e2",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#3c3c3c",
         "colors_text": "#3c3c3c",
@@ -1446,6 +1451,127 @@
         "colors_highlight": "#bbff00",
         "gradient_background": "",
         "padding_top": 200,
+        "padding_bottom": 86,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_REnXpJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_kaYaAN": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "<p><em>Fragen?<\/em><\/p>",
+            "sub_text_color": "#baab9e",
+            "subheading_color_opacity": 100
+          }
+        },
+        "heading_eJCCBm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fragen!",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_7YUkfB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Du hast Fragen zu unseren Produkten? Dann melde dich bei uns!<\/p><p><br\/>Aus Erfahrung wissen wir, dass sich die meisten Fragen in einem persönlichen Gespräch schnell und einfach klären lassen.<\/p><p><br\/>Unser ebenso bezauberndes wie kompetentes Beratungsteam freut sich auf dich!<\/p><p><br\/>Telefon: +49 (0) 30-75437090<\/p><p>E-Mail: <a href=\"mailto:beratung@beyondmatter.com\" title=\"mailto:beratung@beyondmatter.com\">beratung@beyondmatter.com<\/a><\/p><p><br\/>Montag bis Donnerstag: 09:00 bis 17:00 Uhr.<\/p><p>Freitag: 09:00 bis 14:00 Uhr.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_kaYaAN",
+        "heading_eJCCBm",
+        "text_7YUkfB"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "primary_background": "#ebe6e2",
+        "secondary_background": "#f4f2f2",
+        "main_description": "",
+        "enable_main_image": true,
+        "grid_column_spacing": true,
+        "image_with_text_grid": "",
+        "image": "shopify:\/\/shop_images\/Mask_group_2.png",
+        "image_position": "center center",
+        "layout": "image_first",
+        "desktop_box_spacing": 0,
+        "mobile_box_spacing": 0,
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": "small",
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 86,
+        "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_nt9jbJ": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gLgN3B": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(01) Link: https:\/\/www.geo.de\/wissen\/weltall\/23994-rtkl-die-milchstrasse-antworten-auf-die-grossen-fragen-zu-unserer-galaxie.<\/p><p>(02) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/James_Van_Allen.<\/p><p>(03) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Schumann-Resonanz.<\/p><p>(04) Vaghe M. et al.: Spirituality and brain waves. J Med Eng Technol. 2015 Feb; 39 (2).<\/p><p>(05) Hecht K.: Die Wirkung der 10-Hz-Pulsation der elektromagnetischen Strahlungen von WLAN auf den Menschen. diagnose:funk.<\/p><p>(06) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Ionosph%C3%A4re.<\/p><p>(07) Link: https:\/\/www.daoqigong.de\/media-PDF\/Qi-Zentren-Qi-Punkte.pdf.<\/p><p>(08) Link: https:\/\/blog.deutsche-akupunktur-gesellschaft.de\/baihui-ein-ganz-besonderer-akupunkturpunkt\/.<\/p><p>(09) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Elektron.<\/p><p>(10) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Konvergenz_(Mathematik).<\/p><p>(11) Kim, B.H.: Große Entdeckung in Biologie und Medizin: Substanz von Kyungrak. Pjöngjang: Verlag für Fremdsprachen. 1962.<\/p><p>(12) Link: https:\/\/www.slideshare.net\/thorntonstreeter\/primo-vascularmeridian-system-2016.<\/p><p>(13) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Stammzelle.<\/p><p>(14) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Zellmembran .<\/p><p>(15) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Ionenkanal.<\/p><p>(16) Jan L.Y: Voltage-sensitive ion channels. Cell. 1989 Jan 13; 56 (1).<\/p><p>(17) Heine M. et al.: Surface dynamics of voltage-gated ion channels. Channels (Austin). 2016 Jul 3; 10 (4).<\/p><p>(18) Baura G.: Medical Device Technologies. A Systems Based Overview Using Engineering Standards. 2020.<\/p><p>(19) Ropper A.H., Samuels M.A.: Adams and Victor’s Principles of Neurology. 2009.<\/p><p>(20) Rowland L.P., Pedley T.A.: Merritt’s Neurology. 2009.<\/p><p>(21) Link: https:\/\/www.spektrum.de\/frage\/wie-viele-zellen-hat-der-mensch\/620672.<\/p><p>(22) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Adenosintriphosphat.<\/p><p>(23) Alberts B. et al.: Molecular Biology of the Cell. 2002.<\/p><p>(24) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Porphyrine.<\/p><p>(25) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/H%C3%A4moglobin.<\/p><p>(26) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Myoglobin.<\/p><p>(27) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Cytochrom_P450.<\/p><p>(28) Wikipedia: https:\/\/de.wikipedia.org\/wiki\/Photosynthese.<\/p>",
+            "text_size": "typeset-custom",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "text_gLgN3B"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": true,
+        "intro_title": "Quellen-verzeichnis:",
+        "content_width": 830,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": true,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#212326",
+        "link_text_color": "#212326",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 80,
         "padding_bottom": 160,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36,
@@ -1474,6 +1600,8 @@
     "image_banner_new_YpYKmj",
     "rich_text_NE6Kzg",
     "newsletter2_w6Mq4U",
-    "rich_text_HYkQwk"
+    "rich_text_HYkQwk",
+    "image_with_text_REnXpJ",
+    "rich_text_nt9jbJ"
   ]
 }
