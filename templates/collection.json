@@ -17,9 +17,6 @@
         "show_description": true,
         "show_image": true,
         "apply_overlay": true,
-        "enable_breadcrumbs": true,
-        "breadcrumb_color": "#3c3c3c",
-        "breadcrumb_opacity": 50,
         "image_position": "center center",
         "image_ratio": "550px",
         "text_alignment": "left",
@@ -150,9 +147,9 @@
         "heading_tag": "h2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "use_custom_colors": false,
-        "colors_icon": "#ffffff",
-        "colors_text": "#1a1b18",
+        "use_custom_colors": true,
+        "colors_icon": "#d4cfcc",
+        "colors_text": "#3c3c3c",
         "padding_top": 122,
         "padding_bottom": 122,
         "mobile_padding_top": 80,
@@ -170,7 +167,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Unser Produktfinder</em></p>",
-            "sub_text_color": "#baab9e"
+            "sub_text_color": "#baab9e",
+            "subheading_color_opacity": 100
           }
         },
         "heading_qmEzML": {
@@ -221,6 +219,7 @@
         "main_description": "",
         "enable_main_image": true,
         "grid_column_spacing": true,
+        "image_with_text_grid": "",
         "image": "shopify://shop_images/Mask_group.jpg",
         "image_position": "center center",
         "layout": "image_first",
@@ -260,7 +259,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Optionale Dachzeile</em></p>",
-            "sub_text_color": "#3c3c3c"
+            "sub_text_color": "#3c3c3c",
+            "subheading_color_opacity": 100
           }
         },
         "heading_aNfMPW": {
@@ -283,6 +283,7 @@
         "main_description": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens.  Die Kugel SAMSON sorgt mit der Kombination aus 100 % reinem Schungit und unserer EssenceX Technologie dafür, dass du deine Geräte ohne Nachteile nutzen und deine, sowie die Gesundheit deiner Lieben schützen kannst.</p>",
         "enable_main_image": false,
         "grid_column_spacing": false,
+        "image_with_text_grid": "",
         "image": "shopify://shop_images/images-5.png",
         "image_position": "top center",
         "layout": "text_first",
