@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -35,8 +26,7 @@
         },
         "content": {
           "type": "content",
-          "settings": {
-          }
+          "settings": {}
         },
         "share": {
           "type": "share",
@@ -46,13 +36,11 @@
         },
         "back_to_blog": {
           "type": "back_to_blog",
-          "settings": {
-          }
+          "settings": {}
         },
         "next_previous_posts": {
           "type": "next_previous_posts",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -78,17 +66,17 @@
         "back_link_title": "Zurück zur Übersicht",
         "show_back_link": true,
         "show_inside_box": false,
-        "heading": "Bioelektrizität.  Die Essenz des Lebens.",
+        "heading": "Bioelektrizität. \u2028Die Essenz des Lebens.",
         "heading_size": "h0",
         "heading_tag": "h2",
         "title": "Das Wichtigste auf einen Blick:",
-        "text": "<p>Die von einem unabhängigen Institut durchgeführte Studie untersucht die gesundheitlichen Auswirkungen von Handytelefonaten auf den Körper: Was lösen elektromagnetische Felder (Elektrosmog) im Körper aus und wie kannst du dich effektiv davor schützen?</p>",
+        "text": "<p>Die von einem unabhängigen Institut durchgeführte Studie untersucht die gesundheitlichen Auswirkungen von Handytelefonaten auf den Körper: Was lösen elektromagnetische Felder (Elektrosmog) im Körper aus und wie kannst du dich effektiv davor schützen?<\/p>",
         "text_size": "typeset",
         "secondary_color": false,
         "highlight_phrases": "",
         "highlight_style": "marker",
         "button_label": "",
-        "button_link": "https://cdn.shopify.com/s/files/1/0848/0931/8728/files/file-sample_150kB.pdf?v=1729853643",
+        "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0848\/0931\/8728\/files\/file-sample_150kB.pdf?v=1729853643",
         "file_size": "142.79 KB",
         "button_size": "medium",
         "button_style": "primary",
@@ -121,7 +109,7 @@
       "type": "image-banner-new",
       "settings": {
         "page_width": "full-width",
-        "image": "shopify://shop_images/FullWidth-Bild_-_0px_Spacing.jpg",
+        "image": "shopify:\/\/shop_images\/FullWidth-Bild_-_0px_Spacing.jpg",
         "image_position": "center center",
         "text_box_position": "middle-center",
         "text_alignment": "center",
@@ -168,7 +156,7 @@
         "text_L8AMRc": {
           "type": "text",
           "settings": {
-            "text": "<p>Von Albert Szent-Györgyi, Mediziner, Biochemiker und Nobelpreisträger für Medizin, stammt der Satz <strong>„Bioelektrizität ist die Essenz des Lebens“.</strong></p><p>Und genau darum geht es: <strong>biologische Elektrizität;</strong> natürliche elektromagnetische Felder, die das Leben im Großen und Kleinen bestimmen. </p><p>Mit „bestimmen“ ist gemeint: Bioelektrizität lenkt, steuert und organisiert Leben. 👈 </p><p>Wer die <a href=\"#\" title=\"#\">Gefahren von Mobilfunk, WLAN, 4G (LTE) und 5G</a> richtig einschätzen möchte, muss das, was nun folgt, konsequent mitdenken.</p><p>Fangen wir also an. Mit dem „großen Ganzen“: dem Leben auf unserem Planeten. Denn Leben wird durch und durch von natürlicher Elektromagnetik bestimmt.</p>",
+            "text": "<p>Von Albert Szent-Györgyi, Mediziner, Biochemiker und Nobelpreisträger für Medizin, stammt der Satz <strong>„Bioelektrizität ist die Essenz des Lebens“.<\/strong><\/p><p>Und genau darum geht es: <strong>biologische Elektrizität;<\/strong> natürliche elektromagnetische Felder, die das Leben im Großen und Kleinen bestimmen. <\/p><p>Mit „bestimmen“ ist gemeint: Bioelektrizität lenkt, steuert und organisiert Leben. 👈 <\/p><p>Wer die <a href=\"#\" title=\"#\">Gefahren von Mobilfunk, WLAN, 4G (LTE) und 5G<\/a> richtig einschätzen möchte, muss das, was nun folgt, konsequent mitdenken.<\/p><p>Fangen wir also an. Mit dem „großen Ganzen“: dem Leben auf unserem Planeten. Denn Leben wird durch und durch von natürlicher Elektromagnetik bestimmt.<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -194,7 +182,7 @@
         "text_DrYCpn": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Max Mustermann</strong></p>",
+            "text": "<p><strong>Max Mustermann<\/strong><\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -255,7 +243,7 @@
         "text_86aCAc": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Chip für alle mobilen Endgeräte.</strong></p>",
+            "text": "<p><strong>Chip für alle mobilen Endgeräte.<\/strong><\/p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -263,7 +251,7 @@
         "text_CRpQQU": {
           "type": "text",
           "settings": {
-            "text": "<p>Aus EssenceX Schungit.</p>",
+            "text": "<p>Aus EssenceX Schungit.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -286,7 +274,7 @@
       ],
       "settings": {
         "page_width": "narrow",
-        "image": "shopify://shop_images/banner-image.png",
+        "image": "shopify:\/\/shop_images\/banner-image.png",
         "image_position": "center center",
         "text_box_position": "middle-left",
         "text_alignment": "left",
@@ -294,7 +282,7 @@
         "enable_boxed_height": false,
         "show_divider": false,
         "image_behavior": "none",
-        "mobile_image": "shopify://shop_images/mobile-image1.png",
+        "mobile_image": "shopify:\/\/shop_images\/mobile-image1.png",
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "340px",
         "stack_images_on_mobile": true,
@@ -334,7 +322,7 @@
         "text_RgQxR4": {
           "type": "text",
           "settings": {
-            "text": "<p>Um diese Frage zu beantworten, blicken wir zunächst in den Kosmos. Denn dort, im Kosmos, beginnt die elektromagnetische Beeinflussung von Leben auf unserem Planten, der Erde.</p><p>Die Galaxie, in der wir leben, die sogenannte „Milchstraße“ rotiert alle 250 Millionen Jahre ein Mal um ihre eigene Achse. Dadurch entsteht Energie, denn bei einem Durchmesser von ca. 100.000 Lichtjahren (01) bewegen sich Sternenkonstellationen mit einer schier unfassbaren Geschwindigkeit innerhalb dieser Rotation.</p><p><strong>Und Rotation erzeugt Energie.</strong></p><p>Mit anderen Worten: Im Zentrum der Rotation entsteht <strong>Elektrizität.</strong> 🙌</p><p>Diese Elektrizität ist es, die als starke <strong>Strahlung elektromagnetischer Energie</strong> unseren Planeten, die Erde, erreicht.</p>",
+            "text": "<p>Um diese Frage zu beantworten, blicken wir zunächst in den Kosmos. Denn dort, im Kosmos, beginnt die elektromagnetische Beeinflussung von Leben auf unserem Planten, der Erde.<\/p><p>Die Galaxie, in der wir leben, die sogenannte „Milchstraße“ rotiert alle 250 Millionen Jahre ein Mal um ihre eigene Achse. Dadurch entsteht Energie, denn bei einem Durchmesser von ca. 100.000 Lichtjahren (01) bewegen sich Sternenkonstellationen mit einer schier unfassbaren Geschwindigkeit innerhalb dieser Rotation.<\/p><p><strong>Und Rotation erzeugt Energie.<\/strong><\/p><p>Mit anderen Worten: Im Zentrum der Rotation entsteht <strong>Elektrizität.<\/strong> 🙌<\/p><p>Diese Elektrizität ist es, die als starke <strong>Strahlung elektromagnetischer Energie<\/strong> unseren Planeten, die Erde, erreicht.<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -360,7 +348,7 @@
         "text_L7UXeT": {
           "type": "text",
           "settings": {
-            "text": "<p>Kosmische Strahlung besteht aus extrem energiereichen Teilchen, die das Leben auf unserem Planeten zerstören könnten. Damit das nicht passiert, existiert das <strong>Erdmagnetfeld.</strong></p><p>Das Erdmagnetfeld wirkt als Schutzschild; genauer: als Filter. Seine Aufgabe: Es lenkt die energiereichen Teilchen aus dem All entlang der <strong>Magnetfeldlinien</strong> um die Erde herum. Auf der sonnenabgewandten Seite entsteht dadurch ein Schweif elektromagnetischer Energie, der mehrere Millionen Kilometer misst.</p><p>Nur an den magnetischen Polen unseres Planeten schaffen es einige Teilchen zur Erde. Treffen diese Teilchen auf die Erdatmosphäre entstehen die sogenannten <strong>Polarlichter</strong>.</p><p>Das Erdmagnetfeld geht in den sogenannten „<strong>Van-Allen-Strahlungsgürteln</strong>“ (benannt nach dem Astrophysiker James Van Allen) bis zu 55.000 Kilometer hoch. Hier bildet es den Strahlungsgürtel der Erde; einen Torus energiereich geladener Elementarteilchen im Weltraum, die im Erdmagnetfeld eingeschlossen sind (02).</p><p>Das Erdmagnetfeld schirmt kosmische Strahlung nicht einfach nur ab, es filtert sie; d.h. es lässt exakt das durch, was biologisches Leben auf unserem Planeten überhaupt erst möglich macht!</p><p>Anders gesagt: <strong>Ohne kosmische Strahlung kein Leben </strong>❗</p>",
+            "text": "<p>Kosmische Strahlung besteht aus extrem energiereichen Teilchen, die das Leben auf unserem Planeten zerstören könnten. Damit das nicht passiert, existiert das <strong>Erdmagnetfeld.<\/strong><\/p><p>Das Erdmagnetfeld wirkt als Schutzschild; genauer: als Filter. Seine Aufgabe: Es lenkt die energiereichen Teilchen aus dem All entlang der <strong>Magnetfeldlinien<\/strong> um die Erde herum. Auf der sonnenabgewandten Seite entsteht dadurch ein Schweif elektromagnetischer Energie, der mehrere Millionen Kilometer misst.<\/p><p>Nur an den magnetischen Polen unseres Planeten schaffen es einige Teilchen zur Erde. Treffen diese Teilchen auf die Erdatmosphäre entstehen die sogenannten <strong>Polarlichter<\/strong>.<\/p><p>Das Erdmagnetfeld geht in den sogenannten „<strong>Van-Allen-Strahlungsgürteln<\/strong>“ (benannt nach dem Astrophysiker James Van Allen) bis zu 55.000 Kilometer hoch. Hier bildet es den Strahlungsgürtel der Erde; einen Torus energiereich geladener Elementarteilchen im Weltraum, die im Erdmagnetfeld eingeschlossen sind (02).<\/p><p>Das Erdmagnetfeld schirmt kosmische Strahlung nicht einfach nur ab, es filtert sie; d.h. es lässt exakt das durch, was biologisches Leben auf unserem Planeten überhaupt erst möglich macht!<\/p><p>Anders gesagt: <strong>Ohne kosmische Strahlung kein Leben <\/strong>❗<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -386,7 +374,7 @@
         "text_y9KPT9": {
           "type": "text",
           "settings": {
-            "text": "<p>Die vielleicht grundlegendste <a href=\"#\" title=\"#\">natürliche elektromagnetische Frequenz</a> unseres Planeten ist die <strong>Eigenfrequenz der Erde</strong>, die sogenannte Schumann-Resonanz. Sie liegt bei 8 Hz und wurde 1953 von Winfried Schumann und Herbert König entdeckt. </p><p>Die Schumann-Resonanz entsteht durch hunderte von Blitzschlägen, die pro Sekunde auf unseren Planeten treffen (03). Ein solcher Blitzschlag entlädt Milliarden von Watt, erzeugt negativ geladenen Stickstoff – essenziell wichtig für Pflanzen – und wirkt auf das Erdmagnetfeld wie das Schlagen eines Gongs.</p><p>Wenig bekannt: Die 8 Hz der Schumann-Resonanz entsprechen den 8 Hz Alphawellen unseres Gehirns (04). Diese Frequenz stellt eine Art „idealen“ Zustand dar, indem sowohl Entspannung als auch wache Aufmerksamkeit vereint sind. 😇</p><p>Karl Hecht, emeritierter Professor für Neurophysiologie an der Charité, bringt die Bedeutung der Schumannwellen wie folgt auf den Punkt: „<strong>Die Schumannwellen gewährleisten das Leben auf unserem Planeten, sie bestimmen tiefgreifend unser Gesundsein. Ohne Schumannwelle könnten wir nicht leben</strong>“ (05).</p>",
+            "text": "<p>Die vielleicht grundlegendste <a href=\"#\" title=\"#\">natürliche elektromagnetische Frequenz<\/a> unseres Planeten ist die <strong>Eigenfrequenz der Erde<\/strong>, die sogenannte Schumann-Resonanz. Sie liegt bei 8 Hz und wurde 1953 von Winfried Schumann und Herbert König entdeckt. <\/p><p>Die Schumann-Resonanz entsteht durch hunderte von Blitzschlägen, die pro Sekunde auf unseren Planeten treffen (03). Ein solcher Blitzschlag entlädt Milliarden von Watt, erzeugt negativ geladenen Stickstoff – essenziell wichtig für Pflanzen – und wirkt auf das Erdmagnetfeld wie das Schlagen eines Gongs.<\/p><p>Wenig bekannt: Die 8 Hz der Schumann-Resonanz entsprechen den 8 Hz Alphawellen unseres Gehirns (04). Diese Frequenz stellt eine Art „idealen“ Zustand dar, indem sowohl Entspannung als auch wache Aufmerksamkeit vereint sind. 😇<\/p><p>Karl Hecht, emeritierter Professor für Neurophysiologie an der Charité, bringt die Bedeutung der Schumannwellen wie folgt auf den Punkt: „<strong>Die Schumannwellen gewährleisten das Leben auf unserem Planeten, sie bestimmen tiefgreifend unser Gesundsein. Ohne Schumannwelle könnten wir nicht leben<\/strong>“ (05).<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -442,7 +430,7 @@
         "subheading_kcpXzJ": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p><em>Unsere Newsletter</em></p>",
+            "subheading": "<p><em>Unsere Newsletter<\/em><\/p>",
             "sub_text_color": "#baab9e"
           }
         },
@@ -457,7 +445,7 @@
         "text_fpeFAq": {
           "type": "text",
           "settings": {
-            "text": "<p>Kein Witz: Bei uns gibt es exklusiv für Newsletter-Abonnenten jeden Monat Rabatte von 20% und Mehr. Außerdem versüßen wir deine Anmeldung mit einem 10% Willkommens-Gutschein!</p>",
+            "text": "<p>Kein Witz: Bei uns gibt es exklusiv für Newsletter-Abonnenten jeden Monat Rabatte von 20% und Mehr. Außerdem versüßen wir deine Anmeldung mit einem 10% Willkommens-Gutschein!<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -474,9 +462,9 @@
         "secondary_background": "#f4f2f2",
         "success_message": "Thanks for subscribing",
         "email_placeholder": "Deine beste E-Mail-Adresse",
-        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
+        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.<\/p>",
         "enable_main_image": true,
-        "image": "shopify://shop_images/newsletter.jpg",
+        "image": "shopify:\/\/shop_images\/newsletter.jpg",
         "image_position": "top center",
         "layout": "image_first",
         "desktop_box_spacing": 0,
@@ -523,7 +511,7 @@
         "text_RgaYD8": {
           "type": "text",
           "settings": {
-            "text": "<p>Exakt. Wir sind gewissermaßen „mittig“ eingebunden: unter uns die Erde, über uns der Himmel.</p><p>Beide tragen unterschiedliche elektrische Ladungen.</p><p>Die Ladung der Erde; oder besser: der Erdkugel, ist als Ganzes elektrisch <strong>negativ</strong>. Die Ladung der Ionosphäre hingegen, jenem Teil der Atmosphäre, der große Mengen von Ionen und freien Elektronen enthält, ist elektrisch <strong>positiv</strong> (06).</p><p>Dazwischen stehen wir: die Menschen.<br/>Der TCM, der traditionellen chinesischen Medizin folgend, verfügt jeder Mensch über zwei überaus besondere Punkte; Punkte, die uns mit der Erde einerseits und dem Kosmos anderseits, verbinden.</p><p>Die Verbindung zur Erde kommt zustande am sogenannten „<strong>Yongquan</strong>“; die „Sprudelnde Quelle“, der <strong>Akupunktur-Punkt Niere 1</strong>, der erste Punkt des Nieren-Meridians. Er ist der tiefste Akupunkturpunkt des Körpers und der einzige an der Fußsohle (07).</p><p>Die Verbindung zum Kosmos hingegen findet am „<strong>Bai Hui</strong>“ statt, dem Punkt der „Hundert Konvergenzen“; zu finden auf der Mittellinie unseres Kopfes (08).</p><p>Beide Punkte sind über das sogenannte <strong>Meridiansystem</strong> verbunden. Dieses Leitsystem wurden vor ca. 2.500 Jahren im Buch den Gelben Kaisers in China als die Meridiane der Akupunktur beschrieben. </p><p>In den 1950er Jahren wurde es von Dr. Reinhold Voll; einem deutschen Arzt und Erfinder der Elektroakupunktur, experimentell nachgewiesen.</p>",
+            "text": "<p>Exakt. Wir sind gewissermaßen „mittig“ eingebunden: unter uns die Erde, über uns der Himmel.<\/p><p>Beide tragen unterschiedliche elektrische Ladungen.<\/p><p>Die Ladung der Erde; oder besser: der Erdkugel, ist als Ganzes elektrisch <strong>negativ<\/strong>. Die Ladung der Ionosphäre hingegen, jenem Teil der Atmosphäre, der große Mengen von Ionen und freien Elektronen enthält, ist elektrisch <strong>positiv<\/strong> (06).<\/p><p>Dazwischen stehen wir: die Menschen.<br\/>Der TCM, der traditionellen chinesischen Medizin folgend, verfügt jeder Mensch über zwei überaus besondere Punkte; Punkte, die uns mit der Erde einerseits und dem Kosmos anderseits, verbinden.<\/p><p>Die Verbindung zur Erde kommt zustande am sogenannten „<strong>Yongquan<\/strong>“; die „Sprudelnde Quelle“, der <strong>Akupunktur-Punkt Niere 1<\/strong>, der erste Punkt des Nieren-Meridians. Er ist der tiefste Akupunkturpunkt des Körpers und der einzige an der Fußsohle (07).<\/p><p>Die Verbindung zum Kosmos hingegen findet am „<strong>Bai Hui<\/strong>“ statt, dem Punkt der „Hundert Konvergenzen“; zu finden auf der Mittellinie unseres Kopfes (08).<\/p><p>Beide Punkte sind über das sogenannte <strong>Meridiansystem<\/strong> verbunden. Dieses Leitsystem wurden vor ca. 2.500 Jahren im Buch den Gelben Kaisers in China als die Meridiane der Akupunktur beschrieben. <\/p><p>In den 1950er Jahren wurde es von Dr. Reinhold Voll; einem deutschen Arzt und Erfinder der Elektroakupunktur, experimentell nachgewiesen.<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -549,7 +537,7 @@
         "text_qXbp74": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Akupunkturmeridiane sind Leitbahnen für freie Elektronen. </strong></p><p>Sie zeichnen sich durch einen geringeren elektrischen Widerstand bei zugleich höherer Konduktivität (elektrische Leitfähigkeit) aus.</p><p>Entsprechendes gilt für Akupunkturpunkte: Die Hautoberfläche über einem Akupunkturpunkt weist einen deutlich geringeren elektrischen Widerstand auf, als dessen Umgebungsfläche. Im Durchschnitt weisen Akupunkturpunkte 5 mV auf, die diese umgebende Haut 1 mV.</p><p>Immer dann, wenn wir in Kontakt mit der Erde stehen, also barfuß laufen, nehmen wir über die „Sprudelnde Quelle“ <strong>freie Elektronen</strong> auf.</p><p>Freie Elektronen sind Elektronen, die von ihrem Atomverband gelöst sind. <strong>Es sind „Extra-Elektronen“ mit großem Nutzen für deine Gesundheit (09)</strong>.</p><p>Die durch Barfußlaufen aufgenommenen Elektronen werden über das Meridiansystem unseres Körpers nach oben transportiert; vom Punkt „Sprudelnde Quelle“ hinauf zum Punkt der „Hundert Konvergenzen“. Dort, am „Konvergenzpunkt“, nähern sich Endlichkeit (Mensch) und Unendlichkeit (Kosmos) an: sie berühren sich gewissermaßen. Nichts anderes meint der Begriff der Konvergenz (10). 🙂</p><p>Am Punkt der „Hundert Konvergenzen“ ziehen wir die positive Ladung der Atmosphäre an – und nutzen sie für unsere Gesundheit. </p><p><strong>Die Anziehung positiver Ionen setzt allerdings voraus, dass wir gut mit freien Elektronen „versorgt“ sind</strong>. Sind wir es nicht, weil uns zum Beispiel der Kontakt zur Erde fehlt, entgeht uns ein wichtiger Faktor zur Gesunderhaltung.</p>",
+            "text": "<p><strong>Akupunkturmeridiane sind Leitbahnen für freie Elektronen. <\/strong><\/p><p>Sie zeichnen sich durch einen geringeren elektrischen Widerstand bei zugleich höherer Konduktivität (elektrische Leitfähigkeit) aus.<\/p><p>Entsprechendes gilt für Akupunkturpunkte: Die Hautoberfläche über einem Akupunkturpunkt weist einen deutlich geringeren elektrischen Widerstand auf, als dessen Umgebungsfläche. Im Durchschnitt weisen Akupunkturpunkte 5 mV auf, die diese umgebende Haut 1 mV.<\/p><p>Immer dann, wenn wir in Kontakt mit der Erde stehen, also barfuß laufen, nehmen wir über die „Sprudelnde Quelle“ <strong>freie Elektronen<\/strong> auf.<\/p><p>Freie Elektronen sind Elektronen, die von ihrem Atomverband gelöst sind. <strong>Es sind „Extra-Elektronen“ mit großem Nutzen für deine Gesundheit (09)<\/strong>.<\/p><p>Die durch Barfußlaufen aufgenommenen Elektronen werden über das Meridiansystem unseres Körpers nach oben transportiert; vom Punkt „Sprudelnde Quelle“ hinauf zum Punkt der „Hundert Konvergenzen“. Dort, am „Konvergenzpunkt“, nähern sich Endlichkeit (Mensch) und Unendlichkeit (Kosmos) an: sie berühren sich gewissermaßen. Nichts anderes meint der Begriff der Konvergenz (10). 🙂<\/p><p>Am Punkt der „Hundert Konvergenzen“ ziehen wir die positive Ladung der Atmosphäre an – und nutzen sie für unsere Gesundheit. <\/p><p><strong>Die Anziehung positiver Ionen setzt allerdings voraus, dass wir gut mit freien Elektronen „versorgt“ sind<\/strong>. Sind wir es nicht, weil uns zum Beispiel der Kontakt zur Erde fehlt, entgeht uns ein wichtiger Faktor zur Gesunderhaltung.<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -611,7 +599,7 @@
         "text_qjzXQB": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Max Mustermann</strong></p>",
+            "text": "<p><strong>Max Mustermann<\/strong><\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -669,7 +657,7 @@
         "text_GttDG4": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Anhänger für den Körper</strong></p>",
+            "text": "<p><strong>Anhänger für den Körper<\/strong><\/p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -677,7 +665,7 @@
         "text_c9Eide": {
           "type": "text",
           "settings": {
-            "text": "<p>Aus EssenceX Schungit.</p>",
+            "text": "<p>Aus EssenceX Schungit.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -700,7 +688,7 @@
       ],
       "settings": {
         "page_width": "narrow",
-        "image": "shopify://shop_images/Mask_group.png",
+        "image": "shopify:\/\/shop_images\/Mask_group.png",
         "image_position": "center center",
         "text_box_position": "middle-left",
         "text_alignment": "left",
@@ -708,7 +696,7 @@
         "enable_boxed_height": false,
         "show_divider": false,
         "image_behavior": "none",
-        "mobile_image": "shopify://shop_images/mobile-image1.png",
+        "mobile_image": "shopify:\/\/shop_images\/mobile-image1.png",
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "340px",
         "stack_images_on_mobile": true,
@@ -748,7 +736,7 @@
         "text_gTctc9": {
           "type": "text",
           "settings": {
-            "text": "<p>Der TCM folgend beginnt Gesundheit hier: im <strong>Energiesystem</strong> des Körpers.</p><p>Tatsächlich ist es gar nicht nötig auf die TCM zu verweisen, um die Bedeutung des Meridiansystems zu verdeutlichen.</p><p>Analog zu den Akupunktur-Meridianen existiert ein Röhrensystem in unserem Körper, das im Bindegewebe lokalisiert ist. Es wurde in den 1960er Jahren von Bohan Kim, einem koreanischen Arzt und Wissenschaftler entdeckt (11).</p><p>Dieses Röhrensystem trägt die Bezeichnung „<strong>primovaskuläre System</strong>“.</p><p>Kim konnte nachweisen, dass Kontrastmittel, dass an einem Akupunkturpunkt ins Bindegewebe gespritzt wurde, sich exakt entlang jener Linien verteilt, die als Meridiane beschrieben werden. Wissenschaftler der Seoul National University bestätigten diese Experimente Jahrzehnte später (12).</p><p>Und noch etwas überaus Faszinierendes entdeckte man: Im primovaskulären System transportiert unser Körper <strong>DNA von Stammzellen – das Rohmaterial aller zellulären Erneuerung</strong> (13).</p><p>Zudem zeigte sich, dass das primovaskuläre System einwandfrei nur dann funktioniert, wenn die dazugehörigen Akupunktur-Meridiane intakt waren! </p><p>Und „intakt“ heißt was?</p><p>Richtig: Das Elektronen frei fließen können! Mit anderen Worten: <strong>Auch die physiologische Regeneration von Zellen wird bioelektrisch gesteuert!</strong></p>",
+            "text": "<p>Der TCM folgend beginnt Gesundheit hier: im <strong>Energiesystem<\/strong> des Körpers.<\/p><p>Tatsächlich ist es gar nicht nötig auf die TCM zu verweisen, um die Bedeutung des Meridiansystems zu verdeutlichen.<\/p><p>Analog zu den Akupunktur-Meridianen existiert ein Röhrensystem in unserem Körper, das im Bindegewebe lokalisiert ist. Es wurde in den 1960er Jahren von Bohan Kim, einem koreanischen Arzt und Wissenschaftler entdeckt (11).<\/p><p>Dieses Röhrensystem trägt die Bezeichnung „<strong>primovaskuläre System<\/strong>“.<\/p><p>Kim konnte nachweisen, dass Kontrastmittel, dass an einem Akupunkturpunkt ins Bindegewebe gespritzt wurde, sich exakt entlang jener Linien verteilt, die als Meridiane beschrieben werden. Wissenschaftler der Seoul National University bestätigten diese Experimente Jahrzehnte später (12).<\/p><p>Und noch etwas überaus Faszinierendes entdeckte man: Im primovaskulären System transportiert unser Körper <strong>DNA von Stammzellen – das Rohmaterial aller zellulären Erneuerung<\/strong> (13).<\/p><p>Zudem zeigte sich, dass das primovaskuläre System einwandfrei nur dann funktioniert, wenn die dazugehörigen Akupunktur-Meridiane intakt waren! <\/p><p>Und „intakt“ heißt was?<\/p><p>Richtig: Das Elektronen frei fließen können! Mit anderen Worten: <strong>Auch die physiologische Regeneration von Zellen wird bioelektrisch gesteuert!<\/strong><\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -774,7 +762,7 @@
         "text_zmVWYC": {
           "type": "text",
           "settings": {
-            "text": "<p>Wie schon Albert Szent-Györgyi, Nobelpreisträger für Mediziner, sagte: <strong>„Bioelektrizität ist die Essenz des Lebens“</strong>. Und wenn diese Essenz gestört ist, dann ist Leben so, wie es sein sollte, nicht mehr möglich.</p><p>Der große Weltraummediziner, Prof. Karl Hecht drückt es wie folgt aus: „Alles Leben vollzieht sich in einer elektromagnetischen Umwelt. <strong>Alle Lebewesen sind elektromagnetisch determiniert</strong>. Die <a href=\"#\" title=\"#\">natürlichen EMF Frequenzen</a> unserer Umwelt takten sich regulierend in die Informationsprozesse lebender Systeme ein. <strong>Gestörte Bioelektrizität bedeutet Krankheit. Ihre Abwesenheit bedeutet Tod.</strong>“ 😳</p><p>Übrigens: Szent-Györgyi drängte darauf, die Biochemie der Medizin um die Physik zu erweitern. Szent-Györgyi sah in menschlichen Zellen <strong>Flüssigkristalle</strong>, d.h. <strong>elektromagnetisch koordinierte Strukturen</strong>.</p><p>Mit dieser Vermutung lag Szent-Györgyi goldrichtig: Inzwischen sind viele Eigenschaften von Halbleitern sowie piezoelektrische Eigenschaften (die Fähigkeit, mechanischen Druck in elektrische Spannung umzuwandeln) von Proteinen, DNA, Blutkörperchen, Zellmembranen, Fettsäuren, Kollagen und anderen Bestandteilen des Körpers nachgewiesen.</p>",
+            "text": "<p>Wie schon Albert Szent-Györgyi, Nobelpreisträger für Mediziner, sagte: <strong>„Bioelektrizität ist die Essenz des Lebens“<\/strong>. Und wenn diese Essenz gestört ist, dann ist Leben so, wie es sein sollte, nicht mehr möglich.<\/p><p>Der große Weltraummediziner, Prof. Karl Hecht drückt es wie folgt aus: „Alles Leben vollzieht sich in einer elektromagnetischen Umwelt. <strong>Alle Lebewesen sind elektromagnetisch determiniert<\/strong>. Die <a href=\"#\" title=\"#\">natürlichen EMF Frequenzen<\/a> unserer Umwelt takten sich regulierend in die Informationsprozesse lebender Systeme ein. <strong>Gestörte Bioelektrizität bedeutet Krankheit. Ihre Abwesenheit bedeutet Tod.<\/strong>“ 😳<\/p><p>Übrigens: Szent-Györgyi drängte darauf, die Biochemie der Medizin um die Physik zu erweitern. Szent-Györgyi sah in menschlichen Zellen <strong>Flüssigkristalle<\/strong>, d.h. <strong>elektromagnetisch koordinierte Strukturen<\/strong>.<\/p><p>Mit dieser Vermutung lag Szent-Györgyi goldrichtig: Inzwischen sind viele Eigenschaften von Halbleitern sowie piezoelektrische Eigenschaften (die Fähigkeit, mechanischen Druck in elektrische Spannung umzuwandeln) von Proteinen, DNA, Blutkörperchen, Zellmembranen, Fettsäuren, Kollagen und anderen Bestandteilen des Körpers nachgewiesen.<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -800,7 +788,7 @@
         "text_tmiVA6": {
           "type": "text",
           "settings": {
-            "text": "<p>Absolut richtig.</p><p>Alle alten Weisheitstraditionen sehen Gesundheit immer auch aus energetischer Perspektive. Die TCM steht hier nur stellvertretend.</p><p>Für die traditionelle chinesische Medizin – ein Gesundheitssystem mit fast 2000 Jahren Erfahrung – beruht letztlich jede Erkrankung auf einer <strong>Störung der Lebensenergie</strong>. </p><p>Diese Lebensenergie wird durch den ständigen Beschuss technischer EMF (EMF = elektromagnetischer Felder) gestört – und zwar dauerhaft gestört. 😢</p><p>Und das hat Folgen.</p><p>Folgen, die wir alle kennen: Erschöpfung, Müdigkeit, Schlafstörungen, Konzentrationsmangel, Verdauungsstörungen, Leaky Gut sowie ein ständiges Gefühl latenter Überforderung. 😓</p>",
+            "text": "<p>Absolut richtig.<\/p><p>Alle alten Weisheitstraditionen sehen Gesundheit immer auch aus energetischer Perspektive. Die TCM steht hier nur stellvertretend.<\/p><p>Für die traditionelle chinesische Medizin – ein Gesundheitssystem mit fast 2000 Jahren Erfahrung – beruht letztlich jede Erkrankung auf einer <strong>Störung der Lebensenergie<\/strong>. <\/p><p>Diese Lebensenergie wird durch den ständigen Beschuss technischer EMF (EMF = elektromagnetischer Felder) gestört – und zwar dauerhaft gestört. 😢<\/p><p>Und das hat Folgen.<\/p><p>Folgen, die wir alle kennen: Erschöpfung, Müdigkeit, Schlafstörungen, Konzentrationsmangel, Verdauungsstörungen, Leaky Gut sowie ein ständiges Gefühl latenter Überforderung. 😓<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -854,7 +842,7 @@
       "type": "image-banner-new",
       "settings": {
         "page_width": "full-width",
-        "image": "shopify://shop_images/AdobeStock_893485358_1.jpg",
+        "image": "shopify:\/\/shop_images\/AdobeStock_893485358_1.jpg",
         "image_position": "center center",
         "text_box_position": "middle-center",
         "text_alignment": "center",
@@ -901,7 +889,7 @@
         "text_Aga9NR": {
           "type": "text",
           "settings": {
-            "text": "<p>Jede unserer Zellen ist mit einer Zellmembran umgeben, die das Zellinnere umschließt und es dadurch abgrenzt. Auf diese Weise erhalten unsere Zellen das Milieu in ihrem Inneren aufrecht.</p><p>Zellmembranen haben verschiedenste Aufgaben; der Stofftransport zwischen extra- und intrazellulärem Raum stellt dabei die zentrale Aufgabe dar. Der Transport von Stoffen erfolgt, indem röhrenförmig angeordnete Proteinkomplexe, eingelagert in den Zellmembranen – sogenannte Ionenkanäle – genutzt werden.</p><p>Und jetzt kommt’s: Rate doch mal, was Ionenkanäle eigentlich sind?</p><p>Exakt: <strong>Kanäle elektrischer Strömungen!</strong> Genauer: Ionenkanäle sind Kanäle, die durch Spannungen gesteuert werden. Ihr Öffnen und Schließen ist abhängig von der Membranspannung der Zelle. Aus diesem Grund spricht man von sogenannten <strong>spannungsgesteuerten Ionenkanälen</strong> (14) (15)❗</p>",
+            "text": "<p>Jede unserer Zellen ist mit einer Zellmembran umgeben, die das Zellinnere umschließt und es dadurch abgrenzt. Auf diese Weise erhalten unsere Zellen das Milieu in ihrem Inneren aufrecht.<\/p><p>Zellmembranen haben verschiedenste Aufgaben; der Stofftransport zwischen extra- und intrazellulärem Raum stellt dabei die zentrale Aufgabe dar. Der Transport von Stoffen erfolgt, indem röhrenförmig angeordnete Proteinkomplexe, eingelagert in den Zellmembranen – sogenannte Ionenkanäle – genutzt werden.<\/p><p>Und jetzt kommt’s: Rate doch mal, was Ionenkanäle eigentlich sind?<\/p><p>Exakt: <strong>Kanäle elektrischer Strömungen!<\/strong> Genauer: Ionenkanäle sind Kanäle, die durch Spannungen gesteuert werden. Ihr Öffnen und Schließen ist abhängig von der Membranspannung der Zelle. Aus diesem Grund spricht man von sogenannten <strong>spannungsgesteuerten Ionenkanälen<\/strong> (14) (15)❗<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -927,7 +915,7 @@
         "text_a6kqq6": {
           "type": "text",
           "settings": {
-            "text": "<p>Ganz genau: Gesunde Zellen weisen eine <strong>Membranspannung von ca. 70</strong> mV auf (16). Nicht mehr und nicht weniger.</p><p>Sinkt diese Spannung wird die Zelle krank. Bei Krebspatienten beispielsweise sinkt die Zellmembranspannung auf bis zu 30 mV ab (17).😨</p><p>Bei einem anderen Typus von Zellen, unseren Nervenzellen, liegt der Schwellenwert bei gerade einmal 40 mV.</p><p>Anders ausgedrückt: Bei Nervenzellen entscheiden 40 mV darüber, ob wir gelassen bleiben – also auf einen Gedanken mit starkem Stress reagieren – oder nicht. Werden die 40 mV nicht überschritten, so bleiben wir im Gleichgewicht mit dem, was wir denken, fühlen oder über unsere Sinne wahrnehmen. Werden die 40 mV hingegen überschritten, kommt es zur <a href=\"#\" title=\"#\">Öffnung spannungsgesteuerter Ionenkanäle</a> und <strong>eine Depolarisation </strong>der Zelle setzt ein (Depolarisation = Erregung der Zelle durch Einströmen von elektrischen Ladungen).</p><p>Die Depolarisation setzt unterschiedlichste Reaktionen des Nervensystems in Gang, die alle eines gemeinsam haben: Sie lösen Stress aus (18) (19) (20).</p>",
+            "text": "<p>Ganz genau: Gesunde Zellen weisen eine <strong>Membranspannung von ca. 70<\/strong> mV auf (16). Nicht mehr und nicht weniger.<\/p><p>Sinkt diese Spannung wird die Zelle krank. Bei Krebspatienten beispielsweise sinkt die Zellmembranspannung auf bis zu 30 mV ab (17).😨<\/p><p>Bei einem anderen Typus von Zellen, unseren Nervenzellen, liegt der Schwellenwert bei gerade einmal 40 mV.<\/p><p>Anders ausgedrückt: Bei Nervenzellen entscheiden 40 mV darüber, ob wir gelassen bleiben – also auf einen Gedanken mit starkem Stress reagieren – oder nicht. Werden die 40 mV nicht überschritten, so bleiben wir im Gleichgewicht mit dem, was wir denken, fühlen oder über unsere Sinne wahrnehmen. Werden die 40 mV hingegen überschritten, kommt es zur <a href=\"#\" title=\"#\">Öffnung spannungsgesteuerter Ionenkanäle<\/a> und <strong>eine Depolarisation <\/strong>der Zelle setzt ein (Depolarisation = Erregung der Zelle durch Einströmen von elektrischen Ladungen).<\/p><p>Die Depolarisation setzt unterschiedlichste Reaktionen des Nervensystems in Gang, die alle eines gemeinsam haben: Sie lösen Stress aus (18) (19) (20).<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -953,7 +941,7 @@
         "text_WDrCWa": {
           "type": "text",
           "settings": {
-            "text": "<p>Ganz genau: <strong>Die Spannungssteuerung unserer Zellen ist entscheidend für die Zellgesundheit.</strong></p><p>Da du letztlich nichts anderes bist, als ein sehr großer „Haufen von Zellen“, die dich auf wundersame Art und Weise am Leben erhalten, geht es auch dir nur dann gut, wenn es deinen Zellen gut geht.</p><p><strong>Jeder Erwachsene besteht aus ca. 1014 bzw. 100 Billionen bzw. 100.000.000.000.000 dieser wundervollen Lebensspender (21).</strong></p><p>Bei einem gesunden Menschen steht jede einzelne dieser 100 Billionen Zellen unter optimaler Spannung!</p>",
+            "text": "<p>Ganz genau: <strong>Die Spannungssteuerung unserer Zellen ist entscheidend für die Zellgesundheit.<\/strong><\/p><p>Da du letztlich nichts anderes bist, als ein sehr großer „Haufen von Zellen“, die dich auf wundersame Art und Weise am Leben erhalten, geht es auch dir nur dann gut, wenn es deinen Zellen gut geht.<\/p><p><strong>Jeder Erwachsene besteht aus ca. 1014 bzw. 100 Billionen bzw. 100.000.000.000.000 dieser wundervollen Lebensspender (21).<\/strong><\/p><p>Bei einem gesunden Menschen steht jede einzelne dieser 100 Billionen Zellen unter optimaler Spannung!<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -1018,7 +1006,7 @@
         "text_UPa9xE": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Max Mustermann</strong></p>",
+            "text": "<p><strong>Max Mustermann<\/strong><\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -1076,7 +1064,7 @@
         "text_fCHGDL": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Platte für Lebensmittel und Getränke.</strong></p>",
+            "text": "<p><strong>Platte für Lebensmittel und Getränke.<\/strong><\/p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -1084,7 +1072,7 @@
         "text_gxkfTL": {
           "type": "text",
           "settings": {
-            "text": "<p>Aus EssenceX Schungit.</p>",
+            "text": "<p>Aus EssenceX Schungit.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -1107,7 +1095,7 @@
       ],
       "settings": {
         "page_width": "narrow",
-        "image": "shopify://shop_images/Mask_group_c6d387cb-294f-42af-9576-e73be822c6a8.png",
+        "image": "shopify:\/\/shop_images\/Mask_group_c6d387cb-294f-42af-9576-e73be822c6a8.png",
         "image_position": "center center",
         "text_box_position": "middle-left",
         "text_alignment": "left",
@@ -1115,7 +1103,7 @@
         "enable_boxed_height": false,
         "show_divider": false,
         "image_behavior": "none",
-        "mobile_image": "shopify://shop_images/mobile-image1.png",
+        "mobile_image": "shopify:\/\/shop_images\/mobile-image1.png",
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "340px",
         "stack_images_on_mobile": true,
@@ -1155,7 +1143,7 @@
         "text_wPG4xC": {
           "type": "text",
           "settings": {
-            "text": "<p>In der Schule lernt jeder Schüler, dass unsere Energie in den Mitochondrien, den „Zellkraftwerken“ des Menschen, erzeugt werden. Dort wird ATP, Adenosintriphosphat produziert. ATP ist der universelle, unmittelbar verfügbare Energieträger in Zellen und wichtigster Regulator aller energieliefernden Prozesse im Menschen (22).</p><p>Was jedoch kaum thematisiert wird und folglich in keiner Schule gelehrt: Wie die Erzeugung von Energie konkret erfolgt.</p><p>Die wenig überraschende Antwort lautet: im Wege eines durch und durch <strong>elektromagnetischen Prozesses</strong>. 😎</p><p>Im Mittelpunkt dieses Prozesses stehen sogenannte <strong>Cytochrom-Oxidasen</strong>; ein Komplex der mitochondrialen Atmungskette, der in der inneren Mitochondrienmembran verankert ist und die Elektronenbeschleunigung zur Energiegewinnung vornimmt (23).</p><p>Diese Beschleunigung setzt Infrarot frei, was in nutzbare Energie zur Herstellung des Zellkraftstoffs ATP umgewandelt wird.</p>",
+            "text": "<p>In der Schule lernt jeder Schüler, dass unsere Energie in den Mitochondrien, den „Zellkraftwerken“ des Menschen, erzeugt werden. Dort wird ATP, Adenosintriphosphat produziert. ATP ist der universelle, unmittelbar verfügbare Energieträger in Zellen und wichtigster Regulator aller energieliefernden Prozesse im Menschen (22).<\/p><p>Was jedoch kaum thematisiert wird und folglich in keiner Schule gelehrt: Wie die Erzeugung von Energie konkret erfolgt.<\/p><p>Die wenig überraschende Antwort lautet: im Wege eines durch und durch <strong>elektromagnetischen Prozesses<\/strong>. 😎<\/p><p>Im Mittelpunkt dieses Prozesses stehen sogenannte <strong>Cytochrom-Oxidasen<\/strong>; ein Komplex der mitochondrialen Atmungskette, der in der inneren Mitochondrienmembran verankert ist und die Elektronenbeschleunigung zur Energiegewinnung vornimmt (23).<\/p><p>Diese Beschleunigung setzt Infrarot frei, was in nutzbare Energie zur Herstellung des Zellkraftstoffs ATP umgewandelt wird.<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -1181,7 +1169,7 @@
         "text_f7xrba": {
           "type": "text",
           "settings": {
-            "text": "<p>Auch der Sauerstoffkreislauf wird elektromagnetisch gesteuert. Im Zentrum der Steuerung stehen sog. <strong>Porphyrine</strong>, die <strong>Antennen für elektromagnetische Wellen</strong> sind.</p><p>Porphyrine sind Moleküle, denen im menschlichen Stoffwechsel an verschiedensten Stellen eine zentrale Rolle zukommt (24).</p><p>Hier ein kleiner Auszug: Das im roten Blutfarbstoff gebundene <strong>Hämoglobin</strong>, verantwortlich für den Transport von Sauerstoff im Blut, ist ein <strong>Porphyrin</strong> (25). Ebenso das <strong>Myoglobin</strong>, ein Muskelprotein, dass für das Funktionieren der Muskeln, unerlässlich ist (26). Auch das wichtigste Entgiftungsenzym der Leber, <strong>Cytochrom</strong> P450, ist ein Porphyrin (27). 🤓</p><p>Porphyrine sind Bestandteile vieler lebenswichtiger Enzyme; wie z.B. der Katalase oder den oben erwähnten Cytochrom-Oxidasen.</p><p>Das einzigartige an Porphyrinen: <strong>Porphyrinen reagieren sehr sensibel auf elektromagnetische Schwingungen</strong>. 👈</p><p>Chlorophyll beispielsweise – ebenfalls ein Porphyrin – nimmt elektromagnetische Energie in Form von Sonnenlicht auf, bündelt es und nutzt es anschließend zum Aufbrechen von Kohlendioxidmolekülen im Wege der Photosynthese (28).</p><p>Bis zu 1.000 Chlorophyllmoleküle arbeiten zusammen, wenn sie mit der Energie, die sie aus der Sonne aufnehmen, ein Molekül Kohlendioxid spalten, damit ein Molekül Sauerstoff freigesetzt werden kann.</p><p>In unserem Körper setzen dann die Verwandten des Chlorophylls – Hämoglobin und Myoglobin – den Kreislauf des Lebens fort. Sie sorgen für den Sauerstofftransport in die Zellen hinein. Und hier, in den Zellen, in unseren Mitochondrien, den Zellkraftwerken, vollenden Cytochrom-Oxidasen – ebenfalls Porphyrine – das Gesamtkunstwerk des Lebens: Sie stellen uns lebenswichtige Energie zur Verfügung.</p><p>Merke: <strong>Ohne Energie kein Leben. Ohne Porphyrine keine Energie. Und ohne Elektromagnetik keine Porphyrine.</strong> 🍀</p><p>So einfach ist das.</p>",
+            "text": "<p>Auch der Sauerstoffkreislauf wird elektromagnetisch gesteuert. Im Zentrum der Steuerung stehen sog. <strong>Porphyrine<\/strong>, die <strong>Antennen für elektromagnetische Wellen<\/strong> sind.<\/p><p>Porphyrine sind Moleküle, denen im menschlichen Stoffwechsel an verschiedensten Stellen eine zentrale Rolle zukommt (24).<\/p><p>Hier ein kleiner Auszug: Das im roten Blutfarbstoff gebundene <strong>Hämoglobin<\/strong>, verantwortlich für den Transport von Sauerstoff im Blut, ist ein <strong>Porphyrin<\/strong> (25). Ebenso das <strong>Myoglobin<\/strong>, ein Muskelprotein, dass für das Funktionieren der Muskeln, unerlässlich ist (26). Auch das wichtigste Entgiftungsenzym der Leber, <strong>Cytochrom<\/strong> P450, ist ein Porphyrin (27). 🤓<\/p><p>Porphyrine sind Bestandteile vieler lebenswichtiger Enzyme; wie z.B. der Katalase oder den oben erwähnten Cytochrom-Oxidasen.<\/p><p>Das einzigartige an Porphyrinen: <strong>Porphyrinen reagieren sehr sensibel auf elektromagnetische Schwingungen<\/strong>. 👈<\/p><p>Chlorophyll beispielsweise – ebenfalls ein Porphyrin – nimmt elektromagnetische Energie in Form von Sonnenlicht auf, bündelt es und nutzt es anschließend zum Aufbrechen von Kohlendioxidmolekülen im Wege der Photosynthese (28).<\/p><p>Bis zu 1.000 Chlorophyllmoleküle arbeiten zusammen, wenn sie mit der Energie, die sie aus der Sonne aufnehmen, ein Molekül Kohlendioxid spalten, damit ein Molekül Sauerstoff freigesetzt werden kann.<\/p><p>In unserem Körper setzen dann die Verwandten des Chlorophylls – Hämoglobin und Myoglobin – den Kreislauf des Lebens fort. Sie sorgen für den Sauerstofftransport in die Zellen hinein. Und hier, in den Zellen, in unseren Mitochondrien, den Zellkraftwerken, vollenden Cytochrom-Oxidasen – ebenfalls Porphyrine – das Gesamtkunstwerk des Lebens: Sie stellen uns lebenswichtige Energie zur Verfügung.<\/p><p>Merke: <strong>Ohne Energie kein Leben. Ohne Porphyrine keine Energie. Und ohne Elektromagnetik keine Porphyrine.<\/strong> 🍀<\/p><p>So einfach ist das.<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -1207,7 +1195,7 @@
         "text_yJRGFN": {
           "type": "text",
           "settings": {
-            "text": "<p>Aus dem bisher Gesagten – und die Reihe an Beispielen ließe sich endlos fortsetzen – ergibt sich vor allem eines: <strong>Der Mensch ist ein durch und durch bioelektrisch organisiertes Lebewesen</strong>. Kein Bereich, </p><p>der nicht durch elektrische bzw. elektromagnetische Ordnungsprinzipen organisiert würde.<br/>Wir Menschen sind dafür gemacht an Sonne, Erdmagnetfeld oder kosmische Hintergrundstrahlung angebunden zu sein. </p><p>Die Bioelektrizität, die uns als Menschen ausmacht, die über Gesundheit, Vitalität und Wohlbefinden entscheidet, <a href=\"#\" title=\"#\">hat sich über eine unglaublich lange Zeit entwickelt</a>; nicht etwa isoliert, sondern im Wechselspiel zwischen Erdmagnetfeld, Sonnenenergie und kosmischer Hintergrundstrahlung.</p>",
+            "text": "<p>Aus dem bisher Gesagten – und die Reihe an Beispielen ließe sich endlos fortsetzen – ergibt sich vor allem eines: <strong>Der Mensch ist ein durch und durch bioelektrisch organisiertes Lebewesen<\/strong>. Kein Bereich, <\/p><p>der nicht durch elektrische bzw. elektromagnetische Ordnungsprinzipen organisiert würde.<br\/>Wir Menschen sind dafür gemacht an Sonne, Erdmagnetfeld oder kosmische Hintergrundstrahlung angebunden zu sein. <\/p><p>Die Bioelektrizität, die uns als Menschen ausmacht, die über Gesundheit, Vitalität und Wohlbefinden entscheidet, <a href=\"#\" title=\"#\">hat sich über eine unglaublich lange Zeit entwickelt<\/a>; nicht etwa isoliert, sondern im Wechselspiel zwischen Erdmagnetfeld, Sonnenenergie und kosmischer Hintergrundstrahlung.<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -1233,7 +1221,7 @@
         "text_9A7CTz": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>An natürliche EMF sind wir seit Jahrmillionen angepasst; an technische EMF nicht. 🙁</strong></p><p><a href=\"#\" title=\"#\">Technische EMF (umgangssprachlich: Elektrosmog) existieren erst seit etwa 100 Jahren</a>. Natürliche EMF existieren seit Jahrmillionen.</p><p>Hinzu kommt: Technische EMF sind uns <strong>artfremd</strong>. Sie weisen drei Wesensmerkmale auf, die sie von natürlichen EMF fundamental unterscheiden:</p><ul><li>Stärke der technischen Elektrizität: <strong>Intensität</strong>.</li><li>Art und Weise des Stromflusses: <strong>Wechselstrom</strong>.</li><li>An- und Ausschalten von Trägerwellen: <strong>Pulsation</strong>.</li></ul><p>Diese Wesensmerkmale sind es, die technische EMF und d.h. Elektrosmog gefährlich machen. Gefährlich für Gesundheit, Vitalität und Wohlbefinden❗</p>",
+            "text": "<p><strong>An natürliche EMF sind wir seit Jahrmillionen angepasst; an technische EMF nicht. 🙁<\/strong><\/p><p><a href=\"#\" title=\"#\">Technische EMF (umgangssprachlich: Elektrosmog) existieren erst seit etwa 100 Jahren<\/a>. Natürliche EMF existieren seit Jahrmillionen.<\/p><p>Hinzu kommt: Technische EMF sind uns <strong>artfremd<\/strong>. Sie weisen drei Wesensmerkmale auf, die sie von natürlichen EMF fundamental unterscheiden:<\/p><ul><li>Stärke der technischen Elektrizität: <strong>Intensität<\/strong>.<\/li><li>Art und Weise des Stromflusses: <strong>Wechselstrom<\/strong>.<\/li><li>An- und Ausschalten von Trägerwellen: <strong>Pulsation<\/strong>.<\/li><\/ul><p>Diese Wesensmerkmale sind es, die technische EMF und d.h. Elektrosmog gefährlich machen. Gefährlich für Gesundheit, Vitalität und Wohlbefinden❗<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -1292,7 +1280,7 @@
         "subheading_nU3EJf": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p><em>Unsere Newsletter</em></p>",
+            "subheading": "<p><em>Unsere Newsletter<\/em><\/p>",
             "sub_text_color": "#baab9e"
           }
         },
@@ -1307,7 +1295,7 @@
         "text_hJJNYW": {
           "type": "text",
           "settings": {
-            "text": "<p>Kein Witz: Bei uns gibt es exklusiv für Newsletter-Abonnenten jeden Monat Rabatte von 20% und Mehr. Außerdem versüßen wir deine Anmeldung mit einem 10% Willkommens-Gutschein!</p>",
+            "text": "<p>Kein Witz: Bei uns gibt es exklusiv für Newsletter-Abonnenten jeden Monat Rabatte von 20% und Mehr. Außerdem versüßen wir deine Anmeldung mit einem 10% Willkommens-Gutschein!<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -1324,9 +1312,9 @@
         "secondary_background": "#d4cfcc",
         "success_message": "Thanks for subscribing",
         "email_placeholder": "Deine beste E-Mail-Adresse",
-        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
+        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.<\/p>",
         "enable_main_image": true,
-        "image": "shopify://shop_images/newsletter.jpg",
+        "image": "shopify:\/\/shop_images\/newsletter.jpg",
         "image_position": "top center",
         "layout": "image_first",
         "desktop_box_spacing": 0,
@@ -1373,7 +1361,7 @@
         "text_ePPd4E": {
           "type": "text",
           "settings": {
-            "text": "<p>Nein. Ganz sicher nicht. Aus vielerlei Gründen. Die wichtigsten drei im Schnelldurchlauf:</p><p>Erstens. Eine Abschirmung ist dank <strong>EssenceX</strong>, <a href=\"#\" title=\"#\">der Technologie auf der unsere Produkte basieren</a>, nicht mehr notwendig. Abschirmen war gestern. Heute ist Beyond Matter.</p><p>Zweitens: In einer abgeschirmten Umgebung erholt sich dein Körper zwar, wird aber wahrscheinlich umso sensibler, wenn du deine häusliche Umgebung verlassen musst! Auf Dauer ist das <strong>kontraproduktiv</strong>.</p><p>Drittens: Abschirmung stellt psychologisch immer eine <strong>Kapitulation vor Elektrosmog</strong> dar. Du verhältst dich, als ob Elektrosmog ein unlösbares Problem darstellt, vor dem man sich nur zurückziehen kann.</p><p>Kurzum: Abschirmen kann in seltenen Fällen kurzfristig angebracht sein. Langfristig muss es aber immer darum gehen, dass Menschen in einer elektrisch ungesunden Welt gesund leben können.</p><p>Und genau das geht mit Beyond Matter!</p>",
+            "text": "<p>Nein. Ganz sicher nicht. Aus vielerlei Gründen. Die wichtigsten drei im Schnelldurchlauf:<\/p><p>Erstens. Eine Abschirmung ist dank <strong>EssenceX<\/strong>, <a href=\"#\" title=\"#\">der Technologie auf der unsere Produkte basieren<\/a>, nicht mehr notwendig. Abschirmen war gestern. Heute ist Beyond Matter.<\/p><p>Zweitens: In einer abgeschirmten Umgebung erholt sich dein Körper zwar, wird aber wahrscheinlich umso sensibler, wenn du deine häusliche Umgebung verlassen musst! Auf Dauer ist das <strong>kontraproduktiv<\/strong>.<\/p><p>Drittens: Abschirmung stellt psychologisch immer eine <strong>Kapitulation vor Elektrosmog<\/strong> dar. Du verhältst dich, als ob Elektrosmog ein unlösbares Problem darstellt, vor dem man sich nur zurückziehen kann.<\/p><p>Kurzum: Abschirmen kann in seltenen Fällen kurzfristig angebracht sein. Langfristig muss es aber immer darum gehen, dass Menschen in einer elektrisch ungesunden Welt gesund leben können.<\/p><p>Und genau das geht mit Beyond Matter!<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -1392,7 +1380,7 @@
         "text_eh4X9A": {
           "type": "text",
           "settings": {
-            "text": "<p>Idealerweise schützt du deine Gesundheit mit einer Kombination folgender Produkte:</p><ul><li>1 x <a href=\"#\" title=\"#\">Basisset Essentials</a>.</li><li>1 x <a href=\"#\" title=\"#\">Kugel Samson</a> bzw. <a href=\"#\" title=\"#\">Pyramide Ra</a>.</li></ul><p>Das <strong>Basisset</strong> enthält alle essenziellen Produkte, um dich vor Elektrosmog und 5G zu schützen: <a href=\"#\" title=\"#\">Anhänger Sol</a>, <a href=\"#\" title=\"#\">Einlegesohlen Tom</a> und <a href=\"#\" title=\"#\">Handychip Ava</a>.</p><p>Während Anhänger und Einlegesohlen über Fußreflexzonen und Solar Plexus regulierend auf den Körper einwirken und dich dadurch stärken und stabilisieren, ist der Chip dazu da, dein wichtigstes mobiles Endgerät zu entstören – in der Regel das Handy (Stichwort: Handystrahlung).</p><p>Da Elektrosmog keinen Halt vor deinem Schlafzimmer macht, solltest du zusätzlich deinen <strong>Schlafraum</strong> mit unserer Kugel Samson entstören. Der Grund: <a href=\"#\" title=\"#\">Erholsamer Schlaf wird durch Elektrosmog mehr und mehr unmöglich</a>. </p><p>Mit der <a href=\"#\" title=\"#\">Pyramide Ra</a> schützt du dich vor extremer Strahlenbelastung, wie sie typischerweise in <strong>Arbeitsräumen</strong> und <strong>Großraumbüros</strong> anzutreffen ist. </p><p>Solltest du ein <strong>Elektroauto / E-Auto</strong> besitzen, dann bist du <a href=\"#\" title=\"#\">sehr starker</a> </p><p><a href=\"#\" title=\"#\">Strahlenbelastung</a> ausgesetzt. <a href=\"#\" title=\"#\">Elektrosmog im E-Auto neutralisierst du mit Max.</a></p>",
+            "text": "<p>Idealerweise schützt du deine Gesundheit mit einer Kombination folgender Produkte:<\/p><ul><li>1 x <a href=\"#\" title=\"#\">Basisset Essentials<\/a>.<\/li><li>1 x <a href=\"#\" title=\"#\">Kugel Samson<\/a> bzw. <a href=\"#\" title=\"#\">Pyramide Ra<\/a>.<\/li><\/ul><p>Das <strong>Basisset<\/strong> enthält alle essenziellen Produkte, um dich vor Elektrosmog und 5G zu schützen: <a href=\"#\" title=\"#\">Anhänger Sol<\/a>, <a href=\"#\" title=\"#\">Einlegesohlen Tom<\/a> und <a href=\"#\" title=\"#\">Handychip Ava<\/a>.<\/p><p>Während Anhänger und Einlegesohlen über Fußreflexzonen und Solar Plexus regulierend auf den Körper einwirken und dich dadurch stärken und stabilisieren, ist der Chip dazu da, dein wichtigstes mobiles Endgerät zu entstören – in der Regel das Handy (Stichwort: Handystrahlung).<\/p><p>Da Elektrosmog keinen Halt vor deinem Schlafzimmer macht, solltest du zusätzlich deinen <strong>Schlafraum<\/strong> mit unserer Kugel Samson entstören. Der Grund: <a href=\"#\" title=\"#\">Erholsamer Schlaf wird durch Elektrosmog mehr und mehr unmöglich<\/a>. <\/p><p>Mit der <a href=\"#\" title=\"#\">Pyramide Ra<\/a> schützt du dich vor extremer Strahlenbelastung, wie sie typischerweise in <strong>Arbeitsräumen<\/strong> und <strong>Großraumbüros<\/strong> anzutreffen ist. <\/p><p>Solltest du ein <strong>Elektroauto \/ E-Auto<\/strong> besitzen, dann bist du <a href=\"#\" title=\"#\">sehr starker<\/a> <\/p><p><a href=\"#\" title=\"#\">Strahlenbelastung<\/a> ausgesetzt. <a href=\"#\" title=\"#\">Elektrosmog im E-Auto neutralisierst du mit Max.<\/a><\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",
@@ -1418,7 +1406,7 @@
         "text_cTpzyM": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Die Produkte halten ein Leben lang.</strong> 💪</p><p>Und da sie tatsächlich dazu beitragen dein Leben zu erhalten, lohnt sich diese einmalige Investition in  jedem Fall.</p>",
+            "text": "<p><strong>Die Produkte halten ein Leben lang.<\/strong> 💪<\/p><p>Und da sie tatsächlich dazu beitragen dein Leben zu erhalten, lohnt sich diese einmalige Investition in \u2028jedem Fall.<\/p>",
             "text_size": "typeset",
             "secondary_color": false,
             "highlight_phrases": "",

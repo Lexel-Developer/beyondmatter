@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -22,7 +13,7 @@
       "type": "image-banner-new",
       "settings": {
         "page_width": "full-width",
-        "image": "shopify://shop_images/240_F_237412371_zBixmx4uuHYUB5tMiYebjJVyVNIkmHfb_2_1.jpg",
+        "image": "shopify:\/\/shop_images\/240_F_237412371_zBixmx4uuHYUB5tMiYebjJVyVNIkmHfb_2_1.jpg",
         "image_position": "center center",
         "text_box_position": "middle-center",
         "text_alignment": "center",
@@ -60,7 +51,7 @@
         "page_width": "standard",
         "enable_breadcrumbs": true,
         "title": "Unsere Mission",
-        "description": "<p> Wir haben schon sehr vielen Menschen mit unterschiedlichen Beschwerden zu mehr Energie, Freude und Leichtigkeit im Leben verholfen. Wir hoffen, dass noch viele weitere dazukommen und geben täglich unser Bestes.</p>",
+        "description": "<p> Wir haben schon sehr vielen Menschen mit unterschiedlichen Beschwerden zu mehr Energie, Freude und Leichtigkeit im Leben verholfen. Wir hoffen, dass noch viele weitere dazukommen und geben täglich unser Bestes.<\/p>",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
@@ -97,7 +88,7 @@
           "type": "image",
           "settings": {
             "enable_double_width": false,
-            "image": "shopify://shop_images/Bildschirmfoto_2024-08-06_um_08.52.42_1_fc2e75f9-e4e2-4757-b0fb-0b40310ebc06.jpg",
+            "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-08-06_um_08.52.42_1_fc2e75f9-e4e2-4757-b0fb-0b40310ebc06.jpg",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -115,7 +106,7 @@
           "type": "image",
           "settings": {
             "enable_double_width": false,
-            "image": "shopify://shop_images/Bildschirmfoto_2024-08-06_um_08.52.42_2_44b0c845-b6f4-41e0-afde-b3bd99c05c91.jpg",
+            "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-08-06_um_08.52.42_2_44b0c845-b6f4-41e0-afde-b3bd99c05c91.jpg",
             "image_position": "center center",
             "subheading": "",
             "subheading_size": "h5",
@@ -236,7 +227,7 @@
         "subheading_4wPM97": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p><em>Gabi aus Wuppertal</em></p>",
+            "subheading": "<p><em>Gabi aus Wuppertal<\/em><\/p>",
             "sub_text_color": "#3c3c3c",
             "subheading_color_opacity": 100
           }
@@ -244,7 +235,7 @@
         "heading_V38QJi": {
           "type": "heading",
           "settings": {
-            "heading": "Über den lebenslangen  Weg mit Migräne",
+            "heading": "Über den lebenslangen \u2028Weg mit Migräne",
             "heading_size": "h1",
             "heading_tag": "h2"
           }
@@ -252,7 +243,7 @@
         "text_GTCVQN": {
           "type": "text",
           "settings": {
-            "text": "<p>Untersucht die Strahlenbelastung durch Telefonate mit dem Handy. Als Schutzprodukt wird der Handychip AVA getestet. Von unabhängigem Institut durchgeführt.</p>",
+            "text": "<p>Untersucht die Strahlenbelastung durch Telefonate mit dem Handy. Als Schutzprodukt wird der Handychip AVA getestet. Von unabhängigem Institut durchgeführt.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -281,7 +272,7 @@
         "enable_main_image": true,
         "grid_column_spacing": false,
         "image_with_text_grid": "",
-        "image": "shopify://shop_images/Bildschirmfoto_2024-08-06_um_08.52.42_3.jpg",
+        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-08-06_um_08.52.42_3.jpg",
         "image_position": "top center",
         "layout": "image_first",
         "desktop_box_spacing": 0,
@@ -319,7 +310,7 @@
         "subheading_NwjWUi": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p>Heiko aus Hannover</p>",
+            "subheading": "<p>Heiko aus Hannover<\/p>",
             "sub_text_color": "#3c3c3c",
             "subheading_color_opacity": 100
           }
@@ -335,7 +326,7 @@
         "text_7zcgqb": {
           "type": "text",
           "settings": {
-            "text": "<p>Untersucht die Strahlenbelastung durch Telefonate mit dem Handy. Als Schutzprodukt wird der Handychip AVA getestet. Von unabhängigem Institut durchgeführt.</p>",
+            "text": "<p>Untersucht die Strahlenbelastung durch Telefonate mit dem Handy. Als Schutzprodukt wird der Handychip AVA getestet. Von unabhängigem Institut durchgeführt.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -364,7 +355,7 @@
         "enable_main_image": true,
         "grid_column_spacing": false,
         "image_with_text_grid": "",
-        "image": "shopify://shop_images/Bildschirmfoto_2024-08-06_um_08.52.42_3_1.jpg",
+        "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-08-06_um_08.52.42_3_1.jpg",
         "image_position": "top center",
         "layout": "text_first",
         "desktop_box_spacing": 0,
@@ -402,7 +393,7 @@
         "subheading_fjaBM6": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p><em>Unser Produktfinder</em></p>",
+            "subheading": "<p><em>Unser Produktfinder<\/em><\/p>",
             "sub_text_color": "#baab9e",
             "subheading_color_opacity": 100
           }
@@ -418,7 +409,7 @@
         "text_wKFeyD": {
           "type": "text",
           "settings": {
-            "text": "<p>Entdecke in unserem Produktfinder, welches unserer </p><p>Produkte das Beste für deine Bedürfnisse ist. </p><p><em>Dauer: Max. 2 Min</em></p>",
+            "text": "<p>Entdecke in unserem Produktfinder, welches unserer <\/p><p>Produkte das Beste für deine Bedürfnisse ist.\u2028<\/p><p><em>Dauer: Max. 2 Min<\/em><\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -426,7 +417,7 @@
         "text_pk6Jdd": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Entdecke deine größte Problemstelle</li><li>Erhalte eine individuelle Produktempfehlung</li><li>Sichere dir einen exklusiven Rabatt</li></ul>",
+            "text": "<ul><li>Entdecke deine größte Problemstelle<\/li><li>Erhalte eine individuelle Produktempfehlung<\/li><li>Sichere dir einen exklusiven Rabatt<\/li><\/ul>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -456,7 +447,7 @@
         "enable_main_image": true,
         "grid_column_spacing": true,
         "image_with_text_grid": "",
-        "image": "shopify://shop_images/Mask_group_1.png",
+        "image": "shopify:\/\/shop_images\/Mask_group_1.png",
         "image_position": "center center",
         "layout": "image_first",
         "desktop_box_spacing": 0,
@@ -496,12 +487,12 @@
           "settings": {
             "icon": "truck",
             "icon_size": "large",
-            "image": "shopify://shop_images/cash-payment-coin-1_1.svg",
+            "image": "shopify:\/\/shop_images\/cash-payment-coin-1_1.svg",
             "custom_icon": "",
             "title": "Geld-zurück-Garantie",
             "block_heading_tag": "h2",
             "title_size": "h3",
-            "text": "<p>Risikofreies Testen für 60 Tage. Solltest du unzufrieden mit dem Produkt sein, nehmen wir es zurück ohne Fragen zu stellen.</p>",
+            "text": "<p>Risikofreies Testen für 60 Tage. Solltest du unzufrieden mit dem Produkt sein, nehmen wir es zurück ohne Fragen zu stellen.<\/p>",
             "text_size": "typeset"
           }
         },
@@ -510,12 +501,12 @@
           "settings": {
             "icon": "truck",
             "icon_size": "large",
-            "image": "shopify://shop_images/warehouse-cart-package-ribbon-1_1.svg",
+            "image": "shopify:\/\/shop_images\/warehouse-cart-package-ribbon-1_1.svg",
             "custom_icon": "",
             "title": "Versandkostenfrei ab 90€",
             "block_heading_tag": "h2",
             "title_size": "h3",
-            "text": "<p>Wir versenden Deine gesamte Bestellung kostenfrei sobald sie einen Einkaufswert von 90€ überschreitet.</p>",
+            "text": "<p>Wir versenden Deine gesamte Bestellung kostenfrei sobald sie einen Einkaufswert von 90€ überschreitet.<\/p>",
             "text_size": "typeset"
           }
         },
@@ -524,12 +515,12 @@
           "settings": {
             "icon": "truck",
             "icon_size": "large",
-            "image": "shopify://shop_images/Icon_24px_-_Heart.svg",
+            "image": "shopify:\/\/shop_images\/Icon_24px_-_Heart.svg",
             "custom_icon": "",
             "title": "Made in Germany",
             "block_heading_tag": "h2",
             "title_size": "h3",
-            "text": "<p>Unsere Produkte werden ausschließlich in Deutschland hergestellt, verpackt und versendet.</p>",
+            "text": "<p>Unsere Produkte werden ausschließlich in Deutschland hergestellt, verpackt und versendet.<\/p>",
             "text_size": "typeset"
           }
         }
@@ -574,7 +565,7 @@
         "subheading_kcpXzJ": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p><em>Unsere Newsletter</em></p>",
+            "subheading": "<p><em>Unsere Newsletter<\/em><\/p>",
             "sub_text_color": "#baab9e"
           }
         },
@@ -589,7 +580,7 @@
         "text_fpeFAq": {
           "type": "text",
           "settings": {
-            "text": "<p>Abonniere jetzt unseren Newsletter für exklusive Angebote und Neuheiten aus der Welt von Beyond Matter. Als Dankeschön  erhältst du 10% Rabatt auf deinen ersten Einkauf.</p>",
+            "text": "<p>Abonniere jetzt unseren Newsletter für exklusive Angebote und Neuheiten aus der Welt von Beyond Matter. Als Dankeschön \u2028erhältst du 10% Rabatt auf deinen ersten Einkauf.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
@@ -606,9 +597,9 @@
         "secondary_background": "#ede9e9",
         "success_message": "Thanks for subscribing",
         "email_placeholder": "Deine beste E-Mail-Adresse",
-        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.</p>",
+        "consent": "<p>Ich habe die Datenschutzbestimmungen gelesen und akzeptiert.<\/p>",
         "enable_main_image": true,
-        "image": "shopify://shop_images/newsletter.jpg",
+        "image": "shopify:\/\/shop_images\/newsletter.jpg",
         "image_position": "top center",
         "layout": "image_first",
         "desktop_box_spacing": 0,
