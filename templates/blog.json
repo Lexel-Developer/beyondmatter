@@ -26,6 +26,9 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
+        "enable_content_space": false,
+        "primary_background": "#baab9e",
+        "secondary_background": "#d4cfcc",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#212326",
         "colors_text": "#212326",
@@ -56,13 +59,11 @@
         },
         "summary": {
           "type": "summary",
-          "settings": {
-          }
+          "settings": {}
         },
         "read_more": {
           "type": "read_more",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -103,6 +104,7 @@
         "secondary_background": "#ede9e9",
         "box_background": "#ffffff",
         "title_color": "#3c3c3c",
+        "description_color": "",
         "breadcrumb_color": "#3c3c3c",
         "breadcrumb_opacity": 50,
         "padding_top": 80,
@@ -122,7 +124,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "<p><em>Unser Produktfinder</em></p>",
-            "sub_text_color": "#baab9e"
+            "sub_text_color": "#baab9e",
+            "subheading_color_opacity": 100
           }
         },
         "heading_3YCdXr": {
@@ -172,7 +175,7 @@
         "secondary_background": "#d4cfcc",
         "main_description": "",
         "enable_main_image": true,
-        "grid_column_spacing": true,
+        "grid_column_spacing": false,
         "image_with_text_grid": "",
         "image": "shopify://shop_images/Mask_group_1.png",
         "image_position": "center center",
