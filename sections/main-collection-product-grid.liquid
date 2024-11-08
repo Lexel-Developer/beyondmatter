@@ -18,13 +18,38 @@
 
   assign blocks_count = section.blocks.size
 -%}
-
+ 
 {%- style -%}
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
-    --image-position: {{ section.settings.image_position }};
+
+    --section-padding-left: {{ section.settings.padding_left }}px;
+    --section-padding-right: {{ section.settings.padding_right }}px;
+    --section-margin-top: {{ section.settings.margin_top }}px;
+    --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
+    --primary-background: {{ section.settings.primary_background }};
+    --secondary-background: {{ section.settings.secondary_background }};
+    --box-background: {{ section.settings.box_background }};
+    
+    --color-heading: {{ section.settings.title_color.red }}, {{ section.settings.title_color.green }}, {{ section.settings.title_color.blue }};
+    
+    --primary-background: {{ section.settings.primary_background }};
+
+    {%- if section.settings.show_image and collection.image != blank %}
+      --image-ratio-percent: {{ 1 | divided_by: collection.image.aspect_ratio | times: 100 }}%;
+      --image-position: {{ section.settings.image_position }};
+    {% endif -%}
   }
+  @media only screen and (max-width:749px){
+    #shopify-section-{{ section.id }} .section--padding {
+      --section-padding-top: {{ section.settings.mobile_padding_top }}px;
+      --section-padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+      padding-top:var(--section-padding-top);
+      padding-bottom:var(--section-padding-bottom);
+    }
+  } 
 {%- endstyle -%}
 
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
@@ -48,23 +73,25 @@
   <script src="{{ 'infinite-scroll.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<div class="section--padding{% if filter_type == 'vertical' or blocks_count > 0 %} page-width--{{ section.settings.page_width }} facets-vertical{% endif %}">
-  {%- if enable_filtering or enable_sorting or enable_viewing -%}
-    {%- if collection.all_products_count > 0 -%}
-      {{ 'component-facets.css' | asset_url | stylesheet_tag }}
-      <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
-
-      {%- liquid
-        if blocks_count == 0
-          if filter_type != 'vertical'
-            render 'facets', results: collection, filter_type: filter_type, enable_filtering: enable_filtering, enable_filtering_color_swatches: enable_filtering_color_swatches, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout, filter_max_items: filter_max_items, color_swatches_add_label: color_swatches_add_label
-          else
-            render 'facets-vertical', results: collection, filter_type: filter_type, enable_filtering: enable_filtering, enable_filtering_color_swatches: enable_filtering_color_swatches, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, filter_max_items: filter_max_items, color_swatches_add_label: color_swatches_add_label
+<div class="{% if filter_type == 'vertical' or blocks_count > 0 %} page-width facets-vertical{% endif %}">
+  <div class="page-width--{{ section.settings.page_width }}">
+    {%- if enable_filtering or enable_sorting or enable_viewing -%}
+      {%- if collection.all_products_count > 0 -%}
+        {{ 'component-facets.css' | asset_url | stylesheet_tag }}
+        <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+  
+        {%- liquid
+          if blocks_count == 0
+            if filter_type != 'vertical'
+              render 'facets', results: collection, filter_type: filter_type, enable_filtering: enable_filtering, enable_filtering_color_swatches: enable_filtering_color_swatches, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout, filter_max_items: filter_max_items, color_swatches_add_label: color_swatches_add_label
+            else
+              render 'facets-vertical', results: collection, filter_type: filter_type, enable_filtering: enable_filtering, enable_filtering_color_swatches: enable_filtering_color_swatches, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, filter_max_items: filter_max_items, color_swatches_add_label: color_swatches_add_label
+            endif
           endif
-        endif
-      -%}
+        -%}
+      {%- endif -%}
     {%- endif -%}
-  {%- endif -%}
+  </div>
 
   {%- liquid
     if collection.all_products_count > 0 and blocks_count > 0
@@ -76,7 +103,7 @@
     endif
   -%}
 
-  <div class="product-grid-container{% unless filter_type == 'vertical' or blocks_count > 0 %} page-width--{{ section.settings.page_width }} {% endunless %}">
+  <div class="product-grid-container section--padding {% unless filter_type == 'vertical' or blocks_count > 0 %} page-width--{{ section.settings.page_width }}{% endunless %}">
     {%- liquid
       if enable_filtering or enable_sorting or enable_viewing
         if collection.all_products_count > 0
@@ -270,7 +297,7 @@
     {
       "type": "checkbox",
       "id": "enable_viewing",
-      "default": true,
+      "default": false,
       "label": "t:sections.main-collection-product-grid.settings.enable_viewing.label"
     },
     {
@@ -458,21 +485,81 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 200,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "t:sections.all.padding.padding_top.label",
-      "default": 0
+      "label": "Polsterung oben (Desktop)",
+      "default": 36
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 200,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "t:sections.all.padding.padding_bottom.label",
-      "default": 60
+      "label": "Polsterung unten (Desktop)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Polsterung oben (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Polsterung unten (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Polsterung links",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Polsterung rechts",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Abstand oben",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Abstand unten",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
     }
   ],
   "blocks": [
