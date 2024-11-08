@@ -75,6 +75,7 @@
   max-width: 100%;
   letter-spacing: 0;
   line-height: 1.5;
+  word-break: break-word;
 }
 
 .rich-text__text--colored {
@@ -231,6 +232,10 @@
 }
 .rich-text__block_main.remove_gap .rich-text__blocks>*+* {
   margin-top: 8px;
+}
+.rich-text__text.typeset-custom {
+  font-size: 1.2rem;
+  line-height: 1.33333;
 }
 
 
