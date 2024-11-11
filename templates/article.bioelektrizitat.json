@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -73,9 +64,10 @@
       "settings": {
         "page_width": "narrow",
         "back_link_title": "Zurück zur Übersicht",
+        "enable_breadcrumbs": true,
         "show_back_link": true,
         "show_inside_box": false,
-        "heading": "Bioelektrizität. \u2028Die Essenz des Lebens.",
+        "heading": "Bioelektrizität.<br>Die Essenz des Lebens.",
         "heading_size": "h0",
         "heading_tag": "h2",
         "title": "Das Wichtigste auf einen Blick:",
@@ -104,6 +96,8 @@
         "colors_button_background": "#d4cfcc",
         "colors_text": "#212326",
         "colors_highlight": "#bbff00",
+        "breadcrumb_color": "#3c3c3c",
+        "breadcrumb_opacity": 50,
         "padding_top": 80,
         "padding_bottom": 80,
         "mobile_padding_top": 80,
@@ -172,40 +166,11 @@
             "highlight_phrases": "",
             "highlight_style": "marker"
           }
-        },
-        "blank_space_P6Ued3": {
-          "type": "blank_space",
-          "settings": {
-            "desktop_padding": 160,
-            "mobile_padding": 50
-          }
-        },
-        "heading_VAFkyr": {
-          "type": "heading",
-          "settings": {
-            "heading": "Wir Menschen sind fester Bestandteil eines elektromagnetischen Wechselspiels.",
-            "enable_italic": true,
-            "heading_size": "h0",
-            "heading_tag": "h2"
-          }
-        },
-        "text_DrYCpn": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Max Mustermann<\/strong><\/p>",
-            "text_size": "typeset",
-            "secondary_color": false,
-            "highlight_phrases": "",
-            "highlight_style": "marker"
-          }
         }
       },
       "block_order": [
         "heading_zMYYHf",
-        "text_L8AMRc",
-        "blank_space_P6Ued3",
-        "heading_VAFkyr",
-        "text_DrYCpn"
+        "text_L8AMRc"
       ],
       "settings": {
         "page_width": "narrow",
@@ -225,11 +190,70 @@
         "colors_button_label": "#ffffff",
         "colors_button_background": "#1a1b18",
         "colors_text": "#3c3c3c",
-        "heading_color": "#baab9e",
+        "heading_color": "#3c3c3c",
         "link_text_color": "#baab9e",
         "colors_highlight": "#bbff00",
         "gradient_background": "",
         "padding_top": 100,
+        "padding_bottom": 80,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_dFwbeX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6zPTRQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wir Menschen sind fester Bestandteil eines elektromagnetischen Wechselspiels.",
+            "enable_italic": true,
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "text_ceJdA8": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Max Mustermann<\/strong><\/p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6zPTRQ",
+        "text_ceJdA8"
+      ],
+      "settings": {
+        "page_width": "narrow",
+        "show_inside_box": false,
+        "remove_gap": false,
+        "enable_intro_title": false,
+        "intro_title": "Intro-Titel",
+        "content_width": 820,
+        "box_alignment": "box_right",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#f4f2f2",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#3c3c3c",
+        "colors_text": "#3c3c3c",
+        "heading_color": "#baab9e",
+        "link_text_color": "#baab9e",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 80,
         "padding_bottom": 160,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36,
@@ -298,7 +322,7 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
-        "enable_content_space": false,
+        "enable_content_space": true,
         "primary_background": "#f4f2f2",
         "secondary_background": "#ebe6e2",
         "colors_button_label": "#ffffff",
@@ -713,7 +737,7 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
-        "enable_content_space": false,
+        "enable_content_space": true,
         "primary_background": "#f4f2f2",
         "secondary_background": "#f4f2f2",
         "colors_button_label": "#ffffff",
@@ -868,8 +892,8 @@
         "show_text_below": true,
         "show_text_box": false,
         "enable_content_space": false,
-        "primary_background": "#baab9e",
-        "secondary_background": "#d4cfcc",
+        "primary_background": "#f4f2f2",
+        "secondary_background": "#fbfaf9",
         "colors_button_label": "#ffffff",
         "colors_button_background": "#212326",
         "colors_text": "#212326",
@@ -1122,7 +1146,7 @@
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "show_text_box": false,
-        "enable_content_space": false,
+        "enable_content_space": true,
         "primary_background": "#fbfaf9",
         "secondary_background": "#f4f2f2",
         "colors_button_label": "#ffffff",
@@ -1525,6 +1549,7 @@
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "auto",
         "enable_video_looping": false,
+        "video_url": "",
         "use_custom_colors": false,
         "colors_button_label": "#ffffff",
         "colors_button_background": "#1a1b18",
@@ -1596,6 +1621,7 @@
     "blog_intro_figJNW",
     "image_banner_new_PijXhk",
     "rich_text_XnBC6E",
+    "rich_text_dFwbeX",
     "image_banner_new_UFaEY7",
     "rich_text_ayp9PJ",
     "newsletter2_6Bybyx",

@@ -121,6 +121,10 @@
     letter-spacing: 0;
   }
 
+  .bintro-breadcrumbs { margin-bottom: 1.6rem; }
+.blog-intro .breadcrumb__divider:last-child {
+    display: none;
+}
 @media only screen and (min-width: 990px) {
     .blog-intro .title-wrapper {
         margin-bottom: 5.2rem;
