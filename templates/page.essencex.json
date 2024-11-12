@@ -278,6 +278,75 @@
         "margin_bottom": 0
       }
     },
+    "technology_teaser_XGcjXy": {
+      "type": "technology-teaser",
+      "blocks": {
+        "icon_text_block_left_gH6LTG": {
+          "type": "icon_text_block_left",
+          "settings": {
+            "icon_position": "right",
+            "heading_text_block": "Natürlicher Rohstoff",
+            "block_description": "<p>Schungit ist in der Natur<\/p><p> vorhandener Boden- schatz. Ein<\/p><p> Kohlenstoff, der über Jahrtausende <\/p><p>entsteht und heilende Kräfte birgt.<\/p>",
+            "text_icon": "shopify:\/\/shop_images\/svg-line.svg",
+            "item_left_top": 13,
+            "item_right": -7
+          }
+        },
+        "icon_text_block_right_DHcpKM": {
+          "type": "icon_text_block_right",
+          "settings": {
+            "icon_position_2": "left",
+            "heading_text_block_2": "Natürliche Wirksamkeit",
+            "block_description_2": "<p>Schungit bringt von Natur aus die <\/p><p>Fähigkeit  mit sich,<\/p><p> elektromagnetische Wellen<\/p><p> resorbieren zu können.<\/p>",
+            "text_icon_2": "shopify:\/\/shop_images\/svg-line.svg",
+            "item_right_top": 4,
+            "item_left": -11
+          }
+        },
+        "icon_text_block_right_CeECEN": {
+          "type": "icon_text_block_right",
+          "settings": {
+            "icon_position_2": "left",
+            "heading_text_block_2": "Natürliche Schönheit",
+            "block_description_2": "<p>Schungit verfügt nicht nur von<\/p><p> Natur aus über  eine hohe Ästhetik.<\/p><p> Er fühlt sich auch von Natur aus<\/p><p> wunderschön auf der Haut an.<\/p>",
+            "text_icon_2": "shopify:\/\/shop_images\/svg-line.svg",
+            "item_right_top": 15,
+            "item_left": -4
+          }
+        }
+      },
+      "block_order": [
+        "icon_text_block_left_gH6LTG",
+        "icon_text_block_right_DHcpKM",
+        "icon_text_block_right_CeECEN"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "header_icon": "shopify:\/\/shop_images\/Group_125.svg",
+        "subtitle": "<em>Einzigartig und effizient<\/em>",
+        "title": "Ein Schatz der Natur, noch<br> wertvoller gemacht.",
+        "header_description": "<p>EssenceX basiert auf dem Kohlenstoffmineral Schungit, das eine <\/p><p>besondere Atomstruktur namens Fullerene aufweist. Diese Fullerene <\/p><p>können elektromagnetische Wellen (EMF) auf eine einzigartige Weise resorbieren.<\/p>",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "section_image": "shopify:\/\/shop_images\/technology-banner.png",
+        "main_image": "shopify:\/\/shop_images\/shungit-image.png",
+        "section_alignment": -20,
+        "title_color": "#baab9e",
+        "sub_text_color": "#f4f2f2",
+        "header_text_color": "#f4f2f2",
+        "section_background": "#3c3c3c",
+        "heading_color": "#baab9e",
+        "colors_text": "#f4f2f2",
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
     "image_with_text_tfMzHC": {
       "type": "image-with-text",
       "blocks": {
@@ -530,6 +599,7 @@
     "image_with_text_mLxTrh",
     "icon_boxes_kLHBaD",
     "image_banner_new_FrkpdB",
+    "technology_teaser_XGcjXy",
     "image_with_text_tfMzHC",
     "icon_boxes_VQFMye",
     "newsletter2_6Bybyx"

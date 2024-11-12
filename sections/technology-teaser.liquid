@@ -1,0 +1,563 @@
+{%- style -%}
+    #shopify-section-{{ section.id }} {
+      --section-padding-top: {{ section.settings.padding_top }}px;
+      --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+
+      --section-padding-left: {{ section.settings.padding_left }}px;
+      --section-padding-right: {{ section.settings.padding_right }}px;
+      --section-margin-top: {{ section.settings.margin_top }}px;
+      --section-margin-bottom: {{ section.settings.margin_bottom }}px;
+
+      --section-background: {{ section.settings.section_background }};
+      --color-foreground: {{ section.settings.colors_text.red }}, {{ section.settings.colors_text.green }}, {{ section.settings.colors_text.blue }};
+      --color-heading: {{ section.settings.heading_color.red }}, {{ section.settings.heading_color.green }}, {{ section.settings.heading_color.blue }};
+    }
+
+    @media only screen and (max-width:749px){
+      #shopify-section-{{ section.id }} .section--padding {
+        --section-padding-top: {{ section.settings.mobile_padding_top }}px;
+        --section-padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+        padding-top:var(--section-padding-top);
+        padding-bottom:var(--section-padding-bottom);
+      }
+    }
+    .technology-teaser:after {
+        background-image:url({{ section.settings.section_image | image_url }});
+    }
+    @media only screen and (min-width:990px){
+        #shopify-section-{{ section.id }}.technology-teaser {
+            margin-bottom:{{ section.settings.section_alignment }}rem;
+        }
+    }
+
+    {%- for block in section.blocks -%}
+        {% case block.type %}
+            {% when 'icon_text_block_left' %}
+
+                @media only screen and (min-width:990px){
+                    #block--{{ block.id }} {
+                        margin-top:{{ block.settings.item_left_top }}rem;
+                        margin-right:{{ block.settings.item_right }}rem;
+                    }
+                }
+            {% when 'icon_text_block_right' %}
+                @media only screen and (min-width:990px){
+                    #block--{{ block.id }} {
+                        margin-top:{{ block.settings.item_right_top }}rem;
+                        margin-left:{{ block.settings.item_left }}rem;
+                    }
+                }
+        {% endcase %}
+    {% endfor %}
+
+{%- endstyle -%}
+
+{{ 'section-technology-teaser.css' | asset_url | stylesheet_tag }}
+
+<div class="section--padding">
+  <div class="page-width--{{ section.settings.page_width }}">
+    <div class="technology-teaser-header">
+        {% if section.settings.title != blank or section.settings.subtitle != blank %}
+            <div class="title-wrapper">
+                <div class="title-wrapper-inner">
+                    {% if section.settings.header_icon != blank %}
+                        <div class="teaser-icon">
+                            {{ section.settings.header_icon | image_url: width: 200 | image_tag }}
+                        </div>
+                    {% endif %}
+                    {% if section.settings.subtitle != blank %}
+                        <h3 class="h1 sub_title" style="color: {{ section.settings.sub_text_color }};">{{ section.settings.subtitle }}</h3>
+                    {% endif %}
+                    {% if section.settings.title != blank %}
+                        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">{{ section.settings.title }}</{{ section.settings.heading_tag }}>
+                    {% endif %}
+                    {% if section.settings.header_description != blank %}
+                        <div class="teaser-description">
+                            {{ section.settings.header_description }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    <div class="technology-teaser-wrap">
+        <div class="technology-item technology-items-left">
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {% when 'icon_text_block_left' %}
+              <div id="block--{{ block.id }}" class="image-icon-text-card icon-reverse-{{ block.settings.icon_position }}" {{ block.shopify_attributes }}">
+                <div class="text-icon-cover">
+                    {% if block.settings.text_icon != blank %}
+                        <div class="text-icon-cover">
+                            {{ block.settings.text_icon | image_url: width: 300 | image_tag }}
+                        </div>
+                        {%- else -%}
+                        <div class="text-icon-cover">
+                        {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                        </div>
+                    {%- endif -%}
+                </div>
+                <div class="image-text-cover">
+                  {% if block.settings.heading_text_block %}
+                    <h4 class="main_heading h2">{{ block.settings.heading_text_block }}</h4>
+                  {% endif %}
+                  {% if block.settings.block_description %}
+                    {{ block.settings.block_description }}
+                  {% endif %}
+                </div>
+              </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
+      <div class="technology-item technology-items-center">
+        <div class="main-image-inr">
+            {% if section.settings.main_image != blank %}
+                {{ section.settings.main_image | image_url: width: 1000 | image_tag }}
+            {%- else -%}
+              {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+        </div>
+      </div>
+      <div class="technology-item technology-items-right">
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {% when 'icon_text_block_right' %}
+            <div id="block--{{ block.id }}" class="image-icon-text-card icon-reverse-{{ block.settings.icon_position_2 }}" {{ block.shopify_attributes }}">
+                <div class="text-icon-cover">
+                    {% if block.settings.text_icon_2 != blank %}
+                        <div class="text-icon-cover">
+                            {{ block.settings.text_icon_2 | image_url: width: 300 | image_tag }}
+                        </div>
+                        {%- else -%}
+                        <div class="text-icon-cover">
+                        {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                        </div>
+                    {%- endif -%}
+                </div>
+                <div class="image-text-cover">
+                  {% if block.settings.heading_text_block_2 %}
+                    <h4 class="main_heading h2">{{ block.settings.heading_text_block_2 }}</h4>
+                  {% endif %}
+                  {% if block.settings.block_description_2 %}
+                    {{ block.settings.block_description_2 }}
+                  {% endif %}
+                </div>
+              </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Technology teaser",
+  "tag": "section",
+  "class": "section technology-teaser",
+  "settings": [
+    {
+      "type": "select",
+      "id": "page_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "full-width",
+          "label": "Full-Width"
+        }
+      ],
+      "default": "standard",
+      "label": "Section width"
+    },
+    {
+        "type": "header",
+        "content": "Heading header"
+    },
+    {
+        "type": "image_picker",
+        "label": "Icon",
+        "id": "header_icon"
+      },
+    {
+        "type": "inline_richtext",
+        "label": "Subtitle",
+        "id": "subtitle",
+        "default": "<em>Unsere Kategrorien</em>"
+      },
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title"
+      },
+      {
+        "type": "richtext",
+        "label": "Description",
+        "id": "header_description",
+        "default": "<p>Unsere Kategrorien</p>"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          },
+          {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          },
+          {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      },
+      {
+        "type": "select",
+        "id": "heading_tag",
+        "options": [
+          {
+            "value": "h1",
+            "label": "t:sections.all.heading_tag.options__1.label"
+          },
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_tag.options__2.label"
+          },
+          {
+            "value": "h3",
+            "label": "t:sections.all.heading_tag.options__3.label"
+          },
+          {
+            "value": "h4",
+            "label": "t:sections.all.heading_tag.options__4.label"
+          },
+          {
+            "value": "h5",
+            "label": "t:sections.all.heading_tag.options__5.label"
+          },
+          {
+            "value": "h6",
+            "label": "t:sections.all.heading_tag.options__6.label"
+          },
+          {
+            "value": "div",
+            "label": "t:sections.all.heading_tag.options__7.label"
+          },
+          {
+            "value": "span",
+            "label": "t:sections.all.heading_tag.options__8.label"
+          },
+          {
+            "value": "p",
+            "label": "t:sections.all.heading_tag.options__9.label"
+          }
+        ],
+        "default": "h2",
+        "label": "t:sections.all.heading_tag.label",
+        "info": "t:sections.all.heading_tag.info"
+      },
+
+    {
+        "type": "image_picker",
+        "id": "section_image",
+        "label": "Banner image"
+    },
+    {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Image"
+    },
+    {
+        "type": "range",
+        "label": "Section alignment",
+        "id": "section_alignment",
+        "default": 0,
+        "min": -50,
+        "max": 50,
+        "step": 1,
+        "unit": "rem"
+    },
+    {
+      "type": "header",
+      "content": "Section color"
+    },
+        {
+      "type": "color",
+      "label": "Title color",
+      "id": "title_color"
+    },
+    {
+      "type": "color",
+      "label": "Sub title color",
+      "id": "sub_text_color"
+    },
+    {
+      "type": "color",
+      "label": "Header text color",
+      "id": "header_text_color"
+    },
+    {
+      "type": "color",
+      "label": "Section Background",
+      "id": "section_background",
+      "default": "#3c3c3c"
+    },
+    {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading color",
+        "default": "#212326"
+      },
+    {
+        "type": "color",
+        "id": "colors_text",
+        "label": "t:sections.all.colors.colors_text.label",
+        "default": "#212326"
+      },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "Mobile top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "Mobile bottom padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Padding left",
+      "id": "padding_left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Padding right",
+      "id": "padding_right",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin top",
+      "id": "margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Margin bottom",
+      "id": "margin_bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon_text_block_left",
+      "name": "icon text block left",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon_position",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "right",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "heading_text_block",
+          "label": "Heading",
+          "default": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "block_description",
+          "label": "Description",
+          "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "text_icon",
+          "label": "Icon"
+        },
+        {
+        "type": "range",
+        "label": "Content alignment top to bottom",
+        "id": "item_left_top",
+        "default": 0,
+        "min": -50,
+        "max": 50,
+        "step": 1,
+        "unit": "rem"
+        },
+        {
+        "type": "range",
+        "label": "Content alignment left to right",
+        "id": "item_right",
+        "default": 0,
+        "min": -50,
+        "max": 50,
+        "step": 1,
+        "unit": "rem"
+        },
+      ]
+    },
+    {
+      "type": "icon_text_block_right",
+      "name": "icon text block right",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon_position_2",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+          ],
+          "default": "left",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "heading_text_block_2",
+          "label": "Heading",
+          "default": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "block_description_2",
+          "label": "Description",
+          "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "text_icon_2",
+          "label": "Icon"
+        },
+        {
+        "type": "range",
+        "label": "Content alignment top to bottom",
+        "id": "item_right_top",
+        "default": 0,
+        "min": -50,
+        "max": 50,
+        "step": 1,
+        "unit": "rem"
+        },
+        {
+        "type": "range",
+        "label": "Content alignment left to right",
+        "id": "item_left",
+        "default": 0,
+        "min": -50,
+        "max": 50,
+        "step": 1,
+        "unit": "rem"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Technology teaser",
+      "blocks": [
+        {
+          "type": "icon_text_block_left"
+        },
+        {
+          "type": "icon_text_block_right"
+        },
+        {
+          "type": "icon_text_block_right"
+        }
+      ]
+    },
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}
