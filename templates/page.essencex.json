@@ -347,6 +347,82 @@
         "margin_bottom": 0
       }
     },
+    "column_grid_aqfJxA": {
+      "type": "column-grid",
+      "blocks": {
+        "column_8EBxPK": {
+          "type": "column",
+          "settings": {
+            "title": "Wissenschaftliche Studien",
+            "heading_size": "h3",
+            "text": "<p>Unsere Lösungen gehören zu den besten auf dem Markt und transformieren Quellen von Elektrosmog zu Quellen natürlicher Energie und Wohlbefindens. Anspannung, Gereiztheit, Erschöpfung, Antriebslosigkeit und Schlafprobleme sind nur einige der vielen Beschwerden, die Elektrosmog auslösen kann.<\/p>",
+            "link_text": "Zu unseren Studien",
+            "link": "#",
+            "title_color": "#baab9e",
+            "text_color": "#f4f2f2",
+            "background_color": "#d9d9d9",
+            "background_opacity": 15
+          }
+        },
+        "column_7i79GA": {
+          "type": "column",
+          "settings": {
+            "title": "Essence X Technologie",
+            "heading_size": "h3",
+            "text": "<p>Rohstoff unserer Produkte ist Schungit. Eine natürliche Ressource, die elektromagnetische Strahlungen neutralisieren kann. Unsere Essence X Technologie potenziert die Wirkung von Schungit und transformiert Elektrosmog zu einer Quelle förderlicher Energie.<\/p>",
+            "link_text": "Zu unseren Studien",
+            "link": "#",
+            "title_color": "#baab9e",
+            "text_color": "#f4f2f2",
+            "background_color": "#d9d9d9",
+            "background_opacity": 10
+          }
+        },
+        "column_hDQNwj": {
+          "type": "column",
+          "settings": {
+            "title": "Premium Materialen",
+            "heading_size": "h3",
+            "text": "<p>Wir verwenden nur die hochwertigsten Rohstoffe, welche ständiger Kontrolle unterliegen. So stellen wir sicher, dass unsere Produkte über keinerlei Verunreinigungen oder Einschlüsse verfügen und dich ein Leben lang beschützend begleiten.<\/p>",
+            "link_text": "Zu unseren Studien",
+            "link": "#",
+            "title_color": "#baab9e",
+            "text_color": "#f4f2f2",
+            "background_color": "#d9d9d9",
+            "background_opacity": 15
+          }
+        }
+      },
+      "block_order": [
+        "column_8EBxPK",
+        "column_7i79GA",
+        "column_hDQNwj"
+      ],
+      "settings": {
+        "page_width": "standard",
+        "subtitle": "<em>Unsere Standards<\/em>",
+        "title": "Wofür wir stehen",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "show_inside_box": false,
+        "primary_background": "#3c3c3c",
+        "secondary_background": "#3c3c3c",
+        "box_background": "#ffffff",
+        "title_color": "#f4f2f2",
+        "sub_text_color": "",
+        "category_column_desktop": 3,
+        "category_column_mobile": "1",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
     "image_with_text_tfMzHC": {
       "type": "image-with-text",
       "blocks": {
@@ -600,6 +676,7 @@
     "icon_boxes_kLHBaD",
     "image_banner_new_FrkpdB",
     "technology_teaser_XGcjXy",
+    "column_grid_aqfJxA",
     "image_with_text_tfMzHC",
     "icon_boxes_VQFMye",
     "newsletter2_6Bybyx"
