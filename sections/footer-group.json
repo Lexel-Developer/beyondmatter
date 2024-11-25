@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer-group.name",
   "type": "footer",
@@ -13,7 +22,7 @@
             "custom_icon": "",
             "title": "+49 (0) 30-54907036",
             "title_size": "h3",
-            "text": "<p>Mo-Do: 09 - 17 Uhr \/ Fr: 09- 14 Uhr<\/p>"
+            "text": "<p>Mo-Do: 09 - 17 Uhr / Fr: 09- 14 Uhr</p>"
           }
         },
         "guarantee_HVYAqn": {
@@ -79,7 +88,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Produkte",
-            "menu": "test-subcollections"
+            "menu": "products"
           }
         },
         "link_list_9U4QBr": {
@@ -113,15 +122,15 @@
       ],
       "settings": {
         "page_width": "large",
-        "image_logo": "shopify:\/\/shop_images\/Logo.svg",
+        "image_logo": "shopify://shop_images/Logo.svg",
         "logo_width": 250,
-        "image_featured": "shopify:\/\/shop_images\/Vector.svg",
+        "image_featured": "shopify://shop_images/Vector.svg",
         "featured_image_width": 70,
-        "image_footer_slogan": "shopify:\/\/shop_images\/Group_10_d641b14b-a0e0-4c8d-bd6b-235dbbe0da5f.svg",
+        "image_footer_slogan": "shopify://shop_images/Group_10_d641b14b-a0e0-4c8d-bd6b-235dbbe0da5f.svg",
         "show_divider": false,
         "newsletter_enable": false,
         "newsletter_heading": "Exclusive benefits",
-        "newsletter_text": "<p>Apply for our free membership to receive exclusive deals, news, and events.<\/p>",
+        "newsletter_text": "<p>Apply for our free membership to receive exclusive deals, news, and events.</p>",
         "return_url": "",
         "enable_follow_on_shop": false,
         "show_social": false,
